@@ -1,0 +1,149 @@
+[
+  {
+    "threshold": 0.0,
+    "coverage": 1.0,
+    "selective_accuracy": 0.46551724137931033,
+    "answered": 58,
+    "escalated": 0
+  },
+  {
+    "threshold": 0.05,
+    "coverage": 1.0,
+    "selective_accuracy": 0.46551724137931033,
+    "answered": 58,
+    "escalated": 0
+  },
+  {
+    "threshold": 0.1,
+    "coverage": 1.0,
+    "selective_accuracy": 0.46551724137931033,
+    "answered": 58,
+    "escalated": 0
+  },
+  {
+    "threshold": 0.15,
+    "coverage": 1.0,
+    "selective_accuracy": 0.46551724137931033,
+    "answered": 58,
+    "escalated": 0
+  },
+  {
+    "threshold": 0.2,
+    "coverage": 1.0,
+    "selective_accuracy": 0.46551724137931033,
+    "answered": 58,
+    "escalated": 0
+  },
+  {
+    "threshold": 0.25,
+    "coverage": 1.0,
+    "selective_accuracy": 0.46551724137931033,
+    "answered": 58,
+    "escalated": 0
+  },
+  {
+    "threshold": 0.3,
+    "coverage": 1.0,
+    "selective_accuracy": 0.46551724137931033,
+    "answered": 58,
+    "escalated": 0
+  },
+  {
+    "threshold": 0.35,
+    "coverage": 1.0,
+    "selective_accuracy": 0.46551724137931033,
+    "answered": 58,
+    "escalated": 0
+  },
+  {
+    "threshold": 0.4,
+    "coverage": 1.0,
+    "selective_accuracy": 0.46551724137931033,
+    "answered": 58,
+    "escalated": 0
+  },
+  {
+    "threshold": 0.45,
+    "coverage": 1.0,
+    "selective_accuracy": 0.46551724137931033,
+    "answered": 58,
+    "escalated": 0
+  },
+  {
+    "threshold": 0.5,
+    "coverage": 0.9827586206896551,
+    "selective_accuracy": 0.45614035087719296,
+    "answered": 57,
+    "escalated": 1
+  },
+  {
+    "threshold": 0.55,
+    "coverage": 0.9827586206896551,
+    "selective_accuracy": 0.45614035087719296,
+    "answered": 57,
+    "escalated": 1
+  },
+  {
+    "threshold": 0.6,
+    "coverage": 0.896551724137931,
+    "selective_accuracy": 0.4423076923076923,
+    "answered": 52,
+    "escalated": 6
+  },
+  {
+    "threshold": 0.65,
+    "coverage": 0.6724137931034483,
+    "selective_accuracy": 0.4358974358974359,
+    "answered": 39,
+    "escalated": 19
+  },
+  {
+    "threshold": 0.7,
+    "coverage": 0.46551724137931033,
+    "selective_accuracy": 0.4444444444444444,
+    "answered": 27,
+    "escalated": 31
+  },
+  {
+    "threshold": 0.75,
+    "coverage": 0.25862068965517243,
+    "selective_accuracy": 0.4666666666666667,
+    "answered": 15,
+    "escalated": 43
+  },
+  {
+    "threshold": 0.8,
+    "coverage": 0.1206896551724138,
+    "selective_accuracy": 0.7142857142857143,
+    "answered": 7,
+    "escalated": 51
+  },
+  {
+    "threshold": 0.85,
+    "coverage": 0.017241379310344827,
+    "selective_accuracy": 1.0,
+    "answered": 1,
+    "escalated": 57
+  },
+  {
+    "threshold": 0.9,
+    "coverage": 0.0,
+    "selective_accuracy": null,
+    "answered": 0,
+    "escalated": 58
+  },
+  {
+    "threshold": 0.95,
+    "coverage": 0.0,
+    "selective_accuracy": null,
+    "answered": 0,
+    "escalated": 58
+  },
+  {
+    "threshold": 1.0,
+    "coverage": 0.0,
+    "selective_accuracy": null,
+    "answered": 0,
+    "escalated": 58
+  }
+]

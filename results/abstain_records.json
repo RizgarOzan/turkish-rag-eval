@@ -1,0 +1,466 @@
+[
+  {
+    "qid": "q001",
+    "question": "Şeker hastalığı teşhisi konan kişilerin ne kadarında ketoasidoz da bulunuyor?",
+    "margin": 0.006999243379571045,
+    "score": 0.7427605390548706,
+    "correct": true,
+    "top_chunk": "Diyabet > Teşhis"
+  },
+  {
+    "qid": "q002",
+    "question": "Çocuklarda tip 1 şeker hastalığı belirtileri ne kadar sürede ortaya çıkar?",
+    "margin": 0.0139310189866307,
+    "score": 0.7749209403991699,
+    "correct": false,
+    "top_chunk": "Diyabet > Sınıflandırma > Tip 1 diyabet"
+  },
+  {
+    "qid": "q003",
+    "question": "Jüvenil diyabet terimi yerine bugün hangi isim kullanılıyor?",
+    "margin": 0.04664224664224669,
+    "score": 0.8329405188560486,
+    "correct": true,
+    "top_chunk": "Diyabet > Sınıflandırma"
+  },
+  {
+    "qid": "q004",
+    "question": "Şeker hastalığı için tarama hangi yaş aralığında öneriliyor?",
+    "margin": 0.09780039451756622,
+    "score": 0.6913398504257202,
+    "correct": true,
+    "top_chunk": "Diyabet > Tarama testi"
+  },
+  {
+    "qid": "q005",
+    "question": "Tip 1 diyabetin kesin bir çözümü var mı?",
+    "margin": 0.04664224664224669,
+    "score": 0.8538553714752197,
+    "correct": true,
+    "top_chunk": "Diyabet > Kesin tedavi > Tip 1 diyabet için kesin tedavi"
+  },
+  {
+    "qid": "q006",
+    "question": "Nefes darlığı hastalığının görülme oranı ülkelere göre ne kadar değişiyor?",
+    "margin": 0.02273249138920776,
+    "score": 0.7912780046463013,
+    "correct": false,
+    "top_chunk": "Kronik obstrüktif akciğer hastalığı > Epidemiyoloji"
+  },
+  {
+    "qid": "q007",
+    "question": "Astım yüzünden yılda kaç kişi hayatını kaybediyor?",
+    "margin": 0.13227705961798195,
+    "score": 0.7870780229568481,
+    "correct": true,
+    "top_chunk": "Astım > Epidemiyoloji > Mortalite"
+  },
+  {
+    "qid": "q008",
+    "question": "Astımın kalıtımla ilgisi ne kadar güçlü?",
+    "margin": 0.03332565818203255,
+    "score": 0.6053473949432373,
+    "correct": false,
+    "top_chunk": "Astım > Patofizyoloji > İmmünopatoloji ve Hücresel Mekanizmalar"
+  },
+  {
+    "qid": "q009",
+    "question": "Küçük yaşta erkek ve kız çocukları arasında astım sıklığı farkı var mı?",
+    "margin": 0.09989924258216952,
+    "score": 0.722663164138794,
+    "correct": true,
+    "top_chunk": "Astım > Epidemiyoloji > Yaş ve Cinsiyet"
+  },
+  {
+    "qid": "q010",
+    "question": "Astımı ilk kez tıbbi olarak kim tarif etti?",
+    "margin": 0.0814139706447398,
+    "score": 0.6106260418891907,
+    "correct": true,
+    "top_chunk": "Astım > Tarihçe"
+  },
+  {
+    "qid": "q011",
+    "question": "Baş ağrısı krizlerinde görme bozukluğu yaşayanların oranı nedir?",
+    "margin": 0.0002601456815818201,
+    "score": 0.6985812187194824,
+    "correct": false,
+    "top_chunk": "Migren > Belirtiler ve semptomlar > Aura aşaması"
+  },
+  {
+    "qid": "q012",
+    "question": "Migren atağı öncesi habercisi olan belirtiler ne kadar önce başlar?",
+    "margin": 0.021127360685934533,
+    "score": 0.7030822038650513,
+    "correct": true,
+    "top_chunk": "Migren > Belirtiler ve semptomlar > Prodrom aşaması"
+  },
+  {
+    "qid": "q013",
+    "question": "Migren ağrısı her zaman başın tek yanında mı olur?",
+    "margin": 0.008812437011841963,
+    "score": 0.8376257419586182,
+    "correct": true,
+    "top_chunk": "Migren > Belirtiler ve semptomlar > Ağrı aşaması"
+  },
+  {
+    "qid": "q014",
+    "question": "Aura evresi ne kadar sürer?",
+    "margin": 0.0,
+    "score": 0.6447460055351257,
+    "correct": true,
+    "top_chunk": "Migren > Belirtiler ve semptomlar > Aura aşaması"
+  },
+  {
+    "qid": "q015",
+    "question": "Migrende hangi nörotransmitterin rolü olduğu düşünülüyor?",
+    "margin": 0.016129032258064595,
+    "score": 0.8421399593353271,
+    "correct": true,
+    "top_chunk": "Migren > Patofizyoloji"
+  },
+  {
+    "qid": "q016",
+    "question": "Nezle benzeri hastalık kaç günde kendiliğinden geçer?",
+    "margin": 0.010356731875719036,
+    "score": 0.7029815316200256,
+    "correct": false,
+    "top_chunk": "Ülseratif kolit"
+  },
+  {
+    "qid": "q017",
+    "question": "1918 salgını ilk nerede görüldü?",
+    "margin": 0.03150201612903232,
+    "score": 0.6594948172569275,
+    "correct": true,
+    "top_chunk": "Grip > İspanyol gribi"
+  },
+  {
+    "qid": "q018",
+    "question": "Böbrekte taş oluşan biri tekrar taş düşürme riskiyle karşılaşır mı?",
+    "margin": 0.03174603174603185,
+    "score": 0.8105074167251587,
+    "correct": true,
+    "top_chunk": "Böbrek taşı > Risk etmenleri"
+  },
+  {
+    "qid": "q019",
+    "question": "Böbrek taşı ağrısı ne kadar sürer?",
+    "margin": 0.03532131635636385,
+    "score": 0.7010082602500916,
+    "correct": false,
+    "top_chunk": "Böbrek taşı"
+  },
+  {
+    "qid": "q020",
+    "question": "Dünya nüfusunun ne kadarı hayatı boyunca böbrek taşı yaşıyor?",
+    "margin": 0.023937532002048224,
+    "score": 0.7656327486038208,
+    "correct": true,
+    "top_chunk": "Böbrek taşı > Korunma Yolları"
+  },
+  {
+    "qid": "q021",
+    "question": "İdrarda sitrat düşüklüğü hangi eşikle tanımlanır?",
+    "margin": 0.1511400023719166,
+    "score": 0.6345593929290771,
+    "correct": true,
+    "top_chunk": "Böbrek taşı > Patofizyoloji > Hipositratüri"
+  },
+  {
+    "qid": "q022",
+    "question": "Unutkanlık hastalığında genetik sebeplerin payı ne kadar?",
+    "margin": 0.030483198670072875,
+    "score": 0.7168699502944946,
+    "correct": true,
+    "top_chunk": "Alzheimer hastalığı > Etiyolojisi"
+  },
+  {
+    "qid": "q023",
+    "question": "Alzheimer hastalarının ne kadarında sanrı görülür?",
+    "margin": 0.03458049886621324,
+    "score": 0.7787005305290222,
+    "correct": false,
+    "top_chunk": "Alzheimer hastalığı > Patofizyoloji > Nöropatoloji"
+  },
+  {
+    "qid": "q024",
+    "question": "Damardan giren bir maddeye karşı ağır alerjik tepki ne kadar çabuk başlar?",
+    "margin": 0.006333830104321703,
+    "score": 0.6304764747619629,
+    "correct": false,
+    "top_chunk": "Anafilaksi > Mekanizma > İmmünolojik olmayanlar"
+  },
+  {
+    "qid": "q025",
+    "question": "Penisiline bağlı ağır alerji ne sıklıkla görülüyor?",
+    "margin": 0.07019771934280712,
+    "score": 0.6293179988861084,
+    "correct": false,
+    "top_chunk": "Anafilaksi > Araştırma"
+  },
+  {
+    "qid": "q026",
+    "question": "Anafilakside nabız her zaman hızlanır mı?",
+    "margin": 0.058505237452605906,
+    "score": 0.5741666555404663,
+    "correct": true,
+    "top_chunk": "Anafilaksi > İşaretler ve semptomlar > Kalp"
+  },
+  {
+    "qid": "q027",
+    "question": "Sosyal kaygı sorunu olanlarda belirtiler ne zaman başlıyor?",
+    "margin": 0.030056664203005637,
+    "score": 0.6673511862754822,
+    "correct": false,
+    "top_chunk": "Anksiyete bozukluğu > Türleri > Sosyal anksiyete bozukluğu"
+  },
+  {
+    "qid": "q028",
+    "question": "Travma sonrası stres bozukluğu her yıl kaç kişiyi etkiliyor?",
+    "margin": 0.0,
+    "score": 0.7549234628677368,
+    "correct": false,
+    "top_chunk": "Anksiyete bozukluğu > Türleri > Travma sonrası stres bozukluğu"
+  },
+  {
+    "qid": "q029",
+    "question": "OKB kaygı bozuklukları arasında mı sayılıyor?",
+    "margin": 0.0002601456815818201,
+    "score": 0.7771724462509155,
+    "correct": false,
+    "top_chunk": "Anksiyete bozukluğu > Türleri > Obsesif-kompulsif bozukluk"
+  },
+  {
+    "qid": "q030",
+    "question": "Apandis iltihabı insanların ne kadarında görülüyor?",
+    "margin": 0.03152911622987435,
+    "score": 0.5869649648666382,
+    "correct": true,
+    "top_chunk": "Apandisit > Kimlerde görülür? Görülme sıklığı ne kadardır?"
+  },
+  {
+    "qid": "q031",
+    "question": "Apandis ameliyatında kesi ne kadar büyüklükte yapılıyor?",
+    "margin": 0.045943304007820186,
+    "score": 0.4511152505874634,
+    "correct": true,
+    "top_chunk": "Apandisit > Tedavisi"
+  },
+  {
+    "qid": "q032",
+    "question": "Damar sertliğinde tıkanmaların çoğu ne kadar daralmada meydana gelir?",
+    "margin": 0.03150003226222753,
+    "score": 0.5520901679992676,
+    "correct": false,
+    "top_chunk": "Ateroskleroz > Aterojenez > Yırtılma ve stenoz"
+  },
+  {
+    "qid": "q033",
+    "question": "İki uçlu duygudurum bozukluğunda kalıtımın payı ne kadar?",
+    "margin": 0.060634791304025805,
+    "score": 0.6325207948684692,
+    "correct": false,
+    "top_chunk": "Bipolar bozukluk"
+  },
+  {
+    "qid": "q034",
+    "question": "Bacak damarında pıhtı kollarda da olur mu?",
+    "margin": 0.08618347214838445,
+    "score": 0.6185863018035889,
+    "correct": true,
+    "top_chunk": "Derin ven trombozu > Belirtiler ve semptomlar"
+  },
+  {
+    "qid": "q035",
+    "question": "Damar pıhtısı ne zaman kronik sayılır?",
+    "margin": 0.11285019428819874,
+    "score": 0.6979748606681824,
+    "correct": false,
+    "top_chunk": "Crohn hastalığı > Belirtileri"
+  },
+  {
+    "qid": "q036",
+    "question": "Cilt iltihabı ruh sağlığını etkiliyor mu?",
+    "margin": 0.3337860122223299,
+    "score": 0.6260032653808594,
+    "correct": false,
+    "top_chunk": "Anksiyete bozukluğu"
+  },
+  {
+    "qid": "q037",
+    "question": "Sara hastalığında tedaviye yanıt oranı nedir?",
+    "margin": 0.10631590631590629,
+    "score": 0.5669336318969727,
+    "correct": false,
+    "top_chunk": "Sedef hastalığı > Sedef Hastalığı Engel Oranı"
+  },
+  {
+    "qid": "q038",
+    "question": "Nöbetleri duran hastalarda ilaç ne kadar sürdürülür?",
+    "margin": 0.04002599090318397,
+    "score": 0.6530120372772217,
+    "correct": false,
+    "top_chunk": "Anafilaksi > Genel Görünüm"
+  },
+  {
+    "qid": "q039",
+    "question": "Hangi vitamin eksikliği nöbetlere yol açabiliyor?",
+    "margin": 0.038833746898263063,
+    "score": 0.7357929348945618,
+    "correct": false,
+    "top_chunk": "Bipolar bozukluk > Teşhis > Ayırıcı tanı"
+  },
+  {
+    "qid": "q040",
+    "question": "Yaygın kas ağrısı sendromunda kaç hassas nokta tanımlanmış?",
+    "margin": 0.06887985546522142,
+    "score": 0.6425560116767883,
+    "correct": true,
+    "top_chunk": "Fibromiyalji > Teşhis"
+  },
+  {
+    "qid": "q041",
+    "question": "Romatizma hastalarında fibromiyalji ne sıklıkla eşlik ediyor?",
+    "margin": 0.04375896700143481,
+    "score": 0.7106320261955261,
+    "correct": true,
+    "top_chunk": "Fibromiyalji > Fibromiyalji belirtileri nelerdir?"
+  },
+  {
+    "qid": "q042",
+    "question": "Göz içi basıncı kaça kadar normal kabul edilir?",
+    "margin": 0.05953510436432644,
+    "score": 0.64180988073349,
+    "correct": true,
+    "top_chunk": "Glokom > Teşhis"
+  },
+  {
+    "qid": "q043",
+    "question": "Ürik asit birikimi hastalığının ana sebebi nedir?",
+    "margin": 0.15247396945622976,
+    "score": 0.7386019229888916,
+    "correct": false,
+    "top_chunk": "Siroz > Belirti ve bulgular > İleri hastalık"
+  },
+  {
+    "qid": "q044",
+    "question": "Gut hastalarında metabolik sendrom ne kadar sık görülür?",
+    "margin": 0.029611940298507392,
+    "score": 0.7094268202781677,
+    "correct": false,
+    "top_chunk": "Gut > Prognoz"
+  },
+  {
+    "qid": "q045",
+    "question": "Sarılık virüsü bulaştıktan ne kadar sonra belirti verir?",
+    "margin": 0.07394029103334517,
+    "score": 0.6474243402481079,
+    "correct": false,
+    "top_chunk": "Hepatit B > Akut ve kronik enfeksiyon > Geçiş ve seyir"
+  },
+  {
+    "qid": "q046",
+    "question": "Hepatit C kaç kişide ağır belirti yapıyor?",
+    "margin": 0.007384328358209022,
+    "score": 0.809123694896698,
+    "correct": false,
+    "top_chunk": "Hepatit C > İşaret ve belirtiler > Kronik enfeksiyon"
+  },
+  {
+    "qid": "q047",
+    "question": "Hepatit C taşıyanlarda karaciğer sertleşmesi ne kadar sürede gelişir?",
+    "margin": 0.000688863375430457,
+    "score": 0.8157813549041748,
+    "correct": false,
+    "top_chunk": "Hepatit C"
+  },
+  {
+    "qid": "q048",
+    "question": "Tiroit az çalıştığında hormon değerleri nasıl çıkar?",
+    "margin": 0.0014880952380954163,
+    "score": 0.6889282464981079,
+    "correct": false,
+    "top_chunk": "Hipotiroidi > Hipotiroidizmin nedensel tipleri > Primer hipotiroidizm > Tiroit hormonu resistansı sendromu"
+  },
+  {
+    "qid": "q049",
+    "question": "Kalp krizi ağrısı ne kadar sürer ve pozisyonla değişir mi?",
+    "margin": 0.004471272076905844,
+    "score": 0.6785504221916199,
+    "correct": true,
+    "top_chunk": "Kalp krizi > Bulgu ve belirtiler > Ağrı"
+  },
+  {
+    "qid": "q050",
+    "question": "Sigaranın kalp damar hastalıklarındaki payı nedir?",
+    "margin": 0.007484407484407443,
+    "score": 0.7264338135719299,
+    "correct": false,
+    "top_chunk": "Kronik obstrüktif akciğer hastalığı > Önlem > Sigarayı bırakma"
+  },
+  {
+    "qid": "q051",
+    "question": "Kan nakli hangi hemoglobin değerinin altında gerekir?",
+    "margin": 0.0010078105316202737,
+    "score": 0.6987138986587524,
+    "correct": false,
+    "top_chunk": "Diyabet > Teşhis"
+  },
+  {
+    "qid": "q052",
+    "question": "Göz merceği ameliyatı ilk kim tarafından tanımlandı?",
+    "margin": 0.02288930581613504,
+    "score": 0.6890215277671814,
+    "correct": true,
+    "top_chunk": "Katarakt > Tarihi"
+  },
+  {
+    "qid": "q053",
+    "question": "Sigara dumanında kaç kimyasal madde bulunuyor?",
+    "margin": 0.024709302325581422,
+    "score": 0.6327294111251831,
+    "correct": false,
+    "top_chunk": "Zatürre > Kimyasal pnömoniler"
+  },
+  {
+    "qid": "q054",
+    "question": "Beyin zarı iltihabının en sık belirtisi nedir?",
+    "margin": 0.2323591302314707,
+    "score": 0.7503533363342285,
+    "correct": false,
+    "top_chunk": "Orta kulak iltihabı > Belirtiler ve semptomlar"
+  },
+  {
+    "qid": "q055",
+    "question": "Yetişkinlerde bakteriyel menenjite en çok hangi mikroplar yol açıyor?",
+    "margin": 0.10488799547129703,
+    "score": 0.7484453916549683,
+    "correct": false,
+    "top_chunk": "Menenjit > Mekanizma"
+  },
+  {
+    "qid": "q056",
+    "question": "MS hastalığı en çok hangi yaş grubunu etkiliyor?",
+    "margin": 0.010872919058553317,
+    "score": 0.670190691947937,
+    "correct": false,
+    "top_chunk": "Alzheimer hastalığı"
+  },
+  {
+    "qid": "q057",
+    "question": "Aşırı kiloda genetik faktörlerin rolü ne kadar?",
+    "margin": 0.031053940485378503,
+    "score": 0.6735263466835022,
+    "correct": true,
+    "top_chunk": "Obezite > Kalıtımın etkisi"
+  },
+  {
+    "qid": "q058",
+    "question": "Emzirmeye doğumdan ne kadar sonra başlanmalı?",
+    "margin": 0.03931051587301595,
+    "score": 0.5549983382225037,
+    "correct": true,
+    "top_chunk": "Obezite > Nedenleri"
+  }
+]
