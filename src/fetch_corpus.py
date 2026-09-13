@@ -18,9 +18,12 @@ from pathlib import Path
 
 import requests
 
+from gold import load_gold
+
 API = "https://tr.wikipedia.org/w/api.php"
 HEADERS = {"User-Agent": "turkish-rag-eval/0.1 (research; github.com/RizgarOzan)"}
 DELAY_SECONDS = 1.0
+MIN_EXTRACT_CHARS = 800
 OUT = Path(__file__).resolve().parent.parent / "data" / "raw" / "corpus.json"
 
 TOPICS = [
@@ -67,7 +70,7 @@ def fetch_batch(titles: list[str], attempt: int = 0) -> list[dict]:
 
     out = []
     for page in response.json()["query"]["pages"].values():
-        if "extract" not in page or len(page["extract"]) < 800:
+        if "extract" not in page or len(page["extract"]) < MIN_EXTRACT_CHARS:
             continue
         out.append({
             "doc_id": str(page["pageid"]),
@@ -85,18 +88,21 @@ def main() -> None:
             docs[doc["title"]] = doc
     print(f"diskte {len(docs)} belge var\n")
 
+    # Contributed questions may point at articles outside the original list.
+    topics = TOPICS + sorted({i["doc_title"] for i in load_gold()} - set(TOPICS))
+
     wanted = {}  # requested title -> resolved title, so redirects are visible
-    for i, topic in enumerate(TOPICS, 1):
+    for i, topic in enumerate(topics, 1):
         fetched = fetch_batch([topic])
         if fetched:
             doc = fetched[0]
             docs[doc["title"]] = doc
             wanted[topic] = doc["title"]
             arrow = f" -> {doc['title']}" if doc["title"] != topic else ""
-            print(f"  [{i}/{len(TOPICS)}] {topic}{arrow}: "
+            print(f"  [{i}/{len(topics)}] {topic}{arrow}: "
                   f"{len(doc['text'])} karakter")
         else:
-            print(f"  [{i}/{len(TOPICS)}] {topic}: yok / cok kisa")
+            print(f"  [{i}/{len(topics)}] {topic}: yok / cok kisa")
         time.sleep(DELAY_SECONDS)
 
     ordered = sorted(docs.values(), key=lambda d: d["title"])
@@ -106,7 +112,7 @@ def main() -> None:
     chars = sum(len(d["text"]) for d in ordered)
     print(f"\n{len(ordered)} belge, {chars} karakter -> {OUT}")
 
-    missing = [t for t in TOPICS if t not in wanted]
+    missing = [t for t in topics if t not in wanted]
     if missing:
         print(f"alinamayan {len(missing)}: {', '.join(missing)}")
 

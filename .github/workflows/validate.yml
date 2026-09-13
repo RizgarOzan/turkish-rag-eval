@@ -1,0 +1,27 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pytest requests
+      - run: python -m pytest -q
+      - name: Offline checks on every question file
+        run: python src/validate_gold.py
+      - name: Online checks on question files this change adds or edits
+        env:
+          BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          files=$(git diff --name-only --diff-filter=AM "$BASE" HEAD -- 'data/eval/contrib/*.json' 2>/dev/null || true)
+          if [ -z "$files" ]; then echo "no new question files"; exit 0; fi
+          python src/validate_gold.py --online $files

@@ -144,6 +144,14 @@ advantage and make the dense/sparse comparison worthless.
   here transfers to a clinical setting without re-measurement.
 - **Retrieval only.** No generation, no answer-quality evaluation.
 
+## Contribute
+
+The first two limits above shrink with every contributor. Adding questions
+needs no ML background — pick a Turkish Wikipedia article, write 5–10
+paraphrased questions, and open a pull request with one JSON file. A validator
+checks each file against Wikipedia in CI. See [CONTRIBUTING.md](CONTRIBUTING.md)
+(Türkçe açıklama dahil).
+
 ## Notes on Turkish
 
 Two language-specific traps are handled in `src/turkish_text.py`:

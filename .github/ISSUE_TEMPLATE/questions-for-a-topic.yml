@@ -1,0 +1,23 @@
+name: Questions for a topic
+description: Propose (or claim) a Turkish Wikipedia article to write questions for
+labels: ["questions"]
+body:
+  - type: input
+    id: article
+    attributes:
+      label: Article
+      description: Turkish Wikipedia title or link
+    validations:
+      required: true
+  - type: input
+    id: count
+    attributes:
+      label: How many questions will you write?
+      placeholder: "5-10"
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Before you start
+      options:
+        - label: I read CONTRIBUTING.md — questions are paraphrased, answer spans are copied verbatim
+          required: true

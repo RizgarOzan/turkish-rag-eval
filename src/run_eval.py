@@ -9,25 +9,18 @@ the whole point - otherwise every strategy would need its own labels.
 
 import argparse
 import json
-import re
 import statistics
 import time
-from pathlib import Path
 
 from chunking import STRATEGIES
+from gold import ROOT, load_gold, normalise
 from metrics import ndcg_at_k, precision_at_k, recall_at_k, reciprocal_rank
 from retrieval import DenseRetriever, HybridRetriever, SparseRetriever
 
-ROOT = Path(__file__).resolve().parent.parent
 CORPUS = ROOT / "data" / "raw" / "corpus.json"
-GOLD = ROOT / "data" / "eval" / "gold.json"
 RESULTS = ROOT / "results"
 K_VALUES = (1, 3, 5, 10)
 DEFAULT_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
-
-
-def normalise(text: str) -> str:
-    return re.sub(r"\s+", " ", text).strip().lower()
 
 
 def is_relevant(chunk: dict, item: dict) -> bool:
@@ -91,7 +84,7 @@ def main() -> None:
     args = parser.parse_args()
 
     docs = json.loads(CORPUS.read_text(encoding="utf-8"))
-    gold = json.loads(GOLD.read_text(encoding="utf-8"))
+    gold = load_gold()
     print(f"{len(docs)} belge, {len(gold)} soru\nmodel: {args.model}\n")
 
     from sentence_transformers import SentenceTransformer

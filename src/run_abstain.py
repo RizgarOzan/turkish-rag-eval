@@ -13,8 +13,9 @@ import json
 
 from abstain import RESULTS, margin_confidence, report, score_confidence
 from chunking import STRATEGIES
+from gold import load_gold
 from retrieval import DenseRetriever, HybridRetriever, SparseRetriever
-from run_eval import CORPUS, DEFAULT_MODEL, GOLD, is_relevant
+from run_eval import CORPUS, DEFAULT_MODEL, is_relevant
 
 
 def main() -> None:
@@ -23,7 +24,7 @@ def main() -> None:
     print(f"en iyi yapilandirma: {best['chunking']} + {best['retriever']}\n")
 
     docs = json.loads(CORPUS.read_text(encoding="utf-8"))
-    gold = json.loads(GOLD.read_text(encoding="utf-8"))
+    gold = load_gold()
     chunks = [c for doc in docs for c in STRATEGIES[best["chunking"]](doc)]
 
     from sentence_transformers import SentenceTransformer
