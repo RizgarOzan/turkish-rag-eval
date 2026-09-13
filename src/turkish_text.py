@@ -15,6 +15,7 @@ analyser. The harness measures how much it is worth.
 """
 
 import re
+import unicodedata
 
 _UPPER_MAP = str.maketrans("IİĞÜŞÖÇ", "ıiğüşöç")
 _TOKEN = re.compile(r"[0-9a-zçğıöşü]+")
@@ -24,13 +25,18 @@ _TOKEN = re.compile(r"[0-9a-zçğıöşü]+")
 STOPWORDS = {
     "ve", "veya", "ile", "bir", "bu", "şu", "o", "da", "de", "ki", "mi",
     "için", "gibi", "daha", "çok", "en", "ise", "ama", "fakat", "ancak",
-    "olan", "olarak", "olur", "ise", "her", "bazı", "hem", "ya", "the",
+    "olan", "olarak", "olur", "her", "bazı", "hem", "ya", "the",
 }
 
 
 def turkish_lower(text: str) -> str:
-    """Lowercase with the Turkish dotted/dotless i rule applied first."""
-    return text.translate(_UPPER_MAP).lower()
+    """Lowercase with the Turkish dotted/dotless i rule applied first.
+
+    The text is normalised to NFC first: a decomposed "İ" (I + U+0307) would
+    otherwise survive the translate table, and the combining dot is not in the
+    token character class, which silently splits the word in two.
+    """
+    return unicodedata.normalize("NFC", text).translate(_UPPER_MAP).lower()
 
 
 def tokenize(text: str, stem_length: int | None = 5) -> list[str]:

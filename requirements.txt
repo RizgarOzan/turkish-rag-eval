@@ -1,8 +1,11 @@
+# CPU-only torch: the wheel lives on PyTorch's own index, not on PyPI.
+--extra-index-url https://download.pytorch.org/whl/cpu
+
 numpy==2.5.2
 rank-bm25==0.2.2
 requests==2.34.2
 scikit-learn==1.9.0
 scipy==1.18.1
 sentence-transformers==6.0.1
-torch==2.13.0+cpu
+torch==2.13.0
 transformers==5.16.1

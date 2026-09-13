@@ -23,10 +23,38 @@ from reportlab.platypus import (KeepTogether, PageBreak, Paragraph,
 ROOT = Path(__file__).resolve().parent.parent
 RESULTS = ROOT / "results"
 
-FONTS = Path("C:/Windows/Fonts")
-pdfmetrics.registerFont(TTFont("Body", FONTS / "arial.ttf"))
-pdfmetrics.registerFont(TTFont("BodyBold", FONTS / "arialbd.ttf"))
-pdfmetrics.registerFont(TTFont("Mono", FONTS / "consola.ttf"))
+# Fonts are looked up at call time, not at import time, so this module stays
+# importable on a machine that has none of them. Candidates are tried in order.
+FONT_DIRS = [
+    Path("C:/Windows/Fonts"),
+    Path("/usr/share/fonts/truetype/dejavu"),
+    Path("/Library/Fonts"),
+]
+FONT_FILES = {
+    "Body": ["arial.ttf", "DejaVuSans.ttf", "Arial.ttf"],
+    "BodyBold": ["arialbd.ttf", "DejaVuSans-Bold.ttf", "Arial Bold.ttf"],
+    "Mono": ["consola.ttf", "DejaVuSansMono.ttf", "Menlo.ttc"],
+}
+
+
+def register_fonts() -> None:
+    """Register one usable TTF per role, or explain what is missing."""
+    for name, candidates in FONT_FILES.items():
+        for directory in FONT_DIRS:
+            for candidate in candidates:
+                path = directory / candidate
+                if path.exists():
+                    pdfmetrics.registerFont(TTFont(name, str(path)))
+                    break
+            else:
+                continue
+            break
+        else:
+            raise SystemExit(
+                "Font not found for '%s'. Tried %s in %s. Install one or edit "
+                "FONT_DIRS / FONT_FILES at the top of this script."
+                % (name, ", ".join(candidates), ", ".join(str(d) for d in FONT_DIRS))
+            )
 
 INK = colors.HexColor("#1a1a1a")
 MUTED = colors.HexColor("#5a5a5a")
@@ -649,6 +677,7 @@ def build(out_path: Path):
 
 
 if __name__ == "__main__":
+    register_fonts()
     target = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "docs"
     target.mkdir(parents=True, exist_ok=True)
     written = build(target / "turkish-rag-eval-teknik-aciklama.pdf")

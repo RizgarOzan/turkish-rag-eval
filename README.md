@@ -107,15 +107,33 @@ requirement.
 
 ## Running it
 
+Needs **Python 3.10+** (the code uses `int | None` and `list[str]`). CPU only —
+no GPU anywhere.
+
 ```bash
-python -m venv .venv && .venv/Scripts/pip install -r requirements.txt
-python src/fetch_corpus.py    # rebuilds data/raw/corpus.json from Wikipedia
-python src/run_eval.py        # writes results/summary.json + per-query files
-python src/run_abstain.py     # coverage / accuracy curve for the best config
+git clone https://github.com/RizgarOzan/turkish-rag-eval
+cd turkish-rag-eval
+python -m venv .venv
+# Linux / macOS
+source .venv/bin/activate
+# Windows
+.venv\Scripts\activate
+
+pip install -r requirements.txt   # pulls CPU-only torch from PyTorch's index
+python src/fetch_corpus.py        # rebuilds data/raw/corpus.json from Wikipedia
+python src/run_eval.py            # writes results/summary.json + per-query files
+python src/run_abstain.py         # coverage / accuracy curve for the best config
 ```
 
-`--model <name>` swaps the embedding model. Any sentence-transformers model
-works.
+`python src/run_eval.py --model <name>` swaps the embedding model; any
+sentence-transformers model works. `run_abstain.py` always uses the default
+model, so pass nothing there.
+
+The metric implementations have their own tests:
+
+```bash
+pip install pytest && python -m pytest tests -q
+```
 
 ## How relevance is defined
 
@@ -143,14 +161,13 @@ advantage and make the dense/sparse comparison worthless.
   clinical notes in vocabulary, structure and abbreviation density. Nothing
   here transfers to a clinical setting without re-measurement.
 - **Retrieval only.** No generation, no answer-quality evaluation.
-
-## Contribute
-
-The first two limits above shrink with every contributor. Adding questions
-needs no ML background — pick a Turkish Wikipedia article, write 5–10
-paraphrased questions, and open a pull request with one JSON file. A validator
-checks each file against Wikipedia in CI. See [CONTRIBUTING.md](CONTRIBUTING.md)
-(Türkçe açıklama dahil).
+- **The corpus is a live snapshot, not a pinned one.** `fetch_corpus.py` pulls the
+  current revision of each article, so re-running it months later gives slightly
+  different chunk counts and therefore slightly different numbers. The gold set
+  and the code are pinned; Wikipedia is not.
+- **The embedding model is pinned by name, not by revision**, and ties in the
+  sparse rankings are broken by `numpy.argsort`, which is not stable. Neither
+  moves a result by more than rounding, but neither is bit-reproducible either.
 
 ## Notes on Turkish
 
