@@ -24,6 +24,17 @@ DEFAULT_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 
 
 def is_relevant(chunk: dict, item: dict) -> bool:
+    # normalise() folds case with a plain str.lower(), not turkish_lower(). That
+    # is deliberate here and is *not* the naive-casing trap the harness studies.
+    # turkish_lower() matters when a query is matched against a document: the two
+    # are written independently, so surface form and casing diverge. This gate
+    # instead matches a verbatim answer span against the very text it was copied
+    # from, so both operands are the same run of characters. lower() is
+    # context-free per character, so if the span is a substring of the body it
+    # stays one after either fold - the Turkish i-rule cannot change the verdict.
+    # Crucially, validate_gold.py enforces the "span appears verbatim in the
+    # article" invariant with this same normalise(); using a different fold here
+    # would silently desynchronise the evaluator from the check that admits gold.
     if chunk["doc_id"] != item["doc_id"]:
         return False
     return normalise(item["answer_span"]) in normalise(chunk["body"])
