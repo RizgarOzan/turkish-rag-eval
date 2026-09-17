@@ -56,6 +56,39 @@ def test_non_numeric_doc_id_and_missing_question_mark():
     assert len(errors) == 2
 
 
+def test_second_annotation_reusing_the_question_is_allowed():
+    second = dict(GOOD, qid="ayse-001", answer_span="yaklaşık %25'i",
+                  annotator="ayse", second_of="ali-001")
+    errors = check_items({"data/eval/gold.json": [GOOD], "b.json": [second]})
+    assert errors == []
+
+
+def test_second_annotation_must_point_at_the_same_document():
+    second = dict(GOOD, qid="ayse-001", doc_id="999999",
+                  annotator="ayse", second_of="ali-001")
+    errors = check_items({"data/eval/gold.json": [GOOD], "b.json": [second]})
+    assert "different document" in errors[0]
+
+
+def test_second_annotation_must_reuse_the_question_unchanged():
+    second = dict(GOOD, qid="ayse-001", question="Bambaşka bir soru mu bu?",
+                  annotator="ayse", second_of="ali-001")
+    errors = check_items({"data/eval/gold.json": [GOOD], "b.json": [second]})
+    assert "different question" in errors[0]
+
+
+def test_second_of_must_reference_a_known_qid():
+    second = dict(GOOD, qid="ayse-001", annotator="ayse", second_of="does-not-exist")
+    errors = check_items({"b.json": [second]})
+    assert "not a known qid" in errors[0]
+
+
+def test_repeating_a_question_without_second_of_is_still_a_duplicate():
+    other = dict(GOOD, qid="ayse-001", annotator="ayse")
+    errors = check_items({"data/eval/gold.json": [GOOD], "b.json": [other]})
+    assert "same question as" in errors[0]
+
+
 def test_top_level_must_be_a_list():
     assert "JSON list" in check_items({"a.json": GOOD})[0]
 
