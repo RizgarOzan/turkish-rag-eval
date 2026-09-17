@@ -66,6 +66,27 @@ Annotator agreement is the other missing number. Issues labelled
 `second-annotation` list existing questions that need an independent second
 answer span. Write yours *without* looking at the first one.
 
+Reuse the original `question`, `doc_id` and `doc_title` unchanged, add your
+own `answer_span`, and set `"second_of"` to the qid you are re-annotating:
+
+```json
+{
+  "qid": "yourname-q001",
+  "question": "Şeker hastalığı teşhisi konan kişilerin ne kadarında ketoasidoz da bulunuyor?",
+  "doc_id": "710430",
+  "doc_title": "Diyabet",
+  "answer_span": "diyabetik ketoasidoz da gelişmiştir",
+  "annotator": "yourname",
+  "second_of": "q001"
+}
+```
+
+`python src/validate_gold.py` allows the repeated question only when
+`second_of` resolves this way. Once a question has two independent spans,
+`python src/agreement.py` reports token-level F1 between them and, per
+chunking strategy, Cohen's kappa over which chunks each span would mark
+relevant.
+
 ## Code
 
 Bug fixes and new retrievers or embedding models are welcome too. Run
