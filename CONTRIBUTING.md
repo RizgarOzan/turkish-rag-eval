@@ -82,10 +82,11 @@ own `answer_span`, and set `"second_of"` to the qid you are re-annotating:
 ```
 
 `python src/validate_gold.py` allows the repeated question only when
-`second_of` resolves this way. Once a question has two independent spans,
-`python src/agreement.py` reports token-level F1 between them and, per
-chunking strategy, Cohen's kappa over which chunks each span would mark
-relevant.
+`second_of` resolves this way. Once a question has two (or more) independent
+spans, `python src/agreement.py` reports IoU (Jaccard overlap of the spans'
+token sets, averaged over every annotator pair if there are more than two) as
+the headline number, token-level F1 alongside it, and, per chunking strategy,
+Cohen's kappa over which chunks each span would mark relevant.
 
 ## Code
 
