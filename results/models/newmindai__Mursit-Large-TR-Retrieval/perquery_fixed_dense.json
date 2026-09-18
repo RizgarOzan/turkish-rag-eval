@@ -1,0 +1,1046 @@
+[
+  {
+    "question": "Şeker hastalığı teşhisi konan kişilerin ne kadarında ketoasidoz da bulunuyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.6467709541320801,
+    "found": true
+  },
+  {
+    "question": "Çocuklarda tip 1 şeker hastalığı belirtileri ne kadar sürede ortaya çıkar?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.6567121744155884,
+    "found": true
+  },
+  {
+    "question": "Jüvenil diyabet terimi yerine bugün hangi isim kullanılıyor?",
+    "total_relevant": 2,
+    "relevance": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.6715768575668335,
+    "found": true
+  },
+  {
+    "question": "Şeker hastalığı için tarama hangi yaş aralığında öneriliyor?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.803299069404602,
+    "found": true
+  },
+  {
+    "question": "Tip 1 diyabetin kesin bir çözümü var mı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.7454193234443665,
+    "found": true
+  },
+  {
+    "question": "Nefes darlığı hastalığının görülme oranı ülkelere göre ne kadar değişiyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.574165940284729,
+    "found": true
+  },
+  {
+    "question": "Astım yüzünden yılda kaç kişi hayatını kaybediyor?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.75281822681427,
+    "found": true
+  },
+  {
+    "question": "Astımın kalıtımla ilgisi ne kadar güçlü?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.7731902599334717,
+    "found": true
+  },
+  {
+    "question": "Küçük yaşta erkek ve kız çocukları arasında astım sıklığı farkı var mı?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.7344895601272583,
+    "found": true
+  },
+  {
+    "question": "Astımı ilk kez tıbbi olarak kim tarif etti?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.8029459714889526,
+    "found": true
+  },
+  {
+    "question": "Baş ağrısı krizlerinde görme bozukluğu yaşayanların oranı nedir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.5354180335998535,
+    "found": false
+  },
+  {
+    "question": "Migren atağı öncesi habercisi olan belirtiler ne kadar önce başlar?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.7553528547286987,
+    "found": true
+  },
+  {
+    "question": "Migren ağrısı her zaman başın tek yanında mı olur?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.7411828637123108,
+    "found": true
+  },
+  {
+    "question": "Aura evresi ne kadar sürer?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.4802185893058777,
+    "found": true
+  },
+  {
+    "question": "Migrende hangi nörotransmitterin rolü olduğu düşünülüyor?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.7318154573440552,
+    "found": true
+  },
+  {
+    "question": "Nezle benzeri hastalık kaç günde kendiliğinden geçer?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.5456275939941406,
+    "found": true
+  },
+  {
+    "question": "1918 salgını ilk nerede görüldü?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.6992743015289307,
+    "found": true
+  },
+  {
+    "question": "Böbrekte taş oluşan biri tekrar taş düşürme riskiyle karşılaşır mı?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.7361655235290527,
+    "found": true
+  },
+  {
+    "question": "Böbrek taşı ağrısı ne kadar sürer?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.6862571239471436,
+    "found": true
+  },
+  {
+    "question": "Dünya nüfusunun ne kadarı hayatı boyunca böbrek taşı yaşıyor?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.6596626043319702,
+    "found": true
+  },
+  {
+    "question": "İdrarda sitrat düşüklüğü hangi eşikle tanımlanır?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "top_score": 0.5449652671813965,
+    "found": true
+  },
+  {
+    "question": "Unutkanlık hastalığında genetik sebeplerin payı ne kadar?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.6656842231750488,
+    "found": true
+  },
+  {
+    "question": "Alzheimer hastalarının ne kadarında sanrı görülür?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.6946115493774414,
+    "found": true
+  },
+  {
+    "question": "Damardan giren bir maddeye karşı ağır alerjik tepki ne kadar çabuk başlar?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "top_score": 0.5746623873710632,
+    "found": true
+  },
+  {
+    "question": "Penisiline bağlı ağır alerji ne sıklıkla görülüyor?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.571427047252655,
+    "found": true
+  },
+  {
+    "question": "Anafilakside nabız her zaman hızlanır mı?",
+    "total_relevant": 2,
+    "relevance": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.7801175117492676,
+    "found": true
+  },
+  {
+    "question": "Sosyal kaygı sorunu olanlarda belirtiler ne zaman başlıyor?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.7423323392868042,
+    "found": true
+  },
+  {
+    "question": "Travma sonrası stres bozukluğu her yıl kaç kişiyi etkiliyor?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.6701697111129761,
+    "found": true
+  },
+  {
+    "question": "OKB kaygı bozuklukları arasında mı sayılıyor?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.8214899897575378,
+    "found": true
+  },
+  {
+    "question": "Apandis iltihabı insanların ne kadarında görülüyor?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.819719672203064,
+    "found": true
+  },
+  {
+    "question": "Apandis ameliyatında kesi ne kadar büyüklükte yapılıyor?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.7382895946502686,
+    "found": true
+  },
+  {
+    "question": "Damar sertliğinde tıkanmaların çoğu ne kadar daralmada meydana gelir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.631301760673523,
+    "found": true
+  },
+  {
+    "question": "İki uçlu duygudurum bozukluğunda kalıtımın payı ne kadar?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.5766615271568298,
+    "found": true
+  },
+  {
+    "question": "Bacak damarında pıhtı kollarda da olur mu?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.6646194458007812,
+    "found": true
+  },
+  {
+    "question": "Damar pıhtısı ne zaman kronik sayılır?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.5070651769638062,
+    "found": false
+  },
+  {
+    "question": "Cilt iltihabı ruh sağlığını etkiliyor mu?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.4523637294769287,
+    "found": true
+  },
+  {
+    "question": "Sara hastalığında tedaviye yanıt oranı nedir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.4157624840736389,
+    "found": false
+  },
+  {
+    "question": "Nöbetleri duran hastalarda ilaç ne kadar sürdürülür?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.7295901775360107,
+    "found": true
+  },
+  {
+    "question": "Hangi vitamin eksikliği nöbetlere yol açabiliyor?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.5494802594184875,
+    "found": true
+  },
+  {
+    "question": "Yaygın kas ağrısı sendromunda kaç hassas nokta tanımlanmış?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.5075817108154297,
+    "found": true
+  },
+  {
+    "question": "Romatizma hastalarında fibromiyalji ne sıklıkla eşlik ediyor?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.7570122480392456,
+    "found": true
+  },
+  {
+    "question": "Göz içi basıncı kaça kadar normal kabul edilir?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.6337039470672607,
+    "found": true
+  },
+  {
+    "question": "Ürik asit birikimi hastalığının ana sebebi nedir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.6305854320526123,
+    "found": true
+  },
+  {
+    "question": "Gut hastalarında metabolik sendrom ne kadar sık görülür?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.7346755266189575,
+    "found": true
+  },
+  {
+    "question": "Sarılık virüsü bulaştıktan ne kadar sonra belirti verir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.5507642030715942,
+    "found": true
+  },
+  {
+    "question": "Hepatit C kaç kişide ağır belirti yapıyor?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.7690296173095703,
+    "found": true
+  },
+  {
+    "question": "Hepatit C taşıyanlarda karaciğer sertleşmesi ne kadar sürede gelişir?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.6026461124420166,
+    "found": true
+  },
+  {
+    "question": "Tiroit az çalıştığında hormon değerleri nasıl çıkar?",
+    "total_relevant": 2,
+    "relevance": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.6882144212722778,
+    "found": true
+  },
+  {
+    "question": "Kalp krizi ağrısı ne kadar sürer ve pozisyonla değişir mi?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.5907458066940308,
+    "found": true
+  },
+  {
+    "question": "Sigaranın kalp damar hastalıklarındaki payı nedir?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.6775978803634644,
+    "found": true
+  },
+  {
+    "question": "Kan nakli hangi hemoglobin değerinin altında gerekir?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.6254467964172363,
+    "found": true
+  },
+  {
+    "question": "Göz merceği ameliyatı ilk kim tarafından tanımlandı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.6186659336090088,
+    "found": true
+  },
+  {
+    "question": "Sigara dumanında kaç kimyasal madde bulunuyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.5008710622787476,
+    "found": true
+  },
+  {
+    "question": "Beyin zarı iltihabının en sık belirtisi nedir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.5297979712486267,
+    "found": false
+  },
+  {
+    "question": "Yetişkinlerde bakteriyel menenjite en çok hangi mikroplar yol açıyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.7865574359893799,
+    "found": true
+  },
+  {
+    "question": "MS hastalığı en çok hangi yaş grubunu etkiliyor?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.7016137838363647,
+    "found": true
+  },
+  {
+    "question": "Aşırı kiloda genetik faktörlerin rolü ne kadar?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.7189950942993164,
+    "found": true
+  },
+  {
+    "question": "Emzirmeye doğumdan ne kadar sonra başlanmalı?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 0.5418468713760376,
+    "found": true
+  }
+]

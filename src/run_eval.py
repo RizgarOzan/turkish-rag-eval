@@ -15,12 +15,11 @@ import time
 from chunking import STRATEGIES
 from gold import ROOT, load_gold, normalise
 from metrics import ndcg_at_k, precision_at_k, recall_at_k, reciprocal_rank
+from models import DEFAULT_MODEL, prefixes_for, results_dir
 from retrieval import DenseRetriever, HybridRetriever, SparseRetriever
 
 CORPUS = ROOT / "data" / "raw" / "corpus.json"
-RESULTS = ROOT / "results"
 K_VALUES = (1, 3, 5, 10)
-DEFAULT_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 
 
 def is_relevant(chunk: dict, item: dict) -> bool:
@@ -100,6 +99,8 @@ def main() -> None:
 
     from sentence_transformers import SentenceTransformer
     model = SentenceTransformer(args.model)
+    query_prefix, doc_prefix = prefixes_for(args.model)
+    results = results_dir(args.model)
 
     rows = []
     for strategy_name, chunker in STRATEGIES.items():
@@ -108,7 +109,10 @@ def main() -> None:
         print(f"[{strategy_name}] {len(chunks)} parca, "
               f"ortalama {statistics.mean(sizes):.0f} karakter")
 
-        dense = DenseRetriever(chunks, model)
+        start = time.perf_counter()
+        dense = DenseRetriever(chunks, model, query_prefix, doc_prefix)
+        index_seconds = time.perf_counter() - start
+        print(f"    dense indeks: {index_seconds:.0f} s")
         sparse_stem = SparseRetriever(chunks, stem_length=5)
         sparse_raw = SparseRetriever(chunks, stem_length=None)
         variants = {
@@ -122,19 +126,21 @@ def main() -> None:
             summary["chunking"] = strategy_name
             summary["retriever"] = variant_name
             summary["chunks"] = len(chunks)
+            summary["model"] = args.model
+            summary["dense_index_seconds"] = index_seconds
             rows.append(summary)
             print(f"    {variant_name:12s} "
                   f"R@5={summary['recall@5']:.3f} "
                   f"nDCG@10={summary['ndcg@10']:.3f} "
                   f"MRR={summary['mrr']:.3f} "
                   f"P95={summary['latency_ms_p95']:.0f}ms")
-            RESULTS.mkdir(exist_ok=True)
-            (RESULTS / f"perquery_{strategy_name}_{variant_name}.json").write_text(
+            results.mkdir(parents=True, exist_ok=True)
+            (results / f"perquery_{strategy_name}_{variant_name}.json").write_text(
                 json.dumps(per_query, ensure_ascii=False, indent=2),
                 encoding="utf-8")
 
     rows.sort(key=lambda r: -r["ndcg@10"])
-    (RESULTS / "summary.json").write_text(
+    (results / "summary.json").write_text(
         json.dumps(rows, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"\nen iyi: {rows[0]['chunking']} + {rows[0]['retriever']} "
           f"(nDCG@10={rows[0]['ndcg@10']:.3f})")

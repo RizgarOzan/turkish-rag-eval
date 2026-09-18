@@ -18,11 +18,13 @@ RRF_K = 60
 
 
 class DenseRetriever:
-    def __init__(self, chunks: list[dict], model):
+    def __init__(self, chunks: list[dict], model, query_prefix: str = "",
+                 doc_prefix: str = ""):
         self.chunks = chunks
         self.model = model
+        self.query_prefix = query_prefix
         embeddings = model.encode(
-            [c["embed_text"] for c in chunks],
+            [doc_prefix + c["embed_text"] for c in chunks],
             batch_size=32,
             convert_to_numpy=True,
             normalize_embeddings=True,
@@ -32,7 +34,7 @@ class DenseRetriever:
 
     def search(self, query: str, k: int) -> list[tuple[int, float]]:
         vector = self.model.encode(
-            [query], convert_to_numpy=True, normalize_embeddings=True,
+            [self.query_prefix + query], convert_to_numpy=True, normalize_embeddings=True,
             show_progress_bar=False,
         )[0].astype(np.float32)
         scores = self.matrix @ vector  # both normalised -> cosine

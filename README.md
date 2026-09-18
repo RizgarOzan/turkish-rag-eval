@@ -6,13 +6,19 @@ language?**
 
 Three chunking strategies × four retrievers = 12 configurations, measured on a
 hand-labelled gold set of 58 Turkish health questions over 54 Wikipedia
-articles (1.09 M characters). Every number below is reproducible with
-`python src/run_eval.py`.
+articles (1.09 M characters), then repeated for six embedding models. Every
+number below is reproducible with `python src/run_eval.py [--model <name>]`.
+
+**Short answer:** Turkish stemming is the cheapest win for BM25, and the choice
+of embedding model matters more than anything else. A Turkish retrieval model
+reaches nDCG@10 0.781, against 0.494 for stemmed BM25 and 0.501 for the small
+multilingual default ([Embedding models](#embedding-models)).
 
 ## Results
 
-`nDCG@10`, `Recall@5` and `MRR` over 58 queries. Latency is per query on CPU
-(no GPU anywhere in this project).
+`nDCG@10`, `Recall@5` and `MRR` over 58 queries, with the default embedding
+model `paraphrase-multilingual-MiniLM-L12-v2`. Latency is per query on CPU (no
+GPU anywhere in this project).
 
 | Chunking | Retriever | nDCG@10 | R@5 | MRR | P95 |
 |---|---|---|---|---|---|
@@ -46,15 +52,59 @@ goes fixed → sentence → hierarchical. A bare paragraph loses the context tha
 told you what it was about; the heading path puts it back. BM25 benefits far
 less, because the section words were often already in the body.
 
-**3. Hybrid beats both parts, everywhere.** RRF fusion wins in all three
+**3. With this model, hybrid beats both parts, everywhere.** RRF fusion wins in all three
 chunking regimes, and the best single config (hierarchical + hybrid, 0.607) is
 21% above the best non-hybrid one (hierarchical + dense, 0.501). Dense and
 sparse fail on different queries, so fusing ranks recovers more than either.
+This does not carry over to stronger embedding models (see below).
 
 **4. Latency is not the constraint at this scale.** BM25 answers in 4–6 ms
 P95, dense in 19–25 ms, hybrid in 25–31 ms — the hybrid's extra cost is the
 dense leg, not the fusion. On a 2 000-chunk corpus, retrieval quality is worth
 far more than the milliseconds.
+
+## Embedding models
+
+The same harness with five more models, measured 2026-09-18 on one 16-thread
+CPU (8 torch threads). Dense `nDCG@10` per chunking strategy, the hybrid
+(dense + stemmed BM25, RRF) on hierarchical chunks, and the cost: time to embed
+all three chunkings (5 643 chunks) and per-query P95 on hierarchical chunks.
+Stemmed BM25 alone scores 0.476 / 0.510 / 0.494.
+
+| Model | Params | Turkish-only | Dense fixed | Dense sentence | Dense hierarchical | Hybrid hierarchical | Embed corpus | Query P95 |
+|---|---|---|---|---|---|---|---|---|
+| paraphrase-multilingual-MiniLM-L12-v2 (default) | 118 M | no | 0.446 | 0.461 | 0.501 | 0.607 | 2 min | 23 ms |
+| [emrecan/bert-base-turkish-cased-mean-nli-stsb-tr](https://huggingface.co/emrecan/bert-base-turkish-cased-mean-nli-stsb-tr) | 111 M | yes | 0.408 | 0.431 | 0.497 | 0.654 | 4 min | 43 ms |
+| [intfloat/multilingual-e5-small](https://huggingface.co/intfloat/multilingual-e5-small) | 118 M | no | 0.654 | 0.644 | 0.642 | 0.639 | 3 min | 22 ms |
+| [intfloat/multilingual-e5-base](https://huggingface.co/intfloat/multilingual-e5-base) | 278 M | no | 0.631 | 0.677 | 0.668 | 0.648 | 10 min | 49 ms |
+| [BAAI/bge-m3](https://huggingface.co/BAAI/bge-m3) | 568 M | no | 0.766 | 0.767 | — | — | > 45 min | — |
+| **[newmindai/Mursit-Large-TR-Retrieval](https://huggingface.co/newmindai/Mursit-Large-TR-Retrieval)** | 404 M | yes | **0.746** | **0.740** | **0.781** | 0.673 | 35 min | 214 ms |
+
+The two Turkish-only models are the most-downloaded Turkish entries in the
+Hugging Face `sentence-similarity` category. `bge-m3` was stopped after 45
+minutes, before the hierarchical chunks; its two numbers come from that partial
+run. `google/embeddinggemma-300m` is gated behind a licence click and was not
+run. Per-query results for every completed model are in `results/models/`.
+
+**1. The model was the problem, not dense retrieval.** Every model trained for
+retrieval (E5, bge-m3, Mursit) beats stemmed BM25 on its own, on every chunking.
+A small E5 model the same size as the default goes from 0.501 to 0.642 with no
+other change. It is as fast (22 ms) and embeds the corpus in 3 minutes, so it is
+the obvious replacement for the default on a CPU.
+
+**2. Hybrid only pays for a weak dense model.** RRF gives BM25's ranking the same
+weight as the dense one. That lifts MiniLM (+0.106), but it pulls a strong model
+down: Mursit drops from 0.781 to 0.673 and e5-base from 0.668 to 0.648. Whether
+to fuse depends on the dense model, so it should be measured and not assumed.
+
+**3. "Turkish-only" is not enough.** The emrecan model was trained for sentence
+similarity (NLI + STS-b) and truncates input at 75 tokens, which cuts 83–99 % of
+chunks short. As a dense retriever it is no better than the default. Mursit
+was trained for retrieval and is the best model here, at about 10× the query latency
+of e5-small and 35 minutes to embed the corpus on a CPU.
+
+E5 models expect `query: ` / `passage: ` in front of every input; `src/models.py`
+adds these, and a run without them is not a fair E5 number.
 
 ## What did not work
 
@@ -66,10 +116,12 @@ edges ahead once hierarchical chunking gives it heading context, and even
 then barely (0.501 vs 0.494).
 
 This is worth stating plainly because the default assumption — *embeddings
-beat keywords* — does not hold here. A small distilled multilingual model
+beat keywords* — does not hold for this model. A small distilled multilingual model
 carries limited Turkish capacity. A Turkish-specific or larger multilingual
 embedding model is the obvious next experiment, and the harness is built to
-swap it with `--model`.
+swap it with `--model`. That experiment is now in
+[Embedding models](#embedding-models): with a retrieval-trained model, dense
+retrieval wins clearly.
 
 **Fixed-size chunking lost on every retriever.** It is the most common default
 and the worst performer in all four columns.
@@ -126,7 +178,8 @@ python src/run_abstain.py         # coverage / accuracy curve for the best confi
 ```
 
 `python src/run_eval.py --model <name>` swaps the embedding model; any
-sentence-transformers model works. `run_abstain.py` always uses the default
+sentence-transformers model works. Results for a non-default model go to
+`results/models/<org>__<name>/`, so the main table above is never overwritten. `run_abstain.py` always uses the default
 model, so pass nothing there.
 
 The metric implementations have their own tests:
@@ -177,8 +230,9 @@ agreement is measured. This section is that declaration.
   read as noise, not as a ranking.
 - **One annotator, no second pass.** Gold labels are single-annotated; there is
   no inter-annotator agreement figure.
-- **One embedding model tested.** The dense results characterise that model,
-  not dense retrieval in general.
+- **Six embedding models, one corpus.** The model comparison uses the same 58
+  health questions; `bge-m3` is a partial run and EmbeddingGemma is missing.
+  `run_abstain.py` still uses only the default model.
 - **Encyclopaedic text, not clinical text.** Wikipedia prose differs from
   clinical notes in vocabulary, structure and abbreviation density. Nothing
   here transfers to a clinical setting without re-measurement.
@@ -190,6 +244,14 @@ agreement is measured. This section is that declaration.
 - **The embedding model is pinned by name, not by revision**, and ties in the
   sparse rankings are broken by `numpy.argsort`, which is not stable. Neither
   moves a result by more than rounding, but neither is bit-reproducible either.
+
+## Contribute
+
+The first two limits above shrink with every contributor. Adding questions
+needs no ML background — pick a Turkish Wikipedia article, write 5–10
+paraphrased questions, and open a pull request with one JSON file. A validator
+checks each file against Wikipedia in CI. See [CONTRIBUTING.md](CONTRIBUTING.md)
+(Türkçe açıklama dahil) and the [open issues](https://github.com/RizgarOzan/turkish-rag-eval/issues).
 
 ## Notes on Turkish
 
