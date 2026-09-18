@@ -1,0 +1,86 @@
+[
+  {
+    "qid": "llm-tarih-001",
+    "question": "Savaştan dokuz yıl sonra Selçuklular Anadolu'da ne büyüklükte bir toprağı denetimleri altına almıştı?",
+    "doc_id": "26808",
+    "doc_title": "Malazgirt Meydan Muharebesi",
+    "answer_span": "1080 yılına gelindiğinde Selçuklu Türkleri 78.000 kilometrekarelik bir alanı ele geçirmişti",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "1080 yılına gelindiğinde Selçuklu Türkleri 78.000 kilometrekarelik bir alanı ele geçirmişti"
+    },
+    "review": "agreed"
+  },
+  {
+    "qid": "llm-tarih-002",
+    "question": "Bizanslı askerlerin taşıdığı uzun saplı silahların ağacı hangi yöreden geliyordu?",
+    "doc_id": "26808",
+    "doc_title": "Malazgirt Meydan Muharebesi",
+    "answer_span": "ordu savaşta kullanılacak mızraklarını Hınıs ve çevresinde yetişen ağaçlardan imal etmiştir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "ordu savaşta kullanılacak mızraklarını Hınıs ve çevresinde yetişen ağaçlardan imal etmiştir."
+    },
+    "review": "agreed"
+  },
+  {
+    "qid": "llm-tarih-003",
+    "question": "Selçuklu hükümdarının sahte geri çekilmeye dayanan savaş planı hangi adla anılır?",
+    "doc_id": "26808",
+    "doc_title": "Malazgirt Meydan Muharebesi",
+    "answer_span": "Alp Arslan ise \"Kurt Kapanı Taktiği\" konusunda komutanlarıyla uzlaşmıştı",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Alp Arslan ise \"Kurt Kapanı Taktiği\" konusunda komutanlarıyla uzlaşmıştı."
+    },
+    "review": "agreed"
+  },
+  {
+    "qid": "llm-tarih-004",
+    "question": "Esir alınan imparator yakalandığında vücudunun neresinden yaralanmıştı?",
+    "doc_id": "26808",
+    "doc_title": "Malazgirt Meydan Muharebesi",
+    "answer_span": "İmparator omzundan yaralı olarak ele geçirildi",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "İmparator omzundan yaralı olarak ele geçirildi."
+    },
+    "review": "agreed"
+  },
+  {
+    "qid": "llm-tarih-005",
+    "question": "Bizans imparatoru topladığı orduyla başkentten hangi gün ayrıldı?",
+    "doc_id": "26808",
+    "doc_title": "Malazgirt Meydan Muharebesi",
+    "answer_span": "Romen Diyojen de büyük bir ordu kurup 13 Mart 1071'de Konstantinopolis'ten (bugünkü İstanbul) ayrıldı",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Romen Diyojen de büyük bir ordu kurup 13 Mart 1071'de Konstantinopolis'ten (bugünkü İstanbul) ayrıldı."
+    },
+    "review": "agreed"
+  },
+  {
+    "qid": "llm-tarih-006",
+    "question": "Savaşa Kürt birliklerinin katıldığını yazan en eski kaynak olaydan ne kadar zaman sonra kaleme alınmıştır?",
+    "doc_id": "26808",
+    "doc_title": "Malazgirt Meydan Muharebesi",
+    "answer_span": "adlı eseri muharebeden yaklaşık 150 yıl sonra yazılmıştır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Malazgirt Muharebesine Kürtlerin katıldığını belirten en eski kaynak olan Sıbt İbnü'l-Cevzî'nin “Mir'âtü'z-Zaman Fi Tarihi'l-Ayan” adlı eseri muharebeden yaklaşık 150 yıl sonra yazılmıştır."
+    },
+    "review": "agreed"
+  }
+]

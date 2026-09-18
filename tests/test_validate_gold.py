@@ -86,6 +86,26 @@ def test_load_gold_concatenates_files(tmp_path):
     assert [i["qid"] for i in load_gold([a, b])] == ["ali-001", "x"]
 
 
+def test_load_gold_leaves_out_llm_drafts_unless_asked(tmp_path):
+    draft = dict(GOOD, qid="llm-001", source="llm-draft", review="agreed")
+    path = tmp_path / "a.json"
+    path.write_text(json.dumps([GOOD, draft]), encoding="utf-8")
+    assert [i["qid"] for i in load_gold([path])] == ["ali-001"]
+    assert [i["qid"] for i in load_gold([path], include_drafts=True)] == ["ali-001", "llm-001"]
+
+
+def test_load_gold_never_loads_items_waiting_for_a_human(tmp_path):
+    disputed = dict(GOOD, qid="llm-002", source="llm-draft", review="needs-human")
+    path = tmp_path / "a.json"
+    path.write_text(json.dumps([disputed]), encoding="utf-8")
+    assert load_gold([path], include_drafts=True) == []
+
+
+def test_online_checks_the_second_annotation_span_too():
+    second = dict(GOOD, second_annotation={"annotator": "llm-2", "answer_span": "yok böyle bir cümle"})
+    errors = check_online([second], fetch=lambda _: ARTICLE, delay=0)
+    assert len(errors) == 1 and "second_annotation" in errors[0]
+
 def test_shipped_gold_set_passes():
     from validate_gold import main
     import sys

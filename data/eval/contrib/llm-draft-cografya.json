@@ -1,0 +1,86 @@
+[
+  {
+    "qid": "llm-cografya-001",
+    "question": "UNESCO'nun koruma listesine bölgenin girişi hangi yıla dayanır?",
+    "doc_id": "5509",
+    "doc_title": "Kapadokya",
+    "answer_span": "Göreme Millî Parkı ve Kapadokya adıyla 1985'te UNESCO tarafından Dünya Mirası ilan edilmiştir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Göreme Millî Parkı ve Kapadokya adıyla 1985'te UNESCO tarafından Dünya Mirası ilan edilmiştir."
+    },
+    "review": "agreed"
+  },
+  {
+    "qid": "llm-cografya-002",
+    "question": "Bölgenin adına rastlanan en eski yazılı belgeler hangi yüzyıldan ve hangi halktan kalmadır?",
+    "doc_id": "5509",
+    "doc_title": "Kapadokya",
+    "answer_span": "Kapadokya adı en eski M.Ö. 6. yüzyılda Pers kaynaklarında görülür",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Kapadokya adı en eski M.Ö. 6. yüzyılda Pers kaynaklarında görülür."
+    },
+    "review": "agreed"
+  },
+  {
+    "qid": "llm-cografya-003",
+    "question": "Bölgeye yakıştırılan 'güzel atların memleketi' benzetmesinin aslında sonradan icat edildiğini kim söyledi?",
+    "doc_id": "5509",
+    "doc_title": "Kapadokya",
+    "answer_span": "Fotoğraf Sanatçısı Ozan Sağdıç, 12 Eylül döneminde generallerin Kapadokya ismini Yunanca olduğu için yasaklayacaklarını öğrenince bu deyimi uydurduğunu açıklamıştır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Fotoğraf Sanatçısı Ozan Sağdıç, 12 Eylül döneminde generallerin Kapadokya ismini Yunanca olduğu için yasaklayacaklarını öğrenince bu deyimi uydurduğunu açıklamıştır."
+    },
+    "review": "agreed"
+  },
+  {
+    "qid": "llm-cografya-004",
+    "question": "Anadolu'daki bu yerel krallık Roma yönetimine doğrudan hangi yıl bağlandı?",
+    "doc_id": "5509",
+    "doc_title": "Kapadokya",
+    "answer_span": "MS 17 yılında son Kapadokya kralı ölünce bölge Roma'nın bir eyaleti olur",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "MS 17 yılında son Kapadokya kralı ölünce bölge Roma'nın bir eyaleti olur."
+    },
+    "review": "agreed"
+  },
+  {
+    "qid": "llm-cografya-005",
+    "question": "Peribacalarının tepesindeki şapka biçimli kısımlar hangi kaya türündendir?",
+    "doc_id": "5509",
+    "doc_title": "Kapadokya",
+    "answer_span": "Böylece sert bazalt kayasından şapkaları bulunan koniler oluştu",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "sert bazalt kayasından şapkaları bulunan koniler oluştu"
+    },
+    "review": "agreed"
+  },
+  {
+    "qid": "llm-cografya-006",
+    "question": "Patent kurumunun 2020 kararına göre bölgenin kalbi sayılan yerleşim neresidir?",
+    "doc_id": "5509",
+    "doc_title": "Kapadokya",
+    "answer_span": "Kapadokya'nın merkezinin Ortahisar kasabası olduğu resmen tescil edilmiştir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "2020 yılında Türk Patent ve Marka Kurumu tarafından Kapadokya'nın merkezinin Ortahisar kasabası olduğu resmen tescil edilmiştir."
+    },
+    "review": "agreed"
+  }
+]

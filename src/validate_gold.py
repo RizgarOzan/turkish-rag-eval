@@ -107,6 +107,9 @@ def check_online(items: list[dict], fetch=fetch_article, delay: float = 1.0) -> 
             errors.append(f"{where}: article is too short to be in the corpus")
         if normalise(item["answer_span"]) not in normalise(article["text"]):
             errors.append(f"{where}: answer_span not found verbatim in the article")
+        second = item.get("second_annotation")
+        if second and normalise(second["answer_span"]) not in normalise(article["text"]):
+            errors.append(f"{where}: second_annotation span not found verbatim in the article")
     return errors
 
 

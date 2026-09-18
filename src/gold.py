@@ -18,10 +18,19 @@ def gold_files() -> list[Path]:
     return [GOLD, *sorted(CONTRIB.glob("*.json"))]
 
 
-def load_gold(paths: list[Path] | None = None) -> list[dict]:
+def load_gold(paths: list[Path] | None = None, include_drafts: bool = False) -> list[dict]:
+    """LLM-drafted questions (``"source": "llm-draft"``) stay out unless asked
+    for, so the published numbers keep coming from the hand-labelled set. A
+    draft whose two annotators disagreed (``"review": "needs-human"``) never
+    loads: its gold span is not settled yet."""
     items = []
     for path in paths or gold_files():
-        items.extend(json.loads(path.read_text(encoding="utf-8")))
+        for item in json.loads(path.read_text(encoding="utf-8")):
+            if item.get("review") == "needs-human":
+                continue
+            if item.get("source") == "llm-draft" and not include_drafts:
+                continue
+            items.append(item)
     return items
 
 

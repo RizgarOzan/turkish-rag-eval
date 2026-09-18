@@ -1,0 +1,86 @@
+[
+  {
+    "qid": "llm-bilgisayar-001",
+    "question": "Paketlenmiş ilk tam dağıtımın arkasındaki geliştirici kimdir?",
+    "doc_id": "24",
+    "doc_title": "Linux",
+    "answer_span": "1993 Yılında Patrick Volkerding, çeşitli ağ araçları, grafik arabirimi ve diğer araçları bir arada sunduğu bir GNU/Linux projesi başlatmıştır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "1993 Yılında Patrick Volkerding, çeşitli ağ araçları, grafik arabirimi ve diğer araçları bir arada sunduğu bir GNU/Linux projesi başlatmıştır. Slackware adını verdiği proje ilk GNU/Linux dağıtımıdır."
+    },
+    "review": "agreed"
+  },
+  {
+    "qid": "llm-bilgisayar-002",
+    "question": "Maskot olarak kullanılan pengueni kim çizdi?",
+    "doc_id": "24",
+    "doc_title": "Linux",
+    "answer_span": "Larry Ewing bugün de kullanılan penguen çizimi ile katılmış ve çizimi seçilmiştir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Larry Ewing bugün de kullanılan penguen çizimi ile katılmış ve çizimi seçilmiştir."
+    },
+    "review": "agreed"
+  },
+  {
+    "qid": "llm-bilgisayar-003",
+    "question": "Dünyanın en hızlı 500 süperbilgisayarının ne kadarı bu işletim sistemini çalıştırıyor?",
+    "doc_id": "24",
+    "doc_title": "Linux",
+    "answer_span": "en iyi 500 süperbilgisayar sistemin tamamı (%100) Linux kullanmaktadır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Kasım 2017 tarihinden bugüne en iyi 500 süperbilgisayar sistemin tamamı (%100) Linux kullanmaktadır."
+    },
+    "review": "agreed"
+  },
+  {
+    "qid": "llm-bilgisayar-004",
+    "question": "Torvalds çekirdeğin lisansını neden GPL'in yeni sürümüne taşımak istemiyor?",
+    "doc_id": "24",
+    "doc_title": "Linux",
+    "answer_span": "yeni lisansta yer alan ve dijital haklar yönetiminde yazılım kullanımını yasaklayan bazı hükümleri sevmemektedir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Torvalds özellikle yeni lisansta yer alan ve dijital haklar yönetiminde yazılım kullanımını yasaklayan bazı hükümleri sevmemektedir ve aynı zamanda sayısı binleri bulan bütün telif hakkı sahiplerinden izin almak kullanışsız olacaktır."
+    },
+    "review": "agreed"
+  },
+  {
+    "qid": "llm-bilgisayar-005",
+    "question": "Kişisel bilgisayar kullanıcıları arasında bu işletim sisteminin yaygınlığı yüzde kaçtır?",
+    "doc_id": "24",
+    "doc_title": "Linux",
+    "answer_span": "masaüstü, dizüstü ve netbook bilgisayar pazarında yaklaşık olarak %2 pazar payına sahiptir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Linux çekirdeği kullanan sistemler masaüstü, dizüstü ve netbook bilgisayar pazarında yaklaşık olarak %2 pazar payına sahiptir."
+    },
+    "review": "agreed"
+  },
+  {
+    "qid": "llm-bilgisayar-006",
+    "question": "Büyük bir oyun mağazası bu sisteme ne zaman resmî destek getirdi?",
+    "doc_id": "24",
+    "doc_title": "Linux",
+    "answer_span": "2012 yılında Steam oyun platformunun Linux İstemcisi sunmasıyla birlikte bazı popüler oyunların Linux sürümleri üretilmeye başlanmıştır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "2012 yılında Steam oyun platformunun Linux İstemcisi sunmasıyla birlikte bazı popüler oyunların Linux sürümleri üretilmeye başlanmıştır."
+    },
+    "review": "agreed"
+  }
+]

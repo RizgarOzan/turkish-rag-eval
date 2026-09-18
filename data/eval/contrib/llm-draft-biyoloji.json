@@ -1,0 +1,86 @@
+[
+  {
+    "qid": "llm-biyoloji-001",
+    "question": "Bir karaciğer hücresi kaç tane enerji organeli barındırabilir?",
+    "doc_id": "30004",
+    "doc_title": "Mitokondri",
+    "answer_span": "Bir karaciğer hücresinde sayıları 2500 civarına ulaşabilir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Bir karaciğer hücresinde sayıları 2500 civarına ulaşabilir."
+    },
+    "review": "agreed"
+  },
+  {
+    "qid": "llm-biyoloji-002",
+    "question": "Organelin kendi genetik materyali kaç baz çifti uzunluğundadır?",
+    "doc_id": "30004",
+    "doc_title": "Mitokondri",
+    "answer_span": "daireseldir ve 16,569 baz çiftinden oluşur",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Mitokondriyal DNA bakterilerde olduğu gibi daireseldir ve 16,569 baz çiftinden oluşur."
+    },
+    "review": "agreed"
+  },
+  {
+    "qid": "llm-biyoloji-003",
+    "question": "Organele bugün kullandığımız adı ilk kim verdi?",
+    "doc_id": "30004",
+    "doc_title": "Mitokondri",
+    "answer_span": "1898 yılında Carl Benda tarafından kullanılarak literatüre geçti",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "\"Mitokondri\" terimi ise 1898 yılında Carl Benda tarafından kullanılarak literatüre geçti."
+    },
+    "review": "agreed"
+  },
+  {
+    "qid": "llm-biyoloji-004",
+    "question": "'Hücrenin enerji santrali' benzetmesini ilk kim ortaya attı?",
+    "doc_id": "30004",
+    "doc_title": "Mitokondri",
+    "answer_span": "Philip Siekevitz tarafından 1957'de ortaya çıkmıştır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Popüler bir terim olan \"hücrenin güçevi\", Philip Siekevitz tarafından 1957'de ortaya çıkmıştır."
+    },
+    "review": "agreed"
+  },
+  {
+    "qid": "llm-biyoloji-005",
+    "question": "Organelin iç zarının içeri doğru yaptığı kıvrımlara ne ad verilir?",
+    "doc_id": "30004",
+    "doc_title": "Mitokondri",
+    "answer_span": "İç zar mitokondri matriksine doğru girintiler yaparak krista denilen yapıları oluşturur",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "İç zar mitokondri matriksine doğru girintiler yaparak krista denilen yapıları oluşturur."
+    },
+    "review": "agreed"
+  },
+  {
+    "qid": "llm-biyoloji-006",
+    "question": "Avrupa'da kaç kişi bu organelin DNA'sından kaynaklanan hastalıklarla yaşıyor?",
+    "doc_id": "30004",
+    "doc_title": "Mitokondri",
+    "answer_span": "bu sayı yaklaşık 400.000 insanın mitokondriyal sitopati ile yaşadığını göstermektedir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Avrupa'da görülme sıklığının 1:2000 olduğu bilinmektedir ki bu sayı yaklaşık 400.000 insanın mitokondriyal sitopati ile yaşadığını göstermektedir."
+    },
+    "review": "agreed"
+  }
+]

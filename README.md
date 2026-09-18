@@ -149,6 +149,28 @@ bulunuyor?" against text reading "yaklaşık %25'i, diyabet teşhisi
 konulduğunda..."). Lexically copied questions would hand BM25 an unearned
 advantage and make the dense/sparse comparison worthless.
 
+## Gold set
+
+| Files | Questions | Labelled by | In the results above |
+|---|---|---|---|
+| `data/eval/gold.json` (health) | 58 | one human | yes |
+| `data/eval/contrib/llm-draft-*.json` (history, geography, astronomy, biology, computing) | 30 | two independent LLM passes | not yet |
+
+The set is growing toward 300 questions across more domains. Questions a
+model drafted are marked `"source": "llm-draft"`. A second model then picked
+its own answer span for each one without seeing the first label
+(`second_annotation`). Two spans agree when one contains the other or their
+token F1 is at least 0.5; agreed items get `"review": "agreed"`, the rest get
+`"needs-human"` and are never loaded. First batch: **30 of 30 agreed**, 16
+with identical spans, mean token F1 0.88. Two LLMs tend to pick the same
+sentence, so read this as a sanity check rather than as human agreement.
+**Human-verified share of the drafts: 0%.**
+
+Drafts stay out of every number above until a re-run says otherwise:
+`load_gold()` skips them unless called with `include_drafts=True`. Synthetic
+test questions are common practice as long as they are declared and their
+agreement is measured. This section is that declaration.
+
 ## Limits
 
 - **58 queries is a small set.** Differences under roughly 0.05 nDCG should be
