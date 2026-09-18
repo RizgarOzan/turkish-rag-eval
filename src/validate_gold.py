@@ -5,6 +5,12 @@ qids and questions are unique across all files, contributed items name their
 annotator, and each question is a paraphrase rather than a copy of its answer
 span - a copied question hands BM25 an unearned win (see README).
 
+A second annotation (see CONTRIBUTING.md) is the one deliberate exception to
+"questions are unique": it reuses the original question word for word and
+sets ``second_of`` to the original qid, so the duplicate-question check waves
+it through only when ``second_of`` resolves to an item with that exact
+question and the same document.
+
 ``--online FILE ...`` additionally fetches each article those files point at
 and checks that the page id, the title and the answer span all match
 Turkish Wikipedia. CI passes only the files a pull request adds, so the
@@ -35,6 +41,13 @@ def overlap(question: str, span: str) -> float:
 
 def check_items(files: dict[str, list]) -> list[str]:
     """``files`` maps a file name to its parsed JSON content."""
+    by_qid = {
+        item["qid"]: item
+        for items in files.values() if isinstance(items, list)
+        for item in items
+        if isinstance(item, dict) and isinstance(item.get("qid"), str)
+    }
+
     errors, qids, questions = [], {}, {}
     for name, items in files.items():
         if not isinstance(items, list):
@@ -57,9 +70,21 @@ def check_items(files: dict[str, list]) -> list[str]:
                 errors.append(f"{where}: qid already used in {qids[item['qid']]}")
             qids[item["qid"]] = name
             key = normalise(turkish_lower(item["question"]))
-            if key in questions:
+            second_of = item.get("second_of")
+            if isinstance(second_of, str):
+                original = by_qid.get(second_of)
+                if original is None:
+                    errors.append(f"{where}: second_of '{second_of}' is not a known qid")
+                elif original.get("doc_id") != item["doc_id"]:
+                    errors.append(f"{where}: second_of '{second_of}' points at a "
+                                  f"different document")
+                elif not isinstance(original.get("question"), str) or \
+                        normalise(turkish_lower(original["question"])) != key:
+                    errors.append(f"{where}: second_of '{second_of}' has a "
+                                  f"different question - it must be reused unchanged")
+            if key in questions and questions[key] != where and not isinstance(second_of, str):
                 errors.append(f"{where}: same question as {questions[key]}")
-            questions[key] = where
+            questions.setdefault(key, where)
             if not item["doc_id"].isdigit():
                 errors.append(f"{where}: doc_id must be the numeric Wikipedia page id")
             if not item["question"].rstrip().endswith("?"):
