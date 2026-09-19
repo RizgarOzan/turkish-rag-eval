@@ -1,5 +1,8 @@
 # turkish-rag-eval
 
+[![validate](https://github.com/RizgarOzan/turkish-rag-eval/actions/workflows/validate.yml/badge.svg)](https://github.com/RizgarOzan/turkish-rag-eval/actions/workflows/validate.yml)
+[![licence: MIT + CC BY-SA 4.0](https://img.shields.io/badge/licence-MIT%20%2B%20CC%20BY--SA%204.0-blue)](NOTICE.md)
+
 A retrieval evaluation harness for Turkish, built around one question:
 **which parts of a RAG pipeline actually earn their cost on an agglutinative
 language?**
@@ -106,6 +109,16 @@ of e5-small and 35 minutes to embed the corpus on a CPU.
 E5 models expect `query: ` / `passage: ` in front of every input; `src/models.py`
 adds these, and a run without them is not a fair E5 number.
 
+## Why not an existing benchmark?
+
+MTEB-style retrieval benchmarks score an embedding model on passages that
+are already split. They answer "which model?", not "which chunker, is Turkish
+stemming worth it, does a hybrid help, and what does each cost on a CPU?".
+This harness keeps the articles whole, lets every chunker cut them its own way,
+and judges each chunk by the answer span, so pipeline choices can be compared
+on the same labels. For a model-only comparison, the same data exports to the
+BEIR layout MTEB reads (`python src/export_hf.py`).
+
 ## What did not work
 
 **The multilingual embedding model underperformed plain BM25.** With
@@ -175,6 +188,7 @@ pip install -r requirements.txt   # pulls CPU-only torch from PyTorch's index
 python src/fetch_corpus.py        # rebuilds data/raw/corpus.json from Wikipedia
 python src/run_eval.py            # writes results/summary.json + per-query files
 python src/run_abstain.py         # coverage / accuracy curve for the best config
+python src/export_hf.py           # corpus + queries + qrels as a Hugging Face dataset in data/hf/
 ```
 
 `python src/run_eval.py --model <name>` swaps the embedding model; any
@@ -269,3 +283,7 @@ Two language-specific traps are handled in `src/turkish_text.py`:
 Turkish Wikipedia, CC BY-SA 4.0. See [NOTICE.md](NOTICE.md). No patient data or
 personal health information is used anywhere in this project, and nothing here
 is a medical device.
+
+## Licence
+
+Code MIT ([LICENSE](LICENSE)); data under `data/` CC BY-SA 4.0 ([NOTICE.md](NOTICE.md)).
