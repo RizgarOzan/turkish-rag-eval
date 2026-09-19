@@ -15,7 +15,14 @@ number below is reproducible with `python src/run_eval.py [--model <name>]`.
 **Short answer:** Turkish stemming is the cheapest win for BM25, and the choice
 of embedding model matters more than anything else. A Turkish retrieval model
 reaches nDCG@10 0.781, against 0.494 for stemmed BM25 and 0.501 for the small
-multilingual default ([Embedding models](#embedding-models)).
+multilingual default ([Embedding models](#embedding-models)). The story behind
+both results is in a short write-up: [English](docs/blog/2026-09-19-bm25-turkish-en.md) ·
+[Türkçe](docs/blog/2026-09-19-bm25-turkish-tr.md).
+
+**Contents:** [Results](#results) · [Embedding models](#embedding-models) ·
+[Why not an existing benchmark?](#why-not-an-existing-benchmark) ·
+[Uncertainty handling](#uncertainty-handling) · [Running it](#running-it) ·
+[Gold set](#gold-set) · [Limits](#limits) · [Contribute](#contribute)
 
 ## Results
 
