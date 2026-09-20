@@ -228,17 +228,21 @@ advantage and make the dense/sparse comparison worthless.
 | Files | Questions | Labelled by | In the results above |
 |---|---|---|---|
 | `data/eval/gold.json` (health) | 58 | one human | yes |
-| `data/eval/contrib/llm-draft-*.json` (history, geography, astronomy, biology, computing) | 30 | two independent LLM passes | not yet |
+| `data/eval/contrib/llm-draft-*.json` (history, geography, astronomy, biology, computing) | 60 | two independent LLM passes | not yet |
 
 The set is growing toward 300 questions across more domains. Questions a
 model drafted are marked `"source": "llm-draft"`. A second model then picked
 its own answer span for each one without seeing the first label
 (`second_annotation`). Two spans agree when one contains the other or their
 token F1 is at least 0.5; agreed items get `"review": "agreed"`, the rest get
-`"needs-human"` and are never loaded. First batch: **30 of 30 agreed**, 16
-with identical spans, mean token F1 0.88. Two LLMs tend to pick the same
-sentence, so read this as a sanity check rather than as human agreement.
-**Human-verified share of the drafts: 0%.**
+`"needs-human"` and are never loaded. Batch 1 (2026-09-18): **30 of 30
+agreed**, 16 with identical spans, mean token F1 0.88. Batch 2 (2026-09-20,
+five new articles): **30 of 30 agreed**, 2 with identical spans, mean token
+F1 0.54 - the second pass kept picking the shortest span that still answers
+the question ("7.4 büyüklüğünde" against the whole clause around it), so
+almost every pair agrees by containment rather than by wording. Two LLMs
+tend to pick the same sentence, so read this as a sanity check rather than
+as human agreement.
 
 Drafts stay out of every number above until a re-run says otherwise:
 `load_gold()` skips them unless called with `include_drafts=True`. Synthetic

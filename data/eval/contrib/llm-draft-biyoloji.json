@@ -1,86 +1,170 @@
 [
-  {
-    "qid": "llm-biyoloji-001",
-    "question": "Bir karaciğer hücresi kaç tane enerji organeli barındırabilir?",
-    "doc_id": "30004",
-    "doc_title": "Mitokondri",
-    "answer_span": "Bir karaciğer hücresinde sayıları 2500 civarına ulaşabilir",
-    "annotator": "llm-1",
-    "source": "llm-draft",
-    "second_annotation": {
-      "annotator": "llm-2",
-      "answer_span": "Bir karaciğer hücresinde sayıları 2500 civarına ulaşabilir."
-    },
-    "review": "agreed"
+ {
+  "qid": "llm-biyoloji-001",
+  "question": "Bir karaciğer hücresi kaç tane enerji organeli barındırabilir?",
+  "doc_id": "30004",
+  "doc_title": "Mitokondri",
+  "answer_span": "Bir karaciğer hücresinde sayıları 2500 civarına ulaşabilir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Bir karaciğer hücresinde sayıları 2500 civarına ulaşabilir."
   },
-  {
-    "qid": "llm-biyoloji-002",
-    "question": "Organelin kendi genetik materyali kaç baz çifti uzunluğundadır?",
-    "doc_id": "30004",
-    "doc_title": "Mitokondri",
-    "answer_span": "daireseldir ve 16,569 baz çiftinden oluşur",
-    "annotator": "llm-1",
-    "source": "llm-draft",
-    "second_annotation": {
-      "annotator": "llm-2",
-      "answer_span": "Mitokondriyal DNA bakterilerde olduğu gibi daireseldir ve 16,569 baz çiftinden oluşur."
-    },
-    "review": "agreed"
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-002",
+  "question": "Organelin kendi genetik materyali kaç baz çifti uzunluğundadır?",
+  "doc_id": "30004",
+  "doc_title": "Mitokondri",
+  "answer_span": "daireseldir ve 16,569 baz çiftinden oluşur",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Mitokondriyal DNA bakterilerde olduğu gibi daireseldir ve 16,569 baz çiftinden oluşur."
   },
-  {
-    "qid": "llm-biyoloji-003",
-    "question": "Organele bugün kullandığımız adı ilk kim verdi?",
-    "doc_id": "30004",
-    "doc_title": "Mitokondri",
-    "answer_span": "1898 yılında Carl Benda tarafından kullanılarak literatüre geçti",
-    "annotator": "llm-1",
-    "source": "llm-draft",
-    "second_annotation": {
-      "annotator": "llm-2",
-      "answer_span": "\"Mitokondri\" terimi ise 1898 yılında Carl Benda tarafından kullanılarak literatüre geçti."
-    },
-    "review": "agreed"
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-003",
+  "question": "Organele bugün kullandığımız adı ilk kim verdi?",
+  "doc_id": "30004",
+  "doc_title": "Mitokondri",
+  "answer_span": "1898 yılında Carl Benda tarafından kullanılarak literatüre geçti",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "\"Mitokondri\" terimi ise 1898 yılında Carl Benda tarafından kullanılarak literatüre geçti."
   },
-  {
-    "qid": "llm-biyoloji-004",
-    "question": "'Hücrenin enerji santrali' benzetmesini ilk kim ortaya attı?",
-    "doc_id": "30004",
-    "doc_title": "Mitokondri",
-    "answer_span": "Philip Siekevitz tarafından 1957'de ortaya çıkmıştır",
-    "annotator": "llm-1",
-    "source": "llm-draft",
-    "second_annotation": {
-      "annotator": "llm-2",
-      "answer_span": "Popüler bir terim olan \"hücrenin güçevi\", Philip Siekevitz tarafından 1957'de ortaya çıkmıştır."
-    },
-    "review": "agreed"
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-004",
+  "question": "'Hücrenin enerji santrali' benzetmesini ilk kim ortaya attı?",
+  "doc_id": "30004",
+  "doc_title": "Mitokondri",
+  "answer_span": "Philip Siekevitz tarafından 1957'de ortaya çıkmıştır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Popüler bir terim olan \"hücrenin güçevi\", Philip Siekevitz tarafından 1957'de ortaya çıkmıştır."
   },
-  {
-    "qid": "llm-biyoloji-005",
-    "question": "Organelin iç zarının içeri doğru yaptığı kıvrımlara ne ad verilir?",
-    "doc_id": "30004",
-    "doc_title": "Mitokondri",
-    "answer_span": "İç zar mitokondri matriksine doğru girintiler yaparak krista denilen yapıları oluşturur",
-    "annotator": "llm-1",
-    "source": "llm-draft",
-    "second_annotation": {
-      "annotator": "llm-2",
-      "answer_span": "İç zar mitokondri matriksine doğru girintiler yaparak krista denilen yapıları oluşturur."
-    },
-    "review": "agreed"
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-005",
+  "question": "Organelin iç zarının içeri doğru yaptığı kıvrımlara ne ad verilir?",
+  "doc_id": "30004",
+  "doc_title": "Mitokondri",
+  "answer_span": "İç zar mitokondri matriksine doğru girintiler yaparak krista denilen yapıları oluşturur",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "İç zar mitokondri matriksine doğru girintiler yaparak krista denilen yapıları oluşturur."
   },
-  {
-    "qid": "llm-biyoloji-006",
-    "question": "Avrupa'da kaç kişi bu organelin DNA'sından kaynaklanan hastalıklarla yaşıyor?",
-    "doc_id": "30004",
-    "doc_title": "Mitokondri",
-    "answer_span": "bu sayı yaklaşık 400.000 insanın mitokondriyal sitopati ile yaşadığını göstermektedir",
-    "annotator": "llm-1",
-    "source": "llm-draft",
-    "second_annotation": {
-      "annotator": "llm-2",
-      "answer_span": "Avrupa'da görülme sıklığının 1:2000 olduğu bilinmektedir ki bu sayı yaklaşık 400.000 insanın mitokondriyal sitopati ile yaşadığını göstermektedir."
-    },
-    "review": "agreed"
-  }
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-006",
+  "question": "Avrupa'da kaç kişi bu organelin DNA'sından kaynaklanan hastalıklarla yaşıyor?",
+  "doc_id": "30004",
+  "doc_title": "Mitokondri",
+  "answer_span": "bu sayı yaklaşık 400.000 insanın mitokondriyal sitopati ile yaşadığını göstermektedir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Avrupa'da görülme sıklığının 1:2000 olduğu bilinmektedir ki bu sayı yaklaşık 400.000 insanın mitokondriyal sitopati ile yaşadığını göstermektedir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-007",
+  "question": "Söğüt fidanı denemesini yapan araştırmacı beş yılın sonundaki ağırlık artışını neye bağladı?",
+  "doc_id": "15756",
+  "doc_title": "Fotosentez",
+  "answer_span": "bitki ağırlığında oluşan 82,5 kg'lık madde artışının yalnız sudan kaynaklandığı kanısına varmıştır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "82,5 kg'lık madde artışının yalnız sudan kaynaklandığı"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-008",
+  "question": "Havanın arınmasının ancak aydınlıkta olduğunu 1779'da kim ortaya koydu?",
+  "doc_id": "15756",
+  "doc_title": "Fotosentez",
+  "answer_span": "1779'da Jan Ingenhousz, havanın temizlenmesinin yeşil bitkiler tarafından ışıkta yapıldığını açıklamıştır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Jan Ingenhousz"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-009",
+  "question": "Karanlık evre döngüsüne adını veren bilim insanı hangi ödülü kazanmıştır?",
+  "doc_id": "15756",
+  "doc_title": "Fotosentez",
+  "answer_span": "Calvin döngüsü ismini, bunu bulduğu için 1961 Nobel Kimya Ödülü'nü kazanan Melvin Calvin'den alır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "1961 Nobel Kimya Ödülü'nü"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-010",
+  "question": "Dünya genelinde bu süreçle yakalanan güç ne düzeydedir?",
+  "doc_id": "15756",
+  "doc_title": "Fotosentez",
+  "answer_span": "küresel olarak fotosentez yoluyla elde edilen ortalama enerji yakalama oranı yaklaşık 130 terrawatt'tır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "yaklaşık 130 terrawatt"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-011",
+  "question": "Hangi renkteki ışıkta verim en düşüktür?",
+  "doc_id": "15756",
+  "doc_title": "Fotosentez",
+  "answer_span": "Fotosentez en çok mor ve kırmızı ışıkta gerçekleşir, en düşük hız ise yeşildedir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "en düşük hız ise yeşildedir"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-012",
+  "question": "Su oranı hangi düzeyin altına inince olay tümüyle durur?",
+  "doc_id": "15756",
+  "doc_title": "Fotosentez",
+  "answer_span": "Su miktarı %15'in altına indiğinde enzimler inaktif olacağından fotosentez durur",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "%15'in altına indiğinde"
+  },
+  "review": "agreed"
+ }
 ]

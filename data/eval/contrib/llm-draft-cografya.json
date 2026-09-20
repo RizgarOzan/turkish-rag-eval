@@ -1,86 +1,170 @@
 [
-  {
-    "qid": "llm-cografya-001",
-    "question": "UNESCO'nun koruma listesine bölgenin girişi hangi yıla dayanır?",
-    "doc_id": "5509",
-    "doc_title": "Kapadokya",
-    "answer_span": "Göreme Millî Parkı ve Kapadokya adıyla 1985'te UNESCO tarafından Dünya Mirası ilan edilmiştir",
-    "annotator": "llm-1",
-    "source": "llm-draft",
-    "second_annotation": {
-      "annotator": "llm-2",
-      "answer_span": "Göreme Millî Parkı ve Kapadokya adıyla 1985'te UNESCO tarafından Dünya Mirası ilan edilmiştir."
-    },
-    "review": "agreed"
+ {
+  "qid": "llm-cografya-001",
+  "question": "UNESCO'nun koruma listesine bölgenin girişi hangi yıla dayanır?",
+  "doc_id": "5509",
+  "doc_title": "Kapadokya",
+  "answer_span": "Göreme Millî Parkı ve Kapadokya adıyla 1985'te UNESCO tarafından Dünya Mirası ilan edilmiştir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Göreme Millî Parkı ve Kapadokya adıyla 1985'te UNESCO tarafından Dünya Mirası ilan edilmiştir."
   },
-  {
-    "qid": "llm-cografya-002",
-    "question": "Bölgenin adına rastlanan en eski yazılı belgeler hangi yüzyıldan ve hangi halktan kalmadır?",
-    "doc_id": "5509",
-    "doc_title": "Kapadokya",
-    "answer_span": "Kapadokya adı en eski M.Ö. 6. yüzyılda Pers kaynaklarında görülür",
-    "annotator": "llm-1",
-    "source": "llm-draft",
-    "second_annotation": {
-      "annotator": "llm-2",
-      "answer_span": "Kapadokya adı en eski M.Ö. 6. yüzyılda Pers kaynaklarında görülür."
-    },
-    "review": "agreed"
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-002",
+  "question": "Bölgenin adına rastlanan en eski yazılı belgeler hangi yüzyıldan ve hangi halktan kalmadır?",
+  "doc_id": "5509",
+  "doc_title": "Kapadokya",
+  "answer_span": "Kapadokya adı en eski M.Ö. 6. yüzyılda Pers kaynaklarında görülür",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Kapadokya adı en eski M.Ö. 6. yüzyılda Pers kaynaklarında görülür."
   },
-  {
-    "qid": "llm-cografya-003",
-    "question": "Bölgeye yakıştırılan 'güzel atların memleketi' benzetmesinin aslında sonradan icat edildiğini kim söyledi?",
-    "doc_id": "5509",
-    "doc_title": "Kapadokya",
-    "answer_span": "Fotoğraf Sanatçısı Ozan Sağdıç, 12 Eylül döneminde generallerin Kapadokya ismini Yunanca olduğu için yasaklayacaklarını öğrenince bu deyimi uydurduğunu açıklamıştır",
-    "annotator": "llm-1",
-    "source": "llm-draft",
-    "second_annotation": {
-      "annotator": "llm-2",
-      "answer_span": "Fotoğraf Sanatçısı Ozan Sağdıç, 12 Eylül döneminde generallerin Kapadokya ismini Yunanca olduğu için yasaklayacaklarını öğrenince bu deyimi uydurduğunu açıklamıştır."
-    },
-    "review": "agreed"
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-003",
+  "question": "Bölgeye yakıştırılan 'güzel atların memleketi' benzetmesinin aslında sonradan icat edildiğini kim söyledi?",
+  "doc_id": "5509",
+  "doc_title": "Kapadokya",
+  "answer_span": "Fotoğraf Sanatçısı Ozan Sağdıç, 12 Eylül döneminde generallerin Kapadokya ismini Yunanca olduğu için yasaklayacaklarını öğrenince bu deyimi uydurduğunu açıklamıştır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Fotoğraf Sanatçısı Ozan Sağdıç, 12 Eylül döneminde generallerin Kapadokya ismini Yunanca olduğu için yasaklayacaklarını öğrenince bu deyimi uydurduğunu açıklamıştır."
   },
-  {
-    "qid": "llm-cografya-004",
-    "question": "Anadolu'daki bu yerel krallık Roma yönetimine doğrudan hangi yıl bağlandı?",
-    "doc_id": "5509",
-    "doc_title": "Kapadokya",
-    "answer_span": "MS 17 yılında son Kapadokya kralı ölünce bölge Roma'nın bir eyaleti olur",
-    "annotator": "llm-1",
-    "source": "llm-draft",
-    "second_annotation": {
-      "annotator": "llm-2",
-      "answer_span": "MS 17 yılında son Kapadokya kralı ölünce bölge Roma'nın bir eyaleti olur."
-    },
-    "review": "agreed"
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-004",
+  "question": "Anadolu'daki bu yerel krallık Roma yönetimine doğrudan hangi yıl bağlandı?",
+  "doc_id": "5509",
+  "doc_title": "Kapadokya",
+  "answer_span": "MS 17 yılında son Kapadokya kralı ölünce bölge Roma'nın bir eyaleti olur",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "MS 17 yılında son Kapadokya kralı ölünce bölge Roma'nın bir eyaleti olur."
   },
-  {
-    "qid": "llm-cografya-005",
-    "question": "Peribacalarının tepesindeki şapka biçimli kısımlar hangi kaya türündendir?",
-    "doc_id": "5509",
-    "doc_title": "Kapadokya",
-    "answer_span": "Böylece sert bazalt kayasından şapkaları bulunan koniler oluştu",
-    "annotator": "llm-1",
-    "source": "llm-draft",
-    "second_annotation": {
-      "annotator": "llm-2",
-      "answer_span": "sert bazalt kayasından şapkaları bulunan koniler oluştu"
-    },
-    "review": "agreed"
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-005",
+  "question": "Peribacalarının tepesindeki şapka biçimli kısımlar hangi kaya türündendir?",
+  "doc_id": "5509",
+  "doc_title": "Kapadokya",
+  "answer_span": "Böylece sert bazalt kayasından şapkaları bulunan koniler oluştu",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "sert bazalt kayasından şapkaları bulunan koniler oluştu"
   },
-  {
-    "qid": "llm-cografya-006",
-    "question": "Patent kurumunun 2020 kararına göre bölgenin kalbi sayılan yerleşim neresidir?",
-    "doc_id": "5509",
-    "doc_title": "Kapadokya",
-    "answer_span": "Kapadokya'nın merkezinin Ortahisar kasabası olduğu resmen tescil edilmiştir",
-    "annotator": "llm-1",
-    "source": "llm-draft",
-    "second_annotation": {
-      "annotator": "llm-2",
-      "answer_span": "2020 yılında Türk Patent ve Marka Kurumu tarafından Kapadokya'nın merkezinin Ortahisar kasabası olduğu resmen tescil edilmiştir."
-    },
-    "review": "agreed"
-  }
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-006",
+  "question": "Patent kurumunun 2020 kararına göre bölgenin kalbi sayılan yerleşim neresidir?",
+  "doc_id": "5509",
+  "doc_title": "Kapadokya",
+  "answer_span": "Kapadokya'nın merkezinin Ortahisar kasabası olduğu resmen tescil edilmiştir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "2020 yılında Türk Patent ve Marka Kurumu tarafından Kapadokya'nın merkezinin Ortahisar kasabası olduğu resmen tescil edilmiştir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-007",
+  "question": "Türkiye'nin en yüksek zirvesinin ne kadarlık bölümü Iğdır sınırları içinde kalır?",
+  "doc_id": "2132",
+  "doc_title": "Ağrı Dağı",
+  "answer_span": "Dağın %65'lik bir kesimi Iğdır ilinde, kalan %35'lik kesimi ise Ağrı ili sınırları içerisindedir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "%65'lik bir kesimi Iğdır ilinde"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-008",
+  "question": "Doruktaki kalıcı buzulun yüzölçümü nedir?",
+  "doc_id": "2132",
+  "doc_title": "Ağrı Dağı",
+  "answer_span": "üzerinde 10 km²'lik güncel bir buz takkesi (ice cap) bulunduran tek dağıdır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "10 km²'lik"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-009",
+  "question": "Zirveye çıkan ilk kişi olarak kayıtlara kim ve hangi tarihle geçmiştir?",
+  "doc_id": "2132",
+  "doc_title": "Ağrı Dağı",
+  "answer_span": "kayıtlara göre dağa ilk tırmanış 9 Ekim 1829'da Prof. Friedrich Parrot tarafından gerçekleştirilmiştir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "9 Ekim 1829'da Prof. Friedrich Parrot tarafından"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-010",
+  "question": "1840 yazındaki olayda meydana gelen sarsıntının büyüklüğü neydi?",
+  "doc_id": "2132",
+  "doc_title": "Ağrı Dağı",
+  "answer_span": "muhtemelen buna bağlı olarak ciddi hasara ve çok sayıda can kaybına neden olan 7.4 büyüklüğünde bir deprem meydana geldi",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "7.4 büyüklüğünde"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-011",
+  "question": "Dağın Kürtçe adı ne anlama gelir?",
+  "doc_id": "2132",
+  "doc_title": "Ağrı Dağı",
+  "answer_span": "Kürtçe çiyayê Agirî olarak adlandırılmış dağ bu dilde \"Ateşli Dağ\" anlamına gelir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Ateşli Dağ"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-012",
+  "question": "Dağa çıkış hangi yıl yasaklandı, yasak ne zaman kalktı?",
+  "doc_id": "2132",
+  "doc_title": "Ağrı Dağı",
+  "answer_span": "Ağrı'ya tırmanış 1990 yılında yasaklandı. 1998'de Dağcılık Federasyonunun bir grup dağcıya izin vermesiyle bu yasak kaldırıldı",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Ağrı'ya tırmanış 1990 yılında yasaklandı. 1998'de Dağcılık Federasyonunun bir grup dağcıya izin vermesiyle bu yasak kaldırıldı."
+  },
+  "review": "agreed"
+ }
 ]

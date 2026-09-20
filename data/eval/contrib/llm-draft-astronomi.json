@@ -1,86 +1,170 @@
 [
-  {
-    "qid": "llm-astronomi-001",
-    "question": "Kızıl Gezegen'in iki küçük uydusunu kim bulmuştur?",
-    "doc_id": "1562",
-    "doc_title": "Mars",
-    "answer_span": "Mars'ın 1877 yılında astronom Asaph Hall tarafından keşfedilen Phobos ve Deimos adları verilmiş",
-    "annotator": "llm-1",
-    "source": "llm-draft",
-    "second_annotation": {
-      "annotator": "llm-2",
-      "answer_span": "Mars'ın 1877 yılında astronom Asaph Hall tarafından keşfedilen Phobos ve Deimos adları verilmiş, düzensiz biçimli iki küçük uydusu vardır."
-    },
-    "review": "agreed"
+ {
+  "qid": "llm-astronomi-001",
+  "question": "Kızıl Gezegen'in iki küçük uydusunu kim bulmuştur?",
+  "doc_id": "1562",
+  "doc_title": "Mars",
+  "answer_span": "Mars'ın 1877 yılında astronom Asaph Hall tarafından keşfedilen Phobos ve Deimos adları verilmiş",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Mars'ın 1877 yılında astronom Asaph Hall tarafından keşfedilen Phobos ve Deimos adları verilmiş, düzensiz biçimli iki küçük uydusu vardır."
   },
-  {
-    "qid": "llm-astronomi-002",
-    "question": "Güney kutbundaki buzlar tamamen erise gezegeni kaplayacak su tabakası ne kadar derin olurdu?",
-    "doc_id": "1562",
-    "doc_title": "Mars",
-    "answer_span": "oluşacak bu okyanusun derinliğinin 11 m. olacağının hesaplandığını açıkladı",
-    "annotator": "llm-1",
-    "source": "llm-draft",
-    "second_annotation": {
-      "annotator": "llm-2",
-      "answer_span": "güney kutbu bölgesindeki su buzlarının erimeleri halinde suların gezegenin tüm yüzeyini kaplayacağını ve oluşacak bu okyanusun derinliğinin 11 m. olacağının hesaplandığını açıkladı"
-    },
-    "review": "agreed"
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-002",
+  "question": "Güney kutbundaki buzlar tamamen erise gezegeni kaplayacak su tabakası ne kadar derin olurdu?",
+  "doc_id": "1562",
+  "doc_title": "Mars",
+  "answer_span": "oluşacak bu okyanusun derinliğinin 11 m. olacağının hesaplandığını açıkladı",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "güney kutbu bölgesindeki su buzlarının erimeleri halinde suların gezegenin tüm yüzeyini kaplayacağını ve oluşacak bu okyanusun derinliğinin 11 m. olacağının hesaplandığını açıkladı"
   },
-  {
-    "qid": "llm-astronomi-003",
-    "question": "Kızıl gezegenin merkezindeki demirce zengin iç kısmın büyüklüğü hakkında ne biliniyor?",
-    "doc_id": "1562",
-    "doc_title": "Mars",
-    "answer_span": "yarıçapı yaklaşık 1480 km olan bir çekirdek bölgesi içerir",
-    "annotator": "llm-1",
-    "source": "llm-draft",
-    "second_annotation": {
-      "annotator": "llm-2",
-      "answer_span": "esas olarak demir ve % 14-17 civarında sülfürden oluşan, yarıçapı yaklaşık 1480 km olan bir çekirdek bölgesi içerir."
-    },
-    "review": "agreed"
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-003",
+  "question": "Kızıl gezegenin merkezindeki demirce zengin iç kısmın büyüklüğü hakkında ne biliniyor?",
+  "doc_id": "1562",
+  "doc_title": "Mars",
+  "answer_span": "yarıçapı yaklaşık 1480 km olan bir çekirdek bölgesi içerir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "esas olarak demir ve % 14-17 civarında sülfürden oluşan, yarıçapı yaklaşık 1480 km olan bir çekirdek bölgesi içerir."
   },
-  {
-    "qid": "llm-astronomi-004",
-    "question": "Gezegenin dış katmanı ortalamada kaç kilometre derinliğe iner?",
-    "doc_id": "1562",
-    "doc_title": "Mars",
-    "answer_span": "Gezegenin kabuğunun ortalama kalınlığı 50 km olup, azami kalınlığı 120 km civarındadır",
-    "annotator": "llm-1",
-    "source": "llm-draft",
-    "second_annotation": {
-      "annotator": "llm-2",
-      "answer_span": "Gezegenin kabuğunun ortalama kalınlığı 50 km olup, azami kalınlığı 120 km civarındadır."
-    },
-    "review": "agreed"
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-004",
+  "question": "Gezegenin dış katmanı ortalamada kaç kilometre derinliğe iner?",
+  "doc_id": "1562",
+  "doc_title": "Mars",
+  "answer_span": "Gezegenin kabuğunun ortalama kalınlığı 50 km olup, azami kalınlığı 120 km civarındadır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Gezegenin kabuğunun ortalama kalınlığı 50 km olup, azami kalınlığı 120 km civarındadır."
   },
-  {
-    "qid": "llm-astronomi-005",
-    "question": "Bir uçurumdan buz bloklarının yuvarlandığı olay hangi tarihte kameraya yakalandı?",
-    "doc_id": "1562",
-    "doc_title": "Mars",
-    "answer_span": "19 Şubat 2008'de Mars'ta muhteşem bir çığ meydana geldi",
-    "annotator": "llm-1",
-    "source": "llm-draft",
-    "second_annotation": {
-      "annotator": "llm-2",
-      "answer_span": "19 Şubat 2008'de Mars'ta muhteşem bir çığ meydana geldi."
-    },
-    "review": "agreed"
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-005",
+  "question": "Bir uçurumdan buz bloklarının yuvarlandığı olay hangi tarihte kameraya yakalandı?",
+  "doc_id": "1562",
+  "doc_title": "Mars",
+  "answer_span": "19 Şubat 2008'de Mars'ta muhteşem bir çığ meydana geldi",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "19 Şubat 2008'de Mars'ta muhteşem bir çığ meydana geldi."
   },
-  {
-    "qid": "llm-astronomi-006",
-    "question": "Gezegenin en eski jeolojik dönemi adını nereden alır?",
-    "doc_id": "1562",
-    "doc_title": "Mars",
-    "answer_span": "Devre bu ad, Mars'ın güney yarımküresindeki bir bölgenin Nuh'un Toprağı (Noachis Terra) olarak adlandırılması nedeniyle verilmiştir",
-    "annotator": "llm-1",
-    "source": "llm-draft",
-    "second_annotation": {
-      "annotator": "llm-2",
-      "answer_span": "Devre bu ad, Mars'ın güney yarımküresindeki bir bölgenin Nuh'un Toprağı (Noachis Terra) olarak adlandırılması nedeniyle verilmiştir."
-    },
-    "review": "agreed"
-  }
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-006",
+  "question": "Gezegenin en eski jeolojik dönemi adını nereden alır?",
+  "doc_id": "1562",
+  "doc_title": "Mars",
+  "answer_span": "Devre bu ad, Mars'ın güney yarımküresindeki bir bölgenin Nuh'un Toprağı (Noachis Terra) olarak adlandırılması nedeniyle verilmiştir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Devre bu ad, Mars'ın güney yarımküresindeki bir bölgenin Nuh'un Toprağı (Noachis Terra) olarak adlandırılması nedeniyle verilmiştir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-007",
+  "question": "Gaz devi yıldızın çevresindeki bir turunu kaç yılda bitirir?",
+  "doc_id": "7033",
+  "doc_title": "Jüpiter",
+  "answer_span": "bir turunu 11,86 yılda tamamlar",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "11,86 yılda"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-008",
+  "question": "Ganymede hangi gezegenden daha iridir?",
+  "doc_id": "7033",
+  "doc_title": "Jüpiter",
+  "answer_span": "Bu dört uydu arasında en büyüğü olan Ganymede, Merkür gezegeninden daha büyüktür",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Merkür gezegeninden daha büyüktür"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-009",
+  "question": "Dev gezegenin dışarı yaydığı ışınım, yıldızından edindiğinin kaç misli ölçülmüştür?",
+  "doc_id": "7033",
+  "doc_title": "Jüpiter",
+  "answer_span": "Jüpiter'in, Güneş'ten aldığı enerjinin 2,3 katı kadarını dışarı yaydığı görülür",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "2,3 katı"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-010",
+  "question": "Sistem I diye anılan dönme süresi kaç saat kaç dakikadır?",
+  "doc_id": "7033",
+  "doc_title": "Jüpiter",
+  "answer_span": "Ekvator bölgelerinin dönüşü 9 saat 50 dakika 30,003 saniyede tamamlanır ve Sistem I olarak adlandırılır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "9 saat 50 dakika 30,003 saniyede"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-011",
+  "question": "Çekirdeği saran metalik hidrojen katmanı kaç kilometre kalınlıktadır?",
+  "doc_id": "7033",
+  "doc_title": "Jüpiter",
+  "answer_span": "metalik hidrojenden oluşmuş 40.000 km kalınlığında manto tabakası yer alır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "40.000 km"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-012",
+  "question": "Gezegenin dev fırtınasının en az kaç yüzyıldır sürdüğü biliniyor?",
+  "doc_id": "7033",
+  "doc_title": "Jüpiter",
+  "answer_span": "en az 400 senedir devam ettiği bilinen çok uzun ömürlü dev bir 'fırtına' alanıdır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "en az 400 senedir"
+  },
+  "review": "agreed"
+ }
 ]

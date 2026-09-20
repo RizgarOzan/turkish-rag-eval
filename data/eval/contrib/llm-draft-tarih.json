@@ -1,86 +1,170 @@
 [
-  {
-    "qid": "llm-tarih-001",
-    "question": "Savaştan dokuz yıl sonra Selçuklular Anadolu'da ne büyüklükte bir toprağı denetimleri altına almıştı?",
-    "doc_id": "26808",
-    "doc_title": "Malazgirt Meydan Muharebesi",
-    "answer_span": "1080 yılına gelindiğinde Selçuklu Türkleri 78.000 kilometrekarelik bir alanı ele geçirmişti",
-    "annotator": "llm-1",
-    "source": "llm-draft",
-    "second_annotation": {
-      "annotator": "llm-2",
-      "answer_span": "1080 yılına gelindiğinde Selçuklu Türkleri 78.000 kilometrekarelik bir alanı ele geçirmişti"
-    },
-    "review": "agreed"
+ {
+  "qid": "llm-tarih-001",
+  "question": "Savaştan dokuz yıl sonra Selçuklular Anadolu'da ne büyüklükte bir toprağı denetimleri altına almıştı?",
+  "doc_id": "26808",
+  "doc_title": "Malazgirt Meydan Muharebesi",
+  "answer_span": "1080 yılına gelindiğinde Selçuklu Türkleri 78.000 kilometrekarelik bir alanı ele geçirmişti",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "1080 yılına gelindiğinde Selçuklu Türkleri 78.000 kilometrekarelik bir alanı ele geçirmişti"
   },
-  {
-    "qid": "llm-tarih-002",
-    "question": "Bizanslı askerlerin taşıdığı uzun saplı silahların ağacı hangi yöreden geliyordu?",
-    "doc_id": "26808",
-    "doc_title": "Malazgirt Meydan Muharebesi",
-    "answer_span": "ordu savaşta kullanılacak mızraklarını Hınıs ve çevresinde yetişen ağaçlardan imal etmiştir",
-    "annotator": "llm-1",
-    "source": "llm-draft",
-    "second_annotation": {
-      "annotator": "llm-2",
-      "answer_span": "ordu savaşta kullanılacak mızraklarını Hınıs ve çevresinde yetişen ağaçlardan imal etmiştir."
-    },
-    "review": "agreed"
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-002",
+  "question": "Bizanslı askerlerin taşıdığı uzun saplı silahların ağacı hangi yöreden geliyordu?",
+  "doc_id": "26808",
+  "doc_title": "Malazgirt Meydan Muharebesi",
+  "answer_span": "ordu savaşta kullanılacak mızraklarını Hınıs ve çevresinde yetişen ağaçlardan imal etmiştir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "ordu savaşta kullanılacak mızraklarını Hınıs ve çevresinde yetişen ağaçlardan imal etmiştir."
   },
-  {
-    "qid": "llm-tarih-003",
-    "question": "Selçuklu hükümdarının sahte geri çekilmeye dayanan savaş planı hangi adla anılır?",
-    "doc_id": "26808",
-    "doc_title": "Malazgirt Meydan Muharebesi",
-    "answer_span": "Alp Arslan ise \"Kurt Kapanı Taktiği\" konusunda komutanlarıyla uzlaşmıştı",
-    "annotator": "llm-1",
-    "source": "llm-draft",
-    "second_annotation": {
-      "annotator": "llm-2",
-      "answer_span": "Alp Arslan ise \"Kurt Kapanı Taktiği\" konusunda komutanlarıyla uzlaşmıştı."
-    },
-    "review": "agreed"
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-003",
+  "question": "Selçuklu hükümdarının sahte geri çekilmeye dayanan savaş planı hangi adla anılır?",
+  "doc_id": "26808",
+  "doc_title": "Malazgirt Meydan Muharebesi",
+  "answer_span": "Alp Arslan ise \"Kurt Kapanı Taktiği\" konusunda komutanlarıyla uzlaşmıştı",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Alp Arslan ise \"Kurt Kapanı Taktiği\" konusunda komutanlarıyla uzlaşmıştı."
   },
-  {
-    "qid": "llm-tarih-004",
-    "question": "Esir alınan imparator yakalandığında vücudunun neresinden yaralanmıştı?",
-    "doc_id": "26808",
-    "doc_title": "Malazgirt Meydan Muharebesi",
-    "answer_span": "İmparator omzundan yaralı olarak ele geçirildi",
-    "annotator": "llm-1",
-    "source": "llm-draft",
-    "second_annotation": {
-      "annotator": "llm-2",
-      "answer_span": "İmparator omzundan yaralı olarak ele geçirildi."
-    },
-    "review": "agreed"
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-004",
+  "question": "Esir alınan imparator yakalandığında vücudunun neresinden yaralanmıştı?",
+  "doc_id": "26808",
+  "doc_title": "Malazgirt Meydan Muharebesi",
+  "answer_span": "İmparator omzundan yaralı olarak ele geçirildi",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "İmparator omzundan yaralı olarak ele geçirildi."
   },
-  {
-    "qid": "llm-tarih-005",
-    "question": "Bizans imparatoru topladığı orduyla başkentten hangi gün ayrıldı?",
-    "doc_id": "26808",
-    "doc_title": "Malazgirt Meydan Muharebesi",
-    "answer_span": "Romen Diyojen de büyük bir ordu kurup 13 Mart 1071'de Konstantinopolis'ten (bugünkü İstanbul) ayrıldı",
-    "annotator": "llm-1",
-    "source": "llm-draft",
-    "second_annotation": {
-      "annotator": "llm-2",
-      "answer_span": "Romen Diyojen de büyük bir ordu kurup 13 Mart 1071'de Konstantinopolis'ten (bugünkü İstanbul) ayrıldı."
-    },
-    "review": "agreed"
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-005",
+  "question": "Bizans imparatoru topladığı orduyla başkentten hangi gün ayrıldı?",
+  "doc_id": "26808",
+  "doc_title": "Malazgirt Meydan Muharebesi",
+  "answer_span": "Romen Diyojen de büyük bir ordu kurup 13 Mart 1071'de Konstantinopolis'ten (bugünkü İstanbul) ayrıldı",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Romen Diyojen de büyük bir ordu kurup 13 Mart 1071'de Konstantinopolis'ten (bugünkü İstanbul) ayrıldı."
   },
-  {
-    "qid": "llm-tarih-006",
-    "question": "Savaşa Kürt birliklerinin katıldığını yazan en eski kaynak olaydan ne kadar zaman sonra kaleme alınmıştır?",
-    "doc_id": "26808",
-    "doc_title": "Malazgirt Meydan Muharebesi",
-    "answer_span": "adlı eseri muharebeden yaklaşık 150 yıl sonra yazılmıştır",
-    "annotator": "llm-1",
-    "source": "llm-draft",
-    "second_annotation": {
-      "annotator": "llm-2",
-      "answer_span": "Malazgirt Muharebesine Kürtlerin katıldığını belirten en eski kaynak olan Sıbt İbnü'l-Cevzî'nin “Mir'âtü'z-Zaman Fi Tarihi'l-Ayan” adlı eseri muharebeden yaklaşık 150 yıl sonra yazılmıştır."
-    },
-    "review": "agreed"
-  }
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-006",
+  "question": "Savaşa Kürt birliklerinin katıldığını yazan en eski kaynak olaydan ne kadar zaman sonra kaleme alınmıştır?",
+  "doc_id": "26808",
+  "doc_title": "Malazgirt Meydan Muharebesi",
+  "answer_span": "adlı eseri muharebeden yaklaşık 150 yıl sonra yazılmıştır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Malazgirt Muharebesine Kürtlerin katıldığını belirten en eski kaynak olan Sıbt İbnü'l-Cevzî'nin “Mir'âtü'z-Zaman Fi Tarihi'l-Ayan” adlı eseri muharebeden yaklaşık 150 yıl sonra yazılmıştır."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-007",
+  "question": "Haliç'i kapatmak için gerilen zincirin baklaları hangi kalınlık aralığındaydı?",
+  "doc_id": "13171",
+  "doc_title": "İstanbul'un Fethi",
+  "answer_span": "kalınlıkları 1,9 ilâ 6,2 cm arasında değişebilmekteydi",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "1,9 ilâ 6,2 cm"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-008",
+  "question": "Kente yardıma gelen Cenevizli komutana kazanma hâlinde hangi ada söz verilmişti?",
+  "doc_id": "13171",
+  "doc_title": "İstanbul'un Fethi",
+  "answer_span": "Muharebe Bizans zaferiyle sonuçlanırsa Giustiniani'ye Limni adası verilecekti",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Limni adası"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-009",
+  "question": "Urban'ın döktüğü dev silahın attığı tek mermi ne kadar ağırlıktaydı?",
+  "doc_id": "13171",
+  "doc_title": "İstanbul'un Fethi",
+  "answer_span": "tek güllesi 550 kilogram civarındaydı ve topun uzunluğu 8, çevresi de 2.5 metreydi",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "550 kilogram"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-010",
+  "question": "Boğazdan geçmeye çalışırken batırılan Venedik gemisinin kaptanı nasıl öldürüldü?",
+  "doc_id": "13171",
+  "doc_title": "İstanbul'un Fethi",
+  "answer_span": "esir alındı ve Edirne'ye götürülerek kazığa oturtuldu",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "esir alındı ve Edirne'ye götürülerek kazığa oturtuldu"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-011",
+  "question": "On iki yaşındaki hükümdar babasını sefere çağıran mektubunda ne yazmıştı?",
+  "doc_id": "13171",
+  "doc_title": "İstanbul'un Fethi",
+  "answer_span": "\"Baba, eğer padişah siz iseniz geliniz ve ordunun başına geçiniz, yok eğer padişah ben isem size emrediyorum gelip ordunun başına geçiniz.\"",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Baba, eğer padişah siz iseniz geliniz ve ordunun başına geçiniz, yok eğer padişah ben isem size emrediyorum gelip ordunun başına geçiniz."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-012",
+  "question": "Kara tarafındaki asıl duvarın ilerisine çekilen ikinci savunma hattı ne kadar yüksekti?",
+  "doc_id": "13171",
+  "doc_title": "İstanbul'un Fethi",
+  "answer_span": "ana surun 14,5 metre önünde 8 metre yükseklikte ön surlar bulunuyordu",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "8 metre yükseklikte"
+  },
+  "review": "agreed"
+ }
 ]
