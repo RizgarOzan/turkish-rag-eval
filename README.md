@@ -235,14 +235,37 @@ model drafted are marked `"source": "llm-draft"`. A second model then picked
 its own answer span for each one without seeing the first label
 (`second_annotation`). Two spans agree when one contains the other or their
 token F1 is at least 0.5; agreed items get `"review": "agreed"`, the rest get
-`"needs-human"` and are never loaded. Batch 1 (2026-09-18): **30 of 30
-agreed**, 16 with identical spans, mean token F1 0.88. Batch 2 (2026-09-20,
-five new articles): **30 of 30 agreed**, 2 with identical spans, mean token
-F1 0.54 - the second pass kept picking the shortest span that still answers
-the question ("7.4 büyüklüğünde" against the whole clause around it), so
-almost every pair agrees by containment rather than by wording. Two LLMs
-tend to pick the same sentence, so read this as a sanity check rather than
-as human agreement.
+`"needs-human"` and are never loaded. Every batch so far is 30 of 30 agreed.
+
+### Agreement between the two passes
+
+| Batch | Questions | Identical | Mean IoU | Mean token F1 | Cohen's κ, fixed / sentence / hierarchical |
+|---|---|---|---|---|---|
+| 1 — 2026-09-18 (Malazgirt, Kapadokya, Mars, Mitokondri, Linux) | 30 | 16 | 0.816 | 0.878 | 1.00 / 1.00 / 1.00 |
+| 2 — 2026-09-20 (İstanbul'un Fethi, Ağrı Dağı, Jüpiter, Fotosentez, İnternet) | 30 | 4 | 0.419 | 0.540 | 0.96 / 1.00 / 1.00 |
+| **All drafts** | 60 | 20 | 0.617 | 0.709 | 0.98 / 1.00 / 1.00 |
+
+"Identical" means identical after tokenisation, so case and punctuation are
+folded; by raw string the counts are 1 and 2. IoU and token F1 come from
+`src/agreement.py`; κ is that file's chunk-level measure — for each chunking
+strategy, the binary "does this chunk contain the answer" label each span
+assigns to each chunk of its article, which is exactly how `run_eval.py`
+decides what counts as a hit.
+
+The two rows disagree about wording, not about the answer. In batch 2 the
+second pass kept picking the shortest span that still answers the question
+("7.4 büyüklüğünde" against the whole clause around it), which halves IoU -
+yet the labels the benchmark actually scores are the same: of the 180
+question × strategy runs, 3 differ, all with fixed-size chunks, where the
+shorter span also fell inside one neighbouring overlapping window. Two LLMs
+tend to pick the same sentence, so read this as a sanity check rather than as
+human agreement.
+
+The κ column is measured locally, because it needs the ten draft articles in
+the corpus and `data/raw/` is fetched rather than committed; the other
+columns are recomputed from the files in CI (`tests/test_readme_agreement.py`).
+Wiring the embedded second labels into `src/agreement.py` itself is
+[#15](https://github.com/RizgarOzan/turkish-rag-eval/issues/15).
 
 Drafts stay out of every number above until a re-run says otherwise:
 `load_gold()` skips them unless called with `include_drafts=True`. Synthetic
@@ -253,8 +276,9 @@ agreement is measured. This section is that declaration.
 
 - **58 queries is a small set.** Differences under roughly 0.05 nDCG should be
   read as noise, not as a ranking.
-- **One annotator, no second pass.** Gold labels are single-annotated; there is
-  no inter-annotator agreement figure.
+- **One annotator for the human set.** The 58 health questions are
+  single-annotated, so they have no agreement figure. The 60 drafted questions
+  are double-labelled, but by two LLM passes rather than by two people.
 - **Six embedding models, one corpus.** The model comparison uses the same 58
   health questions; `bge-m3` is a partial run and EmbeddingGemma is missing.
   `run_abstain.py` still uses only the default model.
