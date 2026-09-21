@@ -1,3 +1,7 @@
+# The pinned reference environment: the exact versions the published
+# numbers were measured on. For ordinary use install the package instead
+# (pip install 'turkish-rag-eval[all]'), which takes ranges from
+# pyproject.toml. Use this file to reproduce a result exactly.
 # CPU-only torch: the wheel lives on PyTorch's own index, not on PyPI.
 --extra-index-url https://download.pytorch.org/whl/cpu
 

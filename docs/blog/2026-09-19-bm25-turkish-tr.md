@@ -101,7 +101,7 @@ alınan E5 sonucu adil bir sonuç değil; harness bunları `src/models.py`'de ek
 olarak okuyun. Soruları tek kişi etiketledi. Hepsi tek alandan, Vikipedi'nin sağlık
 makalelerinden geliyor ve klinik metne olduğu gibi aktarılmaz. `bge-m3` yarım bir koşu,
 `google/embeddinggemma-300m` lisans onayı istediği için ölçülmedi. Sayıların hepsi
-README'de ve `python src/run_eval.py --model <ad>` ile yeniden üretilebiliyor.
+README'de ve `turkish-rag-eval run --model <ad>` ile yeniden üretilebiliyor.
 
 Set büyüyor: hedef beş alanda 300 soru. İlk 30 yeni soruyu bir dil modeli taslak olarak
 yazdı, ikinci bağımsız bir geçiş onu görmeden yeniden etiketledi; 30'un 30'u uyuştu. İnsan

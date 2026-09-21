@@ -104,7 +104,7 @@ is not a fair E5 number; the harness adds them in `src/models.py`.
 ranking. One person labelled them. They all come from one domain, Wikipedia's health
 articles, which is not clinical text. `bge-m3` is a partial run, and
 `google/embeddinggemma-300m` is gated behind a licence click and was not run. Every number is
-in the README and reproducible with `python src/run_eval.py --model <name>`.
+in the README and reproducible with `turkish-rag-eval run --model <name>`.
 
 The set is growing toward 300 questions over five domains. A language model drafted the
 first 30 new ones and a second, independent pass re-labelled them without seeing the first;
