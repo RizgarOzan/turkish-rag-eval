@@ -29,6 +29,7 @@ from . import __version__
 #: and may expose ``add_arguments(parser)``.
 COMMANDS = {
     "run": ("run_eval", "evaluate every chunking x retriever combination"),
+    "report": ("report", "turn results into a recommendation"),
     "abstain": ("run_abstain", "produce abstain records and the coverage curve"),
     "abstain-report": ("abstain", "re-print the coverage curve from saved records"),
     "agreement": ("agreement", "inter-annotator agreement over the gold set"),
