@@ -14,10 +14,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      # The base install plus dev extras: enough for the metrics, the gold-set
-      # checks and the Turkish tokeniser. Dense retrieval pulls torch and is
-      # not exercised here, so it stays out.
-      - run: pip install -e '.[dev]'
+      # Base install plus dev and charts: enough for the metrics, the gold-set
+      # checks, the Turkish tokeniser and chart rendering. Dense retrieval pulls
+      # torch and is not exercised here, so it stays out.
+      - run: pip install -e '.[dev,charts]'
       - run: python -m pytest -q
       - name: Offline checks on every question file
         run: turkish-rag-eval validate

@@ -32,6 +32,7 @@ COMMANDS = {
     "report": ("report", "turn results into a recommendation"),
     "abstain": ("run_abstain", "produce abstain records and the coverage curve"),
     "abstain-report": ("abstain", "re-print the coverage curve from saved records"),
+    "charts": ("charts", "render the result charts the README embeds"),
     "agreement": ("agreement", "inter-annotator agreement over the gold set"),
     "fetch-corpus": ("fetch_corpus", "download the Wikipedia corpus snapshot"),
     "export-hf": ("export_hf", "export the BEIR layout MTEB reads"),
