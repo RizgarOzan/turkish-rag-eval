@@ -2,6 +2,7 @@
 
 [![validate](https://github.com/RizgarOzan/turkish-rag-eval/actions/workflows/validate.yml/badge.svg)](https://github.com/RizgarOzan/turkish-rag-eval/actions/workflows/validate.yml)
 [![licence: MIT + CC BY-SA 4.0](https://img.shields.io/badge/licence-MIT%20%2B%20CC%20BY--SA%204.0-blue)](NOTICE.md)
+[![dataset on Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20dataset-RizgarOzan%2Fturkish--rag--eval-yellow)](https://huggingface.co/datasets/RizgarOzan/turkish-rag-eval)
 
 A retrieval evaluation harness for Turkish, built around one question:
 **which parts of a RAG pipeline actually earn their cost on an agglutinative
@@ -124,7 +125,9 @@ stemming worth it, does a hybrid help, and what does each cost on a CPU?".
 This harness keeps the articles whole, lets every chunker cut them its own way,
 and judges each chunk by the answer span, so pipeline choices can be compared
 on the same labels. For a model-only comparison, the same data exports to the
-BEIR layout MTEB reads (`python src/export_hf.py`).
+BEIR layout MTEB reads (`python src/export_hf.py`), published as
+[RizgarOzan/turkish-rag-eval](https://huggingface.co/datasets/RizgarOzan/turkish-rag-eval)
+on Hugging Face.
 
 ## What did not work
 

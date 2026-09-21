@@ -99,3 +99,15 @@ configurations and six models are in the
 Article text and answer spans come from Turkish Wikipedia, **CC BY-SA 4.0**;
 each article keeps its `url`. The questions were written for this dataset and
 are released under the same licence. The harness code is MIT.
+
+## Citation
+
+```bibtex
+@misc{ozan2026turkishrageval,
+  author       = {Rızgar Ozan},
+  title        = {Turkish RAG Eval: a retrieval test set for Turkish Wikipedia},
+  year         = {2026},
+  howpublished = {\url{https://huggingface.co/datasets/RizgarOzan/turkish-rag-eval}},
+  note         = {Harness: \url{https://github.com/RizgarOzan/turkish-rag-eval}}
+}
+```
