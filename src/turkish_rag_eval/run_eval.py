@@ -12,11 +12,11 @@ import json
 import statistics
 import time
 
-from chunking import STRATEGIES
-from gold import ROOT, load_gold, normalise
-from metrics import ndcg_at_k, precision_at_k, recall_at_k, reciprocal_rank
-from models import DEFAULT_MODEL, prefixes_for, results_dir
-from retrieval import DenseRetriever, HybridRetriever, SparseRetriever
+from .chunking import STRATEGIES
+from .gold import ROOT, load_gold, normalise
+from .metrics import ndcg_at_k, precision_at_k, recall_at_k, reciprocal_rank
+from .models import DEFAULT_MODEL, prefixes_for, results_dir
+from .retrieval import DenseRetriever, HybridRetriever, SparseRetriever
 
 CORPUS = ROOT / "data" / "raw" / "corpus.json"
 K_VALUES = (1, 3, 5, 10)
@@ -87,12 +87,12 @@ def _percentile(values: list[float], pct: float) -> float:
     return ordered[max(idx, 0)]
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser()
+def add_arguments(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--model", default=DEFAULT_MODEL)
     parser.add_argument("--k-max", type=int, default=10)
-    args = parser.parse_args()
 
+
+def run(args) -> int:
     docs = json.loads(CORPUS.read_text(encoding="utf-8"))
     gold = load_gold()
     print(f"{len(docs)} belge, {len(gold)} soru\nmodel: {args.model}\n")
@@ -144,7 +144,14 @@ def main() -> None:
         json.dumps(rows, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"\nen iyi: {rows[0]['chunking']} + {rows[0]['retriever']} "
           f"(nDCG@10={rows[0]['ndcg@10']:.3f})")
+    return 0
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    add_arguments(parser)
+    return run(parser.parse_args())
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

@@ -12,19 +12,21 @@ Re-running only fetches what is missing from disk.
 Content is CC BY-SA 4.0 (Wikipedia). See NOTICE.md for attribution.
 """
 
+import argparse
 import json
 import time
 from pathlib import Path
 
 import requests
 
-from gold import load_gold
+from .gold import load_gold
+from .paths import ROOT
 
 API = "https://tr.wikipedia.org/w/api.php"
 HEADERS = {"User-Agent": "turkish-rag-eval/0.1 (research; github.com/RizgarOzan)"}
 DELAY_SECONDS = 1.0
 MIN_EXTRACT_CHARS = 800
-OUT = Path(__file__).resolve().parent.parent / "data" / "raw" / "corpus.json"
+OUT = ROOT / "data" / "raw" / "corpus.json"
 
 TOPICS = [
     "Diyabet", "Hipertansiyon", "Astım", "Migren", "Anemi",
@@ -81,7 +83,7 @@ def fetch_batch(titles: list[str], attempt: int = 0) -> list[dict]:
     return out
 
 
-def main() -> None:
+def run(args=None) -> int:
     docs = {}
     if OUT.exists():
         for doc in json.loads(OUT.read_text(encoding="utf-8")):
@@ -115,7 +117,13 @@ def main() -> None:
     missing = [t for t in topics if t not in wanted]
     if missing:
         print(f"alinamayan {len(missing)}: {', '.join(missing)}")
+    return 0
+
+
+def main() -> int:
+    argparse.ArgumentParser(description=__doc__).parse_args()
+    return run(None)
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

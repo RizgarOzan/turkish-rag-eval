@@ -25,8 +25,8 @@ import sys
 import time
 from pathlib import Path
 
-from gold import GOLD, gold_files, normalise
-from turkish_text import tokenize, turkish_lower
+from .gold import GOLD, gold_files, normalise
+from .turkish_text import tokenize, turkish_lower
 
 REQUIRED = ("qid", "question", "doc_id", "doc_title", "answer_span")
 # Share of the question's stemmed words that may also appear in the span.
@@ -98,7 +98,7 @@ def check_items(files: dict[str, list]) -> list[str]:
 
 def fetch_article(doc_id: str) -> dict | None:
     import requests
-    from fetch_corpus import API, HEADERS
+    from .fetch_corpus import API, HEADERS
     params = {"action": "query", "prop": "extracts", "explaintext": 1,
               "pageids": doc_id, "format": "json"}
     for attempt in range(5):  # Wikipedia answers bursts with 429
@@ -114,7 +114,7 @@ def fetch_article(doc_id: str) -> dict | None:
 
 
 def check_online(items: list[dict], fetch=fetch_article, delay: float = 1.0) -> list[str]:
-    from fetch_corpus import MIN_EXTRACT_CHARS
+    from .fetch_corpus import MIN_EXTRACT_CHARS
     errors, articles = [], {}
     for item in items:
         doc_id = item["doc_id"]
@@ -138,12 +138,12 @@ def check_online(items: list[dict], fetch=fetch_article, delay: float = 1.0) -> 
     return errors
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser()
+def add_arguments(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--online", nargs="*", default=[], metavar="FILE",
                         help="also check these files against Wikipedia")
-    args = parser.parse_args()
 
+
+def run(args) -> int:
     files = {}
     for path in gold_files():
         try:
@@ -162,6 +162,12 @@ def main() -> int:
     total = sum(len(v) for v in files.values() if isinstance(v, list))
     print(f"{len(files)} dosya, {total} soru, {len(errors)} hata")
     return 1 if errors else 0
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    add_arguments(parser)
+    return run(parser.parse_args())
 
 
 if __name__ == "__main__":

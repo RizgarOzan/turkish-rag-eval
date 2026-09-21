@@ -12,7 +12,7 @@ no per-corpus tuning. k=60 is the value from Cormack et al. (2009).
 import numpy as np
 from rank_bm25 import BM25Okapi
 
-from turkish_text import tokenize
+from .turkish_text import tokenize
 
 RRF_K = 60
 

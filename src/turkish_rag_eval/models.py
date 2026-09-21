@@ -5,7 +5,7 @@ and their model cards require the same at inference. Models that ship their
 own prompts, or need none, get empty prefixes.
 """
 
-from gold import ROOT
+from .gold import ROOT
 
 DEFAULT_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 

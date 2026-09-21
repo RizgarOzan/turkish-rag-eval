@@ -9,7 +9,8 @@ import json
 import re
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+from .paths import ROOT
+
 GOLD = ROOT / "data" / "eval" / "gold.json"
 CONTRIB = ROOT / "data" / "eval" / "contrib"
 

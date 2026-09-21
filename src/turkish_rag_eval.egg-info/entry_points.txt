@@ -1,0 +1,2 @@
+[console_scripts]
+turkish-rag-eval = turkish_rag_eval.cli:main

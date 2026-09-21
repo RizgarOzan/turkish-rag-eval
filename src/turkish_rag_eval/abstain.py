@@ -18,10 +18,12 @@ score   - the dense retriever's raw top-1 cosine similarity. An absolute
 The comparison is the point. See results/abstain_curve_*.json.
 """
 
+import argparse
 import json
-from pathlib import Path
 
-RESULTS = Path(__file__).resolve().parent.parent / "results"
+from .paths import ROOT
+
+RESULTS = ROOT / "results"
 SIGNALS = ("margin", "score")
 
 
@@ -103,12 +105,18 @@ def report(records: list[dict]) -> None:
         print()
 
 
-def main() -> None:
+def run(args=None) -> int:
     path = RESULTS / "abstain_records.json"
     if not path.exists():
         raise SystemExit("once run_abstain.py calistirilmali")
     report(json.loads(path.read_text(encoding="utf-8")))
+    return 0
+
+
+def main() -> int:
+    argparse.ArgumentParser(description=__doc__).parse_args()
+    return run(None)
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

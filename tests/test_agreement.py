@@ -1,4 +1,4 @@
-from agreement import (
+from turkish_rag_eval.agreement import (
     chunk_kappa,
     cohens_kappa,
     evaluate_groups,

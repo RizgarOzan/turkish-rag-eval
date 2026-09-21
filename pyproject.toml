@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "turkish-rag-eval"
+version = "0.1.0"
+description = "Measure which parts of a Turkish RAG pipeline pay off: chunking, stemming, embedding model, fusion."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Rızgar Ozan" }]
+keywords = ["turkish", "retrieval", "rag", "bm25", "benchmark", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: Turkish",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Indexing",
+]
+
+# The sparse retriever, the metrics and the gold-set tooling run on these
+# alone. Everything that needs a GPU-sized download is an extra, so that
+# `pip install turkish-rag-eval` stays small enough to try.
+dependencies = [
+    "numpy>=1.24",
+    "rank-bm25>=0.2.2",
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+dense = ["sentence-transformers>=3.0", "torch>=2.0"]
+charts = ["matplotlib>=3.7"]
+llm = ["anthropic>=0.40"]
+dev = ["pytest>=7.4"]
+all = [
+    "turkish-rag-eval[dense]",
+    "turkish-rag-eval[charts]",
+    "turkish-rag-eval[llm]",
+    "turkish-rag-eval[dev]",
+]
+
+[project.urls]
+Homepage = "https://github.com/RizgarOzan/turkish-rag-eval"
+Dataset = "https://huggingface.co/datasets/RizgarOzan/turkish-rag-eval"
+Issues = "https://github.com/RizgarOzan/turkish-rag-eval/issues"
+
+[project.scripts]
+turkish-rag-eval = "turkish_rag_eval.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -14,14 +14,17 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install pytest requests
+      # The base install plus dev extras: enough for the metrics, the gold-set
+      # checks and the Turkish tokeniser. Dense retrieval pulls torch and is
+      # not exercised here, so it stays out.
+      - run: pip install -e '.[dev]'
       - run: python -m pytest -q
       - name: Offline checks on every question file
-        run: python src/validate_gold.py
+        run: turkish-rag-eval validate
       - name: Online checks on question files this change adds or edits
         env:
           BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
         run: |
           files=$(git diff --name-only --diff-filter=AM "$BASE" HEAD -- 'data/eval/contrib/*.json' 2>/dev/null || true)
           if [ -z "$files" ]; then echo "no new question files"; exit 0; fi
-          python src/validate_gold.py --online $files
+          turkish-rag-eval validate --online $files

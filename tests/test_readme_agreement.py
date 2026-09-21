@@ -9,7 +9,7 @@ import json
 import re
 from pathlib import Path
 
-from agreement import span_f1, span_iou
+from turkish_rag_eval.agreement import span_f1, span_iou
 
 ROOT = Path(__file__).resolve().parents[1]
 DRAFTS = sorted((ROOT / "data" / "eval" / "contrib").glob("llm-draft-*.json"))

@@ -9,16 +9,17 @@ retriever being evaluated, and the dense retriever's raw top-1 cosine, which
 is available regardless of which retriever won.
 """
 
+import argparse
 import json
 
-from abstain import RESULTS, margin_confidence, report, score_confidence
-from chunking import STRATEGIES
-from gold import load_gold
-from retrieval import DenseRetriever, HybridRetriever, SparseRetriever
-from run_eval import CORPUS, DEFAULT_MODEL, is_relevant
+from .abstain import RESULTS, margin_confidence, report, score_confidence
+from .chunking import STRATEGIES
+from .gold import load_gold
+from .retrieval import DenseRetriever, HybridRetriever, SparseRetriever
+from .run_eval import CORPUS, DEFAULT_MODEL, is_relevant
 
 
-def main() -> None:
+def run(args=None) -> int:
     summary = json.loads((RESULTS / "summary.json").read_text(encoding="utf-8"))
     best = summary[0]
     print(f"en iyi yapilandirma: {best['chunking']} + {best['retriever']}\n")
@@ -56,7 +57,13 @@ def main() -> None:
     (RESULTS / "abstain_records.json").write_text(
         json.dumps(records, ensure_ascii=False, indent=2), encoding="utf-8")
     report(records)
+    return 0
+
+
+def main() -> int:
+    argparse.ArgumentParser(description=__doc__).parse_args()
+    return run(None)
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
