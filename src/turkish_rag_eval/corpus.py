@@ -121,6 +121,9 @@ def _from_directory(directory: Path) -> list[dict]:
     ``notes.md`` in different folders stay distinct documents.
     """
     docs = []
+    # Resolved, because as_uri() refuses a relative path and --corpus is very
+    # often given as one.
+    directory = directory.resolve()
     for path in sorted(directory.rglob("*")):
         if path.suffix.lower() not in TEXT_SUFFIXES or not path.is_file():
             continue
@@ -129,7 +132,9 @@ def _from_directory(directory: Path) -> list[dict]:
             continue
         relative = path.relative_to(directory)
         docs.append({
-            "doc_id": str(relative),
+            # Posix separators so an id written on Linux still matches on
+            # Windows: the gold set has to name documents portably.
+            "doc_id": relative.as_posix(),
             "title": path.stem,
             "text": text,
             "url": path.as_uri(),
