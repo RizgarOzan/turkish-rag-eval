@@ -245,8 +245,8 @@
       false,
       false,
       false,
-      false,
-      true
+      true,
+      false
     ],
     "top_score": 0.031009615384615385,
     "found": true
@@ -442,8 +442,8 @@
       false,
       false,
       false,
-      false,
       true,
+      false,
       false
     ],
     "top_score": 0.031024531024531024,
@@ -768,10 +768,10 @@
       false,
       false,
       false,
-      false
+      true
     ],
     "top_score": 0.02565270188221008,
-    "found": false
+    "found": true
   },
   {
     "question": "Gut hastalarında metabolik sendrom ne kadar sık görülür?",

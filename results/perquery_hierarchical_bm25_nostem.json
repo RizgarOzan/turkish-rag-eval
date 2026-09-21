@@ -605,8 +605,8 @@
       false,
       false,
       false,
-      false,
-      true
+      true,
+      false
     ],
     "top_score": 8.57712787790273,
     "found": true
