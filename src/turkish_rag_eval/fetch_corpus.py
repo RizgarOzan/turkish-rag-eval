@@ -12,19 +12,25 @@ Re-running only fetches what is missing from disk.
 Content is CC BY-SA 4.0 (Wikipedia). See NOTICE.md for attribution.
 """
 
+import argparse
 import json
 import time
 from pathlib import Path
 
 import requests
 
-from gold import load_gold
+from .corpus import build_lock, compare_to_lock, load_corpus
+from .gold import load_gold
+from .paths import ROOT
 
 API = "https://tr.wikipedia.org/w/api.php"
 HEADERS = {"User-Agent": "turkish-rag-eval/0.1 (research; github.com/RizgarOzan)"}
 DELAY_SECONDS = 1.0
 MIN_EXTRACT_CHARS = 800
-OUT = Path(__file__).resolve().parent.parent / "data" / "raw" / "corpus.json"
+OUT = ROOT / "data" / "raw" / "corpus.json"
+#: Committed, unlike the corpus itself: it is small, and it is the only thing
+#: that lets a checkout tell whether its articles match the published numbers.
+LOCK = ROOT / "data" / "corpus.lock.json"
 
 TOPICS = [
     "Diyabet", "Hipertansiyon", "Astım", "Migren", "Anemi",
@@ -48,7 +54,9 @@ TOPICS = [
 def fetch_batch(titles: list[str], attempt: int = 0) -> list[dict]:
     params = {
         "action": "query",
-        "prop": "extracts",
+        # info comes along for lastrevid: the revision each extract was taken
+        # from, which is what corpus.lock.json pins.
+        "prop": "extracts|info",
         "explaintext": 1,
         "exlimit": "max",
         "redirects": 1,
@@ -77,11 +85,57 @@ def fetch_batch(titles: list[str], attempt: int = 0) -> list[dict]:
             "title": page["title"],
             "url": f"https://tr.wikipedia.org/?curid={page['pageid']}",
             "text": page["extract"],
+            "revid": page.get("lastrevid"),
         })
     return out
 
 
-def main() -> None:
+def add_arguments(parser: argparse.ArgumentParser) -> None:
+    parser.add_argument(
+        "--verify", action="store_true",
+        help="do not fetch; only check the corpus on disk against the lockfile")
+    parser.add_argument(
+        "--update-lock", action="store_true",
+        help="accept the fetched corpus as the new pinned snapshot")
+
+
+def report_drift(docs: list[dict], update: bool) -> int:
+    """Compare against corpus.lock.json and say what moved.
+
+    Wikipedia keeps editing underneath us, so a plain refetch is not
+    reproducible. Rather than pretend otherwise, drift is made loud: the
+    command fails, names the articles that changed, and waits for someone to
+    decide whether the published numbers still describe this corpus.
+    """
+    if update or not LOCK.exists():
+        LOCK.parent.mkdir(parents=True, exist_ok=True)
+        lock = build_lock(docs, {d["doc_id"]: d.get("revid") for d in docs})
+        LOCK.write_text(json.dumps(lock, ensure_ascii=False, indent=2) + "\n",
+                        encoding="utf-8")
+        print(f"kilit yazildi: {lock['fingerprint']} -> {LOCK}")
+        return 0
+
+    lock = json.loads(LOCK.read_text(encoding="utf-8"))
+    drift = compare_to_lock(lock, docs)
+    if not drift:
+        print(f"kilit dogrulandi: {lock['fingerprint']}")
+        return 0
+
+    print(f"\nkorpus kilitten farkli ({len(drift)} degisiklik):")
+    for line in drift:
+        print(f"  {line}")
+    print("\nYayinlanan sayilar bu korpusu tarif etmiyor olabilir. Kabul etmek "
+          "icin: turkish-rag-eval fetch-corpus --update-lock")
+    return 1
+
+
+def run(args=None) -> int:
+    if args is not None and getattr(args, "verify", False):
+        if not OUT.exists():
+            print(f"{OUT} yok - once fetch-corpus calistirin")
+            return 1
+        return report_drift(load_corpus(OUT).docs, update=False)
+
     docs = {}
     if OUT.exists():
         for doc in json.loads(OUT.read_text(encoding="utf-8")):
@@ -116,6 +170,15 @@ def main() -> None:
     if missing:
         print(f"alinamayan {len(missing)}: {', '.join(missing)}")
 
+    return report_drift(load_corpus(OUT).docs,
+                        update=bool(args and getattr(args, "update_lock", False)))
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    add_arguments(parser)
+    return run(parser.parse_args())
+
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

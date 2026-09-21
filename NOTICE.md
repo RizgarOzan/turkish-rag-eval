@@ -1,7 +1,7 @@
 # Data attribution
 
 The retrieval corpus in `data/raw/corpus.json` is built from Turkish Wikipedia
-articles fetched through the MediaWiki API by `src/fetch_corpus.py`.
+articles fetched through the MediaWiki API by `turkish-rag-eval fetch-corpus`.
 
 Wikipedia text is licensed **CC BY-SA 4.0**. Each document keeps its `title`
 and permanent `url`, so every retrieved chunk can be traced to its source

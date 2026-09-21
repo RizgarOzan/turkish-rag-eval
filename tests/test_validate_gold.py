@@ -1,7 +1,7 @@
 import json
 
-from gold import load_gold
-from validate_gold import check_items, check_online
+from turkish_rag_eval.gold import load_gold
+from turkish_rag_eval.validate_gold import check_items, check_online
 
 GOOD = {
     "qid": "ali-001",
@@ -140,7 +140,12 @@ def test_online_checks_the_second_annotation_span_too():
     assert len(errors) == 1 and "second_annotation" in errors[0]
 
 def test_shipped_gold_set_passes():
-    from validate_gold import main
-    import sys
-    sys.argv = ["validate_gold.py"]
-    assert main() == 0
+    # Through add_arguments/run rather than main(), so the check does not have
+    # to reach into sys.argv to say "no --online files".
+    import argparse
+
+    from turkish_rag_eval.validate_gold import add_arguments, run
+
+    parser = argparse.ArgumentParser()
+    add_arguments(parser)
+    assert run(parser.parse_args([])) == 0

@@ -4,8 +4,8 @@ Run with: python -m pytest tests -q
 """
 import pytest
 
-from models import DEFAULT_MODEL, prefixes_for, results_dir
-from gold import ROOT
+from turkish_rag_eval.models import DEFAULT_MODEL, prefixes_for, results_dir
+from turkish_rag_eval.gold import ROOT
 
 
 def test_e5_models_get_their_query_and_passage_prefixes():
@@ -31,7 +31,7 @@ def test_other_models_write_to_their_own_folder():
 def test_dense_retriever_applies_prefixes():
     np = pytest.importorskip("numpy")
     pytest.importorskip("rank_bm25")
-    from retrieval import DenseRetriever
+    from turkish_rag_eval.retrieval import DenseRetriever
 
     seen = []
 

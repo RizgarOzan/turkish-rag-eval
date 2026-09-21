@@ -12,9 +12,22 @@ no per-corpus tuning. k=60 is the value from Cormack et al. (2009).
 import numpy as np
 from rank_bm25 import BM25Okapi
 
-from turkish_text import tokenize
+from .turkish_text import tokenize
 
 RRF_K = 60
+
+
+def _rank(scores, k: int) -> list[tuple[int, float]]:
+    """Top ``k`` (index, score) pairs, ties broken by the lower chunk index.
+
+    ``np.argsort`` defaults to an introsort that is *not* stable, so two chunks
+    with identical scores could swap places between runs on the same data -
+    which is invisible in aggregate but moves a top-1 metric, and makes a
+    published number impossible to reproduce exactly. Sparse scores tie often:
+    every chunk sharing no query term scores exactly 0.0.
+    """
+    top = np.argsort(-scores, kind="stable")[:k]
+    return [(int(i), float(scores[i])) for i in top]
 
 
 class DenseRetriever:
@@ -38,8 +51,7 @@ class DenseRetriever:
             show_progress_bar=False,
         )[0].astype(np.float32)
         scores = self.matrix @ vector  # both normalised -> cosine
-        top = np.argsort(-scores)[:k]
-        return [(int(i), float(scores[i])) for i in top]
+        return _rank(scores, k)
 
 
 class SparseRetriever:
@@ -51,8 +63,7 @@ class SparseRetriever:
 
     def search(self, query: str, k: int) -> list[tuple[int, float]]:
         scores = self.bm25.get_scores(tokenize(query, self.stem_length))
-        top = np.argsort(-scores)[:k]
-        return [(int(i), float(scores[i])) for i in top]
+        return _rank(scores, k)
 
 
 class HybridRetriever:
@@ -67,5 +78,7 @@ class HybridRetriever:
         for retriever in (self.dense, self.sparse):
             for rank, (idx, _) in enumerate(retriever.search(query, self.depth)):
                 fused[idx] = fused.get(idx, 0.0) + 1.0 / (RRF_K + rank + 1)
-        ranked = sorted(fused.items(), key=lambda kv: -kv[1])[:k]
+        # Tie-break on the index rather than relying on insertion order, which
+        # depends on which retriever happened to surface a chunk first.
+        ranked = sorted(fused.items(), key=lambda kv: (-kv[1], kv[0]))[:k]
         return [(idx, score) for idx, score in ranked]

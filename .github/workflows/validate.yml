@@ -14,14 +14,36 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install pytest requests
+      # Base install plus dev and charts: enough for the metrics, the gold-set
+      # checks, the Turkish tokeniser and chart rendering. Dense retrieval pulls
+      # torch and is not exercised here, so it stays out.
+      - run: pip install -e '.[dev,charts]'
       - run: python -m pytest -q
       - name: Offline checks on every question file
-        run: python src/validate_gold.py
+        run: turkish-rag-eval validate
       - name: Online checks on question files this change adds or edits
         env:
           BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
         run: |
           files=$(git diff --name-only --diff-filter=AM "$BASE" HEAD -- 'data/eval/contrib/*.json' 2>/dev/null || true)
           if [ -z "$files" ]; then echo "no new question files"; exit 0; fi
-          python src/validate_gold.py --online $files
+          turkish-rag-eval validate --online $files
+
+      # Every leaderboard number has to follow from the per-query relevance
+      # arrays committed beside it. This is what stops the table from being a
+      # list of figures people typed in.
+      - name: Leaderboard entries agree with their own evidence
+        run: turkish-rag-eval leaderboard --check
+
+      # A newly submitted model must additionally say which harness and which
+      # corpus produced it, and the corpus must be the pinned one - otherwise
+      # its row is not comparable to the rows above it.
+      - name: Submitted results carry provenance
+        env:
+          BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          dirs=$(git diff --name-only --diff-filter=AM "$BASE" HEAD \
+                   -- 'results/models/*/summary.json' 2>/dev/null \
+                 | xargs -r -n1 dirname | sort -u)
+          if [ -z "$dirs" ]; then echo "no new model results"; exit 0; fi
+          turkish-rag-eval leaderboard --strict $dirs

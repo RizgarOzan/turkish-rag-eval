@@ -21,7 +21,7 @@ import json
 import shutil
 from pathlib import Path
 
-from gold import ROOT, load_gold
+from .gold import ROOT, load_gold
 
 CORPUS = ROOT / "data" / "raw" / "corpus.json"
 CARD = ROOT / "docs" / "hf-dataset-card.md"
@@ -49,11 +49,11 @@ def write(out: Path, corpus: list, queries: list, qrels: list) -> None:
                         encoding="utf-8")
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser()
+def add_arguments(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--out", type=Path, default=ROOT / "data" / "hf")
-    args = parser.parse_args()
 
+
+def run(args) -> int:
     docs = json.loads(CORPUS.read_text(encoding="utf-8"))
     corpus, queries, qrels = build(load_gold(), docs)
     write(args.out, corpus, queries, qrels)
@@ -61,7 +61,14 @@ def main() -> None:
     chars = sum(len(d["text"]) for d in corpus)
     print(f"{len(corpus)} articles ({chars} characters), {len(queries)} queries, "
           f"{len(qrels)} qrels -> {args.out}")
+    return 0
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    add_arguments(parser)
+    return run(parser.parse_args())
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

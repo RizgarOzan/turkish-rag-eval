@@ -37,7 +37,7 @@ is needed — if you read Turkish well, you can contribute.
 
 ```bash
 pip install requests pytest
-python src/validate_gold.py --online data/eval/contrib/yourname-topic.json
+turkish-rag-eval validate --online data/eval/contrib/yourname-topic.json
 ```
 
 ### The rules that make a question useful
@@ -81,18 +81,46 @@ own `answer_span`, and set `"second_of"` to the qid you are re-annotating:
 }
 ```
 
-`python src/validate_gold.py` allows the repeated question only when
+`turkish-rag-eval validate` allows the repeated question only when
 `second_of` resolves this way. Once a question has two (or more) independent
-spans, `python src/agreement.py` reports IoU (Jaccard overlap of the spans'
+spans, `turkish-rag-eval agreement` reports IoU (Jaccard overlap of the spans'
 token sets, averaged over every annotator pair if there are more than two) as
 the headline number, token-level F1 alongside it, and, per chunking strategy,
 Cohen's kappa over which chunks each span would mark relevant.
+
+## Submit an embedding model
+
+The leaderboard takes submissions. Run the harness and commit what it wrote:
+
+```bash
+pip install -e '.[all]'
+turkish-rag-eval fetch-corpus        # or --verify, if you already have it
+turkish-rag-eval run --model <org>/<name>
+turkish-rag-eval leaderboard --check
+```
+
+That writes `results/models/<org>__<name>/` — a summary plus the per-query
+relevance array behind every number. Commit the whole directory; the numbers
+alone are not a submission.
+
+CI re-derives each reported metric from those per-query files rather than
+taking them on trust, and a new submission must additionally carry the harness
+version and a corpus fingerprint matching `data/corpus.lock.json`. If the
+fingerprint check fails, your corpus has drifted from the pinned snapshot and
+the run is not comparable to the other rows — refetch before rerunning.
+
+Say in the pull request what hardware you measured on. The timing columns are
+not comparable across machines and the table says so.
 
 ## Code
 
 Bug fixes and new retrievers or embedding models are welcome too. Run
 `python -m pytest` before opening a pull request, keep changes small, and say
 in the description what you measured.
+
+Anything that can move a published number — a tie-break, a chunker, a
+normaliser — is a breaking change for a benchmark even if no API changed. Note
+it in `CHANGELOG.md` under Unreleased.
 
 ---
 
@@ -109,7 +137,7 @@ etiketleyici.** Eklediğin her soru sonuçlardaki gürültüyü azaltır. Makine
    kimliği".
 3. Cevabı makalede açıkça yazan **5–10 soru** yaz.
 4. `data/eval/contrib/<github-adın>-<konu>.json` dosyasını yukarıdaki biçimde
-   oluştur, `python src/validate_gold.py --online <dosya>` ile kontrol et ve
+   oluştur, `turkish-rag-eval validate --online <dosya>` ile kontrol et ve
    pull request aç.
 
 **Kurallar:** Soruyu makalenin kelimeleriyle değil, bir insanın soracağı gibi

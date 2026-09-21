@@ -37,9 +37,9 @@ from collections import Counter
 from itertools import combinations
 from pathlib import Path
 
-from chunking import STRATEGIES
-from gold import ROOT, load_gold, normalise
-from turkish_text import tokenize, turkish_lower
+from .chunking import STRATEGIES
+from .gold import ROOT, load_gold, normalise
+from .turkish_text import tokenize, turkish_lower
 
 CORPUS = ROOT / "data" / "raw" / "corpus.json"
 
@@ -181,15 +181,15 @@ def _mean_or_none(values) -> float | None:
     return sum(values) / len(values) if values else None
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser()
+def add_arguments(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--corpus", default=str(CORPUS))
-    args = parser.parse_args()
 
+
+def run(args) -> int:
     groups = group_by_question(load_gold())
     if not groups:
         print("birden fazla etiketleyicisi olan soru yok")
-        return
+        return 0
 
     corpus_path = Path(args.corpus)
     if corpus_path.exists():
@@ -220,7 +220,14 @@ def main() -> None:
     out.parent.mkdir(exist_ok=True)
     out.write_text(json.dumps({"summary": summary, "questions": rows},
                                ensure_ascii=False, indent=2), encoding="utf-8")
+    return 0
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    add_arguments(parser)
+    return run(parser.parse_args())
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

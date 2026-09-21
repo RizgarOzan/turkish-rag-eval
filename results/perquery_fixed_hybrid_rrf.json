@@ -136,8 +136,8 @@
       false,
       false,
       false,
-      false,
       true,
+      false,
       false
     ],
     "top_score": 0.02946236559139785,
@@ -507,8 +507,8 @@
     "question": "OKB kaygı bozuklukları arasında mı sayılıyor?",
     "total_relevant": 1,
     "relevance": [
-      false,
       true,
+      false,
       false,
       false,
       false,

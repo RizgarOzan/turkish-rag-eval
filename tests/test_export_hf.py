@@ -2,7 +2,7 @@ import json
 
 import pytest
 
-from export_hf import build, write
+from turkish_rag_eval.export_hf import build, write
 
 DOCS = [
     {"doc_id": "1", "title": "Diyabet", "url": "https://tr.wikipedia.org/?curid=1",

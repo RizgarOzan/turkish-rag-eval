@@ -7,8 +7,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
-from metrics import ndcg_at_k, precision_at_k, recall_at_k, reciprocal_rank  # noqa: E402
-from turkish_text import tokenize, turkish_lower  # noqa: E402
+from turkish_rag_eval.metrics import ndcg_at_k, precision_at_k, recall_at_k, reciprocal_rank  # noqa: E402
+from turkish_rag_eval.turkish_text import tokenize, turkish_lower  # noqa: E402
 
 
 def test_ndcg_perfect_ranking_is_one():
