@@ -56,3 +56,29 @@ def test_command_help_is_the_modules_own(capsys):
         cli.main(["validate", "--help"])
     assert exit_info.value.code == 0
     assert "--online" in capsys.readouterr().out
+
+
+def test_a_lazily_imported_extra_gets_the_friendly_message(capsys, monkeypatch):
+    # charts reaches for matplotlib inside the drawing function, not at module
+    # load, so the import error escapes run() rather than the import. It still
+    # has to name the extra instead of printing a traceback.
+    import sys
+
+    monkeypatch.setitem(sys.modules, "matplotlib", None)
+    monkeypatch.setitem(sys.modules, "matplotlib.pyplot", None)
+
+    assert cli.main(["charts"]) == 2
+    message = capsys.readouterr().err
+    assert "turkish-rag-eval[charts]" in message
+    assert "Traceback" not in message
+
+
+def test_the_extras_map_only_names_real_extras():
+    import tomllib
+    from pathlib import Path
+
+    pyproject = tomllib.loads(
+        (Path(__file__).resolve().parents[1] / "pyproject.toml")
+        .read_text(encoding="utf-8"))
+    declared = set(pyproject["project"]["optional-dependencies"])
+    assert set(cli.EXTRAS.values()) <= declared

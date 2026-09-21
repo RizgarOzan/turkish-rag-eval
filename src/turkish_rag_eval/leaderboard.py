@@ -30,6 +30,8 @@ from .report import DEFAULT_METRIC, metric_value
 #: Recomputation should be exact; this only absorbs JSON float round-tripping.
 TOLERANCE = 1e-9
 
+DEFAULT_LOCK = ROOT / "data" / "corpus.lock.json"
+
 METRICS = ("ndcg@10", "recall@5", "mrr")
 
 
@@ -81,12 +83,18 @@ def _model_from_directory(directory: Path) -> str:
     return "(default model)"
 
 
-def verify(directory: Path, strict: bool = False) -> tuple[list[str], list[str]]:
+def verify(directory: Path, strict: bool = False,
+           lock_path: Path | None = None) -> tuple[list[str], list[str]]:
     """Re-derive every reported metric from the per-query files.
 
     Returns (errors, warnings). An error means the directory's numbers do not
     follow from its own evidence; a warning means the evidence is thinner than
     a new submission is allowed to be.
+
+    ``lock_path`` is the corpus lockfile a strict check compares against, and
+    is explicit rather than read from the repository root so that verifying a
+    results directory is a function of its arguments - a check that silently
+    consults surrounding state gives different verdicts on the same input.
     """
     errors: list[str] = []
     warnings: list[str] = []
@@ -136,7 +144,7 @@ def verify(directory: Path, strict: bool = False) -> tuple[list[str], list[str]]
                    f"so the numbers say which corpus produced them")
         (errors if strict else warnings).append(message)
     elif strict:
-        errors.extend(_fingerprint_against_lock(name, fingerprint))
+        errors.extend(_fingerprint_against_lock(name, fingerprint, lock_path))
 
     if not rows[0].get("harness_version"):
         message = f"{name}: no harness version recorded"
@@ -145,8 +153,9 @@ def verify(directory: Path, strict: bool = False) -> tuple[list[str], list[str]]
     return errors, warnings
 
 
-def _fingerprint_against_lock(name: str, fingerprint: str) -> list[str]:
-    lock_path = ROOT / "data" / "corpus.lock.json"
+def _fingerprint_against_lock(name: str, fingerprint: str,
+                              lock_path: Path | None) -> list[str]:
+    lock_path = lock_path or DEFAULT_LOCK
     if not lock_path.exists():
         return []
     locked = json.loads(lock_path.read_text(encoding="utf-8")).get("fingerprint")
@@ -185,6 +194,8 @@ def add_arguments(parser: argparse.ArgumentParser) -> None:
                         help="directories that must also carry provenance and "
                              "match the pinned corpus; in CI, the ones the pull "
                              "request touches")
+    parser.add_argument("--lock", type=Path, default=DEFAULT_LOCK,
+                        help="corpus lockfile a strict check compares against")
     parser.add_argument("--out", type=Path, default=None,
                         help="also write the table to this file")
 
@@ -201,7 +212,8 @@ def run(args) -> int:
         errors, warnings = [], []
         for directory in directories:
             directory_errors, directory_warnings = verify(
-                directory, strict=directory.resolve() in strict_paths)
+                directory, strict=directory.resolve() in strict_paths,
+                lock_path=getattr(args, "lock", None))
             errors += directory_errors
             warnings += directory_warnings
 

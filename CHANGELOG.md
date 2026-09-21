@@ -67,15 +67,32 @@ results can be cited.
 ### Fixed
 
 - A relative `--corpus` directory crashed in `Path.as_uri()`.
+- A missing optional dependency imported lazily — `charts` reaches for
+  matplotlib inside the drawing function — escaped the CLI's handler and
+  printed a traceback instead of naming the extra that provides it.
+- `leaderboard --check --strict` read the repository's corpus lockfile through
+  a module-level path, so its verdict on a results directory depended on
+  whether the surrounding checkout had fetched a corpus. The lockfile is now
+  an argument (`--lock`).
 - `slugify` used `str.lower()`, which turns "İ" into an `i` plus a combining
   dot, so "İstanbul" became "i-stanbul" — the casing trap this project exists
   to measure, in its own identifiers.
 
+### Verified
+
+- `results/` was re-run on v0.1.0 against the pinned corpus. Eight of the
+  twelve rows came back bit-identical; the four that moved are exactly the
+  ones where ties are expected — the three `hybrid_rrf` rows, whose RRF scores
+  collide at `1/(60+rank)`, and one `bm25_nostem` row, where every chunk
+  sharing no query term scores exactly 0.0. No `dense` or `bm25_stem5` row
+  changed by a digit, which is what the tie-break fix predicted.
+
 ### Known
 
-- The committed `results/` predate the stable tie-break and have no
-  provenance fields. Re-run `turkish-rag-eval run` to bring them onto v0.1.0
-  numbering; `leaderboard --check` reports this as a warning until then.
+- The five per-model directories under `results/models/` predate provenance
+  and the stable tie-break. Their `dense` figures are unaffected; each
+  `hybrid_rrf` figure will move by roughly +0.006 when re-run.
+  `leaderboard --check` reports them as warnings until then, by design.
 
 [Unreleased]: https://github.com/RizgarOzan/turkish-rag-eval/compare/v0.1.0...HEAD
 [0.1.0]: https://github.com/RizgarOzan/turkish-rag-eval/releases/tag/v0.1.0

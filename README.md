@@ -20,7 +20,7 @@ turkish-rag-eval report
 **1. Turkish stemming is the cheapest real win.** Truncating tokens to a
 5-character prefix before BM25 lifts nDCG@10 by 23–29% on every chunking
 strategy, and a paired bootstrap puts every one of those gains clear of zero
-(`hierarchical +0.143, 95% CI [+0.026, +0.204]`). "diyabet", "diyabetin",
+(`hierarchical +0.111, 95% CI [+0.026, +0.204]`). "diyabet", "diyabetin",
 "diyabete", "diyabetli" are four surface forms of one concept; an unstemmed
 index almost never matches the query's form.
 
@@ -62,35 +62,36 @@ over queries; `turkish-rag-eval report` regenerates this table.
 
 | Chunking | Retriever | nDCG@10 | 95% CI | R@5 | MRR | P95 |
 |---|---|---|---|---|---|---|
-| **hierarchical** | **hybrid_rrf** | **0.607** | [0.503, 0.708] | 0.690 | 0.550 | 25 ms |
-| sentence | hybrid_rrf | 0.552 | [0.446, 0.658] | 0.621 | 0.498 | 25 ms |
-| fixed | hybrid_rrf | 0.510 | [0.399, 0.622] | 0.578 | 0.476 | 31 ms |
+| **hierarchical** | **hybrid_rrf** | **0.613** | [0.508, 0.716] | 0.690 | 0.559 | 37 ms |
+| sentence | hybrid_rrf | 0.558 | [0.453, 0.662] | 0.621 | 0.500 | 27 ms |
+| fixed | hybrid_rrf | 0.517 | [0.404, 0.629] | 0.578 | 0.484 | 31 ms |
 | sentence | bm25_stem5 | 0.510 | [0.403, 0.621] | 0.638 | 0.462 | 4 ms |
-| hierarchical | dense | 0.501 | [0.396, 0.606] | 0.569 | 0.441 | 25 ms |
-| hierarchical | bm25_stem5 | 0.494 | [0.386, 0.605] | 0.569 | 0.444 | 5 ms |
+| hierarchical | dense | 0.501 | [0.396, 0.606] | 0.569 | 0.441 | 30 ms |
+| hierarchical | bm25_stem5 | 0.494 | [0.386, 0.605] | 0.569 | 0.444 | 8 ms |
 | fixed | bm25_stem5 | 0.476 | [0.371, 0.585] | 0.526 | 0.421 | 4 ms |
-| sentence | dense | 0.461 | [0.356, 0.567] | 0.552 | 0.410 | 19 ms |
-| fixed | dense | 0.446 | [0.341, 0.555] | 0.491 | 0.402 | 21 ms |
-| sentence | bm25_nostem | 0.410 | [0.308, 0.515] | 0.483 | 0.355 | 4 ms |
-| fixed | bm25_nostem | 0.387 | [0.290, 0.487] | 0.414 | 0.319 | 4 ms |
-| hierarchical | bm25_nostem | 0.383 | [0.285, 0.481] | 0.500 | 0.319 | 6 ms |
+| sentence | dense | 0.461 | [0.356, 0.567] | 0.552 | 0.410 | 21 ms |
+| fixed | dense | 0.446 | [0.341, 0.555] | 0.491 | 0.402 | 25 ms |
+| sentence | bm25_nostem | 0.411 | [0.308, 0.515] | 0.483 | 0.356 | 4 ms |
+| fixed | bm25_nostem | 0.387 | [0.290, 0.487] | 0.414 | 0.319 | 3 ms |
+| hierarchical | bm25_nostem | 0.383 | [0.285, 0.482] | 0.500 | 0.319 | 6 ms |
 
 `turkish-rag-eval report` does not stop at the table — it names the cheapest
 configuration the data cannot separate from the best:
 
 ```
-Recommended: sentence + bm25_stem5
-  0.638 recall@5 against 0.690 for hierarchical + hybrid_rrf, a gap of 0.052
+Recommended: sentence + hybrid_rrf
+  0.558 ndcg@10 against 0.613 for hierarchical + hybrid_rrf, a gap of 0.056
   that a paired bootstrap over 58 shared queries cannot distinguish from zero.
-  It answers in 4 ms at P95 against 25 ms.
+  It answers in 27 ms at P95 against 37 ms.
 ```
 
 Comparisons are **paired**: both systems answered the same queries, so
 resampling per-query differences removes the variance of some queries being
-harder than others. It matters. `hierarchical + hybrid_rrf` beats
-`fixed + hybrid_rrf` by 0.097 and beats `sentence + bm25_stem5` by 0.097 — yet
-only the second gap clears zero, because the per-query differences are far
-steadier (sd 0.34 against 0.40).
+harder than others. It matters, and this data shows it in the sharpest way.
+`hierarchical + hybrid_rrf` beats `fixed + hybrid_rrf` by 0.097 and beats
+`sentence + bm25_stem5` by 0.104 — yet only the **larger** gap clears zero,
+because its per-query differences are so much steadier (sd 0.34 against 0.40).
+Ranking by the gap alone gets this backwards.
 
 ### What else the numbers say
 
@@ -129,6 +130,14 @@ minutes, before the hierarchical chunks; its two numbers come from that
 partial run. `google/embeddinggemma-300m` is gated behind a licence click and
 was not run. Per-query results for every completed model are in
 `results/models/`.
+
+> These five rows were measured together on one machine before v0.1.0, which
+> is why the timing columns are comparable with each other and not with the
+> main table above. Their `dense` columns are unaffected by the stable
+> tie-break, but each `Hybrid hierarchical` figure will move by roughly +0.006
+> when the model is re-run — the default row's went 0.607 → 0.613.
+> `turkish-rag-eval leaderboard --check` reports them as missing provenance
+> until then.
 
 **The model was the problem, not dense retrieval.** Every model trained for
 retrieval (E5, bge-m3, Mursit) beats stemmed BM25 on its own, on every
@@ -296,9 +305,13 @@ A benchmark whose numbers cannot be reproduced is not comparable, so:
 - **Ranking is deterministic**, ties included.
 - **Dependencies are pinned**, and results are quoted against a release tag.
 
-> **Note:** the committed `results/` predate the stable tie-break, so a re-run
-> may move the last decimal on rows with tied sparse scores. Re-run
-> `turkish-rag-eval run` to bring them onto v0.1.0 numbering.
+The main table above was re-run on v0.1.0 and carries the pinned corpus
+fingerprint. The re-run is also the clearest evidence the tie-break mattered:
+**eight of the twelve rows came back bit-identical**, and the four that moved
+are exactly the ones where ties are expected — the three `hybrid_rrf` rows,
+whose RRF scores collide at `1/(60+rank)`, and one `bm25_nostem` row, where
+every chunk sharing no query term scores exactly 0.0. No `dense` or
+`bm25_stem5` row changed by a single digit.
 
 ## Running it
 

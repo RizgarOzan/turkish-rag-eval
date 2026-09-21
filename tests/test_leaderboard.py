@@ -47,7 +47,12 @@ def write_results(directory, hits=(True, True, False, False), **overrides):
 
 
 def test_honest_results_pass(tmp_path):
-    errors, warnings = verify(write_results(tmp_path / "r"), strict=True)
+    # lock_path is passed explicitly: a verdict on a results directory must
+    # not depend on whether the surrounding checkout happens to have fetched
+    # a corpus. Before this was a parameter, the shipped lockfile made this
+    # very test fail.
+    errors, warnings = verify(write_results(tmp_path / "r"), strict=True,
+                              lock_path=tmp_path / "absent.lock.json")
     assert errors == [] and warnings == []
 
 
@@ -81,7 +86,8 @@ def test_unscored_queries_are_excluded_the_same_way_run_eval_excludes_them(tmp_p
         "corpus_fingerprint": FINGERPRINT, "harness_version": "0.1.0",
     }]), encoding="utf-8")
 
-    errors, _ = verify(directory, strict=True)
+    errors, _ = verify(directory, strict=True,
+                       lock_path=tmp_path / "absent.lock.json")
     assert errors == []
 
 
@@ -96,7 +102,8 @@ def test_missing_provenance_warns_but_does_not_fail(tmp_path):
 def test_missing_provenance_fails_a_new_submission(tmp_path):
     directory = write_results(tmp_path / "r", corpus_fingerprint="",
                               harness_version="")
-    errors, warnings = verify(directory, strict=True)
+    errors, warnings = verify(directory, strict=True,
+                              lock_path=tmp_path / "absent.lock.json")
     assert len(errors) == 2 and warnings == []
 
 
@@ -157,3 +164,21 @@ def test_table_ranks_by_the_metric(tmp_path):
                                       model="b/strong"))
     table = format_markdown([weak, strong])
     assert table.index("b/strong") < table.index("a/weak")
+
+
+def test_a_run_on_an_unpinned_corpus_is_rejected(tmp_path):
+    lock = tmp_path / "corpus.lock.json"
+    lock.write_text(json.dumps({"version": 1, "fingerprint": "sha256:other",
+                                "documents": []}), encoding="utf-8")
+    errors, _ = verify(write_results(tmp_path / "r"), strict=True,
+                       lock_path=lock)
+    assert any("not the pinned one" in e for e in errors)
+
+
+def test_a_run_on_the_pinned_corpus_is_accepted(tmp_path):
+    lock = tmp_path / "corpus.lock.json"
+    lock.write_text(json.dumps({"version": 1, "fingerprint": FINGERPRINT,
+                                "documents": []}), encoding="utf-8")
+    errors, _ = verify(write_results(tmp_path / "r"), strict=True,
+                       lock_path=lock)
+    assert errors == []

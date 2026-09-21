@@ -83,12 +83,7 @@ def main(argv: list[str] | None = None) -> int:
     try:
         module = importlib.import_module(f".{module_name}", __package__)
     except ImportError as exc:
-        # A missing optional dependency should name the extra that provides it
-        # rather than surface as a traceback from three imports down.
-        print(f"turkish-rag-eval: '{command}' is unavailable: {exc}\n"
-              f"Install the optional dependencies with: "
-              f"pip install 'turkish-rag-eval[all]'", file=sys.stderr)
-        return 2
+        return _missing_dependency(command, exc)
 
     parser = argparse.ArgumentParser(
         prog=f"turkish-rag-eval {command}",
@@ -96,7 +91,38 @@ def main(argv: list[str] | None = None) -> int:
         formatter_class=argparse.RawDescriptionHelpFormatter)
     if hasattr(module, "add_arguments"):
         module.add_arguments(parser)
-    return module.run(parser.parse_args(rest)) or 0
+
+    try:
+        return module.run(parser.parse_args(rest)) or 0
+    except ImportError as exc:
+        # Not every optional dependency is imported at module load. charts
+        # reaches for matplotlib inside the function that draws, so a missing
+        # extra surfaced as a traceback from four frames down until this
+        # handler existed.
+        return _missing_dependency(command, exc)
+
+
+#: Which extra provides which module, so the message names the fix.
+EXTRAS = {
+    "matplotlib": "charts",
+    "anthropic": "llm",
+    "torch": "dense",
+    "sentence_transformers": "dense",
+}
+
+
+def _missing_dependency(command: str, exc: ImportError) -> int:
+    # The top-level package, because a failure inside a submodule reports the
+    # submodule: a missing matplotlib can surface as either "matplotlib" or
+    # "matplotlib.pyplot" depending on where the import broke, and only the
+    # distribution name maps to an extra.
+    missing = (getattr(exc, "name", None) or "").split(".")[0]
+    extra = EXTRAS.get(missing, "all")
+    print(f"turkish-rag-eval: '{command}' needs a dependency that is not "
+          f"installed: {exc}\n"
+          f"Install it with: pip install 'turkish-rag-eval[{extra}]'",
+          file=sys.stderr)
+    return 2
 
 
 if __name__ == "__main__":
