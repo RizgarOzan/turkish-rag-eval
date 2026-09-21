@@ -35,6 +35,7 @@ COMMANDS = {
     "charts": ("charts", "render the result charts the README embeds"),
     "leaderboard": ("leaderboard", "rebuild the model leaderboard from results/"),
     "groundedness": ("groundedness", "score answers against the gold answer spans"),
+    "bootstrap": ("bootstrap", "draft a gold set for your own corpus"),
     "agreement": ("agreement", "inter-annotator agreement over the gold set"),
     "fetch-corpus": ("fetch_corpus", "download the Wikipedia corpus snapshot"),
     "export-hf": ("export_hf", "export the BEIR layout MTEB reads"),
