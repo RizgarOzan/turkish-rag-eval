@@ -166,5 +166,89 @@
    "answer_span": "Ağrı'ya tırmanış 1990 yılında yasaklandı. 1998'de Dağcılık Federasyonunun bir grup dağcıya izin vermesiyle bu yasak kaldırıldı."
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-013",
+  "question": "Türkiye'nin tuz tüketiminin ne kadarı İç Anadolu'daki bu gölden karşılanır?",
+  "doc_id": "144417",
+  "doc_title": "Tuz Gölü",
+  "answer_span": "Türkiye'nin tuz ihtiyacının %40'ı bu gölden sağlanır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Türkiye'nin tuz ihtiyacının %40'ı bu gölden sağlanır"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-014",
+  "question": "Gölün beslendiği havzaya yılda ortalama ne kadar yağış düşer?",
+  "doc_id": "144417",
+  "doc_title": "Tuz Gölü",
+  "answer_span": "Bölge yılda ortalama 324 mm/m² yağış ile Türkiye'nin en az yağış düşen alanlarındandır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "yılda ortalama 324 mm/m² yağış"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-015",
+  "question": "Yaz sonunda göl suyundaki tuz yoğunluğu hangi değere çıkar?",
+  "doc_id": "144417",
+  "doc_title": "Tuz Gölü",
+  "answer_span": "Bu mevsimde tuzluluk oranı binde 329 gibi dikkat çekici bir orana erişmektedir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "tuzluluk oranı binde 329 gibi dikkat çekici bir orana erişmektedir"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-016",
+  "question": "Gölün güneybatı kıyısının kırmızıya dönmesine hangi canlı yol açar?",
+  "doc_id": "144417",
+  "doc_title": "Tuz Gölü",
+  "answer_span": "renk değişikliğine toplu iğne ucunun binde biri büyüklüğündeki dunaliella salina adı verilen bir tür su yosununun (alg) neden olduğunu belirledi",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "dunaliella salina adı verilen bir tür su yosununun (alg)"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-017",
+  "question": "Yapılan bir araştırmaya göre göl yirminci yüzyılın başından beri ne kadar daraldı?",
+  "doc_id": "144417",
+  "doc_title": "Tuz Gölü",
+  "answer_span": "1915 yılından beri %85 oranında küçülmüştür",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "1915 yılından beri %85 oranında küçülmüştür"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-018",
+  "question": "Sultanhanı'ndaki yeraltı gaz deposunda ne kadar doğalgaz saklanabilecek?",
+  "doc_id": "144417",
+  "doc_title": "Tuz Gölü",
+  "answer_span": "Sultanhanı'nda 1 milyar m³ doğalgaz kapasiteli, 12 suni tuz mağarası yapılmaktadır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "1 milyar m³ doğalgaz kapasiteli"
+  },
+  "review": "agreed"
  }
 ]

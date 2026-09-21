@@ -166,5 +166,89 @@
    "answer_span": "1987 yılında Ege Üniversitesi'nin öncülüğünde"
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-013",
+  "question": "İşletim sisteminin ilk sürümü hangi adla ortaya çıktı?",
+  "doc_id": "2019",
+  "doc_title": "Unix",
+  "answer_span": "Unix'in ilk sürümü UNICS (Uniplexed Information and Computing System[Birleştirilmiş Bilgi ve Bilgisayar Sistemi]) ismiyle çıkmıştır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Unix'in ilk sürümü UNICS (Uniplexed Information and Computing System[Birleştirilmiş Bilgi ve Bilgisayar Sistemi]) ismiyle çıkmıştır"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-014",
+  "question": "Çekirdeğin C diliyle yeniden yazılması sistemin kaçıncı sürümünü doğurdu?",
+  "doc_id": "2019",
+  "doc_title": "Unix",
+  "answer_span": "çekirdeği C ile tekrar kodlayarak Unix'in 5. sürümünü oluşturdu",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "çekirdeği C ile tekrar kodlayarak Unix'in 5. sürümünü oluşturdu"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-015",
+  "question": "Berkeley'deki öğrenciler özgün kaynak kodun ne kadarını değiştirdi?",
+  "doc_id": "2019",
+  "doc_title": "Unix",
+  "answer_span": "Berkeley öğrencileri, orijinal Unix kaynak kodunun %90'nını değiştirdiler",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Berkeley öğrencileri, orijinal Unix kaynak kodunun %90'nını değiştirdiler"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-016",
+  "question": "Üniversite dışındaki kullanıcılar lisans için ne kadar ödüyordu?",
+  "doc_id": "2019",
+  "doc_title": "Unix",
+  "answer_span": "UNIX, üniversite üyesi olmayan kullanıcılar için 20,000$ (ABD) ve üniversite üyesi olan kullanıcılar için ise 150$ gibi yüksek bir lisans ücretine sahiptir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "üniversite üyesi olmayan kullanıcılar için 20,000$ (ABD)"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-017",
+  "question": "Marka ve tanımın bugünkü sahibine devri ne zaman oldu?",
+  "doc_id": "2019",
+  "doc_title": "Unix",
+  "answer_span": "1994'te UNIX tanımı ve markası günümüzdeki sahibi The Open Group'a devredilmiştir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "1994'te UNIX tanımı ve markası günümüzdeki sahibi The Open Group'a devredilmiştir"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-018",
+  "question": "Sistemin kökeni olan ortak proje hangi kurumlarca başlatıldı?",
+  "doc_id": "2019",
+  "doc_title": "Unix",
+  "answer_span": "1960 yılında MIT, AT&T Bell Teknoloji Laboratuvarları ve GE(General Electric)'nin birlikte geliştirdikleri MULTICS",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "MIT, AT&T Bell Teknoloji Laboratuvarları ve GE(General Electric)'nin birlikte geliştirdikleri"
+  },
+  "review": "agreed"
  }
 ]

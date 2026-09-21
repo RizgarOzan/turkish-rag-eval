@@ -229,13 +229,15 @@ normaliser.
 on different, corpus-dependent scales; fusing ranks needs no per-corpus
 tuning. `k=60`, from Cormack et al. (2009).
 
-**Two annotation passes agree by containment, not by similarity.** All 60
-double-labelled questions here are containment pairs — one span inside the
-other — yet 29 of them fall below a 0.6 Jaccard floor. The passes were never
-disagreeing about *where* the answer is, only about how much of the sentence
-to sweep in, and containment is what the harness itself tests. A similarity
-floor alone would have sent a reviewer to arbitrate half an already-reviewed
-set.
+**Two annotation passes agree by containment, not by similarity.** 89 of the
+90 double-labelled questions here are containment pairs — one span inside the
+other — yet 35 fall below a 0.6 Jaccard floor, 34 of them containment pairs.
+The passes were almost never disagreeing about *where* the answer is, only
+about how much of the sentence to sweep in, and containment is what the
+harness itself tests. A similarity floor alone would have sent a reviewer to
+arbitrate a third of an already-reviewed set. The one genuine disagreement —
+two different sentences that both name polysomes — is the one the rule holds
+back, and `passes_agree()` reproduces all 90 of the committed labels exactly.
 
 **Ties break stably.** `np.argsort` defaults to an unstable sort, and sparse
 scores tie constantly — every chunk sharing no query term scores exactly 0.0.
@@ -356,14 +358,17 @@ model works. Results for a non-default model go to
 | Files | Questions | Labelled by | In the results above |
 |---|---|---|---|
 | `data/eval/gold.json` (health) | 58 | one human | yes |
-| `data/eval/contrib/llm-draft-*.json` (history, geography, astronomy, biology, computing) | 60 | two independent LLM passes | not yet |
+| `data/eval/contrib/llm-draft-*.json` (history, geography, astronomy, biology, computing) | 90 | two independent LLM passes | not yet |
 
 The set is growing toward 300 questions across more domains. Questions a model
 drafted are marked `"source": "llm-draft"`. A second model then picked its own
 answer span for each one without seeing the first label
 (`second_annotation`). Two spans agree when one contains the other or their
 token F1 is at least 0.5; agreed items get `"review": "agreed"`, the rest get
-`"needs-human"` and are never loaded. Every batch so far is 30 of 30 agreed.
+`"needs-human"` and are never loaded. Batches 1 and 2 were 30 of 30 agreed,
+batch 3 was 29 of 30: for "what are several ribosomes working on one mRNA
+called?" the passes picked two different sentences that both name polysomes,
+so that question waits for a person.
 
 Drafts stay out of every number above until a re-run says otherwise:
 `load_gold()` skips them unless called with `include_drafts=True`. Synthetic
@@ -380,10 +385,11 @@ domain.
 |---|---|---|---|---|---|
 | 1 — 2026-09-18 (Malazgirt, Kapadokya, Mars, Mitokondri, Linux) | 30 | 16 | 0.816 | 0.878 | 1.00 / 1.00 / 1.00 |
 | 2 — 2026-09-20 (İstanbul'un Fethi, Ağrı Dağı, Jüpiter, Fotosentez, İnternet) | 30 | 4 | 0.419 | 0.540 | 0.96 / 1.00 / 1.00 |
-| **All drafts** | 60 | 20 | 0.617 | 0.709 | 0.98 / 1.00 / 1.00 |
+| 3 — 2026-09-21 (Çaldıran Muharebesi, Tuz Gölü, Satürn, Ribozom, Unix) | 30 | 18 | 0.829 | 0.872 | 0.92 / 0.96 / 0.96 |
+| **All drafts** | 90 | 38 | 0.688 | 0.763 | 0.96 / 0.99 / 0.99 |
 
 "Identical" means identical after tokenisation, so case and punctuation are
-folded; by raw string the counts are 1 and 2. IoU and token F1 come from
+folded; by raw string the counts are 1, 2 and 18. IoU and token F1 come from
 `agreement.py`; κ is that file's chunk-level measure — for each chunking
 strategy, the binary "does this chunk contain the answer" label each span
 assigns to each chunk of its article, which is exactly how `run_eval.py`
@@ -395,14 +401,16 @@ batch 2 the second pass kept picking the shortest span that still answers the
 question ("7.4 büyüklüğünde" against the whole clause around it), which halves
 IoU — yet the labels the benchmark actually scores are the same: of the 180
 question × strategy runs, 3 differ, all with fixed-size chunks, where the
-shorter span also fell inside one neighbouring overlapping window. Two LLMs
+shorter span also fell inside one neighbouring overlapping window. Batch 3
+has 5 differing runs of 90: three are the needs-human question above, two are
+the same short-span effect with fixed chunks. Two LLMs
 tend to pick the same sentence, so read this as a sanity check rather than as
 human agreement.
 
-The κ column is measured locally, because it needs the ten draft articles in
-the corpus and `data/raw/` is fetched rather than committed; the other columns
-are recomputed from the files in CI (`tests/test_readme_agreement.py`). Wiring
-the embedded second labels into `agreement.py` itself is
+The κ column is measured locally, because it needs the fifteen draft articles
+in the corpus and `data/raw/` is fetched rather than committed; the other
+columns are recomputed from the files in CI (`tests/test_readme_agreement.py`).
+Wiring the embedded second labels into `agreement.py` itself is
 [#15](https://github.com/RizgarOzan/turkish-rag-eval/issues/15).
 
 ## Why not an existing benchmark?
@@ -424,7 +432,7 @@ BEIR layout MTEB reads (`turkish-rag-eval export-hf`), published as
   differences under roughly 0.05 nDCG as noise" — which was both too strict
   for paired comparisons and too loose for unpaired ones.
 - **One annotator for the human set.** The 58 health questions are
-  single-annotated, so they have no agreement figure. The 60 drafted questions
+  single-annotated, so they have no agreement figure. The 90 drafted questions
   are double-labelled, but by two LLM passes rather than by two people.
 - **The corpus is Wikipedia, and so is much of the training data.** Every
   embedding model ranked here was almost certainly trained on Turkish

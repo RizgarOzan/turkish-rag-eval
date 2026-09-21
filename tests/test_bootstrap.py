@@ -165,10 +165,10 @@ def test_containment_counts_as_agreement():
 
 
 def test_containment_holds_where_token_overlap_would_not():
-    # This is the calibration that set the rule: all 60 double-labelled
-    # questions already in data/eval/contrib are containment pairs, and 29 of
-    # them fall below the Jaccard threshold. Overlap alone would send people
-    # to arbitrate an already-reviewed gold set.
+    # This is the calibration that set the rule: 35 of the 90 double-labelled
+    # questions in data/eval/contrib fall below the Jaccard threshold, and 34
+    # of those 35 are containment pairs. Overlap alone would send people to
+    # arbitrate a third of an already-reviewed gold set.
     from turkish_rag_eval.agreement import span_iou
 
     short = "Phobos ve Deimos"
@@ -187,3 +187,35 @@ def test_spans_pointing_elsewhere_do_not_agree():
 def test_an_empty_span_never_agrees():
     assert not passes_agree("", "herhangi bir metin")
     assert not passes_agree("herhangi bir metin", "")
+
+
+def test_the_rule_reproduces_every_committed_label():
+    """The agreement rule is calibrated against the gold set, so it is pinned.
+
+    Every contributed question carries a human-visible "review" field. If the
+    rule and that field ever disagree, one of them is wrong, and a drafted
+    batch would be admitted or held back for the wrong reason. This is the
+    check that catches it, on real data rather than fixtures.
+    """
+    import glob
+    import json
+
+    pairs = [
+        (item["qid"], item["answer_span"],
+         item["second_annotation"]["answer_span"], item["review"])
+        for path in sorted(glob.glob("data/eval/contrib/*.json"))
+        for item in json.load(open(path, encoding="utf-8"))
+        if item.get("second_annotation")
+    ]
+    assert pairs, "no double-labelled questions found"
+
+    disagreements = [
+        f"{qid}: rule says {passes_agree(first, second)}, file says {review}"
+        for qid, first, second, review in pairs
+        if passes_agree(first, second) != (review == "agreed")
+    ]
+    assert disagreements == []
+
+    # And the set is not trivially all-agreed: at least one pair the rule
+    # holds back, or this test would pass on a rule that returns True always.
+    assert any(review != "agreed" for _, _, _, review in pairs)

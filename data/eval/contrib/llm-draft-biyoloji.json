@@ -166,5 +166,89 @@
    "answer_span": "%15'in altına indiğinde"
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-013",
+  "question": "Hayvan ve bitki hücrelerindeki protein üretim birimi hangi iki alt parçadan oluşur?",
+  "doc_id": "33246",
+  "doc_title": "Ribozom",
+  "answer_span": "Ökaryotlarda büyük alt birim 60S, küçük alt birim ise 40S'tir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Ökaryotlarda büyük alt birim 60S, küçük alt birim ise 40S'tir"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-014",
+  "question": "Bakterilerdeki protein üretim biriminin toplam çökelme değeri nedir?",
+  "doc_id": "33246",
+  "doc_title": "Ribozom",
+  "answer_span": "Bu alt birimlerin birleşimi ise 70S'lik prokaryot ribozomunu oluşturur",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Bu alt birimlerin birleşimi ise 70S'lik prokaryot ribozomunu oluşturur"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-015",
+  "question": "Protein üretim makinesinin A, P ve E bölgeleri sırasıyla neye bağlanır?",
+  "doc_id": "33246",
+  "doc_title": "Ribozom",
+  "answer_span": "A bölgesi aminoasil-tRNA'ya, P bölgesi peptidil-tRNA'ya ve E bölgesi serbest tRNA'ya bağlanır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "A bölgesi aminoasil-tRNA'ya, P bölgesi peptidil-tRNA'ya ve E bölgesi serbest tRNA'ya bağlanır"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-016",
+  "question": "Bazı antibiyotikler insan hücrelerine dokunmadan bakterileri nasıl vurabilir?",
+  "doc_id": "33246",
+  "doc_title": "Ribozom",
+  "answer_span": "Bu yapısal varyasyon, bazı antibiyotiklerin insan ribozomlarını etkilemeden bakteriyel ribozomları hedef almasını sağlar",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "bazı antibiyotiklerin insan ribozomlarını etkilemeden bakteriyel ribozomları hedef almasını sağlar"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-017",
+  "question": "Tek bir haberci RNA üzerinde aynı anda çalışan protein yapıcı gruplarına ne ad verilir?",
+  "doc_id": "33246",
+  "doc_title": "Ribozom",
+  "answer_span": "Tek bulunanlara monomer ribozom, gruplar halinde bulunanlara ise polizom veya poliribozom denir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "birden fazla ribozom aynı anda tek bir mRNA zinciri boyunca hareket ederek her biri bir protein molekülü üreten polizomlar oluşturabilir"
+  },
+  "review": "needs-human"
+ },
+ {
+  "qid": "llm-biyoloji-018",
+  "question": "Hücre içi zar ağına tutunmuş ribozomlar ne tür proteinler üretir?",
+  "doc_id": "33246",
+  "doc_title": "Ribozom",
+  "answer_span": "Endoplazmik retikulum'a bağlı olanlar hücre dışına verilecek proteinleri (pankreas, sindirim enzimleri vb.)",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Endoplazmik retikulum'a bağlı olanlar hücre dışına verilecek proteinleri (pankreas, sindirim enzimleri vb.)"
+  },
+  "review": "agreed"
  }
 ]
