@@ -31,7 +31,7 @@ import os
 import re
 from pathlib import Path
 
-from .agreement import span_iou
+from .agreement import span_f1
 from .corpus import load_corpus
 from .gold import normalise
 from .turkish_text import turkish_lower
@@ -39,9 +39,10 @@ from .validate_gold import MAX_OVERLAP, overlap
 
 DEFAULT_MODEL = "claude-opus-5"
 
-#: Fallback measure for two spans where neither contains the other. See
-#: ``passes_agree`` for why containment is checked first.
-AGREEMENT_THRESHOLD = 0.6
+#: Token-F1 floor for two spans where neither contains the other. This is the
+#: rule the README already states for the contributed questions; the
+#: bootstrapper applies the same one rather than inventing a second.
+AGREEMENT_THRESHOLD = 0.5
 
 #: A span long enough to be a section and short enough to be an answer.
 MIN_SPAN_CHARS = 20
@@ -110,18 +111,21 @@ def passes_agree(first: str, second: str) -> bool:
     the same label for every purpose the harness has. They differ only in how
     much surrounding sentence each pass swept in.
 
-    Jaccard overlap, which is what ``agreement.py`` reports, punishes exactly
-    that length difference. On this repository's own 60 double-labelled
-    questions it sits below 0.6 for 29 of them - yet every single one of the
-    60 is a containment pair. Using overlap alone would flag half of an
-    already-reviewed gold set as disagreements and send people to arbitrate
-    nothing. It stays as the fallback for the case containment cannot judge:
-    two spans that genuinely point somewhere different.
+    A token-similarity floor alone would not do. On this repository's own 60
+    double-labelled questions, Jaccard overlap sits below 0.6 for 29 of them -
+    yet every single one of the 60 is a containment pair. The passes were
+    never disagreeing about where the answer is, only about how much of the
+    sentence to sweep in, and a similarity floor would have sent a reviewer to
+    arbitrate half an already-reviewed set.
+
+    Token F1 stays as the fallback for the case containment cannot judge - two
+    spans that genuinely point somewhere different - at the same 0.5 floor the
+    README states for the contributed questions.
     """
     a, b = normalise(first), normalise(second)
     if a and b and (a in b or b in a):
         return True
-    return span_iou(first, second) >= AGREEMENT_THRESHOLD
+    return span_f1(first, second) >= AGREEMENT_THRESHOLD
 
 
 def slugify(text: str) -> str:
