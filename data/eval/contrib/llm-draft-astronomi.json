@@ -166,5 +166,89 @@
    "answer_span": "en az 400 senedir"
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-013",
+  "question": "Halkalı gaz devinin ortalama özgül ağırlığı nedir?",
+  "doc_id": "5986",
+  "doc_title": "Satürn",
+  "answer_span": "gezegenin ortalama özgül yoğunluğu 0,69 g/cm3'tür",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "gezegenin ortalama özgül yoğunluğu 0,69 g/cm3'tür"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-014",
+  "question": "Kuzey kutbundaki altıgen yapının her bir kenarı ne uzunluktadır?",
+  "doc_id": "5986",
+  "doc_title": "Satürn",
+  "answer_span": "Altıgenin kenarlarının her biri yaklaşık 14.500 km (9.000 mi) uzunluğundadır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Altıgenin kenarlarının her biri yaklaşık 14.500 km (9.000 mi) uzunluğundadır"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-015",
+  "question": "Halkaların ortalama kalınlığı ne kadardır?",
+  "doc_id": "5986",
+  "doc_title": "Satürn",
+  "answer_span": "ortalama kalınlıkları yaklaşık 20 metre (66 ft)",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "ortalama kalınlıkları yaklaşık 20 metre (66 ft)"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-016",
+  "question": "Gezegen Güneş'ten aldığı enerjinin kaç katını uzaya geri salar?",
+  "doc_id": "5986",
+  "doc_title": "Satürn",
+  "answer_span": "uzaya Güneş'ten aldığından 2,5 kat daha fazla enerji yaymaktadır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "uzaya Güneş'ten aldığından 2,5 kat daha fazla enerji yaymaktadır"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-017",
+  "question": "Satürn'deki şimşekler Dünya'dakilere kıyasla ne kadar güçlüdür?",
+  "doc_id": "5986",
+  "doc_title": "Satürn",
+  "answer_span": "Şimşeklerin gücü, Dünya'daki şimşeklerin yaklaşık 1.000 katıdır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Şimşeklerin gücü, Dünya'daki şimşeklerin yaklaşık 1.000 katıdır"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-018",
+  "question": "Halkaların yaşını çok genç bulan ekip, onların hangi kayıp gökcisminden kaldığını öne sürdü?",
+  "doc_id": "5986",
+  "doc_title": "Satürn",
+  "answer_span": "halkaların Satürn'ün ″Chrysalis″ adlı yok olmuş bir uydusunun kalıntısı olduğunu öne sürdü",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Satürn'ün ″Chrysalis″ adlı yok olmuş bir uydusunun kalıntısı olduğunu"
+  },
+  "review": "agreed"
  }
 ]

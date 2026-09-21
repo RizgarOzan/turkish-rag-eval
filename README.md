@@ -231,14 +231,17 @@ advantage and make the dense/sparse comparison worthless.
 | Files | Questions | Labelled by | In the results above |
 |---|---|---|---|
 | `data/eval/gold.json` (health) | 58 | one human | yes |
-| `data/eval/contrib/llm-draft-*.json` (history, geography, astronomy, biology, computing) | 60 | two independent LLM passes | not yet |
+| `data/eval/contrib/llm-draft-*.json` (history, geography, astronomy, biology, computing) | 90 | two independent LLM passes | not yet |
 
 The set is growing toward 300 questions across more domains. Questions a
 model drafted are marked `"source": "llm-draft"`. A second model then picked
 its own answer span for each one without seeing the first label
 (`second_annotation`). Two spans agree when one contains the other or their
 token F1 is at least 0.5; agreed items get `"review": "agreed"`, the rest get
-`"needs-human"` and are never loaded. Every batch so far is 30 of 30 agreed.
+`"needs-human"` and are never loaded. Batches 1 and 2 were 30 of 30 agreed,
+batch 3 was 29 of 30: for "what are several ribosomes working on one mRNA
+called?" the passes picked two different sentences that both name polysomes,
+so that question waits for a person.
 
 ### Agreement between the two passes
 
@@ -246,10 +249,11 @@ token F1 is at least 0.5; agreed items get `"review": "agreed"`, the rest get
 |---|---|---|---|---|---|
 | 1 — 2026-09-18 (Malazgirt, Kapadokya, Mars, Mitokondri, Linux) | 30 | 16 | 0.816 | 0.878 | 1.00 / 1.00 / 1.00 |
 | 2 — 2026-09-20 (İstanbul'un Fethi, Ağrı Dağı, Jüpiter, Fotosentez, İnternet) | 30 | 4 | 0.419 | 0.540 | 0.96 / 1.00 / 1.00 |
-| **All drafts** | 60 | 20 | 0.617 | 0.709 | 0.98 / 1.00 / 1.00 |
+| 3 — 2026-09-21 (Çaldıran Muharebesi, Tuz Gölü, Satürn, Ribozom, Unix) | 30 | 18 | 0.829 | 0.872 | 0.92 / 0.96 / 0.96 |
+| **All drafts** | 90 | 38 | 0.688 | 0.763 | 0.96 / 0.99 / 0.99 |
 
 "Identical" means identical after tokenisation, so case and punctuation are
-folded; by raw string the counts are 1 and 2. IoU and token F1 come from
+folded; by raw string the counts are 1, 2 and 18. IoU and token F1 come from
 `src/agreement.py`; κ is that file's chunk-level measure — for each chunking
 strategy, the binary "does this chunk contain the answer" label each span
 assigns to each chunk of its article, which is exactly how `run_eval.py`
@@ -260,11 +264,13 @@ second pass kept picking the shortest span that still answers the question
 ("7.4 büyüklüğünde" against the whole clause around it), which halves IoU -
 yet the labels the benchmark actually scores are the same: of the 180
 question × strategy runs, 3 differ, all with fixed-size chunks, where the
-shorter span also fell inside one neighbouring overlapping window. Two LLMs
+shorter span also fell inside one neighbouring overlapping window. Batch 3
+has 5 differing runs of 90: three are the needs-human question above, two are
+the same short-span effect with fixed chunks. Two LLMs
 tend to pick the same sentence, so read this as a sanity check rather than as
 human agreement.
 
-The κ column is measured locally, because it needs the ten draft articles in
+The κ column is measured locally, because it needs the fifteen draft articles in
 the corpus and `data/raw/` is fetched rather than committed; the other
 columns are recomputed from the files in CI (`tests/test_readme_agreement.py`).
 Wiring the embedded second labels into `src/agreement.py` itself is
@@ -280,7 +286,7 @@ agreement is measured. This section is that declaration.
 - **58 queries is a small set.** Differences under roughly 0.05 nDCG should be
   read as noise, not as a ranking.
 - **One annotator for the human set.** The 58 health questions are
-  single-annotated, so they have no agreement figure. The 60 drafted questions
+  single-annotated, so they have no agreement figure. The 90 drafted questions
   are double-labelled, but by two LLM passes rather than by two people.
 - **Six embedding models, one corpus.** The model comparison uses the same 58
   health questions; `bge-m3` is a partial run and EmbeddingGemma is missing.

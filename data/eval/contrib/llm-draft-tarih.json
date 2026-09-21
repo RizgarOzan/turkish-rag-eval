@@ -166,5 +166,89 @@
    "answer_span": "8 metre yükseklikte"
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-013",
+  "question": "Yavuz'un ordusu doğuya yürürken ihtiyat ve erzak için ayrılan birlik nereye konuşlandırıldı?",
+  "doc_id": "65813",
+  "doc_title": "Çaldıran Muharebesi",
+  "answer_span": "I. Selim, 40.000 kişilik bu kuvveti, ordunun iaşe ihtiyacını karşılaması ve gerekirse ihtiyat kuvveti olarak savaşa sokmak için için Kayseri ile Malatya arasına yerleştirdi",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Kayseri ile Malatya arasına yerleştirdi"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-014",
+  "question": "Safevi hükümdarını kolundan ve bacağından yaralayan Osmanlı komutanı hangi silahı kullandı?",
+  "doc_id": "65813",
+  "doc_title": "Çaldıran Muharebesi",
+  "answer_span": "Malkoçoğlu Ali Bey, Yavuz'un kendine hediye ettiği çift namlulu piştovuyla Şah İsmail'e ateş ederek onu kolundan ve baldırından yaraladı",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Yavuz'un kendine hediye ettiği çift namlulu piştovuyla Şah İsmail'e ateş ederek onu kolundan ve baldırından yaraladı"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-015",
+  "question": "Şah İsmail savaş meydanından kaçarken kimin kılığına girdi?",
+  "doc_id": "65813",
+  "doc_title": "Çaldıran Muharebesi",
+  "answer_span": "seyisi Atçeken Hızır'la kıyafetlerini ve atını değiştirerek firar etti",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "seyisi Atçeken Hızır'la kıyafetlerini ve atını değiştirerek firar etti"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-016",
+  "question": "Galip padişah düşman başkentine hangi tarihte girdi?",
+  "doc_id": "65813",
+  "doc_title": "Çaldıran Muharebesi",
+  "answer_span": "6 Eylül 1514'te Safevi Devleti'nin başkenti olan Tebriz'e girdi",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "6 Eylül 1514'te Safevi Devleti'nin başkenti olan Tebriz'e girdi"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-017",
+  "question": "Osmanlı hattında azapların önüne kaç top yerleştirilmişti?",
+  "doc_id": "65813",
+  "doc_title": "Çaldıran Muharebesi",
+  "answer_span": "Bunların önüne de 500 kadar zarbezen topları konuldu",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "500 kadar zarbezen topları konuldu"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-018",
+  "question": "Yenilgiden sonra Safevi hükümdarı ölümüne kadar başka bir sefere çıktı mı?",
+  "doc_id": "65813",
+  "doc_title": "Çaldıran Muharebesi",
+  "answer_span": "tek hezimeti olan bu büyük yenilgiden sonra, 1524 yılında ölene dek başka bir savaş yapmadı",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "tek hezimeti olan bu büyük yenilgiden sonra, 1524 yılında ölene dek başka bir savaş yapmadı"
+  },
+  "review": "agreed"
  }
 ]
