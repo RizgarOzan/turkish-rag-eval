@@ -27,6 +27,18 @@ configs:
   data_files:
   - split: test
     path: qrels/test.jsonl
+- config_name: passages-corpus
+  data_files:
+  - split: corpus
+    path: passages/corpus.jsonl
+- config_name: passages-queries
+  data_files:
+  - split: queries
+    path: passages/queries.jsonl
+- config_name: passages-qrels
+  data_files:
+  - split: test
+    path: passages/qrels/test.jsonl
 ---
 
 # Turkish RAG Eval
@@ -58,6 +70,14 @@ BEIR layout, the one MTEB retrieval tasks read.
 
 27 of the 54 articles answer at least one question; the other 27 are
 distractors from the same domain.
+
+`passages/` holds the same data at passage level (configs `passages-corpus`,
+`passages-queries`, `passages-qrels`): the harness's hierarchical chunks
+(≤700 characters, `title` is the section path), and a passage is relevant
+when it comes from the answering article and contains `answer_span`.
+Articles average ~20 000 characters, so a 512-token encoder only sees the
+lead of each one at article level; passages are what a RAG pipeline
+actually retrieves.
 
 ## How it was made
 

@@ -2,7 +2,7 @@ import json
 
 import pytest
 
-from turkish_rag_eval.export_hf import build, write
+from turkish_rag_eval.export_hf import build, build_passages, write
 
 DOCS = [
     {"doc_id": "1", "title": "Diyabet", "url": "https://tr.wikipedia.org/?curid=1",
@@ -40,3 +40,27 @@ def test_files_are_utf8_jsonl(tmp_path):
     assert "Şeker" in line and json.loads(line)["_id"] == "q001"
     assert len((tmp_path / "corpus.jsonl").read_text(encoding="utf-8").splitlines()) == 2
     assert (tmp_path / "qrels" / "test.jsonl").exists()
+
+
+LONG = {"doc_id": "3", "title": "Grip", "url": "https://tr.wikipedia.org/?curid=3",
+        "text": "Grip bir enfeksiyondur ve her kış yayılır. " * 20
+        + "\n== Tedavi ==\n" + "Tedavide dinlenmek ve sıvı almak önerilir. " * 3}
+
+
+def test_passages_follow_the_harness_chunks_and_relevance_rule():
+    item = {"qid": "q003", "question": "Grip nasıl tedavi edilir?", "doc_id": "3",
+            "doc_title": "Grip", "answer_span": "dinlenmek ve sıvı almak"}
+    corpus, queries, qrels = build_passages([item], [LONG] + DOCS)
+    ids = [p["_id"] for p in corpus]
+    assert ids[0] == "3::0" and len(ids) == len(set(ids))
+    assert {r["corpus-id"] for r in qrels} == {
+        p["_id"] for p in corpus if "sıvı almak" in p["text"]}
+    assert all(r["corpus-id"].startswith("3::") for r in qrels)
+    assert queries[0]["_id"] == "q003"
+
+
+def test_question_whose_span_is_in_no_passage_is_dropped():
+    item = {"qid": "q004", "question": "?", "doc_id": "3", "doc_title": "Grip",
+            "answer_span": "== Tedavi =="}  # headings are not passage text
+    corpus, queries, qrels = build_passages([item], [LONG])
+    assert queries == [] and qrels == [] and corpus

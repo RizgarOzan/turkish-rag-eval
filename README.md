@@ -422,7 +422,13 @@ This harness keeps articles whole, lets every chunker cut them its own way,
 and judges each chunk by the answer span, so pipeline choices can be compared
 on the same labels. For a model-only comparison, the same data exports to the
 BEIR layout MTEB reads (`turkish-rag-eval export-hf`), published as
-[RizgarOzan/turkish-rag-eval](https://huggingface.co/datasets/RizgarOzan/turkish-rag-eval).
+[RizgarOzan/turkish-rag-eval](https://huggingface.co/datasets/RizgarOzan/turkish-rag-eval)
+at two levels. Whole articles average ~20 000 characters, so a 512-token model
+mostly sees each lead and scores crowd the top. The `passages-*` configs carry
+this harness's hierarchical chunks with the same answer-span rule; scored
+through MTEB's retrieval evaluator they give 0.501 / 0.642 / 0.668 / 0.779
+nDCG@10 for MiniLM / e5-small / e5-base / Mursit, the leaderboard's
+hierarchical dense column to within 0.003.
 
 ## Limits
 
