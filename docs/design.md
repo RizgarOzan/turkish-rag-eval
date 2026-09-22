@@ -1,0 +1,206 @@
+# Design notes
+
+The reasoning and the detail behind the [README](../README.md): why the harness is built the way it is,
+and the parts of the results that need more than a table.
+
+## What else the numbers say
+
+**Hierarchical chunking only helps the dense retriever.** Prepending the
+heading path to the embedded text moves dense nDCG@10 from 0.446 → 0.461 →
+0.501 as chunking goes fixed → sentence → hierarchical. BM25 does not care.
+
+**Fixed-size chunking lost on every retriever.** It is the most common default
+and the worst performer in all four columns.
+
+**Hybrid fusion only pays for a weak dense model.** RRF gives BM25's ranking
+the same weight as the dense one. That lifts the small default (+0.106), but
+pulls a strong model down: Mursit drops from 0.781 to 0.673, e5-base from
+0.668 to 0.648. Whether to fuse should be measured, not assumed.
+
+## Design decisions
+
+The parts worth arguing about, rather than the parts that were obvious.
+
+**Relevance is defined at the answer span, not the chunk.** Each gold item
+names the source document and a short verbatim span from it; a retrieved chunk
+counts as relevant when it comes from that document *and* contains the span.
+Chunk-level labels would have to be redone for every chunking strategy, which
+would make the comparison between strategies meaningless — the thing the
+harness exists to measure.
+
+**Questions are paraphrased, never copied.** "Şeker hastalığı teşhisi konan
+kişilerin ne kadarında ketoasidoz da bulunuyor?" is asked of text reading
+"yaklaşık %25'i, diyabet teşhisi konulduğunda...". A lexically copied question
+hands BM25 an unearned win and silently inflates every sparse row in the
+table. CI rejects any contributed question with more than 60% word overlap
+with its own answer span.
+
+**The relevance gate folds case with `str.lower()`, not `turkish_lower()`.**
+That looks like exactly the bug this project studies, and is not.
+`turkish_lower` matters when a *query* is matched against a *document*: the
+two are written independently, so surface form and casing diverge. The
+relevance gate instead matches a verbatim span against the very text it was
+copied from, so both operands are the same run of characters, and `lower()` is
+context-free per character. Using a different fold here would desynchronise
+the evaluator from `validate_gold.py`, which admits gold under the same
+normaliser.
+
+**RRF instead of score interpolation.** Cosine similarity and BM25 scores live
+on different, corpus-dependent scales; fusing ranks needs no per-corpus
+tuning. `k=60`, from Cormack et al. (2009).
+
+**Two annotation passes agree by containment, not by similarity.** 89 of the
+90 double-labelled questions here are containment pairs — one span inside the
+other — yet 35 fall below a 0.6 Jaccard floor, 34 of them containment pairs.
+The passes were almost never disagreeing about *where* the answer is, only
+about how much of the sentence to sweep in, and containment is what the
+harness itself tests. A similarity floor alone would have sent a reviewer to
+arbitrate a third of an already-reviewed set. The one genuine disagreement —
+two different sentences that both name polysomes — is the one the rule holds
+back, and `passes_agree()` reproduces all 90 of the committed labels exactly.
+
+**Ties break stably.** `np.argsort` defaults to an unstable sort, and sparse
+scores tie constantly — every chunk sharing no query term scores exactly 0.0.
+An unstable tie at rank 1 moves Recall@1 and MRR between runs on identical
+data.
+
+## Abstention
+
+`turkish-rag-eval abstain` treats "should this be answered automatically?" as
+a measurement rather than a guess: it sweeps a confidence threshold and
+reports the coverage / selective-accuracy trade-off, so an operator can pick
+the point that meets an accuracy floor and escalate the rest.
+
+Unfiltered top-1 accuracy is 0.466. Using the dense retriever's raw cosine:
+
+| threshold | coverage | selective accuracy | answered | escalated |
+|---|---|---|---|---|
+| 0.65 | 0.672 | 0.436 | 39 | 19 |
+| 0.70 | 0.466 | 0.444 | 27 | 31 |
+| 0.75 | 0.259 | 0.467 | 15 | 43 |
+| **0.80** | **0.121** | **0.714** | 7 | 51 |
+
+At a 70% accuracy floor the harness picks threshold 0.80: 12% of queries
+answered automatically, 51 sent to a human. At an 80% or 90% floor it reports
+that **no threshold qualifies** — a real answer, not a failure. It means this
+configuration should not run unattended at that requirement.
+
+The top-1 margin, plotted in the README, is the signal most people reach for first and
+is actively misleading on fused rankings.
+
+## Groundedness
+
+Retrieval is half of RAG, so the generation half is scored too — using a label
+the gold set already carries, the verbatim answer span, rather than a second
+round of annotation:
+
+```bash
+turkish-rag-eval groundedness --limit 20
+```
+
+The split is the point. The harness already knows whether the answer span was
+retrieved, which divides every query into two populations that deserve
+different questions:
+
+- **Span retrieved** — the answer should rest on the passages and convey the
+  span. Both go to a judge.
+- **Span not retrieved** — nothing in the context answers the question, so the
+  only correct behaviour is to decline. Answering anyway is a hallucination,
+  and *that* rate is what decides whether a Turkish RAG system can face users.
+
+A single pooled "accuracy" hides exactly that number. Abstention is detected
+deterministically through a sentinel the generator is instructed to emit, so
+"did it decline" never depends on a judge's mood; only groundedness and
+correctness cost a model call.
+
+**Status:** the command and its tests are in place, but no groundedness
+results are committed yet. By default the generator and the judge are the same
+model (`--answer-model` and `--judge-model` both default to `claude-opus-5`),
+which invites self-preference; a published run should use a judge from a
+different model family and spot-check its verdicts by hand.
+
+## Reproducibility
+
+A benchmark whose numbers cannot be reproduced is not comparable, so:
+
+- **The corpus is pinned.** `data/corpus.lock.json` records a fingerprint over
+  every article's text plus its Wikipedia revision id.
+  `turkish-rag-eval fetch-corpus --verify` fails and names the articles that
+  moved. Wikipedia still changes; the point is that it can no longer change
+  silently.
+- **Every result records its provenance** — harness version, corpus
+  fingerprint, document count — in each summary row.
+- **Ranking is deterministic**, ties included.
+- **Dependencies are pinned**, and results are quoted against a release tag.
+
+The README's main table was re-run on v0.1.0 and carries the pinned corpus
+fingerprint. The re-run is also the clearest evidence the tie-break mattered:
+**eight of the twelve rows came back bit-identical**, and the four that moved
+are exactly the ones where ties are expected — the three `hybrid_rrf` rows,
+whose RRF scores collide at `1/(60+rank)`, and one `bm25_nostem` row, where
+every chunk sharing no query term scores exactly 0.0. No `dense` or
+`bm25_stem5` row changed by a single digit.
+
+## Agreement between the two passes
+
+| Batch | Questions | Identical | Mean IoU | Mean token F1 | Cohen's κ, fixed / sentence / hierarchical |
+|---|---|---|---|---|---|
+| 1 — 2026-09-18 (Malazgirt, Kapadokya, Mars, Mitokondri, Linux) | 30 | 16 | 0.816 | 0.878 | 1.00 / 1.00 / 1.00 |
+| 2 — 2026-09-20 (İstanbul'un Fethi, Ağrı Dağı, Jüpiter, Fotosentez, İnternet) | 30 | 4 | 0.419 | 0.540 | 0.96 / 1.00 / 1.00 |
+| 3 — 2026-09-21 (Çaldıran Muharebesi, Tuz Gölü, Satürn, Ribozom, Unix) | 30 | 18 | 0.829 | 0.872 | 0.92 / 0.96 / 0.96 |
+| **All drafts** | 90 | 38 | 0.688 | 0.763 | 0.96 / 0.99 / 0.99 |
+
+"Identical" means identical after tokenisation, so case and punctuation are
+folded; by raw string the counts are 1, 2 and 18. IoU and token F1 come from
+`agreement.py`; κ is that file's chunk-level measure — for each chunking
+strategy, the binary "does this chunk contain the answer" label each span
+assigns to each chunk of its article, which is exactly how `run_eval.py`
+decides what counts as a hit.
+
+The two rows disagree about wording, not about the answer, and that gap is
+what set the containment rule in [Design decisions](#design-decisions). In
+batch 2 the second pass kept picking the shortest span that still answers the
+question ("7.4 büyüklüğünde" against the whole clause around it), which halves
+IoU — yet the labels the benchmark actually scores are the same: of the 180
+question × strategy runs, 3 differ, all with fixed-size chunks, where the
+shorter span also fell inside one neighbouring overlapping window. Batch 3
+has 5 differing runs of 90: three are the needs-human polysome question from the README's gold-set section, two are
+the same short-span effect with fixed chunks. Two LLMs
+tend to pick the same sentence, so read this as a sanity check rather than as
+human agreement.
+
+The κ column is measured locally, because it needs the fifteen draft articles
+in the corpus and `data/raw/` is fetched rather than committed; the other
+columns are recomputed from the files in CI (`tests/test_readme_agreement.py`).
+Wiring the embedded second labels into `agreement.py` itself is
+[#15](https://github.com/RizgarOzan/turkish-rag-eval/issues/15).
+
+## Why not an existing benchmark?
+
+MTEB-style retrieval benchmarks score an embedding model on passages that are
+already split. They answer "which model?", not "which chunker, is Turkish
+stemming worth it, does a hybrid help, and what does each cost on a CPU?".
+This harness keeps articles whole, lets every chunker cut them its own way,
+and judges each chunk by the answer span, so pipeline choices can be compared
+on the same labels. For a model-only comparison, the same data exports to the
+BEIR layout MTEB reads (`turkish-rag-eval export-hf`), published as
+[RizgarOzan/turkish-rag-eval](https://huggingface.co/datasets/RizgarOzan/turkish-rag-eval)
+at two levels. Whole articles average ~20 000 characters, so a 512-token model
+mostly sees each lead and scores crowd the top. The `passages-*` configs carry
+this harness's hierarchical chunks with the same answer-span rule; scored
+through MTEB's retrieval evaluator they give 0.501 / 0.642 / 0.668 / 0.779
+nDCG@10 for MiniLM / e5-small / e5-base / Mursit, the leaderboard's
+hierarchical dense column to within 0.003.
+
+## Notes on Turkish
+
+Two language-specific traps are handled in `turkish_text.py`:
+
+- `"İLTİHAP".lower()` returns `i̇ltihap` in Python — an `i` plus a combining
+  dot (U+0307) — and `"ISIRIK".lower()` returns `isirik` instead of `ısırık`.
+  Turkish needs `I→ı` and `İ→i` applied before the generic lowercase.
+- Fixed-prefix stemming at 5 characters is used instead of a morphological
+  analyser. It is crude and will conflate unrelated words sharing a prefix;
+  the README's results table is the argument that it still pays for itself. This is a
+  known-strong Turkish IR baseline, not a new idea — what is measured here is
+  what it is worth inside a modern chunked RAG pipeline.

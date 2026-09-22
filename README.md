@@ -15,25 +15,35 @@ turkish-rag-eval run --corpus ./belgelerim --gold ./sorular.json
 turkish-rag-eval report
 ```
 
-## Three findings
+## Four findings
 
-**1. Turkish stemming is the cheapest real win.** Truncating tokens to a
+**1. The embedding model matters more than any pipeline choice.** Every model
+trained for retrieval beats stemmed BM25 (0.494) on its own. The best,
+[Mursit-Large-TR-Retrieval](https://huggingface.co/newmindai/Mursit-Large-TR-Retrieval),
+reaches **0.781** nDCG@10 on hierarchical chunks. A small E5 the same size as
+the default goes from 0.501 to 0.642 with nothing else changed, at about the
+same speed (22 ms against 23 ms). The popular default model is the weak link, not dense retrieval.
+See the [Leaderboard](#leaderboard).
+
+**2. Turkish stemming is the cheapest real win.** Truncating tokens to a
 5-character prefix before BM25 lifts nDCG@10 by 23–29% on every chunking
 strategy, and a paired bootstrap puts every one of those gains clear of zero
 (`hierarchical +0.111, 95% CI [+0.026, +0.204]`). "diyabet", "diyabetin",
 "diyabete", "diyabetli" are four surface forms of one concept; an unstemmed
 index almost never matches the query's form.
 
-**2. Most of the ranking is not a ranking.** With 58 queries, only three of
-twelve configurations are distinguishable from the best. The table below reads
-as a leaderboard and mostly is not one.
+**3. The top of the table is a tie, and the tie decides on cost.** With 58
+queries, a paired bootstrap cannot separate the best configuration from the
+other two hybrid ones; the remaining nine are measurably worse. So the
+real choice at the top is price: `sentence + hybrid_rrf` gives the same
+quality at 27 ms instead of 37 ms.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/charts/ndcg-intervals-dark.png">
-  <img alt="nDCG@10 per configuration with 95% bootstrap intervals; three configurations are within noise of the best" src="docs/charts/ndcg-intervals.png">
+  <img alt="nDCG@10 per configuration with 95% bootstrap intervals; the best cannot be told apart from the other two hybrid configurations, the remaining nine are measurably worse" src="docs/charts/ndcg-intervals.png">
 </picture>
 
-**3. The intuitive confidence signal is the useless one.** For deciding when
+**4. The intuitive confidence signal is the useless one.** For deciding when
 *not* to answer, the obvious measure — how far ahead the top hit is — is worse
 than answering everything (0.25 selective accuracy against a 0.47 baseline).
 RRF fuses ranks as `1/(60+rank)`, so the top-two gap is ~2% on every query,
@@ -49,10 +59,9 @@ Longer write-up of the first result:
 [Türkçe](docs/blog/2026-09-19-bm25-turkish-tr.md).
 
 **Contents:** [Results](#results) · [Leaderboard](#leaderboard) ·
-[Your own corpus](#your-own-corpus) · [Design decisions](#design-decisions) ·
-[Abstention](#abstention) · [Groundedness](#groundedness) ·
-[Reproducibility](#reproducibility) · [Running it](#running-it) ·
-[Gold set](#gold-set) · [Limits](#limits) · [Contribute](#contribute)
+[Your own corpus](#your-own-corpus) · [Running it](#running-it) ·
+[Gold set](#gold-set) · [Limits](#limits) · [Contribute](#contribute) ·
+[Design notes](docs/design.md)
 
 ## Results
 
@@ -93,27 +102,16 @@ harder than others. It matters, and this data shows it in the sharpest way.
 because its per-query differences are so much steadier (sd 0.34 against 0.40).
 Ranking by the gap alone gets this backwards.
 
-### What else the numbers say
-
-**Hierarchical chunking only helps the dense retriever.** Prepending the
-heading path to the embedded text moves dense nDCG@10 from 0.446 → 0.461 →
-0.501 as chunking goes fixed → sentence → hierarchical. BM25 does not care.
-
-**Fixed-size chunking lost on every retriever.** It is the most common default
-and the worst performer in all four columns.
-
-**Hybrid fusion only pays for a weak dense model.** RRF gives BM25's ranking
-the same weight as the dense one. That lifts the small default (+0.106), but
-pulls a strong model down: Mursit drops from 0.781 to 0.673, e5-base from
-0.668 to 0.648. Whether to fuse should be measured, not assumed.
+Hierarchical chunking only helps the dense retriever, and fixed-size chunking
+— the most common default — lost on every retriever. More in the
+[design notes](docs/design.md#what-else-the-numbers-say).
 
 ## Leaderboard
 
-Measured 2026-09-18 on one 16-thread CPU (8 torch threads). Dense `nDCG@10`
-per chunking strategy, the hybrid (dense + stemmed BM25, RRF) on hierarchical
-chunks, and the cost: time to embed all three chunkings (5 643 chunks) and
-per-query P95 on hierarchical chunks. Stemmed BM25 alone scores 0.476 / 0.510
-/ 0.494. `turkish-rag-eval leaderboard` rebuilds this from `results/models/`.
+Dense `nDCG@10` per chunking strategy, the hybrid (dense + stemmed BM25, RRF)
+on hierarchical chunks, and the cost of each model on one 16-thread CPU,
+measured 2026-09-18. Stemmed BM25 alone scores 0.476 / 0.510 / 0.494.
+`turkish-rag-eval leaderboard` rebuilds this from `results/models/`.
 
 | Model | Params | Turkish-only | Dense fixed | Dense sentence | Dense hierarchical | Hybrid hierarchical | Embed corpus | Query P95 |
 |---|---|---|---|---|---|---|---|---|
@@ -139,32 +137,16 @@ was not run. Per-query results for every completed model are in
 > `turkish-rag-eval leaderboard --check` reports them as missing provenance
 > until then.
 
-**The model was the problem, not dense retrieval.** Every model trained for
-retrieval (E5, bge-m3, Mursit) beats stemmed BM25 on its own, on every
-chunking. A small E5 the same size as the default goes from 0.501 to 0.642
-with no other change, as fast (22 ms) and 3 minutes to embed — the obvious
-replacement for the default on a CPU.
+**Hybrid fusion only pays for a weak dense model.** RRF lifts the small
+default by +0.106 but pulls Mursit down from 0.781 to 0.673. "Turkish-only"
+is not enough either: the `emrecan` model was trained for sentence similarity
+and truncates input at 75 tokens. These leaderboard rows do not have
+confidence intervals yet.
 
-**"Turkish-only" is not enough.** The `emrecan` model was trained for sentence
-similarity (NLI + STS-b) and truncates input at 75 tokens, cutting 83–99% of
-chunks short. A multilingual model a third of its training effort beats it.
-Mursit, trained *for retrieval*, is the best here — at ~10× the query latency
-of e5-small.
-
-### Submitting a model
-
-Open a pull request adding `results/models/<org>__<name>/`:
-
-```bash
-turkish-rag-eval run --model <org>/<name>
-turkish-rag-eval leaderboard --check
-```
-
-CI does not take the numbers on trust. Every reported metric is re-derived
-from the per-query relevance arrays committed beside it, and a new submission
-must also carry the harness version and a corpus fingerprint matching the
-pinned snapshot. Passing with a fabricated score would mean fabricating a
-self-consistent set of per-query judgements across all twelve configurations.
+To submit a model, open a pull request adding `results/models/<org>__<name>/`
+(`turkish-rag-eval run --model <org>/<name>`, then `leaderboard --check`).
+CI re-derives every metric from the per-query relevance arrays committed
+beside it, and checks the harness version and corpus fingerprint.
 
 ## Your own corpus
 
@@ -180,7 +162,8 @@ A BM25-only run needs no model download and no torch — enough to answer "which
 chunker, and is stemming worth it on my documents" from the base install.
 
 **No labelled questions?** That is the real wall, and the reason most
-benchmarks only ever measure themselves. `bootstrap` drafts a starting point:
+benchmarks only ever measure themselves. `bootstrap` drafts a starting point (the name means drafting a gold set here,
+not the statistical resampling above):
 
 ```bash
 export ANTHROPIC_API_KEY=...
@@ -194,126 +177,7 @@ disagree the item is written as `"review": "needs-human"` and **never loads**
 until a person settles it. Spans that are not verbatim, and questions copied
 out of their own answer, are dropped with a reason.
 
-What you get is a draft to review, not a gold set. The honest pitch is half an
-hour of arbitrating disagreements instead of a week of writing questions.
-
-## Design decisions
-
-The parts worth arguing about, rather than the parts that were obvious.
-
-**Relevance is defined at the answer span, not the chunk.** Each gold item
-names the source document and a short verbatim span from it; a retrieved chunk
-counts as relevant when it comes from that document *and* contains the span.
-Chunk-level labels would have to be redone for every chunking strategy, which
-would make the comparison between strategies meaningless — the thing the
-harness exists to measure.
-
-**Questions are paraphrased, never copied.** "Şeker hastalığı teşhisi konan
-kişilerin ne kadarında ketoasidoz da bulunuyor?" is asked of text reading
-"yaklaşık %25'i, diyabet teşhisi konulduğunda...". A lexically copied question
-hands BM25 an unearned win and silently inflates every sparse row in the
-table. CI rejects any contributed question with more than 60% word overlap
-with its own answer span.
-
-**The relevance gate folds case with `str.lower()`, not `turkish_lower()`.**
-That looks like exactly the bug this project studies, and is not.
-`turkish_lower` matters when a *query* is matched against a *document*: the
-two are written independently, so surface form and casing diverge. The
-relevance gate instead matches a verbatim span against the very text it was
-copied from, so both operands are the same run of characters, and `lower()` is
-context-free per character. Using a different fold here would desynchronise
-the evaluator from `validate_gold.py`, which admits gold under the same
-normaliser.
-
-**RRF instead of score interpolation.** Cosine similarity and BM25 scores live
-on different, corpus-dependent scales; fusing ranks needs no per-corpus
-tuning. `k=60`, from Cormack et al. (2009).
-
-**Two annotation passes agree by containment, not by similarity.** 89 of the
-90 double-labelled questions here are containment pairs — one span inside the
-other — yet 35 fall below a 0.6 Jaccard floor, 34 of them containment pairs.
-The passes were almost never disagreeing about *where* the answer is, only
-about how much of the sentence to sweep in, and containment is what the
-harness itself tests. A similarity floor alone would have sent a reviewer to
-arbitrate a third of an already-reviewed set. The one genuine disagreement —
-two different sentences that both name polysomes — is the one the rule holds
-back, and `passes_agree()` reproduces all 90 of the committed labels exactly.
-
-**Ties break stably.** `np.argsort` defaults to an unstable sort, and sparse
-scores tie constantly — every chunk sharing no query term scores exactly 0.0.
-An unstable tie at rank 1 moves Recall@1 and MRR between runs on identical
-data.
-
-## Abstention
-
-`turkish-rag-eval abstain` treats "should this be answered automatically?" as
-a measurement rather than a guess: it sweeps a confidence threshold and
-reports the coverage / selective-accuracy trade-off, so an operator can pick
-the point that meets an accuracy floor and escalate the rest.
-
-Unfiltered top-1 accuracy is 0.466. Using the dense retriever's raw cosine:
-
-| threshold | coverage | selective accuracy | answered | escalated |
-|---|---|---|---|---|
-| 0.65 | 0.672 | 0.436 | 39 | 19 |
-| 0.70 | 0.466 | 0.444 | 27 | 31 |
-| 0.75 | 0.259 | 0.467 | 15 | 43 |
-| **0.80** | **0.121** | **0.714** | 7 | 51 |
-
-At a 70% accuracy floor the harness picks threshold 0.80: 12% of queries
-answered automatically, 51 sent to a human. At an 80% or 90% floor it reports
-that **no threshold qualifies** — a real answer, not a failure. It means this
-configuration should not run unattended at that requirement.
-
-The top-1 margin, plotted above, is the signal most people reach for first and
-is actively misleading on fused rankings.
-
-## Groundedness
-
-Retrieval is half of RAG, so the generation half is scored too — using a label
-the gold set already carries, the verbatim answer span, rather than a second
-round of annotation:
-
-```bash
-turkish-rag-eval groundedness --limit 20
-```
-
-The split is the point. The harness already knows whether the answer span was
-retrieved, which divides every query into two populations that deserve
-different questions:
-
-- **Span retrieved** — the answer should rest on the passages and convey the
-  span. Both go to a judge.
-- **Span not retrieved** — nothing in the context answers the question, so the
-  only correct behaviour is to decline. Answering anyway is a hallucination,
-  and *that* rate is what decides whether a Turkish RAG system can face users.
-
-A single pooled "accuracy" hides exactly that number. Abstention is detected
-deterministically through a sentinel the generator is instructed to emit, so
-"did it decline" never depends on a judge's mood; only groundedness and
-correctness cost a model call.
-
-## Reproducibility
-
-A benchmark whose numbers cannot be reproduced is not comparable, so:
-
-- **The corpus is pinned.** `data/corpus.lock.json` records a fingerprint over
-  every article's text plus its Wikipedia revision id.
-  `turkish-rag-eval fetch-corpus --verify` fails and names the articles that
-  moved. Wikipedia still changes; the point is that it can no longer change
-  silently.
-- **Every result records its provenance** — harness version, corpus
-  fingerprint, document count — in each summary row.
-- **Ranking is deterministic**, ties included.
-- **Dependencies are pinned**, and results are quoted against a release tag.
-
-The main table above was re-run on v0.1.0 and carries the pinned corpus
-fingerprint. The re-run is also the clearest evidence the tie-break mattered:
-**eight of the twelve rows came back bit-identical**, and the four that moved
-are exactly the ones where ties are expected — the three `hybrid_rrf` rows,
-whose RRF scores collide at `1/(60+rank)`, and one `bm25_nostem` row, where
-every chunk sharing no query term scores exactly 0.0. No `dense` or
-`bm25_stem5` row changed by a single digit.
+What you get is a draft to review, not a gold set.
 
 ## Running it
 
@@ -330,8 +194,8 @@ pip install 'turkish-rag-eval[all] @ git+https://github.com/RizgarOzan/turkish-r
 | `report` | intervals, paired comparisons, and a recommendation |
 | `charts` | the two figures above, light and dark |
 | `leaderboard` | rebuild the model table; `--check` verifies every entry |
-| `abstain` | coverage / selective-accuracy curve for the best configuration |
-| `groundedness` | score the generation half against the gold spans |
+| `abstain` | coverage / selective-accuracy curve for the best configuration ([details](docs/design.md#abstention)) |
+| `groundedness` | score the generation half against the gold spans ([details](docs/design.md#groundedness); no results committed yet) |
 | `bootstrap` | draft a gold set for your own corpus |
 | `agreement` | inter-annotator agreement over the gold set |
 | `fetch-corpus` | download the Wikipedia snapshot; `--verify` checks the lock |
@@ -379,8 +243,6 @@ The corpus is 54 Turkish Wikipedia articles, 1.09 M characters; 27 of them
 answer at least one question and the other 27 are distractors from the same
 domain.
 
-### Agreement between the two passes
-
 | Batch | Questions | Identical | Mean IoU | Mean token F1 | Cohen's κ, fixed / sentence / hierarchical |
 |---|---|---|---|---|---|
 | 1 — 2026-09-18 (Malazgirt, Kapadokya, Mars, Mitokondri, Linux) | 30 | 16 | 0.816 | 0.878 | 1.00 / 1.00 / 1.00 |
@@ -388,47 +250,10 @@ domain.
 | 3 — 2026-09-21 (Çaldıran Muharebesi, Tuz Gölü, Satürn, Ribozom, Unix) | 30 | 18 | 0.829 | 0.872 | 0.92 / 0.96 / 0.96 |
 | **All drafts** | 90 | 38 | 0.688 | 0.763 | 0.96 / 0.99 / 0.99 |
 
-"Identical" means identical after tokenisation, so case and punctuation are
-folded; by raw string the counts are 1, 2 and 18. IoU and token F1 come from
-`agreement.py`; κ is that file's chunk-level measure — for each chunking
-strategy, the binary "does this chunk contain the answer" label each span
-assigns to each chunk of its article, which is exactly how `run_eval.py`
-decides what counts as a hit.
-
-The two rows disagree about wording, not about the answer, and that gap is
-what set the containment rule in [Design decisions](#design-decisions). In
-batch 2 the second pass kept picking the shortest span that still answers the
-question ("7.4 büyüklüğünde" against the whole clause around it), which halves
-IoU — yet the labels the benchmark actually scores are the same: of the 180
-question × strategy runs, 3 differ, all with fixed-size chunks, where the
-shorter span also fell inside one neighbouring overlapping window. Batch 3
-has 5 differing runs of 90: three are the needs-human question above, two are
-the same short-span effect with fixed chunks. Two LLMs
-tend to pick the same sentence, so read this as a sanity check rather than as
-human agreement.
-
-The κ column is measured locally, because it needs the fifteen draft articles
-in the corpus and `data/raw/` is fetched rather than committed; the other
-columns are recomputed from the files in CI (`tests/test_readme_agreement.py`).
-Wiring the embedded second labels into `agreement.py` itself is
-[#15](https://github.com/RizgarOzan/turkish-rag-eval/issues/15).
-
-## Why not an existing benchmark?
-
-MTEB-style retrieval benchmarks score an embedding model on passages that are
-already split. They answer "which model?", not "which chunker, is Turkish
-stemming worth it, does a hybrid help, and what does each cost on a CPU?".
-This harness keeps articles whole, lets every chunker cut them its own way,
-and judges each chunk by the answer span, so pipeline choices can be compared
-on the same labels. For a model-only comparison, the same data exports to the
-BEIR layout MTEB reads (`turkish-rag-eval export-hf`), published as
-[RizgarOzan/turkish-rag-eval](https://huggingface.co/datasets/RizgarOzan/turkish-rag-eval)
-at two levels. Whole articles average ~20 000 characters, so a 512-token model
-mostly sees each lead and scores crowd the top. The `passages-*` configs carry
-this harness's hierarchical chunks with the same answer-span rule; scored
-through MTEB's retrieval evaluator they give 0.501 / 0.642 / 0.668 / 0.779
-nDCG@10 for MiniLM / e5-small / e5-base / Mursit, the leaderboard's
-hierarchical dense column to within 0.003.
+The passes disagree about how much of a sentence to take, rather than where
+the answer is. Two LLMs tend to pick the same sentence, so read this as a
+sanity check rather than human agreement. Full discussion in the
+[design notes](docs/design.md#agreement-between-the-two-passes).
 
 ## Limits
 
@@ -450,8 +275,8 @@ hierarchical dense column to within 0.003.
 - **Encyclopaedic text, not clinical text.** Nothing here transfers to a
   clinical setting without re-measurement. No patient data is used anywhere,
   and nothing here is a medical device.
-- **Groundedness is judged by a model**, on a 58-question set, and its
-  absolute numbers should be read as a direction rather than a rate.
+- **The generation half has no committed results yet.** Only retrieval is
+  measured in the tables above.
 - **The embedding model is pinned by name, not by revision.**
 
 ## Contribute
@@ -465,19 +290,6 @@ açıklama dahil) and the
 
 Submitting an embedding model is one command and a pull request — see
 [Leaderboard](#leaderboard).
-
-## Notes on Turkish
-
-Two language-specific traps are handled in `turkish_text.py`:
-
-- `"İLTİHAP".lower()` returns `i̇ltihap` in Python — an `i` plus a combining
-  dot (U+0307) — and `"ISIRIK".lower()` returns `isirik` instead of `ısırık`.
-  Turkish needs `I→ı` and `İ→i` applied before the generic lowercase.
-- Fixed-prefix stemming at 5 characters is used instead of a morphological
-  analyser. It is crude and will conflate unrelated words sharing a prefix;
-  the table above is the argument that it still pays for itself. This is a
-  known-strong Turkish IR baseline, not a new idea — what is measured here is
-  what it is worth inside a modern chunked RAG pipeline.
 
 ## Data
 
