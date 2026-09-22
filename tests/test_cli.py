@@ -82,3 +82,21 @@ def test_the_extras_map_only_names_real_extras():
         .read_text(encoding="utf-8"))
     declared = set(pyproject["project"]["optional-dependencies"])
     assert set(cli.EXTRAS.values()) <= declared
+
+
+def test_a_missing_corpus_is_a_message_not_a_traceback(capsys, tmp_path):
+    assert cli.main(["run", "--corpus", str(tmp_path / "nowhere")]) == 2
+    message = capsys.readouterr().err
+    assert "does not exist" in message
+    assert "git clone" not in message  # a checkout has the bundled corpus
+
+
+def test_outside_a_checkout_it_says_where_the_bundled_corpus_is(
+        capsys, tmp_path, monkeypatch):
+    # A pip install has no data/ directory, so a bare `run` cannot find the
+    # bundled corpus; the message has to say how to get it.
+    from turkish_rag_eval import paths
+
+    monkeypatch.setattr(paths, "ROOT", tmp_path)
+    assert cli.main(["run", "--corpus", str(tmp_path / "nowhere")]) == 2
+    assert "git clone" in capsys.readouterr().err

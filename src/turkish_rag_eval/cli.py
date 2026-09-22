@@ -23,7 +23,8 @@ import argparse
 import importlib
 import sys
 
-from . import __version__
+from . import __version__, paths
+from .corpus import CorpusError
 
 #: command -> (module, one-line help). The module must expose ``run(args)``
 #: and may expose ``add_arguments(parser)``.
@@ -100,6 +101,18 @@ def main(argv: list[str] | None = None) -> int:
         # extra surfaced as a traceback from four frames down until this
         # handler existed.
         return _missing_dependency(command, exc)
+    except CorpusError as exc:
+        return _missing_corpus(exc)
+
+
+def _missing_corpus(exc: CorpusError) -> int:
+    message = f"turkish-rag-eval: {exc}"
+    # A wheel ships code only, so a bare `run` after `pip install` lands here.
+    if not (paths.ROOT / paths.MARKER).exists():
+        message += ("\nThe bundled Wikipedia corpus comes with a checkout: "
+                    "git clone https://github.com/RizgarOzan/turkish-rag-eval")
+    print(message, file=sys.stderr)
+    return 2
 
 
 #: Which extra provides which module, so the message names the fix.

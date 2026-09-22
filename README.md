@@ -1,7 +1,7 @@
 # turkish-rag-eval
 
 [![validate](https://github.com/RizgarOzan/turkish-rag-eval/actions/workflows/validate.yml/badge.svg)](https://github.com/RizgarOzan/turkish-rag-eval/actions/workflows/validate.yml)
-[![licence: MIT + CC BY-SA 4.0](https://img.shields.io/badge/licence-MIT%20%2B%20CC%20BY--SA%204.0-blue)](NOTICE.md)
+[![licence: MIT + CC BY-SA 4.0](https://img.shields.io/badge/licence-MIT%20%2B%20CC%20BY--SA%204.0-blue)](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/NOTICE.md)
 [![dataset on Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20dataset-RizgarOzan%2Fturkish--rag--eval-yellow)](https://huggingface.co/datasets/RizgarOzan/turkish-rag-eval)
 
 **Which parts of a RAG pipeline actually earn their cost on an agglutinative
@@ -39,8 +39,8 @@ real choice at the top is price: `sentence + hybrid_rrf` gives the same
 quality at 27 ms instead of 37 ms.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/charts/ndcg-intervals-dark.png">
-  <img alt="nDCG@10 per configuration with 95% bootstrap intervals; the best cannot be told apart from the other two hybrid configurations, the remaining nine are measurably worse" src="docs/charts/ndcg-intervals.png">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/RizgarOzan/turkish-rag-eval/main/docs/charts/ndcg-intervals-dark.png">
+  <img alt="nDCG@10 per configuration with 95% bootstrap intervals; the best cannot be told apart from the other two hybrid configurations, the remaining nine are measurably worse" src="https://raw.githubusercontent.com/RizgarOzan/turkish-rag-eval/main/docs/charts/ndcg-intervals.png">
 </picture>
 
 **4. The intuitive confidence signal is the useless one.** For deciding when
@@ -50,18 +50,18 @@ RRF fuses ranks as `1/(60+rank)`, so the top-two gap is ~2% on every query,
 confident or not. The dense retriever's raw cosine works; the margin does not.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/charts/abstention-dark.png">
-  <img alt="Coverage against selective accuracy for two confidence signals; the top-1 margin performs worse than answering everything" src="docs/charts/abstention.png">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/RizgarOzan/turkish-rag-eval/main/docs/charts/abstention-dark.png">
+  <img alt="Coverage against selective accuracy for two confidence signals; the top-1 margin performs worse than answering everything" src="https://raw.githubusercontent.com/RizgarOzan/turkish-rag-eval/main/docs/charts/abstention.png">
 </picture>
 
 Longer write-up of the first result:
-[English](docs/blog/2026-09-19-bm25-turkish-en.md) ·
-[Türkçe](docs/blog/2026-09-19-bm25-turkish-tr.md).
+[English](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/blog/2026-09-19-bm25-turkish-en.md) ·
+[Türkçe](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/blog/2026-09-19-bm25-turkish-tr.md).
 
 **Contents:** [Results](#results) · [Leaderboard](#leaderboard) ·
 [Your own corpus](#your-own-corpus) · [Running it](#running-it) ·
 [Gold set](#gold-set) · [Limits](#limits) · [Contribute](#contribute) ·
-[Design notes](docs/design.md)
+[Design notes](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/design.md)
 
 ## Results
 
@@ -104,7 +104,7 @@ Ranking by the gap alone gets this backwards.
 
 Hierarchical chunking only helps the dense retriever, and fixed-size chunking
 — the most common default — lost on every retriever. More in the
-[design notes](docs/design.md#what-else-the-numbers-say).
+[design notes](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/design.md#what-else-the-numbers-say).
 
 ## Leaderboard
 
@@ -194,8 +194,8 @@ pip install 'turkish-rag-eval[all] @ git+https://github.com/RizgarOzan/turkish-r
 | `report` | intervals, paired comparisons, and a recommendation |
 | `charts` | the two figures above, light and dark |
 | `leaderboard` | rebuild the model table; `--check` verifies every entry |
-| `abstain` | coverage / selective-accuracy curve for the best configuration ([details](docs/design.md#abstention)) |
-| `groundedness` | score the generation half against the gold spans ([details](docs/design.md#groundedness); no results committed yet) |
+| `abstain` | coverage / selective-accuracy curve for the best configuration ([details](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/design.md#abstention)) |
+| `groundedness` | score the generation half against the gold spans ([details](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/design.md#groundedness); no results committed yet) |
 | `bootstrap` | draft a gold set for your own corpus |
 | `agreement` | inter-annotator agreement over the gold set |
 | `fetch-corpus` | download the Wikipedia snapshot; `--verify` checks the lock |
@@ -253,7 +253,7 @@ domain.
 The passes disagree about how much of a sentence to take, rather than where
 the answer is. Two LLMs tend to pick the same sentence, so read this as a
 sanity check rather than human agreement. Full discussion in the
-[design notes](docs/design.md#agreement-between-the-two-passes).
+[design notes](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/design.md#agreement-between-the-two-passes).
 
 ## Limits
 
@@ -284,7 +284,7 @@ sanity check rather than human agreement. Full discussion in the
 The first two limits shrink with every contributor. Adding questions needs no
 ML background — pick a Turkish Wikipedia article, write 5–10 paraphrased
 questions, and open a pull request with one JSON file. A validator checks each
-file against Wikipedia in CI. See [CONTRIBUTING.md](CONTRIBUTING.md) (Türkçe
+file against Wikipedia in CI. See [CONTRIBUTING.md](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/CONTRIBUTING.md) (Türkçe
 açıklama dahil) and the
 [open issues](https://github.com/RizgarOzan/turkish-rag-eval/issues).
 
@@ -293,9 +293,9 @@ Submitting an embedding model is one command and a pull request — see
 
 ## Data
 
-Turkish Wikipedia, CC BY-SA 4.0. See [NOTICE.md](NOTICE.md).
+Turkish Wikipedia, CC BY-SA 4.0. See [NOTICE.md](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/NOTICE.md).
 
 ## Licence
 
-Code MIT ([LICENSE](LICENSE)); data under `data/` CC BY-SA 4.0
-([NOTICE.md](NOTICE.md)).
+Code MIT ([LICENSE](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/LICENSE)); data under `data/` CC BY-SA 4.0
+([NOTICE.md](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/NOTICE.md)).
