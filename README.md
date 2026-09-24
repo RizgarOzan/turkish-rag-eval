@@ -59,8 +59,9 @@ Longer write-up of the first result:
 [Türkçe](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/blog/2026-09-19-bm25-turkish-tr.md).
 
 **Contents:** [Results](#results) · [Leaderboard](#leaderboard) ·
+[Why not an existing benchmark?](#why-not-an-existing-benchmark) ·
 [Your own corpus](#your-own-corpus) · [Running it](#running-it) ·
-[Gold set](#gold-set) · [Limits](#limits) · [Contribute](#contribute) ·
+[Gold set](#gold-set) · [Status](#status) · [Limits](#limits) · [Contribute](#contribute) ·
 [Design notes](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/design.md)
 
 ## Results
@@ -147,6 +148,20 @@ To submit a model, open a pull request adding `results/models/<org>__<name>/`
 (`turkish-rag-eval run --model <org>/<name>`, then `leaderboard --check`).
 CI re-derives every metric from the per-query relevance arrays committed
 beside it, and checks the harness version and corpus fingerprint.
+
+## Why not an existing benchmark?
+
+MTEB-style retrieval benchmarks, TR-MTEB included, score an embedding model on
+passages that are already split. They answer "which model?", not "which
+chunker, is Turkish stemming worth it, does a hybrid help, and what does each
+cost on a CPU?". This harness keeps the articles whole, lets every chunker cut
+them its own way, and judges each chunk by the answer span, so pipeline
+choices are compared on the same labels. For a model-only comparison the same
+data exports to the BEIR layout MTEB reads (`turkish-rag-eval export-hf`),
+published as
+[RizgarOzan/turkish-rag-eval](https://huggingface.co/datasets/RizgarOzan/turkish-rag-eval);
+adding it to MTEB is proposed in
+[embeddings-benchmark/mteb#5536](https://github.com/embeddings-benchmark/mteb/issues/5536).
 
 ## Your own corpus
 
@@ -255,6 +270,18 @@ the answer is. Two LLMs tend to pick the same sentence, so read this as a
 sanity check rather than human agreement. Full discussion in the
 [design notes](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/design.md#agreement-between-the-two-passes).
 
+## Status
+
+v0.1.0, tagged but not on PyPI yet — install from GitHub as above.
+
+- **Works:** the retrieval harness, `report`, `leaderboard --check`, `bootstrap`,
+  `agreement`, the Hugging Face export, and CI that validates every
+  contributed question against live Wikipedia.
+- **In progress:** the gold set, 148 of a planned 300 questions (58 human,
+  90 LLM-drafted); the drafts join the results once people have reviewed them.
+- **Not yet:** committed results for `groundedness`, confidence intervals on the
+  leaderboard rows, and EmbeddingGemma.
+
 ## Limits
 
 - **58 queries is a small set.** The intervals above are the honest width of
@@ -286,7 +313,7 @@ ML background — pick a Turkish Wikipedia article, write 5–10 paraphrased
 questions, and open a pull request with one JSON file. A validator checks each
 file against Wikipedia in CI. See [CONTRIBUTING.md](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/CONTRIBUTING.md) (Türkçe
 açıklama dahil) and the
-[open issues](https://github.com/RizgarOzan/turkish-rag-eval/issues).
+[good first issues](https://github.com/RizgarOzan/turkish-rag-eval/issues?q=is%3Aopen+label%3A%22good+first+issue%22).
 
 Submitting an embedding model is one command and a pull request — see
 [Leaderboard](#leaderboard).
