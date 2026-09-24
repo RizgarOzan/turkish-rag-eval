@@ -250,5 +250,89 @@
    "answer_span": "Endoplazmik retikulum'a bağlı olanlar hücre dışına verilecek proteinleri (pankreas, sindirim enzimleri vb.)"
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-019",
+  "question": "Biyolojik katalizörlerin bilinen kaç farklı tepkimeyi hızlandırdığı biliniyor?",
+  "doc_id": "99608",
+  "doc_title": "Enzim",
+  "answer_span": "Enzimlerin 4000'den fazla biyokimyasal tepkimeyi katalizlediği bilinmektedir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Enzimlerin 4000'den fazla biyokimyasal tepkimeyi katalizlediği bilinmektedir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-020",
+  "question": "Hücresiz maya özüyle şekerin mayalanabildiğini kim gösterdi?",
+  "doc_id": "99608",
+  "doc_title": "Enzim",
+  "answer_span": "1897'de Eduard Buchner içinde canlı hücre bulunmayan maya özütünün (ekstresinin) şekeri fermante etme yeteneği olduğunu gösterdi",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Eduard Buchner içinde canlı hücre bulunmayan maya özütünün (ekstresinin) şekeri fermante etme yeteneği olduğunu gösterdi"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-021",
+  "question": "Bir enzimin yalnızca proteinden ibaret olduğunu kristal elde ederek 1920'lerde kim kanıtladı?",
+  "doc_id": "99608",
+  "doc_title": "Enzim",
+  "answer_span": "1926'da James B. Sumner, üreaz enziminin saf bir protein olduğunu gösterdi ve onu kristalleştirdi",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "James B. Sumner, üreaz enziminin saf bir protein olduğunu gösterdi"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-022",
+  "question": "Gözyaşı ve tükürükte bulunan hangi enzimin yapısı X ışınıyla ilk çözülen oldu?",
+  "doc_id": "99608",
+  "doc_title": "Enzim",
+  "answer_span": "Bu ilk defa David Chilton Phillips önderliğinde bir grup tarafından lizozim için başarıldı ve 1965'te yayımlandı",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "lizozim göz yaşında, tükürükte ve yumurta beyazında bulunan ve bakterilerin hücre duvarını sindiren bir enzimdir"
+  },
+  "review": "needs-human"
+ },
+ {
+  "qid": "llm-biyoloji-023",
+  "question": "Aynı tepkimeyi hızlandıran ama amino asit dizisi farklı olan enzimlere ne denir?",
+  "doc_id": "99608",
+  "doc_title": "Enzim",
+  "answer_span": "aynı tepkimeyi katalizleyen farklı enzimler aynı temel ada sahip olabilir, bunlara izoenzim denir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "bunlara izoenzim denir"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-024",
+  "question": "Hata denetimi yapan polimerazlarda yanlışlık oranı ne kadardır?",
+  "doc_id": "99608",
+  "doc_title": "Enzim",
+  "answer_span": "yüksek sadakatli polimerazlarda ortalama hata oranı 100 milyon reaksiyonda 1'den az olur",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "yüksek sadakatli polimerazlarda ortalama hata oranı 100 milyon reaksiyonda 1'den az olur"
+  },
+  "review": "agreed"
  }
 ]

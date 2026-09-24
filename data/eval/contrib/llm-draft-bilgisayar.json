@@ -250,5 +250,89 @@
    "answer_span": "MIT, AT&T Bell Teknoloji Laboratuvarları ve GE(General Electric)'nin birlikte geliştirdikleri"
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-019",
+  "question": "Java programlarının çalıştırıldığı sanal makine hangi ara dili kullanır?",
+  "doc_id": "5946",
+  "doc_title": "Derleyici",
+  "answer_span": "JVM, Java Bytecode olarak adlandırılan bir ara dil kullanmaktadır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "JVM, Java Bytecode olarak adlandırılan bir ara dil kullanmaktadır."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-020",
+  "question": "Başka bir işlemci mimarisi için kod üreten derleyicilere ne ad verilir?",
+  "doc_id": "5946",
+  "doc_title": "Derleyici",
+  "answer_span": "Çapraz derleyiciler üzerinde çalıştıkları platformdan bağımsız bir şekilde destekledikleri tüm platformlara özel olarak makine kodu derlemeleri üretebilirler",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "çapraz (cross) derleyicilerdir"
+  },
+  "review": "needs-human"
+ },
+ {
+  "qid": "llm-bilgisayar-021",
+  "question": "Derleme sırasında daha verimli makine kodu üretme çabasına ne denir?",
+  "doc_id": "5946",
+  "doc_title": "Derleyici",
+  "answer_span": "Buna derleyici optimizasyonu denir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Buna derleyici optimizasyonu denir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-022",
+  "question": "En yüksek çalışma performansı hangi derleme tekniğini kullanan dillerden elde edilir?",
+  "doc_id": "5946",
+  "doc_title": "Derleyici",
+  "answer_span": "Bu diller zamanından önce (Ahead of Time - AOT) derleme tekniğini kullanır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "zamanından önce (Ahead of Time - AOT) derleme tekniğini kullanır."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-023",
+  "question": "Örnekteki LOAD, ADD ve STOR komutları hangi ikili kodlara karşılık gelir?",
+  "doc_id": "5946",
+  "doc_title": "Derleyici",
+  "answer_span": "LOAD, ADD ve STOR komutları 0001, 0011 ve 0010 olarak yorumlanır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "LOAD, ADD ve STOR komutları 0001, 0011 ve 0010 olarak yorumlanır"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-024",
+  "question": "Kaynak kodu jetonlara ayıran ön uç aşamasının adı nedir?",
+  "doc_id": "5946",
+  "doc_title": "Derleyici",
+  "answer_span": "Sözcüksel analiz: kaynak kodun incelenerek jeton (token) olarak temsil edilecek şekilde ayrıştırılmasıdır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Sözcüksel analiz: kaynak kodun incelenerek jeton (token) olarak temsil edilecek şekilde ayrıştırılmasıdır."
+  },
+  "review": "agreed"
  }
 ]

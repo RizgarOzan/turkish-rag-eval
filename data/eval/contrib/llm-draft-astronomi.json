@@ -250,5 +250,89 @@
    "answer_span": "Satürn'ün ″Chrysalis″ adlı yok olmuş bir uydusunun kalıntısı olduğunu"
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-019",
+  "question": "Güneş'e en yakın ikinci gezegen neden en sıcak gezegendir?",
+  "doc_id": "1911",
+  "doc_title": "Venüs",
+  "answer_span": "atmosferinin gelen güneş ışınlarının dışarı çıkmasına izin vermemesidir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "atmosferinin gelen güneş ışınlarının dışarı çıkmasına izin vermemesidir"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-020",
+  "question": "Gezegenin gözlemlerinden söz eden en eski gökbilim belgesi hangisidir?",
+  "doc_id": "1911",
+  "doc_title": "Venüs",
+  "answer_span": "Ammi-Şaduqa Venüs tabletinde Babillilerin MÖ 1700-1400 yılları arasında yaptıkları Venüs gözlemlerinden söz edilir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Ammi-Şaduqa Venüs tabletinde"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-021",
+  "question": "Gezegenin bir atmosferi olduğunu ilk kim öne sürdü?",
+  "doc_id": "1911",
+  "doc_title": "Venüs",
+  "answer_span": "1761'de Rus gök bilimci Mihail Vasilyeviç Lomonosov, Venüs'ün Güneş geçişi sırasında gezegenin kenar çizgisindeki düzensizliği fark ederek bunun bir atmosferin varlığını gösterdiğini öne sürdü",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Rus gök bilimci Mihail Vasilyeviç Lomonosov, Venüs'ün Güneş geçişi sırasında gezegenin kenar çizgisindeki düzensizliği fark ederek bunun bir atmosferin varlığını gösterdiğini öne sürdü."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-022",
+  "question": "Atmosferin ana gazının karbondioksit olduğu hangi yöntemle anlaşıldı?",
+  "doc_id": "1911",
+  "doc_title": "Venüs",
+  "answer_span": "kızılötesi tayfölçüm ile Venüs atmosferinin temel bileşeninin karbon dioksit olduğunu öğrendiler",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "kızılötesi tayfölçüm ile Venüs atmosferinin temel bileşeninin karbon dioksit olduğunu öğrendiler"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-023",
+  "question": "Bu gezegene ulaşan ilk başarılı sonda yüzey sıcaklığı hakkında ne buldu?",
+  "doc_id": "1911",
+  "doc_title": "Venüs",
+  "answer_span": "Venüs yüzeyinin 425°C'den sıcak olduğunu, bulut tepelerinde ise sıcaklığın düşük olduğunu saptadı",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Venüs yüzeyinin 425°C'den sıcak olduğunu, bulut tepelerinde ise sıcaklığın düşük olduğunu saptadı"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-024",
+  "question": "Yüzeye çalışır halde inen ilk araç orada hangi sıcaklık ve basıncı ölçtü?",
+  "doc_id": "1911",
+  "doc_title": "Venüs",
+  "answer_span": "Gezegen yüzeyinde atmosfer sıcaklığının 475 °C, basıncın ise 90 atmosfer olduğunu saptadı",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Gezegen yüzeyinde atmosfer sıcaklığının 475 °C, basıncın ise 90 atmosfer olduğunu saptadı."
+  },
+  "review": "agreed"
  }
 ]
