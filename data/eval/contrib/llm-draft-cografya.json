@@ -250,5 +250,89 @@
    "answer_span": "1 milyar m³ doğalgaz kapasiteli"
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-019",
+  "question": "Anadolu'nun en uzun iç akarsuyu kaç kilometredir?",
+  "doc_id": "11972",
+  "doc_title": "Kızılırmak",
+  "answer_span": "1.355 km (841 mil) uzunluğu ile Türkiye'nin kendi sınırları içerisinde doğup kendi sınırları içinde denize dökülen en uzun akarsuyu",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "1.355 km (841 mil)"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-020",
+  "question": "Irmağın denize döküldüğü yerdeki sulak alan ne büyüklüktedir?",
+  "doc_id": "11972",
+  "doc_title": "Kızılırmak",
+  "answer_span": "56.000 hektarlık deltasıyla Türkiye'nin önemli sulak alanlarının başında gelmektedir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "56.000 hektarlık deltasıyla"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-021",
+  "question": "Irmağın ortalama akış miktarı saniyede kaç metreküptür?",
+  "doc_id": "11972",
+  "doc_title": "Kızılırmak",
+  "answer_span": "Ortalama debisi 184 m³/s olan ırmağın",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Ortalama debisi 184 m³/s"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-022",
+  "question": "Irmak Türkiye yüzölçümünün ne kadarının sularını toplar?",
+  "doc_id": "11972",
+  "doc_title": "Kızılırmak",
+  "answer_span": "Türkiye toplam alanının 1/10'unu drene eder",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Türkiye toplam alanının 1/10'unu drene eder."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-023",
+  "question": "Deltada kaç kuş türü yaşar?",
+  "doc_id": "11972",
+  "doc_title": "Kızılırmak",
+  "answer_span": "321 kuş türünün bulunduğu delta",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "321 kuş türünün bulunduğu delta"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-024",
+  "question": "Hititler bu akarsuya hangi adı vermişti?",
+  "doc_id": "11972",
+  "doc_title": "Kızılırmak",
+  "answer_span": "Hititler Marassantiya Irmağı adını vermişlerdi",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Marassantiya Irmağı"
+  },
+  "review": "agreed"
  }
 ]

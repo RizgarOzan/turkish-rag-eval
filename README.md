@@ -59,8 +59,9 @@ Longer write-up of the first result:
 [Türkçe](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/blog/2026-09-19-bm25-turkish-tr.md).
 
 **Contents:** [Results](#results) · [Leaderboard](#leaderboard) ·
+[Why not an existing benchmark?](#why-not-an-existing-benchmark) ·
 [Your own corpus](#your-own-corpus) · [Running it](#running-it) ·
-[Gold set](#gold-set) · [Limits](#limits) · [Contribute](#contribute) ·
+[Gold set](#gold-set) · [Status](#status) · [Limits](#limits) · [Contribute](#contribute) ·
 [Design notes](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/design.md)
 
 ## Results
@@ -148,6 +149,20 @@ To submit a model, open a pull request adding `results/models/<org>__<name>/`
 CI re-derives every metric from the per-query relevance arrays committed
 beside it, and checks the harness version and corpus fingerprint.
 
+## Why not an existing benchmark?
+
+MTEB-style retrieval benchmarks, TR-MTEB included, score an embedding model on
+passages that are already split. They answer "which model?", not "which
+chunker, is Turkish stemming worth it, does a hybrid help, and what does each
+cost on a CPU?". This harness keeps the articles whole, lets every chunker cut
+them its own way, and judges each chunk by the answer span, so pipeline
+choices are compared on the same labels. For a model-only comparison the same
+data exports to the BEIR layout MTEB reads (`turkish-rag-eval export-hf`),
+published as
+[RizgarOzan/turkish-rag-eval](https://huggingface.co/datasets/RizgarOzan/turkish-rag-eval);
+adding it to MTEB is proposed in
+[embeddings-benchmark/mteb#5536](https://github.com/embeddings-benchmark/mteb/issues/5536).
+
 ## Your own corpus
 
 The harness is not tied to its own articles. Point it at a folder of `.txt` or
@@ -222,7 +237,7 @@ model works. Results for a non-default model go to
 | Files | Questions | Labelled by | In the results above |
 |---|---|---|---|
 | `data/eval/gold.json` (health) | 58 | one human | yes |
-| `data/eval/contrib/llm-draft-*.json` (history, geography, astronomy, biology, computing) | 90 | two independent LLM passes | not yet |
+| `data/eval/contrib/llm-draft-*.json` (history, geography, astronomy, biology, computing) | 120 | two independent LLM passes | not yet |
 
 The set is growing toward 300 questions across more domains. Questions a model
 drafted are marked `"source": "llm-draft"`. A second model then picked its own
@@ -232,7 +247,10 @@ token F1 is at least 0.5; agreed items get `"review": "agreed"`, the rest get
 `"needs-human"` and are never loaded. Batches 1 and 2 were 30 of 30 agreed,
 batch 3 was 29 of 30: for "what are several ribosomes working on one mRNA
 called?" the passes picked two different sentences that both name polysomes,
-so that question waits for a person.
+so that question waits for a person. Batch 4 was 27 of 30: the second pass
+named the other claimant to the Hungarian throne, took the sentence beside the
+lysozyme result instead of the result itself, and answered "cross compilers"
+with the bare term where the first took its definition.
 
 Drafts stay out of every number above until a re-run says otherwise:
 `load_gold()` skips them unless called with `include_drafts=True`. Synthetic
@@ -248,12 +266,25 @@ domain.
 | 1 — 2026-09-18 (Malazgirt, Kapadokya, Mars, Mitokondri, Linux) | 30 | 16 | 0.816 | 0.878 | 1.00 / 1.00 / 1.00 |
 | 2 — 2026-09-20 (İstanbul'un Fethi, Ağrı Dağı, Jüpiter, Fotosentez, İnternet) | 30 | 4 | 0.419 | 0.540 | 0.96 / 1.00 / 1.00 |
 | 3 — 2026-09-21 (Çaldıran Muharebesi, Tuz Gölü, Satürn, Ribozom, Unix) | 30 | 18 | 0.829 | 0.872 | 0.92 / 0.96 / 0.96 |
-| **All drafts** | 90 | 38 | 0.688 | 0.763 | 0.96 / 0.99 / 0.99 |
+| 4 — 2026-09-24 (Mohaç Muharebesi, Kızılırmak, Venüs, Enzim, Derleyici) | 30 | 15 | 0.747 | 0.792 | 0.96 / 0.96 / 0.96 |
+| **All drafts** | 120 | 53 | 0.703 | 0.771 | 0.96 / 0.98 / 0.98 |
 
 The passes disagree about how much of a sentence to take, rather than where
 the answer is. Two LLMs tend to pick the same sentence, so read this as a
 sanity check rather than human agreement. Full discussion in the
 [design notes](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/design.md#agreement-between-the-two-passes).
+
+## Status
+
+v0.1.0, tagged but not on PyPI yet — install from GitHub as above.
+
+- **Works:** the retrieval harness, `report`, `leaderboard --check`, `bootstrap`,
+  `agreement`, the Hugging Face export, and CI that validates every
+  contributed question against live Wikipedia.
+- **In progress:** the gold set, 178 of a planned 300 questions (58 human,
+  120 LLM-drafted); the drafts join the results once people have reviewed them.
+- **Not yet:** committed results for `groundedness`, confidence intervals on the
+  leaderboard rows, and EmbeddingGemma.
 
 ## Limits
 
@@ -263,7 +294,7 @@ sanity check rather than human agreement. Full discussion in the
   differences under roughly 0.05 nDCG as noise" — which was both too strict
   for paired comparisons and too loose for unpaired ones.
 - **One annotator for the human set.** The 58 health questions are
-  single-annotated, so they have no agreement figure. The 90 drafted questions
+  single-annotated, so they have no agreement figure. The 120 drafted questions
   are double-labelled, but by two LLM passes rather than by two people.
 - **The corpus is Wikipedia, and so is much of the training data.** Every
   embedding model ranked here was almost certainly trained on Turkish
@@ -286,7 +317,7 @@ ML background — pick a Turkish Wikipedia article, write 5–10 paraphrased
 questions, and open a pull request with one JSON file. A validator checks each
 file against Wikipedia in CI. See [CONTRIBUTING.md](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/CONTRIBUTING.md) (Türkçe
 açıklama dahil) and the
-[open issues](https://github.com/RizgarOzan/turkish-rag-eval/issues).
+[good first issues](https://github.com/RizgarOzan/turkish-rag-eval/issues?q=is%3Aopen+label%3A%22good+first+issue%22).
 
 Submitting an embedding model is one command and a pull request — see
 [Leaderboard](#leaderboard).

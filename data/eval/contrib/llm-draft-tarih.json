@@ -250,5 +250,89 @@
    "answer_span": "tek hezimeti olan bu büyük yenilgiden sonra, 1524 yılında ölene dek başka bir savaş yapmadı"
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-019",
+  "question": "Kanuni'nin Macaristan seferine çıkarken yanında kaç asker ve kaç top vardı?",
+  "doc_id": "1405459",
+  "doc_title": "Mohaç Muharebesi",
+  "answer_span": "23 Nisan 1526'da 60.000 kişilik ordu ve 300 top ile sefere çıktı",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "60.000 kişilik ordu ve 300 top ile sefere çıktı"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-020",
+  "question": "Seferin asıl hedefinin Budin olduğu askerlere hangi kalede açıklandı?",
+  "doc_id": "1405459",
+  "doc_title": "Mohaç Muharebesi",
+  "answer_span": "Eszek kalesinde, seferin hedefinin Macar Krallığı'nın başkenti Budin olduğu orduya bildirildi",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Eszek kalesinde, seferin hedefinin Macar Krallığı'nın başkenti Budin olduğu orduya bildirildi."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-021",
+  "question": "Erdel voyvodası kralın yardımına neden gelmedi?",
+  "doc_id": "1405459",
+  "doc_title": "Mohaç Muharebesi",
+  "answer_span": "30.000 kişiyle yola çıkan Erdel beyinin, kralı kıskandığı için savaşa katılmadığı söylenir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "30.000 kişiyle yola çıkan Erdel beyinin, kralı kıskandığı için savaşa katılmadığı söylenir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-022",
+  "question": "Savaş meclisinde Macar ağır süvarisine karşı hangi taktik önerildi?",
+  "doc_id": "1405459",
+  "doc_title": "Mohaç Muharebesi",
+  "answer_span": "kitle halinde saldırının sakıncalı olacağını, düşmanın yan ve gerilerine yapılacak saldırıların daha çok yarar sağlayacağını söyledi",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "düşmanın yan ve gerilerine yapılacak saldırıların daha çok yarar sağlayacağını söyledi"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-023",
+  "question": "Budin'in anahtarlarını padişaha kim teslim etti?",
+  "doc_id": "1405459",
+  "doc_title": "Mohaç Muharebesi",
+  "answer_span": "Yahudilerin başkanı Salamon'un başında bulunduğu bir heyet, Foeldward kasabasında, Budin kalesinin anahtarlarını Kanunî Sultan Süleyman'a teslim etti",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Yahudilerin başkanı Salamon'un başında bulunduğu bir heyet, Foeldward kasabasında, Budin kalesinin anahtarlarını Kanunî Sultan Süleyman'a teslim etti."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-024",
+  "question": "Macar kralının ölümünden sonra soyluların bir kısmı tahta kimi çıkardı?",
+  "doc_id": "1405459",
+  "doc_title": "Mohaç Muharebesi",
+  "answer_span": "Habsburg hanedanından Avusturya arşidükü I. Ferdinand'ı kral seçmeleri",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Erdel voyvodası János Szapolyai'yi Macar kralı seçti"
+  },
+  "review": "needs-human"
  }
 ]
