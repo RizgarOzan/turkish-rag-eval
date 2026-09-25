@@ -334,5 +334,89 @@
    "answer_span": "yüksek sadakatli polimerazlarda ortalama hata oranı 100 milyon reaksiyonda 1'den az olur"
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-025",
+  "question": "Ribonükleik asitte DNA'daki timinin yerini hangi baz alır?",
+  "doc_id": "5966",
+  "doc_title": "RNA",
+  "answer_span": "DNA'da bulunan timin bazı yerine RNA'da urasil vardır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "DNA'da bulunan timin bazı yerine RNA'da urasil vardır"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-026",
+  "question": "Riboz şekerindeki ek OH grubu molekülü neden daha kırılgan yapar?",
+  "doc_id": "5966",
+  "doc_title": "RNA",
+  "answer_span": "RNA'da fazladan bulunan hidroksil grupları, hidroliz nedeniyle DNA'dan daha az dayanıklı olmasına neden olur",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "RNA'da fazladan bulunan hidroksil grupları, hidroliz nedeniyle DNA'dan daha az dayanıklı olmasına neden olur."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-027",
+  "question": "Amino asitleri ribozoma getiren molekül yaklaşık kaç nükleotit uzunluğundadır?",
+  "doc_id": "5966",
+  "doc_title": "RNA",
+  "answer_span": "Taşıyıcı RNA (tRNA) yaklaşık 80 nükleotit uzunluğunda bir RNA zinciri olup",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Taşıyıcı RNA (tRNA) yaklaşık 80 nükleotit uzunluğunda bir RNA zinciri olup"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-028",
+  "question": "Tipik bir ökaryot hücresinin sitoplazmasındaki ribonükleik asidin ne kadarı ribozomaldir?",
+  "doc_id": "5966",
+  "doc_title": "RNA",
+  "answer_span": "Tipik bir ökaryotik hücre sitoplazmasındaki RNA konsantrasyonu 10 mg/ml'dir, bunun %80 rRNA'dan oluşur",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Tipik bir ökaryotik hücre sitoplazmasındaki RNA konsantrasyonu 10 mg/ml'dir, bunun %80 rRNA'dan oluşur."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-029",
+  "question": "Dişi memelilerde iki X kromozomundan birini hangi molekül susturur?",
+  "doc_id": "5966",
+  "doc_title": "RNA",
+  "answer_span": "X kromozomlarından birini kaplayarak onu inaktive eden Xist adlı bir RNA tarafından meydana gelir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Dişi hayvanlarda görülen X kromozom inaktivasyonu, X kromozomlarından birini kaplayarak onu inaktive eden Xist adlı bir RNA tarafından meydana gelir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-030",
+  "question": "Bir maya nükleik asidinin dizisini ilk okuyan araştırmacı hangi ödülü kazandı?",
+  "doc_id": "5966",
+  "doc_title": "RNA",
+  "answer_span": "Robert W. Holley bir maya RNA'sının ilk 77 nükleotidinin dizisini 1965'te çözmüş, bundan dolayı 1968 Nobel Tıp ödülünü kazanmıştır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Robert W. Holley bir maya RNA'sının ilk 77 nükleotidinin dizisini 1965'te çözmüş, bundan dolayı 1968 Nobel Tıp ödülünü kazanmıştır."
+  },
+  "review": "agreed"
  }
 ]

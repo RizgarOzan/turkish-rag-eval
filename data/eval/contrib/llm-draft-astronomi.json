@@ -334,5 +334,89 @@
    "answer_span": "Gezegen yüzeyinde atmosfer sıcaklığının 475 °C, basıncın ise 90 atmosfer olduğunu saptadı."
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-025",
+  "question": "Buz devini 1612'de gözlemleyen ama onu yıldız sanan gökbilimci kimdir?",
+  "doc_id": "6011",
+  "doc_title": "Neptün",
+  "answer_span": "Galileo iki seferde de, Neptün'ü hareketsiz görüntüsünden dolayı bir yıldız olarak değerlendirmiştir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Galileo'nun çizimlerine göre o, Neptün'ü 28 Aralık 1612 ve 27 Ocak 1613'te gözlemlemiş. Ama Galileo iki seferde de, Neptün'ü hareketsiz görüntüsünden dolayı bir yıldız olarak değerlendirmiştir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-026",
+  "question": "Sekizinci gezegen, hesaplanan konumun ne kadar yakınında bulundu?",
+  "doc_id": "6011",
+  "doc_title": "Neptün",
+  "answer_span": "Neptün, Le Verrier'in tahmin ettiği yerin sadece 1°(Adams'ın tahmininin ise 12° yakınında) uzağında keşfedildi",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Neptün, Le Verrier'in tahmin ettiği yerin sadece 1°(Adams'ın tahmininin ise 12° yakınında) uzağında keşfedildi"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-027",
+  "question": "Plüton hangi yıllar arasında Güneş'e sekizinci gezegenden daha yakındı?",
+  "doc_id": "6011",
+  "doc_title": "Neptün",
+  "answer_span": "Plüton'un eliptik yörüngesinin onu Güneş'e Neptün'den yaklaştırdığı 1979 ile 1999 arasındaki 20 yıllık bir dönem",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Plüton'un eliptik yörüngesinin onu Güneş'e Neptün'den yaklaştırdığı 1979 ile 1999 arasındaki 20 yıllık bir dönem"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-028",
+  "question": "Mavi buz devinin derinliklerinde metan neye dönüşür?",
+  "doc_id": "6011",
+  "doc_title": "Neptün",
+  "answer_span": "7000 km derinlikten itibaren çekirdeğe kadar ortam koşulları öyle bir hal alır ki metan, elmas kristallerine ayrışır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "7000 km derinlikten itibaren çekirdeğe kadar ortam koşulları öyle bir hal alır ki metan, elmas kristallerine ayrışır."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-029",
+  "question": "Güneş'ten en uzak gezegen, aldığı güneş enerjisinin kaç katını yayar?",
+  "doc_id": "6011",
+  "doc_title": "Neptün",
+  "answer_span": "Uranüs'ün yaydığı enerji, Güneş'ten aldığı enerjiye göre sadece 1.1 kat fazladır bununla birlikte bu oran Neptün'de 2.61'dir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "bu oran Neptün'de 2.61'dir"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-030",
+  "question": "Triton'un gezegen tarafından sonradan yakalandığını düşündüren özelliği nedir?",
+  "doc_id": "6011",
+  "doc_title": "Neptün",
+  "answer_span": "İstisnai olarak, Güneş Sistemi'ndeki diğer tüm uydulara göre ters yönde bir yörüngeye sahiptir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "İstisnai olarak, Güneş Sistemi'ndeki diğer tüm uydulara göre ters yönde bir yörüngeye sahiptir. Bu özelliği onun olduğu yerde oluşmadığını, Neptün tarafından yakalandığını gösteriyor."
+  },
+  "review": "agreed"
  }
 ]

@@ -334,5 +334,89 @@
    "answer_span": "Erdel voyvodası János Szapolyai'yi Macar kralı seçti"
   },
   "review": "needs-human"
+ },
+ {
+  "qid": "llm-tarih-025",
+  "question": "Selçuklu ordusu savaştan önce dağın hangi yanında ordugâh kurmuştu?",
+  "doc_id": "57228",
+  "doc_title": "Kösedağ Muharebesi",
+  "answer_span": "Anadolu Selçuklu ordusunun bu dağın kuzey eteğinde, Kelkit Çayı'na yakın bir düzlükte dağın yamacına yaslanmış olarak kamp kurduğu",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "bu dağın kuzey eteğinde, Kelkit Çayı'na yakın bir düzlükte dağın yamacına yaslanmış olarak kamp kurduğu"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-026",
+  "question": "Erzurum'u kuşatan Moğol komutanının emrinde ne kadar asker vardı?",
+  "doc_id": "57228",
+  "doc_title": "Kösedağ Muharebesi",
+  "answer_span": "Baycu Noyan'ın komutası altında dört tümenlik yani 40 bin kişilik bir kuvvet vardır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Baycu Noyan'ın komutası altında dört tümenlik yani 40 bin kişilik bir kuvvet vardır."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-027",
+  "question": "Erzurum kuşatmasında düşman askerlerini şehre içeriden kim soktu?",
+  "doc_id": "57228",
+  "doc_title": "Kösedağ Muharebesi",
+  "answer_span": "kentin şahnesi (vali) Şerefeddin Duvini, Baycu Noyan'la, ailesinin ve akrabalarının canları bağışlanması koşuluyla anlaşmış ve 200 kişilik bir Moğol birliğini savunması kendi sorumluluğunda olan burçtan kente almıştır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "kentin şahnesi (vali) Şerefeddin Duvini, Baycu Noyan'la, ailesinin ve akrabalarının canları bağışlanması koşuluyla anlaşmış ve 200 kişilik bir Moğol birliğini savunması kendi sorumluluğunda olan burçtan kente almıştır."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-028",
+  "question": "Çevredeki bağımsız devletlerden Selçuklulara asker yollayan tek devlet hangisiydi?",
+  "doc_id": "57228",
+  "doc_title": "Kösedağ Muharebesi",
+  "answer_span": "Komşu bağımsız hükümdarlıklardan ise sadece Halep Eyyubilerinden 2 bin kişilik bir birlik gönderilmiştir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Komşu bağımsız hükümdarlıklardan ise sadece Halep Eyyubilerinden 2 bin kişilik bir birlik gönderilmiştir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-029",
+  "question": "Moğollar boşaltılmış Selçuklu karargâhında hangi ganimetleri buldu?",
+  "doc_id": "57228",
+  "doc_title": "Kösedağ Muharebesi",
+  "answer_span": "Geride kalan ganimetin bir kısmı 300 deve yükü altın, 3 bin katır yükü değerli eşya, 40 araba zırh ve muhtemelen büyük miktarda erzaktır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Geride kalan ganimetin bir kısmı 300 deve yükü altın, 3 bin katır yükü değerli eşya, 40 araba zırh ve muhtemelen büyük miktarda erzaktır."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-030",
+  "question": "Savaştan sonraki barışla Selçuklular Moğollara her yıl ne vermeyi üstlendi?",
+  "doc_id": "57228",
+  "doc_title": "Kösedağ Muharebesi",
+  "answer_span": "Bu antlaşmanın Anadolu Selçuklu'ya yüklediği maddi yük yılda 3,6 milyon dirhem, 10 bin koyun, bin sığır, bin deve ve başkaca değerli hediyelerdir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Bu antlaşmanın Anadolu Selçuklu'ya yüklediği maddi yük yılda 3,6 milyon dirhem, 10 bin koyun, bin sığır, bin deve ve başkaca değerli hediyelerdir."
+  },
+  "review": "agreed"
  }
 ]

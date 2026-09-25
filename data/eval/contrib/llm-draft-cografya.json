@@ -334,5 +334,89 @@
    "answer_span": "Marassantiya Irmağı"
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-025",
+  "question": "Bursa'dan bakınca doruk sanılan tepenin adı ve yüksekliği nedir?",
+  "doc_id": "14923",
+  "doc_title": "Uludağ",
+  "answer_span": "zirve gibi görünen o tepenin ismi Keşiş Tepedir ve yüksekliği 2.486 m'dir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "zirve gibi görünen o tepenin ismi Keşiş Tepedir ve yüksekliği 2.486 m'dir"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-026",
+  "question": "Dağ bugünkü adını hangi yıl ve kimin önerisiyle aldı?",
+  "doc_id": "14923",
+  "doc_title": "Uludağ",
+  "answer_span": "1925 yılında Bursa Vilayeti Coğrafya Cemiyeti'nin girişimleri ve Osman Şevki Bey'in önerisi ile \"Uludağ\" adını almıştır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "1925 yılında Bursa Vilayeti Coğrafya Cemiyeti'nin girişimleri ve Osman Şevki Bey'in önerisi ile \"Uludağ\" adını almıştır"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-027",
+  "question": "Türkiye'nin ilk teleferiği ne zaman işletmeye açıldı?",
+  "doc_id": "14923",
+  "doc_title": "Uludağ",
+  "answer_span": "1963'te hizmete açılan Türkiye'nin ilk teleferiği Bursa Teleferik",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "1963'te hizmete açılan Türkiye'nin ilk teleferiği Bursa Teleferik"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-028",
+  "question": "Ülkede buzul çağından kalma izlere ilk kez nerede ve ne zaman rastlandı?",
+  "doc_id": "14923",
+  "doc_title": "Uludağ",
+  "answer_span": "ülkemizdeki buzul devri izleri ilk olarak Uludağ'da ve 1904 yılında bulunmuştur",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "ülkemizdeki buzul devri izleri ilk olarak Uludağ'da ve 1904 yılında bulunmuştur"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-029",
+  "question": "Bursa'daki bu dağda şimdiye kadar ölçülen en kalın kar örtüsü ne kadardı?",
+  "doc_id": "14923",
+  "doc_title": "Uludağ",
+  "answer_span": "Uludağ'da gözlemlenmiş en yüksek kar kalınlığı 430 cm'dir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Uludağ'da gözlemlenmiş en yüksek kar kalınlığı 430 cm'dir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-030",
+  "question": "Bizans döneminde Nilüfer ile Deliçay arasındaki vadilerde kaç keşiş yapısı vardı?",
+  "doc_id": "14923",
+  "doc_title": "Uludağ",
+  "answer_span": "Uludağ'da Nilüfer çayı ile Deliçay arasındaki vadi ve tepelerde 28 manastır kurulmuştur",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Uludağ'da Nilüfer çayı ile Deliçay arasındaki vadi ve tepelerde 28 manastır kurulmuştur."
+  },
+  "review": "agreed"
  }
 ]

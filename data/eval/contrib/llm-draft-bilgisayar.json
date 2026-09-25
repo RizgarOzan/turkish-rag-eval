@@ -334,5 +334,89 @@
    "answer_span": "Sözcüksel analiz: kaynak kodun incelenerek jeton (token) olarak temsil edilecek şekilde ayrıştırılmasıdır."
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-025",
+  "question": "UNIVAC 1 bilgisayarında hangi yönetim programı kullanılıyordu?",
+  "doc_id": "1150",
+  "doc_title": "İşletim sistemi",
+  "answer_span": "UNIVAC 1'in işletim sistemi C-10, 1950'lerde kullanıldı",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "UNIVAC 1'in işletim sistemi C-10, 1950'lerde kullanıldı."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-026",
+  "question": "Anlık tepki gerektiren uygulamalar için yapılan sistem yazılımlarında asıl hedef nedir?",
+  "doc_id": "1150",
+  "doc_title": "İşletim sistemi",
+  "answer_span": "Gerçek zamanlı işletim sistemlerinin ana teması, olaylara hızlı ve tahmin edilebilir bir tepki vermesidir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Gerçek zamanlı işletim sistemlerinin ana teması, olaylara hızlı ve tahmin edilebilir bir tepki vermesidir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-027",
+  "question": "Kernel mimarileri hangi türlere ayrılır?",
+  "doc_id": "1150",
+  "doc_title": "İşletim sistemi",
+  "answer_span": "Çekirdek tasarımları, yekpare (monolitik) çekirdekler, mikro-çekirdekler ve ekzoçekirdekler olarak üç ana gruba ayrılmaktadır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Çekirdek tasarımları, yekpare (monolitik) çekirdekler, mikro-çekirdekler ve ekzoçekirdekler olarak üç ana gruba ayrılmaktadır."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-028",
+  "question": "Özgür Unix benzeri sistemin iki bileşeni hangi yıllarda kimlerce başlatıldı?",
+  "doc_id": "1150",
+  "doc_title": "İşletim sistemi",
+  "answer_span": "1983 yılında Richard Stallman tarafından başlatılan GNU projesi ile 1991 yılında Linus Torvalds tarafından başlatılan çekirdek tasarımının birleşimidir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "1983 yılında Richard Stallman tarafından başlatılan GNU projesi ile 1991 yılında Linus Torvalds tarafından başlatılan çekirdek tasarımının birleşimidir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-029",
+  "question": "Be şirketinin sistem yazılımı hangi dilde kodlanmıştı?",
+  "doc_id": "1150",
+  "doc_title": "İşletim sistemi",
+  "answer_span": "BeOS, kolay API programlama için C++ dilinde yazılmıştır",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "BeOS, kolay API programlama için C++ dilinde yazılmıştır."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-030",
+  "question": "Linux tabanlı sistemlerin ev bilgisayarlarındaki tahmini payı nedir?",
+  "doc_id": "1150",
+  "doc_title": "İşletim sistemi",
+  "answer_span": "tahmini hesaplar, GNU/Linux'un %1,1 oranlarında kişisel bilgisayarlarda kullanıldığını göstermektedir",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "GNU/Linux'un %1,1 oranlarında kişisel bilgisayarlarda kullanıldığını göstermektedir"
+  },
+  "review": "agreed"
  }
 ]
