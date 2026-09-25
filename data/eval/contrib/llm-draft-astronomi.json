@@ -418,5 +418,89 @@
    "answer_span": "İstisnai olarak, Güneş Sistemi'ndeki diğer tüm uydulara göre ters yönde bir yörüngeye sahiptir. Bu özelliği onun olduğu yerde oluşmadığını, Neptün tarafından yakalandığını gösteriyor."
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-031",
+  "question": "Yedinci gezegenin kutupları neden onlarca yıl kesintisiz aydınlık ya da karanlık kalır?",
+  "doc_id": "8640",
+  "doc_title": "Uranüs",
+  "answer_span": "Gezegenin 82,23°'lik belirgin bir eksenel eğimi ve 17 saat 14 dakikalık bir geriye dönüş periyodu vardır.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Gezegenin 82,23°'lik belirgin bir eksenel eğimi ve 17 saat 14 dakikalık bir geriye dönüş periyodu vardır. Bu, Güneş etrafındaki 84 Dünya yıllık bir yörünge döneminde kutuplarının yaklaşık 42 yıl sürekli güneş ışığı aldığı ve ardından 42 yıl sürekli karanlık olduğu anlamına gelir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-032",
+  "question": "Herschel'in bulduğu cismin kuyruklu yıldız olmadığını ilk kim, neye dayanarak gösterdi?",
+  "doc_id": "8640",
+  "doc_title": "Uranüs",
+  "answer_span": "Rusya'da çalışan Fin-İsveçli astronom Anders Johan Lexell, yeni cismin yörüngesini hesaplayan ilk kişi oldu. Neredeyse dairesel olan yörüngesi onu bu cismin bir kuyruklu yıldızdan ziyade bir gezegen olduğu sonucuna götürdü.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Rusya'da çalışan Fin-İsveçli astronom Anders Johan Lexell, yeni cismin yörüngesini hesaplayan ilk kişi oldu. Neredeyse dairesel olan yörüngesi onu bu cismin bir kuyruklu yıldızdan ziyade bir gezegen olduğu sonucuna götürdü."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-033",
+  "question": "Keşiften sonra hükümdar gökbilimciye hangi şartla ne kadar ödeme yaptı?",
+  "doc_id": "8640",
+  "doc_title": "Uranüs",
+  "answer_span": "Herschel'e, Kraliyet Ailesi'nin teleskoplarına bakabilmesi için Windsor'a taşınması şartıyla yıllık 200 sterlin (2023'te 30.000 sterline eşdeğer) maaş bağladı.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Bu başarısından dolayı Kral III. George, Herschel'e, Kraliyet Ailesi'nin teleskoplarına bakabilmesi için Windsor'a taşınması şartıyla yıllık 200 sterlin (2023'te 30.000 sterline eşdeğer) maaş bağladı."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-034",
+  "question": "Buz devinin hesaplanan yolundan sapması hangi keşfe götürdü?",
+  "doc_id": "8640",
+  "doc_title": "Uranüs",
+  "answer_span": "Johann Gottfried Galle, 23 Eylül 1846'da, Le Verrier'nin öngördüğü konuma yakın bir yerde, daha sonra Neptün adını alacak olan yeni bir gezegen tespit etti.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Zamanla, tahmin edilen ve gözlemlenen yörüngeler arasında tutarsızlıklar ortaya çıkmaya başladı ve 1841'de John Couch Adams ilk olarak farklılıkların görünmeyen bir gezegenin yerçekimsel çekiminden kaynaklanabileceğini öne sürdü. 1845 yılında Urbain Le Verrier, Uranüs'ün yörüngesi üzerine kendi bağımsız araştırmasına başladı. Johann Gottfried Galle, 23 Eylül 1846'da, Le Verrier'nin öngördüğü konuma yakın bir yerde, daha sonra Neptün adını alacak olan yeni bir gezegen tespit etti."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-035",
+  "question": "Kutuplar daha fazla güneş enerjisi almasına rağmen sıcaklık dağılımında ne gözleniyor?",
+  "doc_id": "8640",
+  "doc_title": "Uranüs",
+  "answer_span": "Buna rağmen Uranüs'ün ekvatoru kutuplarından daha sıcaktır. Bu duruma sebep olan mekanizma ise bilinmemektedir.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Bu eksen eğikliğinin bir sonucu olarak kutup bölgeleri, Uranüs yılı boyunca ekvator bölgelerine kıyasla ortalama olarak Güneş'ten daha fazla enerji alır. Buna rağmen Uranüs'ün ekvatoru kutuplarından daha sıcaktır. Bu duruma sebep olan mekanizma ise bilinmemektedir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-036",
+  "question": "Yedinci gezegenin başlıca ayları bir araya gelse Triton'a göre ne kadar ağır olur?",
+  "doc_id": "8640",
+  "doc_title": "Uranüs",
+  "answer_span": "Uranüs uydu sistemi dev gezegenler arasında en az kütleye sahip olanıdır; beş ana uydunun toplam kütlesi tek başına Triton'un (Neptün'ün en büyük uydusu) kütlesinin yarısından daha azdır.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Uranüs uydu sistemi dev gezegenler arasında en az kütleye sahip olanıdır; beş ana uydunun toplam kütlesi tek başına Triton'un (Neptün'ün en büyük uydusu) kütlesinin yarısından daha azdır."
+  },
+  "review": "agreed"
  }
 ]

@@ -418,5 +418,89 @@
    "answer_span": "Bu antlaşmanın Anadolu Selçuklu'ya yüklediği maddi yük yılda 3,6 milyon dirhem, 10 bin koyun, bin sığır, bin deve ve başkaca değerli hediyelerdir."
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-031",
+  "question": "Savaş günü hava koşulları hangi tarafı neden zor duruma soktu?",
+  "doc_id": "56939",
+  "doc_title": "Preveze Deniz Muharebesi",
+  "answer_span": "Muharebe günü rüzgarın kesilmesi, yelkenli ve ağır kalyonlardan oluşan Kutsal İttifak donanmasının hareket kabiliyetini kısıtladı.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Muharebe günü rüzgarın kesilmesi, yelkenli ve ağır kalyonlardan oluşan Kutsal İttifak donanmasının hareket kabiliyetini kısıtladı."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-032",
+  "question": "Karadaki kaleye yerleştirilen birliklerin deniz çatışmasında ne işe yaraması bekleniyordu?",
+  "doc_id": "56939",
+  "doc_title": "Preveze Deniz Muharebesi",
+  "answer_span": "Actium'daki kaleyi tutan Türk askerleri Barbaros'un filosunu topçu ateşiyle desteklerken Doria'yı da gemilerini sahilden uzakta tutmaya zorlayacaktı.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Actium'daki kaleyi tutan Türk askerleri Barbaros'un filosunu topçu ateşiyle desteklerken Doria'yı da gemilerini sahilden uzakta tutmaya zorlayacaktı."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-033",
+  "question": "Çarpışma bittiğinde iki tarafın kayıpları ne düzeydeydi?",
+  "doc_id": "56939",
+  "doc_title": "Preveze Deniz Muharebesi",
+  "answer_span": "Günün sonunda, Türkler 128 gemiyi batırdı, yok etti veya ele geçirdi ve yaklaşık 3.000 esir aldı. Türkler herhangi bir gemi kaybetmediler ama 400 ölü ve 800 yaralı verdiler.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Günün sonunda, Türkler 128 gemiyi batırdı, yok etti veya ele geçirdi ve yaklaşık 3.000 esir aldı. Türkler herhangi bir gemi kaybetmediler ama 400 ölü ve 800 yaralı verdiler."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-034",
+  "question": "Savaşı izleyen barışla Venedik toprak ve para olarak neleri yitirdi?",
+  "doc_id": "56939",
+  "doc_title": "Preveze Deniz Muharebesi",
+  "answer_span": "Ekim 1540'ta Venedik ile Osmanlı İmparatorluğu arasında, Türklerin Mora ve Dalmaçya'daki Venedik mülklerinin ve Ege, İyonya ve Doğu Adriyatik Denizi'ndeki eski Venedik adalarının kontrolünü ele geçirdiği bir barış anlaşması imzalandı. Venedik ayrıca Osmanlı İmparatorluğu'na 300.000 duka altın savaş tazminatı ödemek zorunda kaldı.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Türklerin Mora ve Dalmaçya'daki Venedik mülklerinin ve Ege, İyonya ve Doğu Adriyatik Denizi'ndeki eski Venedik adalarının kontrolünü ele geçirdiği bir barış anlaşması imzalandı. Venedik ayrıca Osmanlı İmparatorluğu'na 300.000 duka altın savaş tazminatı ödemek zorunda kaldı."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-035",
+  "question": "Cenevizli amiralin çekingen davranışının ardında hangi kişisel ve siyasi sebepler olduğu düşünülüyor?",
+  "doc_id": "56939",
+  "doc_title": "Preveze Deniz Muharebesi",
+  "answer_span": "Doria'nın yalan söylediği yaygın olarak tahmin edilmektedir ve isteksiz olmasının, kendi gemilerini riske atma isteksizliğinden kaynaklanıyordu (kişisel olarak önemli sayıda \"İspanyol-Cenova\" filosuna sahipti) ve memleketinin azılı rakibi ve o dönemde Osmanlı saldırganlığının birincil hedefi olan Venedik'e karşı uzun süredir devam eden düşmanlığı vardı.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Doria'nın yalan söylediği yaygın olarak tahmin edilmektedir ve isteksiz olmasının, kendi gemilerini riske atma isteksizliğinden kaynaklanıyordu (kişisel olarak önemli sayıda \"İspanyol-Cenova\" filosuna sahipti) ve memleketinin azılı rakibi ve o dönemde Osmanlı saldırganlığının birincil hedefi olan Venedik'e karşı uzun süredir devam eden düşmanlığı vardı."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-036",
+  "question": "Türk donanmasının denizlerdeki hâkimiyeti hangi sonraki başarıyla güçlendi ve hangi yenilgiye dek karşı konulmaz kaldı?",
+  "doc_id": "56939",
+  "doc_title": "Preveze Deniz Muharebesi",
+  "answer_span": "Preveze zaferi ve ardından 1560 yılında Cerbe Savaşı'nda kazanılan zaferle Osmanlılar, Akdeniz'deki iki başlıca rakip güç olan Venedik ve İspanya'nın çabalarını geri püskürtmeyi başardılar. Akdeniz'deki büyük ölçekli filo savaşlarında Osmanlı üstünlüğü, 1571'deki İnebahtı Savaşı'na kadar rakipsiz kaldı.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Preveze zaferi ve ardından 1560 yılında Cerbe Savaşı'nda kazanılan zaferle Osmanlılar, Akdeniz'deki iki başlıca rakip güç olan Venedik ve İspanya'nın çabalarını geri püskürtmeyi başardılar. Akdeniz'deki büyük ölçekli filo savaşlarında Osmanlı üstünlüğü, 1571'deki İnebahtı Savaşı'na kadar rakipsiz kaldı."
+  },
+  "review": "agreed"
  }
 ]

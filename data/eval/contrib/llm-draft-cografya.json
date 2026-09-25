@@ -418,5 +418,89 @@
    "answer_span": "Uludağ'da Nilüfer çayı ile Deliçay arasındaki vadi ve tepelerde 28 manastır kurulmuştur."
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-031",
+  "question": "Antik bir coğrafyacının doruktan görülebildiğini söylediği manzara bugün neden görülemez?",
+  "doc_id": "2134",
+  "doc_title": "Erciyes",
+  "answer_span": "Günümüzde zirvesinin sadece kuzey yamacında bir buzulu kalan Erciyes'in zirvesinden Dünya'nın yuvarlaklığı sebebi ile Akdeniz ve Karadeniz'i görmek mümkün değildir.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Günümüzde zirvesinin sadece kuzey yamacında bir buzulu kalan Erciyes'in zirvesinden Dünya'nın yuvarlaklığı sebebi ile Akdeniz ve Karadeniz'i görmek mümkün değildir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-032",
+  "question": "Ürgüp ve Göreme'deki kaya oluşumlarıyla Kayseri'deki yanardağ arasında nasıl bir bağ var?",
+  "doc_id": "2134",
+  "doc_title": "Erciyes",
+  "answer_span": "Bu durum, bugünkü Kayseri'nin çevresindeki bulunan taş ocaklarının teşekkülüne ve Göreme çevresindeki Peri Bacalarının oluşmasına ve özellikle de bims dediğimiz krater küllerinin çevrede büyük kütleler halinde bulunmasına sebep oldu. Tomarza ve Develi bölgesindeki bims yatakları, Cırgalan, Güzelyurt, Gesi çevresindeki taş ocakları, Ürgüp ve Göreme'deki rüzgârın aşındırarak oluşturduğu Peri Bacaları, Erciyes Dağı'nın bu dönemde püskürttüğü lav ve küllerin sonucu meydana geldi.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Tomarza ve Develi bölgesindeki bims yatakları, Cırgalan, Güzelyurt, Gesi çevresindeki taş ocakları, Ürgüp ve Göreme'deki rüzgârın aşındırarak oluşturduğu Peri Bacaları, Erciyes Dağı'nın bu dönemde püskürttüğü lav ve küllerin sonucu meydana geldi."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-033",
+  "question": "Buz kütleleri dağın tepesini nasıl değiştirdi?",
+  "doc_id": "2134",
+  "doc_title": "Erciyes",
+  "answer_span": "Erciyes Dağı'nın buralardaki büyük krateri, buzulların aşındırması ile silinmiş, dağın, herhalde 400 metre kadar daha yüksekte bulunan doruk bölümü böylece yıpranmalara uğramıştır.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Erciyes Dağı'nın buralardaki büyük krateri, buzulların aşındırması ile silinmiş, dağın, herhalde 400 metre kadar daha yüksekte bulunan doruk bölümü böylece yıpranmalara uğramıştır."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-034",
+  "question": "Uzmanlar İç Anadolu'nun en yüksek dağının yeniden lav püskürtme olasılığını nasıl değerlendiriyor?",
+  "doc_id": "2134",
+  "doc_title": "Erciyes",
+  "answer_span": "Uzmanlar, son yıllarda dünyanın çeşitli bölgelerindeki yanardağlarda görülen volkan püskürtmelerinden hareket ederek Erciyes Dağı için de öyle bir durumun söz konusu olup olmayacağı sorusuna ''Çok uzak, hatta çok zayıf bir ihtimal'' diye cevap veriyorlar ve ilave ediyorlar: “Jeolojik araştırmalar, Erciyes'in tamamen sönmüş bir dağ olduğu gerçeğini ortaya koymaktadır.”",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Uzmanlar, son yıllarda dünyanın çeşitli bölgelerindeki yanardağlarda görülen volkan püskürtmelerinden hareket ederek Erciyes Dağı için de öyle bir durumun söz konusu olup olmayacağı sorusuna ''Çok uzak, hatta çok zayıf bir ihtimal'' diye cevap veriyorlar ve ilave ediyorlar: “Jeolojik araştırmalar, Erciyes'in tamamen sönmüş bir dağ olduğu gerçeğini ortaya koymaktadır.”"
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-035",
+  "question": "Bugün dağın hangi vadilerinde hâlâ buzul bulunuyor?",
+  "doc_id": "2134",
+  "doc_title": "Erciyes",
+  "answer_span": "Ayrıca, Aksu Vadisi aktif bir buzulu, Üçker Vadisi ise bir kaya buzulunu barındırmaktadır.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Ayrıca, Aksu Vadisi aktif bir buzulu, Üçker Vadisi ise bir kaya buzulunu barındırmaktadır."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-036",
+  "question": "Kayseri'de bir yılda düşen yağmur ve kar miktarı mevsimlere nasıl dağılır?",
+  "doc_id": "2134",
+  "doc_title": "Erciyes",
+  "answer_span": "Uzun yıllar (1961-1990) yıllık ortalama yağış toplamı ise aynı istasyonda 383 mm'dir. Bunun %85'i güz, kış ve bahar aylarında, geri kalan %15'i ise yazın oluşmaktadır.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Uzun yıllar (1961-1990) yıllık ortalama yağış toplamı ise aynı istasyonda 383 mm'dir. Bunun %85'i güz, kış ve bahar aylarında, geri kalan %15'i ise yazın oluşmaktadır."
+  },
+  "review": "agreed"
  }
 ]

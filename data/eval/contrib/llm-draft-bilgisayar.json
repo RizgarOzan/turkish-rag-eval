@@ -418,5 +418,89 @@
    "answer_span": "GNU/Linux'un %1,1 oranlarında kişisel bilgisayarlarda kullanıldığını göstermektedir"
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-031",
+  "question": "Bu depolama sistemleri hangi eski yaklaşımın yerine geliştirildi?",
+  "doc_id": "25639",
+  "doc_title": "Veritabanı",
+  "answer_span": "Veritabanları; büyük miktardaki bilgileri depolamada geleneksel yöntem olan \"dosya-işlem sistemine\" alternatif olarak geliştirilmiştir.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Veritabanları; büyük miktardaki bilgileri depolamada geleneksel yöntem olan \"dosya-işlem sistemine\" alternatif olarak geliştirilmiştir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-032",
+  "question": "Gündelik yaşamda karşılaşılan kayıt saklama sistemlerine hangi örnekler veriliyor?",
+  "doc_id": "25639",
+  "doc_title": "Veritabanı",
+  "answer_span": "Telefonlardaki kişi rehberi günlük hayatta çok basit bir şekilde kullanılan veri tabanı örneği olarak kabul edilebilir. Bunların dışında internet sitelerindeki üyelik sistemleri, akademik dergilerin ve üniversitelerin tez yönetim sistemleri de veri tabanı kullanımına örnektir.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Telefonlardaki kişi rehberi günlük hayatta çok basit bir şekilde kullanılan veri tabanı örneği olarak kabul edilebilir. Bunların dışında internet sitelerindeki üyelik sistemleri, akademik dergilerin ve üniversitelerin tez yönetim sistemleri de veri tabanı kullanımına örnektir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-033",
+  "question": "Bu alanda ayrı bir uzmanlık rolünün ortaya çıkmasına ne yol açtı?",
+  "doc_id": "25639",
+  "doc_title": "Veritabanı",
+  "answer_span": "veri tabanı sistemlerinin kurulumu, konfigürasyonu, düzeni, sorgulaması, güvenliği ve denetiminin karmaşık bir hâl alması veri tabanı yöneticiliği kavramının oluşmasına neden olmuştur.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "veri tabanı sistemlerinin kurulumu, konfigürasyonu, düzeni, sorgulaması, güvenliği ve denetiminin karmaşık bir hâl alması veri tabanı yöneticiliği kavramının oluşmasına neden olmuştur."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-034",
+  "question": "NoSQL sistemleri hangi ilkeyle çalışır ve tablolu sistemlere göre üstünlükleri nedir?",
+  "doc_id": "25639",
+  "doc_title": "Veritabanı",
+  "answer_span": "İlişkisel olmayan (NoSQL) veri tabanı sistemleri anahtar-değer prensibiyle çalışan veri tabanı sistemleridir. Bunlar ilişkisel veritabanlarına göre daha hızlıdırlar.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "İlişkisel olmayan (NoSQL) veri tabanı sistemleri anahtar-değer prensibiyle çalışan veri tabanı sistemleridir. Bunlar ilişkisel veritabanlarına göre daha hızlıdırlar."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-035",
+  "question": "En yaygın modelde tabloların yatay ve dikey bölümleri neyi temsil eder?",
+  "doc_id": "25639",
+  "doc_title": "Veritabanı",
+  "answer_span": "Tablolarda bulunan satırlar (İngilizce: row) kayıtların kendisini, sütunlar (İngilizce: column) ise bu kayıtları oluşturan bilgi parçalarının ne türden olduklarını belirtir.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Tablolarda bulunan satırlar (İngilizce: row) kayıtların kendisini, sütunlar (İngilizce: column) ise bu kayıtları oluşturan bilgi parçalarının ne türden olduklarını belirtir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-036",
+  "question": "Depolanacak kayıtların yapısını tarif eden tanıma ne ad verilir?",
+  "doc_id": "25639",
+  "doc_title": "Veritabanı",
+  "answer_span": "veri tabanında asıl önemli kavram, kayıt yığını ya da bilgi parçalarının tanımlanmasıdır. Bu tanıma şema adı verilir.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Bu tanıma şema adı verilir."
+  },
+  "review": "agreed"
  }
 ]
