@@ -418,5 +418,89 @@
    "answer_span": "Robert W. Holley bir maya RNA'sının ilk 77 nükleotidinin dizisini 1965'te çözmüş, bundan dolayı 1968 Nobel Tıp ödülünü kazanmıştır."
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-031",
+  "question": "Orak hücre hastalığında protein zincirinde ne değişir ve bunun sonucu ne olur?",
+  "doc_id": "29553",
+  "doc_title": "Hemoglobin",
+  "answer_span": "Örneğin; β zincirinin altıncı durumundaki glutamik asit yerine valinin geçmesiyle hücreler orak şeklinde kıvrılır ve oksijeni yeterli miktarda bağlayamaz.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "β zincirinin altıncı durumundaki glutamik asit yerine valinin geçmesiyle hücreler orak şeklinde kıvrılır ve oksijeni yeterli miktarda bağlayamaz. Böylece hemoglobinin dalakta çok hızlı olarak yıkılmasıyla Anemizma oluşur."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-032",
+  "question": "Akdeniz anemisi hangi gelişimsel aksaklıktan doğar?",
+  "doc_id": "29553",
+  "doc_title": "Hemoglobin",
+  "answer_span": "Fetus hemoglobinindeki ɣ zincirinin doğumdan sonra β zinciri şekline dönüşmesi gerekir. ɣ zincirinin β zinciri şekline dönüşememesi Akdeniz anemisi (β-talasemi) meydana getirir.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Fetus hemoglobinindeki ɣ zincirinin doğumdan sonra β zinciri şekline dönüşmesi gerekir. ɣ zincirinin β zinciri şekline dönüşememesi Akdeniz anemisi (β-talasemi) meydana getirir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-033",
+  "question": "Kırmızı kan hücresindeki taşıyıcı proteine karbon monoksit tutunursa ne olur?",
+  "doc_id": "29553",
+  "doc_title": "Hemoglobin",
+  "answer_span": "Hemoglobinin altıncı koordinasyon yerine CO gelirse buna da karboksihemoglobin adı verilir.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Hemoglobinin altıncı koordinasyon yerine CO gelirse buna da karboksihemoglobin adı verilir. Hemoglobinin CO'e ilgisi O2'den daha fazladır."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-034",
+  "question": "Siyanür zehirlenmesinde acil tedavi olarak ne yapılmalıdır?",
+  "doc_id": "29553",
+  "doc_title": "Hemoglobin",
+  "answer_span": "Hemoglobindeki altıncı koordinasyon yerine CN- bağlanırsa buna da siyanohemoglobin adı verilir ve bu tür zehirlenme gören kimselere sodyum tiyosülfat acil olarak verilmelidir.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Hemoglobindeki altıncı koordinasyon yerine CN- bağlanırsa buna da siyanohemoglobin adı verilir ve bu tür zehirlenme gören kimselere sodyum tiyosülfat acil olarak verilmelidir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-035",
+  "question": "Dışarıdan iğneyle ya da yiyecekle alınan hem öncülü vücutta neden kullanılamaz?",
+  "doc_id": "29553",
+  "doc_title": "Hemoglobin",
+  "answer_span": "Eğer organizmaya protoporfirin şırınga edilirse veya besinlerle eksojen olarak verilirse organizma bundan yararlanamaz.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Eğer organizmaya protoporfirin şırınga edilirse veya besinlerle eksojen olarak verilirse organizma bundan yararlanamaz. Dışkı ve idrarla dışarı atar."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-036",
+  "question": "Anne karnındaki bebeğin kan pigmenti oksijeni yetişkininkine göre ne kadar güçlü tutar?",
+  "doc_id": "29553",
+  "doc_title": "Hemoglobin",
+  "answer_span": "HbF'in oksijene aflinitesi erişkin tip hemoglobinden yani HbA'dan %50 daha fazladır.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "HbF'in oksijene aflinitesi erişkin tip hemoglobinden yani HbA'dan %50 daha fazladır."
+  },
+  "review": "agreed"
  }
 ]

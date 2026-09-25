@@ -49,15 +49,15 @@ normaliser.
 on different, corpus-dependent scales; fusing ranks needs no per-corpus
 tuning. `k=60`, from Cormack et al. (2009).
 
-**Two annotation passes agree by containment, not by similarity.** 144 of the
-150 double-labelled questions here are containment pairs — one span inside the
-other — yet 46 fall below a 0.6 Jaccard floor, 42 of them containment pairs.
+**Two annotation passes agree by containment, not by similarity.** 173 of the
+180 double-labelled questions here are containment pairs — one span inside the
+other — yet 50 fall below a 0.6 Jaccard floor, 46 of them containment pairs.
 The passes were almost never disagreeing about *where* the answer is, only
 about how much of the sentence to sweep in, and containment is what the
 harness itself tests. A similarity floor alone would have sent a reviewer to
 arbitrate a third of an already-reviewed set. The four genuine disagreements —
 two different sentences that both name polysomes, and three from batch 4 — are
-the ones the rule holds back, and `passes_agree()` reproduces all 150 of the
+the ones the rule holds back, and `passes_agree()` reproduces all 180 of the
 committed labels exactly.
 
 **Ties break stably.** `np.argsort` defaults to an unstable sort, and sparse
@@ -151,10 +151,11 @@ every chunk sharing no query term scores exactly 0.0. No `dense` or
 | 3 — 2026-09-21 (Çaldıran Muharebesi, Tuz Gölü, Satürn, Ribozom, Unix) | 30 | 18 | 0.829 | 0.872 | 0.92 / 0.96 / 0.96 |
 | 4 — 2026-09-24 (Mohaç Muharebesi, Kızılırmak, Venüs, Enzim, Derleyici) | 30 | 15 | 0.747 | 0.792 | 0.96 / 0.96 / 0.96 |
 | 5 — 2026-09-25 (Kösedağ Muharebesi, Uludağ, Neptün, RNA, İşletim sistemi) | 30 | 24 | 0.922 | 0.943 | 1.00 / 1.00 / 1.00 |
-| **All drafts** | 150 | 77 | 0.747 | 0.805 | 0.97 / 0.99 / 0.99 |
+| 6 — 2026-09-25 (Preveze Deniz Muharebesi, Erciyes, Uranüs, Hemoglobin, Veritabanı) | 30 | 20 | 0.869 | 0.901 | 0.93 / 0.90 / 0.87 |
+| **All drafts** | 180 | 97 | 0.767 | 0.821 | 0.96 / 0.97 / 0.97 |
 
 "Identical" means identical after tokenisation, so case and punctuation are
-folded; by raw string the counts are 1, 2, 18, 6 and 8. IoU and token F1 come from
+folded; by raw string the counts are 1, 2, 18, 6, 8 and 20. IoU and token F1 come from
 `agreement.py`; κ is that file's chunk-level measure — for each chunking
 strategy, the binary "does this chunk contain the answer" label each span
 assigns to each chunk of its article, which is exactly how `run_eval.py`
@@ -172,11 +173,16 @@ the same short-span effect with fixed chunks. Batch 4 has 3 differing runs of
 90, all one question: the first pass took the definition of cross compilers,
 the second only the term, which sits in an earlier sentence. Its other two
 needs-human questions still mark the same chunks, because both passes'
-sentences fall in the same paragraph. Batch 5 has no differing runs. Two LLMs
+sentences fall in the same paragraph. Batch 5 has no differing runs. Batch 6 has 9 of 90, from four questions, and
+all go the same way: the second pass kept a two-sentence answer that fits in
+no chunk for that strategy, so it marks nothing relevant, while the first
+pass's one-sentence span marks one chunk. The first pass had the same long
+spans until they were measured against the chunkers and cut; a span that no
+chunk contains is a question no retriever can get right. Two LLMs
 tend to pick the same sentence, so read this as a sanity check rather than as
 human agreement.
 
-The κ column is measured locally, because it needs the twenty-five draft articles
+The κ column is measured locally, because it needs the thirty draft articles
 in the corpus and `data/raw/` is fetched rather than committed; the other
 columns are recomputed from the files in CI (`tests/test_readme_agreement.py`).
 Wiring the embedded second labels into `agreement.py` itself is
