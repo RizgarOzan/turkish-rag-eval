@@ -237,7 +237,7 @@ model works. Results for a non-default model go to
 | Files | Questions | Labelled by | In the results above |
 |---|---|---|---|
 | `data/eval/gold.json` (health) | 58 | one human | yes |
-| `data/eval/contrib/llm-draft-*.json` (history, geography, astronomy, biology, computing) | 120 | two independent LLM passes | not yet |
+| `data/eval/contrib/llm-draft-*.json` (history, geography, astronomy, biology, computing) | 150 | two independent LLM passes | not yet |
 
 The set is growing toward 300 questions across more domains. Questions a model
 drafted are marked `"source": "llm-draft"`. A second model then picked its own
@@ -250,7 +250,9 @@ called?" the passes picked two different sentences that both name polysomes,
 so that question waits for a person. Batch 4 was 27 of 30: the second pass
 named the other claimant to the Hungarian throne, took the sentence beside the
 lysozyme result instead of the result itself, and answered "cross compilers"
-with the bare term where the first took its definition.
+with the bare term where the first took its definition. Batch 5 was 30 of 30,
+and every pair is a containment pair: 8 identical, 16 differing only by a
+trailing full stop.
 
 Drafts stay out of every number above until a re-run says otherwise:
 `load_gold()` skips them unless called with `include_drafts=True`. Synthetic
@@ -267,7 +269,8 @@ domain.
 | 2 — 2026-09-20 (İstanbul'un Fethi, Ağrı Dağı, Jüpiter, Fotosentez, İnternet) | 30 | 4 | 0.419 | 0.540 | 0.96 / 1.00 / 1.00 |
 | 3 — 2026-09-21 (Çaldıran Muharebesi, Tuz Gölü, Satürn, Ribozom, Unix) | 30 | 18 | 0.829 | 0.872 | 0.92 / 0.96 / 0.96 |
 | 4 — 2026-09-24 (Mohaç Muharebesi, Kızılırmak, Venüs, Enzim, Derleyici) | 30 | 15 | 0.747 | 0.792 | 0.96 / 0.96 / 0.96 |
-| **All drafts** | 120 | 53 | 0.703 | 0.771 | 0.96 / 0.98 / 0.98 |
+| 5 — 2026-09-25 (Kösedağ Muharebesi, Uludağ, Neptün, RNA, İşletim sistemi) | 30 | 24 | 0.922 | 0.943 | 1.00 / 1.00 / 1.00 |
+| **All drafts** | 150 | 77 | 0.747 | 0.805 | 0.97 / 0.99 / 0.99 |
 
 The passes disagree about how much of a sentence to take, rather than where
 the answer is. Two LLMs tend to pick the same sentence, so read this as a
@@ -281,8 +284,8 @@ v0.1.0, tagged but not on PyPI yet — install from GitHub as above.
 - **Works:** the retrieval harness, `report`, `leaderboard --check`, `bootstrap`,
   `agreement`, the Hugging Face export, and CI that validates every
   contributed question against live Wikipedia.
-- **In progress:** the gold set, 178 of a planned 300 questions (58 human,
-  120 LLM-drafted); the drafts join the results once people have reviewed them.
+- **In progress:** the gold set, 208 of a planned 300 questions (58 human,
+  150 LLM-drafted); the drafts join the results once people have reviewed them.
 - **Not yet:** committed results for `groundedness`, confidence intervals on the
   leaderboard rows, and EmbeddingGemma.
 
@@ -294,7 +297,7 @@ v0.1.0, tagged but not on PyPI yet — install from GitHub as above.
   differences under roughly 0.05 nDCG as noise" — which was both too strict
   for paired comparisons and too loose for unpaired ones.
 - **One annotator for the human set.** The 58 health questions are
-  single-annotated, so they have no agreement figure. The 120 drafted questions
+  single-annotated, so they have no agreement figure. The 150 drafted questions
   are double-labelled, but by two LLM passes rather than by two people.
 - **The corpus is Wikipedia, and so is much of the training data.** Every
   embedding model ranked here was almost certainly trained on Turkish
