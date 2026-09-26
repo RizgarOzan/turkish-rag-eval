@@ -502,5 +502,89 @@
    "answer_span": "Uzun yıllar (1961-1990) yıllık ortalama yağış toplamı ise aynı istasyonda 383 mm'dir. Bunun %85'i güz, kış ve bahar aylarında, geri kalan %15'i ise yazın oluşmaktadır."
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-037",
+  "question": "Doğu Anadolu'daki bu büyük göl yüksekte ve soğuk bir bölgede olmasına karşın neden buz tutmaz?",
+  "doc_id": "1224",
+  "doc_title": "Van Gölü",
+  "answer_span": "Göl suyu tuzluluk oranı ‰19, pH'sı ise 9,8 dir. Bu yüzden Van Gölü yüksek rakıma ve sert kışlara rağmen donmaz.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Göl suyu tuzluluk oranı ‰19, pH'sı ise 9,8 dir. Bu yüzden Van Gölü yüksek rakıma ve sert kışlara rağmen donmaz."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-038",
+  "question": "Efsanevi yaratıkla ilgili bilinen en eski haber hangi gazetede çıktı ve ne anlatıyordu?",
+  "doc_id": "1224",
+  "doc_title": "Van Gölü",
+  "answer_span": "Dönemin İstanbul'da yayın yapan Saadet gazetesinin, 28 Şaban 1306 (29 Nisan 1889) tarihli 1323 nolu nüshasında, canavarın Van Gölünde abdest almak isteyen bir kişiyi kapıp göle sürüklediği haberi yer alıyor.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Dönemin İstanbul'da yayın yapan Saadet gazetesinin, 28 Şaban 1306 (29 Nisan 1889) tarihli 1323 nolu nüshasında, canavarın Van Gölünde abdest almak isteyen bir kişiyi kapıp göle sürüklediği haberi yer alıyor."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-039",
+  "question": "Akdamar Adası'ndaki kilise kimin emriyle ve hangi yıllar arasında yapıldı?",
+  "doc_id": "1224",
+  "doc_title": "Van Gölü",
+  "answer_span": "Kral Gagik Artzruni tarafından 915 ve 921 yılları arasında inşa edilmiştir.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Kral Gagik Artzruni tarafından 915 ve 921 yılları arasında inşa edilmiştir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-040",
+  "question": "Araştırmacılar gölün ileride küçülmesini ya da kaybolmasını hangi sürece bağlıyor?",
+  "doc_id": "1224",
+  "doc_title": "Van Gölü",
+  "answer_span": "Günümüzdeki araştırmalarda Doğu Toros Dağlarının erozyona uğraması sonucu Van Gölü'ndeki suların Dicle'ye dökülüp, gölün küçüleceği ya da yok olacağı düşünülmektedir.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Günümüzdeki araştırmalarda Doğu Toros Dağlarının erozyona uğraması sonucu Van Gölü'ndeki suların Dicle'ye dökülüp, gölün küçüleceği ya da yok olacağı düşünülmektedir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-041",
+  "question": "Su seviyesinin tepe yaptığı yıl hangi yılın yağışının etkisini taşıyordu?",
+  "doc_id": "1224",
+  "doc_title": "Van Gölü",
+  "answer_span": "Yani 1993'te düşen yağış göle ancak üç yıl sonra 1996'da ulaşmıştır.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Yani 1993'te düşen yağış göle ancak üç yıl sonra 1996'da ulaşmıştır."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-042",
+  "question": "Tuzlu ve sodalı suda yaşadığı bilinen iki balık türü hangileridir?",
+  "doc_id": "1224",
+  "doc_title": "Van Gölü",
+  "answer_span": "Bunlar; inci kefalı (Chalcalburnus tarichi) ve 2018 yılında İl Jandarma Komutanlığı Su Altı Timinin, Van Gölü'ndeki dalış eğitimi sırasında 13 metre yükseklikteki bir mikrobiyalitin içerisinde yaşadığını tespit ettiği, siyah benekli sarı bir balıktır.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Bunlar; inci kefalı (Chalcalburnus tarichi) ve 2018 yılında İl Jandarma Komutanlığı Su Altı Timinin, Van Gölü'ndeki dalış eğitimi sırasında 13 metre yükseklikteki bir mikrobiyalitin içerisinde yaşadığını tespit ettiği, siyah benekli sarı bir balıktır."
+  },
+  "review": "agreed"
  }
 ]
