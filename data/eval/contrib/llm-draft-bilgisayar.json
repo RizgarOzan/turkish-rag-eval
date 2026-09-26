@@ -502,5 +502,89 @@
    "answer_span": "Bu tanıma şema adı verilir."
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-037",
+  "question": "Ağ ile genel bilgisayar ağları sistemi neden aynı kavram sayılmaz?",
+  "doc_id": "324452",
+  "doc_title": "World Wide Web",
+  "answer_span": "İnternet ve web terimleri aynı olguyu tanımlamaz. Zira web sadece İnternet üzerinde çalışan bir servistir.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Zira web sadece İnternet üzerinde çalışan bir servistir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-038",
+  "question": "Sayfaların geç açılması yüzünden sisteme hangi şaka yollu ad takılmıştır?",
+  "doc_id": "324452",
+  "doc_title": "World Wide Web",
+  "answer_span": "Bu nedenden dolayı, World Wide Web' (Dünya Çapında Ağ) terimi yerine alaycı bir yaklaşımla World Wide Wait (Dünya Çapında Bekleme) denmektedir.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Bu nedenden dolayı, World Wide Web' (Dünya Çapında Ağ) terimi yerine alaycı bir yaklaşımla World Wide Wait (Dünya Çapında Bekleme) denmektedir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-039",
+  "question": "Bir kaynak adresi, istemcinin nesneyi bulabilmesi için hangi üç bilgiyi içerir?",
+  "doc_id": "324452",
+  "doc_title": "World Wide Web",
+  "answer_span": "URL, web nesnesini bulmak için web istemcinin ihtiyacı olan erişim yöntemini (nasıl), konumunu (nerede) ve sunucu ismini (ne) belirtir.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "URL, web nesnesini bulmak için web istemcinin ihtiyacı olan erişim yöntemini (nasıl), konumunu (nerede) ve sunucu ismini (ne) belirtir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-040",
+  "question": "Ziyaretçiler çoğunlukla ne kadar bekledikten sonra sayfayı bırakıp gider?",
+  "doc_id": "324452",
+  "doc_title": "World Wide Web",
+  "answer_span": "10 saniye, kullanıcıların genellikle siteden ayrılmayı tercih ettikleri ya da tarayıcı programın otomatik olarak siteden ayrıldığı süredir.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "10 saniye, kullanıcıların genellikle siteden ayrılmayı tercih ettikleri ya da tarayıcı programın otomatik olarak siteden ayrıldığı süredir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-041",
+  "question": "Alan adlarını sayısal adreslere çeviren sunucular ne yapar ve neye benzetilir?",
+  "doc_id": "324452",
+  "doc_title": "World Wide Web",
+  "answer_span": "DNS'ler kendilerine sorulan alan adlarının IP adreslerini kullanıcılara verirler. Çok basit olarak bunu bir telefon rehberine benzetebilirsiniz.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "DNS'ler kendilerine sorulan alan adlarının IP adreslerini kullanıcılara verirler. Çok basit olarak bunu bir telefon rehberine benzetebilirsiniz."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-042",
+  "question": "2009 yılındaki araştırmaya göre sosyal ağ kullanıcılarının ne kadarı mahremiyet seçeneklerini açıyordu?",
+  "doc_id": "324452",
+  "doc_title": "World Wide Web",
+  "answer_span": "Üstelik 2009'da yapılan araştırmalar gösteriyor ki bu kullanıcıların yalnızca %20'si özel hayatın gizliliği ayarlarını kullanıyor.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Üstelik 2009'da yapılan araştırmalar gösteriyor ki bu kullanıcıların yalnızca %20'si özel hayatın gizliliği ayarlarını kullanıyor."
+  },
+  "review": "agreed"
  }
 ]

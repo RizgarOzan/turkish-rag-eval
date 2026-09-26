@@ -502,5 +502,89 @@
    "answer_span": "Uranüs uydu sistemi dev gezegenler arasında en az kütleye sahip olanıdır; beş ana uydunun toplam kütlesi tek başına Triton'un (Neptün'ün en büyük uydusu) kütlesinin yarısından daha azdır."
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-037",
+  "question": "1962'deki ışınım ölçümleri, gezegenin tek yüzünün sürekli karanlıkta kaldığı düşüncesini neden çürüttü?",
+  "doc_id": "4288",
+  "doc_title": "Merkür",
+  "answer_span": "Merkür'ün gece yüzünün hiçbir zaman güneş ışığı almayan bir yüzeyden beklendiği kadar soğuk olmadığını, bu nedenle 88 günlük dönüş süresi iddialarının akla yakın olmadığını ileri sürdü.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "1962 yılında Michigan Üniversitesinden W.E. Howard, gezegenin kızılötesi ve radyo ışınımları ölçümlerine dayanarak Merkür'ün gece yüzünün hiçbir zaman güneş ışığı almayan bir yüzeyden beklendiği kadar soğuk olmadığını, bu nedenle 88 günlük dönüş süresi iddialarının akla yakın olmadığını ileri sürdü."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-038",
+  "question": "1970'lerdeki sonda gezegenin neden ancak yarısına yakınının haritasını çıkarabildi?",
+  "doc_id": "4288",
+  "doc_title": "Merkür",
+  "answer_span": "Ancak sondanın her geçişinde Merkür aynı konumda bulunduğundan, yüzeyin ancak yarıya yakın bölümü haritalanabildi.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Ancak sondanın her geçişinde Merkür aynı konumda bulunduğundan, yüzeyin ancak yarıya yakın bölümü haritalanabildi."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-039",
+  "question": "Güneş'e en yakın gezegen kalın bir hava tabakasını neden tutamaz?",
+  "doc_id": "4288",
+  "doc_title": "Merkür",
+  "answer_span": "Bu düzeydeki bir çekim gücü, gezegen yüzeyindeki 400 °C'yi aşan sıcaklıklar karşısında gazların uzaya kaçmasına engel olamayacak denli güçsüzdür.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Merkür'ün yüzeydeki kurtulma hızı gezegenin düşük kütlesi nedeniyle Dünya'nın ancak %40'ı kadardır. Bu düzeydeki bir çekim gücü, gezegen yüzeyindeki 400 °C'yi aşan sıcaklıklar karşısında gazların uzaya kaçmasına engel olamayacak denli güçsüzdür."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-040",
+  "question": "Gezegenin Güneş diski önünden geçişi ne sıklıkla ve hangi aylarda izlenebilir?",
+  "doc_id": "4288",
+  "doc_title": "Merkür",
+  "answer_span": "Merkür yörüngesinin tutulum düzlemini kestiği noktalar, yani yörüngenin çıkan ve inen düğümleri ile Güneş ve Dünya'nın düz bir çizgi üzerinde yer almasını gerektiren bu durum her yüzyılda 12-14 kez ve yalnız Mayıs ve Kasım ayları içinde gözlenir.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Merkür yörüngesinin tutulum düzlemini kestiği noktalar, yani yörüngenin çıkan ve inen düğümleri ile Güneş ve Dünya'nın düz bir çizgi üzerinde yer almasını gerektiren bu durum her yüzyılda 12-14 kez ve yalnız Mayıs ve Kasım ayları içinde gözlenir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-041",
+  "question": "Antik Yunanlar şafakta ve alacakaranlıkta görülen bu gökcismini hangi adlarla anıyordu?",
+  "doc_id": "4288",
+  "doc_title": "Merkür",
+  "answer_span": "Eski Yunan'da sabah yıldızı olarak görüldüğünde Hermes, akşam yıldızı olarak görüldüğünde ise Apollo olmak üzere iki ayrı ad taşımaktaydı.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Eski Yunan'da sabah yıldızı olarak görüldüğünde Hermes, akşam yıldızı olarak görüldüğünde ise Apollo olmak üzere iki ayrı ad taşımaktaydı."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-042",
+  "question": "Çekirdek sıvı demir barındıramayacak kadar soğuksa bugünkü manyetizmanın kaynağı ne olabilir?",
+  "doc_id": "4288",
+  "doc_title": "Merkür",
+  "answer_span": "Bu nedenle, bugün gözlenen manyetik alanın gezegen içindeki aktif bir manyetik dinamo tarafından sağlanmak yerine, çok önceleri mıknatıslanmış olan katı haldeki çekirdek tarafından sürdürüldüğü görüşü ortaya atılmıştır.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Küçük bir gezegen olan Merkür'ün çekirdek sıcaklığının bir manyetik alan oluşturmak için gerekli olan sıvı demir kütlesini barındırmaya izin vermeyecek kadar düşük olduğu düşünülmektedir. Bu nedenle, bugün gözlenen manyetik alanın gezegen içindeki aktif bir manyetik dinamo tarafından sağlanmak yerine, çok önceleri mıknatıslanmış olan katı haldeki çekirdek tarafından sürdürüldüğü görüşü ortaya atılmıştır."
+  },
+  "review": "agreed"
  }
 ]

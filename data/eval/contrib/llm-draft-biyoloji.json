@@ -502,5 +502,89 @@
    "answer_span": "HbF'in oksijene aflinitesi erişkin tip hemoglobinden yani HbA'dan %50 daha fazladır."
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-037",
+  "question": "Belirli dizileri tanıyan düzenleyici proteinler sarmalın hangi oluğundan bazlara ulaşır?",
+  "doc_id": "3820",
+  "doc_title": "DNA",
+  "answer_span": "Bu nedenle, DNA'daki belli baz dizilerine bağlanan, transkripsiyon faktörü gibi proteinler büyük oyuktan bazların kenarlarına temas ederler.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Bu nedenle, DNA'daki belli baz dizilerine bağlanan, transkripsiyon faktörü gibi proteinler büyük oyuktan bazların kenarlarına temas ederler."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-038",
+  "question": "Guanin-sitozin eşleşmesini adenin-timin eşleşmesinden daha sağlam kılan nedir?",
+  "doc_id": "3820",
+  "doc_title": "DNA",
+  "answer_span": "İki tip baz çifti farklı sayıda hidrojen bağları oluşturur, AT'nin iki hidrojen bağı, GC'nin üç hidrojen bağı vardır (bakınız şekil).",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "İki tip baz çifti farklı sayıda hidrojen bağları oluşturur, AT'nin iki hidrojen bağı, GC'nin üç hidrojen bağı vardır (bakınız şekil). Dolayısıyla GC çiftleri AT baz çiftlerinden daha güçlüdür."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-039",
+  "question": "Metil grubu eklenmiş sitozin bazları neden kalıtsal değişikliğe daha açıktır?",
+  "doc_id": "3820",
+  "doc_title": "DNA",
+  "answer_span": "5-metilsitozinin önemli bir baz olmasına rağmen, onun deaminasyonu sonucu bir timin bazı oluşur, bu yüzden metillenmiş sitozinler mutasyona eğilimlidirler.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "5-metilsitozinin önemli bir baz olmasına rağmen, onun deaminasyonu sonucu bir timin bazı oluşur, bu yüzden metillenmiş sitozinler mutasyona eğilimlidirler."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-040",
+  "question": "Kromozomların uç bölgeleri neden sıradan kopyalama enzimleri yerine özel bir enzimle çoğaltılır?",
+  "doc_id": "3820",
+  "doc_title": "DNA",
+  "answer_span": "DNA'yı normalde kopyalayan enzimler kromozomların en uç kısımlarını kopyalayamadığı için bu kopyalama telomeraz aracılığıyla yapılır.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "DNA'yı normalde kopyalayan enzimler kromozomların en uç kısımlarını kopyalayamadığı için bu kopyalama telomeraz aracılığıyla yapılır."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-041",
+  "question": "Baz çiftlerinin arasına giren ve kanser yapabilen maddeler tedavide neden işe yarar?",
+  "doc_id": "3820",
+  "doc_title": "DNA",
+  "answer_span": "Tüm bunlara rağmen, DNA transkripsiyonuna engel olma özelliklerinden dolayı bu toksinler aynı zamanda hızla büyüyen kanser hücrelerini engellemek amacıyla kemoterapide kullanılırlar.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Tüm bunlara rağmen, DNA transkripsiyonuna engel olma özelliklerinden dolayı bu toksinler aynı zamanda hızla büyüyen kanser hücrelerini engellemek amacıyla kemoterapide kullanılırlar."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-042",
+  "question": "İnsan kalıtım malzemesinin yüzde kaçı protein kodlar, yüzde kaçı yinelenen dizilerden oluşur?",
+  "doc_id": "3820",
+  "doc_title": "DNA",
+  "answer_span": "Örneğin insan genomunun ancak %1'i protein eksonları kodlar, buna karşın insan DNA'sının %50'si protein kodlamayan, kendini tekrar eden dizilerden oluşur.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Örneğin insan genomunun ancak %1'i protein eksonları kodlar, buna karşın insan DNA'sının %50'si protein kodlamayan, kendini tekrar eden dizilerden oluşur."
+  },
+  "review": "agreed"
  }
 ]

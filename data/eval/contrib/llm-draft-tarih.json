@@ -502,5 +502,89 @@
    "answer_span": "Preveze zaferi ve ardından 1560 yılında Cerbe Savaşı'nda kazanılan zaferle Osmanlılar, Akdeniz'deki iki başlıca rakip güç olan Venedik ve İspanya'nın çabalarını geri püskürtmeyi başardılar. Akdeniz'deki büyük ölçekli filo savaşlarında Osmanlı üstünlüğü, 1571'deki İnebahtı Savaşı'na kadar rakipsiz kaldı."
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-037",
+  "question": "Savaş sürerken Osmanlı sol kanadındaki hangi birlik karşı tarafa katıldı?",
+  "doc_id": "236364",
+  "doc_title": "Ankara Muharebesi",
+  "answer_span": "Muharebe başında Osmanlı ordusunun sol cenahında yer alan Kara Tatarlar, muharebe esnasında saf değiştirerek Timur tarafına geçtiler.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Muharebe başında Osmanlı ordusunun sol cenahında yer alan Kara Tatarlar, muharebe esnasında saf değiştirerek Timur tarafına geçtiler."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-038",
+  "question": "Osmanlı hükümdarı gönderdiği hediyeler ve yazının biçimiyle rakibini nasıl küçümsedi?",
+  "doc_id": "236364",
+  "doc_title": "Ankara Muharebesi",
+  "answer_span": "Bayezid, ayrıca gönderdiği hediyelerin sayısını âdet olduğu üzere dokuzar değil onar adet olarak gönderip mektupta kendi adını yaldızlı ve büyük harflerle yazarken, Timur'un adını da küçük ve siyah mürekkeple yazdı.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Bayezid, ayrıca gönderdiği hediyelerin sayısını âdet olduğu üzere dokuzar değil onar adet olarak gönderip mektupta kendi adını yaldızlı ve büyük harflerle yazarken, Timur'un adını da küçük ve siyah mürekkeple yazdı."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-039",
+  "question": "Timurlu ordu karşı tarafı suyundan ve erzağından mahrum etmek için ne yaptı?",
+  "doc_id": "236364",
+  "doc_title": "Ankara Muharebesi",
+  "answer_span": "Ayrıca civardaki çeşmelere, Çubuk Çayı'nın Kızılcaköy, İncesu ve Bent derelerine zehir dökerek Osmanlıları susuz bırakırken, bölgedeki çeşme, sebil, kuyu, sarnıç, tarla, değirmen, depo, sürü ve çiftlikleri Bayezid'in kullanmaması için tahrip ettirdi.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Ayrıca civardaki çeşmelere, Çubuk Çayı'nın Kızılcaköy, İncesu ve Bent derelerine zehir dökerek Osmanlıları susuz bırakırken, bölgedeki çeşme, sebil, kuyu, sarnıç, tarla, değirmen, depo, sürü ve çiftlikleri Bayezid'in kullanmaması için tahrip ettirdi."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-040",
+  "question": "Doğudan gelen ordunun ön safında hangi hayvanlar vardı ve bunlar nereden getirilmişti?",
+  "doc_id": "236364",
+  "doc_title": "Ankara Muharebesi",
+  "answer_span": "Hindistan'dan getirilen 32 zırhlı savaş fili, İsen Buga komutası altında ordunun önünde yer alıyordu.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Hindistan'dan getirilen 32 zırhlı savaş fili, İsen Buga komutası altında ordunun önünde yer alıyordu."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-041",
+  "question": "Galip hükümdar zaferini hangi Batılı krallara, nasıl bir vurguyla duyurdu?",
+  "doc_id": "236364",
+  "doc_title": "Ankara Muharebesi",
+  "answer_span": "Timur bu zaferden sonra Fransa Kralı VI. Charles ile İngiltere Kralı IV. Henry'ye mektup göndererek; kendilerinin yenemedikleri Osmanlı hükümdarına karşı zafer kazandığını bildirdi.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Timur bu zaferden sonra Fransa Kralı VI. Charles ile İngiltere Kralı IV. Henry'ye mektup göndererek; kendilerinin yenemedikleri Osmanlı hükümdarına karşı zafer kazandığını bildirdi."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-042",
+  "question": "Esir sultanın ölümünü bazı erken dönem kroniklerin yazarları nasıl açıklar?",
+  "doc_id": "236364",
+  "doc_title": "Ankara Muharebesi",
+  "answer_span": "Bunun yanında ilk dönem Osmanlı kaynaklarından; Oruç Bey ve Hadîdî ise Bayezid'in Timur tarafından Semerkant'a götürüleceğini anladıktan sonra yüzüğündeki zehri içerek intihar ettiğini iddia eder.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Bunun yanında ilk dönem Osmanlı kaynaklarından; Oruç Bey ve Hadîdî ise Bayezid'in Timur tarafından Semerkant'a götürüleceğini anladıktan sonra yüzüğündeki zehri içerek intihar ettiğini iddia eder."
+  },
+  "review": "agreed"
  }
 ]
