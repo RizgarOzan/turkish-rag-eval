@@ -586,5 +586,89 @@
    "answer_span": "Bunlar; inci kefalı (Chalcalburnus tarichi) ve 2018 yılında İl Jandarma Komutanlığı Su Altı Timinin, Van Gölü'ndeki dalış eğitimi sırasında 13 metre yükseklikteki bir mikrobiyalitin içerisinde yaşadığını tespit ettiği, siyah benekli sarı bir balıktır."
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-043",
+  "question": "Irmağın taşıdığı suyun çoğu nereden gelir ve akımı kış ile bahar arasında nasıl değişir?",
+  "doc_id": "15340",
+  "doc_title": "Fırat",
+  "answer_span": "Bu suyun %80'i Keban barajının yukarısından kaynaklanır. Kış yağışların kar şeklinde olmasından dolayı debi 200 m³/sn'dir. Yağmurlar ve kar erimeleri sebebiyle ilkbaharda hızla yükselerek 2000 m³/sn'ye ulaşır.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Bu suyun %80'i Keban barajının yukarısından kaynaklanır. Kış yağışların kar şeklinde olmasından dolayı debi 200 m³/sn'dir. Yağmurlar ve kar erimeleri sebebiyle ilkbaharda hızla yükselerek 2000 m³/sn'ye ulaşır."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-044",
+  "question": "Irmağın adının hangi dillerden çıktığı konusunda bugün hangi görüş öne çıkıyor?",
+  "doc_id": "15340",
+  "doc_title": "Fırat",
+  "answer_span": "Kelimenin Hint-Avrupa kökenli olmadığı, Akadca ve Sümerceden kaynaklandığı, Eski Farsça ve Farsça aracılığıyla diğer dillere geçtiği görüşü ağırlık kazanmaktadır.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Kelimenin Hint-Avrupa kökenli olmadığı, Akadca ve Sümerceden kaynaklandığı, Eski Farsça ve Farsça aracılığıyla diğer dillere geçtiği görüşü ağırlık kazanmaktadır."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-045",
+  "question": "Irmağın barajlardan elektrik üretimi için bu kadar elverişli olmasının coğrafi nedeni nedir?",
+  "doc_id": "15340",
+  "doc_title": "Fırat",
+  "answer_span": "Nehir, yüksek dağlar arasında dar ve derin vadilerden akması hidroelektrik potansiyelinin yüksek olmasını sağlamıştır.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Nehir, yüksek dağlar arasında dar ve derin vadilerden akması hidroelektrik potansiyelinin yüksek olmasını sağlamıştır."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-046",
+  "question": "Tünellerle su götürülen Harran'da tarım nasıl dönüştü?",
+  "doc_id": "15340",
+  "doc_title": "Fırat",
+  "answer_span": "Binlerce yıldır kuru tarım yapılan ovada sulu tarıma geçilmiş, katma değeri yüksek tarım ürünleri yetiştirilmeye başlanmıştır.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Ayrıca Fırat'ın suyu inşa edilen Şanlıurfa Tünelleri ile Harran Ovası'na ulaştırılmıştır. Binlerce yıldır kuru tarım yapılan ovada sulu tarıma geçilmiş, katma değeri yüksek tarım ürünleri yetiştirilmeye başlanmıştır."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-047",
+  "question": "Suriye'de katılan üç yan akarsudan hangisi en büyüğüdür ve hangi ölçütlere göre?",
+  "doc_id": "15340",
+  "doc_title": "Fırat",
+  "answer_span": "Uzunluk, drenaj havzası ve deşarj açısından Habur bu üçünün en büyüğüdür.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Uzunluk, drenaj havzası ve deşarj açısından Habur bu üçünün en büyüğüdür."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-cografya-048",
+  "question": "Nehir Irak'a geçtikten sonra besleyen kolları bakımından ne değişir?",
+  "doc_id": "15340",
+  "doc_title": "Fırat",
+  "answer_span": "Fırat Nehri Irak'a girdikten sonra, Fırat havzasını Dicle havzasına bağlayan kanallar olmasına rağmen Fırat'ın artık doğal kolları yoktur.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Fırat Nehri Irak'a girdikten sonra, Fırat havzasını Dicle havzasına bağlayan kanallar olmasına rağmen Fırat'ın artık doğal kolları yoktur."
+  },
+  "review": "agreed"
  }
 ]

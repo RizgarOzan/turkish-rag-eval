@@ -586,5 +586,89 @@
    "answer_span": "Örneğin insan genomunun ancak %1'i protein eksonları kodlar, buna karşın insan DNA'sının %50'si protein kodlamayan, kendini tekrar eden dizilerden oluşur."
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-043",
+  "question": "Amino asitleri birbirine bağlayan bağ neden kendi ekseninde dönemez ve bunun sonucu nedir?",
+  "doc_id": "3245",
+  "doc_title": "Protein",
+  "answer_span": "Peptit bağının iki rezonans formu vardır ve bunlar ona kısmî çift bağ özelliği kazandırarak, ekseni etrafında dönmesini engeller. Bu yüzden de alfa karbonlar eşdüzlemseldir.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Peptit bağının iki rezonans formu vardır ve bunlar ona kısmî çift bağ özelliği kazandırarak, ekseni etrafında dönmesini engeller. Bu yüzden de alfa karbonlar eşdüzlemseldir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-044",
+  "question": "Kısa zincirlere hangi durumda farklı bir ad verilir ve iki terimi ayıran sınır ne kadar nettir?",
+  "doc_id": "3245",
+  "doc_title": "Protein",
+  "answer_span": "\"Peptit\" ise genelde kararlı bir üç boyutlu yapıya sahip olmayan, kısa amino asit oligomerleri için kullanılır. Ancak bu iki terim arasındaki sınır belirsizdir ve genelde 20-30 kalıntı dolayındadır.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "\"Peptit\" ise genelde kararlı bir üç boyutlu yapıya sahip olmayan, kısa amino asit oligomerleri için kullanılır. Ancak bu iki terim arasındaki sınır belirsizdir ve genelde 20-30 kalıntı dolayındadır."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-045",
+  "question": "Kalıtım şifresinde neden birkaç üçlü aynı yapı taşını gösterebilir?",
+  "doc_id": "3245",
+  "doc_title": "Protein",
+  "answer_span": "DNA dört nükleotitten oluştuğu için tüm kodonların sayısı 64'tür, dolayısıyla genetik kod bir miktar tekrar içerir ve bazı amino asitler birden fazla kodon tarafından belirlenir.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "DNA dört nükleotitten oluştuğu için tüm kodonların sayısı 64'tür, dolayısıyla genetik kod bir miktar tekrar içerir ve bazı amino asitler birden fazla kodon tarafından belirlenir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-046",
+  "question": "Çekirdekli hücrelerde mesaj molekülü üretildiği yerden nereye taşınır ve zincir nerede kurulur?",
+  "doc_id": "3245",
+  "doc_title": "Protein",
+  "answer_span": "Buna karşın ökaryotlar mRNA'yı hücre çekirdeğinde imal ettikten sonra onu çekirdek zarından sitoplazmaya aktarırlar, protein sentezi orada yer alır.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Buna karşın ökaryotlar mRNA'yı hücre çekirdeğinde imal ettikten sonra onu çekirdek zarından sitoplazmaya aktarırlar, protein sentezi orada yer alır."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-047",
+  "question": "Uzun zincirleri laboratuvarda yapay olarak üretmek neden işe yaramaz?",
+  "doc_id": "3245",
+  "doc_title": "Protein",
+  "answer_span": "300 amino asitten uzun polipeptitler için kimyasal sentez verimsizdir ve sentezlenmiş protein kendiliğinden doğadaki üç boyutlu şeklini kazanmayabilir.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "300 amino asitten uzun polipeptitler için kimyasal sentez verimsizdir ve sentezlenmiş protein kendiliğinden doğadaki üç boyutlu şeklini kazanmayabilir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-biyoloji-048",
+  "question": "Hücre zarında bulunan moleküller yapı veri bankasında neden az yer tutar?",
+  "doc_id": "3245",
+  "doc_title": "Protein",
+  "answer_span": "Özellikle, globüler proteinlerin X-ışını kristlografisi için kristalleştirilmeleri nispeten kolaydır. Buna karşın membran proteinlerinin kristalleştirilmesi zordur ve PDB'de az sayıda temsil edilirler.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Buna karşın membran proteinlerinin kristalleştirilmesi zordur ve PDB'de az sayıda temsil edilirler."
+  },
+  "review": "agreed"
  }
 ]

@@ -237,9 +237,9 @@ model works. Results for a non-default model go to
 | Files | Questions | Labelled by | In the results above |
 |---|---|---|---|
 | `data/eval/gold.json` (health) | 58 | one human | yes |
-| `data/eval/contrib/llm-draft-*.json` (history, geography, astronomy, biology, computing) | 210 | two independent LLM passes | not yet |
+| `data/eval/contrib/llm-draft-*.json` (history, geography, astronomy, biology, computing) | 242 | two independent LLM passes | not yet |
 
-The set is growing toward 300 questions across more domains. Questions a model
+The set reached its planned 300 questions on 2026-09-26. Questions a model
 drafted are marked `"source": "llm-draft"`. A second model then picked its own
 answer span for each one without seeing the first label
 (`second_annotation`). Two spans agree when one contains the other or their
@@ -258,7 +258,12 @@ before merging, because the two-sentence version fitted inside no chunk and
 so could never be retrieved. Batch 7 was 30 of 30 again, with 25 identical
 spans; one first-pass span was cut to its clause for the same reason. Like
 batch 5 its questions mostly point at a single sentence, so its high
-agreement says little about harder questions.
+agreement says little about harder questions. Batch 8, the last 32, was
+written to be harder: 17 first-pass answers ran to two or more sentences.
+Seven of those crossed a sentence- or hierarchical-chunk boundary and were
+cut, leaving 12 multi-sentence answers. It was still 32 of 32, 29 identical:
+two LLMs reading the same article pick the same sentences even when the
+answer is long, which is one more reason these drafts need a human pass.
 
 Drafts stay out of every number above until a re-run says otherwise:
 `load_gold()` skips them unless called with `include_drafts=True`. Synthetic
@@ -272,13 +277,16 @@ domain.
 | Batch | Questions | Identical | Mean IoU | Mean token F1 | Cohen's κ, fixed / sentence / hierarchical |
 |---|---|---|---|---|---|
 | 1 — 2026-09-18 (Malazgirt, Kapadokya, Mars, Mitokondri, Linux) | 30 | 16 | 0.816 | 0.878 | 1.00 / 1.00 / 1.00 |
-| 2 — 2026-09-20 (İstanbul'un Fethi, Ağrı Dağı, Jüpiter, Fotosentez, İnternet) | 30 | 4 | 0.419 | 0.540 | 0.96 / 1.00 / 1.00 |
+| 2 — 2026-09-20 (İstanbul'un Fethi, Ağrı Dağı, Jüpiter, Fotosentez, İnternet)¹ | 30 | 4 | 0.427 | 0.549 | 0.94 / 0.99 / 0.99 |
 | 3 — 2026-09-21 (Çaldıran Muharebesi, Tuz Gölü, Satürn, Ribozom, Unix) | 30 | 18 | 0.829 | 0.872 | 0.92 / 0.96 / 0.96 |
 | 4 — 2026-09-24 (Mohaç Muharebesi, Kızılırmak, Venüs, Enzim, Derleyici) | 30 | 15 | 0.747 | 0.792 | 0.96 / 0.96 / 0.96 |
 | 5 — 2026-09-25 (Kösedağ Muharebesi, Uludağ, Neptün, RNA, İşletim sistemi) | 30 | 24 | 0.922 | 0.943 | 1.00 / 1.00 / 1.00 |
 | 6 — 2026-09-25 (Preveze Deniz Muharebesi, Erciyes, Uranüs, Hemoglobin, Veritabanı) | 30 | 20 | 0.869 | 0.901 | 0.93 / 0.90 / 0.87 |
 | 7 — 2026-09-26 (Ankara Muharebesi, Van Gölü, Merkür, DNA, World Wide Web) | 30 | 25 | 0.944 | 0.960 | 0.93 / 0.93 / 0.97 |
-| **All drafts** | 210 | 122 | 0.792 | 0.841 | 0.96 / 0.97 / 0.97 |
+| 8 — 2026-09-26 (Niğbolu Muharebesi, Fırat, Ay, Protein, Yapay zekâ) | 32 | 29 | 0.964 | 0.975 | 0.94 / 0.97 / 1.00 |
+| **All drafts** | 242 | 151 | 0.816 | 0.860 | 0.95 / 0.97 / 0.97 |
+
+¹ Re-measured 2026-09-26: the Turkish Wikipedia article *Jüpiter* was rewritten that day to correct errors, and five of its spans no longer matched the live text. Three changed only in wording (a comma, "30,003" → "30" seconds, "dört uydu" → "uydular") and were edited in both labels; two changed in substance — the 40,000 km mantle thickness is gone and the Great Red Spot went from "at least 400 years" to "recorded since 1831" — so those two questions were rewritten and labelled again by both passes. The row was 0.419 / 0.540 / 0.96 / 1.00 / 1.00 before.
 
 The passes disagree about how much of a sentence to take, rather than where
 the answer is. Two LLMs tend to pick the same sentence, so read this as a
@@ -292,8 +300,9 @@ v0.1.0, tagged but not on PyPI yet — install from GitHub as above.
 - **Works:** the retrieval harness, `report`, `leaderboard --check`, `bootstrap`,
   `agreement`, the Hugging Face export, and CI that validates every
   contributed question against live Wikipedia.
-- **In progress:** the gold set, 268 of a planned 300 questions (58 human,
-  210 LLM-drafted); the drafts join the results once people have reviewed them.
+- **In progress:** human review of the gold set. All 300 planned questions are
+  in (58 human, 242 LLM-drafted); the drafts join the results once people have
+  reviewed them.
 - **Not yet:** committed results for `groundedness`, confidence intervals on the
   leaderboard rows, and EmbeddingGemma.
 
@@ -305,7 +314,7 @@ v0.1.0, tagged but not on PyPI yet — install from GitHub as above.
   differences under roughly 0.05 nDCG as noise" — which was both too strict
   for paired comparisons and too loose for unpaired ones.
 - **One annotator for the human set.** The 58 health questions are
-  single-annotated, so they have no agreement figure. The 210 drafted questions
+  single-annotated, so they have no agreement figure. The 242 drafted questions
   are double-labelled, but by two LLM passes rather than by two people.
 - **The corpus is Wikipedia, and so is much of the training data.** Every
   embedding model ranked here was almost certainly trained on Turkish

@@ -102,7 +102,7 @@
   "question": "Ganymede hangi gezegenden daha iridir?",
   "doc_id": "7033",
   "doc_title": "Jüpiter",
-  "answer_span": "Bu dört uydu arasında en büyüğü olan Ganymede, Merkür gezegeninden daha büyüktür",
+  "answer_span": "Bu uydular arasında en büyüğü olan Ganymede, Merkür gezegeninden daha büyüktür",
   "annotator": "llm-1",
   "source": "llm-draft",
   "second_annotation": {
@@ -116,7 +116,7 @@
   "question": "Dev gezegenin dışarı yaydığı ışınım, yıldızından edindiğinin kaç misli ölçülmüştür?",
   "doc_id": "7033",
   "doc_title": "Jüpiter",
-  "answer_span": "Jüpiter'in, Güneş'ten aldığı enerjinin 2,3 katı kadarını dışarı yaydığı görülür",
+  "answer_span": "Jüpiter'in Güneş'ten aldığı enerjinin 2,3 katı kadarını dışarı yaydığı görülür",
   "annotator": "llm-1",
   "source": "llm-draft",
   "second_annotation": {
@@ -130,40 +130,40 @@
   "question": "Sistem I diye anılan dönme süresi kaç saat kaç dakikadır?",
   "doc_id": "7033",
   "doc_title": "Jüpiter",
-  "answer_span": "Ekvator bölgelerinin dönüşü 9 saat 50 dakika 30,003 saniyede tamamlanır ve Sistem I olarak adlandırılır",
+  "answer_span": "Ekvator bölgelerinin dönüşü 9 saat 50 dakika 30 saniyede tamamlanır ve Sistem I olarak adlandırılır",
   "annotator": "llm-1",
   "source": "llm-draft",
   "second_annotation": {
    "annotator": "llm-2",
-   "answer_span": "9 saat 50 dakika 30,003 saniyede"
+   "answer_span": "9 saat 50 dakika 30 saniyede"
   },
   "review": "agreed"
  },
  {
   "qid": "llm-astronomi-011",
-  "question": "Çekirdeği saran metalik hidrojen katmanı kaç kilometre kalınlıktadır?",
+  "question": "Son uzay sondasının ölçümlerine bakılırsa merkezdeki bulanık ağır bölge ne kadar dışarıya uzanıyor?",
   "doc_id": "7033",
   "doc_title": "Jüpiter",
-  "answer_span": "metalik hidrojenden oluşmuş 40.000 km kalınlığında manto tabakası yer alır",
+  "answer_span": "Juno misyonu verilerine göre bu dağınık çekirdek, gezegen yarıçapının %30 ila %50'sine kadar yayılmakta",
   "annotator": "llm-1",
   "source": "llm-draft",
   "second_annotation": {
    "annotator": "llm-2",
-   "answer_span": "40.000 km"
+   "answer_span": "gezegen yarıçapının %30 ila %50'sine kadar"
   },
   "review": "agreed"
  },
  {
   "qid": "llm-astronomi-012",
-  "question": "Gezegenin dev fırtınasının en az kaç yüzyıldır sürdüğü biliniyor?",
+  "question": "Gezegenin en bilinen dev fırtınası hangi yıldan beri kayıtlarda yer alıyor?",
   "doc_id": "7033",
   "doc_title": "Jüpiter",
-  "answer_span": "en az 400 senedir devam ettiği bilinen çok uzun ömürlü dev bir 'fırtına' alanıdır",
+  "answer_span": "1831'den beri kayıtlara geçmiş devasa bir fırtına olan Büyük Kırmızı Leke'dir",
   "annotator": "llm-1",
   "source": "llm-draft",
   "second_annotation": {
    "annotator": "llm-2",
-   "answer_span": "en az 400 senedir"
+   "answer_span": "1831'den beri"
   },
   "review": "agreed"
  },
@@ -584,6 +584,104 @@
   "second_annotation": {
    "annotator": "llm-2",
    "answer_span": "Küçük bir gezegen olan Merkür'ün çekirdek sıcaklığının bir manyetik alan oluşturmak için gerekli olan sıvı demir kütlesini barındırmaya izin vermeyecek kadar düşük olduğu düşünülmektedir. Bu nedenle, bugün gözlenen manyetik alanın gezegen içindeki aktif bir manyetik dinamo tarafından sağlanmak yerine, çok önceleri mıknatıslanmış olan katı haldeki çekirdek tarafından sürdürüldüğü görüşü ortaya atılmıştır."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-043",
+  "question": "Gelgit kabarıklığının uyduyu frenleyen etkisi ne zaman ve neden sona erdi?",
+  "doc_id": "4605",
+  "doc_title": "Ay",
+  "answer_span": "Ay'ın dönüşü yörünge hızına denk gelecek kadar yavaşladığında gelgit tümseği Dünya'nın tam karşısına geldi ve bu nedenle tork ortadan kayboldu.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Ay'ın dönüşü yörünge hızına denk gelecek kadar yavaşladığında gelgit tümseği Dünya'nın tam karşısına geldi ve bu nedenle tork ortadan kayboldu."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-044",
+  "question": "Koyu bazalt düzlüklerin neredeyse yalnız yakın tarafta toplanması en makul biçimde nasıl açıklanıyor?",
+  "doc_id": "4605",
+  "doc_title": "Ay",
+  "answer_span": "Bu farklılığın en akla yatkın açıklaması, Lunar Prospector uzay sondasının gamma ışını spektrometresi ile elde edilen jeokimyasal haritalarda gösterildiği üzere Ay'ın görünen yüzünde ısı üreten elementlerin daha yüksek konsantrasyonda bulunmasıdır.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Bu farklılığın en akla yatkın açıklaması, Lunar Prospector uzay sondasının gamma ışını spektrometresi ile elde edilen jeokimyasal haritalarda gösterildiği üzere Ay'ın görünen yüzünde ısı üreten elementlerin daha yüksek konsantrasyonda bulunmasıdır."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-045",
+  "question": "Kutuplara yakın bazı çukurlarda donmuş suyun uzun süre kalabilmesini ne mümkün kılar?",
+  "doc_id": "4605",
+  "doc_title": "Ay",
+  "answer_span": "Ancak Ay'ın dönme ekseninin tutulum düzlemine yalnızca 1,5° gibi çok küçük bir eğiklik yapması nedeniyle kutuplar yakınında bulunan bazı derin kraterler hiçbir zaman doğrudan günışığı almadığından ve sürekli gölgede kaldığından buraya düşen su molekülleri uzun zaman süreleri boyunca kararlılığını koruyacak.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Ancak Ay'ın dönme ekseninin tutulum düzlemine yalnızca 1,5° gibi çok küçük bir eğiklik yapması nedeniyle kutuplar yakınında bulunan bazı derin kraterler hiçbir zaman doğrudan günışığı almadığından ve sürekli gölgede kaldığından buraya düşen su molekülleri uzun zaman süreleri boyunca kararlılığını koruyacak."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-046",
+  "question": "1994 görevinin radar sinyalinin buz olduğu yorumu neden şüpheli hâle geldi ve bugün ne biliniyor?",
+  "doc_id": "4605",
+  "doc_title": "Ay",
+  "answer_span": "Ancak son zamanlarda Arecibo gezegen radarı ile yapılan gözlemler, Clementine radarının su buzu bulunduğuna dair işaret ettiği bilgilerin aslında görece yeni kraterlerin oluşumunda fırlayan kayaların sonucu olabileceğini göstermiştir. Ay üzerinde ne kadar su bulunduğu sorusunun cevabı henüz bilinmemektedir.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Ancak son zamanlarda Arecibo gezegen radarı ile yapılan gözlemler, Clementine radarının su buzu bulunduğuna dair işaret ettiği bilgilerin aslında görece yeni kraterlerin oluşumunda fırlayan kayaların sonucu olabileceğini göstermiştir. Ay üzerinde ne kadar su bulunduğu sorusunun cevabı henüz bilinmemektedir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-047",
+  "question": "Uydunun hafifçe uzamış biçimi, geçmişte Dünya'ya ne kadar yakın olduğunu nasıl gösterir?",
+  "doc_id": "4605",
+  "doc_title": "Ay",
+  "answer_span": "Bu 'fosil şişkinlik', Ay'ın Dünya'ya olan mevcut mesafesinin yarısındaki bir yörüngede dönerken katılaştığını ve artık şeklinin yörüngesine uyum sağlayamayacak kadar soğumuş olduğunu gösterir.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Bu 'fosil şişkinlik', Ay'ın Dünya'ya olan mevcut mesafesinin yarısındaki bir yörüngede dönerken katılaştığını ve artık şeklinin yörüngesine uyum sağlayamayacak kadar soğumuş olduğunu gösterir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-048",
+  "question": "Kabuktaki mıknatıslanmayı eski bir iç dinamoya bağlayan fikrin önünde hangi engel var ve yerine ne öneriliyor?",
+  "doc_id": "4605",
+  "doc_title": "Ay",
+  "answer_span": "Ancak Ay çekirdeğinin küçüklüğü bu varsayımın doğruluğu karşısında bir engel oluşturmaktadır. Alternatif varsayımlar arasında, Ay gibi havası olmayan gök cisimlerinde süreksiz manyetik alanlar büyük gök cisimlerinin çarpması bulunur.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Ancak Ay çekirdeğinin küçüklüğü bu varsayımın doğruluğu karşısında bir engel oluşturmaktadır. Alternatif varsayımlar arasında, Ay gibi havası olmayan gök cisimlerinde süreksiz manyetik alanlar büyük gök cisimlerinin çarpması bulunur."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-astronomi-049",
+  "question": "Uydunun başka yerde oluşup sonradan Dünya'nın çekimine girdiği fikri neden olanaksız sayılır?",
+  "doc_id": "4605",
+  "doc_title": "Ay",
+  "answer_span": "Ancak bu yakalamanın gerçekleşebilmesi için gerekli olan koşulların, örneğin enerjiyi sönümleyebilmek için Dünya'nın geniş bir atmosferinin olması gibi, oluşması mümkün değildi.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Ancak bu yakalamanın gerçekleşebilmesi için gerekli olan koşulların, örneğin enerjiyi sönümleyebilmek için Dünya'nın geniş bir atmosferinin olması gibi, oluşması mümkün değildi."
   },
   "review": "agreed"
  }

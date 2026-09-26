@@ -586,5 +586,103 @@
    "answer_span": "Bunun yanında ilk dönem Osmanlı kaynaklarından; Oruç Bey ve Hadîdî ise Bayezid'in Timur tarafından Semerkant'a götürüleceğini anladıktan sonra yüzüğündeki zehri içerek intihar ettiğini iddia eder."
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-043",
+  "question": "Kuşatmacılar kaleye doğrudan saldırmak yerine neden onu aç bırakmayı seçti; ellerinde ne eksikti?",
+  "doc_id": "175184",
+  "doc_title": "Niğbolu Muharebesi (1396)",
+  "answer_span": "Her iki grup da kuşatma için gerekli silahların ellerinde bulunmadığından şikayetçi idi; halbuki nehirde demirli donanmada birçok mancınık ve benzeri kuşatma için gerekli savaş aletleri bulunmaktaydı, kara ordularından kimse bunları istemeyi düşünmemişti. Kaleye hücum edip alma yerine, uzun bir kuşatma ile kaleyi ablukaya alıp yiyecek ve içecek bitinceye kadar bekleme taktiği tercih edildi.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Her iki grup da kuşatma için gerekli silahların ellerinde bulunmadığından şikayetçi idi; halbuki nehirde demirli donanmada birçok mancınık ve benzeri kuşatma için gerekli savaş aletleri bulunmaktaydı, kara ordularından kimse bunları istemeyi düşünmemişti. Kaleye hücum edip alma yerine, uzun bir kuşatma ile kaleyi ablukaya alıp yiyecek ve içecek bitinceye kadar bekleme taktiği tercih edildi."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-044",
+  "question": "Batılı komutanlar güney yönünü neden sürekli gözetlemediler?",
+  "doc_id": "175184",
+  "doc_title": "Niğbolu Muharebesi (1396)",
+  "answer_span": "Haçlı komutanları Osmanlı Sultanı'nın Haçlı istilasından haberdar olmadığını; olsa bile bu uzak kaleye yetişme imkânı olmadığını düşünmekte idiler ve bu nedenle güneye devamlı bir keşif birliği göndermekten kaçınmışlardı.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Haçlı komutanları Osmanlı Sultanı'nın Haçlı istilasından haberdar olmadığını; olsa bile bu uzak kaleye yetişme imkânı olmadığını düşünmekte idiler ve bu nedenle güneye devamlı bir keşif birliği göndermekten kaçınmışlardı."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-045",
+  "question": "Rahova'daki teslim uzlaşması neden bozuldu ve kasaba halkına ne oldu?",
+  "doc_id": "175184",
+  "doc_title": "Niğbolu Muharebesi (1396)",
+  "answer_span": "Fakat diğer Haçlılar, özellikle Fransız ve Burgunyalı prens ve soylular, bunu kabul etmeyip şehirdeki hem Müslüman hem de Ortodoks Hristiyan olanların çoğunu katlettiler ve kendilerine göre bir seçim yaparak büyük grup işe yarayanları esir olarak yanlarına aldılar.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Osmanlı garnizon komutanı Kral Sigismund'a bir elçi göndererek askerlerine dokunulmazsa silahlarını bırakıp kaleyi teslim edebileceğini bildirdi ve Kral Sigsmund bunu kabul etti. Fakat diğer Haçlılar, özellikle Fransız ve Burgunyalı prens ve soylular, bunu kabul etmeyip şehirdeki hem Müslüman hem de Ortodoks Hristiyan olanların çoğunu katlettiler ve kendilerine göre bir seçim yaparak büyük grup işe yarayanları esir olarak yanlarına aldılar."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-046",
+  "question": "Zırhlı tarikat süvarileri çatışmanın başındaki üstünlüklerini nasıl yitirdi?",
+  "doc_id": "175184",
+  "doc_title": "Niğbolu Muharebesi (1396)",
+  "answer_span": "Savaşın başlarında tepeden tırnağa zırhlı seçkin Hospitalier Şövalyeleri Osmanlıların öncü birliklerine kayıplar verdirmiş, onları kovalamak için ilerledikçe Türk askerlerinin daha önceden yerlere sapladıkları kazıkların olduğu bölgeye gelmişler ve atlarla ilerlemenin mümkün olmadığını görünce atlarından inmişlerdir. Ancak ağır zırhlı olduklarından dolayı çabucak yorulmuşlardır.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Savaşın başlarında tepeden tırnağa zırhlı seçkin Hospitalier Şövalyeleri Osmanlıların öncü birliklerine kayıplar verdirmiş, onları kovalamak için ilerledikçe Türk askerlerinin daha önceden yerlere sapladıkları kazıkların olduğu bölgeye gelmişler ve atlarla ilerlemenin mümkün olmadığını görünce atlarından inmişlerdir. Ancak ağır zırhlı olduklarından dolayı çabucak yorulmuşlardır."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-047",
+  "question": "Galibiyetin ardından tutsaklara nasıl davranıldı; hangileri ölümden kurtuldu?",
+  "doc_id": "175184",
+  "doc_title": "Niğbolu Muharebesi (1396)",
+  "answer_span": "Soylular bir kenara ayrıldıktan sonra yere bir kazık çakıldı ve boyu bu kazıktan uzun olan tüm diğer esirler idam edildi. Niğbolu Muharebesi, Osmanlı'nın ilk zamanlarında esirlerin öldürüldüğü tek savaştır. Ancak çocuk yaştaki Haçlı askerlerinin canı bağışlandı ve onlar da Müslüman olarak yetiştirilmek üzere Türk ailelerine gönderildi. Soylular ise fidye karşılığı serbest bırakıldı.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Soylular bir kenara ayrıldıktan sonra yere bir kazık çakıldı ve boyu bu kazıktan uzun olan tüm diğer esirler idam edildi. Niğbolu Muharebesi, Osmanlı'nın ilk zamanlarında esirlerin öldürüldüğü tek savaştır. Ancak çocuk yaştaki Haçlı askerlerinin canı bağışlandı ve onlar da Müslüman olarak yetiştirilmek üzere Türk ailelerine gönderildi. Soylular ise fidye karşılığı serbest bırakıldı."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-048",
+  "question": "Sultan Mısır'a ne gönderdi ve bunun karşılığında hangi sanı aldı?",
+  "doc_id": "175184",
+  "doc_title": "Niğbolu Muharebesi (1396)",
+  "answer_span": "Örneğin Bayezid, Kahire'ye Memluk sultanına zafernâme mektuplarıyla birlikte esir alınan tepeden tırnağa ağır zırhlara bürünmüş haçlı şövalyelerinden bir kısmını göndermiştir. Bunun üzerine Kahire'de bulunan Abbâsi halifesi, I. Bayezid'e Sultan-ı İklim-i Rum unvanını vermiştir.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Örneğin Bayezid, Kahire'ye Memluk sultanına zafernâme mektuplarıyla birlikte esir alınan tepeden tırnağa ağır zırhlara bürünmüş haçlı şövalyelerinden bir kısmını göndermiştir. Bunun üzerine Kahire'de bulunan Abbâsi halifesi, I. Bayezid'e Sultan-ı İklim-i Rum unvanını vermiştir."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-tarih-049",
+  "question": "Dönemin Osmanlı yazarları bu zafere Avrupalı çağdaşlarından farklı olarak nasıl yaklaştı?",
+  "doc_id": "175184",
+  "doc_title": "Niğbolu Muharebesi (1396)",
+  "answer_span": "Bunun aksine devrin Osmanlı tarihçileri Niğbolu Muharebesi'ni önemli bir olay olarak görmemişler, çok kısa bir yer vererek sıradan zaferlerden birisi gibi tasvir etmişlerdir.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Bunun aksine devrin Osmanlı tarihçileri Niğbolu Muharebesi'ni önemli bir olay olarak görmemişler, çok kısa bir yer vererek sıradan zaferlerden birisi gibi tasvir etmişlerdir."
+  },
+  "review": "agreed"
  }
 ]

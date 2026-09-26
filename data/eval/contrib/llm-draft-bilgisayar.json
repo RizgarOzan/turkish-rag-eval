@@ -586,5 +586,89 @@
    "answer_span": "Üstelik 2009'da yapılan araştırmalar gösteriyor ki bu kullanıcıların yalnızca %20'si özel hayatın gizliliği ayarlarını kullanıyor."
   },
   "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-043",
+  "question": "Bir zamanlar zeki sayılan becerilerin sonradan alanın dışında sayılmasına ne denir ve bu durum hangi espriyle özetlenir?",
+  "doc_id": "6180",
+  "doc_title": "Yapay zekâ",
+  "answer_span": "Makineler daha becerikli hâle geldikçe, zekâ gerektirdiği düşünülen görevler genellikle yapay zekâ etkisi olarak bilinen bir fenomen olan yapay zekâ tanımından çıkarılır. Tesler'in teoremindeki bir espri, \"Yapay zekâ henüz yapılmamış şeydir\" der.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Makineler daha becerikli hâle geldikçe, zekâ gerektirdiği düşünülen görevler genellikle yapay zekâ etkisi olarak bilinen bir fenomen olan yapay zekâ tanımından çıkarılır. Tesler'in teoremindeki bir espri, \"Yapay zekâ henüz yapılmamış şeydir\" der."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-044",
+  "question": "İlk dönemin adım adım çıkarım yapan yöntemleri büyük problemlerde neden tıkanır?",
+  "doc_id": "6180",
+  "doc_title": "Yapay zekâ",
+  "answer_span": "Bu algoritmaların birçoğu, büyük ölçekli akıl yürütme problemlerini çözmek için yetersizdir, çünkü \"kombinatoryal patlama\" denilen bir durum yaşarlar: Problemler büyüdükçe bu algoritmaların çalışması üstel bir şekilde yavaşlar.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Bu algoritmaların birçoğu, büyük ölçekli akıl yürütme problemlerini çözmek için yetersizdir, çünkü \"kombinatoryal patlama\" denilen bir durum yaşarlar: Problemler büyüdükçe bu algoritmaların çalışması üstel bir şekilde yavaşlar."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-045",
+  "question": "1974'te iki hükûmeti keşif amaçlı çalışmalara desteği kesmeye ne yöneltti?",
+  "doc_id": "6180",
+  "doc_title": "Yapay zekâ",
+  "answer_span": "1974'te Sir James Lighthill'ın eleştirileri ve ABD Kongresi'nin daha somut projelere fon sağlama baskısı nedeniyle, ABD ve İngiltere hükûmetleri keşif amaçlı yapay zekâ araştırmalarına verilen desteği durdurma kararı aldı.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "1974'te Sir James Lighthill'ın eleştirileri ve ABD Kongresi'nin daha somut projelere fon sağlama baskısı nedeniyle, ABD ve İngiltere hükûmetleri keşif amaçlı yapay zekâ araştırmalarına verilen desteği durdurma kararı aldı."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-046",
+  "question": "2012'den sonra derin ağların hızla yayılmasını hangi etkenler mümkün kıldı?",
+  "doc_id": "6180",
+  "doc_title": "Yapay zekâ",
+  "answer_span": "Bu başarının arkasında daha hızlı bilgisayarlar, grafik işlem birimleri, bulut bilişim gibi donanım geliştirmeleriyle ImageNet gibi dikkatle oluşturulmuş veri kümelerinin de dâhil olduğu büyük miktarda veriye erişim yatıyordu.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Bu başarının arkasında daha hızlı bilgisayarlar, grafik işlem birimleri, bulut bilişim gibi donanım geliştirmeleriyle ImageNet gibi dikkatle oluşturulmuş veri kümelerinin de dâhil olduğu büyük miktarda veriye erişim yatıyordu."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-047",
+  "question": "Kurallara dayalı uzman programlar hangi kurumlar için kolay uygulanabilirdi ve bunun bedeli neydi?",
+  "doc_id": "6180",
+  "doc_title": "Yapay zekâ",
+  "answer_span": "Bu birçok kuralcı bürokratik karar örgütleri için kolayca uygulamalar geliştirilebilmesi demekti. Bu doğal olarak bir otomobilin tamiri için önerilerde bulunan uzman sistem programının otomobilin ne işe yaradığından haberi olmaması da demekti.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Bu birçok kuralcı bürokratik karar örgütleri için kolayca uygulamalar geliştirilebilmesi demekti. Bu doğal olarak bir otomobilin tamiri için önerilerde bulunan uzman sistem programının otomobilin ne işe yaradığından haberi olmaması da demekti."
+  },
+  "review": "agreed"
+ },
+ {
+  "qid": "llm-bilgisayar-048",
+  "question": "Kendini durmadan geliştiren yazılımın sınırsız hızlanacağı düşüncesine hangi itiraz getiriliyor?",
+  "doc_id": "6180",
+  "doc_title": "Yapay zekâ",
+  "answer_span": "Ancak teknolojiler sonsuza kadar üstel olarak gelişemez ve genellikle S şeklinde bir eğri izler, teknolojinin yapabileceği şeyin fiziksel sınırlarına ulaştığında yavaşlar.",
+  "annotator": "llm-1",
+  "source": "llm-draft",
+  "second_annotation": {
+   "annotator": "llm-2",
+   "answer_span": "Ancak teknolojiler sonsuza kadar üstel olarak gelişemez ve genellikle S şeklinde bir eğri izler, teknolojinin yapabileceği şeyin fiziksel sınırlarına ulaştığında yavaşlar."
+  },
+  "review": "agreed"
  }
 ]

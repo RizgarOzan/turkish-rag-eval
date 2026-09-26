@@ -49,15 +49,15 @@ normaliser.
 on different, corpus-dependent scales; fusing ranks needs no per-corpus
 tuning. `k=60`, from Cormack et al. (2009).
 
-**Two annotation passes agree by containment, not by similarity.** 203 of the
-210 double-labelled questions here are containment pairs — one span inside the
-other — yet 51 fall below a 0.6 Jaccard floor, 47 of them containment pairs.
+**Two annotation passes agree by containment, not by similarity.** 235 of the
+242 double-labelled questions here are containment pairs — one span inside the
+other — yet 52 fall below a 0.6 Jaccard floor, 48 of them containment pairs.
 The passes were almost never disagreeing about *where* the answer is, only
 about how much of the sentence to sweep in, and containment is what the
 harness itself tests. A similarity floor alone would have sent a reviewer to
 arbitrate a third of an already-reviewed set. The four genuine disagreements —
 two different sentences that both name polysomes, and three from batch 4 — are
-the ones the rule holds back, and `passes_agree()` reproduces all 210 of the
+the ones the rule holds back, and `passes_agree()` reproduces all 242 of the
 committed labels exactly.
 
 **Ties break stably.** `np.argsort` defaults to an unstable sort, and sparse
@@ -147,16 +147,19 @@ every chunk sharing no query term scores exactly 0.0. No `dense` or
 | Batch | Questions | Identical | Mean IoU | Mean token F1 | Cohen's κ, fixed / sentence / hierarchical |
 |---|---|---|---|---|---|
 | 1 — 2026-09-18 (Malazgirt, Kapadokya, Mars, Mitokondri, Linux) | 30 | 16 | 0.816 | 0.878 | 1.00 / 1.00 / 1.00 |
-| 2 — 2026-09-20 (İstanbul'un Fethi, Ağrı Dağı, Jüpiter, Fotosentez, İnternet) | 30 | 4 | 0.419 | 0.540 | 0.96 / 1.00 / 1.00 |
+| 2 — 2026-09-20 (İstanbul'un Fethi, Ağrı Dağı, Jüpiter, Fotosentez, İnternet)¹ | 30 | 4 | 0.427 | 0.549 | 0.94 / 0.99 / 0.99 |
 | 3 — 2026-09-21 (Çaldıran Muharebesi, Tuz Gölü, Satürn, Ribozom, Unix) | 30 | 18 | 0.829 | 0.872 | 0.92 / 0.96 / 0.96 |
 | 4 — 2026-09-24 (Mohaç Muharebesi, Kızılırmak, Venüs, Enzim, Derleyici) | 30 | 15 | 0.747 | 0.792 | 0.96 / 0.96 / 0.96 |
 | 5 — 2026-09-25 (Kösedağ Muharebesi, Uludağ, Neptün, RNA, İşletim sistemi) | 30 | 24 | 0.922 | 0.943 | 1.00 / 1.00 / 1.00 |
 | 6 — 2026-09-25 (Preveze Deniz Muharebesi, Erciyes, Uranüs, Hemoglobin, Veritabanı) | 30 | 20 | 0.869 | 0.901 | 0.93 / 0.90 / 0.87 |
 | 7 — 2026-09-26 (Ankara Muharebesi, Van Gölü, Merkür, DNA, World Wide Web) | 30 | 25 | 0.944 | 0.960 | 0.93 / 0.93 / 0.97 |
-| **All drafts** | 210 | 122 | 0.792 | 0.841 | 0.96 / 0.97 / 0.97 |
+| 8 — 2026-09-26 (Niğbolu Muharebesi, Fırat, Ay, Protein, Yapay zekâ) | 32 | 29 | 0.964 | 0.975 | 0.94 / 0.97 / 1.00 |
+| **All drafts** | 242 | 151 | 0.816 | 0.860 | 0.95 / 0.97 / 0.97 |
+
+¹ Re-measured 2026-09-26: the Turkish Wikipedia article *Jüpiter* was rewritten that day to correct errors, and five of its spans no longer matched the live text. Three changed only in wording (a comma, "30,003" → "30" seconds, "dört uydu" → "uydular") and were edited in both labels; two changed in substance — the 40,000 km mantle thickness is gone and the Great Red Spot went from "at least 400 years" to "recorded since 1831" — so those two questions were rewritten and labelled again by both passes. The row was 0.419 / 0.540 / 0.96 / 1.00 / 1.00 before.
 
 "Identical" means identical after tokenisation, so case and punctuation are
-folded; by raw string the counts are 1, 2, 18, 6, 8, 20 and 25. IoU and token F1 come from
+folded; by raw string the counts are 1, 2, 18, 6, 8, 20, 25 and 29. IoU and token F1 come from
 `agreement.py`; κ is that file's chunk-level measure — for each chunking
 strategy, the binary "does this chunk contain the answer" label each span
 assigns to each chunk of its article, which is exactly how `run_eval.py`
@@ -167,8 +170,11 @@ what set the containment rule in [Design decisions](#design-decisions). In
 batch 2 the second pass kept picking the shortest span that still answers the
 question ("7.4 büyüklüğünde" against the whole clause around it), which halves
 IoU — yet the labels the benchmark actually scores are the same: of the 180
-question × strategy runs, 3 differ, all with fixed-size chunks, where the
-shorter span also fell inside one neighbouring overlapping window. Batch 3
+question × strategy runs, 7 differ, all the same short-span effect: the
+shorter span also falls in a second chunk. Three are fixed-size neighbours;
+four come from the two *Jüpiter* questions relabelled after the article was
+rewritten (see ¹), where the second pass's "1831'den beri" also appears
+in an earlier sentence. Batch 3
 has 5 differing runs of 90: three are the needs-human polysome question from the README's gold-set section, two are
 the same short-span effect with fixed chunks. Batch 4 has 3 differing runs of
 90, all one question: the first pass took the definition of cross compilers,
@@ -180,11 +186,14 @@ no chunk for that strategy, so it marks nothing relevant, while the first
 pass's one-sentence span marks one chunk. The first pass had the same long
 spans until they were measured against the chunkers and cut; a span that no
 chunk contains is a question no retriever can get right. Batch 7 has 5 of
-90, from three questions, the same way round. Two LLMs
+90, from three questions, the same way round. Batch 8 has 3 of 96: once the
+second pass took the two sentences the first pass had cut to fit the
+sentence chunker, and twice a span missed or caught a fixed window the
+other did not. Two LLMs
 tend to pick the same sentence, so read this as a sanity check rather than as
 human agreement.
 
-The κ column is measured locally, because it needs the thirty-five draft articles
+The κ column is measured locally, because it needs the forty draft articles
 in the corpus and `data/raw/` is fetched rather than committed; the other
 columns are recomputed from the files in CI (`tests/test_readme_agreement.py`).
 Wiring the embedded second labels into `agreement.py` itself is
