@@ -111,15 +111,15 @@ def passes_agree(first: str, second: str) -> bool:
     the same label for every purpose the harness has. They differ only in how
     much surrounding sentence each pass swept in.
 
-    A token-similarity floor alone would not do. On this repository's own 210
-    double-labelled questions, Jaccard overlap sits below 0.6 for 51 of them -
-    yet 47 of those 51 are containment pairs. The passes were almost never
+    A token-similarity floor alone would not do. On this repository's own 242
+    double-labelled questions, Jaccard overlap sits below 0.6 for 52 of them -
+    yet 48 of those 52 are containment pairs. The passes were almost never
     disagreeing about where the answer is, only about how much of the sentence
     to sweep in, and a similarity floor would have sent a reviewer to arbitrate
     a third of an already-reviewed set.
 
     The rule is calibrated against those labels rather than chosen: it
-    reproduces all 210 of them exactly, including the four genuine
+    reproduces all 242 of them exactly, including the four genuine
     disagreements, such as the two passes marking different sentences that
     both name polysomes.
 
