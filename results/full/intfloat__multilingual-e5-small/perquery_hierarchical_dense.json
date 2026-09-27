@@ -3441,10 +3441,10 @@
   {
     "qid": "llm-biyoloji-030",
     "question": "Bir maya nükleik asidinin dizisini ilk okuyan araştırmacı hangi ödülü kazandı?",
-    "total_relevant": 0,
+    "total_relevant": 1,
     "relevance": [
       false,
-      false,
+      true,
       false,
       false,
       false,
@@ -3455,7 +3455,7 @@
       false
     ],
     "top_score": 0.8300943970680237,
-    "found": false
+    "found": true
   },
   {
     "qid": "llm-biyoloji-031",

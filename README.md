@@ -251,8 +251,11 @@ so that question waits for a person. Batch 4 was 27 of 30: the second pass
 named the other claimant to the Hungarian throne, took the sentence beside the
 lysozyme result instead of the result itself, and answered "cross compilers"
 with the bare term where the first took its definition. Batch 5 was 30 of 30,
-and every pair is a containment pair: 8 identical, 16 differing only by a
-trailing full stop. Batch 6 was 30 of 30 on reworded questions whose answers
+and every pair is a containment pair: 9 identical, 15 differing only by a
+trailing full stop. One of its answers, Robert W. Holley's 1968 Nobel Prize,
+was cut to its last clause on 2026-09-27 and labelled again by the second
+pass: the sentence splitter breaks after "W.", so no hierarchical chunk held
+the whole sentence ([#17](https://github.com/RizgarOzan/turkish-rag-eval/issues/17)). Batch 6 was 30 of 30 on reworded questions whose answers
 often run to two sentences; six first-pass spans were cut to one sentence
 before merging, because the two-sentence version fitted inside no chunk and
 so could never be retrieved. Batch 7 was 30 of 30 again, with 25 identical
@@ -305,26 +308,27 @@ turkish-rag-eval fetch-corpus --include-drafts   # data/raw/corpus-full.json
 turkish-rag-eval run --include-drafts            # results/full/<model>/
 ```
 
-Measured 2026-09-27 on 296 questions (the 4 `needs-human` drafts never load),
+Measured 2026-09-27 (re-run after the batch 5 fix) on 296 questions (the 4 `needs-human` drafts never load),
 hierarchical chunks, nDCG@10:
 
 | Retriever | 58 human questions | 296 questions (238 drafted) |
 |---|---|---|
-| bm25_stem5 | 0.494 | 0.557 |
-| MiniLM (default), dense | 0.501 | 0.403 |
-| MiniLM (default), hybrid_rrf | 0.613 | 0.576 |
-| multilingual-e5-small, dense | 0.642 | 0.567 |
-| multilingual-e5-small, hybrid_rrf | 0.639 | 0.641 |
-| multilingual-e5-base, dense | 0.668 | 0.644 |
-| multilingual-e5-base, hybrid_rrf | 0.648 | 0.662 |
+| bm25_stem5 | 0.494 | 0.558 |
+| MiniLM (default), dense | 0.501 | 0.405 |
+| MiniLM (default), hybrid_rrf | 0.613 | 0.578 |
+| multilingual-e5-small, dense | 0.642 | 0.568 |
+| multilingual-e5-small, hybrid_rrf | 0.639 | 0.642 |
+| multilingual-e5-base, dense | 0.668 | 0.646 |
+| multilingual-e5-base, hybrid_rrf | 0.648 | 0.664 |
 
 On the wider set stemmed BM25 gets stronger and every dense model weaker, so
 fusing the two now helps all three models, where on the 58 health questions it
 cost the E5 models. These rows are not in the tables above: most of the
 questions have not been checked by a person yet. The run also names every
 question no chunk can answer; a span split by a chunk boundary is the usual
-reason. Here that is 17 questions with fixed-size chunks, 1 with hierarchical
-and none with sentence chunks. Results for all three chunkers are in
+reason. Here that is 17 questions with fixed-size chunks and none with
+sentence or hierarchical chunks (the one hierarchical miss was fixed on
+2026-09-27, see batch 5 above). Results for all three chunkers are in
 [`results/full/`](https://github.com/RizgarOzan/turkish-rag-eval/tree/main/results/full).
 
 ## Status

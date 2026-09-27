@@ -410,12 +410,12 @@
   "question": "Bir maya nükleik asidinin dizisini ilk okuyan araştırmacı hangi ödülü kazandı?",
   "doc_id": "5966",
   "doc_title": "RNA",
-  "answer_span": "Robert W. Holley bir maya RNA'sının ilk 77 nükleotidinin dizisini 1965'te çözmüş, bundan dolayı 1968 Nobel Tıp ödülünü kazanmıştır",
+  "answer_span": "bundan dolayı 1968 Nobel Tıp ödülünü kazanmıştır",
   "annotator": "llm-1",
   "source": "llm-draft",
   "second_annotation": {
    "annotator": "llm-2",
-   "answer_span": "Robert W. Holley bir maya RNA'sının ilk 77 nükleotidinin dizisini 1965'te çözmüş, bundan dolayı 1968 Nobel Tıp ödülünü kazanmıştır."
+   "answer_span": "bundan dolayı 1968 Nobel Tıp ödülünü kazanmıştır"
   },
   "review": "agreed"
  },
