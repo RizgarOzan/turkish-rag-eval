@@ -85,3 +85,19 @@ def test_update_lock_accepts_the_new_snapshot(tmp_path, monkeypatch):
     fetch_corpus.report_drift(_docs(), update=False)
     assert fetch_corpus.report_drift(_docs("a" * 640), update=True) == 0
     assert fetch_corpus.report_drift(_docs("a" * 640), update=False) == 0
+
+
+def test_drafted_articles_join_only_the_full_corpus():
+    health = fetch_corpus.topics(include_drafts=False)
+    full = fetch_corpus.topics(include_drafts=True)
+    assert "Jüpiter" not in health, "the published snapshot stays health-only"
+    assert "Jüpiter" in full
+    assert set(health) <= set(full)
+
+
+def test_the_full_corpus_has_its_own_lock(tmp_path, monkeypatch):
+    monkeypatch.setattr(fetch_corpus, "LOCK", tmp_path / "corpus.lock.json")
+    full = tmp_path / "corpus-full.lock.json"
+    assert fetch_corpus.report_drift(_docs(), update=False, lock_path=full) == 0
+    assert full.exists()
+    assert not (tmp_path / "corpus.lock.json").exists()

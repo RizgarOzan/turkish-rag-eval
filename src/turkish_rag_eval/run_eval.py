@@ -35,7 +35,19 @@ from .models import DEFAULT_MODEL, prefixes_for, results_dir
 from .retrieval import DenseRetriever, HybridRetriever, SparseRetriever
 
 CORPUS = ROOT / "data" / "raw" / "corpus.json"
+#: Written by ``fetch-corpus --include-drafts``; the drafted questions' articles
+#: are not in the published snapshot.
+CORPUS_FULL = ROOT / "data" / "raw" / "corpus-full.json"
 K_VALUES = (1, 3, 5, 10)
+
+
+def default_paths(model: str, include_drafts: bool) -> tuple[Path, Path]:
+    """Corpus and results directory when no flag names them. A draft run
+    reads the full corpus and writes under results/full/, so it can never
+    overwrite the published numbers."""
+    if not include_drafts:
+        return CORPUS, results_dir(model)
+    return CORPUS_FULL, ROOT / "results" / "full" / model.replace("/", "__")
 
 ALL_RETRIEVERS = ("dense", "bm25_stem5", "bm25_nostem", "hybrid_rrf")
 #: The ones that need an embedding model, and therefore torch and a download.
@@ -69,6 +81,7 @@ def evaluate(retriever, chunks: list[dict], gold: list[dict], k_max: int):
         relevance = [is_relevant(chunks[idx], item) for idx, _ in hits]
         total_relevant = sum(1 for c in chunks if is_relevant(c, item))
         per_query.append({
+            "qid": item.get("qid"),
             "question": item["question"],
             "total_relevant": total_relevant,
             "relevance": relevance,
@@ -158,11 +171,24 @@ def check_gold_against_corpus(gold: list[dict], docs: list[dict]) -> None:
           f"({detail}); bu sorular puanlanamaz")
 
 
+def report_unscorable(chunks: list[dict], gold: list[dict], strategy: str) -> None:
+    """Name the questions no chunk answers: the span straddles a chunk
+    boundary, or a Wikipedia edit removed it after labelling. Either way the
+    question silently drops out of every mean, so the run says which ones."""
+    lost = [g.get("qid") or g["question"] for g in gold
+            if not any(is_relevant(c, g) for c in chunks)]
+    if lost:
+        shown = ", ".join(lost[:8]) + (" ..." if len(lost) > 8 else "")
+        print(f"    uyarı: {len(lost)} soru {strategy} parçalarında "
+              f"puanlanamıyor (hiçbir parça cevabı bütün içermiyor): {shown}")
+
+
 def run(args) -> int:
-    corpus = load_corpus(args.corpus or CORPUS)
+    drafts = getattr(args, "include_drafts", False)
+    default_corpus, default_out = default_paths(args.model, drafts)
+    corpus = load_corpus(args.corpus or default_corpus)
     docs = corpus.docs
-    gold = load_gold(resolve_gold(args.gold),
-                     include_drafts=getattr(args, "include_drafts", False))
+    gold = load_gold(resolve_gold(args.gold), include_drafts=drafts)
     check_gold_against_corpus(gold, docs)
 
     print(f"{len(docs)} belge ({corpus.chars} karakter), {len(gold)} soru")
@@ -176,7 +202,7 @@ def run(args) -> int:
         from sentence_transformers import SentenceTransformer
         model = SentenceTransformer(args.model)
     query_prefix, doc_prefix = prefixes_for(args.model)
-    results = args.out or results_dir(args.model)
+    results = args.out or default_out
 
     rows = []
     for strategy_name, chunker in STRATEGIES.items():
@@ -184,6 +210,7 @@ def run(args) -> int:
         sizes = [len(c["body"]) for c in chunks]
         print(f"[{strategy_name}] {len(chunks)} parca, "
               f"ortalama {statistics.mean(sizes):.0f} karakter")
+        report_unscorable(chunks, gold, strategy_name)
 
         index_seconds = 0.0
         dense = None
