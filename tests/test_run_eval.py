@@ -133,3 +133,28 @@ def test_the_answer_span_is_found(workspace):
     records = json.loads(
         (out / "perquery_hierarchical_bm25_stem5.json").read_text(encoding="utf-8"))
     assert records[0]["found"], "the only question should retrieve its own article"
+
+
+def test_a_question_no_chunk_answers_is_named(workspace, capsys):
+    # A span that straddles a chunk boundary, or that a Wikipedia edit removed
+    # after labelling, has no relevant chunk and drops out of every mean, so
+    # the run must say which ones rather than quietly score fewer questions.
+    tmp_path, corpus, gold = workspace
+    gone = dict(QUESTION, qid="t-2", question="Diyabet kaç tiptir?",
+                answer_span="Bu cümle makalede yok.")
+    gold.write_text(json.dumps([QUESTION, gone], ensure_ascii=False),
+                    encoding="utf-8")
+    run_eval.run(arguments(corpus=corpus, gold=gold, out=tmp_path / "out",
+                           retrievers=["bm25_stem5"]))
+    out = capsys.readouterr().out
+    assert "1 soru" in out and "t-2" in out
+    assert "t-1" not in out.split("puanlanamıyor")[-1]
+
+
+def test_drafts_default_to_the_full_corpus_and_their_own_results():
+    health = run_eval.default_paths("m/x", include_drafts=False)
+    full = run_eval.default_paths("m/x", include_drafts=True)
+    assert health[0] == run_eval.CORPUS
+    assert full[0] == run_eval.CORPUS_FULL
+    assert full[1] != health[1], "a draft run must not overwrite the published results"
+    assert "full" in full[1].parts

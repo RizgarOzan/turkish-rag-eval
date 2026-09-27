@@ -31,6 +31,11 @@ OUT = ROOT / "data" / "raw" / "corpus.json"
 #: Committed, unlike the corpus itself: it is small, and it is the only thing
 #: that lets a checkout tell whether its articles match the published numbers.
 LOCK = ROOT / "data" / "corpus.lock.json"
+#: ``--include-drafts``: the same health articles plus every article an
+#: LLM-drafted question points at, with a lock of its own. Kept apart so the
+#: published snapshot, and every number quoted from it, never changes.
+FULL_OUT = ROOT / "data" / "raw" / "corpus-full.json"
+FULL_LOCK = ROOT / "data" / "corpus-full.lock.json"
 
 TOPICS = [
     "Diyabet", "Hipertansiyon", "Astım", "Migren", "Anemi",
@@ -90,6 +95,13 @@ def fetch_batch(titles: list[str], attempt: int = 0) -> list[dict]:
     return out
 
 
+def topics(include_drafts: bool = False) -> list[str]:
+    """Titles to fetch. Contributed questions may point at articles outside
+    the original list; drafted ones only when asked for."""
+    extra = {i["doc_title"] for i in load_gold(include_drafts=include_drafts)}
+    return TOPICS + sorted(extra - set(TOPICS))
+
+
 def add_arguments(parser: argparse.ArgumentParser) -> None:
     parser.add_argument(
         "--verify", action="store_true",
@@ -97,9 +109,13 @@ def add_arguments(parser: argparse.ArgumentParser) -> None:
     parser.add_argument(
         "--update-lock", action="store_true",
         help="accept the fetched corpus as the new pinned snapshot")
+    parser.add_argument(
+        "--include-drafts", action="store_true",
+        help="also fetch the articles LLM-drafted questions point at, into "
+             "data/raw/corpus-full.json with its own lock")
 
 
-def report_drift(docs: list[dict], update: bool) -> int:
+def report_drift(docs: list[dict], update: bool, lock_path: Path | None = None) -> int:
     """Compare against corpus.lock.json and say what moved.
 
     Wikipedia keeps editing underneath us, so a plain refetch is not
@@ -107,15 +123,16 @@ def report_drift(docs: list[dict], update: bool) -> int:
     command fails, names the articles that changed, and waits for someone to
     decide whether the published numbers still describe this corpus.
     """
-    if update or not LOCK.exists():
-        LOCK.parent.mkdir(parents=True, exist_ok=True)
+    lock_path = lock_path or LOCK
+    if update or not lock_path.exists():
+        lock_path.parent.mkdir(parents=True, exist_ok=True)
         lock = build_lock(docs, {d["doc_id"]: d.get("revid") for d in docs})
-        LOCK.write_text(json.dumps(lock, ensure_ascii=False, indent=2) + "\n",
-                        encoding="utf-8")
-        print(f"kilit yazildi: {lock['fingerprint']} -> {LOCK}")
+        lock_path.write_text(json.dumps(lock, ensure_ascii=False, indent=2) + "\n",
+                             encoding="utf-8")
+        print(f"kilit yazildi: {lock['fingerprint']} -> {lock_path}")
         return 0
 
-    lock = json.loads(LOCK.read_text(encoding="utf-8"))
+    lock = json.loads(lock_path.read_text(encoding="utf-8"))
     drift = compare_to_lock(lock, docs)
     if not drift:
         print(f"kilit dogrulandi: {lock['fingerprint']}")
@@ -125,53 +142,56 @@ def report_drift(docs: list[dict], update: bool) -> int:
     for line in drift:
         print(f"  {line}")
     print("\nYayinlanan sayilar bu korpusu tarif etmiyor olabilir. Kabul etmek "
-          "icin: turkish-rag-eval fetch-corpus --update-lock")
+          "icin: turkish-rag-eval fetch-corpus --update-lock"
+          + (" --include-drafts" if lock_path == FULL_LOCK else ""))
     return 1
 
 
 def run(args=None) -> int:
+    drafts = bool(args and getattr(args, "include_drafts", False))
+    out, lock_path = (FULL_OUT, FULL_LOCK) if drafts else (OUT, LOCK)
     if args is not None and getattr(args, "verify", False):
-        if not OUT.exists():
-            print(f"{OUT} yok - once fetch-corpus calistirin")
+        if not out.exists():
+            print(f"{out} yok - once fetch-corpus calistirin")
             return 1
-        return report_drift(load_corpus(OUT).docs, update=False)
+        return report_drift(load_corpus(out).docs, update=False, lock_path=lock_path)
 
     docs = {}
-    if OUT.exists():
-        for doc in json.loads(OUT.read_text(encoding="utf-8")):
+    if out.exists():
+        for doc in json.loads(out.read_text(encoding="utf-8")):
             docs[doc["title"]] = doc
     print(f"diskte {len(docs)} belge var\n")
 
-    # Contributed questions may point at articles outside the original list.
-    topics = TOPICS + sorted({i["doc_title"] for i in load_gold()} - set(TOPICS))
+    titles = topics(include_drafts=drafts)
 
     wanted = {}  # requested title -> resolved title, so redirects are visible
-    for i, topic in enumerate(topics, 1):
+    for i, topic in enumerate(titles, 1):
         fetched = fetch_batch([topic])
         if fetched:
             doc = fetched[0]
             docs[doc["title"]] = doc
             wanted[topic] = doc["title"]
             arrow = f" -> {doc['title']}" if doc["title"] != topic else ""
-            print(f"  [{i}/{len(topics)}] {topic}{arrow}: "
+            print(f"  [{i}/{len(titles)}] {topic}{arrow}: "
                   f"{len(doc['text'])} karakter")
         else:
-            print(f"  [{i}/{len(topics)}] {topic}: yok / cok kisa")
+            print(f"  [{i}/{len(titles)}] {topic}: yok / cok kisa")
         time.sleep(DELAY_SECONDS)
 
     ordered = sorted(docs.values(), key=lambda d: d["title"])
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(ordered, ensure_ascii=False, indent=2),
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(ordered, ensure_ascii=False, indent=2),
                    encoding="utf-8")
     chars = sum(len(d["text"]) for d in ordered)
-    print(f"\n{len(ordered)} belge, {chars} karakter -> {OUT}")
+    print(f"\n{len(ordered)} belge, {chars} karakter -> {out}")
 
-    missing = [t for t in topics if t not in wanted]
+    missing = [t for t in titles if t not in wanted]
     if missing:
         print(f"alinamayan {len(missing)}: {', '.join(missing)}")
 
-    return report_drift(load_corpus(OUT).docs,
-                        update=bool(args and getattr(args, "update_lock", False)))
+    return report_drift(load_corpus(out).docs,
+                        update=bool(args and getattr(args, "update_lock", False)),
+                        lock_path=lock_path)
 
 
 def main() -> int:

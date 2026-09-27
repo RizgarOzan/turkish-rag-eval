@@ -1,0 +1,5626 @@
+[
+  {
+    "qid": "q001",
+    "question": "Şeker hastalığı teşhisi konan kişilerin ne kadarında ketoasidoz da bulunuyor?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 15.038116627533986,
+    "found": true
+  },
+  {
+    "qid": "q002",
+    "question": "Çocuklarda tip 1 şeker hastalığı belirtileri ne kadar sürede ortaya çıkar?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 15.88594432712709,
+    "found": true
+  },
+  {
+    "qid": "q003",
+    "question": "Jüvenil diyabet terimi yerine bugün hangi isim kullanılıyor?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 27.713603886045966,
+    "found": true
+  },
+  {
+    "qid": "q004",
+    "question": "Şeker hastalığı için tarama hangi yaş aralığında öneriliyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 12.988211376438073,
+    "found": true
+  },
+  {
+    "qid": "q005",
+    "question": "Tip 1 diyabetin kesin bir çözümü var mı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 12.44135077365398,
+    "found": false
+  },
+  {
+    "qid": "q006",
+    "question": "Nefes darlığı hastalığının görülme oranı ülkelere göre ne kadar değişiyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 19.312968035426707,
+    "found": false
+  },
+  {
+    "qid": "q007",
+    "question": "Astım yüzünden yılda kaç kişi hayatını kaybediyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 21.64694815530093,
+    "found": true
+  },
+  {
+    "qid": "q008",
+    "question": "Astımın kalıtımla ilgisi ne kadar güçlü?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.767014912334025,
+    "found": true
+  },
+  {
+    "qid": "q009",
+    "question": "Küçük yaşta erkek ve kız çocukları arasında astım sıklığı farkı var mı?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 22.395095325158668,
+    "found": true
+  },
+  {
+    "qid": "q010",
+    "question": "Astımı ilk kez tıbbi olarak kim tarif etti?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.504048081017922,
+    "found": true
+  },
+  {
+    "qid": "q011",
+    "question": "Baş ağrısı krizlerinde görme bozukluğu yaşayanların oranı nedir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 16.876472785396167,
+    "found": false
+  },
+  {
+    "qid": "q012",
+    "question": "Migren atağı öncesi habercisi olan belirtiler ne kadar önce başlar?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 19.02081632676961,
+    "found": true
+  },
+  {
+    "qid": "q013",
+    "question": "Migren ağrısı her zaman başın tek yanında mı olur?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 24.37393705845244,
+    "found": true
+  },
+  {
+    "qid": "q014",
+    "question": "Aura evresi ne kadar sürer?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.03932150329733,
+    "found": true
+  },
+  {
+    "qid": "q015",
+    "question": "Migrende hangi nörotransmitterin rolü olduğu düşünülüyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 12.500665102647957,
+    "found": false
+  },
+  {
+    "qid": "q016",
+    "question": "Nezle benzeri hastalık kaç günde kendiliğinden geçer?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 7.912034277758065,
+    "found": true
+  },
+  {
+    "qid": "q017",
+    "question": "1918 salgını ilk nerede görüldü?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 17.216180114119148,
+    "found": true
+  },
+  {
+    "qid": "q018",
+    "question": "Böbrekte taş oluşan biri tekrar taş düşürme riskiyle karşılaşır mı?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 18.05190789114918,
+    "found": true
+  },
+  {
+    "qid": "q019",
+    "question": "Böbrek taşı ağrısı ne kadar sürer?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 17.56628500830803,
+    "found": false
+  },
+  {
+    "qid": "q020",
+    "question": "Dünya nüfusunun ne kadarı hayatı boyunca böbrek taşı yaşıyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 16.70900235479267,
+    "found": false
+  },
+  {
+    "qid": "q021",
+    "question": "İdrarda sitrat düşüklüğü hangi eşikle tanımlanır?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 16.47787927360069,
+    "found": true
+  },
+  {
+    "qid": "q022",
+    "question": "Unutkanlık hastalığında genetik sebeplerin payı ne kadar?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 9.075005528977364,
+    "found": false
+  },
+  {
+    "qid": "q023",
+    "question": "Alzheimer hastalarının ne kadarında sanrı görülür?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.66998175561778,
+    "found": false
+  },
+  {
+    "qid": "q024",
+    "question": "Damardan giren bir maddeye karşı ağır alerjik tepki ne kadar çabuk başlar?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 19.39085335482124,
+    "found": false
+  },
+  {
+    "qid": "q025",
+    "question": "Penisiline bağlı ağır alerji ne sıklıkla görülüyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 12.042135747919726,
+    "found": false
+  },
+  {
+    "qid": "q026",
+    "question": "Anafilakside nabız her zaman hızlanır mı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.821528002488792,
+    "found": true
+  },
+  {
+    "qid": "q027",
+    "question": "Sosyal kaygı sorunu olanlarda belirtiler ne zaman başlıyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "top_score": 14.562366512903106,
+    "found": true
+  },
+  {
+    "qid": "q028",
+    "question": "Travma sonrası stres bozukluğu her yıl kaç kişiyi etkiliyor?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 29.58627899169641,
+    "found": true
+  },
+  {
+    "qid": "q029",
+    "question": "OKB kaygı bozuklukları arasında mı sayılıyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.864932539484801,
+    "found": true
+  },
+  {
+    "qid": "q030",
+    "question": "Apandis iltihabı insanların ne kadarında görülüyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 14.357580902032346,
+    "found": true
+  },
+  {
+    "qid": "q031",
+    "question": "Apandis ameliyatında kesi ne kadar büyüklükte yapılıyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 12.563099445483763,
+    "found": false
+  },
+  {
+    "qid": "q032",
+    "question": "Damar sertliğinde tıkanmaların çoğu ne kadar daralmada meydana gelir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.598556306042394,
+    "found": false
+  },
+  {
+    "qid": "q033",
+    "question": "İki uçlu duygudurum bozukluğunda kalıtımın payı ne kadar?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 21.33407659405934,
+    "found": false
+  },
+  {
+    "qid": "q034",
+    "question": "Bacak damarında pıhtı kollarda da olur mu?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "top_score": 11.512769884485696,
+    "found": true
+  },
+  {
+    "qid": "q035",
+    "question": "Damar pıhtısı ne zaman kronik sayılır?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.586709963613067,
+    "found": false
+  },
+  {
+    "qid": "q036",
+    "question": "Cilt iltihabı ruh sağlığını etkiliyor mu?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.064076437635144,
+    "found": false
+  },
+  {
+    "qid": "q037",
+    "question": "Sara hastalığında tedaviye yanıt oranı nedir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 16.0013328638734,
+    "found": false
+  },
+  {
+    "qid": "q038",
+    "question": "Nöbetleri duran hastalarda ilaç ne kadar sürdürülür?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 14.654502692453416,
+    "found": true
+  },
+  {
+    "qid": "q039",
+    "question": "Hangi vitamin eksikliği nöbetlere yol açabiliyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 15.05945653363252,
+    "found": false
+  },
+  {
+    "qid": "q040",
+    "question": "Yaygın kas ağrısı sendromunda kaç hassas nokta tanımlanmış?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 17.08095315175008,
+    "found": true
+  },
+  {
+    "qid": "q041",
+    "question": "Romatizma hastalarında fibromiyalji ne sıklıkla eşlik ediyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 14.432264984062815,
+    "found": true
+  },
+  {
+    "qid": "q042",
+    "question": "Göz içi basıncı kaça kadar normal kabul edilir?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 20.064180939829576,
+    "found": true
+  },
+  {
+    "qid": "q043",
+    "question": "Ürik asit birikimi hastalığının ana sebebi nedir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 15.236889549529415,
+    "found": true
+  },
+  {
+    "qid": "q044",
+    "question": "Gut hastalarında metabolik sendrom ne kadar sık görülür?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 17.555806957821858,
+    "found": true
+  },
+  {
+    "qid": "q045",
+    "question": "Sarılık virüsü bulaştıktan ne kadar sonra belirti verir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 18.79261305464302,
+    "found": false
+  },
+  {
+    "qid": "q046",
+    "question": "Hepatit C kaç kişide ağır belirti yapıyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 9.851259762747727,
+    "found": false
+  },
+  {
+    "qid": "q047",
+    "question": "Hepatit C taşıyanlarda karaciğer sertleşmesi ne kadar sürede gelişir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "top_score": 17.247422142410826,
+    "found": true
+  },
+  {
+    "qid": "q048",
+    "question": "Tiroit az çalıştığında hormon değerleri nasıl çıkar?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 17.861972768237074,
+    "found": true
+  },
+  {
+    "qid": "q049",
+    "question": "Kalp krizi ağrısı ne kadar sürer ve pozisyonla değişir mi?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 23.775442781691925,
+    "found": true
+  },
+  {
+    "qid": "q050",
+    "question": "Sigaranın kalp damar hastalıklarındaki payı nedir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.1859587825249,
+    "found": false
+  },
+  {
+    "qid": "q051",
+    "question": "Kan nakli hangi hemoglobin değerinin altında gerekir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.081173817714859,
+    "found": false
+  },
+  {
+    "qid": "q052",
+    "question": "Göz merceği ameliyatı ilk kim tarafından tanımlandı?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 12.08274791319322,
+    "found": true
+  },
+  {
+    "qid": "q053",
+    "question": "Sigara dumanında kaç kimyasal madde bulunuyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 8.71391274400754,
+    "found": true
+  },
+  {
+    "qid": "q054",
+    "question": "Beyin zarı iltihabının en sık belirtisi nedir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 15.494720114097369,
+    "found": false
+  },
+  {
+    "qid": "q055",
+    "question": "Yetişkinlerde bakteriyel menenjite en çok hangi mikroplar yol açıyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 16.88977595221099,
+    "found": true
+  },
+  {
+    "qid": "q056",
+    "question": "MS hastalığı en çok hangi yaş grubunu etkiliyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "top_score": 11.003986521006997,
+    "found": true
+  },
+  {
+    "qid": "q057",
+    "question": "Aşırı kiloda genetik faktörlerin rolü ne kadar?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 17.699944587167398,
+    "found": false
+  },
+  {
+    "qid": "q058",
+    "question": "Emzirmeye doğumdan ne kadar sonra başlanmalı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 10.088005368674052,
+    "found": false
+  },
+  {
+    "qid": "llm-astronomi-001",
+    "question": "Kızıl Gezegen'in iki küçük uydusunu kim bulmuştur?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 12.851122629124854,
+    "found": false
+  },
+  {
+    "qid": "llm-astronomi-002",
+    "question": "Güney kutbundaki buzlar tamamen erise gezegeni kaplayacak su tabakası ne kadar derin olurdu?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.631912839532902,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-003",
+    "question": "Kızıl gezegenin merkezindeki demirce zengin iç kısmın büyüklüğü hakkında ne biliniyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 14.816167766532857,
+    "found": false
+  },
+  {
+    "qid": "llm-astronomi-004",
+    "question": "Gezegenin dış katmanı ortalamada kaç kilometre derinliğe iner?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.653440134352625,
+    "found": false
+  },
+  {
+    "qid": "llm-astronomi-005",
+    "question": "Bir uçurumdan buz bloklarının yuvarlandığı olay hangi tarihte kameraya yakalandı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.255359801125076,
+    "found": false
+  },
+  {
+    "qid": "llm-astronomi-006",
+    "question": "Gezegenin en eski jeolojik dönemi adını nereden alır?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 16.923029652017107,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-007",
+    "question": "Gaz devi yıldızın çevresindeki bir turunu kaç yılda bitirir?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 18.933953545160666,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-008",
+    "question": "Ganymede hangi gezegenden daha iridir?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 8.494079275952034,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-009",
+    "question": "Dev gezegenin dışarı yaydığı ışınım, yıldızından edindiğinin kaç misli ölçülmüştür?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 20.619067228290255,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-010",
+    "question": "Sistem I diye anılan dönme süresi kaç saat kaç dakikadır?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 24.053063042889043,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-011",
+    "question": "Son uzay sondasının ölçümlerine bakılırsa merkezdeki bulanık ağır bölge ne kadar dışarıya uzanıyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 12.304766474271275,
+    "found": false
+  },
+  {
+    "qid": "llm-astronomi-012",
+    "question": "Gezegenin en bilinen dev fırtınası hangi yıldan beri kayıtlarda yer alıyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 12.644969361373114,
+    "found": false
+  },
+  {
+    "qid": "llm-astronomi-013",
+    "question": "Halkalı gaz devinin ortalama özgül ağırlığı nedir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 12.086209114932839,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-014",
+    "question": "Kuzey kutbundaki altıgen yapının her bir kenarı ne uzunluktadır?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.057292253528548,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-015",
+    "question": "Halkaların ortalama kalınlığı ne kadardır?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 14.657878501605481,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-016",
+    "question": "Gezegen Güneş'ten aldığı enerjinin kaç katını uzaya geri salar?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "top_score": 23.703290575405486,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-017",
+    "question": "Satürn'deki şimşekler Dünya'dakilere kıyasla ne kadar güçlüdür?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 15.985181319345777,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-018",
+    "question": "Halkaların yaşını çok genç bulan ekip, onların hangi kayıp gökcisminden kaldığını öne sürdü?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 20.385031126738426,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-019",
+    "question": "Güneş'e en yakın ikinci gezegen neden en sıcak gezegendir?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 23.3351231412247,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-020",
+    "question": "Gezegenin gözlemlerinden söz eden en eski gökbilim belgesi hangisidir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 16.09105897591316,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-021",
+    "question": "Gezegenin bir atmosferi olduğunu ilk kim öne sürdü?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 20.820941829250508,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-022",
+    "question": "Atmosferin ana gazının karbondioksit olduğu hangi yöntemle anlaşıldı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 14.573131623169594,
+    "found": false
+  },
+  {
+    "qid": "llm-astronomi-023",
+    "question": "Bu gezegene ulaşan ilk başarılı sonda yüzey sıcaklığı hakkında ne buldu?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 18.94607206344797,
+    "found": false
+  },
+  {
+    "qid": "llm-astronomi-024",
+    "question": "Yüzeye çalışır halde inen ilk araç orada hangi sıcaklık ve basıncı ölçtü?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.72149635663936,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-025",
+    "question": "Buz devini 1612'de gözlemleyen ama onu yıldız sanan gökbilimci kimdir?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 12.292466065559957,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-026",
+    "question": "Sekizinci gezegen, hesaplanan konumun ne kadar yakınında bulundu?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "top_score": 13.245987264767045,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-027",
+    "question": "Plüton hangi yıllar arasında Güneş'e sekizinci gezegenden daha yakındı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.793513693925487,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-028",
+    "question": "Mavi buz devinin derinliklerinde metan neye dönüşür?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 14.32090610226875,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-029",
+    "question": "Güneş'ten en uzak gezegen, aldığı güneş enerjisinin kaç katını yayar?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 24.259213297086458,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-030",
+    "question": "Triton'un gezegen tarafından sonradan yakalandığını düşündüren özelliği nedir?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 18.078512849988996,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-031",
+    "question": "Yedinci gezegenin kutupları neden onlarca yıl kesintisiz aydınlık ya da karanlık kalır?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "top_score": 16.54902398619063,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-032",
+    "question": "Herschel'in bulduğu cismin kuyruklu yıldız olmadığını ilk kim, neye dayanarak gösterdi?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 33.086747135864144,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-033",
+    "question": "Keşiften sonra hükümdar gökbilimciye hangi şartla ne kadar ödeme yaptı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.003176825149254,
+    "found": false
+  },
+  {
+    "qid": "llm-astronomi-034",
+    "question": "Buz devinin hesaplanan yolundan sapması hangi keşfe götürdü?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 8.672770519158432,
+    "found": false
+  },
+  {
+    "qid": "llm-astronomi-035",
+    "question": "Kutuplar daha fazla güneş enerjisi almasına rağmen sıcaklık dağılımında ne gözleniyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 12.51343660463947,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-036",
+    "question": "Yedinci gezegenin başlıca ayları bir araya gelse Triton'a göre ne kadar ağır olur?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.87236245982254,
+    "found": false
+  },
+  {
+    "qid": "llm-astronomi-037",
+    "question": "1962'deki ışınım ölçümleri, gezegenin tek yüzünün sürekli karanlıkta kaldığı düşüncesini neden çürüttü?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 26.390760415505078,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-038",
+    "question": "1970'lerdeki sonda gezegenin neden ancak yarısına yakınının haritasını çıkarabildi?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "top_score": 19.090009104570882,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-039",
+    "question": "Güneş'e en yakın gezegen kalın bir hava tabakasını neden tutamaz?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 15.075208771853355,
+    "found": false
+  },
+  {
+    "qid": "llm-astronomi-040",
+    "question": "Gezegenin Güneş diski önünden geçişi ne sıklıkla ve hangi aylarda izlenebilir?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 20.77152758664694,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-041",
+    "question": "Antik Yunanlar şafakta ve alacakaranlıkta görülen bu gökcismini hangi adlarla anıyordu?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 8.310090944061256,
+    "found": false
+  },
+  {
+    "qid": "llm-astronomi-042",
+    "question": "Çekirdek sıvı demir barındıramayacak kadar soğuksa bugünkü manyetizmanın kaynağı ne olabilir?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 17.65567307989754,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-043",
+    "question": "Gelgit kabarıklığının uyduyu frenleyen etkisi ne zaman ve neden sona erdi?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 12.869719192846429,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-044",
+    "question": "Koyu bazalt düzlüklerin neredeyse yalnız yakın tarafta toplanması en makul biçimde nasıl açıklanıyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.110898628936836,
+    "found": false
+  },
+  {
+    "qid": "llm-astronomi-045",
+    "question": "Kutuplara yakın bazı çukurlarda donmuş suyun uzun süre kalabilmesini ne mümkün kılar?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.28889892611399,
+    "found": false
+  },
+  {
+    "qid": "llm-astronomi-046",
+    "question": "1994 görevinin radar sinyalinin buz olduğu yorumu neden şüpheli hâle geldi ve bugün ne biliniyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 14.633560598051599,
+    "found": false
+  },
+  {
+    "qid": "llm-astronomi-047",
+    "question": "Uydunun hafifçe uzamış biçimi, geçmişte Dünya'ya ne kadar yakın olduğunu nasıl gösterir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "top_score": 14.006013314508454,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-048",
+    "question": "Kabuktaki mıknatıslanmayı eski bir iç dinamoya bağlayan fikrin önünde hangi engel var ve yerine ne öneriliyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 14.677672481372372,
+    "found": true
+  },
+  {
+    "qid": "llm-astronomi-049",
+    "question": "Uydunun başka yerde oluşup sonradan Dünya'nın çekimine girdiği fikri neden olanaksız sayılır?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 16.776630889652004,
+    "found": true
+  },
+  {
+    "qid": "llm-bilgisayar-001",
+    "question": "Paketlenmiş ilk tam dağıtımın arkasındaki geliştirici kimdir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 10.336688223388037,
+    "found": false
+  },
+  {
+    "qid": "llm-bilgisayar-002",
+    "question": "Maskot olarak kullanılan pengueni kim çizdi?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 7.249000946476717,
+    "found": false
+  },
+  {
+    "qid": "llm-bilgisayar-003",
+    "question": "Dünyanın en hızlı 500 süperbilgisayarının ne kadarı bu işletim sistemini çalıştırıyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 14.293634692446659,
+    "found": true
+  },
+  {
+    "qid": "llm-bilgisayar-004",
+    "question": "Torvalds çekirdeğin lisansını neden GPL'in yeni sürümüne taşımak istemiyor?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 18.60875980198862,
+    "found": true
+  },
+  {
+    "qid": "llm-bilgisayar-005",
+    "question": "Kişisel bilgisayar kullanıcıları arasında bu işletim sisteminin yaygınlığı yüzde kaçtır?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "top_score": 16.67926370026858,
+    "found": true
+  },
+  {
+    "qid": "llm-bilgisayar-006",
+    "question": "Büyük bir oyun mağazası bu sisteme ne zaman resmî destek getirdi?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.92635420483429,
+    "found": true
+  },
+  {
+    "qid": "llm-bilgisayar-007",
+    "question": "Ülkedeki ilk erişim noktası hangi okulda ve ne zaman devreye girdi?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.451412050559558,
+    "found": false
+  },
+  {
+    "qid": "llm-bilgisayar-008",
+    "question": "Yayın araçlarının ellişer milyon izleyiciye erişme süreleri kaç yıl olarak veriliyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 10.176216370737661,
+    "found": false
+  },
+  {
+    "qid": "llm-bilgisayar-009",
+    "question": "Türk Dil Kurumu bu terim yerine hangi adı teklif etmiştir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 18.100159015000713,
+    "found": false
+  },
+  {
+    "qid": "llm-bilgisayar-010",
+    "question": "Bu kelimenin açılımı nedir ve hangi yıldan beri kullanımdadır?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 12.188123165497107,
+    "found": false
+  },
+  {
+    "qid": "llm-bilgisayar-011",
+    "question": "Ağın herkesin erişimine açılması hangi güne denk gelir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.337282098037,
+    "found": false
+  },
+  {
+    "qid": "llm-bilgisayar-012",
+    "question": "TÜVAKA adlı akademik ağ hangi yıl ve kimin önderliğinde kuruldu?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 12.992814220950564,
+    "found": true
+  },
+  {
+    "qid": "llm-bilgisayar-013",
+    "question": "İşletim sisteminin ilk sürümü hangi adla ortaya çıktı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "top_score": 16.130370946793928,
+    "found": true
+  },
+  {
+    "qid": "llm-bilgisayar-014",
+    "question": "Çekirdeğin C diliyle yeniden yazılması sistemin kaçıncı sürümünü doğurdu?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.273184222073315,
+    "found": false
+  },
+  {
+    "qid": "llm-bilgisayar-015",
+    "question": "Berkeley'deki öğrenciler özgün kaynak kodun ne kadarını değiştirdi?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 18.682245992926386,
+    "found": true
+  },
+  {
+    "qid": "llm-bilgisayar-016",
+    "question": "Üniversite dışındaki kullanıcılar lisans için ne kadar ödüyordu?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 23.74686581585381,
+    "found": true
+  },
+  {
+    "qid": "llm-bilgisayar-017",
+    "question": "Marka ve tanımın bugünkü sahibine devri ne zaman oldu?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.212492702047047,
+    "found": false
+  },
+  {
+    "qid": "llm-bilgisayar-018",
+    "question": "Sistemin kökeni olan ortak proje hangi kurumlarca başlatıldı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 7.69045570803856,
+    "found": false
+  },
+  {
+    "qid": "llm-bilgisayar-019",
+    "question": "Java programlarının çalıştırıldığı sanal makine hangi ara dili kullanır?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 39.18032760737611,
+    "found": true
+  },
+  {
+    "qid": "llm-bilgisayar-021",
+    "question": "Derleme sırasında daha verimli makine kodu üretme çabasına ne denir?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 30.22755987418084,
+    "found": true
+  },
+  {
+    "qid": "llm-bilgisayar-022",
+    "question": "En yüksek çalışma performansı hangi derleme tekniğini kullanan dillerden elde edilir?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 37.70721681206392,
+    "found": true
+  },
+  {
+    "qid": "llm-bilgisayar-023",
+    "question": "Örnekteki LOAD, ADD ve STOR komutları hangi ikili kodlara karşılık gelir?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 36.77205346958958,
+    "found": true
+  },
+  {
+    "qid": "llm-bilgisayar-024",
+    "question": "Kaynak kodu jetonlara ayıran ön uç aşamasının adı nedir?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 18.245954526602183,
+    "found": true
+  },
+  {
+    "qid": "llm-bilgisayar-025",
+    "question": "UNIVAC 1 bilgisayarında hangi yönetim programı kullanılıyordu?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 12.597613279400901,
+    "found": true
+  },
+  {
+    "qid": "llm-bilgisayar-026",
+    "question": "Anlık tepki gerektiren uygulamalar için yapılan sistem yazılımlarında asıl hedef nedir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 16.00496105318679,
+    "found": true
+  },
+  {
+    "qid": "llm-bilgisayar-027",
+    "question": "Kernel mimarileri hangi türlere ayrılır?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 7.69045570803856,
+    "found": false
+  },
+  {
+    "qid": "llm-bilgisayar-028",
+    "question": "Özgür Unix benzeri sistemin iki bileşeni hangi yıllarda kimlerce başlatıldı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 15.318649854831914,
+    "found": false
+  },
+  {
+    "qid": "llm-bilgisayar-029",
+    "question": "Be şirketinin sistem yazılımı hangi dilde kodlanmıştı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 10.064366952694762,
+    "found": false
+  },
+  {
+    "qid": "llm-bilgisayar-030",
+    "question": "Linux tabanlı sistemlerin ev bilgisayarlarındaki tahmini payı nedir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.65096362629447,
+    "found": true
+  },
+  {
+    "qid": "llm-bilgisayar-031",
+    "question": "Bu depolama sistemleri hangi eski yaklaşımın yerine geliştirildi?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.099266441729764,
+    "found": true
+  },
+  {
+    "qid": "llm-bilgisayar-032",
+    "question": "Gündelik yaşamda karşılaşılan kayıt saklama sistemlerine hangi örnekler veriliyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 10.680280143050286,
+    "found": false
+  },
+  {
+    "qid": "llm-bilgisayar-033",
+    "question": "Bu alanda ayrı bir uzmanlık rolünün ortaya çıkmasına ne yol açtı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 14.07430966662757,
+    "found": false
+  },
+  {
+    "qid": "llm-bilgisayar-034",
+    "question": "NoSQL sistemleri hangi ilkeyle çalışır ve tablolu sistemlere göre üstünlükleri nedir?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.84214525316041,
+    "found": true
+  },
+  {
+    "qid": "llm-bilgisayar-035",
+    "question": "En yaygın modelde tabloların yatay ve dikey bölümleri neyi temsil eder?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 15.167125252772687,
+    "found": true
+  },
+  {
+    "qid": "llm-bilgisayar-036",
+    "question": "Depolanacak kayıtların yapısını tarif eden tanıma ne ad verilir?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 19.89147516058179,
+    "found": true
+  },
+  {
+    "qid": "llm-bilgisayar-037",
+    "question": "Ağ ile genel bilgisayar ağları sistemi neden aynı kavram sayılmaz?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 17.607689491918745,
+    "found": true
+  },
+  {
+    "qid": "llm-bilgisayar-038",
+    "question": "Sayfaların geç açılması yüzünden sisteme hangi şaka yollu ad takılmıştır?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 9.69101238481766,
+    "found": false
+  },
+  {
+    "qid": "llm-bilgisayar-039",
+    "question": "Bir kaynak adresi, istemcinin nesneyi bulabilmesi için hangi üç bilgiyi içerir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 14.495064638089648,
+    "found": false
+  },
+  {
+    "qid": "llm-bilgisayar-040",
+    "question": "Ziyaretçiler çoğunlukla ne kadar bekledikten sonra sayfayı bırakıp gider?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 10.529228309763718,
+    "found": false
+  },
+  {
+    "qid": "llm-bilgisayar-041",
+    "question": "Alan adlarını sayısal adreslere çeviren sunucular ne yapar ve neye benzetilir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.035608998193931,
+    "found": false
+  },
+  {
+    "qid": "llm-bilgisayar-042",
+    "question": "2009 yılındaki araştırmaya göre sosyal ağ kullanıcılarının ne kadarı mahremiyet seçeneklerini açıyordu?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.12499157340892,
+    "found": false
+  },
+  {
+    "qid": "llm-bilgisayar-043",
+    "question": "Bir zamanlar zeki sayılan becerilerin sonradan alanın dışında sayılmasına ne denir ve bu durum hangi espriyle özetlenir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.811775523321305,
+    "found": false
+  },
+  {
+    "qid": "llm-bilgisayar-044",
+    "question": "İlk dönemin adım adım çıkarım yapan yöntemleri büyük problemlerde neden tıkanır?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 20.319132948947203,
+    "found": true
+  },
+  {
+    "qid": "llm-bilgisayar-045",
+    "question": "1974'te iki hükûmeti keşif amaçlı çalışmalara desteği kesmeye ne yöneltti?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 28.34103482253974,
+    "found": true
+  },
+  {
+    "qid": "llm-bilgisayar-046",
+    "question": "2012'den sonra derin ağların hızla yayılmasını hangi etkenler mümkün kıldı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 10.98130728466916,
+    "found": false
+  },
+  {
+    "qid": "llm-bilgisayar-047",
+    "question": "Kurallara dayalı uzman programlar hangi kurumlar için kolay uygulanabilirdi ve bunun bedeli neydi?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 16.339165913466058,
+    "found": true
+  },
+  {
+    "qid": "llm-bilgisayar-048",
+    "question": "Kendini durmadan geliştiren yazılımın sınırsız hızlanacağı düşüncesine hangi itiraz getiriliyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 7.69045570803856,
+    "found": false
+  },
+  {
+    "qid": "llm-biyoloji-001",
+    "question": "Bir karaciğer hücresi kaç tane enerji organeli barındırabilir?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 15.719534514163406,
+    "found": true
+  },
+  {
+    "qid": "llm-biyoloji-002",
+    "question": "Organelin kendi genetik materyali kaç baz çifti uzunluğundadır?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 18.879006466962842,
+    "found": false
+  },
+  {
+    "qid": "llm-biyoloji-003",
+    "question": "Organele bugün kullandığımız adı ilk kim verdi?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "top_score": 9.25867039623378,
+    "found": true
+  },
+  {
+    "qid": "llm-biyoloji-004",
+    "question": "'Hücrenin enerji santrali' benzetmesini ilk kim ortaya attı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.351587225627952,
+    "found": true
+  },
+  {
+    "qid": "llm-biyoloji-005",
+    "question": "Organelin iç zarının içeri doğru yaptığı kıvrımlara ne ad verilir?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.255222689083647,
+    "found": true
+  },
+  {
+    "qid": "llm-biyoloji-006",
+    "question": "Avrupa'da kaç kişi bu organelin DNA'sından kaynaklanan hastalıklarla yaşıyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 8.381301837025635,
+    "found": true
+  },
+  {
+    "qid": "llm-biyoloji-007",
+    "question": "Söğüt fidanı denemesini yapan araştırmacı beş yılın sonundaki ağırlık artışını neye bağladı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.432710104577488,
+    "found": true
+  },
+  {
+    "qid": "llm-biyoloji-008",
+    "question": "Havanın arınmasının ancak aydınlıkta olduğunu 1779'da kim ortaya koydu?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 17.063520983206782,
+    "found": true
+  },
+  {
+    "qid": "llm-biyoloji-009",
+    "question": "Karanlık evre döngüsüne adını veren bilim insanı hangi ödülü kazanmıştır?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 16.395792872734376,
+    "found": true
+  },
+  {
+    "qid": "llm-biyoloji-010",
+    "question": "Dünya genelinde bu süreçle yakalanan güç ne düzeydedir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 9.47417515386696,
+    "found": false
+  },
+  {
+    "qid": "llm-biyoloji-011",
+    "question": "Hangi renkteki ışıkta verim en düşüktür?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "top_score": 10.770668557566767,
+    "found": true
+  },
+  {
+    "qid": "llm-biyoloji-012",
+    "question": "Su oranı hangi düzeyin altına inince olay tümüyle durur?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 17.523546933406134,
+    "found": true
+  },
+  {
+    "qid": "llm-biyoloji-013",
+    "question": "Hayvan ve bitki hücrelerindeki protein üretim birimi hangi iki alt parçadan oluşur?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 25.182607292140883,
+    "found": true
+  },
+  {
+    "qid": "llm-biyoloji-014",
+    "question": "Bakterilerdeki protein üretim biriminin toplam çökelme değeri nedir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.053672650004103,
+    "found": false
+  },
+  {
+    "qid": "llm-biyoloji-015",
+    "question": "Protein üretim makinesinin A, P ve E bölgeleri sırasıyla neye bağlanır?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 10.576771069591015,
+    "found": true
+  },
+  {
+    "qid": "llm-biyoloji-016",
+    "question": "Bazı antibiyotikler insan hücrelerine dokunmadan bakterileri nasıl vurabilir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.115800501814638,
+    "found": false
+  },
+  {
+    "qid": "llm-biyoloji-018",
+    "question": "Hücre içi zar ağına tutunmuş ribozomlar ne tür proteinler üretir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 19.108944363171595,
+    "found": true
+  },
+  {
+    "qid": "llm-biyoloji-019",
+    "question": "Biyolojik katalizörlerin bilinen kaç farklı tepkimeyi hızlandırdığı biliniyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.506929030753337,
+    "found": true
+  },
+  {
+    "qid": "llm-biyoloji-020",
+    "question": "Hücresiz maya özüyle şekerin mayalanabildiğini kim gösterdi?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 15.334040561766948,
+    "found": true
+  },
+  {
+    "qid": "llm-biyoloji-021",
+    "question": "Bir enzimin yalnızca proteinden ibaret olduğunu kristal elde ederek 1920'lerde kim kanıtladı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.447219020280745,
+    "found": false
+  },
+  {
+    "qid": "llm-biyoloji-023",
+    "question": "Aynı tepkimeyi hızlandıran ama amino asit dizisi farklı olan enzimlere ne denir?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 26.277859615918718,
+    "found": true
+  },
+  {
+    "qid": "llm-biyoloji-024",
+    "question": "Hata denetimi yapan polimerazlarda yanlışlık oranı ne kadardır?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 18.401474487081973,
+    "found": true
+  },
+  {
+    "qid": "llm-biyoloji-025",
+    "question": "Ribonükleik asitte DNA'daki timinin yerini hangi baz alır?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 22.812934224547746,
+    "found": false
+  },
+  {
+    "qid": "llm-biyoloji-026",
+    "question": "Riboz şekerindeki ek OH grubu molekülü neden daha kırılgan yapar?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.471116921569187,
+    "found": true
+  },
+  {
+    "qid": "llm-biyoloji-027",
+    "question": "Amino asitleri ribozoma getiren molekül yaklaşık kaç nükleotit uzunluğundadır?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 21.96260511609354,
+    "found": false
+  },
+  {
+    "qid": "llm-biyoloji-028",
+    "question": "Tipik bir ökaryot hücresinin sitoplazmasındaki ribonükleik asidin ne kadarı ribozomaldir?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 10.809953191582487,
+    "found": true
+  },
+  {
+    "qid": "llm-biyoloji-029",
+    "question": "Dişi memelilerde iki X kromozomundan birini hangi molekül susturur?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.41836665029375,
+    "found": true
+  },
+  {
+    "qid": "llm-biyoloji-030",
+    "question": "Bir maya nükleik asidinin dizisini ilk okuyan araştırmacı hangi ödülü kazandı?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 19.73683548484835,
+    "found": true
+  },
+  {
+    "qid": "llm-biyoloji-031",
+    "question": "Orak hücre hastalığında protein zincirinde ne değişir ve bunun sonucu ne olur?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 14.335182503646385,
+    "found": false
+  },
+  {
+    "qid": "llm-biyoloji-032",
+    "question": "Akdeniz anemisi hangi gelişimsel aksaklıktan doğar?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 12.456267638450157,
+    "found": true
+  },
+  {
+    "qid": "llm-biyoloji-033",
+    "question": "Kırmızı kan hücresindeki taşıyıcı proteine karbon monoksit tutunursa ne olur?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 14.566083242741653,
+    "found": false
+  },
+  {
+    "qid": "llm-biyoloji-034",
+    "question": "Siyanür zehirlenmesinde acil tedavi olarak ne yapılmalıdır?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 9.674641049565494,
+    "found": false
+  },
+  {
+    "qid": "llm-biyoloji-035",
+    "question": "Dışarıdan iğneyle ya da yiyecekle alınan hem öncülü vücutta neden kullanılamaz?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.395940453775241,
+    "found": false
+  },
+  {
+    "qid": "llm-biyoloji-036",
+    "question": "Anne karnındaki bebeğin kan pigmenti oksijeni yetişkininkine göre ne kadar güçlü tutar?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.88536687547893,
+    "found": false
+  },
+  {
+    "qid": "llm-biyoloji-037",
+    "question": "Belirli dizileri tanıyan düzenleyici proteinler sarmalın hangi oluğundan bazlara ulaşır?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 19.449777574637718,
+    "found": false
+  },
+  {
+    "qid": "llm-biyoloji-038",
+    "question": "Guanin-sitozin eşleşmesini adenin-timin eşleşmesinden daha sağlam kılan nedir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 36.771120666155795,
+    "found": false
+  },
+  {
+    "qid": "llm-biyoloji-039",
+    "question": "Metil grubu eklenmiş sitozin bazları neden kalıtsal değişikliğe daha açıktır?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 15.47634443640159,
+    "found": true
+  },
+  {
+    "qid": "llm-biyoloji-040",
+    "question": "Kromozomların uç bölgeleri neden sıradan kopyalama enzimleri yerine özel bir enzimle çoğaltılır?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 23.524937529828478,
+    "found": true
+  },
+  {
+    "qid": "llm-biyoloji-041",
+    "question": "Baz çiftlerinin arasına giren ve kanser yapabilen maddeler tedavide neden işe yarar?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.795105078205218,
+    "found": false
+  },
+  {
+    "qid": "llm-biyoloji-042",
+    "question": "İnsan kalıtım malzemesinin yüzde kaçı protein kodlar, yüzde kaçı yinelenen dizilerden oluşur?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 31.53160595209762,
+    "found": true
+  },
+  {
+    "qid": "llm-biyoloji-043",
+    "question": "Amino asitleri birbirine bağlayan bağ neden kendi ekseninde dönemez ve bunun sonucu nedir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 15.340139732876782,
+    "found": false
+  },
+  {
+    "qid": "llm-biyoloji-044",
+    "question": "Kısa zincirlere hangi durumda farklı bir ad verilir ve iki terimi ayıran sınır ne kadar nettir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.244170721302176,
+    "found": false
+  },
+  {
+    "qid": "llm-biyoloji-045",
+    "question": "Kalıtım şifresinde neden birkaç üçlü aynı yapı taşını gösterebilir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.55400514158256,
+    "found": false
+  },
+  {
+    "qid": "llm-biyoloji-046",
+    "question": "Çekirdekli hücrelerde mesaj molekülü üretildiği yerden nereye taşınır ve zincir nerede kurulur?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 9.848243451313014,
+    "found": false
+  },
+  {
+    "qid": "llm-biyoloji-047",
+    "question": "Uzun zincirleri laboratuvarda yapay olarak üretmek neden işe yaramaz?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 10.268798338958218,
+    "found": false
+  },
+  {
+    "qid": "llm-biyoloji-048",
+    "question": "Hücre zarında bulunan moleküller yapı veri bankasında neden az yer tutar?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 14.905101812059655,
+    "found": false
+  },
+  {
+    "qid": "llm-cografya-001",
+    "question": "UNESCO'nun koruma listesine bölgenin girişi hangi yıla dayanır?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "top_score": 7.69045570803856,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-002",
+    "question": "Bölgenin adına rastlanan en eski yazılı belgeler hangi yüzyıldan ve hangi halktan kalmadır?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 15.38091141607712,
+    "found": false
+  },
+  {
+    "qid": "llm-cografya-003",
+    "question": "Bölgeye yakıştırılan 'güzel atların memleketi' benzetmesinin aslında sonradan icat edildiğini kim söyledi?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 10.618706449847615,
+    "found": false
+  },
+  {
+    "qid": "llm-cografya-004",
+    "question": "Anadolu'daki bu yerel krallık Roma yönetimine doğrudan hangi yıl bağlandı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 17.97925273909458,
+    "found": false
+  },
+  {
+    "qid": "llm-cografya-005",
+    "question": "Peribacalarının tepesindeki şapka biçimli kısımlar hangi kaya türündendir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "top_score": 8.171175277538723,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-006",
+    "question": "Patent kurumunun 2020 kararına göre bölgenin kalbi sayılan yerleşim neresidir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.815234036498905,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-007",
+    "question": "Türkiye'nin en yüksek zirvesinin ne kadarlık bölümü Iğdır sınırları içinde kalır?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 21.348882561216872,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-008",
+    "question": "Doruktaki kalıcı buzulun yüzölçümü nedir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.1859587825249,
+    "found": false
+  },
+  {
+    "qid": "llm-cografya-009",
+    "question": "Zirveye çıkan ilk kişi olarak kayıtlara kim ve hangi tarihle geçmiştir?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.843504346816136,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-010",
+    "question": "1840 yazındaki olayda meydana gelen sarsıntının büyüklüğü neydi?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.792787539743731,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-011",
+    "question": "Dağın Kürtçe adı ne anlama gelir?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 21.499406860091234,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-012",
+    "question": "Dağa çıkış hangi yıl yasaklandı, yasak ne zaman kalktı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 14.500285191672653,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-013",
+    "question": "Türkiye'nin tuz tüketiminin ne kadarı İç Anadolu'daki bu gölden karşılanır?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 32.483783801611956,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-014",
+    "question": "Gölün beslendiği havzaya yılda ortalama ne kadar yağış düşer?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 22.641197282833964,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-015",
+    "question": "Yaz sonunda göl suyundaki tuz yoğunluğu hangi değere çıkar?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 19.861497764426446,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-016",
+    "question": "Gölün güneybatı kıyısının kırmızıya dönmesine hangi canlı yol açar?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 14.802214276698214,
+    "found": false
+  },
+  {
+    "qid": "llm-cografya-017",
+    "question": "Yapılan bir araştırmaya göre göl yirminci yüzyılın başından beri ne kadar daraldı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 14.112891515242744,
+    "found": false
+  },
+  {
+    "qid": "llm-cografya-018",
+    "question": "Sultanhanı'ndaki yeraltı gaz deposunda ne kadar doğalgaz saklanabilecek?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 22.584077422878167,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-019",
+    "question": "Anadolu'nun en uzun iç akarsuyu kaç kilometredir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "top_score": 13.662229413467053,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-020",
+    "question": "Irmağın denize döküldüğü yerdeki sulak alan ne büyüklüktedir?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.522001491544763,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-021",
+    "question": "Irmağın ortalama akış miktarı saniyede kaç metreküptür?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.737878265720461,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-022",
+    "question": "Irmak Türkiye yüzölçümünün ne kadarının sularını toplar?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.102454056047462,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-023",
+    "question": "Deltada kaç kuş türü yaşar?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 9.57075005159884,
+    "found": false
+  },
+  {
+    "qid": "llm-cografya-024",
+    "question": "Hititler bu akarsuya hangi adı vermişti?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "top_score": 9.921341085119247,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-025",
+    "question": "Bursa'dan bakınca doruk sanılan tepenin adı ve yüksekliği nedir?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 21.020008163021544,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-026",
+    "question": "Dağ bugünkü adını hangi yıl ve kimin önerisiyle aldı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 17.352173940780226,
+    "found": false
+  },
+  {
+    "qid": "llm-cografya-027",
+    "question": "Türkiye'nin ilk teleferiği ne zaman işletmeye açıldı?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 17.358539704153248,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-028",
+    "question": "Ülkede buzul çağından kalma izlere ilk kez nerede ve ne zaman rastlandı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 14.623151096423786,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-029",
+    "question": "Bursa'daki bu dağda şimdiye kadar ölçülen en kalın kar örtüsü ne kadardı?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 16.750611501710015,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-030",
+    "question": "Bizans döneminde Nilüfer ile Deliçay arasındaki vadilerde kaç keşiş yapısı vardı?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 22.900834453192445,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-031",
+    "question": "Antik bir coğrafyacının doruktan görülebildiğini söylediği manzara bugün neden görülemez?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 8.383199744287523,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-032",
+    "question": "Ürgüp ve Göreme'deki kaya oluşumlarıyla Kayseri'deki yanardağ arasında nasıl bir bağ var?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 26.59144437015156,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-033",
+    "question": "Buz kütleleri dağın tepesini nasıl değiştirdi?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.939457948104,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-034",
+    "question": "Uzmanlar İç Anadolu'nun en yüksek dağının yeniden lav püskürtme olasılığını nasıl değerlendiriyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 15.467497385663556,
+    "found": false
+  },
+  {
+    "qid": "llm-cografya-035",
+    "question": "Bugün dağın hangi vadilerinde hâlâ buzul bulunuyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 14.285303003158067,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-036",
+    "question": "Kayseri'de bir yılda düşen yağmur ve kar miktarı mevsimlere nasıl dağılır?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 14.114185296294279,
+    "found": false
+  },
+  {
+    "qid": "llm-cografya-037",
+    "question": "Doğu Anadolu'daki bu büyük göl yüksekte ve soğuk bir bölgede olmasına karşın neden buz tutmaz?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 24.29966131424068,
+    "found": false
+  },
+  {
+    "qid": "llm-cografya-038",
+    "question": "Efsanevi yaratıkla ilgili bilinen en eski haber hangi gazetede çıktı ve ne anlatıyordu?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 16.842695349982236,
+    "found": false
+  },
+  {
+    "qid": "llm-cografya-039",
+    "question": "Akdamar Adası'ndaki kilise kimin emriyle ve hangi yıllar arasında yapıldı?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 15.768659403299708,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-040",
+    "question": "Araştırmacılar gölün ileride küçülmesini ya da kaybolmasını hangi sürece bağlıyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 14.011868763280322,
+    "found": false
+  },
+  {
+    "qid": "llm-cografya-041",
+    "question": "Su seviyesinin tepe yaptığı yıl hangi yılın yağışının etkisini taşıyordu?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.791113271055455,
+    "found": false
+  },
+  {
+    "qid": "llm-cografya-042",
+    "question": "Tuzlu ve sodalı suda yaşadığı bilinen iki balık türü hangileridir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 26.046033166157006,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-043",
+    "question": "Irmağın taşıdığı suyun çoğu nereden gelir ve akımı kış ile bahar arasında nasıl değişir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "top_score": 15.675868275491677,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-044",
+    "question": "Irmağın adının hangi dillerden çıktığı konusunda bugün hangi görüş öne çıkıyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 19.479188931274763,
+    "found": false
+  },
+  {
+    "qid": "llm-cografya-045",
+    "question": "Irmağın barajlardan elektrik üretimi için bu kadar elverişli olmasının coğrafi nedeni nedir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.1859587825249,
+    "found": false
+  },
+  {
+    "qid": "llm-cografya-046",
+    "question": "Tünellerle su götürülen Harran'da tarım nasıl dönüştü?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 9.570283237847942,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-047",
+    "question": "Suriye'de katılan üç yan akarsudan hangisi en büyüğüdür ve hangi ölçütlere göre?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.945836263965525,
+    "found": true
+  },
+  {
+    "qid": "llm-cografya-048",
+    "question": "Nehir Irak'a geçtikten sonra besleyen kolları bakımından ne değişir?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 19.359958688591995,
+    "found": true
+  },
+  {
+    "qid": "llm-tarih-001",
+    "question": "Savaştan dokuz yıl sonra Selçuklular Anadolu'da ne büyüklükte bir toprağı denetimleri altına almıştı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 15.254879599389309,
+    "found": false
+  },
+  {
+    "qid": "llm-tarih-002",
+    "question": "Bizanslı askerlerin taşıdığı uzun saplı silahların ağacı hangi yöreden geliyordu?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 9.926019044229246,
+    "found": false
+  },
+  {
+    "qid": "llm-tarih-003",
+    "question": "Selçuklu hükümdarının sahte geri çekilmeye dayanan savaş planı hangi adla anılır?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.326438561233232,
+    "found": true
+  },
+  {
+    "qid": "llm-tarih-004",
+    "question": "Esir alınan imparator yakalandığında vücudunun neresinden yaralanmıştı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.592468652412327,
+    "found": false
+  },
+  {
+    "qid": "llm-tarih-005",
+    "question": "Bizans imparatoru topladığı orduyla başkentten hangi gün ayrıldı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 12.822383996828725,
+    "found": true
+  },
+  {
+    "qid": "llm-tarih-006",
+    "question": "Savaşa Kürt birliklerinin katıldığını yazan en eski kaynak olaydan ne kadar zaman sonra kaleme alınmıştır?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 34.25602799530886,
+    "found": true
+  },
+  {
+    "qid": "llm-tarih-007",
+    "question": "Haliç'i kapatmak için gerilen zincirin baklaları hangi kalınlık aralığındaydı?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 12.711799460684674,
+    "found": true
+  },
+  {
+    "qid": "llm-tarih-008",
+    "question": "Kente yardıma gelen Cenevizli komutana kazanma hâlinde hangi ada söz verilmişti?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.029886423299128,
+    "found": true
+  },
+  {
+    "qid": "llm-tarih-009",
+    "question": "Urban'ın döktüğü dev silahın attığı tek mermi ne kadar ağırlıktaydı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "top_score": 12.448678131243522,
+    "found": true
+  },
+  {
+    "qid": "llm-tarih-010",
+    "question": "Boğazdan geçmeye çalışırken batırılan Venedik gemisinin kaptanı nasıl öldürüldü?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.327480328389607,
+    "found": true
+  },
+  {
+    "qid": "llm-tarih-011",
+    "question": "On iki yaşındaki hükümdar babasını sefere çağıran mektubunda ne yazmıştı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 12.697375314880174,
+    "found": false
+  },
+  {
+    "qid": "llm-tarih-012",
+    "question": "Kara tarafındaki asıl duvarın ilerisine çekilen ikinci savunma hattı ne kadar yüksekti?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 12.102549546096839,
+    "found": false
+  },
+  {
+    "qid": "llm-tarih-013",
+    "question": "Yavuz'un ordusu doğuya yürürken ihtiyat ve erzak için ayrılan birlik nereye konuşlandırıldı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 15.440600616625042,
+    "found": false
+  },
+  {
+    "qid": "llm-tarih-014",
+    "question": "Safevi hükümdarını kolundan ve bacağından yaralayan Osmanlı komutanı hangi silahı kullandı?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 14.349128802712265,
+    "found": true
+  },
+  {
+    "qid": "llm-tarih-015",
+    "question": "Şah İsmail savaş meydanından kaçarken kimin kılığına girdi?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 23.17104138348448,
+    "found": true
+  },
+  {
+    "qid": "llm-tarih-016",
+    "question": "Galip padişah düşman başkentine hangi tarihte girdi?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 10.920232501483394,
+    "found": false
+  },
+  {
+    "qid": "llm-tarih-017",
+    "question": "Osmanlı hattında azapların önüne kaç top yerleştirilmişti?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 15.39517883945522,
+    "found": false
+  },
+  {
+    "qid": "llm-tarih-018",
+    "question": "Yenilgiden sonra Safevi hükümdarı ölümüne kadar başka bir sefere çıktı mı?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 16.784094196860565,
+    "found": true
+  },
+  {
+    "qid": "llm-tarih-019",
+    "question": "Kanuni'nin Macaristan seferine çıkarken yanında kaç asker ve kaç top vardı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "top_score": 23.376349135975374,
+    "found": true
+  },
+  {
+    "qid": "llm-tarih-020",
+    "question": "Seferin asıl hedefinin Budin olduğu askerlere hangi kalede açıklandı?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 19.7450598936587,
+    "found": true
+  },
+  {
+    "qid": "llm-tarih-021",
+    "question": "Erdel voyvodası kralın yardımına neden gelmedi?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 17.16605066101305,
+    "found": true
+  },
+  {
+    "qid": "llm-tarih-022",
+    "question": "Savaş meclisinde Macar ağır süvarisine karşı hangi taktik önerildi?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "top_score": 15.731694343191563,
+    "found": true
+  },
+  {
+    "qid": "llm-tarih-023",
+    "question": "Budin'in anahtarlarını padişaha kim teslim etti?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 24.974620947142604,
+    "found": true
+  },
+  {
+    "qid": "llm-tarih-025",
+    "question": "Selçuklu ordusu savaştan önce dağın hangi yanında ordugâh kurmuştu?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 16.82020839722746,
+    "found": true
+  },
+  {
+    "qid": "llm-tarih-026",
+    "question": "Erzurum'u kuşatan Moğol komutanının emrinde ne kadar asker vardı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 15.671483937717937,
+    "found": false
+  },
+  {
+    "qid": "llm-tarih-027",
+    "question": "Erzurum kuşatmasında düşman askerlerini şehre içeriden kim soktu?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.635621472926042,
+    "found": false
+  },
+  {
+    "qid": "llm-tarih-028",
+    "question": "Çevredeki bağımsız devletlerden Selçuklulara asker yollayan tek devlet hangisiydi?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 14.807245317505238,
+    "found": true
+  },
+  {
+    "qid": "llm-tarih-029",
+    "question": "Moğollar boşaltılmış Selçuklu karargâhında hangi ganimetleri buldu?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.755147063767499,
+    "found": false
+  },
+  {
+    "qid": "llm-tarih-030",
+    "question": "Savaştan sonraki barışla Selçuklular Moğollara her yıl ne vermeyi üstlendi?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.208226428291773,
+    "found": false
+  },
+  {
+    "qid": "llm-tarih-031",
+    "question": "Savaş günü hava koşulları hangi tarafı neden zor duruma soktu?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 12.664154493229873,
+    "found": false
+  },
+  {
+    "qid": "llm-tarih-032",
+    "question": "Karadaki kaleye yerleştirilen birliklerin deniz çatışmasında ne işe yaraması bekleniyordu?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 10.931952763280531,
+    "found": false
+  },
+  {
+    "qid": "llm-tarih-033",
+    "question": "Çarpışma bittiğinde iki tarafın kayıpları ne düzeydeydi?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 9.43513692629543,
+    "found": false
+  },
+  {
+    "qid": "llm-tarih-034",
+    "question": "Savaşı izleyen barışla Venedik toprak ve para olarak neleri yitirdi?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 15.080261166054367,
+    "found": true
+  },
+  {
+    "qid": "llm-tarih-035",
+    "question": "Cenevizli amiralin çekingen davranışının ardında hangi kişisel ve siyasi sebepler olduğu düşünülüyor?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 10.114349277998361,
+    "found": false
+  },
+  {
+    "qid": "llm-tarih-036",
+    "question": "Türk donanmasının denizlerdeki hâkimiyeti hangi sonraki başarıyla güçlendi ve hangi yenilgiye dek karşı konulmaz kaldı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 15.38091141607712,
+    "found": false
+  },
+  {
+    "qid": "llm-tarih-037",
+    "question": "Savaş sürerken Osmanlı sol kanadındaki hangi birlik karşı tarafa katıldı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 13.043661902397332,
+    "found": false
+  },
+  {
+    "qid": "llm-tarih-038",
+    "question": "Osmanlı hükümdarı gönderdiği hediyeler ve yazının biçimiyle rakibini nasıl küçümsedi?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 12.735712827989595,
+    "found": false
+  },
+  {
+    "qid": "llm-tarih-039",
+    "question": "Timurlu ordu karşı tarafı suyundan ve erzağından mahrum etmek için ne yaptı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 15.002476082847092,
+    "found": false
+  },
+  {
+    "qid": "llm-tarih-040",
+    "question": "Doğudan gelen ordunun ön safında hangi hayvanlar vardı ve bunlar nereden getirilmişti?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 12.367301751153722,
+    "found": true
+  },
+  {
+    "qid": "llm-tarih-041",
+    "question": "Galip hükümdar zaferini hangi Batılı krallara, nasıl bir vurguyla duyurdu?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 10.938713744753912,
+    "found": false
+  },
+  {
+    "qid": "llm-tarih-042",
+    "question": "Esir sultanın ölümünü bazı erken dönem kroniklerin yazarları nasıl açıklar?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 12.105575713554444,
+    "found": false
+  },
+  {
+    "qid": "llm-tarih-043",
+    "question": "Kuşatmacılar kaleye doğrudan saldırmak yerine neden onu aç bırakmayı seçti; ellerinde ne eksikti?",
+    "total_relevant": 1,
+    "relevance": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 19.055824119685145,
+    "found": true
+  },
+  {
+    "qid": "llm-tarih-044",
+    "question": "Batılı komutanlar güney yönünü neden sürekli gözetlemediler?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 9.974583750801136,
+    "found": false
+  },
+  {
+    "qid": "llm-tarih-045",
+    "question": "Rahova'daki teslim uzlaşması neden bozuldu ve kasaba halkına ne oldu?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 16.330476966839193,
+    "found": false
+  },
+  {
+    "qid": "llm-tarih-046",
+    "question": "Zırhlı tarikat süvarileri çatışmanın başındaki üstünlüklerini nasıl yitirdi?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 12.121285435457697,
+    "found": true
+  },
+  {
+    "qid": "llm-tarih-047",
+    "question": "Galibiyetin ardından tutsaklara nasıl davranıldı; hangileri ölümden kurtuldu?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 7.947242948077836,
+    "found": false
+  },
+  {
+    "qid": "llm-tarih-048",
+    "question": "Sultan Mısır'a ne gönderdi ve bunun karşılığında hangi sanı aldı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 17.312868144115978,
+    "found": false
+  },
+  {
+    "qid": "llm-tarih-049",
+    "question": "Dönemin Osmanlı yazarları bu zafere Avrupalı çağdaşlarından farklı olarak nasıl yaklaştı?",
+    "total_relevant": 1,
+    "relevance": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "top_score": 11.041976012016626,
+    "found": false
+  }
+]

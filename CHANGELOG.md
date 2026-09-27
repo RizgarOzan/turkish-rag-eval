@@ -10,7 +10,16 @@ published number is a breaking change**, even when no API changed.
 
 ## [Unreleased]
 
-Nothing yet.
+### Added
+
+- **The full 300-question set can be scored.** `fetch-corpus --include-drafts`
+  fetches the drafted questions' articles too, into
+  `data/raw/corpus-full.json` with its own lock (`data/corpus-full.lock.json`);
+  `run --include-drafts` reads that corpus and writes under `results/full/`.
+  The published snapshot, its lock and `results/` are untouched.
+- `run` names every question no chunk answers (a span split by a chunk
+  boundary, or removed by a Wikipedia edit) instead of silently scoring fewer
+  questions. Per-query records now carry `qid`.
 
 ## [0.1.0]
 

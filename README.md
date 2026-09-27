@@ -213,7 +213,7 @@ pip install 'turkish-rag-eval[all] @ git+https://github.com/RizgarOzan/turkish-r
 | `groundedness` | score the generation half against the gold spans ([details](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/design.md#groundedness); no results committed yet) |
 | `bootstrap` | draft a gold set for your own corpus |
 | `agreement` | inter-annotator agreement over the gold set |
-| `fetch-corpus` | download the Wikipedia snapshot; `--verify` checks the lock |
+| `fetch-corpus` | download the Wikipedia snapshot; `--verify` checks the lock; `--include-drafts` for [all 300 questions](#scoring-all-300) |
 | `export-hf` | the BEIR layout MTEB reads |
 | `validate` | every gold file's invariants |
 
@@ -293,13 +293,48 @@ the answer is. Two LLMs tend to pick the same sentence, so read this as a
 sanity check rather than human agreement. Full discussion in the
 [design notes](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/design.md#agreement-between-the-two-passes).
 
+### Scoring all 300
+
+The drafted questions point at 40 articles outside the health snapshot, so
+they get a corpus of their own: the 54 health articles plus those 40, 1.89 M
+characters, pinned by `data/corpus-full.lock.json`. The published snapshot and
+its lock stay as they are.
+
+```bash
+turkish-rag-eval fetch-corpus --include-drafts   # data/raw/corpus-full.json
+turkish-rag-eval run --include-drafts            # results/full/<model>/
+```
+
+Measured 2026-09-27 on 296 questions (the 4 `needs-human` drafts never load),
+hierarchical chunks, nDCG@10:
+
+| Retriever | 58 human questions | 296 questions (238 drafted) |
+|---|---|---|
+| bm25_stem5 | 0.494 | 0.557 |
+| MiniLM (default), dense | 0.501 | 0.403 |
+| MiniLM (default), hybrid_rrf | 0.613 | 0.576 |
+| multilingual-e5-small, dense | 0.642 | 0.567 |
+| multilingual-e5-small, hybrid_rrf | 0.639 | 0.641 |
+| multilingual-e5-base, dense | 0.668 | 0.644 |
+| multilingual-e5-base, hybrid_rrf | 0.648 | 0.662 |
+
+On the wider set stemmed BM25 gets stronger and every dense model weaker, so
+fusing the two now helps all three models, where on the 58 health questions it
+cost the E5 models. These rows are not in the tables above: most of the
+questions have not been checked by a person yet. The run also names every
+question no chunk can answer; a span split by a chunk boundary is the usual
+reason. Here that is 17 questions with fixed-size chunks, 1 with hierarchical
+and none with sentence chunks. Results for all three chunkers are in
+[`results/full/`](https://github.com/RizgarOzan/turkish-rag-eval/tree/main/results/full).
+
 ## Status
 
 v0.1.0, tagged but not on PyPI yet — install from GitHub as above.
 
 - **Works:** the retrieval harness, `report`, `leaderboard --check`, `bootstrap`,
-  `agreement`, the Hugging Face export, and CI that validates every
-  contributed question against live Wikipedia.
+  `agreement`, the Hugging Face export, scoring [all 300 questions](#scoring-all-300)
+  on a pinned corpus, and CI that validates every contributed question against
+  live Wikipedia.
 - **In progress:** human review of the gold set. All 300 planned questions are
   in (58 human, 242 LLM-drafted); the drafts join the results once people have
   reviewed them.

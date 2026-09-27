@@ -1,0 +1,664 @@
+{
+  "version": 1,
+  "fingerprint": "sha256:b4b38a4a986d0c75793797d68988e42c5eaa16d6dd9951fc2b8eea5d4c86fa4b",
+  "documents": [
+    {
+      "doc_id": "103047",
+      "title": "Multipl skleroz",
+      "revid": 36628105,
+      "sha256": "c3740e4c2d4b621cba2a330e92850acb6d13e3751449dd0a11e090510285b513",
+      "chars": 10597
+    },
+    {
+      "doc_id": "1091941",
+      "title": "Huzursuz bağırsak sendromu",
+      "revid": 37189364,
+      "sha256": "42df0b4e52d017036826eab24b979bad6715e6f6dd2fe1de4efda2262e26bf26",
+      "chars": 4135
+    },
+    {
+      "doc_id": "1128249",
+      "title": "Anksiyete bozukluğu",
+      "revid": 37475021,
+      "sha256": "e69d791352279906c3361e60590c4fa6a9210c0376e9102e0c7f2affbfb861a5",
+      "chars": 27568
+    },
+    {
+      "doc_id": "1150",
+      "title": "İşletim sistemi",
+      "revid": 38073787,
+      "sha256": "1b3af4a8a29a695c19d3c5d507c1db36b71afb5f8874a26aada2deaf19a194ad",
+      "chars": 14979
+    },
+    {
+      "doc_id": "1188904",
+      "title": "Hepatit C",
+      "revid": 37207108,
+      "sha256": "9b7b5240e4056a573cc9367336dadcf9111e15e724b04ec8803a39634b558358",
+      "chars": 17429
+    },
+    {
+      "doc_id": "119506",
+      "title": "Siroz",
+      "revid": 37687279,
+      "sha256": "fb7730760febe31cf07f9b1aad270b9104fc0edc0c007880d6d84a378a77d7b6",
+      "chars": 40161
+    },
+    {
+      "doc_id": "119576",
+      "title": "Endometriosis",
+      "revid": 36055414,
+      "sha256": "294036d626ce902002dd9f0abbde0670069d81ed5b1c6b84ed0a19e82aadd34b",
+      "chars": 6582
+    },
+    {
+      "doc_id": "11972",
+      "title": "Kızılırmak",
+      "revid": 37777704,
+      "sha256": "d2a0707333bcbeda4f0cb6c0b1dad2facf44f056afd1911cd62bafbe36394c3d",
+      "chars": 9999
+    },
+    {
+      "doc_id": "12000",
+      "title": "Glokom",
+      "revid": 37704485,
+      "sha256": "86882e80258f9a20ef6fe652b285566827792a791908dabcb80827758ed2f272",
+      "chars": 6898
+    },
+    {
+      "doc_id": "1224",
+      "title": "Van Gölü",
+      "revid": 37777885,
+      "sha256": "d12e7b9d38ae0437a547c2286417610769040cd7dd805a929e81ba35e8741654",
+      "chars": 10060
+    },
+    {
+      "doc_id": "13171",
+      "title": "İstanbul'un Fethi",
+      "revid": 37909444,
+      "sha256": "644018dfe7d8ed399f6412be0f106330fac57d3ce5c1e5e7fa9f4ed7afd8fa2e",
+      "chars": 54530
+    },
+    {
+      "doc_id": "134278",
+      "title": "Obezite",
+      "revid": 37471021,
+      "sha256": "c91c09c90c048d281c7497fff63877edd24451dc455b4636055465e98c532be4",
+      "chars": 8205
+    },
+    {
+      "doc_id": "140270",
+      "title": "Kalp krizi",
+      "revid": 36998161,
+      "sha256": "d5c5133a6f32ff534217557578d43e5273eef7640e1c0a4521f8bc8b2d452d87",
+      "chars": 51909
+    },
+    {
+      "doc_id": "1405459",
+      "title": "Mohaç Muharebesi",
+      "revid": 37920364,
+      "sha256": "6ce13a2f5bc7f09b8b15b44131fe4ab5e7d6adc0689ae4c126c4c22a84e37f06",
+      "chars": 9025
+    },
+    {
+      "doc_id": "142457",
+      "title": "Derin ven trombozu",
+      "revid": 38042232,
+      "sha256": "71125e386839d64a40f7901ff2e8d001370b199d2b304570fb31fb7380eb98b2",
+      "chars": 43732
+    },
+    {
+      "doc_id": "144417",
+      "title": "Tuz Gölü",
+      "revid": 37923912,
+      "sha256": "2af498510fd2c8fcae4db0c363bb5e625744ad25b0ac4de1ef23d8e111c6cb9a",
+      "chars": 8733
+    },
+    {
+      "doc_id": "14923",
+      "title": "Uludağ",
+      "revid": 37823595,
+      "sha256": "8c385d6e76c0e6db93122e0cd057ab26cb03688d4456bc3c2d7006f34535e6c7",
+      "chars": 13626
+    },
+    {
+      "doc_id": "15340",
+      "title": "Fırat",
+      "revid": 37741355,
+      "sha256": "e823629facce30c87724ee756faa5eae9def156d7494324355feffbc729ad777",
+      "chars": 5781
+    },
+    {
+      "doc_id": "1562",
+      "title": "Mars",
+      "revid": 38059663,
+      "sha256": "d6f895a4e4ccc89770e4f380e854a3902e7a6e8ed6c31f360c08566f1b699419",
+      "chars": 48267
+    },
+    {
+      "doc_id": "15756",
+      "title": "Fotosentez",
+      "revid": 37865166,
+      "sha256": "3687e87ed9c60b5d3ff10ec1910ae8b51b94d527a74280a9232dd095c0fcc103",
+      "chars": 13776
+    },
+    {
+      "doc_id": "171641",
+      "title": "Sedef hastalığı",
+      "revid": 37988301,
+      "sha256": "15e4ab2da900ab74621d2d42e6175f5d0725da9c60cdec70610b59cf8192ef7c",
+      "chars": 2522
+    },
+    {
+      "doc_id": "172531",
+      "title": "Böbrek yetmezliği",
+      "revid": 35605997,
+      "sha256": "3191711bca6240dc7c5008bcda8f74b35f12d067e1d4c9dfa39e5e36ee900377",
+      "chars": 4206
+    },
+    {
+      "doc_id": "1740663",
+      "title": "Orta kulak iltihabı",
+      "revid": 37887148,
+      "sha256": "51d21db1a55224cd9887ae96139871597d746c224355d710a2555c2065d96743",
+      "chars": 21863
+    },
+    {
+      "doc_id": "175184",
+      "title": "Niğbolu Muharebesi (1396)",
+      "revid": 37911148,
+      "sha256": "0cb0c273be10ce69c3c038d41f14cce74160e6fb817596eaeca25b6b82fc409a",
+      "chars": 15611
+    },
+    {
+      "doc_id": "1911",
+      "title": "Venüs",
+      "revid": 37915599,
+      "sha256": "abdeba1844b63c6dce1855f877cea6f3a6e2bbd9ac58e9d17b2e324829e8558a",
+      "chars": 33314
+    },
+    {
+      "doc_id": "1931",
+      "title": "Astım",
+      "revid": 37883184,
+      "sha256": "dc11f94ed571e6cdab290b8d006c763d2e996fa1fbd828fc87ef3ecaf9d43ce0",
+      "chars": 17283
+    },
+    {
+      "doc_id": "1946",
+      "title": "Çölyak",
+      "revid": 37451519,
+      "sha256": "bb46af208f3db32e6ff39646e7715b7ae50c6e76bb0e54d34c0537c4ed07b821",
+      "chars": 3342
+    },
+    {
+      "doc_id": "1947",
+      "title": "Zatürre",
+      "revid": 37982389,
+      "sha256": "0dafccd12a25dedb0baf8a936f01b1cfc513a04fe8b265ad7b423f6b14289fa8",
+      "chars": 52094
+    },
+    {
+      "doc_id": "198164",
+      "title": "İnme",
+      "revid": 38044065,
+      "sha256": "65d56afb94f2947f6ea0a8d6e0151791084a73b2189ec032efe0f3cf4082e556",
+      "chars": 13570
+    },
+    {
+      "doc_id": "2019",
+      "title": "Unix",
+      "revid": 38000449,
+      "sha256": "7f80870573b3ccad99044e3b704676890ef461b245e268a501724bfc1803b996",
+      "chars": 8333
+    },
+    {
+      "doc_id": "206717",
+      "title": "Sinüzit",
+      "revid": 36881934,
+      "sha256": "95a92bb0a9dfb83b396a1ded2f55ea3899b74a9c363c6a08d213b913943ff4ea",
+      "chars": 1434
+    },
+    {
+      "doc_id": "206725",
+      "title": "Böbrek taşı",
+      "revid": 38041607,
+      "sha256": "4ecfabb789eddbd2e3bdf693e201c9375cc839d85af18bfbe7027175461aa2b3",
+      "chars": 20096
+    },
+    {
+      "doc_id": "211990",
+      "title": "Polikistik over sendromu",
+      "revid": 36351619,
+      "sha256": "5b21612bd1371907dd1b05ff8a6b1a590df05ace358ed5aef029c82ed22cb862",
+      "chars": 5094
+    },
+    {
+      "doc_id": "2132",
+      "title": "Ağrı Dağı",
+      "revid": 37923904,
+      "sha256": "551da95fa7bf658ed6f74b83af7a66bbb620a938c52346fe8cf6a6034542d0da",
+      "chars": 11125
+    },
+    {
+      "doc_id": "2134",
+      "title": "Erciyes",
+      "revid": 37778831,
+      "sha256": "c018d41764cd167c79d0c54c86872c0ee71a61dbba7b4fa837d7d9cba6bdd85d",
+      "chars": 8376
+    },
+    {
+      "doc_id": "23174",
+      "title": "Sıtma",
+      "revid": 35631189,
+      "sha256": "c3a42d57eefe2c0a1611d167b265a7e9c33f7ffe1caa662ff4c9199c148fbdff",
+      "chars": 9356
+    },
+    {
+      "doc_id": "23468",
+      "title": "Kansızlık",
+      "revid": 37437600,
+      "sha256": "8325551b5716d20a67100b6826e6259aa520db77d863962bb3070e04c1f10095",
+      "chars": 7457
+    },
+    {
+      "doc_id": "236364",
+      "title": "Ankara Muharebesi",
+      "revid": 37988300,
+      "sha256": "1d499833a42a49e809ca2b838657b9ba6948f44c8035b45458dd9532c49de93c",
+      "chars": 49587
+    },
+    {
+      "doc_id": "24",
+      "title": "Linux",
+      "revid": 37700651,
+      "sha256": "69a96bbcf50422d37223a9b9ba1e4310b6c424671705ecc8dc95b40a225074ed",
+      "chars": 16495
+    },
+    {
+      "doc_id": "25639",
+      "title": "Veritabanı",
+      "revid": 37682501,
+      "sha256": "a4217720581a0af5adc8d6bcb6dd7ab859c247aa80ca2c5a421d89b18e06a0d5",
+      "chars": 5022
+    },
+    {
+      "doc_id": "260862",
+      "title": "Kalp yetmezliği",
+      "revid": 36261875,
+      "sha256": "f051fc1f4c48cc74c4adad4f6388b4f0e6c42257151d2d0928ec517c8d965271",
+      "chars": 4873
+    },
+    {
+      "doc_id": "261284",
+      "title": "Bronşit",
+      "revid": 37700223,
+      "sha256": "a8d223a2700a0baa35cb9edcff2b2dc39d1f691c1cdd60f3462fc55b83a1f5c6",
+      "chars": 1023
+    },
+    {
+      "doc_id": "26808",
+      "title": "Malazgirt Meydan Muharebesi",
+      "revid": 37969483,
+      "sha256": "f3bb542079b840793f74f9ebb80fbee61ed2530b91b885c56deb4f46dd653803",
+      "chars": 17459
+    },
+    {
+      "doc_id": "27698",
+      "title": "Verem",
+      "revid": 37959975,
+      "sha256": "3c1f075b89def0890724e47f94b1c8a2d767c431f76e6a34cec3bbf91154db94",
+      "chars": 14596
+    },
+    {
+      "doc_id": "2774465",
+      "title": "Hepatit B",
+      "revid": 38043868,
+      "sha256": "5b4852538ca63971f4a7f6e77ce7328004b5c9fa67c946a6ca28b64a2948b73d",
+      "chars": 36694
+    },
+    {
+      "doc_id": "29553",
+      "title": "Hemoglobin",
+      "revid": 35745835,
+      "sha256": "a0d5257ac8ea893f0ae74071ee0fa3aa61a633c759c53e2cbdb6bdd95622b8ec",
+      "chars": 4373
+    },
+    {
+      "doc_id": "30004",
+      "title": "Mitokondri",
+      "revid": 37501516,
+      "sha256": "fb39a5a8e5d381b3538b1e9409f06a378f8cb49527dd648aee8ca6b6620651e2",
+      "chars": 5107
+    },
+    {
+      "doc_id": "3203",
+      "title": "Menenjit",
+      "revid": 36271404,
+      "sha256": "b05a026e623c349296b036f62c6d914b463149cff6e026d180a202ed31ac2c20",
+      "chars": 31612
+    },
+    {
+      "doc_id": "324452",
+      "title": "World Wide Web",
+      "revid": 37123842,
+      "sha256": "fb1f5fa8f54f0500872240aafc1bdbbb2915b2f3cabcded25eb191f28dc83bcc",
+      "chars": 8558
+    },
+    {
+      "doc_id": "3245",
+      "title": "Protein",
+      "revid": 35780865,
+      "sha256": "0596860c194292cc34a74a33b9a3ff4a1570e5595e837a876072b35e63855ff4",
+      "chars": 35966
+    },
+    {
+      "doc_id": "325280",
+      "title": "Osteoporoz",
+      "revid": 36915506,
+      "sha256": "523ea928cc9bb7f812d9e5e8b270bbc9f2557f5f321512555781b056877226a0",
+      "chars": 3127
+    },
+    {
+      "doc_id": "33246",
+      "title": "Ribozom",
+      "revid": 37484706,
+      "sha256": "f562d942c4a17c9f8cf687266e3406c1662248253d47a7681e7b095420862d14",
+      "chars": 5735
+    },
+    {
+      "doc_id": "333587",
+      "title": "İnternet",
+      "revid": 37908314,
+      "sha256": "963307c7f007ab53c2b91082a87f60acbd6759fa8c3da4cd5f9ac7b388e6c4f7",
+      "chars": 13656
+    },
+    {
+      "doc_id": "339749",
+      "title": "Alzheimer hastalığı",
+      "revid": 37001562,
+      "sha256": "7c1b8b4e788621ea9f3223d42b0b8f7bfe1e2c14850dd43ccf28425187493589",
+      "chars": 32605
+    },
+    {
+      "doc_id": "342189",
+      "title": "Hipotiroidi",
+      "revid": 36351618,
+      "sha256": "6450fc380ff36b1c6ddb4b07355f55d64fc95264310dec853a507c0ea201cd15",
+      "chars": 7789
+    },
+    {
+      "doc_id": "349277",
+      "title": "Ülseratif kolit",
+      "revid": 36432143,
+      "sha256": "2a0dbf9b3a4948732a68552d27f1521273f604782a14222c882501700b5b872c",
+      "chars": 4523
+    },
+    {
+      "doc_id": "36274",
+      "title": "Migren",
+      "revid": 37690010,
+      "sha256": "e0054288d2135931226b6e7e95d2b8500496473a7c8d96d156390c131de89b20",
+      "chars": 29583
+    },
+    {
+      "doc_id": "36515",
+      "title": "Katarakt",
+      "revid": 37430159,
+      "sha256": "58df0e6ea0b4ef5679423bf97b5c69757e013fd8015c0cf52fc896a687cff7f1",
+      "chars": 4683
+    },
+    {
+      "doc_id": "3820",
+      "title": "DNA",
+      "revid": 37517877,
+      "sha256": "83cc0b2f4d3cb4ab425a14b06df3ce543c523c4203f85b1734d33b7da9537c83",
+      "chars": 43088
+    },
+    {
+      "doc_id": "39732",
+      "title": "Uyku apnesi",
+      "revid": 37988344,
+      "sha256": "9b4fbe0937739c893ee07dd413c1fb42dcd6fe7c1e310c018376f21b257a998d",
+      "chars": 12790
+    },
+    {
+      "doc_id": "42136",
+      "title": "Gut",
+      "revid": 36432128,
+      "sha256": "7a26e8f847c614f1ce117c885bda51b7984e24a13fe365dccc366ce42763afd6",
+      "chars": 20654
+    },
+    {
+      "doc_id": "42142",
+      "title": "Romatoid artrit",
+      "revid": 37814532,
+      "sha256": "6c71fdc0182b5c20fdd3fa9dffe158d456e2b36872c30c0aaf7684243d688fe7",
+      "chars": 42497
+    },
+    {
+      "doc_id": "4288",
+      "title": "Merkür",
+      "revid": 36378956,
+      "sha256": "df4aba7c85a3695c28748f0650db90e8657054438a54821b465a51b8b56b7eb8",
+      "chars": 24479
+    },
+    {
+      "doc_id": "4605",
+      "title": "Ay",
+      "revid": 37915816,
+      "sha256": "de505108f147d0e0a7f19fde7d2c834af01394dfbd2761615b9dd4c1a28f9a4a",
+      "chars": 47360
+    },
+    {
+      "doc_id": "4661",
+      "title": "Anafilaksi",
+      "revid": 35979960,
+      "sha256": "0a6f2afa8f93421d5a5f1a22729110acebfabd9975db45f7216914ea7b016882",
+      "chars": 23083
+    },
+    {
+      "doc_id": "466623",
+      "title": "İdrar yolu enfeksiyonu",
+      "revid": 37421858,
+      "sha256": "156d5f80bd48837eac611f8e6ea4c388d5729d8c54095eaa713823aa6b79fb32",
+      "chars": 26133
+    },
+    {
+      "doc_id": "5048",
+      "title": "Yüksek tansiyon",
+      "revid": 37696439,
+      "sha256": "e724d1e770344b398e6e93fb00e8004abc45997e286eab265010f7a48e691b5c",
+      "chars": 55341
+    },
+    {
+      "doc_id": "5509",
+      "title": "Kapadokya",
+      "revid": 37677468,
+      "sha256": "8f7edef8c66e0cdadb88da2ab13ba787fb585ef2f9ab4b21fbc33313e0a69170",
+      "chars": 9229
+    },
+    {
+      "doc_id": "5545",
+      "title": "Grip",
+      "revid": 36589830,
+      "sha256": "0dd29b8feff750e13bc4da4d3cf77f5d7c0041ef0eb3e70c384420709dcd762e",
+      "chars": 7187
+    },
+    {
+      "doc_id": "56939",
+      "title": "Preveze Deniz Muharebesi",
+      "revid": 37932157,
+      "sha256": "864c0c75557f7d942338dc8deb3c9c184819d3590e3b9cb44692d81d261bde2a",
+      "chars": 9252
+    },
+    {
+      "doc_id": "57228",
+      "title": "Kösedağ Muharebesi",
+      "revid": 37852089,
+      "sha256": "8137c4464f67d53969c031eeb8db3680aee5ee1ed22ae0428595b594f97e4284",
+      "chars": 43910
+    },
+    {
+      "doc_id": "57752",
+      "title": "Parkinson hastalığı",
+      "revid": 37421579,
+      "sha256": "90bd53c827e7724232f78b5e48b0c7ec7f7425a01f3eeafb39daa53b377ca6c1",
+      "chars": 67979
+    },
+    {
+      "doc_id": "5807",
+      "title": "Şizofreni",
+      "revid": 37692156,
+      "sha256": "d79f668e660c833b37c1df2146c12bed3f5bc934e016914dbc486d0820118544",
+      "chars": 51390
+    },
+    {
+      "doc_id": "5946",
+      "title": "Derleyici",
+      "revid": 35380066,
+      "sha256": "eed8e7f3c71a22d33ae8831383a9e691869bbe9a8d6ec8b409baaa4bddff63a0",
+      "chars": 6258
+    },
+    {
+      "doc_id": "5966",
+      "title": "RNA",
+      "revid": 37812264,
+      "sha256": "0e21b3f12da9f3b31fdfb48c47ecdbf5c26f97a71822e49ef969db6064d93bce",
+      "chars": 14191
+    },
+    {
+      "doc_id": "5986",
+      "title": "Satürn",
+      "revid": 37915590,
+      "sha256": "d0efed02090ab9fdef217c4162c2b6b92c3566d5c9efa639d387e6d02ad45d89",
+      "chars": 30845
+    },
+    {
+      "doc_id": "6011",
+      "title": "Neptün",
+      "revid": 38003324,
+      "sha256": "d350e6ed190114994f47abeba2b4d3b113f6c3990add35198e447029e6daef0f",
+      "chars": 24043
+    },
+    {
+      "doc_id": "6180",
+      "title": "Yapay zekâ",
+      "revid": 38068996,
+      "sha256": "e11f9fee371febb0d8ee63cbb3962e74af3831054df9eab5603ad8716fd662d8",
+      "chars": 24568
+    },
+    {
+      "doc_id": "65813",
+      "title": "Çaldıran Muharebesi",
+      "revid": 38050827,
+      "sha256": "0ad4287cc7b26fff26250dacdac2e2508513164bec494ad8057550169ff072aa",
+      "chars": 15289
+    },
+    {
+      "doc_id": "69946",
+      "title": "Epilepsi",
+      "revid": 37885301,
+      "sha256": "11b59aaeedc3cf5281dc63042e8d092572932dafd0406ef61f16acf7fada3034",
+      "chars": 12413
+    },
+    {
+      "doc_id": "7033",
+      "title": "Jüpiter",
+      "revid": 38069036,
+      "sha256": "71359591ad49dd64fc0ab6301a7baf7af2037b96432aa7b2d7d0a9531e3fcf01",
+      "chars": 32256
+    },
+    {
+      "doc_id": "708470",
+      "title": "Kronik obstrüktif akciğer hastalığı",
+      "revid": 37689412,
+      "sha256": "37529a4c267a5520b1165c83bd674c866e4c4f0a0a341053f6413301b81935a2",
+      "chars": 47773
+    },
+    {
+      "doc_id": "710430",
+      "title": "Diyabet",
+      "revid": 37884680,
+      "sha256": "532f2955bb9c2e04e567dd615a86df7f3cda65e3ec887ed91c395013e8c9f67d",
+      "chars": 65523
+    },
+    {
+      "doc_id": "71899",
+      "title": "Peptik ülser",
+      "revid": 34531256,
+      "sha256": "236f7758694d91a6b8d312feaf10aa6afe1c3e6b21af24dfb0efee8793282576",
+      "chars": 3395
+    },
+    {
+      "doc_id": "725299",
+      "title": "Fibromiyalji",
+      "revid": 36756776,
+      "sha256": "c5e80f391a21f573c3c01fbdf8dbcb41d3743ddd101495ddb94c9029a1ae2b46",
+      "chars": 10001
+    },
+    {
+      "doc_id": "743569",
+      "title": "Osteoartrit",
+      "revid": 37421993,
+      "sha256": "e93b166698c528e9caf4b55c924be86d3c9e6642814fe19a750d0500423cbd0c",
+      "chars": 30915
+    },
+    {
+      "doc_id": "8343",
+      "title": "Ateroskleroz",
+      "revid": 37988343,
+      "sha256": "af2dcd1ff0728a1942a9f3d9a2609825ccb1f4b0dffd95593ae85ede2302ecb8",
+      "chars": 21147
+    },
+    {
+      "doc_id": "85866",
+      "title": "Crohn hastalığı",
+      "revid": 37887185,
+      "sha256": "95cf535b847ded83a632bb4ecd3d4baa42793496eb0c0e0ca54ca2a8353e1645",
+      "chars": 7158
+    },
+    {
+      "doc_id": "86113",
+      "title": "Apandisit",
+      "revid": 36261917,
+      "sha256": "1e2a51ade411f6b53e5ce4989e815b435b793cb9f48104aacbc3c1099b609e5b",
+      "chars": 6897
+    },
+    {
+      "doc_id": "8640",
+      "title": "Uranüs",
+      "revid": 37915640,
+      "sha256": "4f9f146d5d34a7f48066f2dd113506e674aa21910b5535cba594e149458663f9",
+      "chars": 12245
+    },
+    {
+      "doc_id": "88484",
+      "title": "Egzama",
+      "revid": 37711889,
+      "sha256": "1d951f2bd3560bc94f25dc9461e7afba4f54d24ec146c2436a4b6bb477fd3d80",
+      "chars": 5591
+    },
+    {
+      "doc_id": "90645",
+      "title": "Safra taşı",
+      "revid": 35872880,
+      "sha256": "233426694273f863a52a700589eb634c45d334a13a4a5a502e631f1bb492b3d4",
+      "chars": 7098
+    },
+    {
+      "doc_id": "92237",
+      "title": "Bipolar bozukluk",
+      "revid": 37871082,
+      "sha256": "db7a04d5d4c528383e6e3f10410e75b5f199e945e754c5484b526a4aab1785ba",
+      "chars": 18429
+    },
+    {
+      "doc_id": "99608",
+      "title": "Enzim",
+      "revid": 36860285,
+      "sha256": "cbbe20def0b9ca15b825538eef8c8aad563e677e956b2b161915c8cde3f96328",
+      "chars": 35919
+    }
+  ]
+}
