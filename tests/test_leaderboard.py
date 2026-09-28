@@ -16,6 +16,7 @@ from turkish_rag_eval.leaderboard import (
     result_directories,
     verify,
 )
+from turkish_rag_eval.metrics import bootstrap_ci
 
 pytest.importorskip("numpy")
 
@@ -164,6 +165,17 @@ def test_table_ranks_by_the_metric(tmp_path):
                                       model="b/strong"))
     table = format_markdown([weak, strong])
     assert table.index("b/strong") < table.index("a/weak")
+
+
+def test_table_gives_each_score_its_interval(tmp_path):
+    # With four queries the interval is wide; the table must say so rather
+    # than print a bare mean that reads as more certain than it is.
+    hits = (True, True, False, False)
+    entry = load_entry(write_results(tmp_path / "r", hits=hits))
+    low, high = bootstrap_ci([float(h) for h in hits])
+    table = format_markdown([entry])
+    assert "95% CI" in table.splitlines()[0]
+    assert f"[{low:.3f}, {high:.3f}]" in table
 
 
 def test_a_run_on_an_unpinned_corpus_is_rejected(tmp_path):
