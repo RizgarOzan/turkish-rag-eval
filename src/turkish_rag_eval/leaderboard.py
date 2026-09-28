@@ -24,6 +24,7 @@ import json
 from dataclasses import dataclass
 from pathlib import Path
 
+from .metrics import bootstrap_ci
 from .paths import ROOT
 from .report import DEFAULT_METRIC, metric_value
 
@@ -165,12 +166,21 @@ def _fingerprint_against_lock(name: str, fingerprint: str,
     return []
 
 
+def _interval(entry: Entry, metric: str) -> tuple[float, float]:
+    """Bootstrap interval of the best configuration, from its per-query file."""
+    label = f"{entry.best['chunking']}_{entry.best['retriever']}"
+    records = json.loads((entry.directory / f"perquery_{label}.json")
+                         .read_text(encoding="utf-8"))
+    return bootstrap_ci([metric_value(r, metric) for r in records
+                         if r["total_relevant"] > 0])
+
+
 def format_markdown(entries: list[Entry], metric: str = DEFAULT_METRIC) -> str:
     """The leaderboard table, best configuration per model."""
     ranked = sorted(entries, key=lambda e: -e.best.get(metric, 0.0))
     lines = [
-        f"| # | Model | Best configuration | {metric} | R@5 | MRR | P95 | Index |",
-        "|---|---|---|---|---|---|---|---|",
+        f"| # | Model | Best configuration | {metric} | 95% CI | R@5 | MRR | P95 | Index |",
+        "|---|---|---|---|---|---|---|---|---|",
     ]
     for position, entry in enumerate(ranked, 1):
         best = entry.best
@@ -178,9 +188,11 @@ def format_markdown(entries: list[Entry], metric: str = DEFAULT_METRIC) -> str:
         index = f"{index_seconds / 60:.0f} min" if index_seconds else "-"
         latency = best.get("latency_ms_p95")
         latency_text = f"{latency:.0f} ms" if latency is not None else "-"
+        low, high = _interval(entry, metric)
         lines.append(
             f"| {position} | `{entry.model}` | {entry.configuration} "
-            f"| **{best.get(metric, 0):.3f}** | {best.get('recall@5', 0):.3f} "
+            f"| **{best.get(metric, 0):.3f}** | [{low:.3f}, {high:.3f}] "
+            f"| {best.get('recall@5', 0):.3f} "
             f"| {best.get('mrr', 0):.3f} | {latency_text} | {index} |")
     return "\n".join(lines)
 

@@ -138,11 +138,20 @@ was not run. Per-query results for every completed model are in
 > `turkish-rag-eval leaderboard --check` reports them as missing provenance
 > until then.
 
+**The top of this table is settled; the middle is not.** Dense hierarchical,
+with 95% bootstrap intervals over the 58 queries: MiniLM 0.501 [0.396, 0.606],
+emrecan 0.497 [0.394, 0.601], e5-small 0.642 [0.542, 0.738], e5-base 0.668
+[0.568, 0.765], Mursit 0.781 [0.701, 0.856]. The intervals overlap, but paired
+over the same queries Mursit beats the runner-up e5-base by +0.113
+[+0.029, +0.202]. The two E5 models cannot be told apart (+0.026
+[-0.039, +0.094]), and neither can MiniLM and emrecan (+0.004
+[-0.123, +0.135]).
+
 **Hybrid fusion only pays for a weak dense model.** RRF lifts the small
-default by +0.106 but pulls Mursit down from 0.781 to 0.673. "Turkish-only"
-is not enough either: the `emrecan` model was trained for sentence similarity
-and truncates input at 75 tokens. These leaderboard rows do not have
-confidence intervals yet.
+default by +0.106 but pulls Mursit down from 0.781 to 0.673, a paired loss of
+-0.108 [-0.193, -0.030]; for the two E5 models it makes no measurable
+difference. "Turkish-only" is not enough either: the `emrecan` model was
+trained for sentence similarity and truncates input at 75 tokens.
 
 To submit a model, open a pull request adding `results/models/<org>__<name>/`
 (`turkish-rag-eval run --model <org>/<name>`, then `leaderboard --check`).
@@ -342,8 +351,7 @@ v0.1.0, tagged but not on PyPI yet — install from GitHub as above.
 - **In progress:** human review of the gold set. All 300 planned questions are
   in (58 human, 242 LLM-drafted); the drafts join the results once people have
   reviewed them.
-- **Not yet:** committed results for `groundedness`, confidence intervals on the
-  leaderboard rows, and EmbeddingGemma.
+- **Not yet:** committed results for `groundedness`, and EmbeddingGemma.
 
 ## Limits
 
