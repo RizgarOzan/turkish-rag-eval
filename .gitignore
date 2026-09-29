@@ -8,3 +8,6 @@ data/raw/
 data/hf/
 .cache/
 docs/*.pdf
+results/*.records.json
+results/**/*.records.json
+results/*.cache.jsonl

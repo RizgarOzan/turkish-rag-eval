@@ -26,12 +26,17 @@ which are genuinely judgements, go to a model.
 
 Nothing here runs without an API key, and the evaluation takes a generator and
 a judge as arguments, so the scoring logic is testable with stubs and a
-different provider can be dropped in without touching it.
+different provider can be dropped in without touching it. A model named
+``provider:model`` (``groq:``, ``nvidia:``) goes to that provider's
+OpenAI-compatible endpoint; a bare name goes to Anthropic.
 """
 
 import argparse
+import hashlib
 import json
 import os
+import sys
+import time
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
@@ -80,6 +85,174 @@ JUDGE_SCHEMA = {
 }
 
 
+#: provider -> (chat completions URL, environment variable holding the key)
+PROVIDERS = {
+    "groq": ("https://api.groq.com/openai/v1/chat/completions", "GROQ_API_KEY"),
+    "nvidia": ("https://integrate.api.nvidia.com/v1/chat/completions",
+               "NVIDIA_API_KEY"),
+}
+
+#: Per-provider request extras. gpt-oss on Groq reasons before answering; low
+#: effort for the same reason the Anthropic generator runs at low effort.
+EXTRA = {"groq:openai/gpt-oss-120b": {"reasoning_effort": "low"},
+         "groq:openai/gpt-oss-20b": {"reasoning_effort": "low"}}
+
+
+def split_model(name: str) -> tuple[str, str]:
+    """``groq:openai/gpt-oss-120b`` -> ("groq", "openai/gpt-oss-120b")."""
+    provider, sep, model = name.partition(":")
+    if not sep:
+        return "anthropic", name
+    if provider not in PROVIDERS:
+        raise ValueError(f"unknown provider {provider!r}; "
+                         f"use one of {sorted(PROVIDERS)} or a bare Claude name")
+    return provider, model
+
+
+def parse_verdict(text: str) -> dict:
+    """The first JSON object in a reply that carries both verdict fields."""
+    decoder = json.JSONDecoder()
+    for start, char in enumerate(text):
+        if char != "{":
+            continue
+        try:
+            value, _ = decoder.raw_decode(text, start)
+        except json.JSONDecodeError:
+            continue
+        if isinstance(value, dict) and {"supported", "answers_question"} <= value.keys():
+            return value
+    raise ValueError(f"no verdict in judge reply: {text[:200]!r}")
+
+
+class ChatClient:
+    """One OpenAI-compatible endpoint, with rate-limit waits and a token tally.
+
+    With ``cache``, every reply is appended to that JSON-lines file and a
+    request already in it is answered from there, so a run that dies halfway
+    (a dropped connection, a daily quota) resumes instead of starting over.
+    """
+
+    RETRYABLE = {429, 500, 502, 503, 504}
+
+    def __init__(self, provider: str, model: str, api_key: str | None = None,
+                 session=None, sleep=time.sleep, retries: int = 8,
+                 timeout: int = 600, cache: Path | None = None):
+        if session is None:
+            import requests
+            session = requests.Session()
+        self.url, env = PROVIDERS[provider]
+        self.key = api_key or os.environ[env]
+        self.model = model
+        self.extra = EXTRA.get(f"{provider}:{model}", {})
+        self.session, self.sleep = session, sleep
+        self.retries, self.timeout = retries, timeout
+        self.tokens = {"prompt": 0, "completion": 0, "calls": 0, "seconds": 0.0}
+        self.cache, self.cached = cache, {}
+        if cache and cache.exists():
+            for line in cache.read_text(encoding="utf-8").splitlines():
+                entry = json.loads(line)
+                self.cached[entry["key"]] = entry
+
+    def tally(self, usage: dict, seconds: float) -> None:
+        self.tokens["prompt"] += usage.get("prompt_tokens") or 0
+        self.tokens["completion"] += usage.get("completion_tokens") or 0
+        self.tokens["calls"] += 1
+        self.tokens["seconds"] = round(self.tokens["seconds"] + seconds, 1)
+
+    def complete(self, system: str, user: str, max_tokens: int) -> str:
+        body = {"model": self.model, "max_tokens": max_tokens, "temperature": 0,
+                "messages": [{"role": "system", "content": system},
+                             {"role": "user", "content": user}],
+                **self.extra}
+        headers = {"Authorization": f"Bearer {self.key}",
+                   # Groq answers the default python User-Agent with 403.
+                   "User-Agent": "turkish-rag-eval"}
+        key = hashlib.sha256(json.dumps(body, sort_keys=True, ensure_ascii=False)
+                             .encode("utf-8")).hexdigest()
+        if key in self.cached:
+            entry = self.cached[key]
+            self.tally(entry["usage"], entry["seconds"])
+            return entry["text"]
+
+        started = time.monotonic()
+        for attempt in range(self.retries + 1):
+            try:
+                response = self.session.post(self.url, json=body,
+                                             headers=headers,
+                                             timeout=self.timeout)
+            except OSError:  # requests' connection errors and timeouts too
+                if attempt == self.retries:
+                    raise
+                self.sleep(15.0 * (attempt + 1))
+                continue
+            if response.status_code == 200:
+                break
+            if response.status_code not in self.RETRYABLE or attempt == self.retries:
+                raise RuntimeError(f"{self.model}: HTTP {response.status_code} "
+                                   f"{response.text[:300]}")
+            wait = response.headers.get("retry-after")
+            # A long silent wait looks exactly like a hang; say which limit.
+            print(f"{self.model}: HTTP {response.status_code}, retry-after "
+                  f"{wait}: {response.text[:200]}", file=sys.stderr)
+            try:
+                self.sleep(min(float(wait), 300.0))
+            except (TypeError, ValueError):
+                self.sleep(15.0 * (attempt + 1))
+
+        data = response.json()
+        usage = data.get("usage") or {}
+        seconds = round(time.monotonic() - started, 1)
+        self.tally(usage, seconds)
+        text = (data["choices"][0]["message"].get("content") or "").strip()
+        if not text:
+            raise RuntimeError(f"{self.model}: empty answer "
+                               f"(finish_reason {data['choices'][0].get('finish_reason')})")
+        if self.cache:
+            entry = {"key": key, "text": text, "seconds": seconds,
+                     "usage": {k: usage.get(k) for k in
+                               ("prompt_tokens", "completion_tokens")}}
+            self.cached[key] = entry
+            with self.cache.open("a", encoding="utf-8") as f:
+                f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+        return text
+
+
+def user_prompt(question: str, chunks: list[dict]) -> str:
+    return f"Pasajlar:\n{format_passages(chunks)}\n\nSoru: {question}"
+
+
+def judge_prompt(question: str, answer: str, span: str,
+                 chunks: list[dict]) -> str:
+    return (f"Question: {question}\n\n"
+            f"Passages:\n{format_passages(chunks)}\n\n"
+            f"Answer: {answer}\n\n"
+            f"Gold span: {span}")
+
+
+class ChatGenerator:
+    def __init__(self, client: ChatClient):
+        self.client = client
+
+    def __call__(self, question: str, chunks: list[dict]) -> str:
+        return self.client.complete(GENERATOR_SYSTEM,
+                                    user_prompt(question, chunks), 4096)
+
+
+class ChatJudge:
+    def __init__(self, client: ChatClient):
+        self.client = client
+
+    def __call__(self, question: str, answer: str, span: str,
+                 chunks: list[dict]) -> dict:
+        # No structured-output guarantee on these endpoints, so the schema is
+        # stated and the reply parsed; a reply without it raises. The budget
+        # is large because a reasoning judge thinks before it writes.
+        system = (f"{JUDGE_SYSTEM}\n\nReply with one JSON object only, "
+                  f"matching this schema:\n{json.dumps(JUDGE_SCHEMA)}")
+        return parse_verdict(self.client.complete(
+            system, judge_prompt(question, answer, span, chunks), 16000))
+
+
 @dataclass
 class Record:
     qid: str
@@ -122,8 +295,7 @@ class AnthropicGenerator:
             output_config={"effort": "low"},
             messages=[{
                 "role": "user",
-                "content": f"Pasajlar:\n{format_passages(chunks)}\n\n"
-                           f"Soru: {question}",
+                "content": user_prompt(question, chunks),
             }],
         )
         return "".join(b.text for b in response.content if b.type == "text").strip()
@@ -146,10 +318,7 @@ class AnthropicJudge:
                                       "schema": JUDGE_SCHEMA}},
             messages=[{
                 "role": "user",
-                "content": (f"Question: {question}\n\n"
-                            f"Passages:\n{format_passages(chunks)}\n\n"
-                            f"Answer: {answer}\n\n"
-                            f"Gold span: {span}"),
+                "content": judge_prompt(question, answer, span, chunks),
             }],
         )
         text = next(b.text for b in response.content if b.type == "text")
@@ -267,16 +436,44 @@ def build_retriever(args, chunks: list[dict]):
         chunks, stem_length=5 if args.retriever == "bm25_stem5" else None)
 
 
+def build_models(args):
+    """(generator, judge, chat clients) for the two model names, or an error."""
+    providers = {split_model(name)[0]
+                 for name in (args.answer_model, args.judge_model)}
+    for provider in providers:
+        env = "ANTHROPIC_API_KEY" if provider == "anthropic" else PROVIDERS[provider][1]
+        if not os.environ.get(env):
+            return f"{env} gerekli - bu komut bir üretici ve bir jüri modeli çağırır."
+
+    anthropic_client = None
+    if "anthropic" in providers:
+        try:
+            import anthropic
+        except ImportError:
+            return "pip install 'turkish-rag-eval[llm]'"
+        anthropic_client = anthropic.Anthropic()
+
+    clients = {}
+    parts = []
+    for name, chat_cls, anthropic_cls in (
+            (args.answer_model, ChatGenerator, AnthropicGenerator),
+            (args.judge_model, ChatJudge, AnthropicJudge)):
+        provider, model = split_model(name)
+        if provider == "anthropic":
+            parts.append(anthropic_cls(anthropic_client, model))
+        else:
+            client = clients.setdefault(name, ChatClient(
+                provider, model, cache=args.out.with_suffix(".cache.jsonl")))
+            parts.append(chat_cls(client))
+    return parts[0], parts[1], clients
+
+
 def run(args) -> int:
-    if not os.environ.get("ANTHROPIC_API_KEY"):
-        print("ANTHROPIC_API_KEY gerekli - bu komut bir üretici ve bir jüri "
-              "modeli çağırır.")
+    models = build_models(args)
+    if isinstance(models, str):
+        print(models)
         return 1
-    try:
-        import anthropic
-    except ImportError:
-        print("pip install 'turkish-rag-eval[llm]'")
-        return 1
+    generator, judge, clients = models
 
     corpus = load_corpus(args.corpus or CORPUS)
     gold = load_gold(resolve_gold(args.gold))
@@ -286,23 +483,29 @@ def run(args) -> int:
     print(f"{len(corpus)} belge, {len(chunks)} parça, {len(gold)} soru")
     print(f"{args.chunking} + {args.retriever}, k={args.k}\n")
 
-    client = anthropic.Anthropic()
     summary, records = evaluate(
-        gold, chunks, build_retriever(args, chunks),
-        AnthropicGenerator(client, args.answer_model),
-        AnthropicJudge(client, args.judge_model), k=args.k)
+        gold, chunks, build_retriever(args, chunks), generator, judge, k=args.k)
 
     summary.update({"chunking": args.chunking, "retriever": args.retriever,
                     "k": args.k, "answer_model": args.answer_model,
                     "judge_model": args.judge_model,
+                    "temperature": 0 if clients else None,
+                    "date": time.strftime("%Y-%m-%d"),
+                    "tokens": {name: c.tokens for name, c in clients.items()},
                     "corpus_fingerprint": corpus.fingerprint})
+    # The records hold the models' own words. They stay local (gitignored):
+    # the free API terms do not allow redistributing raw model output, and the
+    # rates in the summary are what the benchmark reports.
+    records_path = args.out.with_suffix(".records.json")
     args.out.parent.mkdir(parents=True, exist_ok=True)
-    args.out.write_text(json.dumps(
-        {"summary": summary, "records": [asdict(r) for r in records]},
-        ensure_ascii=False, indent=2), encoding="utf-8")
+    args.out.write_text(json.dumps({"summary": summary}, ensure_ascii=False,
+                                   indent=2), encoding="utf-8")
+    records_path.write_text(json.dumps([asdict(r) for r in records],
+                                       ensure_ascii=False, indent=2),
+                            encoding="utf-8")
 
     print(report(summary))
-    print(f"\n-> {args.out}")
+    print(f"\n-> {args.out}\n-> {records_path} (yerel)")
     return 0
 
 

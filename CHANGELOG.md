@@ -12,6 +12,13 @@ published number is a breaking change**, even when no API changed.
 
 ### Added
 
+- **`groundedness` runs on free OpenAI-compatible APIs.** A model named
+  `groq:<model>` or `nvidia:<model>` goes to that provider (key from
+  `GROQ_API_KEY` / `NVIDIA_API_KEY`); a bare name still goes to Anthropic.
+  Rate limits and dropped connections are retried, every reply is cached in
+  `results/*.cache.jsonl` so an interrupted run resumes, and the summary
+  records date, temperature and token use. Per-question records (the models'
+  own words) are written beside the summary but kept out of git.
 - **The full 300-question set can be scored.** `fetch-corpus --include-drafts`
   fetches the drafted questions' articles too, into
   `data/raw/corpus-full.json` with its own lock (`data/corpus-full.lock.json`);
