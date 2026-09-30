@@ -2,8 +2,8 @@
 
 No network: the generator and judge are arguments, and these stubs stand in
 for them. What matters is that a query whose evidence was never retrieved is
-never scored as if it had been, and that answering without evidence is counted
-as a hallucination rather than quietly averaged away.
+never scored as if it had been, and that an answer the passages do not support
+is counted as a hallucination rather than quietly averaged away.
 """
 
 import pytest
@@ -71,12 +71,28 @@ def test_answering_without_evidence_is_a_hallucination():
     # diabetes question - yet the generator answers anyway.
     summary, records = evaluate(
         GOLD, CHUNKS, Retriever([1]), lambda q, c: "Ketoasidoz gelişebilir.",
-        never_judged, k=5)
+        judge_saying(supported=False, answers=True), k=5)
 
     assert not records[0].span_retrieved
     assert records[0].hallucinated
     assert summary["hallucination_rate"] == 1.0
+    assert summary["answered_when_not_retrieved"] == 1.0
     assert summary["abstained_when_not_retrieved"] == 0.0
+
+
+def test_an_answer_from_another_passage_is_not_a_hallucination():
+    # The gold span marks one place a fact is stated; articles repeat facts.
+    # Measured on the 2026-09-30 run: all five answers given without the span
+    # were stated in a retrieved passage, so "no span" cannot mean "made up".
+    summary, records = evaluate(
+        GOLD, CHUNKS, Retriever([1]), lambda q, c: "Bir cevap.",
+        judge_saying(supported=True, answers=False), k=5)
+
+    assert not records[0].hallucinated
+    assert records[0].supported is True
+    assert summary["hallucination_rate"] == 0.0
+    assert summary["answered_when_not_retrieved"] == 1.0
+    assert summary["correct_when_answered_without_span"] == 0.0
 
 
 def test_declining_without_evidence_is_the_right_answer():
@@ -107,8 +123,15 @@ def test_the_two_populations_are_reported_separately():
             self.calls += 1
             return [(0, 1.0)] if self.calls == 1 else [(1, 1.0)]
 
+    verdicts = iter([True, False])
+
+    def judge(*_args):
+        supported = next(verdicts)
+        return {"supported": supported, "answers_question": supported,
+                "reason": "stub"}
+
     summary, _ = evaluate(gold, CHUNKS, Mixed(), lambda q, c: "Bir cevap.",
-                          judge_saying(), k=5)
+                          judge, k=5)
 
     assert summary["span_retrieved"] == 1
     assert summary["span_not_retrieved"] == 1

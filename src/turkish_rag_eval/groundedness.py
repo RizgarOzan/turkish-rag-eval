@@ -13,11 +13,12 @@ span retrieved      the model should answer, and the answer should rest on the
                     passages. Scored for groundedness and for whether it
                     conveys the span.
 
-span not retrieved  there is nothing in the context that answers the question,
-                    so the only correct behaviour is to decline. Answering
-                    anyway is a hallucination, and the rate at which that
-                    happens is the number that decides whether a Turkish RAG
-                    system can be pointed at users.
+span not retrieved  the gold passage is missing, so the expected behaviour is
+                    to decline. An answer is still judged, because articles
+                    state a fact in more than one place; an answer the
+                    passages do not state is a hallucination, and the rate at
+                    which that happens is the number that decides whether a
+                    Turkish RAG system can be pointed at users.
 
 Abstention is detected deterministically. The generator is instructed to reply
 with a sentinel when the passages do not contain the answer, so "did it
@@ -266,8 +267,8 @@ class Record:
 
     @property
     def hallucinated(self) -> bool:
-        """Answered a question its context could not support."""
-        return not self.span_retrieved and not self.abstained
+        """Answered with a claim the retrieved passages do not state."""
+        return not self.abstained and self.supported is False
 
 
 def format_passages(chunks: list[dict]) -> str:
@@ -341,10 +342,10 @@ def evaluate(gold: list[dict], chunks: list[dict], retriever, generator,
             qid=item["qid"], question=item["question"],
             span_retrieved=span_retrieved, abstained=abstained, answer=answer)
 
-        # Judging an abstention is pointless - there is no claim to support -
-        # and judging a hallucination is settled already: the context cannot
-        # support it, which is what makes it one.
-        if span_retrieved and not abstained:
+        # Judging an abstention is pointless - there is no claim to support.
+        # An answer without the gold span is still judged: the span marks one
+        # place a fact is stated, and the passages may state it elsewhere.
+        if not abstained:
             verdict = judge(item["question"], answer, item["answer_span"],
                             retrieved)
             record.supported = bool(verdict["supported"])
@@ -360,6 +361,7 @@ def summarise(records: list[Record]) -> dict:
     found = [r for r in records if r.span_retrieved]
     missed = [r for r in records if not r.span_retrieved]
     judged = [r for r in found if r.supported is not None]
+    judged_missed = [r for r in missed if r.supported is not None]
 
     def rate(count: int, total: int) -> float | None:
         return count / total if total else None
@@ -375,11 +377,17 @@ def summarise(records: list[Record]) -> dict:
             sum(1 for r in judged if r.supported), len(judged)),
         "correct_when_answered": rate(
             sum(1 for r in judged if r.answers_question), len(judged)),
-        # With the evidence absent: did it keep quiet. This is the headline.
+        # With the evidence absent: did it keep quiet, and if not, did the
+        # passages at least state what it said. The last one is the headline.
         "abstained_when_not_retrieved": rate(
             sum(1 for r in missed if r.abstained), len(missed)),
+        "answered_when_not_retrieved": rate(
+            sum(1 for r in missed if not r.abstained), len(missed)),
+        "correct_when_answered_without_span": rate(
+            sum(1 for r in judged_missed if r.answers_question),
+            len(judged_missed)),
         "hallucination_rate": rate(
-            sum(1 for r in records if r.hallucinated), len(missed)),
+            sum(1 for r in missed if r.hallucinated), len(missed)),
     }
 
 
@@ -399,6 +407,8 @@ def report(summary: dict) -> str:
         "",
         "Kanıt getirilmediğinde",
         f"  doğru şekilde sustu  {percent(summary['abstained_when_not_retrieved'])}",
+        f"  yine de cevap verdi  {percent(summary['answered_when_not_retrieved'])}",
+        f"    soruyu cevaplıyor  {percent(summary['correct_when_answered_without_span'])}",
         f"  UYDURDU              {percent(summary['hallucination_rate'])}",
     ])
 

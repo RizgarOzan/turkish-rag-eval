@@ -105,20 +105,34 @@ different questions:
 
 - **Span retrieved** — the answer should rest on the passages and convey the
   span. Both go to a judge.
-- **Span not retrieved** — nothing in the context answers the question, so the
-  only correct behaviour is to decline. Answering anyway is a hallucination,
-  and *that* rate is what decides whether a Turkish RAG system can face users.
+- **Span not retrieved** — the gold passage is missing, so the expected
+  behaviour is to decline. An answer given anyway still goes to the judge,
+  because the span marks only one place a fact is stated; an answer the
+  passages do not state is a hallucination, and *that* rate is what decides
+  whether a Turkish RAG system can face users.
+
+The second rule was learned the hard way. The first version called every
+answer without the span a hallucination, and the first real run reported 20%.
+Read by hand, every one of those five answers had a matching sentence in a
+retrieved passage. Judged, four are stated there (three of them answer the
+question — the article says the fact twice), and one turned the passage's
+"diagnosable 30–60 days after infection" into "symptoms appear after 30–60
+days". That one is a hallucination; the other four are not, and a benchmark
+that cannot tell them apart reports 20% where the truth is 4%.
 
 A single pooled "accuracy" hides exactly that number. Abstention is detected
 deterministically through a sentinel the generator is instructed to emit, so
 "did it decline" never depends on a judge's mood; only groundedness and
 correctness cost a model call.
 
-**Status:** the command and its tests are in place, but no groundedness
-results are committed yet. By default the generator and the judge are the same
-model (`--answer-model` and `--judge-model` both default to `claude-opus-5`),
-which invites self-preference; a published run should use a judge from a
-different model family and spot-check its verdicts by hand.
+**Status:** one run is committed, on the 58 human questions: generator
+`groq:openai/gpt-oss-120b`, judge `nvidia:nvidia/nemotron-3-super-120b-a12b`
+(different families, so neither grades its own answers), 16 verdicts checked by
+hand — see the [README](https://github.com/RizgarOzan/turkish-rag-eval#generation-groundedness).
+Without flags the generator and the judge are the same model (both default to
+`claude-opus-5`), which invites self-preference. Every reply is cached in
+`results/groundedness.cache.jsonl`, so a run cut short by a rate limit resumes
+where it stopped.
 
 ## Reproducibility
 
