@@ -409,8 +409,9 @@ v0.1.0, tagged but not on PyPI yet — install from GitHub as above.
 - **Encyclopaedic text, not clinical text.** Nothing here transfers to a
   clinical setting without re-measurement. No patient data is used anywhere,
   and nothing here is a medical device.
-- **The generation half has no committed results yet.** Only retrieval is
-  measured in the tables above.
+- **The generation half is one generator, one judge, 58 questions.**
+  [Groundedness](#generation-groundedness) was measured once, through hosted
+  APIs, on the human set only; the judge was checked by hand on 16 verdicts.
 - **The embedding model is pinned by name, not by revision.**
 
 ## Contribute
