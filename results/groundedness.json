@@ -1,0 +1,36 @@
+{
+  "summary": {
+    "queries": 58,
+    "span_retrieved": 33,
+    "span_not_retrieved": 25,
+    "answered_when_retrieved": 0.9393939393939394,
+    "grounded_when_answered": 0.967741935483871,
+    "correct_when_answered": 0.967741935483871,
+    "abstained_when_not_retrieved": 0.8,
+    "answered_when_not_retrieved": 0.2,
+    "correct_when_answered_without_span": 0.6,
+    "hallucination_rate": 0.04,
+    "chunking": "hierarchical",
+    "retriever": "bm25_stem5",
+    "k": 5,
+    "answer_model": "groq:openai/gpt-oss-120b",
+    "judge_model": "nvidia:nvidia/nemotron-3-super-120b-a12b",
+    "temperature": 0,
+    "date": "2026-09-30",
+    "tokens": {
+      "groq:openai/gpt-oss-120b": {
+        "prompt": 60725,
+        "completion": 3558,
+        "calls": 58,
+        "seconds": 394.2
+      },
+      "nvidia:nvidia/nemotron-3-super-120b-a12b": {
+        "prompt": 42270,
+        "completion": 15215,
+        "calls": 36,
+        "seconds": 564.5
+      }
+    },
+    "corpus_fingerprint": "sha256:4f5f47ed59afb4c86a77bb89c16127850e5e388d6e184ddc5c831bed8dbcb815"
+  }
+}

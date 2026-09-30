@@ -107,6 +107,42 @@ Hierarchical chunking only helps the dense retriever, and fixed-size chunking
 — the most common default — lost on every retriever. More in the
 [design notes](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/design.md#what-else-the-numbers-say).
 
+### Generation: groundedness
+
+The R above feeds a G: the 58 questions answered from the top 5
+`hierarchical + bm25_stem5` passages by `groq:openai/gpt-oss-120b`, judged by
+a model from another family, `nvidia:nvidia/nemotron-3-super-120b-a12b`, at
+temperature 0 on `2026-09-30`. The gold span was among the passages for
+33 of 58 questions, and the two groups are scored apart:
+
+| Span retrieved (33) | |
+|---|---|
+| answered when the span was retrieved | 93.9% |
+| answer rests on the passages | 96.8% |
+| answer conveys the gold span | 96.8% |
+
+| Span not retrieved (25) | |
+|---|---|
+| declined when the span was not retrieved | 80.0% |
+| answered anyway | 20.0% |
+| of those, answer is right | 60.0% |
+| hallucinated (not in the passages) | 4.0% |
+
+The generator mostly declines when the evidence is missing, and when it does
+answer, the answer is usually stated in some other retrieved passage — one of
+25 is not. The first scoring rule called every answer without the span a
+hallucination and reported 20%; reading the five by hand showed four stated in
+a retrieved passage, so answers without the span now go to the judge too
+([why](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/design.md#groundedness)).
+16 verdicts were checked by hand; 14 agreed. Of the other two, the judge was
+too strict once (an answer inverted "not recommended unless below 7 g/dl") and
+too lenient once (it accepted "hyperuricaemia" as the cause of gout).
+
+This row depends on hosted APIs and cannot be reproduced offline; the models
+may change behind the same name. Only the rates are committed
+([`results/groundedness.json`](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/results/groundedness.json)) —
+the free API terms do not allow redistributing raw model output.
+
 ## Leaderboard
 
 Dense `nDCG@10` per chunking strategy, the hybrid (dense + stemmed BM25, RRF)
@@ -219,7 +255,7 @@ pip install 'turkish-rag-eval[all] @ git+https://github.com/RizgarOzan/turkish-r
 | `charts` | the two figures above, light and dark |
 | `leaderboard` | rebuild the model table; `--check` verifies every entry |
 | `abstain` | coverage / selective-accuracy curve for the best configuration ([details](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/design.md#abstention)) |
-| `groundedness` | score the generation half against the gold spans ([details](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/design.md#groundedness); no results committed yet) |
+| `groundedness` | score the generation half against the gold spans ([details](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/design.md#groundedness); [results](#generation-groundedness)) |
 | `bootstrap` | draft a gold set for your own corpus |
 | `agreement` | inter-annotator agreement over the gold set |
 | `fetch-corpus` | download the Wikipedia snapshot; `--verify` checks the lock; `--include-drafts` for [all 300 questions](#scoring-all-300) |
@@ -344,14 +380,14 @@ sentence or hierarchical chunks (the one hierarchical miss was fixed on
 
 v0.1.0, tagged but not on PyPI yet — install from GitHub as above.
 
-- **Works:** the retrieval harness, `report`, `leaderboard --check`, `bootstrap`,
+- **Works:** the retrieval harness, [`groundedness`](#generation-groundedness) on the 58 human questions, `report`, `leaderboard --check`, `bootstrap`,
   `agreement`, the Hugging Face export, scoring [all 300 questions](#scoring-all-300)
   on a pinned corpus, and CI that validates every contributed question against
   live Wikipedia.
 - **In progress:** human review of the gold set. All 300 planned questions are
   in (58 human, 242 LLM-drafted); the drafts join the results once people have
   reviewed them.
-- **Not yet:** committed results for `groundedness`, and EmbeddingGemma.
+- **Not yet:** EmbeddingGemma, and `groundedness` on the 242 drafted questions.
 
 ## Limits
 
