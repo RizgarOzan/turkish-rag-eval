@@ -15,6 +15,7 @@ MODELS = {
     "MiniLM (default)": "sentence-transformers__paraphrase-multilingual-MiniLM-L12-v2",
     "multilingual-e5-small": "intfloat__multilingual-e5-small",
     "multilingual-e5-base": "intfloat__multilingual-e5-base",
+    "Mursit-Large-TR-Retrieval": "newmindai__Mursit-Large-TR-Retrieval",
 }
 
 

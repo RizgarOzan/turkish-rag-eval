@@ -49,3 +49,11 @@ def test_the_raw_model_output_is_not_committed():
         (ROOT / "results" / "groundedness.json").read_text(encoding="utf-8"))
     assert not list((ROOT / "results").rglob("*.records.json")) or \
         "results/*.records.json" in (ROOT / ".gitignore").read_text()
+
+
+def test_no_other_section_says_the_results_are_missing():
+    # Limits and Status once said "no committed results yet"; once the summary
+    # exists, no line of the README may still claim that.
+    text = (ROOT / "README.md").read_text(encoding="utf-8").lower()
+    assert "no committed results" not in text
+    assert "no results committed" not in text

@@ -353,7 +353,7 @@ turkish-rag-eval fetch-corpus --include-drafts   # data/raw/corpus-full.json
 turkish-rag-eval run --include-drafts            # results/full/<model>/
 ```
 
-Measured 2026-09-27 (re-run after the batch 5 fix) on 296 questions (the 4 `needs-human` drafts never load),
+Measured 2026-09-27 (re-run after the batch 5 fix; Mursit added 2026-10-01) on 296 questions (the 4 `needs-human` drafts never load),
 hierarchical chunks, nDCG@10:
 
 | Retriever | 58 human questions | 296 questions (238 drafted) |
@@ -365,10 +365,16 @@ hierarchical chunks, nDCG@10:
 | multilingual-e5-small, hybrid_rrf | 0.639 | 0.642 |
 | multilingual-e5-base, dense | 0.668 | 0.646 |
 | multilingual-e5-base, hybrid_rrf | 0.648 | 0.664 |
+| Mursit-Large-TR-Retrieval, dense | 0.781 | 0.613 |
+| Mursit-Large-TR-Retrieval, hybrid_rrf | 0.673 | 0.661 |
 
 On the wider set stemmed BM25 gets stronger and every dense model weaker, so
-fusing the two now helps all three models, where on the 58 health questions it
-cost the E5 models. These rows are not in the tables above: most of the
+fusing the two now helps all four models, where on the 58 health questions it
+cost the E5 models and Mursit. Mursit drops the most, from 0.781 to 0.613, and
+falls below e5-base, so its lead on the human set does not carry over to the
+drafted questions yet. Those questions were written by an LLM from one sentence
+each; whether that style suits the smaller models better is open until people
+have checked them. These rows are not in the tables above: most of the
 questions have not been checked by a person yet. The run also names every
 question no chunk can answer; a span split by a chunk boundary is the usual
 reason. Here that is 17 questions with fixed-size chunks and none with
@@ -409,8 +415,9 @@ v0.1.0, tagged but not on PyPI yet — install from GitHub as above.
 - **Encyclopaedic text, not clinical text.** Nothing here transfers to a
   clinical setting without re-measurement. No patient data is used anywhere,
   and nothing here is a medical device.
-- **The generation half has no committed results yet.** Only retrieval is
-  measured in the tables above.
+- **The generation half is one generator, one judge, 58 questions.**
+  [Groundedness](#generation-groundedness) was measured once, through hosted
+  APIs, on the human set only; the judge was checked by hand on 16 verdicts.
 - **The embedding model is pinned by name, not by revision.**
 
 ## Contribute
