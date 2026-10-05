@@ -21,7 +21,9 @@ package should still be able to validate a gold set.
 
 import argparse
 import importlib
+import os
 import sys
+from pathlib import Path
 
 from . import __version__, paths
 from .corpus import CorpusError
@@ -61,8 +63,23 @@ def format_help() -> str:
     return USAGE.format(commands="\n".join(lines))
 
 
+def load_env(path: Path = Path(".env")) -> None:
+    """``KEY=value`` lines from ``.env`` (gitignored) into the environment.
+
+    Keys and endpoints such as OPENAI_BASE_URL live there so they never reach
+    the repo. A variable already set in the real environment wins.
+    """
+    if not path.is_file():
+        return
+    for line in path.read_text(encoding="utf-8").splitlines():
+        key, sep, value = line.partition("=")
+        if sep and key.strip() and not key.lstrip().startswith("#"):
+            os.environ.setdefault(key.strip(), value.strip().strip("\"'"))
+
+
 def main(argv: list[str] | None = None) -> int:
     argv = list(sys.argv[1:] if argv is None else argv)
+    load_env()
 
     if not argv:
         print(format_help(), end="")
