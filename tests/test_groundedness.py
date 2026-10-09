@@ -202,6 +202,17 @@ def test_an_unknown_provider_is_refused_rather_than_sent_to_anthropic():
         split_model("mistral:large")
 
 
+def test_the_openai_provider_follows_openai_base_url(monkeypatch):
+    monkeypatch.delenv("OPENAI_BASE_URL", raising=False)
+    assert ChatClient("openai", "m", api_key="k").url == (
+        "https://api.openai.com/v1/chat/completions")
+    monkeypatch.setenv("OPENAI_BASE_URL", "http://localhost:20128/v1/")
+    assert ChatClient("openai", "m", api_key="k").url == (
+        "http://localhost:20128/v1/chat/completions")
+    # The other providers keep their own endpoint.
+    assert ChatClient("groq", "m", api_key="k").url.startswith("https://api.groq.com/")
+
+
 def test_a_verdict_is_read_from_a_fenced_or_chatty_reply():
     fenced = '```json\n{"supported": true, "answers_question": false, "reason": "x"}\n```'
     chatty = 'Here is my grade: {"supported": false, "answers_question": true, "reason": "{y}"} Done.'

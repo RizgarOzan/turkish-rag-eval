@@ -39,6 +39,21 @@ def test_version(capsys):
     assert __version__ in capsys.readouterr().out
 
 
+def test_dotenv_fills_the_environment_but_never_overrides_it(tmp_path, monkeypatch):
+    env = tmp_path / ".env"
+    env.write_text("# comment\nTRE_A=from-file\nTRE_B='quoted'\nTRE_C=from-file\n",
+                   encoding="utf-8")
+    monkeypatch.delenv("TRE_A", raising=False)
+    monkeypatch.delenv("TRE_B", raising=False)
+    monkeypatch.setenv("TRE_C", "real")
+    cli.load_env(env)
+    import os
+    assert (os.environ["TRE_A"], os.environ["TRE_B"], os.environ["TRE_C"]) == (
+        "from-file", "quoted", "real")
+    for key in ("TRE_A", "TRE_B"):
+        monkeypatch.delenv(key)
+
+
 def test_unknown_command_is_rejected(capsys):
     assert cli.main(["definitely-not-a-command"]) == 2
     assert "unknown command" in capsys.readouterr().err

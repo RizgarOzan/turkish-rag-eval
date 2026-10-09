@@ -143,6 +143,11 @@ may change behind the same name. Only the rates are committed
 ([`results/groundedness.json`](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/results/groundedness.json)) —
 the free API terms do not allow redistributing raw model output.
 
+To rerun it with other models, name them `groq:`, `nvidia:` or `openai:`
+(a bare name goes to Anthropic). Keys can sit in a `.env` file (gitignored) in
+the directory you run from; `openai:` follows `OPENAI_BASE_URL`, so any OpenAI-compatible
+endpoint, a local router included, works.
+
 ## Leaderboard
 
 Dense `nDCG@10` per chunking strategy, the hybrid (dense + stemmed BM25, RRF)

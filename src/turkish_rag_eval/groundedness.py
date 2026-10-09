@@ -28,8 +28,10 @@ which are genuinely judgements, go to a model.
 Nothing here runs without an API key, and the evaluation takes a generator and
 a judge as arguments, so the scoring logic is testable with stubs and a
 different provider can be dropped in without touching it. A model named
-``provider:model`` (``groq:``, ``nvidia:``) goes to that provider's
-OpenAI-compatible endpoint; a bare name goes to Anthropic.
+``provider:model`` (``groq:``, ``nvidia:``, ``openai:``) goes to that provider's
+OpenAI-compatible endpoint; a bare name goes to Anthropic. ``openai:`` follows
+``OPENAI_BASE_URL`` when it is set, so a local router such as OmniRoute
+(``http://localhost:20128/v1``) can stand in.
 """
 
 import argparse
@@ -91,7 +93,14 @@ PROVIDERS = {
     "groq": ("https://api.groq.com/openai/v1/chat/completions", "GROQ_API_KEY"),
     "nvidia": ("https://integrate.api.nvidia.com/v1/chat/completions",
                "NVIDIA_API_KEY"),
+    "openai": ("https://api.openai.com/v1/chat/completions", "OPENAI_API_KEY"),
 }
+
+
+def chat_url(provider: str) -> str:
+    """The provider's chat completions URL; ``openai`` honours OPENAI_BASE_URL."""
+    base = os.environ.get("OPENAI_BASE_URL") if provider == "openai" else None
+    return f"{base.rstrip('/')}/chat/completions" if base else PROVIDERS[provider][0]
 
 #: Per-provider request extras. gpt-oss on Groq reasons before answering; low
 #: effort for the same reason the Anthropic generator runs at low effort.
@@ -141,8 +150,8 @@ class ChatClient:
         if session is None:
             import requests
             session = requests.Session()
-        self.url, env = PROVIDERS[provider]
-        self.key = api_key or os.environ[env]
+        self.url = chat_url(provider)
+        self.key = api_key or os.environ[PROVIDERS[provider][1]]
         self.model = model
         self.extra = EXTRA.get(f"{provider}:{model}", {})
         self.session, self.sleep = session, sleep
