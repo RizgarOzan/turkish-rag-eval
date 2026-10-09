@@ -39,6 +39,30 @@ configs:
   data_files:
   - split: test
     path: passages/qrels/test.jsonl
+- config_name: full-corpus
+  data_files:
+  - split: corpus
+    path: full/corpus.jsonl
+- config_name: full-queries
+  data_files:
+  - split: queries
+    path: full/queries.jsonl
+- config_name: full-qrels
+  data_files:
+  - split: test
+    path: full/qrels/test.jsonl
+- config_name: full-passages-corpus
+  data_files:
+  - split: corpus
+    path: full/passages/corpus.jsonl
+- config_name: full-passages-queries
+  data_files:
+  - split: queries
+    path: full/passages/queries.jsonl
+- config_name: full-passages-qrels
+  data_files:
+  - split: test
+    path: full/passages/qrels/test.jsonl
 ---
 
 # Turkish RAG Eval
@@ -79,6 +103,26 @@ Articles average ~20 000 characters, so a 512-token encoder only sees the
 lead of each one at article level; passages are what a RAG pipeline
 actually retrieves.
 
+### Full set: 296 questions, six domains
+
+`full/` (configs prefixed `full-`, same layout, article and passage level)
+adds 238 LLM-drafted questions over 40 more articles in five domains:
+history, geography, astronomy, biology and computing. 94 articles,
+1.89 M characters, 296 questions. Each query has a `source` field, `human`
+or `llm-draft`, so you can filter either way.
+
+```python
+queries = load_dataset("RizgarOzan/turkish-rag-eval", "full-queries", split="queries")
+drafted = queries.filter(lambda q: q["source"] == "llm-draft")
+```
+
+The drafts were **double-labelled, not human-verified**: one model pass
+wrote the question and marked the span, a second, separate pass marked the
+span again without seeing the first. Only items where the two passes agree
+are here (4 disagreements are left out). Agreement figures per batch are in
+the [repo README](https://github.com/RizgarOzan/turkish-rag-eval#gold-set).
+Treat the numbers you get on them as provisional.
+
 ## How it was made
 
 - **Questions are paraphrased, not copied.** "Şeker hastalığı teşhisi konan
@@ -106,11 +150,16 @@ configurations and six models are in the
 | dense, `paraphrase-multilingual-MiniLM-L12-v2` | 0.501 |
 | BM25, 5-character prefix stemming | 0.494 |
 
+On the full 296-question set the order changes, which is why the drafts are
+kept apart: e5-base 0.646, Mursit 0.613, e5-small 0.568, MiniLM 0.405, and
+stemmed BM25 0.558
+([details](https://github.com/RizgarOzan/turkish-rag-eval#scoring-all-300)).
+
 ## Limits
 
 - 58 queries is small: differences under about 0.05 nDCG are noise.
-- One domain (health) for now. Questions from five more domains are being
-  added in the repo and will join this dataset once verified.
+- The 58 human questions cover one domain (health). The other five domains
+  exist only as LLM drafts in `full/` until people check them.
 - Encyclopaedic text, not clinical text. No patient data is used anywhere, and
   nothing here is a medical device.
 
