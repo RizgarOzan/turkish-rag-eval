@@ -14,6 +14,11 @@ def test_e5_models_get_their_query_and_passage_prefixes():
     assert prefixes_for("intfloat/multilingual-e5-base") == ("query: ", "passage: ")
 
 
+def test_embeddinggemma_gets_its_retrieval_prompts():
+    assert prefixes_for("google/embeddinggemma-300m") == (
+        "task: search result | query: ", "title: none | text: ")
+
+
 def test_other_models_get_no_prefix():
     assert prefixes_for(DEFAULT_MODEL) == ("", "")
     assert prefixes_for("BAAI/bge-m3") == ("", "")
