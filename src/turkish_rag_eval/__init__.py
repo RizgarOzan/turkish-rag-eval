@@ -9,6 +9,6 @@ Every published number is tagged with this version, because a benchmark whose
 results cannot be reproduced against a fixed release is not comparable.
 """
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 __all__ = ["__version__"]
