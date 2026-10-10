@@ -88,6 +88,34 @@ token sets, averaged over every annotator pair if there are more than two) as
 the headline number, token-level F1 alongside it, and, per chunking strategy,
 Cohen's kappa over which chunks each span would mark relevant.
 
+## Review drafted questions
+
+242 of the 300 questions were drafted by an LLM and labelled twice by two
+independent LLM passes. No person has checked them yet, and that is the
+benchmark's biggest open problem. Issues labelled `human-review` each hand you
+about ten of them.
+
+For every question in your batch, open the article (the `doc_id` is the page
+id: `https://tr.wikipedia.org/?curid=<doc_id>`) and add a `human_review` object
+to the item, in place, in `data/eval/contrib/llm-draft-<topic>.json`:
+
+```json
+"human_review": {"reviewer": "your-github-name", "verdict": "ok"}
+```
+
+- **`ok`** — the question is clear Turkish, has one answer in the article, and
+  `answer_span` contains that answer.
+- **`fixed`** — you changed `question` and/or `answer_span` to make it right.
+  The span must still be copied verbatim from the article. Add a `"note"`
+  saying what you changed.
+- **`rejected`** — it cannot be saved (two possible answers, the article no
+  longer says it, the question gives the answer away). Add a `"note"`. A
+  rejected question stops loading; it is not deleted.
+
+Leave `second_annotation` and `review` as they are. Then run
+`turkish-rag-eval validate --online data/eval/contrib/llm-draft-<topic>.json`;
+its last line counts how many drafts have been reviewed so far.
+
 ## Submit an embedding model
 
 The leaderboard takes submissions. Run the harness and commit what it wrote:
@@ -145,3 +173,12 @@ etiketleyici.** Eklediğin her soru sonuçlardaki gürültüyü azaltır. Makine
 haksız avantaj verir; doğrulayıcı reddeder). `answer_span` ise makaleden
 **birebir kopyalanan** kısa bir ifade. Her sorunun tek net cevabı olsun.
 `qid` GitHub adınla başlasın ve benzersiz olsun. Sorular `?` ile bitsin.
+
+**Taslak soruları denetle.** 300 sorunun 242'sini bir LLM yazdı, iki ayrı LLM
+geçişi etiketledi; henüz hiçbirine insan bakmadı. `human-review` etiketli her
+issue yaklaşık on soru veriyor. Her soru için makaleyi aç
+(`https://tr.wikipedia.org/?curid=<doc_id>`) ve `llm-draft-<konu>.json`
+dosyasında o maddeye `"human_review": {"reviewer": "<github-adın>", "verdict": "ok"}`
+ekle. Soruyu ya da span'i düzelttiysen `"fixed"`, kurtarılamıyorsa
+`"rejected"` yaz ve ikisinde de `"note"` ile nedenini söyle. Ayrıntı yukarıdaki
+*Review drafted questions* bölümünde.

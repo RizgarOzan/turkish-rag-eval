@@ -93,6 +93,30 @@ def check_items(files: dict[str, list]) -> list[str]:
             if share > MAX_OVERLAP:
                 errors.append(f"{where}: {share:.0%} of the question's words come "
                               f"from the answer span - paraphrase it")
+            if "human_review" in item:
+                errors += check_human_review(where, item)
+    return errors
+
+
+VERDICTS = ("ok", "fixed", "rejected")
+
+
+def check_human_review(where: str, item: dict) -> list[str]:
+    """A person's verdict on an LLM-drafted question (see CONTRIBUTING.md).
+    ``fixed`` and ``rejected`` must say why, so the next reader can check."""
+    review = item["human_review"]
+    if item.get("source") != "llm-draft":
+        return [f"{where}: human_review is only for llm-draft questions"]
+    if not isinstance(review, dict):
+        return [f"{where}: human_review must be an object"]
+    errors = []
+    if not isinstance(review.get("reviewer"), str) or not review["reviewer"].strip():
+        errors.append(f"{where}: human_review needs your GitHub name as reviewer")
+    if review.get("verdict") not in VERDICTS:
+        errors.append(f"{where}: human_review verdict must be one of {', '.join(VERDICTS)}")
+    elif review["verdict"] != "ok" and (
+            not isinstance(review.get("note"), str) or not review["note"].strip()):
+        errors.append(f"{where}: a '{review['verdict']}' verdict needs a note saying why")
     return errors
 
 
@@ -161,6 +185,10 @@ def run(args) -> int:
         print(error)
     total = sum(len(v) for v in files.values() if isinstance(v, list))
     print(f"{len(files)} dosya, {total} soru, {len(errors)} hata")
+    drafts = [i for v in files.values() if isinstance(v, list) for i in v
+              if isinstance(i, dict) and i.get("source") == "llm-draft"]
+    reviewed = sum(isinstance(i.get("human_review"), dict) for i in drafts)
+    print(f"{reviewed}/{len(drafts)} taslak insan denetiminden geçti")
     return 1 if errors else 0
 
 
