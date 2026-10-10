@@ -1,8 +1,9 @@
 """Per-model settings for the dense retriever.
 
 E5 models were trained with "query: " / "passage: " in front of every input
-and their model cards require the same at inference. Models that ship their
-own prompts, or need none, get empty prefixes.
+and their model cards require the same at inference. EmbeddingGemma's card gives
+its retrieval prompts the same way (no titles here, so "none"). Models that
+ship their own prompts, or need none, get empty prefixes.
 """
 
 from .gold import ROOT
@@ -13,6 +14,8 @@ E5_PREFIXES = ("query: ", "passage: ")
 MODEL_PREFIXES = {
     "intfloat/multilingual-e5-small": E5_PREFIXES,
     "intfloat/multilingual-e5-base": E5_PREFIXES,
+    "google/embeddinggemma-300m": ("task: search result | query: ",
+                                   "title: none | text: "),
 }
 
 

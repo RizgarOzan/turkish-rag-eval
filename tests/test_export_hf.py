@@ -64,3 +64,19 @@ def test_question_whose_span_is_in_no_passage_is_dropped():
             "answer_span": "== Tedavi =="}  # headings are not passage text
     corpus, queries, qrels = build_passages([item], [LONG])
     assert queries == [] and qrels == [] and corpus
+
+
+def test_full_set_marks_where_each_question_came_from():
+    draft = dict(GOLD[0], qid="llm-x-001", source="llm-draft")
+    _, queries, _ = build([GOLD[0], draft], DOCS, mark_source=True)
+    assert [q["source"] for q in queries] == ["human", "llm-draft"]
+    grip = {"qid": "q003", "question": "Grip nasıl tedavi edilir?", "doc_id": "3",
+            "doc_title": "Grip", "answer_span": "dinlenmek ve sıvı almak"}
+    _, queries, _ = build_passages([grip, dict(grip, qid="llm-x-002", source="llm-draft")],
+                                   [LONG], mark_source=True)
+    assert [q["source"] for q in queries] == ["human", "llm-draft"]
+
+
+def test_hand_labelled_export_has_no_source_field():
+    _, queries, _ = build(GOLD, DOCS)
+    assert "source" not in queries[0]

@@ -209,8 +209,9 @@ them its own way, and judges each chunk by the answer span, so pipeline
 choices are compared on the same labels. For a model-only comparison the same
 data exports to the BEIR layout MTEB reads (`turkish-rag-eval export-hf`),
 published as
-[RizgarOzan/turkish-rag-eval](https://huggingface.co/datasets/RizgarOzan/turkish-rag-eval);
-adding it to MTEB is proposed in
+[RizgarOzan/turkish-rag-eval](https://huggingface.co/datasets/RizgarOzan/turkish-rag-eval)
+(the 58 human questions, plus all 296 under the `full-*` configs, each marked
+`human` or `llm-draft`); adding it to MTEB is proposed in
 [embeddings-benchmark/mteb#5536](https://github.com/embeddings-benchmark/mteb/issues/5536).
 
 ## Your own corpus

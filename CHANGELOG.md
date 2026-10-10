@@ -10,8 +10,22 @@ published number is a breaking change**, even when no API changed.
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-10-10
+
+First release on PyPI. Numbers on the 58 human-labelled questions are the same
+as in v0.1.0; the minor bump is for the groundedness scoring change below.
+
 ### Added
 
+- `export-hf` also writes `full/`: all 94 articles and 296 questions at
+  article and passage level, each query tagged `source: human|llm-draft`
+  (published on Hugging Face as the `full-*` configs). The existing configs
+  are byte-identical.
+- `openai:<model>` sends `groundedness` to any OpenAI-compatible endpoint
+  (`OPENAI_BASE_URL`); keys can come from a local `.env`, the real
+  environment wins.
+- Retrieval prompts for `google/embeddinggemma-300m`, taken from its model
+  card.
 - **`groundedness` runs on free OpenAI-compatible APIs.** A model named
   `groq:<model>` or `nvidia:<model>` goes to that provider (key from
   `GROQ_API_KEY` / `NVIDIA_API_KEY`); a bare name still goes to Anthropic.

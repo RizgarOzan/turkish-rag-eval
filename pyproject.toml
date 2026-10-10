@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "turkish-rag-eval"
-version = "0.1.0"
+version = "0.2.0"
 description = "Measure which parts of a Turkish RAG pipeline pay off: chunking, stemming, embedding model, fusion."
 readme = "README.md"
 requires-python = ">=3.10"
