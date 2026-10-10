@@ -398,7 +398,10 @@ v0.2.0, [on PyPI](https://pypi.org/project/turkish-rag-eval/).
   live Wikipedia.
 - **In progress:** human review of the gold set. All 300 planned questions are
   in (58 human, 242 LLM-drafted); the drafts join the results once people have
-  reviewed them.
+  reviewed them. Issues labelled
+  [`human-review`](https://github.com/RizgarOzan/turkish-rag-eval/labels/human-review)
+  hand out about ten drafts each; `turkish-rag-eval validate` counts how many
+  are done.
 - **Not yet:** EmbeddingGemma, and `groundedness` on the 242 drafted questions.
 
 ## Limits

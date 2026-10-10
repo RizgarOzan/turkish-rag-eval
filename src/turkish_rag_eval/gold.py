@@ -44,11 +44,15 @@ def load_gold(paths: list[Path] | None = None, include_drafts: bool = False) -> 
     """LLM-drafted questions (``"source": "llm-draft"``) stay out unless asked
     for, so the published numbers keep coming from the hand-labelled set. A
     draft whose two annotators disagreed (``"review": "needs-human"``) never
-    loads: its gold span is not settled yet."""
+    loads until a person settles it (``"human_review"`` verdict ``ok`` or
+    ``fixed``), and a draft a person rejected never loads."""
     items = []
     for path in paths or gold_files():
         for item in json.loads(path.read_text(encoding="utf-8")):
-            if item.get("review") == "needs-human":
+            verdict = (item.get("human_review") or {}).get("verdict")
+            if verdict == "rejected":
+                continue
+            if item.get("review") == "needs-human" and verdict not in ("ok", "fixed"):
                 continue
             if item.get("source") == "llm-draft" and not include_drafts:
                 continue

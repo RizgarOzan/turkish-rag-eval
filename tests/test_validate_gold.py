@@ -134,6 +134,52 @@ def test_load_gold_never_loads_items_waiting_for_a_human(tmp_path):
     assert load_gold([path], include_drafts=True) == []
 
 
+DRAFT = dict(GOOD, qid="llm-003", source="llm-draft", review="agreed")
+
+
+def test_human_review_ok_needs_only_a_reviewer():
+    item = dict(DRAFT, human_review={"reviewer": "ayse", "verdict": "ok"})
+    assert check_items({"a.json": [item]}) == []
+
+
+def test_human_review_fixed_or_rejected_needs_a_note():
+    for verdict in ("fixed", "rejected"):
+        review = {"reviewer": "ayse", "verdict": verdict}
+        errors = check_items({"a.json": [dict(DRAFT, human_review=review)]})
+        assert len(errors) == 1 and "note" in errors[0]
+        review["note"] = "span cut mid-sentence"
+        assert check_items({"a.json": [dict(DRAFT, human_review=review)]}) == []
+
+
+def test_human_review_rejects_unknown_verdicts_and_missing_reviewer():
+    item = dict(DRAFT, human_review={"verdict": "maybe"})
+    assert len(check_items({"a.json": [item]})) == 2
+
+
+def test_human_review_is_only_for_drafts():
+    item = dict(GOOD, human_review={"reviewer": "ayse", "verdict": "ok"})
+    errors = check_items({"a.json": [item]})
+    assert len(errors) == 1 and "llm-draft" in errors[0]
+
+
+def test_load_gold_drops_drafts_a_person_rejected(tmp_path):
+    rejected = dict(DRAFT, human_review={"reviewer": "ayse", "verdict": "rejected",
+                                         "note": "two answers in the article"})
+    kept = dict(DRAFT, qid="llm-004", question="Başka bir soru mu?",
+                human_review={"reviewer": "ayse", "verdict": "ok"})
+    path = tmp_path / "a.json"
+    path.write_text(json.dumps([rejected, kept]), encoding="utf-8")
+    assert [i["qid"] for i in load_gold([path], include_drafts=True)] == ["llm-004"]
+
+
+def test_a_person_can_settle_a_disputed_draft(tmp_path):
+    settled = dict(DRAFT, review="needs-human",
+                   human_review={"reviewer": "ayse", "verdict": "fixed", "note": "kept the 1st span"})
+    path = tmp_path / "a.json"
+    path.write_text(json.dumps([settled]), encoding="utf-8")
+    assert [i["qid"] for i in load_gold([path], include_drafts=True)] == ["llm-003"]
+
+
 def test_online_checks_the_second_annotation_span_too():
     second = dict(GOOD, second_annotation={"annotator": "llm-2", "answer_span": "yok böyle bir cümle"})
     errors = check_online([second], fetch=lambda _: ARTICLE, delay=0)
