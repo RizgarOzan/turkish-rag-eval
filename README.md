@@ -10,7 +10,7 @@ models, measured on a hand-labelled Turkish gold set, with confidence
 intervals and a cost column — then pointed at your own documents.
 
 ```bash
-pip install git+https://github.com/RizgarOzan/turkish-rag-eval   # not on PyPI yet
+pip install turkish-rag-eval
 turkish-rag-eval run --corpus ./belgelerim --gold ./sorular.json
 turkish-rag-eval report
 ```
@@ -250,8 +250,8 @@ What you get is a draft to review, not a gold set.
 Python 3.10+. CPU only — no GPU anywhere in this project.
 
 ```bash
-pip install git+https://github.com/RizgarOzan/turkish-rag-eval                       # metrics, BM25, gold-set tooling
-pip install 'turkish-rag-eval[all] @ git+https://github.com/RizgarOzan/turkish-rag-eval'  # + dense retrieval, charts, LLM commands
+pip install turkish-rag-eval          # metrics, BM25, gold-set tooling
+pip install 'turkish-rag-eval[all]'   # + dense retrieval, charts, LLM commands
 ```
 
 | Command | What it does |
@@ -390,7 +390,7 @@ sentence or hierarchical chunks (the one hierarchical miss was fixed on
 
 ## Status
 
-v0.1.0, tagged but not on PyPI yet — install from GitHub as above.
+v0.2.0, [on PyPI](https://pypi.org/project/turkish-rag-eval/).
 
 - **Works:** the retrieval harness, [`groundedness`](#generation-groundedness) on the 58 human questions, `report`, `leaderboard --check`, `bootstrap`,
   `agreement`, the Hugging Face export, scoring [all 300 questions](#scoring-all-300)
