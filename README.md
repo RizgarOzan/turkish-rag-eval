@@ -1,5 +1,6 @@
 # turkish-rag-eval
 
+[![PyPI](https://img.shields.io/pypi/v/turkish-rag-eval)](https://pypi.org/project/turkish-rag-eval/)
 [![validate](https://github.com/RizgarOzan/turkish-rag-eval/actions/workflows/validate.yml/badge.svg)](https://github.com/RizgarOzan/turkish-rag-eval/actions/workflows/validate.yml)
 [![licence: MIT + CC BY-SA 4.0](https://img.shields.io/badge/licence-MIT%20%2B%20CC%20BY--SA%204.0-blue)](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/NOTICE.md)
 [![dataset on Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20dataset-RizgarOzan%2Fturkish--rag--eval-yellow)](https://huggingface.co/datasets/RizgarOzan/turkish-rag-eval)
@@ -434,7 +435,10 @@ v0.2.0, [on PyPI](https://pypi.org/project/turkish-rag-eval/).
 The first two limits shrink with every contributor. Adding questions needs no
 ML background — pick a Turkish Wikipedia article, write 5–10 paraphrased
 questions, and open a pull request with one JSON file. A validator checks each
-file against Wikipedia in CI. See [CONTRIBUTING.md](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/CONTRIBUTING.md) (Türkçe
+file against Wikipedia in CI. Smaller still: each
+[`human-review`](https://github.com/RizgarOzan/turkish-rag-eval/labels/human-review)
+issue lists ten LLM-drafted questions to check against their article, and
+marking them `ok`, `fixed` or `rejected` is the whole job. See [CONTRIBUTING.md](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/CONTRIBUTING.md) (Türkçe
 açıklama dahil) and the
 [good first issues](https://github.com/RizgarOzan/turkish-rag-eval/issues?q=is%3Aopen+label%3A%22good+first+issue%22).
 
