@@ -9,7 +9,8 @@ Turkish letters are restored from the corpus itself: every word in the
 documents is indexed under its ASCII fold, and an ASCII-only query word is
 replaced by the most frequent corpus word with the same fold. No dictionary,
 no model, no dependency - and nothing the corpus does not contain can be
-invented. Words that already carry a Turkish letter are never touched.
+invented. Words that already carry a Turkish letter, two-letter words and
+words with nothing to restore are never touched.
 """
 
 import re
@@ -52,12 +53,17 @@ class QueryNormalizer:
 
     def _restore(self, match: re.Match) -> str:
         word = match.group()
-        if not word.isascii():
+        # Two-letter words are too ambiguous ("mi" and "mı" are both
+        # question particles), and a word with a Turkish letter is already typed.
+        if len(word) < 3 or not word.isascii():
             return word
         form = self.vocab.get(fold_ascii(turkish_lower(word)))
         if form is None:
             return word
-        return _turkish_upper_first(form) if word[0].isupper() else form
+        restored = _turkish_upper_first(form) if word[0].isupper() else form
+        # Only Turkish marks may change ("Istanbul" -> "İstanbul"), never the
+        # case of other letters: that would turn an acronym like "OKB" into "Okb".
+        return restored if fold_ascii(restored) == word else word
 
     def __call__(self, query: str) -> str:
         query = unicodedata.normalize("NFC", query).replace("i" + _COMBINING_DOT, "i")

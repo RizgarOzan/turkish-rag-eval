@@ -11,6 +11,7 @@ CORPUS = [
     "Sigara içmek akciğeri doğrudan etkiler. Akciğer kanseri sık görülür.",
     "İstanbul, Türkiye'nin en kalabalık şehridir. İstanbul'da iki kıta var.",
     "Şeker hastalığı için düzenli ölçüm gerekir.",
+    "OKB tedavisi uzun sürer mı diye sorulur; okb yaygındır.",
 ]
 normalise = QueryNormalizer(CORPUS)
 
@@ -41,6 +42,17 @@ def test_a_short_acronym_is_not_treated_as_caps_lock():
     assert normalise("DNA nedir") == "DNA nedir"
 
 
+def test_an_acronym_with_nothing_to_restore_keeps_its_case():
+    # Found in the gold set: "OKB" came back as "Okb", "MS" as "Ms".
+    assert normalise("OKB nasil tedavi edilir") == "OKB nasil tedavi edilir"
+
+
+def test_two_letter_words_are_too_ambiguous_to_restore():
+    # "mi" and "mı" are both question particles; vowel harmony, not the
+    # corpus, decides. Found in the gold set: "mi?" came back as "mı?".
+    assert normalise("uzun surer mi?") == "uzun sürer mi?"
+
+
 def test_correct_text_is_left_alone():
     text = "Şeker hastalığı için ölçüm gerekir"
     assert normalise(text) == text
@@ -63,6 +75,6 @@ def test_only_ever_adds_marks_and_lowers_case(text):
     assert fold_ascii(turkish_lower(normalise(text))) == fold_ascii(turkish_lower(text))
 
 
-@given(st.sampled_from(CORPUS))
+@given(st.sampled_from(CORPUS[:3]))
 def test_folding_then_normalising_recovers_corpus_text(text):
     assert normalise(fold_ascii(text)) == text
