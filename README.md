@@ -217,6 +217,27 @@ To submit a model, open a pull request adding `results/models/<org>__<name>/`
 CI re-derives every metric from the per-query relevance arrays committed
 beside it, and checks the harness version and corpus fingerprint.
 
+### Reranking
+
+A cross-encoder reads the question and a passage together, so it ranks far
+better than an embedding comparison and far too slowly to run over all 2 103
+chunks; here it reorders the hybrid retriever's top 20.
+`run --reranker BAAI/bge-reranker-v2-m3` on top of `multilingual-e5-small`,
+58 questions, nDCG@10, one 16-thread CPU:
+
+| Chunking | hybrid_rrf | + reranker | gain (95% paired bootstrap) | query P95 |
+|---|---|---|---|---|
+| fixed | 0.611 | 0.809 | +0.198 [+0.119, +0.282] | 35 ms → 12.8 s |
+| sentence | 0.640 | 0.779 | +0.138 [+0.069, +0.209] | 31 ms → 13.3 s |
+| hierarchical | 0.639 | 0.774 | +0.135 [+0.074, +0.201] | 32 ms → 13.0 s |
+
+Every gain is clear of zero. On fixed chunks the reranked small model
+(0.809) passes the best single model in the table above (Mursit,
+0.781), and on the other two it comes within 0.01 of it — for roughly
+360× the query latency on CPU, since every question now sends 20
+passages through a 568 M parameter model. A GPU changes that arithmetic; it
+has not been measured here. Per-query results are in `results/rerank/`.
+
 ## Stress test
 
 People do not type the way a gold set is written. `turkish-rag-eval stress`
