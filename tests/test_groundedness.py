@@ -292,6 +292,16 @@ def test_an_empty_answer_is_an_error():
         client.complete("sys", "user", max_tokens=50)
 
 
+def test_a_model_extra_can_raise_the_budget():
+    # GLM on NVIDIA cannot have thinking turned off, so its EXTRA entry gives
+    # it a larger max_tokens; the extra must win over the caller's budget.
+    session = FakeSession([ok("Cevap.")])
+    client = ChatClient("nvidia", "z-ai/glm-5.3-flash", api_key="k",
+                        session=session, sleep=lambda s: None)
+    client.complete("sys", "user", max_tokens=4096)
+    assert session.sent[0]["json"]["max_tokens"] == 16384
+
+
 def test_a_dropped_connection_is_retried():
     # NVIDIA reset the connection 20 minutes into the first full run and the
     # whole run was lost.

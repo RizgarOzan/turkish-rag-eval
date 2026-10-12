@@ -17,11 +17,11 @@ turkish-rag-eval report
 ```
 
 **Contents:** [Findings](#four-findings) · [Results](#results) ·
-[Groundedness](#generation-groundedness) · [Leaderboard](#leaderboard) ·
+[Groundedness](#generation-groundedness) · [Leaderboard](#leaderboard) · [Stress test](#stress-test) ·
 [Why not an existing benchmark?](#why-not-an-existing-benchmark) ·
 [Your own corpus](#your-own-corpus) · [Running it](#running-it) ·
 [Gold set](#gold-set) · [Status](#status) · [Limits](#limits) ·
-[Contribute](#contribute)
+[Contribute](#contribute) · [Design notes](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/design.md)
 
 ## Five findings
 
@@ -75,12 +75,6 @@ See the [stress test](#stress-test).
 Longer write-up of the first result:
 [English](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/blog/2026-09-19-bm25-turkish-en.md) ·
 [Türkçe](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/blog/2026-09-19-bm25-turkish-tr.md).
-
-**Contents:** [Results](#results) · [Leaderboard](#leaderboard) · [Stress test](#stress-test) ·
-[Why not an existing benchmark?](#why-not-an-existing-benchmark) ·
-[Your own corpus](#your-own-corpus) · [Running it](#running-it) ·
-[Gold set](#gold-set) · [Status](#status) · [Limits](#limits) · [Contribute](#contribute) ·
-[Design notes](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/design.md)
 
 ## Results
 
@@ -155,6 +149,25 @@ a retrieved passage, so answers without the span now go to the judge too
 16 verdicts were checked by hand; 14 agreed. Of the other two, the judge was
 too strict once (an answer inverted "not recommended unless below 7 g/dl") and
 too lenient once (it accepted "hyperuricaemia" as the cause of gout).
+
+Four more generators on the same questions, passages and judge
+(`2026-10-12`), sorted by the hallucination rate:
+
+| generator | answered (span retrieved, 33) | rests on the passages | conveys the span | declined (span missing, 25) | hallucinated |
+|---|---|---|---|---|---|
+| `groq:qwen/qwen3.8-27b` | 97.0% | 100.0% | 96.9% | 80.0% | 0.0% (0/25) |
+| `groq:openai/gpt-oss-120b` (above) | 93.9% | 96.8% | 96.8% | 80.0% | 4.0% (1/25) |
+| `nvidia:moonshotai/kimi-k3` | 100.0% | 97.0% | 97.0% | 76.0% | 4.0% (1/25) |
+| `nvidia:z-ai/glm-5.3-flash` | 100.0% | 97.0% | 100.0% | 76.0% | 4.0% (1/25) |
+| `groq:openai/gpt-oss-20b` | 90.9% | 96.7% | 93.3% | 76.0% | 8.0% (2/25) |
+
+Every model hallucinated on 0 to 2 of the 25 missing-span questions. At this
+size one answer is 4 points, so the table does not rank them; the same run on
+the 242 drafted questions (100+ missing-span cases per model) is what would.
+`z-ai/glm-5.3-flash` reasons before answering and NVIDIA's endpoint has no
+switch for that, so it runs with a 16k token budget (at 4k some answers came
+back empty). Per-model summaries sit in
+[`results/groundedness/`](https://github.com/RizgarOzan/turkish-rag-eval/tree/main/results/groundedness).
 
 This row depends on hosted APIs and cannot be reproduced offline; the models
 may change behind the same name. Only the rates are committed
