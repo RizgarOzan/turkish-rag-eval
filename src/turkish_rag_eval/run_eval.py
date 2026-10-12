@@ -32,7 +32,7 @@ from .corpus import load_corpus
 from .gold import ROOT, load_gold, normalise, resolve_gold
 from .metrics import ndcg_at_k, precision_at_k, recall_at_k, reciprocal_rank
 from .models import DEFAULT_MODEL, prefixes_for, results_dir
-from .retrieval import DenseRetriever, HybridRetriever, SparseRetriever
+from .retrieval import DenseRetriever, HybridRetriever, RerankRetriever, SparseRetriever
 
 CORPUS = ROOT / "data" / "raw" / "corpus.json"
 #: Written by ``fetch-corpus --include-drafts``; the drafted questions' articles
@@ -135,6 +135,10 @@ def add_arguments(parser: argparse.ArgumentParser) -> None:
         help="where to write results (default: results/, or "
              "results/models/<org>__<name> for a non-default model)")
     parser.add_argument("--model", default=DEFAULT_MODEL)
+    parser.add_argument(
+        "--reranker", default=None, metavar="MODEL",
+        help="cross-encoder that reorders the hybrid top 20; adds a "
+             "hybrid_rerank row (needs the dense extra)")
     parser.add_argument("--k-max", type=int, default=10)
     parser.add_argument(
         "--retrievers", nargs="+", default=list(ALL_RETRIEVERS),
@@ -197,8 +201,13 @@ def run(args) -> int:
     print(f"model: {args.model}\n")
 
     wanted = list(args.retrievers)
+    reranker = None
+    if getattr(args, "reranker", None):
+        from sentence_transformers import CrossEncoder
+        reranker = CrossEncoder(args.reranker)
+        wanted.append("hybrid_rerank")
     model = None
-    if any(name in DENSE_RETRIEVERS for name in wanted):
+    if any(name in DENSE_RETRIEVERS for name in wanted) or reranker:
         from sentence_transformers import SentenceTransformer
         model = SentenceTransformer(args.model)
     query_prefix, doc_prefix = prefixes_for(args.model)
@@ -226,6 +235,8 @@ def run(args) -> int:
             "bm25_stem5": lambda: sparse_stem,
             "bm25_nostem": lambda: SparseRetriever(chunks, stem_length=None),
             "hybrid_rrf": lambda: HybridRetriever(dense, sparse_stem),
+            "hybrid_rerank": lambda: RerankRetriever(
+                HybridRetriever(dense, sparse_stem), chunks, reranker),
         }
         variants = {name: available[name]() for name in wanted}
         for variant_name, retriever in variants.items():
