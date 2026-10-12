@@ -37,6 +37,7 @@ COMMANDS = {
     "abstain-report": ("abstain", "re-print the coverage curve from saved records"),
     "charts": ("charts", "render the result charts the README embeds"),
     "leaderboard": ("leaderboard", "rebuild the model leaderboard from results/"),
+    "stress": ("stress", "score queries typed without Turkish letters or in caps"),
     "groundedness": ("groundedness", "score answers against the gold answer spans"),
     "bootstrap": ("bootstrap", "draft a gold set for your own corpus"),
     "agreement": ("agreement", "inter-annotator agreement over the gold set"),
