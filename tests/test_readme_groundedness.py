@@ -11,6 +11,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SUMMARY = json.loads((ROOT / "results" / "groundedness.json")
                      .read_text(encoding="utf-8"))["summary"]
+#: One summary per extra generator, same questions and judge as the baseline.
+OTHERS = [json.loads(p.read_text(encoding="utf-8"))["summary"]
+          for p in sorted((ROOT / "results" / "groundedness").glob("*.json"))
+          if not p.name.endswith(".records.json")]
 
 ROWS = {
     "answered when the span was retrieved": "answered_when_retrieved",
@@ -29,7 +33,7 @@ def section() -> str:
 
 
 def test_every_rate_matches_the_summary():
-    rows = dict(re.findall(r"^\| ([^|]+?) \| (\d+\.\d)% \|", section(), re.M))
+    rows = dict(re.findall(r"^\| ([^|]+?) \| (\d+\.\d)% \|$", section(), re.M))
     assert set(rows) == set(ROWS)
     for label, key in ROWS.items():
         assert float(rows[label]) == round(100 * SUMMARY[key], 1), label
@@ -57,3 +61,38 @@ def test_no_other_section_says_the_results_are_missing():
     text = (ROOT / "README.md").read_text(encoding="utf-8").lower()
     assert "no committed results" not in text
     assert "no results committed" not in text
+
+
+def generator_rows() -> dict:
+    """The comparison table: model name -> its cells, from the README."""
+    rows = {}
+    for line in section().splitlines():
+        cells = [c.strip() for c in line.strip("|").split("|")]
+        if len(cells) == 6 and cells[0].startswith("`"):
+            rows[cells[0].split("`")[1]] = cells[1:]
+    return rows
+
+
+def test_every_extra_generator_has_a_row_that_matches_its_summary():
+    rows = generator_rows()
+    assert OTHERS, "results/groundedness/ holds the other generators"
+    for summary in OTHERS + [SUMMARY]:
+        assert summary["judge_model"] == SUMMARY["judge_model"]
+        assert (summary["queries"], summary["span_retrieved"]) == (58, 33)
+        cells = rows[summary["answer_model"]]
+        expected = [f"{100 * summary[k]:.1f}%" for k in (
+            "answered_when_retrieved", "grounded_when_answered",
+            "correct_when_answered", "abstained_when_not_retrieved")]
+        assert cells[:4] == expected, summary["answer_model"]
+        missing = summary["span_not_retrieved"]
+        n = round(summary["hallucination_rate"] * missing)
+        rate = f"{100 * summary['hallucination_rate']:.1f}%"
+        assert cells[4] == f"{rate} ({n}/{missing})", summary["answer_model"]
+    assert set(rows) == {s["answer_model"] for s in OTHERS + [SUMMARY]}
+
+
+def test_the_comparison_states_its_date_and_does_not_rank():
+    text = section()
+    for summary in OTHERS:
+        assert f"`{summary['date']}`" in text
+    assert "does not rank" in text

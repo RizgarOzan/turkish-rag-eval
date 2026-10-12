@@ -104,8 +104,13 @@ def chat_url(provider: str) -> str:
 
 #: Per-provider request extras. gpt-oss on Groq reasons before answering; low
 #: effort for the same reason the Anthropic generator runs at low effort.
+#: NVIDIA's GLM endpoint ignores every thinking-off switch tried
+#: (chat_template_kwargs, reasoning_effort, thinking), and at 4096 tokens the
+#: reasoning sometimes swallows the whole budget and the answer comes back
+#: empty - so that model gets a larger one instead.
 EXTRA = {"groq:openai/gpt-oss-120b": {"reasoning_effort": "low"},
-         "groq:openai/gpt-oss-20b": {"reasoning_effort": "low"}}
+         "groq:openai/gpt-oss-20b": {"reasoning_effort": "low"},
+         "nvidia:z-ai/glm-5.3-flash": {"max_tokens": 16384}}
 
 
 def split_model(name: str) -> tuple[str, str]:
