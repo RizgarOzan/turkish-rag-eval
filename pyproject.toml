@@ -34,7 +34,7 @@ dependencies = [
 dense = ["sentence-transformers>=3.0", "torch>=2.0"]
 charts = ["matplotlib>=3.7"]
 llm = ["anthropic>=0.40"]
-dev = ["pytest>=7.4"]
+dev = ["pytest>=7.4", "hypothesis>=6.100"]
 all = [
     "turkish-rag-eval[dense]",
     "turkish-rag-eval[charts]",

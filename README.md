@@ -1,5 +1,6 @@
 # turkish-rag-eval
 
+[![PyPI](https://img.shields.io/pypi/v/turkish-rag-eval)](https://pypi.org/project/turkish-rag-eval/)
 [![validate](https://github.com/RizgarOzan/turkish-rag-eval/actions/workflows/validate.yml/badge.svg)](https://github.com/RizgarOzan/turkish-rag-eval/actions/workflows/validate.yml)
 [![licence: MIT + CC BY-SA 4.0](https://img.shields.io/badge/licence-MIT%20%2B%20CC%20BY--SA%204.0-blue)](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/NOTICE.md)
 [![dataset on Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20dataset-RizgarOzan%2Fturkish--rag--eval-yellow)](https://huggingface.co/datasets/RizgarOzan/turkish-rag-eval)
@@ -15,7 +16,14 @@ turkish-rag-eval run --corpus ./belgelerim --gold ./sorular.json
 turkish-rag-eval report
 ```
 
-## Four findings
+**Contents:** [Findings](#four-findings) · [Results](#results) ·
+[Groundedness](#generation-groundedness) · [Leaderboard](#leaderboard) ·
+[Why not an existing benchmark?](#why-not-an-existing-benchmark) ·
+[Your own corpus](#your-own-corpus) · [Running it](#running-it) ·
+[Gold set](#gold-set) · [Status](#status) · [Limits](#limits) ·
+[Contribute](#contribute)
+
+## Five findings
 
 **1. The embedding model matters more than any pipeline choice.** Every model
 trained for retrieval beats stemmed BM25 (0.494) on its own. The best,
@@ -54,11 +62,21 @@ confident or not. The dense retriever's raw cosine works; the margin does not.
   <img alt="Coverage against selective accuracy for two confidence signals; the top-1 margin performs worse than answering everything" src="https://raw.githubusercontent.com/RizgarOzan/turkish-rag-eval/main/docs/charts/abstention.png">
 </picture>
 
+**5. How a question is typed can cost more than the model choice.** Typed
+in capitals, the default model's nDCG@10 falls from 0.501 to 0.051, a bigger
+loss than the 0.280 that separates it from the best model; typed
+without Turkish letters ("sigara icmek"), stemmed BM25 drops from
+0.494 to 0.288. Even the best model, Mursit, loses
+0.142 in capitals. A small normaliser that puts the Turkish letters back
+from the corpus's own words and lowers caps the Turkish way recovers most of
+it (BM25 0.288 → 0.477) and leaves correctly typed questions untouched.
+See the [stress test](#stress-test).
+
 Longer write-up of the first result:
 [English](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/blog/2026-09-19-bm25-turkish-en.md) ·
 [Türkçe](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/blog/2026-09-19-bm25-turkish-tr.md).
 
-**Contents:** [Results](#results) · [Leaderboard](#leaderboard) ·
+**Contents:** [Results](#results) · [Leaderboard](#leaderboard) · [Stress test](#stress-test) ·
 [Why not an existing benchmark?](#why-not-an-existing-benchmark) ·
 [Your own corpus](#your-own-corpus) · [Running it](#running-it) ·
 [Gold set](#gold-set) · [Status](#status) · [Limits](#limits) · [Contribute](#contribute) ·
@@ -198,6 +216,48 @@ To submit a model, open a pull request adding `results/models/<org>__<name>/`
 (`turkish-rag-eval run --model <org>/<name>`, then `leaderboard --check`).
 CI re-derives every metric from the per-query relevance arrays committed
 beside it, and checks the harness version and corpus fingerprint.
+
+## Stress test
+
+People do not type the way a gold set is written. `turkish-rag-eval stress`
+rewrites every question three ways and scores each one as typed and after
+`normalize.QueryNormalizer`:
+
+- **no Turkish letters**: ç ğ ı ö ş ü typed as c g i o s u, as on a keyboard without them;
+- **caps**: caps lock, upper-cased the Turkish way;
+- **naive lower**: the caps question run through Python's `str.lower()`, which
+  turns "İ" into "i" plus a combining dot.
+
+Dense retrieval on hierarchical chunks, nDCG@10, 58 questions; each cell is
+*as typed → normalised*:
+
+| Model | as written | no Turkish letters | caps | naive lower |
+|---|---|---|---|---|
+| MiniLM (default) | 0.501 | 0.259 → 0.481 | 0.051 → 0.496 | 0.278 → 0.454 |
+| emrecan (Turkish) | 0.497 | 0.429 → 0.483 | 0.133 → 0.529 | 0.337 → 0.524 |
+| e5-small | 0.642 | 0.471 → 0.631 | 0.389 → 0.664 | 0.440 → 0.623 |
+| e5-base | 0.668 | 0.523 → 0.651 | 0.436 → 0.666 | 0.571 → 0.639 |
+| Mursit (Turkish) | 0.781 | 0.717 → 0.757 | 0.639 → 0.747 | 0.636 → 0.745 |
+| stemmed BM25 | 0.494 | 0.288 → 0.477 | 0.494 → 0.494 | 0.254 → 0.481 |
+
+Stemmed BM25 shrugs off caps because its tokenizer already lowercases the
+Turkish way; every embedding model loses ground, and the default one almost
+everything. The normaliser restores letters only from words that occur in the
+corpus, never touches a word that already has a Turkish letter, an acronym
+("OKB") or a two-letter word ("mi" and "mı" are both particles), and leaves
+all 58 correctly typed questions exactly as they were — every "as written"
+score is unchanged by it. An earlier version recased "OKB" to "Okb" and
+"mi" to "mı"; the stress run caught it (the default model scored 0.490 on
+the *unchanged* questions instead of 0.501) and both are now tests.
+
+These are single runs without intervals; the large drops do not need them,
+the small differences between normalised columns should not be read as a
+ranking. `results/stress/` holds per-query relevance for every cell.
+
+```bash
+turkish-rag-eval stress --model intfloat/multilingual-e5-small
+turkish-rag-eval stress --sparse-only        # BM25 only, no model download
+```
 
 ## Why not an existing benchmark?
 
@@ -434,7 +494,10 @@ v0.2.0, [on PyPI](https://pypi.org/project/turkish-rag-eval/).
 The first two limits shrink with every contributor. Adding questions needs no
 ML background — pick a Turkish Wikipedia article, write 5–10 paraphrased
 questions, and open a pull request with one JSON file. A validator checks each
-file against Wikipedia in CI. See [CONTRIBUTING.md](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/CONTRIBUTING.md) (Türkçe
+file against Wikipedia in CI. Smaller still: each
+[`human-review`](https://github.com/RizgarOzan/turkish-rag-eval/labels/human-review)
+issue lists ten LLM-drafted questions to check against their article, and
+marking them `ok`, `fixed` or `rejected` is the whole job. See [CONTRIBUTING.md](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/CONTRIBUTING.md) (Türkçe
 açıklama dahil) and the
 [good first issues](https://github.com/RizgarOzan/turkish-rag-eval/issues?q=is%3Aopen+label%3A%22good+first+issue%22).
 

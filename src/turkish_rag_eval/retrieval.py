@@ -82,3 +82,29 @@ class HybridRetriever:
         # depends on which retriever happened to surface a chunk first.
         ranked = sorted(fused.items(), key=lambda kv: (-kv[1], kv[0]))[:k]
         return [(idx, score) for idx, score in ranked]
+
+
+class RerankRetriever:
+    """Reorder the base retriever's top ``depth`` with a cross-encoder.
+
+    A cross-encoder reads query and passage together, so it is far more
+    accurate than an embedding comparison and far too slow to run over the
+    whole corpus: it only sees what the cheap first stage already found.
+    Ties keep the base order, for the same reproducibility reason as ``_rank``.
+    """
+
+    def __init__(self, base, chunks: list[dict], cross_encoder, depth: int = 20):
+        self.base = base
+        self.chunks = chunks
+        self.cross_encoder = cross_encoder
+        self.depth = depth
+
+    def search(self, query: str, k: int) -> list[tuple[int, float]]:
+        hits = self.base.search(query, self.depth)
+        if not hits:
+            return []
+        scores = self.cross_encoder.predict(
+            [(query, self.chunks[idx]["embed_text"]) for idx, _ in hits],
+            show_progress_bar=False)
+        order = sorted(range(len(hits)), key=lambda j: (-float(scores[j]), j))[:k]
+        return [(hits[j][0], float(scores[j])) for j in order]
