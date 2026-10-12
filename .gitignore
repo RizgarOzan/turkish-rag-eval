@@ -11,6 +11,7 @@ docs/*.pdf
 results/*.records.json
 results/**/*.records.json
 results/*.cache.jsonl
+results/**/*.cache.jsonl
 
 # local keys and endpoints (OPENAI_BASE_URL etc.)
 .env

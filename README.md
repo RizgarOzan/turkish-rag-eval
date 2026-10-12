@@ -63,7 +63,8 @@ confident or not. The dense retriever's raw cosine works; the margin does not.
 </picture>
 
 **5. How a question is typed can cost more than the model choice.** Typed
-in capitals, the default model's nDCG@10 falls from 0.501 to 0.051; typed
+in capitals, the default model's nDCG@10 falls from 0.501 to 0.051, a bigger
+loss than the 0.280 that separates it from the best model; typed
 without Turkish letters ("sigara icmek"), stemmed BM25 drops from
 0.494 to 0.288. Even the best model, Mursit, loses
 0.142 in capitals. A small normaliser that puts the Turkish letters back
