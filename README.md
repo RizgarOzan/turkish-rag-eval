@@ -276,7 +276,11 @@ Dense retrieval on hierarchical chunks, nDCG@10, 58 questions; each cell is
 
 Stemmed BM25 shrugs off caps because its tokenizer already lowercases the
 Turkish way; every embedding model loses ground, and the default one almost
-everything. The normaliser restores letters only from words that occur in the
+everything. Summed over the five models and the three ways of mistyping,
+the normaliser wins back 94% of the nDCG@10 that dense retrieval lost, and
+93% of what BM25 lost.
+
+The normaliser restores letters only from words that occur in the
 corpus, never touches a word that already has a Turkish letter, an acronym
 ("OKB") or a two-letter word ("mi" and "mı" are both particles), and leaves
 all 58 correctly typed questions exactly as they were — every "as written"
@@ -291,6 +295,7 @@ ranking. `results/stress/` holds per-query relevance for every cell.
 ```bash
 turkish-rag-eval stress --model intfloat/multilingual-e5-small
 turkish-rag-eval stress --sparse-only        # BM25 only, no model download
+turkish-rag-eval run --normalize             # the same fix in front of a normal run
 ```
 
 ## Why not an existing benchmark?
