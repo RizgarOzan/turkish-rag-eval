@@ -32,6 +32,7 @@ from .corpus import load_corpus
 from .gold import ROOT, load_gold, normalise, resolve_gold
 from .metrics import ndcg_at_k, precision_at_k, recall_at_k, reciprocal_rank
 from .models import DEFAULT_MODEL, prefixes_for, results_dir
+from .normalize import QueryNormalizer
 from .retrieval import DenseRetriever, HybridRetriever, RerankRetriever, SparseRetriever
 
 CORPUS = ROOT / "data" / "raw" / "corpus.json"
@@ -150,6 +151,10 @@ def add_arguments(parser: argparse.ArgumentParser) -> None:
         "--include-drafts", action="store_true",
         help="also score LLM-drafted questions, which the published numbers "
              "leave out")
+    parser.add_argument(
+        "--normalize", action="store_true",
+        help="run every question through normalize.QueryNormalizer first "
+             "(restores Turkish letters from the corpus, undoes caps lock)")
 
 
 def check_gold_against_corpus(gold: list[dict], docs: list[dict]) -> None:
@@ -194,6 +199,10 @@ def run(args) -> int:
     docs = corpus.docs
     gold = load_gold(resolve_gold(args.gold), include_drafts=drafts)
     check_gold_against_corpus(gold, docs)
+    normalized = getattr(args, "normalize", False)
+    if normalized:
+        rewrite = QueryNormalizer(doc["text"] for doc in docs)
+        gold = [{**item, "question": rewrite(item["question"])} for item in gold]
 
     print(f"{len(docs)} belge ({corpus.chars} karakter), {len(gold)} soru")
     print(f"korpus: {corpus.source}")
@@ -246,6 +255,7 @@ def run(args) -> int:
             summary["chunks"] = len(chunks)
             summary["model"] = args.model
             summary["dense_index_seconds"] = index_seconds
+            summary["normalized"] = normalized
             # Provenance travels with the number. A result that cannot say
             # which corpus and which harness produced it is not comparable to
             # anything, which is the whole problem with quoting a benchmark.

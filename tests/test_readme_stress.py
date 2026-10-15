@@ -57,3 +57,22 @@ def test_the_quoted_finding_matches():
     assert f"from {minilm['dense/original']:.3f} to {minilm['dense/caps']:.3f}" in README
     assert (f"{bm25['bm25_stem5/ascii']:.3f} → {bm25['bm25_stem5/ascii/normalized']:.3f}"
             in README)
+
+
+def recovered(retriever: str, names) -> int:
+    lost = won = 0.0
+    for name in names:
+        s = scores(name)
+        for variant in ("ascii", "caps", "naive_lower"):
+            lost += s[f"{retriever}/original"] - s[f"{retriever}/{variant}"]
+            won += s[f"{retriever}/{variant}/normalized"] - s[f"{retriever}/{variant}"]
+    return round(100 * won / lost)
+
+
+def test_the_recovered_share_matches():
+    dense = recovered("dense", ROWS.values())
+    # BM25 does not depend on the embedding model: one file is the whole row.
+    bm25 = recovered("bm25_stem5", [ROWS["MiniLM (default)"]])
+    prose = " ".join(README.split())
+    assert f"wins back {dense}% of the nDCG@10" in prose
+    assert f"and {bm25}% of what BM25 lost" in prose

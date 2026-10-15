@@ -124,6 +124,32 @@ def test_results_record_their_provenance(workspace):
     assert row["corpus_documents"] == 1
 
 
+def test_normalize_restores_turkish_letters_before_retrieval(workspace):
+    tmp_path, corpus, gold = workspace
+    # Typed on a keyboard without Turkish letters.
+    gold.write_text(json.dumps(
+        [{**QUESTION, "question": "Tedavi edilmediginde hangi tablo gelisebilir?"}],
+        ensure_ascii=False), encoding="utf-8")
+    out = tmp_path / "out"
+    run_eval.run(arguments(corpus=corpus, gold=gold, out=out,
+                           retrievers=["bm25_stem5"], normalize=True))
+
+    row = json.loads((out / "summary.json").read_text(encoding="utf-8"))[0]
+    assert row["normalized"] is True
+    asked = json.loads((out / "perquery_fixed_bm25_stem5.json")
+                       .read_text(encoding="utf-8"))[0]["question"]
+    assert asked == "Tedavi edilmediğinde hangi tablo gelişebilir?"
+
+
+def test_without_normalize_the_question_is_asked_as_typed(workspace):
+    tmp_path, corpus, gold = workspace
+    out = tmp_path / "out"
+    run_eval.run(arguments(corpus=corpus, gold=gold, out=out,
+                           retrievers=["bm25_stem5"]))
+    row = json.loads((out / "summary.json").read_text(encoding="utf-8"))[0]
+    assert row["normalized"] is False
+
+
 def test_the_answer_span_is_found(workspace):
     tmp_path, corpus, gold = workspace
     out = tmp_path / "out"
