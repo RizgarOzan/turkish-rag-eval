@@ -9,6 +9,12 @@ BM25 scores live on different, corpus-dependent scales; fusing ranks needs
 no per-corpus tuning. k=60 is the value from Cormack et al. (2009).
 """
 
+import hashlib
+import json
+import os
+import time
+from pathlib import Path
+
 import numpy as np
 from rank_bm25 import BM25Okapi
 
@@ -31,19 +37,50 @@ def _rank(scores, k: int) -> list[tuple[int, float]]:
 
 
 class DenseRetriever:
+    """Cosine search over chunk embeddings.
+
+    With ``cache_dir`` and ``model_name`` the embedding matrix is stored as
+    ``<sha256>.npz``, the hash taken over the model name and every prefixed
+    chunk text, so any change to the chunks re-encodes. The model's weights are
+    not hashed: a model re-published under the same name needs a fresh cache.
+    ``encode_seconds`` is the time the encoding took when it actually ran, also
+    on a cache hit, so a cached run does not report a 0 s index.
+    """
+
     def __init__(self, chunks: list[dict], model, query_prefix: str = "",
-                 doc_prefix: str = ""):
+                 doc_prefix: str = "", cache_dir: Path | None = None,
+                 model_name: str | None = None):
         self.chunks = chunks
         self.model = model
         self.query_prefix = query_prefix
+        texts = [doc_prefix + c["embed_text"] for c in chunks]
+        path = None
+        if cache_dir is not None and model_name is not None:
+            key = hashlib.sha256(json.dumps(
+                [model_name, texts], ensure_ascii=False).encode("utf-8"))
+            path = Path(cache_dir) / f"{key.hexdigest()}.npz"
+        self.cache_hit = path is not None and path.exists()
+        if self.cache_hit:
+            with np.load(path) as stored:
+                self.matrix = stored["matrix"]
+                self.encode_seconds = float(stored["encode_seconds"])
+            return
+        start = time.perf_counter()
         embeddings = model.encode(
-            [doc_prefix + c["embed_text"] for c in chunks],
+            texts,
             batch_size=32,
             convert_to_numpy=True,
             normalize_embeddings=True,
             show_progress_bar=False,
         )
+        self.encode_seconds = time.perf_counter() - start
         self.matrix = embeddings.astype(np.float32)
+        if path is not None:
+            path.parent.mkdir(parents=True, exist_ok=True)
+            partial = path.with_suffix(".partial")
+            with partial.open("wb") as f:
+                np.savez(f, matrix=self.matrix, encode_seconds=self.encode_seconds)
+            os.replace(partial, path)
 
     def search(self, query: str, k: int) -> list[tuple[int, float]]:
         vector = self.model.encode(

@@ -155,6 +155,10 @@ def add_arguments(parser: argparse.ArgumentParser) -> None:
         "--normalize", action="store_true",
         help="run every question through normalize.QueryNormalizer first "
              "(restores Turkish letters from the corpus, undoes caps lock)")
+    parser.add_argument(
+        "--embedding-cache", type=Path, default=None, metavar="DIR",
+        help="keep dense chunk embeddings in DIR and reuse them when model, "
+             "prefix and chunk text are unchanged")
 
 
 def check_gold_against_corpus(gold: list[dict], docs: list[dict]) -> None:
@@ -234,9 +238,15 @@ def run(args) -> int:
         dense = None
         if model is not None:
             start = time.perf_counter()
-            dense = DenseRetriever(chunks, model, query_prefix, doc_prefix)
-            index_seconds = time.perf_counter() - start
-            print(f"    dense indeks: {index_seconds:.0f} s")
+            dense = DenseRetriever(chunks, model, query_prefix, doc_prefix,
+                                   cache_dir=getattr(args, "embedding_cache", None),
+                                   model_name=args.model)
+            index_seconds = dense.encode_seconds
+            if dense.cache_hit:
+                print(f"    dense indeks: önbellekten {time.perf_counter() - start:.1f} s "
+                      f"(kodlama {index_seconds:.0f} s sürmüştü)")
+            else:
+                print(f"    dense indeks: {index_seconds:.0f} s")
         sparse_stem = SparseRetriever(chunks, stem_length=5)
 
         available = {

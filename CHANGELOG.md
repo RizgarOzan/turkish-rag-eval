@@ -10,6 +10,12 @@ published number is a breaking change**, even when no API changed.
 
 ## [Unreleased]
 
+### Added
+
+- `run --embedding-cache DIR` stores dense chunk embeddings keyed by model name
+  and chunk text and reuses them on the next run. Scores are unchanged; a
+  cached run still reports the original `dense_index_seconds`.
+
 ## [0.2.0] - 2026-10-10
 
 First release on PyPI. Numbers on the 58 human-labelled questions are the same

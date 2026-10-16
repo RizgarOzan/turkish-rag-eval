@@ -382,6 +382,12 @@ python -m pytest -q
 model works. Results for a non-default model go to
 `results/models/<org>__<name>/`, so the main table is never overwritten.
 
+`run --embedding-cache <dir>` keeps the chunk embeddings and reuses them while
+model and chunk text stay the same. With multilingual-e5-small on CPU
+the three dense indexes took 91, 75 and 81 s on the first run and 0.1 s or
+less on the second, with identical scores; `dense_index_seconds` in the
+results still reports the original encoding time.
+
 ## Gold set
 
 | Files | Questions | Labelled by | In the results above |
