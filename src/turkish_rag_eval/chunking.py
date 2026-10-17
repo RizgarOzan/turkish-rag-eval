@@ -16,7 +16,26 @@ ABBREVIATIONS = {
 }
 
 _SENT_END = re.compile(r"(?<=[.!?])\s+")
+# Regnal and ordinal Roman numerals I-XX ("I. Bayezid", "XIV. Louis").
+_ROMAN = re.compile(r"^(X{0,2})(IX|IV|V?I{0,3})$")
+_UPPER = "ABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVYZQWX"
 _HEADING = re.compile(r"^(={2,6})\s*(.+?)\s*\1$", re.MULTILINE)
+
+
+def _starts_upper(text: str) -> bool:
+    text = text.lstrip()
+    return bool(text) and text[0] in _UPPER
+
+
+def _is_roman(word: str) -> bool:
+    return bool(word) and _ROMAN.match(word) is not None
+
+
+def _is_initial(words: list[str]) -> bool:
+    """A lone capital before the period, after a capitalised word ("Robert W.")."""
+    if len(words) < 2 or len(words[-1]) != 1 or words[-1] not in _UPPER:
+        return False
+    return _starts_upper(words[-2])
 
 
 def split_sentences(text: str) -> list[str]:
@@ -28,9 +47,17 @@ def split_sentences(text: str) -> list[str]:
             continue
         if out:
             tail = out[-1].rstrip()
-            last_word = tail.split()[-1].rstrip(".").lower() if tail.split() else ""
+            words = [w.rstrip(".") for w in tail.split()]
+            last_word = words[-1].lower() if words else ""
             # "Dr." or a bare number ("1." in a list) does not end a sentence.
             if last_word in ABBREVIATIONS or last_word.isdigit():
+                out[-1] = tail + " " + part
+                continue
+            # Neither does an initial ("Robert W. Holley") or a regnal number
+            # ("Padişahı I. Bayezid"), but "... D ve E. Sonraki" still does.
+            if tail.endswith(".") and _starts_upper(part) and (
+                _is_roman(words[-1]) or _is_initial(words)
+            ):
                 out[-1] = tail + " " + part
                 continue
         out.append(part)
