@@ -209,10 +209,15 @@ def _mean_or_none(values) -> float | None:
 
 def add_arguments(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--corpus", default=str(CORPUS))
+    parser.add_argument("--include-drafts", action="store_true",
+                        help="include eligible LLM drafts and their embedded second labels")
 
 
 def run(args) -> int:
-    groups = group_by_question(load_gold())
+    items = load_gold(include_drafts=args.include_drafts)
+    if args.include_drafts:
+        items = expand_embedded(items)
+    groups = group_by_question(items)
     if not groups:
         print("birden fazla etiketleyicisi olan soru yok")
         return 0

@@ -1,3 +1,9 @@
+import argparse
+import json
+
+import pytest
+
+from turkish_rag_eval import agreement, gold
 from turkish_rag_eval.agreement import (
     chunk_kappa,
     cohens_kappa,
@@ -176,3 +182,62 @@ def test_expand_embedded_leaves_items_without_second_labels_unpaired():
     draft = dict(ORIGINAL, annotator="llm-1", source="llm-draft")
     assert expand_embedded([draft, SECOND]) == [draft, SECOND]
     assert group_by_question(expand_embedded([draft])) == []
+
+
+@pytest.mark.parametrize("include_drafts", [False, True])
+def test_run_include_drafts_is_opt_in(tmp_path, monkeypatch, capsys, include_drafts):
+    primary = tmp_path / "gold.json"
+    primary.write_text(json.dumps([ORIGINAL]), encoding="utf-8")
+    contrib = tmp_path / "contrib"
+    contrib.mkdir()
+    draft = dict(ORIGINAL, qid="draft-001", question="Taslak soru hangisi?",
+                 annotator="llm-1", source="llm-draft",
+                 second_annotation={"annotator": "llm-2",
+                                    "answer_span": SECOND["answer_span"]})
+    (contrib / "draft.json").write_text(json.dumps([draft]), encoding="utf-8")
+    monkeypatch.setattr(gold, "GOLD", primary)
+    monkeypatch.setattr(gold, "CONTRIB", contrib)
+    monkeypatch.setattr(agreement, "ROOT", tmp_path)
+    parser = argparse.ArgumentParser()
+    agreement.add_arguments(parser)
+    flags = ["--corpus", str(tmp_path / "missing-corpus.json")]
+    if include_drafts:
+        flags.append("--include-drafts")
+    assert agreement.run(parser.parse_args(flags)) == 0
+    output = capsys.readouterr().out
+    result = tmp_path / "results" / "agreement.json"
+    if include_drafts:
+        assert "1 soru, 1 çift" in output
+        assert "n/a" in output
+        summary = json.loads(result.read_text(encoding="utf-8"))["summary"]
+        assert summary["questions"] == 1
+        assert summary["mean_token_f1"] == span_f1(
+            draft["answer_span"], draft["second_annotation"]["answer_span"])
+    else:
+        assert "birden fazla etiketleyicisi olan soru yok" in output
+        assert not result.exists()
+
+
+def test_run_draft_without_second_label_is_not_an_agreement_question(
+        tmp_path, monkeypatch, capsys):
+    draft = dict(ORIGINAL, source="llm-draft", annotator="llm-1")
+    monkeypatch.setattr(agreement, "load_gold", lambda **kwargs: [draft])
+    monkeypatch.setattr(agreement, "ROOT", tmp_path)
+    parser = argparse.ArgumentParser()
+    agreement.add_arguments(parser)
+    assert agreement.run(parser.parse_args(["--include-drafts"])) == 0
+    assert "birden fazla etiketleyicisi olan soru yok" in capsys.readouterr().out
+    assert not (tmp_path / "results").exists()
+
+
+def test_include_drafts_preserves_needs_human_and_rejected_filters(tmp_path):
+    draft = dict(ORIGINAL, source="llm-draft", annotator="llm-1",
+                 second_annotation={"annotator": "llm-2", "answer_span": "cevap"})
+    path = tmp_path / "drafts.json"
+    path.write_text(json.dumps([
+        dict(draft, qid="unresolved", review="needs-human"),
+        dict(draft, qid="rejected", human_review={"verdict": "rejected"}),
+        dict(draft, qid="fixed", review="needs-human", human_review={"verdict": "fixed"}),
+    ]), encoding="utf-8")
+    expanded = expand_embedded(gold.load_gold([path], include_drafts=True))
+    assert [item["qid"] for item in expanded] == ["fixed", "fixed#2"]
