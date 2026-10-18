@@ -2,6 +2,7 @@ from turkish_rag_eval.agreement import (
     chunk_kappa,
     cohens_kappa,
     evaluate_groups,
+    expand_embedded,
     group_by_question,
     pairwise_items,
     root_qid,
@@ -151,3 +152,27 @@ def test_summarise_weighs_each_question_equally():
     assert summary["questions"] == 2
     assert summary["pairs"] == 4
     assert summary["mean_iou"] == sum(r["mean_iou"] for r in rows) / 2
+
+
+def test_expand_embedded_keeps_inputs_and_uses_existing_pairwise_grouping():
+    original = dict(ORIGINAL, annotator="llm-1", source="llm-draft",
+                    second_annotation={"annotator": "llm-2",
+                                       "answer_span": SECOND["answer_span"]})
+    expanded = expand_embedded([original])
+    assert len(expanded) == 2
+    assert expanded[0] is original
+    assert expanded[1] == {
+        "qid": "q001#2", "question": ORIGINAL["question"],
+        "doc_id": "710430", "doc_title": "Diyabet",
+        "answer_span": SECOND["answer_span"],
+        "annotator": "llm-2", "second_of": "q001",
+    }
+    assert "second_of" not in original
+    assert len(pairwise_items(group_by_question(expanded)[0])) == 1
+    assert expand_embedded(expanded) == expanded
+
+
+def test_expand_embedded_leaves_items_without_second_labels_unpaired():
+    draft = dict(ORIGINAL, annotator="llm-1", source="llm-draft")
+    assert expand_embedded([draft, SECOND]) == [draft, SECOND]
+    assert group_by_question(expand_embedded([draft])) == []

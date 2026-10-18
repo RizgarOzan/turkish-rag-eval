@@ -51,6 +51,32 @@ def is_relevant(chunk: dict, item: dict) -> bool:
     return normalise(item["answer_span"]) in normalise(chunk["body"])
 
 
+def expand_embedded(items: list[dict]) -> list[dict]:
+    """Expose embedded second labels in the ordinary second_of format.
+
+    Keep the loaded records unchanged and omit the embedded field from the
+    generated record, so passing expanded items through again is harmless.
+    """
+    expanded = list(items)
+    qids = {item["qid"] for item in items}
+    for item in items:
+        second = item.get("second_annotation")
+        qid = f"{item['qid']}#2"
+        if not second or qid in qids:
+            continue
+        expanded.append({
+            "qid": qid,
+            "question": item["question"],
+            "doc_id": item["doc_id"],
+            "doc_title": item["doc_title"],
+            "answer_span": second["answer_span"],
+            "annotator": second["annotator"],
+            "second_of": item["qid"],
+        })
+        qids.add(qid)
+    return expanded
+
+
 def group_by_question(items: list[dict]) -> list[list[dict]]:
     """Every item answering the same question, keyed by normalised text.
 
