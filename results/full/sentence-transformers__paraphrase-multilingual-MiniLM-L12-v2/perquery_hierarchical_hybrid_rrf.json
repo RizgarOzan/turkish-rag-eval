@@ -1269,7 +1269,7 @@
       false,
       false
     ],
-    "top_score": 0.030798389007344232,
+    "top_score": 0.03057889822595705,
     "found": true
   },
   {
@@ -1706,7 +1706,7 @@
       false,
       false
     ],
-    "top_score": 0.03252247488101534,
+    "top_score": 0.03278688524590164,
     "found": true
   },
   {
@@ -1719,13 +1719,13 @@
       false,
       false,
       false,
-      false,
-      false,
       true,
+      false,
+      false,
       false,
       false
     ],
-    "top_score": 0.02661064425770308,
+    "top_score": 0.026754075124025514,
     "found": true
   },
   {
@@ -2162,7 +2162,7 @@
       false,
       false
     ],
-    "top_score": 0.02488425925925926,
+    "top_score": 0.024970794392523366,
     "found": true
   },
   {
@@ -3872,7 +3872,7 @@
       false,
       false
     ],
-    "top_score": 0.030834914611005692,
+    "top_score": 0.030621785881252923,
     "found": true
   },
   {
@@ -4024,7 +4024,7 @@
       false,
       false
     ],
-    "top_score": 0.03131881575727918,
+    "top_score": 0.031544957774465976,
     "found": true
   },
   {
@@ -4537,7 +4537,7 @@
       false,
       false
     ],
-    "top_score": 0.03149801587301587,
+    "top_score": 0.031746031746031744,
     "found": true
   },
   {
@@ -4670,7 +4670,7 @@
       false,
       false
     ],
-    "top_score": 0.0288981288981289,
+    "top_score": 0.029083245521601686,
     "found": true
   },
   {
@@ -4727,7 +4727,7 @@
       false,
       false
     ],
-    "top_score": 0.028258706467661692,
+    "top_score": 0.028083267871170464,
     "found": false
   },
   {
@@ -4841,7 +4841,7 @@
       false,
       false
     ],
-    "top_score": 0.0287391216352965,
+    "top_score": 0.02889344262295082,
     "found": true
   },
   {
@@ -4860,7 +4860,7 @@
       false,
       false
     ],
-    "top_score": 0.032266458495966696,
+    "top_score": 0.032018442622950824,
     "found": false
   },
   {
@@ -4869,7 +4869,7 @@
     "total_relevant": 1,
     "relevance": [
       false,
-      true,
+      false,
       false,
       false,
       false,
@@ -4880,16 +4880,16 @@
       false
     ],
     "top_score": 0.03252247488101534,
-    "found": true
+    "found": false
   },
   {
     "qid": "llm-tarih-010",
     "question": "Boğazdan geçmeye çalışırken batırılan Venedik gemisinin kaptanı nasıl öldürüldü?",
     "total_relevant": 1,
     "relevance": [
-      false,
-      false,
       true,
+      false,
+      false,
       false,
       false,
       false,
@@ -4898,7 +4898,7 @@
       false,
       false
     ],
-    "top_score": 0.03125763125763126,
+    "top_score": 0.03278688524590164,
     "found": true
   },
   {
@@ -4974,7 +4974,7 @@
       false,
       false
     ],
-    "top_score": 0.030330882352941176,
+    "top_score": 0.03055037313432836,
     "found": true
   },
   {
@@ -5031,7 +5031,7 @@
       false,
       false
     ],
-    "top_score": 0.031544957774465976,
+    "top_score": 0.029631255487269532,
     "found": false
   },
   {
@@ -5058,8 +5058,8 @@
     "question": "Kanuni'nin Macaristan seferine çıkarken yanında kaç asker ve kaç top vardı?",
     "total_relevant": 1,
     "relevance": [
-      true,
       false,
+      true,
       false,
       false,
       false,
@@ -5069,7 +5069,7 @@
       false,
       false
     ],
-    "top_score": 0.02938045560996381,
+    "top_score": 0.03128054740957967,
     "found": true
   },
   {
@@ -5088,7 +5088,7 @@
       false,
       false
     ],
-    "top_score": 0.027799227799227798,
+    "top_score": 0.02819138376017471,
     "found": true
   },
   {
@@ -5162,10 +5162,10 @@
       false,
       false,
       false,
-      true
+      false
     ],
     "top_score": 0.03252247488101534,
-    "found": true
+    "found": false
   },
   {
     "qid": "llm-tarih-026",
@@ -5290,7 +5290,7 @@
       false,
       false,
       false,
-      false,
+      true,
       false,
       false,
       false,
@@ -5298,7 +5298,7 @@
       false
     ],
     "top_score": 0.03225806451612903,
-    "found": false
+    "found": true
   },
   {
     "qid": "llm-tarih-033",
@@ -5316,7 +5316,7 @@
       false,
       false
     ],
-    "top_score": 0.03055037313432836,
+    "top_score": 0.030798389007344232,
     "found": false
   },
   {
@@ -5354,7 +5354,7 @@
       false,
       false
     ],
-    "top_score": 0.022116324535679376,
+    "top_score": 0.022233201581027668,
     "found": false
   },
   {

@@ -15,7 +15,7 @@
       false,
       false
     ],
-    "top_score": 0.6096372604370117,
+    "top_score": 0.6096373200416565,
     "found": true
   },
   {
@@ -224,7 +224,7 @@
       false,
       false
     ],
-    "top_score": 0.7119620442390442,
+    "top_score": 0.7119619846343994,
     "found": true
   },
   {
@@ -604,7 +604,7 @@
       true,
       false
     ],
-    "top_score": 0.645548939704895,
+    "top_score": 0.6455488204956055,
     "found": true
   },
   {
@@ -623,7 +623,7 @@
       false,
       false
     ],
-    "top_score": 0.5750576257705688,
+    "top_score": 0.5750577449798584,
     "found": true
   },
   {
@@ -718,7 +718,7 @@
       false,
       false
     ],
-    "top_score": 0.7472152709960938,
+    "top_score": 0.7472151517868042,
     "found": true
   },
   {
@@ -1364,7 +1364,7 @@
       false,
       false
     ],
-    "top_score": 0.5296075940132141,
+    "top_score": 0.5296076536178589,
     "found": true
   },
   {
@@ -1554,7 +1554,7 @@
       false,
       false
     ],
-    "top_score": 0.44109922647476196,
+    "top_score": 0.4410991966724396,
     "found": true
   },
   {
@@ -1573,7 +1573,7 @@
       false,
       false
     ],
-    "top_score": 0.6328155994415283,
+    "top_score": 0.6207814812660217,
     "found": true
   },
   {
@@ -1630,7 +1630,7 @@
       false,
       false
     ],
-    "top_score": 0.6209893226623535,
+    "top_score": 0.620989203453064,
     "found": false
   },
   {
@@ -1706,7 +1706,7 @@
       false,
       false
     ],
-    "top_score": 0.7430801391601562,
+    "top_score": 0.7632282376289368,
     "found": true
   },
   {
@@ -1725,7 +1725,7 @@
       false,
       false
     ],
-    "top_score": 0.555554986000061,
+    "top_score": 0.5395170450210571,
     "found": true
   },
   {
@@ -1801,7 +1801,7 @@
       false,
       false
     ],
-    "top_score": 0.5958006381988525,
+    "top_score": 0.5958005785942078,
     "found": false
   },
   {
@@ -2523,7 +2523,7 @@
       false,
       false
     ],
-    "top_score": 0.33927953243255615,
+    "top_score": 0.33927950263023376,
     "found": false
   },
   {
@@ -2618,7 +2618,7 @@
       false,
       false
     ],
-    "top_score": 0.47178584337234497,
+    "top_score": 0.4717857837677002,
     "found": true
   },
   {
@@ -3017,7 +3017,7 @@
       false,
       false
     ],
-    "top_score": 0.5393396615982056,
+    "top_score": 0.5393396019935608,
     "found": true
   },
   {
@@ -3084,8 +3084,8 @@
     "relevance": [
       false,
       false,
-      true,
       false,
+      true,
       false,
       false,
       false,
@@ -3226,7 +3226,7 @@
       false,
       false
     ],
-    "top_score": 0.4664478302001953,
+    "top_score": 0.4664478898048401,
     "found": false
   },
   {
@@ -3378,7 +3378,7 @@
       false,
       false
     ],
-    "top_score": 0.52984619140625,
+    "top_score": 0.5298463106155396,
     "found": true
   },
   {
@@ -3435,7 +3435,7 @@
       false,
       false
     ],
-    "top_score": 0.4922352433204651,
+    "top_score": 0.4922351539134979,
     "found": true
   },
   {
@@ -3454,7 +3454,7 @@
       false,
       false
     ],
-    "top_score": 0.5728209018707275,
+    "top_score": 0.5795862078666687,
     "found": true
   },
   {
@@ -3492,7 +3492,7 @@
       false,
       false
     ],
-    "top_score": 0.6285654902458191,
+    "top_score": 0.6285654306411743,
     "found": true
   },
   {
@@ -3861,8 +3861,8 @@
     "question": "Anadolu'daki bu yerel krallık Roma yönetimine doğrudan hangi yıl bağlandı?",
     "total_relevant": 1,
     "relevance": [
-      true,
       false,
+      true,
       false,
       false,
       false,
@@ -3872,7 +3872,7 @@
       false,
       false
     ],
-    "top_score": 0.6260552406311035,
+    "top_score": 0.6311289668083191,
     "found": true
   },
   {
@@ -3948,7 +3948,7 @@
       false,
       false
     ],
-    "top_score": 0.5960193872451782,
+    "top_score": 0.596019446849823,
     "found": true
   },
   {
@@ -4005,7 +4005,7 @@
       false,
       false
     ],
-    "top_score": 0.6655703186988831,
+    "top_score": 0.6655703783035278,
     "found": true
   },
   {
@@ -4081,7 +4081,7 @@
       false,
       false
     ],
-    "top_score": 0.8122503757476807,
+    "top_score": 0.8122504353523254,
     "found": true
   },
   {
@@ -4233,7 +4233,7 @@
       false,
       true
     ],
-    "top_score": 0.4801180958747864,
+    "top_score": 0.4801180362701416,
     "found": true
   },
   {
@@ -4290,7 +4290,7 @@
       false,
       false
     ],
-    "top_score": 0.5205447673797607,
+    "top_score": 0.5205448865890503,
     "found": true
   },
   {
@@ -4537,7 +4537,7 @@
       false,
       false
     ],
-    "top_score": 0.5528655052185059,
+    "top_score": 0.5528654456138611,
     "found": true
   },
   {
@@ -4746,7 +4746,7 @@
       false,
       false
     ],
-    "top_score": 0.5016205906867981,
+    "top_score": 0.5036510229110718,
     "found": false
   },
   {
@@ -4870,10 +4870,10 @@
     "relevance": [
       false,
       false,
+      false,
+      false,
+      false,
       true,
-      false,
-      false,
-      false,
       false,
       false,
       false,
@@ -4890,7 +4890,7 @@
       false,
       false,
       false,
-      false,
+      true,
       false,
       false,
       false,
@@ -4899,7 +4899,7 @@
       false
     ],
     "top_score": 0.6559433937072754,
-    "found": false
+    "found": true
   },
   {
     "qid": "llm-tarih-011",
@@ -4917,7 +4917,7 @@
       false,
       false
     ],
-    "top_score": 0.5364176034927368,
+    "top_score": 0.5503248572349548,
     "found": true
   },
   {
@@ -4929,8 +4929,8 @@
       false,
       false,
       false,
-      true,
       false,
+      true,
       false,
       false,
       false,
@@ -4955,7 +4955,7 @@
       false,
       false
     ],
-    "top_score": 0.6456587314605713,
+    "top_score": 0.6456586718559265,
     "found": true
   },
   {
@@ -4982,8 +4982,8 @@
     "question": "Şah İsmail savaş meydanından kaçarken kimin kılığına girdi?",
     "total_relevant": 1,
     "relevance": [
-      true,
       false,
+      true,
       false,
       false,
       false,
@@ -4993,7 +4993,7 @@
       false,
       false
     ],
-    "top_score": 0.6396081447601318,
+    "top_score": 0.6520689725875854,
     "found": true
   },
   {
@@ -5012,7 +5012,7 @@
       false,
       false
     ],
-    "top_score": 0.6070621609687805,
+    "top_score": 0.6039347648620605,
     "found": false
   },
   {
@@ -5031,7 +5031,7 @@
       false,
       false
     ],
-    "top_score": 0.6795065402984619,
+    "top_score": 0.6596353650093079,
     "found": true
   },
   {
@@ -5050,7 +5050,7 @@
       false,
       false
     ],
-    "top_score": 0.6789470911026001,
+    "top_score": 0.6812683939933777,
     "found": true
   },
   {
@@ -5069,7 +5069,7 @@
       false,
       false
     ],
-    "top_score": 0.666508674621582,
+    "top_score": 0.6665087938308716,
     "found": true
   },
   {
@@ -5164,7 +5164,7 @@
       false,
       false
     ],
-    "top_score": 0.6963233947753906,
+    "top_score": 0.6963235139846802,
     "found": false
   },
   {
@@ -5240,7 +5240,7 @@
       false,
       false
     ],
-    "top_score": 0.6682177186012268,
+    "top_score": 0.6682178974151611,
     "found": true
   },
   {
@@ -5411,7 +5411,7 @@
       false,
       false
     ],
-    "top_score": 0.6082677841186523,
+    "top_score": 0.608267605304718,
     "found": true
   },
   {
@@ -5497,8 +5497,8 @@
     "relevance": [
       false,
       false,
-      false,
       true,
+      false,
       false,
       false,
       false,
@@ -5563,7 +5563,7 @@
       false,
       false
     ],
-    "top_score": 0.5283117294311523,
+    "top_score": 0.5283118486404419,
     "found": true
   },
   {
@@ -5601,7 +5601,7 @@
       false,
       false
     ],
-    "top_score": 0.5218822956085205,
+    "top_score": 0.5218820571899414,
     "found": false
   },
   {
@@ -5616,11 +5616,11 @@
       false,
       false,
       false,
-      true,
+      false,
       false,
       false
     ],
     "top_score": 0.5337009429931641,
-    "found": true
+    "found": false
   }
 ]

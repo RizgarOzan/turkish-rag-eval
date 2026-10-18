@@ -10,6 +10,27 @@ published number is a breaking change**, even when no API changed.
 
 ## [Unreleased]
 
+### Added
+
+- `run --embedding-cache DIR` stores dense chunk embeddings keyed by model name
+  and chunk text and reuses them on the next run. Scores are unchanged; a
+  cached run still reports the original `dense_index_seconds`.
+- `run --normalize` puts the query normaliser in front of a normal run.
+
+### Changed
+
+- The sentence splitter keeps initials and regnal numerals ("Robert W. Holley",
+  "I. Bayezid") inside one sentence (#29, thanks @eyupcodes). That changes
+  sentence and hierarchical chunks, so the next release is a minor bump. No
+  number on the 58 human questions moved. On all 296 questions hierarchical
+  nDCG@10 moved by at most 0.004 per row; `results/full/` and the "Scoring all
+  300" table were re-run.
+- `results/models/` was re-run, which settles the v0.1.0 "Known" note: the four
+  model directories now carry provenance and the stable tie-break, and
+  `leaderboard --check` gives no warnings. No `dense` figure moved. Hybrid
+  hierarchical went 0.648 → 0.642 for e5-base and 0.673 → 0.672 for Mursit,
+  so the "+0.006" that note predicted was wrong in sign as well.
+
 ## [0.2.0] - 2026-10-10
 
 First release on PyPI. Numbers on the 58 human-labelled questions are the same

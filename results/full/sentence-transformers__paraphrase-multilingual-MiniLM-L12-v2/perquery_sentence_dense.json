@@ -1127,8 +1127,8 @@
     "relevance": [
       false,
       false,
-      false,
       true,
+      false,
       false,
       false,
       false,
@@ -1429,8 +1429,8 @@
     "question": "Halkaların yaşını çok genç bulan ekip, onların hangi kayıp gökcisminden kaldığını öne sürdü?",
     "total_relevant": 1,
     "relevance": [
-      true,
       false,
+      true,
       false,
       false,
       false,
@@ -1440,7 +1440,7 @@
       false,
       false
     ],
-    "top_score": 0.5242733955383301,
+    "top_score": 0.5253833532333374,
     "found": true
   },
   {
@@ -1602,8 +1602,8 @@
     "relevance": [
       false,
       false,
-      false,
       true,
+      false,
       false,
       false,
       false,
@@ -1611,7 +1611,7 @@
       false,
       false
     ],
-    "top_score": 0.6126500368118286,
+    "top_score": 0.612583577632904,
     "found": true
   },
   {
@@ -1687,7 +1687,7 @@
       false,
       false
     ],
-    "top_score": 0.6148775219917297,
+    "top_score": 0.6704612970352173,
     "found": false
   },
   {
@@ -1696,8 +1696,8 @@
     "total_relevant": 1,
     "relevance": [
       false,
-      false,
       true,
+      false,
       false,
       false,
       false,
@@ -1706,7 +1706,7 @@
       false,
       false
     ],
-    "top_score": 0.6714025139808655,
+    "top_score": 0.6412714719772339,
     "found": true
   },
   {
@@ -4414,13 +4414,13 @@
     "relevance": [
       false,
       false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
       true,
-      false,
-      false,
-      false,
-      false,
-      false,
-      false,
       false
     ],
     "top_score": 0.7551444172859192,
@@ -4450,18 +4450,18 @@
     "question": "Bugün dağın hangi vadilerinde hâlâ buzul bulunuyor?",
     "total_relevant": 1,
     "relevance": [
+      false,
+      false,
+      false,
+      false,
       true,
-      false,
-      false,
-      false,
-      false,
       false,
       false,
       false,
       false,
       false
     ],
-    "top_score": 0.7910547256469727,
+    "top_score": 0.7748615741729736,
     "found": true
   },
   {
@@ -4689,7 +4689,7 @@
       false,
       false
     ],
-    "top_score": 0.5203698873519897,
+    "top_score": 0.540603756904602,
     "found": false
   },
   {
@@ -5140,8 +5140,8 @@
       false,
       false,
       false,
-      false,
       true,
+      false,
       false,
       false
     ],
@@ -5164,7 +5164,7 @@
       false,
       false
     ],
-    "top_score": 0.5972424745559692,
+    "top_score": 0.6426336765289307,
     "found": false
   },
   {
@@ -5297,7 +5297,7 @@
       false,
       false
     ],
-    "top_score": 0.6028461456298828,
+    "top_score": 0.6089134216308594,
     "found": false
   },
   {
@@ -5324,8 +5324,8 @@
     "question": "Savaşı izleyen barışla Venedik toprak ve para olarak neleri yitirdi?",
     "total_relevant": 1,
     "relevance": [
-      true,
       false,
+      true,
       false,
       false,
       false,
@@ -5335,7 +5335,7 @@
       false,
       false
     ],
-    "top_score": 0.642585277557373,
+    "top_score": 0.6658502817153931,
     "found": true
   },
   {
@@ -5428,10 +5428,10 @@
       false,
       false,
       false,
-      true
+      false
     ],
     "top_score": 0.627356767654419,
-    "found": true
+    "found": false
   },
   {
     "qid": "llm-tarih-040",
@@ -5449,7 +5449,7 @@
       false,
       false
     ],
-    "top_score": 0.5103281736373901,
+    "top_score": 0.48756319284439087,
     "found": false
   },
   {
@@ -5468,7 +5468,7 @@
       true,
       false
     ],
-    "top_score": 0.5666042566299438,
+    "top_score": 0.5717326402664185,
     "found": true
   },
   {
@@ -5506,7 +5506,7 @@
       false,
       false
     ],
-    "top_score": 0.6730976104736328,
+    "top_score": 0.6174012422561646,
     "found": true
   },
   {
@@ -5518,7 +5518,7 @@
       false,
       false,
       false,
-      false,
+      true,
       false,
       false,
       false,
@@ -5526,7 +5526,7 @@
       false
     ],
     "top_score": 0.5228812098503113,
-    "found": false
+    "found": true
   },
   {
     "qid": "llm-tarih-045",
@@ -5572,8 +5572,8 @@
     "total_relevant": 1,
     "relevance": [
       false,
-      true,
       false,
+      true,
       false,
       false,
       false,

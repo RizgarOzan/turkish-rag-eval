@@ -15,7 +15,7 @@
       false,
       false
     ],
-    "top_score": 0.8602477312088013,
+    "top_score": 0.860247790813446,
     "found": true
   },
   {
@@ -91,7 +91,7 @@
       false,
       false
     ],
-    "top_score": 0.9200626611709595,
+    "top_score": 0.920062780380249,
     "found": true
   },
   {
@@ -414,7 +414,7 @@
       false,
       false
     ],
-    "top_score": 0.8588886260986328,
+    "top_score": 0.8588885068893433,
     "found": true
   },
   {
@@ -585,7 +585,7 @@
       false,
       false
     ],
-    "top_score": 0.867239236831665,
+    "top_score": 0.8672392964363098,
     "found": true
   },
   {
@@ -718,7 +718,7 @@
       false,
       false
     ],
-    "top_score": 0.8908205032348633,
+    "top_score": 0.8908203840255737,
     "found": true
   },
   {
@@ -946,7 +946,7 @@
       false,
       false
     ],
-    "top_score": 0.8591558337211609,
+    "top_score": 0.8591558933258057,
     "found": true
   },
   {
@@ -984,7 +984,7 @@
       false,
       false
     ],
-    "top_score": 0.8756818771362305,
+    "top_score": 0.8756818175315857,
     "found": true
   },
   {
@@ -1003,7 +1003,7 @@
       false,
       false
     ],
-    "top_score": 0.8249725103378296,
+    "top_score": 0.82497239112854,
     "found": true
   },
   {
@@ -1041,7 +1041,7 @@
       false,
       false
     ],
-    "top_score": 0.8988242149353027,
+    "top_score": 0.8988240957260132,
     "found": true
   },
   {
@@ -1060,7 +1060,7 @@
       false,
       false
     ],
-    "top_score": 0.8746254444122314,
+    "top_score": 0.8746255040168762,
     "found": true
   },
   {
@@ -1079,7 +1079,7 @@
       false,
       false
     ],
-    "top_score": 0.8740469217300415,
+    "top_score": 0.874047040939331,
     "found": true
   },
   {
@@ -1155,7 +1155,7 @@
       false,
       false
     ],
-    "top_score": 0.8274260759353638,
+    "top_score": 0.8274259567260742,
     "found": true
   },
   {
@@ -1212,7 +1212,7 @@
       false,
       false
     ],
-    "top_score": 0.8449775576591492,
+    "top_score": 0.844977617263794,
     "found": false
   },
   {
@@ -1231,7 +1231,7 @@
       false,
       false
     ],
-    "top_score": 0.8180947303771973,
+    "top_score": 0.8187062740325928,
     "found": true
   },
   {
@@ -1288,7 +1288,7 @@
       false,
       false
     ],
-    "top_score": 0.8451927900314331,
+    "top_score": 0.8451927304267883,
     "found": true
   },
   {
@@ -1487,8 +1487,8 @@
     "total_relevant": 1,
     "relevance": [
       false,
-      false,
       true,
+      false,
       false,
       false,
       false,
@@ -1535,7 +1535,7 @@
       false,
       false
     ],
-    "top_score": 0.8464892506599426,
+    "top_score": 0.8464891910552979,
     "found": true
   },
   {
@@ -1630,7 +1630,7 @@
       true,
       false
     ],
-    "top_score": 0.8110390305519104,
+    "top_score": 0.8110389709472656,
     "found": true
   },
   {
@@ -1719,14 +1719,14 @@
       false,
       false,
       false,
-      true,
+      false,
       false,
       false,
       false,
       false
     ],
     "top_score": 0.8316551446914673,
-    "found": true
+    "found": false
   },
   {
     "qid": "llm-astronomi-034",
@@ -1858,7 +1858,7 @@
       false,
       false
     ],
-    "top_score": 0.8727471828460693,
+    "top_score": 0.8727471232414246,
     "found": true
   },
   {
@@ -2067,7 +2067,7 @@
       false,
       false
     ],
-    "top_score": 0.8611977100372314,
+    "top_score": 0.8611976504325867,
     "found": true
   },
   {
@@ -2143,7 +2143,7 @@
       false,
       false
     ],
-    "top_score": 0.816099226474762,
+    "top_score": 0.8160991668701172,
     "found": false
   },
   {
@@ -2276,7 +2276,7 @@
       false,
       false
     ],
-    "top_score": 0.8878233432769775,
+    "top_score": 0.887823224067688,
     "found": false
   },
   {
@@ -2314,7 +2314,7 @@
       false,
       false
     ],
-    "top_score": 0.8625410199165344,
+    "top_score": 0.8625410795211792,
     "found": true
   },
   {
@@ -2409,7 +2409,7 @@
       false,
       false
     ],
-    "top_score": 0.8859967589378357,
+    "top_score": 0.8859966993331909,
     "found": true
   },
   {
@@ -2485,7 +2485,7 @@
       false,
       false
     ],
-    "top_score": 0.8444394469261169,
+    "top_score": 0.8444392681121826,
     "found": true
   },
   {
@@ -2599,7 +2599,7 @@
       false,
       false
     ],
-    "top_score": 0.8462662696838379,
+    "top_score": 0.8462663292884827,
     "found": true
   },
   {
@@ -2732,7 +2732,7 @@
       false,
       false
     ],
-    "top_score": 0.8318226933479309,
+    "top_score": 0.8318226337432861,
     "found": true
   },
   {
@@ -2846,7 +2846,7 @@
       false,
       false
     ],
-    "top_score": 0.8510035872459412,
+    "top_score": 0.8510035276412964,
     "found": true
   },
   {
@@ -2998,7 +2998,7 @@
       false,
       false
     ],
-    "top_score": 0.8412793874740601,
+    "top_score": 0.8412793278694153,
     "found": false
   },
   {
@@ -3397,7 +3397,7 @@
       false,
       false
     ],
-    "top_score": 0.8687046766281128,
+    "top_score": 0.868704617023468,
     "found": false
   },
   {
@@ -3454,7 +3454,7 @@
       false,
       false
     ],
-    "top_score": 0.8300943970680237,
+    "top_score": 0.830512285232544,
     "found": true
   },
   {
@@ -3663,7 +3663,7 @@
       false,
       false
     ],
-    "top_score": 0.8487846255302429,
+    "top_score": 0.8487845659255981,
     "found": false
   },
   {
@@ -3872,7 +3872,7 @@
       false,
       false
     ],
-    "top_score": 0.8188391923904419,
+    "top_score": 0.8207238912582397,
     "found": false
   },
   {
@@ -3948,7 +3948,7 @@
       false,
       false
     ],
-    "top_score": 0.8436171412467957,
+    "top_score": 0.8436172008514404,
     "found": false
   },
   {
@@ -4081,7 +4081,7 @@
       false,
       false
     ],
-    "top_score": 0.8946430087089539,
+    "top_score": 0.8946430683135986,
     "found": true
   },
   {
@@ -4233,7 +4233,7 @@
       false,
       false
     ],
-    "top_score": 0.8324404954910278,
+    "top_score": 0.8324406147003174,
     "found": true
   },
   {
@@ -4252,7 +4252,7 @@
       false,
       false
     ],
-    "top_score": 0.826551079750061,
+    "top_score": 0.8265511989593506,
     "found": true
   },
   {
@@ -4347,7 +4347,7 @@
       false,
       false
     ],
-    "top_score": 0.868685245513916,
+    "top_score": 0.8686851859092712,
     "found": true
   },
   {
@@ -4366,7 +4366,7 @@
       false,
       false
     ],
-    "top_score": 0.8389444351196289,
+    "top_score": 0.8389444947242737,
     "found": true
   },
   {
@@ -4423,7 +4423,7 @@
       false,
       false
     ],
-    "top_score": 0.8455211520195007,
+    "top_score": 0.845521092414856,
     "found": true
   },
   {
@@ -4480,7 +4480,7 @@
       false,
       false
     ],
-    "top_score": 0.8294094800949097,
+    "top_score": 0.8294093608856201,
     "found": true
   },
   {
@@ -4537,7 +4537,7 @@
       false,
       false
     ],
-    "top_score": 0.8141010999679565,
+    "top_score": 0.8141010403633118,
     "found": true
   },
   {
@@ -4632,7 +4632,7 @@
       false,
       false
     ],
-    "top_score": 0.8195459842681885,
+    "top_score": 0.819546103477478,
     "found": false
   },
   {
@@ -4670,7 +4670,7 @@
       false,
       false
     ],
-    "top_score": 0.8141601085662842,
+    "top_score": 0.814160168170929,
     "found": true
   },
   {
@@ -4860,7 +4860,7 @@
       false,
       false
     ],
-    "top_score": 0.8331778645515442,
+    "top_score": 0.833177924156189,
     "found": false
   },
   {
@@ -4870,7 +4870,7 @@
     "relevance": [
       false,
       false,
-      true,
+      false,
       false,
       false,
       false,
@@ -4880,7 +4880,7 @@
       false
     ],
     "top_score": 0.8337180614471436,
-    "found": true
+    "found": false
   },
   {
     "qid": "llm-tarih-010",
@@ -4898,7 +4898,7 @@
       false,
       false
     ],
-    "top_score": 0.8445224761962891,
+    "top_score": 0.8620895147323608,
     "found": true
   },
   {
@@ -4917,7 +4917,7 @@
       false,
       false
     ],
-    "top_score": 0.8360159397125244,
+    "top_score": 0.8373708724975586,
     "found": true
   },
   {
@@ -4929,14 +4929,14 @@
       false,
       false,
       false,
-      false,
       true,
+      false,
       false,
       false,
       false,
       false
     ],
-    "top_score": 0.8295952677726746,
+    "top_score": 0.8272230625152588,
     "found": true
   },
   {
@@ -4969,12 +4969,12 @@
       false,
       false,
       false,
-      true,
       false,
+      true,
       false,
       false
     ],
-    "top_score": 0.8509039878845215,
+    "top_score": 0.850904107093811,
     "found": true
   },
   {
@@ -4993,7 +4993,7 @@
       false,
       false
     ],
-    "top_score": 0.8637943267822266,
+    "top_score": 0.8643284440040588,
     "found": true
   },
   {
@@ -5012,7 +5012,7 @@
       false,
       false
     ],
-    "top_score": 0.8228328824043274,
+    "top_score": 0.8252040147781372,
     "found": false
   },
   {
@@ -5029,10 +5029,10 @@
       false,
       false,
       false,
-      true
+      false
     ],
-    "top_score": 0.851252555847168,
-    "found": true
+    "top_score": 0.8534203767776489,
+    "found": false
   },
   {
     "qid": "llm-tarih-018",
@@ -5050,7 +5050,7 @@
       false,
       false
     ],
-    "top_score": 0.8359933495521545,
+    "top_score": 0.836564302444458,
     "found": false
   },
   {
@@ -5086,10 +5086,10 @@
       false,
       false,
       false,
-      false
+      true
     ],
     "top_score": 0.861487627029419,
-    "found": false
+    "found": true
   },
   {
     "qid": "llm-tarih-021",
@@ -5126,7 +5126,7 @@
       false,
       false
     ],
-    "top_score": 0.8508946895599365,
+    "top_score": 0.8508946299552917,
     "found": true
   },
   {
@@ -5316,7 +5316,7 @@
       false,
       false
     ],
-    "top_score": 0.8347718715667725,
+    "top_score": 0.8259108066558838,
     "found": false
   },
   {
@@ -5335,7 +5335,7 @@
       false,
       false
     ],
-    "top_score": 0.8410079479217529,
+    "top_score": 0.8469892740249634,
     "found": true
   },
   {
@@ -5461,14 +5461,14 @@
       false,
       false,
       false,
-      true,
       false,
+      true,
       false,
       false,
       false,
       false
     ],
-    "top_score": 0.8235917091369629,
+    "top_score": 0.8280094861984253,
     "found": true
   },
   {
@@ -5487,7 +5487,7 @@
       false,
       false
     ],
-    "top_score": 0.8425788879394531,
+    "top_score": 0.8423259854316711,
     "found": true
   },
   {

@@ -191,9 +191,9 @@ measured 2026-09-18. Stemmed BM25 alone scores 0.476 / 0.510 / 0.494.
 | paraphrase-multilingual-MiniLM-L12-v2 (default) | 118 M | no | 0.446 | 0.461 | 0.501 | 0.607 | 2 min | 23 ms |
 | [emrecan/bert-base-turkish-cased-mean-nli-stsb-tr](https://huggingface.co/emrecan/bert-base-turkish-cased-mean-nli-stsb-tr) | 111 M | yes | 0.408 | 0.431 | 0.497 | 0.654 | 4 min | 43 ms |
 | [intfloat/multilingual-e5-small](https://huggingface.co/intfloat/multilingual-e5-small) | 118 M | no | 0.654 | 0.644 | 0.642 | 0.639 | 3 min | 22 ms |
-| [intfloat/multilingual-e5-base](https://huggingface.co/intfloat/multilingual-e5-base) | 278 M | no | 0.631 | 0.677 | 0.668 | 0.648 | 10 min | 49 ms |
+| [intfloat/multilingual-e5-base](https://huggingface.co/intfloat/multilingual-e5-base) | 278 M | no | 0.631 | 0.677 | 0.668 | 0.642 | 10 min | 49 ms |
 | [BAAI/bge-m3](https://huggingface.co/BAAI/bge-m3) | 568 M | no | 0.766 | 0.767 | — | — | > 45 min | — |
-| **[newmindai/Mursit-Large-TR-Retrieval](https://huggingface.co/newmindai/Mursit-Large-TR-Retrieval)** | 404 M | yes | **0.746** | **0.740** | **0.781** | 0.673 | 35 min | 214 ms |
+| **[newmindai/Mursit-Large-TR-Retrieval](https://huggingface.co/newmindai/Mursit-Large-TR-Retrieval)** | 404 M | yes | **0.746** | **0.740** | **0.781** | 0.672 | 35 min | 214 ms |
 
 The two Turkish-only models are the most-downloaded Turkish entries in the
 Hugging Face `sentence-similarity` category. `bge-m3` was stopped after 45
@@ -202,13 +202,13 @@ partial run. `google/embeddinggemma-300m` is gated behind a licence click and
 was not run. Per-query results for every completed model are in
 `results/models/`.
 
-> These five rows were measured together on one machine before v0.1.0, which
-> is why the timing columns are comparable with each other and not with the
-> main table above. Their `dense` columns are unaffected by the stable
-> tie-break, but each `Hybrid hierarchical` figure will move by roughly +0.006
-> when the model is re-run — the default row's went 0.607 → 0.613.
-> `turkish-rag-eval leaderboard --check` reports them as missing provenance
-> until then.
+> The timing columns come from one machine before v0.1.0, which is why they
+> are comparable with each other and not with the main table above. The four
+> non-default models were re-run on 2026-10-18 with the stable tie-break and
+> the sentence splitter fix: no `dense` figure moved, and in `Hybrid
+> hierarchical` e5-base went 0.648 → 0.642 and Mursit 0.673 → 0.672 (the
+> default row's went 0.607 → 0.613 earlier). The "+0.006" this note used to
+> predict was wrong; the tie-break moves a fused score either way.
 
 **The top of this table is settled; the middle is not.** Dense hierarchical,
 with 95% bootstrap intervals over the 58 queries: MiniLM 0.501 [0.396, 0.606],
@@ -220,8 +220,8 @@ over the same queries Mursit beats the runner-up e5-base by +0.113
 [-0.123, +0.135]).
 
 **Hybrid fusion only pays for a weak dense model.** RRF lifts the small
-default by +0.106 but pulls Mursit down from 0.781 to 0.673, a paired loss of
--0.108 [-0.193, -0.030]; for the two E5 models it makes no measurable
+default by +0.112 but pulls Mursit down from 0.781 to 0.672, a paired loss of
+-0.109 [-0.194, -0.030]; for the two E5 models it makes no measurable
 difference. "Turkish-only" is not enough either: the `emrecan` model was
 trained for sentence similarity and truncates input at 75 tokens.
 
@@ -382,6 +382,12 @@ python -m pytest -q
 model works. Results for a non-default model go to
 `results/models/<org>__<name>/`, so the main table is never overwritten.
 
+`run --embedding-cache <dir>` keeps the chunk embeddings and reuses them while
+model and chunk text stay the same. With multilingual-e5-small on CPU
+the three dense indexes took 91, 75 and 81 s on the first run and 0.1 s or
+less on the second, with identical scores; `dense_index_seconds` in the
+results still reports the original encoding time.
+
 ## Gold set
 
 | Files | Questions | Labelled by | In the results above |
@@ -458,24 +464,24 @@ turkish-rag-eval fetch-corpus --include-drafts   # data/raw/corpus-full.json
 turkish-rag-eval run --include-drafts            # results/full/<model>/
 ```
 
-Measured 2026-09-27 (re-run after the batch 5 fix; Mursit added 2026-10-01) on 296 questions (the 4 `needs-human` drafts never load),
+Measured 2026-10-18 (re-run after the sentence splitter fix in #29) on 296 questions (the 4 `needs-human` drafts never load),
 hierarchical chunks, nDCG@10:
 
 | Retriever | 58 human questions | 296 questions (238 drafted) |
 |---|---|---|
-| bm25_stem5 | 0.494 | 0.558 |
-| MiniLM (default), dense | 0.501 | 0.405 |
-| MiniLM (default), hybrid_rrf | 0.613 | 0.578 |
-| multilingual-e5-small, dense | 0.642 | 0.568 |
-| multilingual-e5-small, hybrid_rrf | 0.639 | 0.642 |
-| multilingual-e5-base, dense | 0.668 | 0.646 |
-| multilingual-e5-base, hybrid_rrf | 0.648 | 0.664 |
-| Mursit-Large-TR-Retrieval, dense | 0.781 | 0.613 |
-| Mursit-Large-TR-Retrieval, hybrid_rrf | 0.673 | 0.661 |
+| bm25_stem5 | 0.494 | 0.559 |
+| MiniLM (default), dense | 0.501 | 0.408 |
+| MiniLM (default), hybrid_rrf | 0.613 | 0.576 |
+| multilingual-e5-small, dense | 0.642 | 0.565 |
+| multilingual-e5-small, hybrid_rrf | 0.639 | 0.644 |
+| multilingual-e5-base, dense | 0.668 | 0.649 |
+| multilingual-e5-base, hybrid_rrf | 0.642 | 0.667 |
+| Mursit-Large-TR-Retrieval, dense | 0.781 | 0.611 |
+| Mursit-Large-TR-Retrieval, hybrid_rrf | 0.672 | 0.662 |
 
 On the wider set stemmed BM25 gets stronger and every dense model weaker, so
 fusing the two now helps all four models, where on the 58 health questions it
-cost the E5 models and Mursit. Mursit drops the most, from 0.781 to 0.613, and
+cost the E5 models and Mursit. Mursit drops the most, from 0.781 to 0.611, and
 falls below e5-base, so its lead on the human set does not carry over to the
 drafted questions yet. Those questions were written by an LLM from one sentence
 each; whether that style suits the smaller models better is open until people

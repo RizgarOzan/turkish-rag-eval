@@ -54,8 +54,8 @@ kullanmadım. 18 Eylül'de beş model daha ölçtüm. Hepsi aynı 58 soru, aynı
 | MiniLM (varsayılan) | 118 M | 0,501 | 0,607 | 23 ms |
 | emrecan (yalnız Türkçe) | 111 M | 0,497 | 0,654 | 43 ms |
 | multilingual-e5-small | 118 M | 0,642 | 0,639 | 22 ms |
-| multilingual-e5-base | 278 M | 0,668 | 0,648 | 49 ms |
-| Mursit-Large-TR-Retrieval (yalnız Türkçe) | 404 M | **0,781** | 0,673 | 214 ms |
+| multilingual-e5-base | 278 M | 0,668 | 0,642 | 49 ms |
+| Mursit-Large-TR-Retrieval (yalnız Türkçe) | 404 M | **0,781** | 0,672 | 214 ms |
 
 `bge-m3`'ü 45 dakikada durdurdum. Hiyerarşik parçalara gelemedi ama sabit ve cümle
 parçalamada 0,766 ve 0,767 aldı. Köklemeli BM25 aynı parçalamalarda 0,476 ve 0,510'da kalıyor.
@@ -69,9 +69,9 @@ başka hiçbir şey değişmeden 0,501'den 0,642'ye çıkıyor. CPU'da çalışa
 varsayılanın yerine konacak ilk model bu.
 
 **2. Hibrit yalnız zayıf bir modele yarıyor.** RRF, BM25'in sıralamasına dense sıralamayla
-aynı ağırlığı veriyor. MiniLM'i 0,106 yukarı çekiyor. Güçlü bir modelde ise iyi sıralamayı
-daha kötü bir sıralamayla karıştırmış oluyor: Mursit 0,781'den 0,673'e, e5-base 0,668'den
-0,648'e düşüyor. İlk ölçümdeki "hibrit her yerde kazanıyor" sonucu modelin zayıflığından
+aynı ağırlığı veriyor. MiniLM'i 0,112 yukarı çekiyor. Güçlü bir modelde ise iyi sıralamayı
+daha kötü bir sıralamayla karıştırmış oluyor: Mursit 0,781'den 0,672'ye, e5-base 0,668'den
+0,642'ye düşüyor. İlk ölçümdeki "hibrit her yerde kazanıyor" sonucu modelin zayıflığından
 geliyormuş. Birleştirip birleştirmemeye karar vermek için önce ölçmek gerekiyor.
 
 **3. "Türkçe'ye özel" olmak yetmiyor.** Hugging Face'in `sentence-similarity` kategorisinde en

@@ -186,7 +186,7 @@
       true,
       false
     ],
-    "top_score": 0.6106260418891907,
+    "top_score": 0.6333367824554443,
     "found": true
   },
   {
@@ -1136,7 +1136,7 @@
       false,
       false
     ],
-    "top_score": 0.6454312801361084,
+    "top_score": 0.6454312205314636,
     "found": true
   },
   {
@@ -1440,7 +1440,7 @@
       false,
       false
     ],
-    "top_score": 0.5321611166000366,
+    "top_score": 0.5337396264076233,
     "found": true
   },
   {
@@ -1695,8 +1695,8 @@
     "question": "Herschel'in bulduğu cismin kuyruklu yıldız olmadığını ilk kim, neye dayanarak gösterdi?",
     "total_relevant": 1,
     "relevance": [
-      false,
       true,
+      false,
       false,
       false,
       false,
@@ -1706,7 +1706,7 @@
       false,
       false
     ],
-    "top_score": 0.6466405391693115,
+    "top_score": 0.6359984874725342,
     "found": true
   },
   {
@@ -1714,8 +1714,8 @@
     "question": "Keşiften sonra hükümdar gökbilimciye hangi şartla ne kadar ödeme yaptı?",
     "total_relevant": 1,
     "relevance": [
-      false,
       true,
+      false,
       false,
       false,
       false,
@@ -1725,7 +1725,7 @@
       false,
       false
     ],
-    "top_score": 0.5815420150756836,
+    "top_score": 0.5909945964813232,
     "found": true
   },
   {
@@ -3454,7 +3454,7 @@
       false,
       false
     ],
-    "top_score": 0.5159872174263,
+    "top_score": 0.5104225873947144,
     "found": true
   },
   {
@@ -4018,8 +4018,8 @@
       false,
       false,
       false,
-      false,
       true,
+      false,
       false,
       false,
       false
@@ -4717,8 +4717,8 @@
     "total_relevant": 1,
     "relevance": [
       false,
-      true,
       false,
+      true,
       false,
       false,
       false,
@@ -4874,23 +4874,23 @@
       false,
       false,
       false,
-      true,
+      false,
       false,
       false,
       false
     ],
     "top_score": 0.6473363637924194,
-    "found": true
+    "found": false
   },
   {
     "qid": "llm-tarih-010",
     "question": "Boğazdan geçmeye çalışırken batırılan Venedik gemisinin kaptanı nasıl öldürüldü?",
     "total_relevant": 1,
     "relevance": [
-      false,
-      false,
-      false,
       true,
+      false,
+      false,
+      false,
       false,
       false,
       false,
@@ -4898,7 +4898,7 @@
       false,
       false
     ],
-    "top_score": 0.6220965385437012,
+    "top_score": 0.6500349044799805,
     "found": true
   },
   {
