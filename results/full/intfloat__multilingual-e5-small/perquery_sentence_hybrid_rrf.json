@@ -1172,10 +1172,10 @@
       false,
       false,
       false,
-      false
+      true
     ],
     "top_score": 0.03177805800756621,
-    "found": false
+    "found": true
   },
   {
     "qid": "llm-astronomi-005",
@@ -1231,7 +1231,7 @@
       false,
       false
     ],
-    "top_score": 0.031024531024531024,
+    "top_score": 0.030798389007344232,
     "found": true
   },
   {
@@ -1402,7 +1402,7 @@
       false,
       false
     ],
-    "top_score": 0.03200204813108039,
+    "top_score": 0.031746031746031744,
     "found": true
   },
   {
@@ -1630,7 +1630,7 @@
       false,
       false
     ],
-    "top_score": 0.032018442622950824,
+    "top_score": 0.03177805800756621,
     "found": true
   },
   {
@@ -1644,9 +1644,9 @@
       false,
       false,
       false,
+      false,
+      false,
       true,
-      false,
-      false,
       false
     ],
     "top_score": 0.032266458495966696,
@@ -1753,17 +1753,17 @@
     "total_relevant": 1,
     "relevance": [
       false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
       true,
-      false,
-      false,
-      false,
-      false,
-      false,
-      false,
       false,
       false
     ],
-    "top_score": 0.03128054740957967,
+    "top_score": 0.032266458495966696,
     "found": true
   },
   {
@@ -1776,14 +1776,14 @@
       false,
       false,
       false,
-      false,
+      true,
       false,
       false,
       false,
       false
     ],
     "top_score": 0.032266458495966696,
-    "found": false
+    "found": true
   },
   {
     "qid": "llm-astronomi-037",
@@ -1877,7 +1877,7 @@
       false,
       false
     ],
-    "top_score": 0.03200204813108039,
+    "top_score": 0.031754032258064516,
     "found": true
   },
   {
@@ -2157,8 +2157,8 @@
       false,
       false,
       false,
-      false,
       true,
+      false,
       false,
       false
     ],
@@ -2523,7 +2523,7 @@
       false,
       false
     ],
-    "top_score": 0.030798389007344232,
+    "top_score": 0.031024531024531024,
     "found": false
   },
   {
@@ -2540,10 +2540,10 @@
       false,
       false,
       false,
-      true
+      false
     ],
     "top_score": 0.03125763125763126,
-    "found": true
+    "found": false
   },
   {
     "qid": "llm-bilgisayar-029",
@@ -2732,7 +2732,7 @@
       false,
       false
     ],
-    "top_score": 0.03149801587301587,
+    "top_score": 0.031746031746031744,
     "found": false
   },
   {
@@ -2876,15 +2876,15 @@
       false,
       false,
       false,
-      true,
       false,
+      true,
       false,
       false,
       false,
       false,
       false
     ],
-    "top_score": 0.0264957264957265,
+    "top_score": 0.02662057044079516,
     "found": true
   },
   {
@@ -3112,7 +3112,7 @@
       false,
       false
     ],
-    "top_score": 0.02565270188221008,
+    "top_score": 0.025739237015474183,
     "found": true
   },
   {
@@ -3131,7 +3131,7 @@
       false,
       false
     ],
-    "top_score": 0.029273504273504274,
+    "top_score": 0.03149801587301587,
     "found": true
   },
   {
@@ -3139,8 +3139,8 @@
     "question": "Su oranı hangi düzeyin altına inince olay tümüyle durur?",
     "total_relevant": 1,
     "relevance": [
-      false,
       true,
+      false,
       false,
       false,
       false,
@@ -3150,7 +3150,7 @@
       false,
       false
     ],
-    "top_score": 0.030886196246139225,
+    "top_score": 0.03131881575727918,
     "found": true
   },
   {
@@ -3861,8 +3861,8 @@
     "question": "Anadolu'daki bu yerel krallık Roma yönetimine doğrudan hangi yıl bağlandı?",
     "total_relevant": 1,
     "relevance": [
-      false,
       true,
+      false,
       false,
       false,
       false,
@@ -3872,7 +3872,7 @@
       false,
       false
     ],
-    "top_score": 0.031754032258064516,
+    "top_score": 0.0315136476426799,
     "found": true
   },
   {
@@ -3967,7 +3967,7 @@
       false,
       false
     ],
-    "top_score": 0.026830135039090264,
+    "top_score": 0.026754075124025514,
     "found": true
   },
   {
@@ -4290,7 +4290,7 @@
       false,
       false
     ],
-    "top_score": 0.02921395544346364,
+    "top_score": 0.029411764705882353,
     "found": true
   },
   {
@@ -4423,7 +4423,7 @@
       false,
       false
     ],
-    "top_score": 0.03131881575727918,
+    "top_score": 0.032266458495966696,
     "found": true
   },
   {
@@ -4436,13 +4436,13 @@
       false,
       false,
       false,
-      false,
-      false,
       true,
+      false,
+      false,
       false,
       false
     ],
-    "top_score": 0.031054405392392875,
+    "top_score": 0.030834914611005692,
     "found": true
   },
   {
@@ -4450,8 +4450,8 @@
     "question": "Bugün dağın hangi vadilerinde hâlâ buzul bulunuyor?",
     "total_relevant": 1,
     "relevance": [
-      true,
       false,
+      true,
       false,
       false,
       false,
@@ -4461,7 +4461,7 @@
       false,
       false
     ],
-    "top_score": 0.03278688524590164,
+    "top_score": 0.03252247488101534,
     "found": true
   },
   {
@@ -4499,7 +4499,7 @@
       false,
       true
     ],
-    "top_score": 0.03225806451612903,
+    "top_score": 0.03252247488101534,
     "found": true
   },
   {
@@ -4556,7 +4556,7 @@
       false,
       false
     ],
-    "top_score": 0.03200204813108039,
+    "top_score": 0.03225806451612903,
     "found": true
   },
   {
@@ -4936,7 +4936,7 @@
       false,
       false
     ],
-    "top_score": 0.02919863597612958,
+    "top_score": 0.029411764705882353,
     "found": false
   },
   {
@@ -5023,8 +5023,8 @@
       false,
       false,
       false,
-      true,
       false,
+      true,
       false,
       false,
       false,
@@ -5297,7 +5297,7 @@
       false,
       false
     ],
-    "top_score": 0.03252247488101534,
+    "top_score": 0.03278688524590164,
     "found": true
   },
   {
@@ -5354,7 +5354,7 @@
       false,
       false
     ],
-    "top_score": 0.024925373134328358,
+    "top_score": 0.024934585193166076,
     "found": false
   },
   {
@@ -5485,10 +5485,10 @@
       false,
       false,
       false,
-      true
+      false
     ],
     "top_score": 0.03125763125763126,
-    "found": true
+    "found": false
   },
   {
     "qid": "llm-tarih-043",
@@ -5515,8 +5515,8 @@
     "total_relevant": 1,
     "relevance": [
       false,
-      true,
       false,
+      true,
       false,
       false,
       false,
@@ -5525,7 +5525,7 @@
       false,
       false
     ],
-    "top_score": 0.032266458495966696,
+    "top_score": 0.03252247488101534,
     "found": true
   },
   {
@@ -5544,7 +5544,7 @@
       false,
       false
     ],
-    "top_score": 0.031746031746031744,
+    "top_score": 0.031544957774465976,
     "found": false
   },
   {
@@ -5582,7 +5582,7 @@
       false,
       false
     ],
-    "top_score": 0.02817460317460317,
+    "top_score": 0.028370221327967807,
     "found": false
   },
   {
@@ -5593,8 +5593,8 @@
       false,
       false,
       false,
-      true,
       false,
+      true,
       false,
       false,
       false,
@@ -5620,7 +5620,7 @@
       false,
       false
     ],
-    "top_score": 0.0304147465437788,
+    "top_score": 0.03021353930031804,
     "found": true
   }
 ]

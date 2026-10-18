@@ -186,7 +186,7 @@
       false,
       false
     ],
-    "top_score": 11.512237725926159,
+    "top_score": 11.522787518389201,
     "found": true
   },
   {
@@ -623,7 +623,7 @@
       false,
       false
     ],
-    "top_score": 21.294765960167055,
+    "top_score": 21.29076615339251,
     "found": false
   },
   {
@@ -984,7 +984,7 @@
       false,
       false
     ],
-    "top_score": 11.981434567023745,
+    "top_score": 11.98374555889946,
     "found": true
   },
   {
@@ -1117,7 +1117,7 @@
       false,
       false
     ],
-    "top_score": 12.263650793596346,
+    "top_score": 12.26694750449532,
     "found": false
   },
   {
@@ -1212,7 +1212,7 @@
       false,
       false
     ],
-    "top_score": 15.271851728935136,
+    "top_score": 15.262651847238544,
     "found": true
   },
   {
@@ -1478,7 +1478,7 @@
       false,
       false
     ],
-    "top_score": 15.511726790564243,
+    "top_score": 15.501573590248936,
     "found": true
   },
   {
@@ -1668,7 +1668,7 @@
       false,
       false
     ],
-    "top_score": 20.78504074810341,
+    "top_score": 20.78840282874076,
     "found": true
   },
   {
@@ -2865,7 +2865,7 @@
       false,
       false
     ],
-    "top_score": 29.900970530666157,
+    "top_score": 29.911577731496884,
     "found": true
   },
   {
@@ -3169,7 +3169,7 @@
       false,
       false
     ],
-    "top_score": 27.072507895336937,
+    "top_score": 27.06984886371697,
     "found": true
   },
   {
@@ -3435,7 +3435,7 @@
       false,
       false
     ],
-    "top_score": 11.61308974031847,
+    "top_score": 11.609056611935369,
     "found": true
   },
   {
@@ -3454,7 +3454,7 @@
       false,
       false
     ],
-    "top_score": 16.433447617713988,
+    "top_score": 16.344137690754454,
     "found": true
   },
   {
@@ -3720,7 +3720,7 @@
       false,
       false
     ],
-    "top_score": 13.967490964446135,
+    "top_score": 13.964952990005258,
     "found": false
   },
   {
@@ -3929,7 +3929,7 @@
       false,
       false
     ],
-    "top_score": 25.567480508827924,
+    "top_score": 25.56157542457336,
     "found": true
   },
   {
@@ -4043,7 +4043,7 @@
       false,
       false
     ],
-    "top_score": 32.0134851789223,
+    "top_score": 32.01447889737747,
     "found": true
   },
   {
@@ -4157,7 +4157,7 @@
       false,
       false
     ],
-    "top_score": 12.247995107586792,
+    "top_score": 12.25857765583746,
     "found": false
   },
   {
@@ -4309,7 +4309,7 @@
       false,
       false
     ],
-    "top_score": 17.74749458388533,
+    "top_score": 17.74225814232915,
     "found": true
   },
   {
@@ -4442,7 +4442,7 @@
       false,
       false
     ],
-    "top_score": 15.170626720554349,
+    "top_score": 15.181209268805015,
     "found": false
   },
   {
@@ -4499,7 +4499,7 @@
       false,
       false
     ],
-    "top_score": 17.722427678187127,
+    "top_score": 17.73426109622172,
     "found": false
   },
   {
@@ -4518,7 +4518,7 @@
       false,
       false
     ],
-    "top_score": 13.228782650050414,
+    "top_score": 13.219807490579045,
     "found": false
   },
   {
@@ -4594,7 +4594,7 @@
       false,
       false
     ],
-    "top_score": 25.61557322872847,
+    "top_score": 25.612800850373294,
     "found": true
   },
   {
@@ -4756,8 +4756,8 @@
     "relevance": [
       false,
       false,
-      false,
       true,
+      false,
       false,
       false,
       false,
@@ -4765,7 +4765,7 @@
       false,
       false
     ],
-    "top_score": 11.340284598611493,
+    "top_score": 11.252246108385503,
     "found": true
   },
   {
@@ -4803,7 +4803,7 @@
       false,
       false
     ],
-    "top_score": 14.199790698380646,
+    "top_score": 14.181474635735,
     "found": true
   },
   {
@@ -4822,7 +4822,7 @@
       false,
       false
     ],
-    "top_score": 33.27960364159426,
+    "top_score": 33.27133536404468,
     "found": true
   },
   {
@@ -4871,10 +4871,10 @@
       false,
       false,
       false,
+      false,
+      false,
+      false,
       true,
-      false,
-      false,
-      false,
       false,
       false,
       false
@@ -4887,7 +4887,7 @@
     "question": "Boğazdan geçmeye çalışırken batırılan Venedik gemisinin kaptanı nasıl öldürüldü?",
     "total_relevant": 1,
     "relevance": [
-      false,
+      true,
       false,
       false,
       false,
@@ -4898,8 +4898,8 @@
       false,
       false
     ],
-    "top_score": 10.852208960936872,
-    "found": false
+    "top_score": 14.31085179626593,
+    "found": true
   },
   {
     "qid": "llm-tarih-011",
@@ -4974,7 +4974,7 @@
       true,
       false
     ],
-    "top_score": 13.097087574387148,
+    "top_score": 13.104488884150722,
     "found": true
   },
   {
@@ -5031,7 +5031,7 @@
       false,
       false
     ],
-    "top_score": 18.822382894432614,
+    "top_score": 18.406854669469553,
     "found": false
   },
   {
@@ -5062,14 +5062,14 @@
       false,
       false,
       false,
-      true,
       false,
+      true,
       false,
       false,
       false,
       false
     ],
-    "top_score": 24.116005203344045,
+    "top_score": 22.842696804203342,
     "found": true
   },
   {
@@ -5145,7 +5145,7 @@
       false,
       false
     ],
-    "top_score": 22.46309907026486,
+    "top_score": 22.472336337216365,
     "found": true
   },
   {
@@ -5180,11 +5180,11 @@
       false,
       false,
       false,
-      false,
+      true,
       false
     ],
     "top_score": 16.641346118595354,
-    "found": false
+    "found": true
   },
   {
     "qid": "llm-tarih-027",
@@ -5335,7 +5335,7 @@
       false,
       false
     ],
-    "top_score": 15.041907610873597,
+    "top_score": 15.117290161074285,
     "found": true
   },
   {
@@ -5392,7 +5392,7 @@
       false,
       false
     ],
-    "top_score": 13.223560904516749,
+    "top_score": 13.178245901915858,
     "found": false
   },
   {
@@ -5411,7 +5411,7 @@
       false,
       false
     ],
-    "top_score": 11.383426894604947,
+    "top_score": 11.392793989439937,
     "found": false
   },
   {
@@ -5620,7 +5620,7 @@
       false,
       false
     ],
-    "top_score": 10.664987106565505,
+    "top_score": 10.502113348778975,
     "found": false
   }
 ]

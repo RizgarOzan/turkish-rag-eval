@@ -58,8 +58,8 @@ the same 16-thread CPU:
 | MiniLM (default) | 118 M | 0.501 | 0.607 | 23 ms |
 | emrecan (Turkish-only) | 111 M | 0.497 | 0.654 | 43 ms |
 | multilingual-e5-small | 118 M | 0.642 | 0.639 | 22 ms |
-| multilingual-e5-base | 278 M | 0.668 | 0.648 | 49 ms |
-| Mursit-Large-TR-Retrieval (Turkish-only) | 404 M | **0.781** | 0.673 | 214 ms |
+| multilingual-e5-base | 278 M | 0.668 | 0.642 | 49 ms |
+| Mursit-Large-TR-Retrieval (Turkish-only) | 404 M | **0.781** | 0.672 | 214 ms |
 
 I stopped `bge-m3` after 45 minutes, before it reached the hierarchical chunks; on fixed and
 sentence chunks it scored 0.766 and 0.767, where stemmed BM25 sits at 0.476 and 0.510.
@@ -73,8 +73,8 @@ embed the corpus, and it goes from 0.501 to 0.642 with nothing else changed. On 
 the first thing to swap in.
 
 **2. Hybrid only pays for a weak dense model.** RRF gives BM25's ranking the same weight as
-the dense one. That lifts MiniLM by 0.106, but with a strong model it mixes a good ranking
-with a worse one: Mursit drops from 0.781 to 0.673 and e5-base from 0.668 to 0.648. The
+the dense one. That lifts MiniLM by 0.112, but with a strong model it mixes a good ranking
+with a worse one: Mursit drops from 0.781 to 0.672 and e5-base from 0.668 to 0.642. The
 first run's "hybrid wins everywhere" was a symptom of the weak model. Whether to fuse has
 to be measured per model.
 

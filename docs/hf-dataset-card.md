@@ -151,8 +151,8 @@ configurations and six models are in the
 | BM25, 5-character prefix stemming | 0.494 |
 
 On the full 296-question set the order changes, which is why the drafts are
-kept apart: e5-base 0.646, Mursit 0.613, e5-small 0.568, MiniLM 0.405, and
-stemmed BM25 0.558
+kept apart: e5-base 0.649, Mursit 0.611, e5-small 0.565, MiniLM 0.408, and
+stemmed BM25 0.559
 ([details](https://github.com/RizgarOzan/turkish-rag-eval#scoring-all-300)).
 
 ## Limits

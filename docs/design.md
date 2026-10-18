@@ -14,8 +14,8 @@ and the worst performer in all four columns.
 
 **Hybrid fusion only pays for a weak dense model.** RRF gives BM25's ranking
 the same weight as the dense one. That lifts the small default (+0.106), but
-pulls a strong model down: Mursit drops from 0.781 to 0.673, e5-base from
-0.668 to 0.648. Whether to fuse should be measured, not assumed.
+pulls a strong model down: Mursit drops from 0.781 to 0.672, e5-base from
+0.668 to 0.642. Whether to fuse should be measured, not assumed.
 
 ## Design decisions
 

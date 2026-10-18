@@ -148,7 +148,7 @@
       false,
       false
     ],
-    "top_score": 0.8516798615455627,
+    "top_score": 0.851679801940918,
     "found": true
   },
   {
@@ -319,7 +319,7 @@
       false,
       false
     ],
-    "top_score": 0.8384171724319458,
+    "top_score": 0.8384172916412354,
     "found": true
   },
   {
@@ -433,7 +433,7 @@
       false,
       false
     ],
-    "top_score": 0.8621530532836914,
+    "top_score": 0.8621529340744019,
     "found": true
   },
   {
@@ -528,7 +528,7 @@
       false,
       false
     ],
-    "top_score": 0.8959310054779053,
+    "top_score": 0.8959308862686157,
     "found": true
   },
   {
@@ -661,7 +661,7 @@
       false,
       false
     ],
-    "top_score": 0.8212267160415649,
+    "top_score": 0.8212265372276306,
     "found": false
   },
   {
@@ -718,7 +718,7 @@
       false,
       false
     ],
-    "top_score": 0.8683409094810486,
+    "top_score": 0.8683409690856934,
     "found": true
   },
   {
@@ -813,7 +813,7 @@
       false,
       false
     ],
-    "top_score": 0.8836981058120728,
+    "top_score": 0.8836978673934937,
     "found": true
   },
   {
@@ -832,7 +832,7 @@
       false,
       false
     ],
-    "top_score": 0.8788355588912964,
+    "top_score": 0.8788356781005859,
     "found": true
   },
   {
@@ -870,7 +870,7 @@
       false,
       false
     ],
-    "top_score": 0.8917055130004883,
+    "top_score": 0.8917056322097778,
     "found": true
   },
   {
@@ -965,7 +965,7 @@
       false,
       false
     ],
-    "top_score": 0.8505476713180542,
+    "top_score": 0.8505475521087646,
     "found": true
   },
   {
@@ -984,7 +984,7 @@
       false,
       false
     ],
-    "top_score": 0.8631036281585693,
+    "top_score": 0.8631037473678589,
     "found": true
   },
   {
@@ -1003,7 +1003,7 @@
       false,
       false
     ],
-    "top_score": 0.8046804666519165,
+    "top_score": 0.8046807050704956,
     "found": false
   },
   {
@@ -1079,7 +1079,7 @@
       false,
       false
     ],
-    "top_score": 0.8517966270446777,
+    "top_score": 0.8517964482307434,
     "found": true
   },
   {
@@ -1117,7 +1117,7 @@
       false,
       false
     ],
-    "top_score": 0.8386386632919312,
+    "top_score": 0.8386387228965759,
     "found": false
   },
   {
@@ -1155,7 +1155,7 @@
       false,
       false
     ],
-    "top_score": 0.8260546326637268,
+    "top_score": 0.826054573059082,
     "found": true
   },
   {
@@ -1193,7 +1193,7 @@
       false,
       false
     ],
-    "top_score": 0.8281383514404297,
+    "top_score": 0.8281381726264954,
     "found": false
   },
   {
@@ -1210,10 +1210,10 @@
       false,
       false,
       false,
-      true
+      false
     ],
     "top_score": 0.8291802406311035,
-    "found": true
+    "found": false
   },
   {
     "qid": "llm-astronomi-007",
@@ -1223,8 +1223,8 @@
       false,
       false,
       false,
-      true,
       false,
+      true,
       false,
       false,
       false,
@@ -1326,7 +1326,7 @@
       false,
       false
     ],
-    "top_score": 0.8578615188598633,
+    "top_score": 0.8578619956970215,
     "found": true
   },
   {
@@ -1364,7 +1364,7 @@
       false,
       false
     ],
-    "top_score": 0.8079076409339905,
+    "top_score": 0.80790776014328,
     "found": true
   },
   {
@@ -1440,7 +1440,7 @@
       false,
       false
     ],
-    "top_score": 0.819500207901001,
+    "top_score": 0.8195003271102905,
     "found": true
   },
   {
@@ -1535,7 +1535,7 @@
       false,
       false
     ],
-    "top_score": 0.8462687730789185,
+    "top_score": 0.8462682962417603,
     "found": true
   },
   {
@@ -1554,7 +1554,7 @@
       false,
       false
     ],
-    "top_score": 0.8372631072998047,
+    "top_score": 0.8372633457183838,
     "found": true
   },
   {
@@ -1630,7 +1630,7 @@
       false,
       false
     ],
-    "top_score": 0.8344619274139404,
+    "top_score": 0.8344618082046509,
     "found": true
   },
   {
@@ -1687,7 +1687,7 @@
       false,
       false
     ],
-    "top_score": 0.8497077226638794,
+    "top_score": 0.8515592813491821,
     "found": false
   },
   {
@@ -1715,7 +1715,7 @@
     "total_relevant": 1,
     "relevance": [
       false,
-      false,
+      true,
       false,
       false,
       false,
@@ -1726,7 +1726,7 @@
       false
     ],
     "top_score": 0.8055703043937683,
-    "found": false
+    "found": true
   },
   {
     "qid": "llm-astronomi-034",
@@ -1754,14 +1754,14 @@
     "relevance": [
       false,
       false,
+      true,
       false,
       false,
       false,
       false,
       false,
       false,
-      false,
-      true
+      false
     ],
     "top_score": 0.8429523706436157,
     "found": true
@@ -1779,11 +1779,11 @@
       false,
       false,
       false,
-      false,
+      true,
       false
     ],
-    "top_score": 0.8389530181884766,
-    "found": false
+    "top_score": 0.8389530777931213,
+    "found": true
   },
   {
     "qid": "llm-astronomi-037",
@@ -1858,7 +1858,7 @@
       false,
       false
     ],
-    "top_score": 0.8645848631858826,
+    "top_score": 0.8645849823951721,
     "found": true
   },
   {
@@ -1988,10 +1988,10 @@
       false,
       false,
       false,
-      true,
-      false
+      false,
+      true
     ],
-    "top_score": 0.8286155462265015,
+    "top_score": 0.8286154270172119,
     "found": true
   },
   {
@@ -2143,7 +2143,7 @@
       false,
       false
     ],
-    "top_score": 0.7980126738548279,
+    "top_score": 0.798012912273407,
     "found": true
   },
   {
@@ -2200,7 +2200,7 @@
       false,
       false
     ],
-    "top_score": 0.8022304773330688,
+    "top_score": 0.8022305965423584,
     "found": false
   },
   {
@@ -2371,7 +2371,7 @@
       false,
       false
     ],
-    "top_score": 0.8144681453704834,
+    "top_score": 0.814468264579773,
     "found": true
   },
   {
@@ -2390,7 +2390,7 @@
       false,
       false
     ],
-    "top_score": 0.8715769052505493,
+    "top_score": 0.8715768456459045,
     "found": true
   },
   {
@@ -2428,7 +2428,7 @@
       false,
       false
     ],
-    "top_score": 0.853367030620575,
+    "top_score": 0.8533669710159302,
     "found": true
   },
   {
@@ -2542,7 +2542,7 @@
       false,
       false
     ],
-    "top_score": 0.8469845652580261,
+    "top_score": 0.8469845056533813,
     "found": true
   },
   {
@@ -2675,7 +2675,7 @@
       false,
       false
     ],
-    "top_score": 0.8281788229942322,
+    "top_score": 0.8281787633895874,
     "found": true
   },
   {
@@ -2694,7 +2694,7 @@
       false,
       false
     ],
-    "top_score": 0.8182284832000732,
+    "top_score": 0.818228542804718,
     "found": true
   },
   {
@@ -2713,7 +2713,7 @@
       false,
       false
     ],
-    "top_score": 0.8416316509246826,
+    "top_score": 0.8416317701339722,
     "found": true
   },
   {
@@ -2751,7 +2751,7 @@
       false,
       false
     ],
-    "top_score": 0.8522518277168274,
+    "top_score": 0.8522516489028931,
     "found": true
   },
   {
@@ -2789,7 +2789,7 @@
       false,
       false
     ],
-    "top_score": 0.8314841389656067,
+    "top_score": 0.8314840793609619,
     "found": true
   },
   {
@@ -2827,7 +2827,7 @@
       false,
       false
     ],
-    "top_score": 0.834993839263916,
+    "top_score": 0.8349941372871399,
     "found": true
   },
   {
@@ -2960,7 +2960,7 @@
       false,
       false
     ],
-    "top_score": 0.8432407379150391,
+    "top_score": 0.8432408571243286,
     "found": true
   },
   {
@@ -3017,7 +3017,7 @@
       false,
       false
     ],
-    "top_score": 0.8402227163314819,
+    "top_score": 0.8402227759361267,
     "found": true
   },
   {
@@ -3093,7 +3093,7 @@
       false,
       false
     ],
-    "top_score": 0.8339678049087524,
+    "top_score": 0.8339680433273315,
     "found": true
   },
   {
@@ -3140,8 +3140,8 @@
     "total_relevant": 1,
     "relevance": [
       false,
-      false,
       true,
+      false,
       false,
       false,
       false,
@@ -3150,7 +3150,7 @@
       false,
       false
     ],
-    "top_score": 0.8148895502090454,
+    "top_score": 0.8148894906044006,
     "found": true
   },
   {
@@ -3169,7 +3169,7 @@
       false,
       false
     ],
-    "top_score": 0.8501067161560059,
+    "top_score": 0.8501067757606506,
     "found": true
   },
   {
@@ -3283,7 +3283,7 @@
       false,
       false
     ],
-    "top_score": 0.8326272368431091,
+    "top_score": 0.8326276540756226,
     "found": true
   },
   {
@@ -3359,7 +3359,7 @@
       false,
       false
     ],
-    "top_score": 0.8705883026123047,
+    "top_score": 0.870588481426239,
     "found": false
   },
   {
@@ -3378,7 +3378,7 @@
       false,
       false
     ],
-    "top_score": 0.8579088449478149,
+    "top_score": 0.8579087257385254,
     "found": true
   },
   {
@@ -3397,7 +3397,7 @@
       false,
       false
     ],
-    "top_score": 0.8749006986618042,
+    "top_score": 0.8749006390571594,
     "found": true
   },
   {
@@ -3416,7 +3416,7 @@
       false,
       false
     ],
-    "top_score": 0.8643401861190796,
+    "top_score": 0.8643404245376587,
     "found": true
   },
   {
@@ -3606,7 +3606,7 @@
       false,
       false
     ],
-    "top_score": 0.8371871709823608,
+    "top_score": 0.8371870517730713,
     "found": false
   },
   {
@@ -3701,7 +3701,7 @@
       false,
       false
     ],
-    "top_score": 0.8567904829978943,
+    "top_score": 0.8567905426025391,
     "found": true
   },
   {
@@ -3796,7 +3796,7 @@
       false,
       false
     ],
-    "top_score": 0.8498234748840332,
+    "top_score": 0.8498237729072571,
     "found": true
   },
   {
@@ -3815,7 +3815,7 @@
       false,
       false
     ],
-    "top_score": 0.7962324619293213,
+    "top_score": 0.7962323427200317,
     "found": true
   },
   {
@@ -3834,7 +3834,7 @@
       false,
       false
     ],
-    "top_score": 0.8156898021697998,
+    "top_score": 0.815689742565155,
     "found": true
   },
   {
@@ -3910,7 +3910,7 @@
       false,
       false
     ],
-    "top_score": 0.8060015439987183,
+    "top_score": 0.8060014247894287,
     "found": true
   },
   {
@@ -3948,7 +3948,7 @@
       false,
       false
     ],
-    "top_score": 0.820860743522644,
+    "top_score": 0.8124379515647888,
     "found": false
   },
   {
@@ -3986,7 +3986,7 @@
       false,
       false
     ],
-    "top_score": 0.8010960817337036,
+    "top_score": 0.8010962009429932,
     "found": true
   },
   {
@@ -4347,7 +4347,7 @@
       false,
       false
     ],
-    "top_score": 0.8504911661148071,
+    "top_score": 0.8504912257194519,
     "found": true
   },
   {
@@ -4366,7 +4366,7 @@
       false,
       false
     ],
-    "top_score": 0.8235278129577637,
+    "top_score": 0.8235276937484741,
     "found": true
   },
   {
@@ -4385,7 +4385,7 @@
       false,
       false
     ],
-    "top_score": 0.8033057451248169,
+    "top_score": 0.8033058047294617,
     "found": false
   },
   {
@@ -4404,7 +4404,7 @@
       false,
       false
     ],
-    "top_score": 0.8134781718254089,
+    "top_score": 0.8134783506393433,
     "found": true
   },
   {
@@ -4412,8 +4412,8 @@
     "question": "Buz kütleleri dağın tepesini nasıl değiştirdi?",
     "total_relevant": 1,
     "relevance": [
-      true,
       false,
+      true,
       false,
       false,
       false,
@@ -4423,7 +4423,7 @@
       false,
       false
     ],
-    "top_score": 0.8239633440971375,
+    "top_score": 0.8216953277587891,
     "found": true
   },
   {
@@ -4431,8 +4431,8 @@
     "question": "Uzmanlar İç Anadolu'nun en yüksek dağının yeniden lav püskürtme olasılığını nasıl değerlendiriyor?",
     "total_relevant": 1,
     "relevance": [
-      false,
       true,
+      false,
       false,
       false,
       false,
@@ -4442,7 +4442,7 @@
       false,
       false
     ],
-    "top_score": 0.816404402256012,
+    "top_score": 0.8290684819221497,
     "found": true
   },
   {
@@ -4450,8 +4450,8 @@
     "question": "Bugün dağın hangi vadilerinde hâlâ buzul bulunuyor?",
     "total_relevant": 1,
     "relevance": [
-      true,
       false,
+      true,
       false,
       false,
       false,
@@ -4461,7 +4461,7 @@
       false,
       false
     ],
-    "top_score": 0.8518731594085693,
+    "top_score": 0.8555402159690857,
     "found": true
   },
   {
@@ -4480,7 +4480,7 @@
       false,
       false
     ],
-    "top_score": 0.8231939077377319,
+    "top_score": 0.8272123336791992,
     "found": true
   },
   {
@@ -4518,7 +4518,7 @@
       false,
       false
     ],
-    "top_score": 0.8046959638595581,
+    "top_score": 0.8046958446502686,
     "found": true
   },
   {
@@ -4527,8 +4527,8 @@
     "total_relevant": 1,
     "relevance": [
       false,
-      false,
       true,
+      false,
       false,
       false,
       false,
@@ -4537,7 +4537,7 @@
       false,
       false
     ],
-    "top_score": 0.7846202850341797,
+    "top_score": 0.7829936742782593,
     "found": true
   },
   {
@@ -4803,7 +4803,7 @@
       false,
       false
     ],
-    "top_score": 0.8434192538261414,
+    "top_score": 0.8434194326400757,
     "found": true
   },
   {
@@ -4841,7 +4841,7 @@
       false,
       false
     ],
-    "top_score": 0.8375646471977234,
+    "top_score": 0.8375644683837891,
     "found": true
   },
   {
@@ -4888,8 +4888,8 @@
     "total_relevant": 1,
     "relevance": [
       false,
-      true,
       false,
+      true,
       false,
       false,
       false,
@@ -4898,7 +4898,7 @@
       false,
       false
     ],
-    "top_score": 0.8304613828659058,
+    "top_score": 0.8315945267677307,
     "found": true
   },
   {
@@ -4906,8 +4906,8 @@
     "question": "On iki yaşındaki hükümdar babasını sefere çağıran mektubunda ne yazmıştı?",
     "total_relevant": 1,
     "relevance": [
-      false,
       true,
+      false,
       false,
       false,
       false,
@@ -4917,7 +4917,7 @@
       false,
       false
     ],
-    "top_score": 0.824296236038208,
+    "top_score": 0.8326160907745361,
     "found": true
   },
   {
@@ -4945,8 +4945,8 @@
     "total_relevant": 1,
     "relevance": [
       false,
-      true,
       false,
+      true,
       false,
       false,
       false,
@@ -5012,7 +5012,7 @@
       false,
       false
     ],
-    "top_score": 0.7991077899932861,
+    "top_score": 0.792771577835083,
     "found": false
   },
   {
@@ -5024,7 +5024,7 @@
       false,
       false,
       false,
-      true,
+      false,
       false,
       false,
       false,
@@ -5032,15 +5032,15 @@
       false
     ],
     "top_score": 0.8538941144943237,
-    "found": true
+    "found": false
   },
   {
     "qid": "llm-tarih-018",
     "question": "Yenilgiden sonra Safevi hükümdarı ölümüne kadar başka bir sefere çıktı mı?",
     "total_relevant": 1,
     "relevance": [
-      true,
       false,
+      true,
       false,
       false,
       false,
@@ -5050,7 +5050,7 @@
       false,
       false
     ],
-    "top_score": 0.8146554231643677,
+    "top_score": 0.8149296045303345,
     "found": true
   },
   {
@@ -5126,7 +5126,7 @@
       false,
       false
     ],
-    "top_score": 0.8283823728561401,
+    "top_score": 0.828382670879364,
     "found": true
   },
   {
@@ -5221,7 +5221,7 @@
       false,
       false
     ],
-    "top_score": 0.8491717576980591,
+    "top_score": 0.8491718769073486,
     "found": false
   },
   {
@@ -5240,7 +5240,7 @@
       false,
       false
     ],
-    "top_score": 0.8342506885528564,
+    "top_score": 0.8342507481575012,
     "found": false
   },
   {
@@ -5259,7 +5259,7 @@
       false,
       false
     ],
-    "top_score": 0.8495612144470215,
+    "top_score": 0.8495612740516663,
     "found": true
   },
   {
@@ -5297,7 +5297,7 @@
       false,
       false
     ],
-    "top_score": 0.8187767267227173,
+    "top_score": 0.8198098540306091,
     "found": true
   },
   {
@@ -5312,8 +5312,8 @@
       false,
       false,
       false,
-      false,
       true,
+      false,
       false
     ],
     "top_score": 0.798608660697937,
@@ -5335,7 +5335,7 @@
       false,
       false
     ],
-    "top_score": 0.8306974172592163,
+    "top_score": 0.8306971192359924,
     "found": true
   },
   {
@@ -5354,7 +5354,7 @@
       false,
       false
     ],
-    "top_score": 0.8060678839683533,
+    "top_score": 0.8060680031776428,
     "found": false
   },
   {
@@ -5364,8 +5364,8 @@
     "relevance": [
       false,
       false,
-      true,
       false,
+      true,
       false,
       false,
       false,
@@ -5506,7 +5506,7 @@
       false,
       false
     ],
-    "top_score": 0.8424701690673828,
+    "top_score": 0.8337879180908203,
     "found": true
   },
   {
@@ -5514,7 +5514,7 @@
     "question": "Batılı komutanlar güney yönünü neden sürekli gözetlemediler?",
     "total_relevant": 1,
     "relevance": [
-      true,
+      false,
       false,
       false,
       false,
@@ -5525,8 +5525,8 @@
       false,
       false
     ],
-    "top_score": 0.8069522380828857,
-    "found": true
+    "top_score": 0.8022968769073486,
+    "found": false
   },
   {
     "qid": "llm-tarih-045",
@@ -5592,8 +5592,8 @@
     "relevance": [
       false,
       false,
-      false,
       true,
+      false,
       false,
       false,
       false,
@@ -5601,7 +5601,7 @@
       false,
       false
     ],
-    "top_score": 0.8060819506645203,
+    "top_score": 0.8059476613998413,
     "found": true
   },
   {

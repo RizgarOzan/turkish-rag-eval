@@ -1241,8 +1241,8 @@
     "relevance": [
       false,
       false,
-      false,
       true,
+      false,
       false,
       false,
       false,
@@ -1744,7 +1744,7 @@
       false,
       false
     ],
-    "top_score": 0.02639344262295082,
+    "top_score": 0.02649445272396092,
     "found": false
   },
   {
@@ -2155,8 +2155,8 @@
       false,
       false,
       false,
-      false,
       true,
+      false,
       false,
       false,
       false,
@@ -4119,7 +4119,7 @@
       false,
       false
     ],
-    "top_score": 0.025827404887101765,
+    "top_score": 0.025917252146760345,
     "found": false
   },
   {
@@ -4887,7 +4887,7 @@
     "question": "Boğazdan geçmeye çalışırken batırılan Venedik gemisinin kaptanı nasıl öldürüldü?",
     "total_relevant": 1,
     "relevance": [
-      false,
+      true,
       false,
       false,
       false,
@@ -4898,8 +4898,8 @@
       false,
       false
     ],
-    "top_score": 0.03252247488101534,
-    "found": false
+    "top_score": 0.03278688524590164,
+    "found": true
   },
   {
     "qid": "llm-tarih-011",
@@ -4933,10 +4933,10 @@
       false,
       false,
       false,
-      false,
-      true
+      true,
+      false
     ],
-    "top_score": 0.02817460317460317,
+    "top_score": 0.028006267136701922,
     "found": true
   },
   {
@@ -5031,7 +5031,7 @@
       false,
       false
     ],
-    "top_score": 0.03252247488101534,
+    "top_score": 0.032266458495966696,
     "found": false
   },
   {
@@ -5050,7 +5050,7 @@
       false,
       false
     ],
-    "top_score": 0.032018442622950824,
+    "top_score": 0.03177805800756621,
     "found": true
   },
   {
@@ -5197,8 +5197,8 @@
       false,
       false,
       false,
-      true,
       false,
+      true,
       false,
       false
     ],
@@ -5430,7 +5430,7 @@
       false,
       false
     ],
-    "top_score": 0.03131881575727918,
+    "top_score": 0.031544957774465976,
     "found": false
   },
   {
@@ -5525,7 +5525,7 @@
       false,
       false
     ],
-    "top_score": 0.030679156908665108,
+    "top_score": 0.03047794966520434,
     "found": true
   },
   {

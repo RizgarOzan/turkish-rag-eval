@@ -1212,7 +1212,7 @@
       false,
       false
     ],
-    "top_score": 0.029827662395050816,
+    "top_score": 0.030017921146953404,
     "found": true
   },
   {
@@ -1497,7 +1497,7 @@
       false,
       false
     ],
-    "top_score": 0.03200204813108039,
+    "top_score": 0.03225806451612903,
     "found": true
   },
   {
@@ -1744,7 +1744,7 @@
       false,
       false
     ],
-    "top_score": 0.025904203323558164,
+    "top_score": 0.026021080368906456,
     "found": false
   },
   {
@@ -2155,14 +2155,14 @@
       false,
       false,
       false,
-      false,
       true,
+      false,
       false,
       false,
       false,
       false
     ],
-    "top_score": 0.02649445272396092,
+    "top_score": 0.02639344262295082,
     "found": true
   },
   {
@@ -3866,9 +3866,9 @@
       false,
       false,
       false,
+      false,
+      false,
       true,
-      false,
-      false,
       false,
       false
     ],
@@ -3967,7 +3967,7 @@
       false,
       false
     ],
-    "top_score": 0.02715098147128967,
+    "top_score": 0.02694394213381555,
     "found": true
   },
   {
@@ -4493,8 +4493,8 @@
       false,
       false,
       false,
-      false,
       true,
+      false,
       false,
       false,
       false
@@ -4784,7 +4784,7 @@
       false,
       false
     ],
-    "top_score": 0.029551337359792925,
+    "top_score": 0.02938045560996381,
     "found": true
   },
   {
@@ -4860,7 +4860,7 @@
       false,
       false
     ],
-    "top_score": 0.03200204813108039,
+    "top_score": 0.03177805800756621,
     "found": false
   },
   {
@@ -4887,10 +4887,10 @@
     "question": "Boğazdan geçmeye çalışırken batırılan Venedik gemisinin kaptanı nasıl öldürüldü?",
     "total_relevant": 1,
     "relevance": [
-      false,
-      false,
-      false,
       true,
+      false,
+      false,
+      false,
       false,
       false,
       false,
@@ -4898,7 +4898,7 @@
       false,
       false
     ],
-    "top_score": 0.03200204813108039,
+    "top_score": 0.03278688524590164,
     "found": true
   },
   {
@@ -4966,9 +4966,9 @@
       false,
       false,
       false,
+      false,
+      false,
       true,
-      false,
-      false,
       false,
       false,
       false,
@@ -5031,7 +5031,7 @@
       true,
       false
     ],
-    "top_score": 0.03278688524590164,
+    "top_score": 0.03252247488101534,
     "found": true
   },
   {
@@ -5050,7 +5050,7 @@
       false,
       false
     ],
-    "top_score": 0.02964254577157803,
+    "top_score": 0.029437229437229435,
     "found": false
   },
   {
@@ -5316,7 +5316,7 @@
       false,
       false
     ],
-    "top_score": 0.031544957774465976,
+    "top_score": 0.032018442622950824,
     "found": false
   },
   {
@@ -5364,8 +5364,8 @@
     "relevance": [
       false,
       false,
-      false,
       true,
+      false,
       false,
       false,
       false,
@@ -5386,9 +5386,9 @@
       false,
       false,
       false,
-      false,
-      false,
       true,
+      false,
+      false,
       false,
       false
     ],
@@ -5468,7 +5468,7 @@
       false,
       false
     ],
-    "top_score": 0.031754032258064516,
+    "top_score": 0.03149801587301587,
     "found": true
   },
   {
@@ -5525,7 +5525,7 @@
       false,
       false
     ],
-    "top_score": 0.030679156908665108,
+    "top_score": 0.03047794966520434,
     "found": true
   },
   {

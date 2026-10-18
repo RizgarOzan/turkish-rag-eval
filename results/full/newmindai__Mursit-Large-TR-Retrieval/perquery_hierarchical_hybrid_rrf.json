@@ -2765,8 +2765,8 @@
       false,
       false,
       false,
-      true,
       false,
+      true,
       false,
       false
     ],
@@ -3093,7 +3093,7 @@
       false,
       false
     ],
-    "top_score": 0.032266458495966696,
+    "top_score": 0.032018442622950824,
     "found": true
   },
   {
@@ -3872,7 +3872,7 @@
       false,
       false
     ],
-    "top_score": 0.031099324975891997,
+    "top_score": 0.030621785881252923,
     "found": true
   },
   {
@@ -4746,7 +4746,7 @@
       false,
       false
     ],
-    "top_score": 0.028958333333333336,
+    "top_score": 0.029206349206349208,
     "found": false
   },
   {
@@ -4860,7 +4860,7 @@
       false,
       false
     ],
-    "top_score": 0.031544957774465976,
+    "top_score": 0.03131881575727918,
     "found": false
   },
   {
@@ -4888,6 +4888,7 @@
     "total_relevant": 1,
     "relevance": [
       false,
+      true,
       false,
       false,
       false,
@@ -4895,8 +4896,7 @@
       false,
       false,
       false,
-      false,
-      true
+      false
     ],
     "top_score": 0.032266458495966696,
     "found": true
@@ -4993,7 +4993,7 @@
       false,
       false
     ],
-    "top_score": 0.03278688524590164,
+    "top_score": 0.03252247488101534,
     "found": true
   },
   {
@@ -5025,8 +5025,8 @@
       false,
       false,
       false,
-      false,
       true,
+      false,
       false,
       false,
       false
@@ -5040,8 +5040,8 @@
     "total_relevant": 1,
     "relevance": [
       false,
-      true,
       false,
+      true,
       false,
       false,
       false,
@@ -5050,7 +5050,7 @@
       false,
       false
     ],
-    "top_score": 0.029116045245077504,
+    "top_score": 0.0293236301369863,
     "found": true
   },
   {
@@ -5278,7 +5278,7 @@
       false,
       false
     ],
-    "top_score": 0.024242424242424242,
+    "top_score": 0.024475524475524476,
     "found": true
   },
   {
@@ -5316,7 +5316,7 @@
       false,
       false
     ],
-    "top_score": 0.024970794392523366,
+    "top_score": 0.02488425925925926,
     "found": false
   },
   {
@@ -5364,8 +5364,8 @@
     "relevance": [
       false,
       false,
-      false,
       true,
+      false,
       false,
       false,
       false,
@@ -5430,7 +5430,7 @@
       false,
       false
     ],
-    "top_score": 0.030886196246139225,
+    "top_score": 0.030679156908665108,
     "found": false
   },
   {
@@ -5506,7 +5506,7 @@
       false,
       false
     ],
-    "top_score": 0.032018442622950824,
+    "top_score": 0.032266458495966696,
     "found": true
   },
   {
@@ -5525,7 +5525,7 @@
       false,
       false
     ],
-    "top_score": 0.029211087420042643,
+    "top_score": 0.02900988017658188,
     "found": true
   },
   {
@@ -5620,7 +5620,7 @@
       false,
       false
     ],
-    "top_score": 0.030330882352941176,
+    "top_score": 0.029709507042253523,
     "found": true
   }
 ]

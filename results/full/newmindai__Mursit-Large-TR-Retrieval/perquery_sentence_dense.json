@@ -148,7 +148,7 @@
       false,
       false
     ],
-    "top_score": 0.7509993314743042,
+    "top_score": 0.7509994506835938,
     "found": true
   },
   {
@@ -186,7 +186,7 @@
       false,
       false
     ],
-    "top_score": 0.8215808868408203,
+    "top_score": 0.8215809464454651,
     "found": true
   },
   {
@@ -414,7 +414,7 @@
       false,
       false
     ],
-    "top_score": 0.6332859992980957,
+    "top_score": 0.6332860589027405,
     "found": true
   },
   {
@@ -433,7 +433,7 @@
       false,
       false
     ],
-    "top_score": 0.6560537815093994,
+    "top_score": 0.6560537219047546,
     "found": true
   },
   {
@@ -528,7 +528,7 @@
       false,
       false
     ],
-    "top_score": 0.6489923596382141,
+    "top_score": 0.6489923000335693,
     "found": true
   },
   {
@@ -585,7 +585,7 @@
       false,
       false
     ],
-    "top_score": 0.7078275680541992,
+    "top_score": 0.7078276872634888,
     "found": true
   },
   {
@@ -642,7 +642,7 @@
       false,
       false
     ],
-    "top_score": 0.5828948020935059,
+    "top_score": 0.5828947424888611,
     "found": true
   },
   {
@@ -661,7 +661,7 @@
       false,
       false
     ],
-    "top_score": 0.5650131702423096,
+    "top_score": 0.5650132298469543,
     "found": false
   },
   {
@@ -908,7 +908,7 @@
       false,
       false
     ],
-    "top_score": 0.6283418536186218,
+    "top_score": 0.6283419132232666,
     "found": true
   },
   {
@@ -1060,7 +1060,7 @@
       false,
       false
     ],
-    "top_score": 0.6741769909858704,
+    "top_score": 0.6741769313812256,
     "found": true
   },
   {
@@ -1079,7 +1079,7 @@
       false,
       false
     ],
-    "top_score": 0.7271831035614014,
+    "top_score": 0.7271832227706909,
     "found": true
   },
   {
@@ -1117,7 +1117,7 @@
       false,
       false
     ],
-    "top_score": 0.6567859053611755,
+    "top_score": 0.6567859649658203,
     "found": false
   },
   {
@@ -1345,7 +1345,7 @@
       false,
       false
     ],
-    "top_score": 0.40972673892974854,
+    "top_score": 0.4097267985343933,
     "found": true
   },
   {
@@ -1383,7 +1383,7 @@
       false,
       false
     ],
-    "top_score": 0.518647313117981,
+    "top_score": 0.5186472535133362,
     "found": true
   },
   {
@@ -1554,7 +1554,7 @@
       false,
       false
     ],
-    "top_score": 0.4729892313480377,
+    "top_score": 0.47298920154571533,
     "found": true
   },
   {
@@ -1573,7 +1573,7 @@
       false,
       false
     ],
-    "top_score": 0.6053256988525391,
+    "top_score": 0.5928980112075806,
     "found": true
   },
   {
@@ -1592,7 +1592,7 @@
       false,
       false
     ],
-    "top_score": 0.6622377038002014,
+    "top_score": 0.6622376441955566,
     "found": false
   },
   {
@@ -1695,7 +1695,6 @@
     "question": "Herschel'in bulduğu cismin kuyruklu yıldız olmadığını ilk kim, neye dayanarak gösterdi?",
     "total_relevant": 1,
     "relevance": [
-      false,
       true,
       false,
       false,
@@ -1704,9 +1703,10 @@
       false,
       false,
       false,
+      false,
       false
     ],
-    "top_score": 0.6764131188392639,
+    "top_score": 0.669693112373352,
     "found": true
   },
   {
@@ -1714,7 +1714,7 @@
     "question": "Keşiften sonra hükümdar gökbilimciye hangi şartla ne kadar ödeme yaptı?",
     "total_relevant": 1,
     "relevance": [
-      false,
+      true,
       false,
       false,
       false,
@@ -1725,8 +1725,8 @@
       false,
       false
     ],
-    "top_score": 0.3766709566116333,
-    "found": false
+    "top_score": 0.4854867458343506,
+    "found": true
   },
   {
     "qid": "llm-astronomi-034",
@@ -1757,14 +1757,14 @@
       false,
       false,
       false,
-      true,
+      false,
       false,
       false,
       false,
       false
     ],
     "top_score": 0.5027936697006226,
-    "found": true
+    "found": false
   },
   {
     "qid": "llm-astronomi-036",
@@ -1773,7 +1773,7 @@
     "relevance": [
       false,
       false,
-      false,
+      true,
       false,
       false,
       false,
@@ -1783,7 +1783,7 @@
       false
     ],
     "top_score": 0.5926562547683716,
-    "found": false
+    "found": true
   },
   {
     "qid": "llm-astronomi-037",
@@ -1972,7 +1972,7 @@
       false,
       false
     ],
-    "top_score": 0.39525771141052246,
+    "top_score": 0.3952576220035553,
     "found": false
   },
   {
@@ -2345,8 +2345,8 @@
       false,
       false,
       false,
-      false,
       true,
+      false,
       false,
       false,
       false,
@@ -2504,7 +2504,7 @@
       false,
       false
     ],
-    "top_score": 0.48721209168434143,
+    "top_score": 0.4872121512889862,
     "found": true
   },
   {
@@ -2618,7 +2618,7 @@
       false,
       false
     ],
-    "top_score": 0.47178584337234497,
+    "top_score": 0.4717857837677002,
     "found": true
   },
   {
@@ -2694,7 +2694,7 @@
       false,
       false
     ],
-    "top_score": 0.5792407393455505,
+    "top_score": 0.5792406797409058,
     "found": true
   },
   {
@@ -2751,7 +2751,7 @@
       false,
       false
     ],
-    "top_score": 0.6881657242774963,
+    "top_score": 0.6881657838821411,
     "found": true
   },
   {
@@ -2960,7 +2960,7 @@
       false,
       false
     ],
-    "top_score": 0.6231973767280579,
+    "top_score": 0.6231974363327026,
     "found": false
   },
   {
@@ -2998,7 +2998,7 @@
       false,
       false
     ],
-    "top_score": 0.4685763716697693,
+    "top_score": 0.4685764014720917,
     "found": true
   },
   {
@@ -3131,7 +3131,7 @@
       false,
       false
     ],
-    "top_score": 0.3800972104072571,
+    "top_score": 0.4019017815589905,
     "found": true
   },
   {
@@ -3150,7 +3150,7 @@
       false,
       false
     ],
-    "top_score": 0.40776997804641724,
+    "top_score": 0.407770037651062,
     "found": false
   },
   {
@@ -3169,7 +3169,7 @@
       false,
       false
     ],
-    "top_score": 0.5868032574653625,
+    "top_score": 0.5868031978607178,
     "found": false
   },
   {
@@ -3226,7 +3226,7 @@
       false,
       false
     ],
-    "top_score": 0.5140214562416077,
+    "top_score": 0.5140215158462524,
     "found": false
   },
   {
@@ -3302,7 +3302,7 @@
       false,
       false
     ],
-    "top_score": 0.7788893580436707,
+    "top_score": 0.7788892388343811,
     "found": true
   },
   {
@@ -3378,7 +3378,7 @@
       false,
       false
     ],
-    "top_score": 0.5528407096862793,
+    "top_score": 0.5528406500816345,
     "found": true
   },
   {
@@ -3435,7 +3435,7 @@
       false,
       false
     ],
-    "top_score": 0.5134161710739136,
+    "top_score": 0.5134162306785583,
     "found": true
   },
   {
@@ -3808,14 +3808,14 @@
       false,
       false,
       false,
-      false,
       true,
+      false,
       false,
       false,
       false,
       false
     ],
-    "top_score": 0.33553749322891235,
+    "top_score": 0.33553755283355713,
     "found": true
   },
   {
@@ -3853,7 +3853,7 @@
       false,
       false
     ],
-    "top_score": 0.4357551038265228,
+    "top_score": 0.43575507402420044,
     "found": true
   },
   {
@@ -3986,7 +3986,7 @@
       false,
       false
     ],
-    "top_score": 0.4819430112838745,
+    "top_score": 0.4819431006908417,
     "found": true
   },
   {
@@ -4043,7 +4043,7 @@
       false,
       false
     ],
-    "top_score": 0.7313863635063171,
+    "top_score": 0.7313864231109619,
     "found": true
   },
   {
@@ -4062,7 +4062,7 @@
       false,
       false
     ],
-    "top_score": 0.619622528553009,
+    "top_score": 0.6196225881576538,
     "found": true
   },
   {
@@ -4081,7 +4081,7 @@
       false,
       false
     ],
-    "top_score": 0.7785351872444153,
+    "top_score": 0.7785351276397705,
     "found": true
   },
   {
@@ -4317,8 +4317,8 @@
     "question": "Ülkede buzul çağından kalma izlere ilk kez nerede ve ne zaman rastlandı?",
     "total_relevant": 1,
     "relevance": [
-      true,
       false,
+      true,
       false,
       false,
       false,
@@ -4328,7 +4328,7 @@
       false,
       false
     ],
-    "top_score": 0.4980925917625427,
+    "top_score": 0.5130212306976318,
     "found": true
   },
   {
@@ -4412,8 +4412,8 @@
     "question": "Buz kütleleri dağın tepesini nasıl değiştirdi?",
     "total_relevant": 1,
     "relevance": [
-      true,
       false,
+      true,
       false,
       false,
       false,
@@ -4423,7 +4423,7 @@
       false,
       false
     ],
-    "top_score": 0.614749550819397,
+    "top_score": 0.6120703220367432,
     "found": true
   },
   {
@@ -4435,8 +4435,8 @@
       false,
       false,
       false,
-      false,
       true,
+      false,
       false,
       false,
       false,
@@ -4451,9 +4451,9 @@
     "total_relevant": 1,
     "relevance": [
       false,
+      false,
+      false,
       true,
-      false,
-      false,
       false,
       false,
       false,
@@ -4480,7 +4480,7 @@
       false,
       false
     ],
-    "top_score": 0.5928245782852173,
+    "top_score": 0.6047778725624084,
     "found": true
   },
   {
@@ -4537,7 +4537,7 @@
       false,
       false
     ],
-    "top_score": 0.5071839094161987,
+    "top_score": 0.5149334669113159,
     "found": true
   },
   {
@@ -4689,7 +4689,7 @@
       false,
       false
     ],
-    "top_score": 0.692450761795044,
+    "top_score": 0.6924508810043335,
     "found": true
   },
   {
@@ -4718,8 +4718,8 @@
     "relevance": [
       false,
       false,
-      false,
       true,
+      false,
       false,
       false,
       false,
@@ -4765,7 +4765,7 @@
       false,
       false
     ],
-    "top_score": 0.5363566875457764,
+    "top_score": 0.5363567471504211,
     "found": true
   },
   {
@@ -4841,7 +4841,7 @@
       false,
       false
     ],
-    "top_score": 0.5147114992141724,
+    "top_score": 0.5147114396095276,
     "found": true
   },
   {
@@ -4917,7 +4917,7 @@
       false,
       false
     ],
-    "top_score": 0.5314377546310425,
+    "top_score": 0.5459681749343872,
     "found": true
   },
   {
@@ -4927,8 +4927,8 @@
     "relevance": [
       false,
       false,
-      true,
       false,
+      true,
       false,
       false,
       false,
@@ -5008,11 +5008,11 @@
       false,
       false,
       false,
-      true,
       false,
-      false
+      false,
+      true
     ],
-    "top_score": 0.6124319434165955,
+    "top_score": 0.6039347648620605,
     "found": true
   },
   {
@@ -5026,8 +5026,8 @@
       false,
       false,
       false,
-      true,
       false,
+      true,
       false,
       false
     ],
@@ -5050,7 +5050,7 @@
       false,
       false
     ],
-    "top_score": 0.6837832927703857,
+    "top_score": 0.6806706786155701,
     "found": true
   },
   {
@@ -5082,13 +5082,13 @@
       false,
       false,
       false,
-      false,
       true,
+      false,
       false,
       false,
       false
     ],
-    "top_score": 0.5854778289794922,
+    "top_score": 0.6069496870040894,
     "found": true
   },
   {
@@ -5107,7 +5107,7 @@
       false,
       false
     ],
-    "top_score": 0.43049734830856323,
+    "top_score": 0.46029937267303467,
     "found": true
   },
   {
@@ -5145,7 +5145,7 @@
       false,
       false
     ],
-    "top_score": 0.5247699022293091,
+    "top_score": 0.5130323171615601,
     "found": false
   },
   {
@@ -5183,7 +5183,7 @@
       false,
       false
     ],
-    "top_score": 0.7126213312149048,
+    "top_score": 0.7073761224746704,
     "found": true
   },
   {
@@ -5200,10 +5200,10 @@
       false,
       false,
       false,
-      true
+      false
     ],
     "top_score": 0.6367500424385071,
-    "found": true
+    "found": false
   },
   {
     "qid": "llm-tarih-028",
@@ -5259,7 +5259,7 @@
       false,
       false
     ],
-    "top_score": 0.6124197244644165,
+    "top_score": 0.6124196648597717,
     "found": true
   },
   {
@@ -5316,7 +5316,7 @@
       false,
       false
     ],
-    "top_score": 0.3634495437145233,
+    "top_score": 0.3634495735168457,
     "found": false
   },
   {
@@ -5344,8 +5344,8 @@
     "total_relevant": 1,
     "relevance": [
       false,
-      true,
       false,
+      true,
       false,
       false,
       false,
@@ -5411,7 +5411,7 @@
       false,
       false
     ],
-    "top_score": 0.6011719703674316,
+    "top_score": 0.6011719107627869,
     "found": true
   },
   {
@@ -5468,7 +5468,7 @@
       false,
       false
     ],
-    "top_score": 0.5699880719184875,
+    "top_score": 0.5699881315231323,
     "found": false
   },
   {
@@ -5487,7 +5487,7 @@
       false,
       false
     ],
-    "top_score": 0.5943711996078491,
+    "top_score": 0.5982557535171509,
     "found": true
   },
   {
@@ -5544,7 +5544,7 @@
       false,
       false
     ],
-    "top_score": 0.3990327715873718,
+    "top_score": 0.4086849093437195,
     "found": false
   },
   {
@@ -5557,8 +5557,8 @@
       false,
       false,
       false,
-      true,
       false,
+      true,
       false,
       false,
       false
@@ -5601,7 +5601,7 @@
       false,
       false
     ],
-    "top_score": 0.5111733078956604,
+    "top_score": 0.5111733675003052,
     "found": false
   },
   {
