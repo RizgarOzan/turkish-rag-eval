@@ -12,6 +12,8 @@ published number is a breaking change**, even when no API changed.
 
 ### Added
 
+- `agreement --include-drafts` includes eligible drafted questions and their
+  embedded second annotations. Existing human-review filters still apply.
 - `run --embedding-cache DIR` stores dense chunk embeddings keyed by model name
   and chunk text and reuses them on the next run. Scores are unchanged; a
   cached run still reports the original `dense_index_seconds`.

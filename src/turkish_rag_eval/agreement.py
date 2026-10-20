@@ -51,6 +51,32 @@ def is_relevant(chunk: dict, item: dict) -> bool:
     return normalise(item["answer_span"]) in normalise(chunk["body"])
 
 
+def expand_embedded(items: list[dict]) -> list[dict]:
+    """Expose embedded second labels in the ordinary second_of format.
+
+    Keep the loaded records unchanged and omit the embedded field from the
+    generated record, so passing expanded items through again is harmless.
+    """
+    expanded = list(items)
+    qids = {item["qid"] for item in items}
+    for item in items:
+        second = item.get("second_annotation")
+        qid = f"{item['qid']}#2"
+        if not second or qid in qids:
+            continue
+        expanded.append({
+            "qid": qid,
+            "question": item["question"],
+            "doc_id": item["doc_id"],
+            "doc_title": item["doc_title"],
+            "answer_span": second["answer_span"],
+            "annotator": second["annotator"],
+            "second_of": item["qid"],
+        })
+        qids.add(qid)
+    return expanded
+
+
 def group_by_question(items: list[dict]) -> list[list[dict]]:
     """Every item answering the same question, keyed by normalised text.
 
@@ -183,10 +209,15 @@ def _mean_or_none(values) -> float | None:
 
 def add_arguments(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--corpus", default=str(CORPUS))
+    parser.add_argument("--include-drafts", action="store_true",
+                        help="include eligible LLM drafts and their embedded second labels")
 
 
 def run(args) -> int:
-    groups = group_by_question(load_gold())
+    items = load_gold(include_drafts=args.include_drafts)
+    if args.include_drafts:
+        items = expand_embedded(items)
+    groups = group_by_question(items)
     if not groups:
         print("birden fazla etiketleyicisi olan soru yok")
         return 0
