@@ -445,6 +445,15 @@ domain.
 | 8 — 2026-09-26 (Niğbolu Muharebesi, Fırat, Ay, Protein, Yapay zekâ) | 32 | 29 | 0.964 | 0.975 | 0.94 / 0.97 / 1.00 |
 | **All drafts** | 242 | 151 | 0.816 | 0.860 | 0.95 / 0.97 / 0.97 |
 
+To measure agreement over the drafts eligible for loading, run
+`turkish-rag-eval agreement --include-drafts`. Embedded second labels are
+expanded into ordinary second annotations before grouping. Without the flag,
+the command still loads only the hand-labelled set. The table above measures
+all draft files, including unresolved `needs-human` questions; the CLI keeps
+`load_gold`'s review filters. With the current files it therefore reports
+238 questions and mean token F1 0.872, versus 242 and 0.860 for all drafts.
+An article missing from the local corpus gives `n/a` for chunk-level kappa.
+
 ¹ Re-measured 2026-09-26: the Turkish Wikipedia article *Jüpiter* was rewritten that day to correct errors, and five of its spans no longer matched the live text. Three changed only in wording (a comma, "30,003" → "30" seconds, "dört uydu" → "uydular") and were edited in both labels; two changed in substance — the 40,000 km mantle thickness is gone and the Great Red Spot went from "at least 400 years" to "recorded since 1831" — so those two questions were rewritten and labelled again by both passes. The row was 0.419 / 0.540 / 0.96 / 1.00 / 1.00 before.
 
 The passes disagree about how much of a sentence to take, rather than where
