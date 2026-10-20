@@ -122,7 +122,7 @@ The leaderboard takes submissions. Run the harness and commit what it wrote:
 
 ```bash
 pip install -e '.[all]'
-turkish-rag-eval fetch-corpus        # or --verify, if you already have it
+turkish-rag-eval fetch-corpus --verify   # the pinned corpus is in the checkout
 turkish-rag-eval run --model <org>/<name>
 turkish-rag-eval leaderboard --check
 ```
@@ -135,7 +135,9 @@ CI re-derives each reported metric from those per-query files rather than
 taking them on trust, and a new submission must additionally carry the harness
 version and a corpus fingerprint matching `data/corpus.lock.json`. If the
 fingerprint check fails, your corpus has drifted from the pinned snapshot and
-the run is not comparable to the other rows — refetch before rerunning.
+the run is not comparable to the other rows — `git checkout data/raw` brings
+the pinned one back. (Plain `fetch-corpus` pulls today's Wikipedia; it is for
+updating the snapshot, not for running the leaderboard.)
 
 Say in the pull request what hardware you measured on. The timing columns are
 not comparable across machines and the table says so.

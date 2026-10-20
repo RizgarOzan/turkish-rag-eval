@@ -5,8 +5,10 @@ articles fetched through the MediaWiki API by `turkish-rag-eval fetch-corpus`.
 
 Wikipedia text is licensed **CC BY-SA 4.0**. Each document keeps its `title`
 and permanent `url`, so every retrieved chunk can be traced to its source
-article. The corpus file is not committed (see `.gitignore`); run the fetcher
-to rebuild it.
+article. The pinned snapshot is committed (`data/raw/corpus.json` and the
+larger `data/raw/corpus-full.json`) together with the lockfiles that fingerprint
+it, so a clone evaluates the same text the published numbers describe;
+`fetch-corpus` refetches the live articles and reports what drifted.
 
 ## The gold set
 
