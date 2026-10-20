@@ -363,7 +363,7 @@ pip install 'turkish-rag-eval[all]'   # + dense retrieval, charts, LLM commands
 | `groundedness` | score the generation half against the gold spans ([details](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/design.md#groundedness); [results](#generation-groundedness)) |
 | `bootstrap` | draft a gold set for your own corpus |
 | `agreement` | inter-annotator agreement over the gold set |
-| `fetch-corpus` | download the Wikipedia snapshot; `--verify` checks the lock; `--include-drafts` for [all 300 questions](#scoring-all-300) |
+| `fetch-corpus` | `--verify` checks the committed snapshot against its lock; without it, refetch live Wikipedia and report drift; `--include-drafts` for [all 300 questions](#scoring-all-300) |
 | `export-hf` | the BEIR layout MTEB reads |
 | `validate` | every gold file's invariants |
 
@@ -373,7 +373,7 @@ From a checkout:
 git clone https://github.com/RizgarOzan/turkish-rag-eval
 cd turkish-rag-eval
 pip install -e '.[all]'
-turkish-rag-eval fetch-corpus     # rebuilds data/raw/corpus.json
+turkish-rag-eval fetch-corpus --verify   # the pinned data/raw/corpus.json ships in the repo
 turkish-rag-eval run              # results/summary.json + per-query files
 python -m pytest -q
 ```
@@ -452,7 +452,8 @@ the command still loads only the hand-labelled set. The table above measures
 all draft files, including unresolved `needs-human` questions; the CLI keeps
 `load_gold`'s review filters. With the current files it therefore reports
 238 questions and mean token F1 0.872, versus 242 and 0.860 for all drafts.
-An article missing from the local corpus gives `n/a` for chunk-level kappa.
+Pass `--corpus data/raw/corpus-full.json` for the chunk-level kappa columns;
+an article missing from the corpus given gives `n/a` there.
 
 ¹ Re-measured 2026-09-26: the Turkish Wikipedia article *Jüpiter* was rewritten that day to correct errors, and five of its spans no longer matched the live text. Three changed only in wording (a comma, "30,003" → "30" seconds, "dört uydu" → "uydular") and were edited in both labels; two changed in substance — the 40,000 km mantle thickness is gone and the Great Red Spot went from "at least 400 years" to "recorded since 1831" — so those two questions were rewritten and labelled again by both passes. The row was 0.419 / 0.540 / 0.96 / 1.00 / 1.00 before.
 
@@ -469,7 +470,7 @@ characters, pinned by `data/corpus-full.lock.json`. The published snapshot and
 its lock stay as they are.
 
 ```bash
-turkish-rag-eval fetch-corpus --include-drafts   # data/raw/corpus-full.json
+turkish-rag-eval fetch-corpus --verify --include-drafts   # data/raw/corpus-full.json, also committed
 turkish-rag-eval run --include-drafts            # results/full/<model>/
 ```
 

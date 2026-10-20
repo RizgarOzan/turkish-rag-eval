@@ -8,6 +8,7 @@ name a revision.
 import json
 
 from turkish_rag_eval import fetch_corpus
+from turkish_rag_eval.corpus import load_corpus
 
 PAGES = {
     "query": {
@@ -85,6 +86,15 @@ def test_update_lock_accepts_the_new_snapshot(tmp_path, monkeypatch):
     fetch_corpus.report_drift(_docs(), update=False)
     assert fetch_corpus.report_drift(_docs("a" * 640), update=True) == 0
     assert fetch_corpus.report_drift(_docs("a" * 640), update=False) == 0
+
+
+def test_the_committed_snapshots_match_their_locks():
+    """Both corpus files ship in the repo, so a fresh clone verifies offline
+    and a submitted model never depends on what Wikipedia says today."""
+    for out, lock_path in ((fetch_corpus.OUT, fetch_corpus.LOCK),
+                           (fetch_corpus.FULL_OUT, fetch_corpus.FULL_LOCK)):
+        lock = json.loads(lock_path.read_text(encoding="utf-8"))
+        assert fetch_corpus.compare_to_lock(lock, load_corpus(out).docs) == []
 
 
 def test_drafted_articles_join_only_the_full_corpus():

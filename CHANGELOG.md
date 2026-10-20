@@ -12,6 +12,9 @@ published number is a breaking change**, even when no API changed.
 
 ### Added
 
+- The pinned corpus snapshots (`data/raw/corpus.json`, `data/raw/corpus-full.json`)
+  are committed, so a clone runs the leaderboard offline and `fetch-corpus --verify`
+  passes without touching Wikipedia. A test keeps them equal to their lockfiles.
 - `agreement --include-drafts` includes eligible drafted questions and their
   embedded second annotations. Existing human-review filters still apply.
 - `run --embedding-cache DIR` stores dense chunk embeddings keyed by model name
