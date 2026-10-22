@@ -188,7 +188,7 @@ measured 2026-09-18. Stemmed BM25 alone scores 0.476 / 0.510 / 0.494.
 
 | Model | Params | Turkish-only | Dense fixed | Dense sentence | Dense hierarchical | Hybrid hierarchical | Embed corpus | Query P95 |
 |---|---|---|---|---|---|---|---|---|
-| paraphrase-multilingual-MiniLM-L12-v2 (default) | 118 M | no | 0.446 | 0.461 | 0.501 | 0.607 | 2 min | 23 ms |
+| paraphrase-multilingual-MiniLM-L12-v2 (default) | 118 M | no | 0.446 | 0.461 | 0.501 | 0.613 | 2 min | 23 ms |
 | [emrecan/bert-base-turkish-cased-mean-nli-stsb-tr](https://huggingface.co/emrecan/bert-base-turkish-cased-mean-nli-stsb-tr) | 111 M | yes | 0.408 | 0.431 | 0.497 | 0.654 | 4 min | 43 ms |
 | [intfloat/multilingual-e5-small](https://huggingface.co/intfloat/multilingual-e5-small) | 118 M | no | 0.654 | 0.644 | 0.642 | 0.639 | 3 min | 22 ms |
 | [intfloat/multilingual-e5-base](https://huggingface.co/intfloat/multilingual-e5-base) | 278 M | no | 0.631 | 0.677 | 0.668 | 0.642 | 10 min | 49 ms |
@@ -387,6 +387,12 @@ model and chunk text stay the same. With multilingual-e5-small on CPU
 the three dense indexes took 91, 75 and 81 s on the first run and 0.1 s or
 less on the second, with identical scores; `dense_index_seconds` in the
 results still reports the original encoding time.
+
+`stress --embedding-cache <dir>` reads the same cache: it scores hierarchical
+chunks, and the two commands share hierarchical cache entries either way. For
+e5-small the stress run went from 139 s to 44 s (the 64 s index encode is
+skipped; every query variant is still encoded), with every cell identical to
+`results/stress/`.
 
 ## Gold set
 

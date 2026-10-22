@@ -41,6 +41,10 @@ def add_arguments(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--out", type=Path, default=None)
     parser.add_argument("--sparse-only", action="store_true",
                         help="skip the embedding model (BM25 only, no torch)")
+    parser.add_argument(
+        "--embedding-cache", type=Path, default=None, metavar="DIR",
+        help="reuse dense chunk embeddings from DIR; the hierarchical chunks "
+             "are the ones `run` caches, so a cache from `run` is a hit here")
 
 
 def score(retrievers: dict, chunks: list[dict], gold: list[dict],
@@ -77,7 +81,10 @@ def run(args) -> int:
         from sentence_transformers import SentenceTransformer
         query_prefix, doc_prefix = prefixes_for(args.model)
         dense = DenseRetriever(chunks, SentenceTransformer(args.model),
-                               query_prefix, doc_prefix)
+                               query_prefix, doc_prefix,
+                               cache_dir=args.embedding_cache, model_name=args.model)
+        print(f"dense indeks: {'önbellekten' if dense.cache_hit else 'kodlandı'} "
+              f"(kodlama {dense.encode_seconds:.0f} s)", flush=True)
         retrievers["dense"] = dense
         retrievers["hybrid_rrf"] = HybridRetriever(dense, sparse)
 

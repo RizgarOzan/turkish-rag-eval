@@ -64,3 +64,13 @@ def test_every_paired_difference_matches(a, b, retriever_a, retriever_b):
     quoted = difference(configuration(a, retriever_a),
                         configuration(b, retriever_b))
     assert " ".join(quoted.split()) in section(), (a, b, quoted)
+
+
+def test_the_table_hierarchical_cells_match_their_files():
+    body = (ROOT / "README.md").read_text(encoding="utf-8").split("## Leaderboard", 1)[1]
+    rows = [line.split("|") for line in body.splitlines() if line.startswith("| ")]
+    for model in MODELS:
+        cells = next(r for r in rows if model in r[1])
+        for column, retriever in ((6, "dense"), (7, "hybrid_rrf")):
+            measured = f"{configuration(model, retriever).mean(METRIC):.3f}"
+            assert cells[column].strip(" *") == measured, (model, retriever)
