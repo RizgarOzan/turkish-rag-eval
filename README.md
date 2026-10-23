@@ -356,6 +356,7 @@ pip install 'turkish-rag-eval[all]'   # + dense retrieval, charts, LLM commands
 | Command | What it does |
 |---|---|
 | `run` | every chunking × retriever combination; writes `results/` |
+| `ask` | one question, every retriever's top chunks side by side ([example](#one-question-at-a-time)) |
 | `report` | intervals, paired comparisons, and a recommendation |
 | `charts` | the two figures above, light and dark |
 | `leaderboard` | rebuild the model table; `--check` verifies every entry |
@@ -393,6 +394,47 @@ chunks, and the two commands share hierarchical cache entries either way. For
 e5-small the stress run went from 139 s to 44 s (the 64 s index encode is
 skipped; every query variant is still encoded), with every cell identical to
 `results/stress/`.
+
+### One question at a time
+
+`ask` takes a gold question id, or any question you type, and prints what each
+retriever returns for it. For a gold question the chunks that hold the answer
+get a ✓, by the same rule `run` scores with:
+
+```text
+$ turkish-rag-eval ask q034
+q034: Bacak damarında pıhtı kollarda da olur mu?
+answer in: Derin ven trombozu  (✓ = chunk holds it)
+
+dense
+  1 · Romatoid artrit > Belirti ve bulgular > Eklemler: Artrit sinoviyal zarın iltihaplanmasını içerir. Eklemler şişer, hassasl…
+  2 · Ateroskleroz: İlerlemiş aterosklerozda görülen başka bir yaygın senaryo ise kladikasy…
+  3 · Gut > Tarihçe: Kurban yatağına yatar ve sağlıklı bir şekilde uykuya dalar. Sabaha karş…
+
+bm25_stem5
+  1 · Derin ven trombozu: Derin ven trombozu (DVT), çoğunlukla bacaklarda veya pelviste olmak üze…
+  2 · Derin ven trombozu > Patofizyoloji: Kan damarları hasar gördüğünde (hemostaz) kan kaybını en aza indirmek i…
+  3 · Derin ven trombozu > Korunma: Genel popülasyonda kan pıhtılarının önlenmesi için, uzun süre otururken…
+
+bm25_nostem
+  1 · Derin ven trombozu > Tanı: Derin ven trombozu şüphesi için kompresyon ultrasonografisi standart ta…
+  2 · Şizofreni > Hastalığın oluşum nedenleri > Beyinde yapısal ve işlevsel bozukluklar: Beynin belli bir ya da birkaç bölgesinde birinci derece sorumlu özgül b…
+  3 · Osteoporoz > Osteoporozun başlıca etkileri: Bunların yanı sıra, omurların veya kol-bacak kemiklerinin kırılma tehli…
+
+hybrid_rrf
+  1 ✓ Derin ven trombozu > Belirtiler ve semptomlar: Semptomlar klasik olarak bir bacağı etkiler ve tipik olarak saatler vey…
+  2 · Yüksek tansiyon > Belirtiler ve semptomlar > İkincil hipertansiyon: Renal arter stenozu (RAS, böbreği besleyen arterlerde daralma), orta ha…
+  3 · Derin ven trombozu: Derin ven trombozu (DVT), çoğunlukla bacaklarda veya pelviste olmak üze…
+
+found by: hybrid_rrf@1
+missed in top 3: dense, bm25_stem5, bm25_nostem
+```
+
+This one shows why the hybrid wins on average. BM25 finds the right article
+but not the section, the default MiniLM model drifts to other diseases, and
+only the fused ranking puts the symptoms section first. `-k` sets how many
+chunks each retriever shows, `--sparse-only` skips the embedding model, and
+`--embedding-cache` reuses what `run` already encoded.
 
 ## Gold set
 

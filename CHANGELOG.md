@@ -12,6 +12,9 @@ published number is a breaking change**, even when no API changed.
 
 ### Added
 
+- `ask` puts one question to every retriever and prints their top chunks side
+  by side. For a gold question the chunks holding the answer are marked by the
+  same rule `run` scores with, and the last line says who found it at what rank.
 - The pinned corpus snapshots (`data/raw/corpus.json`, `data/raw/corpus-full.json`)
   are committed, so a clone runs the leaderboard offline and `fetch-corpus --verify`
   passes without touching Wikipedia. A test keeps them equal to their lockfiles.
