@@ -16,7 +16,15 @@ turkish-rag-eval run --corpus ./belgelerim --gold ./sorular.json
 turkish-rag-eval report
 ```
 
-**Contents:** [Findings](#four-findings) · [Results](#results) ·
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/RizgarOzan/turkish-rag-eval/main/docs/media/ask-q034-dark.gif">
+  <img alt="turkish-rag-eval ask q034: four retrievers answer one Turkish question side by side; only the hybrid ranking puts the chunk that holds the answer first" src="https://raw.githubusercontent.com/RizgarOzan/turkish-rag-eval/main/docs/media/ask-q034.gif">
+</picture>
+
+One question, four retrievers: only the hybrid finds the symptoms section of
+the right article ([how to read this](#one-question-at-a-time)).
+
+**Contents:** [Findings](#five-findings) · [Results](#results) ·
 [Groundedness](#generation-groundedness) · [Leaderboard](#leaderboard) · [Stress test](#stress-test) ·
 [Why not an existing benchmark?](#why-not-an-existing-benchmark) ·
 [Your own corpus](#your-own-corpus) · [Running it](#running-it) ·
