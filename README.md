@@ -395,7 +395,10 @@ model works. Results for a non-default model go to
 model and chunk text stay the same. With multilingual-e5-small on CPU
 the three dense indexes took 91, 75 and 81 s on the first run and 0.1 s or
 less on the second, with identical scores; `dense_index_seconds` in the
-results still reports the original encoding time.
+results still reports the original encoding time. The large model is where it
+pays off: a dense-only Mursit-Large-TR-Retrieval run took 48 min cold (1132,
+882 and 797 s to encode the fixed, sentence and hierarchical indexes) and
+76 s warm, with the same nDCG@10 as `results/models/` and a 23 MB cache.
 
 `stress --embedding-cache <dir>` reads the same cache: it scores hierarchical
 chunks, and the two commands share hierarchical cache entries either way. For
