@@ -395,13 +395,37 @@ model works. Results for a non-default model go to
 model and chunk text stay the same. With multilingual-e5-small on CPU
 the three dense indexes took 91, 75 and 81 s on the first run and 0.1 s or
 less on the second, with identical scores; `dense_index_seconds` in the
-results still reports the original encoding time.
+results still reports the original encoding time. The large model is where it
+pays off: a dense-only Mursit-Large-TR-Retrieval run took 48 min cold (1132,
+882 and 797 s to encode the fixed, sentence and hierarchical indexes) and
+76 s warm, with the same nDCG@10 as `results/models/` and a 23 MB cache.
 
 `stress --embedding-cache <dir>` reads the same cache: it scores hierarchical
 chunks, and the two commands share hierarchical cache entries either way. For
 e5-small the stress run went from 139 s to 44 s (the 64 s index encode is
 skipped; every query variant is still encoded), with every cell identical to
 `results/stress/`.
+
+Dynamic int8 quantization helps the large model and hurts the small one.
+`docs/measure_int8.py <model>` runs the dense retriever with torch's int8 Linear
+layers on CPU and writes to `results/quantize/`; the fp32 side is the
+`results/models/` run (95% paired bootstrap on nDCG@10):
+
+| Model | Chunking | nDCG@10 fp32 → int8 | change | encode | query P95 |
+|---|---|---|---|---|---|
+| e5-small | fixed | 0.654 → 0.539 | -0.115 [-0.175, -0.060] | 69 s → 36 s | 22 ms → 25 ms |
+| e5-small | sentence | 0.644 → 0.522 | -0.121 [-0.193, -0.052] | 60 s → 30 s | 22 ms → 21 ms |
+| e5-small | hierarchical | 0.642 → 0.571 | -0.071 [-0.133, -0.014] | 64 s → 33 s | 21 ms → 20 ms |
+| Mursit-Large-TR-Retrieval | fixed | 0.746 → 0.700 | -0.045 [-0.096, +0.002] | 733 s → 280 s | 187 ms → 61 ms |
+| Mursit-Large-TR-Retrieval | sentence | 0.740 → 0.722 | -0.018 [-0.066, +0.026] | 635 s → 245 s | 176 ms → 55 ms |
+| Mursit-Large-TR-Retrieval | hierarchical | 0.781 → 0.771 | -0.010 [-0.063, +0.045] | 689 s → 277 s | 178 ms → 77 ms |
+
+e5-small loses 0.07 to 0.12, every loss clear of zero, and its queries get no
+faster. Mursit-Large-TR-Retrieval encodes about 2.5 times and answers 2.3 to 3.2
+times faster with no loss the bootstrap can tell from zero, though fixed comes
+close. The two sides were timed on different days, so read the speedups as
+rough. torch marks this quantization API deprecated, which is why it is a
+script and not a `run` flag.
 
 ### One question at a time
 
