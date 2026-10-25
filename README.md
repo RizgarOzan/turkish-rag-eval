@@ -365,6 +365,7 @@ pip install 'turkish-rag-eval[all]'   # + dense retrieval, charts, LLM commands
 |---|---|
 | `run` | every chunking × retriever combination; writes `results/` |
 | `ask` | one question, every retriever's top chunks side by side ([example](#one-question-at-a-time)) |
+| `serve` | BM25 or hybrid search over HTTP ([load test](#serving-it)) |
 | `report` | intervals, paired comparisons, and a recommendation |
 | `charts` | the two figures above, light and dark |
 | `leaderboard` | rebuild the model table; `--check` verifies every entry |
@@ -467,6 +468,36 @@ but not the section, the default MiniLM model drifts to other diseases, and
 only the fused ranking puts the symptoms section first. `-k` sets how many
 chunks each retriever shows, `--sparse-only` skips the embedding model, and
 `--embedding-cache` reuses what `run` already encoded.
+
+### Serving it
+
+`serve` puts one retriever behind HTTP: stemmed BM25 by default, or with
+`--model` the hybrid of that model and BM25. It is the standard library's
+threaded server, so the base install needs nothing new.
+
+```text
+$ turkish-rag-eval serve
+bm25_stem5 over 2103 hierarchical chunks, index built in 0.1 s
+listening on http://127.0.0.1:8000
+
+GET /search?q=Bacak damarında pıhtı kollarda da olur mu?&k=5
+{"query": "...", "retriever": "bm25_stem5", "results": [{"rank": 1, "score": ..., "chunk_id": ..., "title": ..., "heading_path": ..., "url": ..., "text": ...}, ...]}
+```
+
+`docs/load_test.py` sends the 58 gold questions at a running server, 580
+requests per level at k=5, and writes `results/serve/`. BM25 on one desktop
+CPU, client on the same machine:
+
+| Clients | P50 | P95 | P99 | req/s | errors |
+|---|---|---|---|---|---|
+| 1 | 4.5 ms | 30.3 ms | 32.5 ms | 97 | 0 |
+| 4 | 12.5 ms | 33.6 ms | 38.2 ms | 256 | 0 |
+| 16 | 59.3 ms | 80.3 ms | 92.4 ms | 264 | 0 |
+
+Throughput stops growing past four clients, because BM25 scoring holds
+Python's GIL. The listen queue is raised from the standard library's 5 to 128:
+with 5, P99 at 16 clients was 570 ms, as connections past the queue waited out a TCP
+retry. The hybrid server was not load-tested.
 
 ## Gold set
 
@@ -587,7 +618,7 @@ sentence or hierarchical chunks (the one hierarchical miss was fixed on
 
 v0.2.0, [on PyPI](https://pypi.org/project/turkish-rag-eval/).
 
-- **Works:** the retrieval harness, [`groundedness`](#generation-groundedness) on the 58 human questions, `report`, `leaderboard --check`, `bootstrap`,
+- **Works:** the retrieval harness, [`groundedness`](#generation-groundedness) on the 58 human questions, `report`, [`serve`](#serving-it), `leaderboard --check`, `bootstrap`,
   `agreement`, the Hugging Face export, scoring [all 300 questions](#scoring-all-300)
   on a pinned corpus, and CI that validates every contributed question against
   live Wikipedia.
