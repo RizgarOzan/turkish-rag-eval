@@ -670,6 +670,12 @@ açıklama dahil) and the
 Submitting an embedding model is one command and a pull request — see
 [Leaderboard](#leaderboard).
 
+Contributors so far: [@KonstantinBurkin](https://github.com/KonstantinBurkin)
+(the `agreement` script, [#14](https://github.com/RizgarOzan/turkish-rag-eval/pull/14))
+and [@eyupcodes](https://github.com/eyupcodes) (sentence splitting after
+initials, [#29](https://github.com/RizgarOzan/turkish-rag-eval/pull/29);
+`agreement --include-drafts`, [#30](https://github.com/RizgarOzan/turkish-rag-eval/pull/30)).
+
 ## Data
 
 Turkish Wikipedia, CC BY-SA 4.0. See [NOTICE.md](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/NOTICE.md).
