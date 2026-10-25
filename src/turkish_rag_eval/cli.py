@@ -33,6 +33,7 @@ from .corpus import CorpusError
 COMMANDS = {
     "run": ("run_eval", "evaluate every chunking x retriever combination"),
     "ask": ("ask", "show what each retriever returns for one question"),
+    "serve": ("serve", "answer search queries over HTTP"),
     "report": ("report", "turn results into a recommendation"),
     "abstain": ("run_abstain", "produce abstain records and the coverage curve"),
     "abstain-report": ("abstain", "re-print the coverage curve from saved records"),
