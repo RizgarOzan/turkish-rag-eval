@@ -497,7 +497,22 @@ CPU, client on the same machine:
 Throughput stops growing past four clients, because BM25 scoring holds
 Python's GIL. The listen queue is raised from the standard library's 5 to 128:
 with 5, P99 at 16 clients was 570 ms, as connections past the queue waited out a TCP
-retry. The hybrid server was not load-tested.
+retry.
+
+The same run against `serve --model intfloat/multilingual-e5-small`, the hybrid
+of that model and BM25 (index built in 152 s, no embedding cache), where every
+request also encodes the query:
+
+| Clients | P50 | P95 | P99 | req/s | errors |
+|---|---|---|---|---|---|
+| 1 | 40.5 ms | 57.7 ms | 89.4 ms | 23 | 0 |
+| 4 | 111.9 ms | 144.1 ms | 200.4 ms | 35 | 0 |
+| 16 | 498.1 ms | 629.8 ms | 723.7 ms | 33 | 0 |
+
+Query encoding on the CPU is the bottleneck: it costs about 35 ms over BM25 per
+request and caps throughput near 35 req/s, so sixteen clients just queue. Rows
+come from `results/serve/hybrid_rrf_e5-small.json`. The Docker image is not
+built yet.
 
 ## Gold set
 

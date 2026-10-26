@@ -22,3 +22,15 @@ def test_the_run_is_the_gold_set_against_the_shipped_corpus():
     assert f"over {RESULT['chunks']} hierarchical chunks" in README
     assert all(level["requests"] == 580 for level in RESULT["levels"])
     assert {r["queries"] for r in summary} == {RESULT["questions"]}
+
+
+def test_the_hybrid_table_matches_its_results():
+    hybrid = json.loads((ROOT / "results" / "serve" / "hybrid_rrf_e5-small.json")
+                        .read_text(encoding="utf-8"))
+    assert hybrid["retriever"] == "hybrid_rrf" and hybrid["questions"] == 58
+    assert hybrid["chunks"] == RESULT["chunks"] and hybrid["corpus"] == RESULT["corpus"]
+    for level in hybrid["levels"]:
+        row = (f"| {level['concurrency']} | {level['latency_ms_p50']} ms | "
+               f"{level['latency_ms_p95']} ms | {level['latency_ms_p99']} ms | "
+               f"{level['requests_per_second']:.0f} | {level['errors']} |")
+        assert row in README, row
