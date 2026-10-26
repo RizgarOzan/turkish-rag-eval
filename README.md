@@ -514,6 +514,15 @@ request and caps throughput near 35 req/s, so sixteen clients just queue. Rows
 come from `results/serve/hybrid_rrf_e5-small.json`. The Docker image is not
 built yet.
 
+CI also guards the speed of the BM25 path. `docs/speed_gate.py` times chunking,
+the index build and the 58 searches against a fixed Python loop on the same
+runner, and fails when a stage takes more than twice its ratio in
+`results/speed/baseline.json`. The ratio moves up to ~15% between runs and
+~1.6x between Python 3.13 and 3.14, so the gate is coarse on purpose:
+re-packing each section once per chunk (chunking 3.5x slower) and rebuilding
+the index per query (search 64x slower) both turned it red, while a tokeniser
+made 1.4x slower passed.
+
 ## Gold set
 
 | Files | Questions | Labelled by | In the results above |
