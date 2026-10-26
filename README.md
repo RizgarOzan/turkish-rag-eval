@@ -497,7 +497,31 @@ CPU, client on the same machine:
 Throughput stops growing past four clients, because BM25 scoring holds
 Python's GIL. The listen queue is raised from the standard library's 5 to 128:
 with 5, P99 at 16 clients was 570 ms, as connections past the queue waited out a TCP
-retry. The hybrid server was not load-tested.
+retry.
+
+The same run against `serve --model intfloat/multilingual-e5-small`, the hybrid
+of that model and BM25 (index built in 152 s, no embedding cache), where every
+request also encodes the query:
+
+| Clients | P50 | P95 | P99 | req/s | errors |
+|---|---|---|---|---|---|
+| 1 | 40.5 ms | 57.7 ms | 89.4 ms | 23 | 0 |
+| 4 | 111.9 ms | 144.1 ms | 200.4 ms | 35 | 0 |
+| 16 | 498.1 ms | 629.8 ms | 723.7 ms | 33 | 0 |
+
+Query encoding on the CPU is the bottleneck: it costs about 35 ms over BM25 per
+request and caps throughput near 35 req/s, so sixteen clients just queue. Rows
+come from `results/serve/hybrid_rrf_e5-small.json`. The Docker image is not
+built yet.
+
+CI also guards the speed of the BM25 path. `docs/speed_gate.py` times chunking,
+the index build and the 58 searches against a fixed Python loop on the same
+runner, and fails when a stage takes more than twice its ratio in
+`results/speed/baseline.json`. The ratio moves up to ~15% between runs and
+~1.6x between Python 3.13 and 3.14, so the gate is coarse on purpose:
+re-packing each section once per chunk (chunking 3.5x slower) and rebuilding
+the index per query (search 64x slower) both turned it red, while a tokeniser
+made 1.4x slower passed.
 
 ## Gold set
 

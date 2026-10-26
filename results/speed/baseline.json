@@ -1,0 +1,11 @@
+{
+  "ratios": {
+    "chunk": 2.01,
+    "index": 4.58,
+    "search": 2.88
+  },
+  "date": "2026-10-26",
+  "python": "3.13.15, 3.14.3",
+  "machine": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+  "note": "slowest of three runs on each Python version, per stage"
+}

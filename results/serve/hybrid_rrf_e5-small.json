@@ -1,0 +1,38 @@
+{
+  "retriever": "hybrid_rrf",
+  "chunks": 2103,
+  "corpus": "sha256:f4588a9b8d13fcc46853ded2d90653a6f8795b189aba80a3fd4488f3dead19c6",
+  "questions": 58,
+  "date": "2026-10-26",
+  "python": "3.14.3",
+  "machine": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+  "levels": [
+    {
+      "concurrency": 1,
+      "requests": 580,
+      "errors": 0,
+      "latency_ms_p50": 40.5,
+      "latency_ms_p95": 57.7,
+      "latency_ms_p99": 89.4,
+      "requests_per_second": 23.1
+    },
+    {
+      "concurrency": 4,
+      "requests": 580,
+      "errors": 0,
+      "latency_ms_p50": 111.9,
+      "latency_ms_p95": 144.1,
+      "latency_ms_p99": 200.4,
+      "requests_per_second": 34.6
+    },
+    {
+      "concurrency": 16,
+      "requests": 580,
+      "errors": 0,
+      "latency_ms_p50": 498.1,
+      "latency_ms_p95": 629.8,
+      "latency_ms_p99": 723.7,
+      "requests_per_second": 33.1
+    }
+  ]
+}

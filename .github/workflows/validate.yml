@@ -19,6 +19,10 @@ jobs:
       # torch and is not exercised here, so it stays out.
       - run: pip install -e '.[dev,charts]'
       - run: python -m pytest -q
+      # Chunking, the BM25 index build and the 58 searches, each timed against
+      # a fixed Python loop on this runner; red past 2x the committed baseline.
+      - name: BM25 path no slower than 2x its baseline
+        run: python docs/speed_gate.py
       - name: Offline checks on every question file
         run: turkish-rag-eval validate
       - name: Online checks on question files this change adds or edits
