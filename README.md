@@ -428,6 +428,28 @@ close. The two sides were timed on different days, so read the speedups as
 rough. torch marks this quantization API deprecated, which is why it is a
 script and not a `run` flag.
 
+The GPU (RTX 5050 Laptop, 8 GB) changes how long encoding takes, not what it
+finds. `run --retrievers dense` on a CUDA build of torch (sentence-transformers
+picks the GPU by itself; no flag) wrote `results/gpu/`, and every nDCG@10 is
+identical to the CPU run in `results/models/`. Only the times move:
+
+| Model | Chunking | encode CPU → GPU | query P95 CPU → GPU |
+|---|---|---|---|
+| e5-small | fixed | 69 s → 22 s | 22 ms → 31 ms |
+| e5-small | sentence | 60 s → 4 s | 22 ms → 19 ms |
+| e5-small | hierarchical | 64 s → 5 s | 21 ms → 21 ms |
+| Mursit-Large-TR-Retrieval | fixed | 733 s → 70 s | 187 ms → 34 ms |
+| Mursit-Large-TR-Retrieval | sentence | 635 s → 49 s | 176 ms → 33 ms |
+| Mursit-Large-TR-Retrieval | hierarchical | 689 s → 53 s | 178 ms → 33 ms |
+
+Mursit-Large-TR-Retrieval goes from about 11 minutes of encoding to under one
+(roughly 10 to 13 times) and its query P95 drops from around 180 ms to 33 ms.
+e5-small encodes 3 to 14 times faster, but its queries do not get faster: one
+short query does not fill a GPU, and P95 sits at 19 to 31 ms either way. The
+first e5-small row (fixed) includes CUDA start-up, which is why it is the slowest
+GPU encode. The CPU and GPU runs used different torch builds (2.13 CPU, 2.11
+cu128) on different days, so read the ratios as rough.
+
 ### One question at a time
 
 `ask` takes a gold question id, or any question you type, and prints what each
