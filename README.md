@@ -354,7 +354,7 @@ What you get is a draft to review, not a gold set.
 
 ## Running it
 
-Python 3.10+. CPU only — no GPU anywhere in this project.
+Python 3.10+. Everything runs on a CPU; a GPU only speeds up encoding (see the GPU table above).
 
 ```bash
 pip install turkish-rag-eval          # metrics, BM25, gold-set tooling
@@ -449,6 +449,28 @@ short query does not fill a GPU, and P95 sits at 19 to 31 ms either way. The
 first e5-small row (fixed) includes CUDA start-up, which is why it is the slowest
 GPU encode. The CPU and GPU runs used different torch builds (2.13 CPU, 2.11
 cu128) on different days, so read the ratios as rough.
+
+ONNX Runtime on the CPU finds the same passages too. `docs/measure_onnx.py <model>`
+loads the model through sentence-transformers' `backend="onnx"` (needs
+`sentence-transformers[onnx]`; e5-small uses the model's own ONNX export from the
+Hub, Mursit is exported on load) and writes `results/onnx/`; every nDCG@10 matches
+the torch run in `results/models/` to four decimals:
+
+| Model | Chunking | encode torch → ONNX | query P95 torch → ONNX |
+|---|---|---|---|
+| e5-small | fixed | 69 s → 61 s | 22 ms → 8 ms |
+| e5-small | sentence | 60 s → 52 s | 22 ms → 8 ms |
+| e5-small | hierarchical | 64 s → 56 s | 21 ms → 11 ms |
+| Mursit-Large-TR-Retrieval | fixed | 733 s → 816 s | 187 ms → 57 ms |
+| Mursit-Large-TR-Retrieval | sentence | 635 s → 732 s | 176 ms → 59 ms |
+| Mursit-Large-TR-Retrieval | hierarchical | 689 s → 803 s | 178 ms → 60 ms |
+
+The win is at query time: P95 falls roughly 2 to 3 times for both models, with no
+loss in nDCG@10 (int8 gave Mursit a similar speedup but cost e5-small 0.07 to
+0.12). Encoding the corpus is a wash, 12 to 13% faster for e5-small and 11 to 17%
+slower for Mursit, so if you only index once ONNX buys little; if you serve
+queries it is the cheaper win. The torch and ONNX runs were timed on different
+days, so read single-digit-percent gaps as noise.
 
 ### One question at a time
 
