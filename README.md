@@ -187,6 +187,26 @@ To rerun it with other models, name them `groq:`, `nvidia:` or `openai:`
 the directory you run from; `openai:` follows `OPENAI_BASE_URL`, so any OpenAI-compatible
 endpoint, a local router included, works.
 
+### Is 5 the right prefix?
+
+The harness fixed the BM25 prefix at 5 characters before measuring anything
+else. `docs/measure_stem.py` sweeps it (BM25 only, no model needed) and writes
+`results/stem/`; the interval is a 95% paired bootstrap on nDCG@10 against 5:
+
+| Chunking | none | 3 | 4 | **5** | 6 | 7 | 8 |
+|---|---|---|---|---|---|---|---|
+| fixed | 0.387 | 0.415 | 0.421 | 0.476 | 0.416 | 0.448 | 0.429 |
+| sentence | 0.411 | 0.489 | 0.499 | 0.510 | 0.440 | 0.478 | 0.456 |
+| hierarchical | 0.383 | 0.472 | 0.482 | 0.494 | 0.433 | 0.444 | 0.415 |
+
+5 has the highest score on all three chunkings. No stemming and a 6-character
+prefix are clearly worse on every one (sentence 6: -0.069 [-0.130, -0.015]). On
+sentence and hierarchical chunks a 3 or 4 character prefix is within noise of 5
+(hierarchical 4: -0.012 [-0.059, +0.035]); only fixed chunks separate them. The
+curve is not smooth (7 beats 6 on every chunking), which is what 58 questions do. So 5 holds
+up, but it was picked first and then confirmed on the same questions, and the
+data cannot separate it from 4.
+
 ## Leaderboard
 
 Dense `nDCG@10` per chunking strategy, the hybrid (dense + stemmed BM25, RRF)
