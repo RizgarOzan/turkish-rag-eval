@@ -207,6 +207,34 @@ curve is not smooth (7 beats 6 on every chunking), which is what 58 questions do
 up, but it was picked first and then confirmed on the same questions, and the
 data cannot separate it from 4.
 
+### Is 700 the right chunk size?
+
+Every chunker takes 700 characters, picked before anything was measured.
+`docs/measure_chunk_size.py` sweeps it (BM25 only, stem 5) and writes
+`results/chunk_size/`; the interval is a 95% paired bootstrap on nDCG@10
+against 700. All 58 questions are scored at every size: no answer span ever
+straddles a chunk boundary.
+
+| Chunking | 300 | 500 | **700** | 1000 | 1500 |
+|---|---|---|---|---|---|
+| fixed | 0.396 | 0.458 | 0.476 | 0.520 | 0.586 |
+| sentence | 0.409 | 0.423 | 0.510 | 0.525 | 0.575 |
+| hierarchical | 0.427 | 0.434 | 0.494 | 0.469 | 0.496 |
+
+300 is clearly worse on every chunking. Above 700 the three strategies part
+ways: fixed keeps climbing (1500: +0.110 [+0.030, +0.193]) and sentence
+follows it, while hierarchical is flat (1500: +0.002 [-0.055, +0.056]),
+because a section boundary caps a chunk before the size does (1,266 chunks
+at 1500 against 782 for fixed).
+
+Read the climb with care. The corpus goes from 5,331 fixed chunks at 300 to
+782 at 1500, so a bigger chunk is both a bigger target and one of fewer
+candidates; nDCG@10 rewards that on its own, and the whole chunk is what the
+generator would be handed. So this sweep does not say that 1500 retrieves
+better, it says 700 is not the top of the BM25 curve for fixed and sentence
+chunks, and that hierarchical chunking is the one whose score the size
+parameter stops moving.
+
 ## Leaderboard
 
 Dense `nDCG@10` per chunking strategy, the hybrid (dense + stemmed BM25, RRF)
