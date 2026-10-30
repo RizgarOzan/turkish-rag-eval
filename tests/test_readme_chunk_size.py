@@ -1,4 +1,4 @@
-"""The README's chunk-size table and the claims under it must be what
+"""The README's chunk-size tables and the claims under them must be what
 results/chunk_size/ says (docs/measure_chunk_size.py writes it)."""
 import json
 from pathlib import Path
@@ -12,16 +12,19 @@ from turkish_rag_eval.metrics import paired_bootstrap_ci  # noqa: E402
 ROOT = Path(__file__).resolve().parents[1]
 README = (ROOT / "README.md").read_text(encoding="utf-8")
 ROWS = json.loads((ROOT / "results" / "chunk_size" / "summary.json").read_text(encoding="utf-8"))
+DENSE = json.loads((ROOT / "results" / "chunk_size" / "multilingual-e5-small.json")
+                   .read_text(encoding="utf-8"))
 SIZES = (300, 500, 700, 1000, 1500)
 CHUNKINGS = ("fixed", "sentence", "hierarchical")
 
 
-def cell(chunking: str, size: int) -> dict:
-    return next(r for r in ROWS if r["chunking"] == chunking and r["size"] == size)
+def cell(chunking: str, size: int, rows: list = ROWS) -> dict:
+    return next(r for r in rows if r["chunking"] == chunking and r["size"] == size)
 
 
-def change(chunking: str, size: int) -> tuple[float, float, float]:
-    a, b = cell(chunking, size)["ndcg@10_per_query"], cell(chunking, 700)["ndcg@10_per_query"]
+def change(chunking: str, size: int, rows: list = ROWS) -> tuple[float, float, float]:
+    a = cell(chunking, size, rows)["ndcg@10_per_query"]
+    b = cell(chunking, 700, rows)["ndcg@10_per_query"]
     qids = sorted(set(a) & set(b))
     a, b = [a[q] for q in qids], [b[q] for q in qids]
     low, high = paired_bootstrap_ci(a, b)
@@ -58,3 +61,20 @@ def test_300_is_clearly_worse_fixed_climbs_and_hierarchical_is_flat():
     for size in (1000, 1500):
         low, high = change("hierarchical", size)[1:]
         assert low < 0 < high, size
+
+
+def test_the_dense_table_matches_its_results():
+    for chunking in CHUNKINGS:
+        scores = " | ".join(f"{cell(chunking, n, DENSE)['ndcg@10']:.3f}" for n in SIZES)
+        assert f"| {chunking} | {scores} |" in README, chunking
+    assert all(row["queries_scored"] == 58 for row in DENSE)
+
+
+def test_no_dense_change_against_700_clears_zero():
+    changes = {(c, n): change(c, n, DENSE) for c in CHUNKINGS for n in SIZES if n != 700}
+    for key, (_, low, high) in changes.items():
+        assert low < 0 < high, key
+    largest = max(changes, key=lambda k: changes[k][0])
+    assert largest == ("fixed", 1500)
+    d, low, high = changes[largest]
+    assert f"fixed at\n1500, {d:+.3f} [{low:+.3f}, {high:+.3f}]" in README
