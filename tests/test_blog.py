@@ -1,4 +1,5 @@
-"""Every metric in a write-up under docs/blog/ must be one the README reports."""
+"""Every metric in a write-up under docs/blog/ must be one the README or
+docs/results.md reports."""
 import re
 from pathlib import Path
 
@@ -23,7 +24,8 @@ def test_there_is_a_post_in_each_language():
 
 @pytest.mark.parametrize("post", POSTS, ids=lambda p: p.name)
 def test_every_number_comes_from_the_readme(post):
-    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+    readme = "\n".join((ROOT / name).read_text(encoding="utf-8")
+                       for name in ("README.md", "docs/results.md"))
     text = post.read_text(encoding="utf-8")
     assert decimals(text) - decimals(readme) == set()
     assert latencies(text) - latencies(readme) == set()

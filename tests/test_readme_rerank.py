@@ -1,8 +1,8 @@
-"""The README's reranking table must be what results/rerank/ says.
+"""docs/results.md's reranking table must be what results/rerank/ says.
 
 Every cell, every paired-bootstrap interval and both latencies are rebuilt
 from the per-query files, so a re-run that moves a number turns this red
-until the README follows.
+until docs/results.md follows.
 """
 import json
 from pathlib import Path
@@ -15,7 +15,7 @@ from turkish_rag_eval.metrics import ndcg_at_k, paired_bootstrap_ci  # noqa: E40
 
 ROOT = Path(__file__).resolve().parents[1]
 RUN = ROOT / "results" / "rerank" / "intfloat__multilingual-e5-small__BAAI__bge-reranker-v2-m3"
-README = (ROOT / "README.md").read_text(encoding="utf-8")
+README = (ROOT / "docs" / "results.md").read_text(encoding="utf-8")
 CHUNKINGS = ("fixed", "sentence", "hierarchical")
 
 

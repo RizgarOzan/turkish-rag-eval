@@ -1,4 +1,4 @@
-"""The README's int8 table must be what results/quantize/ says.
+"""docs/results.md's int8 table must be what results/quantize/ says.
 
 Each row is rebuilt from the int8 run and the fp32 one in results/models/,
 paired bootstrap, encode time and P95 included, so a re-run of
@@ -16,7 +16,7 @@ from turkish_rag_eval.metrics import ndcg_at_k, paired_bootstrap_ci  # noqa: E40
 ROOT = Path(__file__).resolve().parents[1]
 MODELS = {"intfloat__multilingual-e5-small": "e5-small",
           "newmindai__Mursit-Large-TR-Retrieval": "Mursit-Large-TR-Retrieval"}
-README = (ROOT / "README.md").read_text(encoding="utf-8")
+README = (ROOT / "docs" / "results.md").read_text(encoding="utf-8")
 CHUNKINGS = ("fixed", "sentence", "hierarchical")
 
 

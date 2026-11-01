@@ -1,8 +1,8 @@
-"""The README's leaderboard intervals must be what the per-query files say.
+"""docs/results.md's leaderboard intervals must be what the per-query files say.
 
 Every interval and paired difference quoted under the model table is
 recomputed here from results/ and results/models/ (hierarchical chunks,
-nDCG@10), so a re-run that moves a number turns this red until the README
+nDCG@10), so a re-run that moves a number turns this red until docs/results.md
 follows.
 """
 from pathlib import Path
@@ -39,7 +39,7 @@ def difference(a, b) -> str:
 
 
 def section() -> str:
-    text = (ROOT / "README.md").read_text(encoding="utf-8")
+    text = (ROOT / "docs" / "results.md").read_text(encoding="utf-8")
     body = text.split("## Leaderboard", 1)[1].split("\n## ", 1)[0]
     # Compare with line breaks normalised, so rewrapping the prose is free.
     return " ".join(body.split())
@@ -67,7 +67,7 @@ def test_every_paired_difference_matches(a, b, retriever_a, retriever_b):
 
 
 def test_the_table_hierarchical_cells_match_their_files():
-    body = (ROOT / "README.md").read_text(encoding="utf-8").split("## Leaderboard", 1)[1]
+    body = (ROOT / "docs" / "results.md").read_text(encoding="utf-8").split("## Leaderboard", 1)[1]
     rows = [line.split("|") for line in body.splitlines() if line.startswith("| ")]
     for model in MODELS:
         cells = next(r for r in rows if model in r[1])

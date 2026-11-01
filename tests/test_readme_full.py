@@ -1,4 +1,4 @@
-"""The README's "Scoring all 300" table must be what the result files say.
+"""docs/gold-set.md's "Scoring all 300" table must be what the result files say.
 
 Both columns are read back from committed summaries (hierarchical chunks,
 nDCG@10): the 58-question column from results/ and results/models/, the
@@ -27,7 +27,7 @@ def ndcg(summary: Path, retriever: str) -> float:
 
 
 def readme_rows() -> dict[str, tuple[float, float]]:
-    text = (ROOT / "README.md").read_text(encoding="utf-8")
+    text = (ROOT / "docs" / "gold-set.md").read_text(encoding="utf-8")
     section = text.split("### Scoring all 300", 1)[1].split("\n## ", 1)[0]
     rows = {}
     for label, human, full in re.findall(

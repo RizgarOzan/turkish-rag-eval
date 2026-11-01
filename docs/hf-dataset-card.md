@@ -120,7 +120,7 @@ The drafts were **double-labelled, not human-verified**: one model pass
 wrote the question and marked the span, a second, separate pass marked the
 span again without seeing the first. Only items where the two passes agree
 are here (4 disagreements are left out). Agreement figures per batch are in
-the [repo README](https://github.com/RizgarOzan/turkish-rag-eval#gold-set).
+the [gold set notes](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/gold-set.md).
 Treat the numbers you get on them as provisional.
 
 ## How it was made
@@ -153,7 +153,7 @@ configurations and six models are in the
 On the full 296-question set the order changes, which is why the drafts are
 kept apart: e5-base 0.649, Mursit 0.611, e5-small 0.565, MiniLM 0.408, and
 stemmed BM25 0.559
-([details](https://github.com/RizgarOzan/turkish-rag-eval#scoring-all-300)).
+([details](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/gold-set.md#scoring-all-300)).
 
 ## Limits
 

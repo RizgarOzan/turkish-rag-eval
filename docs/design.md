@@ -128,7 +128,7 @@ correctness cost a model call.
 **Status:** one run is committed, on the 58 human questions: generator
 `groq:openai/gpt-oss-120b`, judge `nvidia:nvidia/nemotron-3-super-120b-a12b`
 (different families, so neither grades its own answers), 16 verdicts checked by
-hand — see the [README](https://github.com/RizgarOzan/turkish-rag-eval#generation-groundedness).
+hand — see the [results](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/results.md#generation-groundedness).
 Without flags the generator and the judge are the same model (both default to
 `claude-opus-5`), which invites self-preference. Every reply is cached in
 `results/groundedness.cache.jsonl`, so a run cut short by a rate limit resumes

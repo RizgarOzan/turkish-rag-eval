@@ -1,7 +1,7 @@
-"""The README's stress table must be what results/stress/ says.
+"""docs/results.md's stress table must be what results/stress/ says.
 
 Each row is rebuilt from the per-model JSON that `turkish-rag-eval stress`
-writes, so a re-run that moves a number turns this red until the README
+writes, so a re-run that moves a number turns this red until docs/results.md
 follows. The finding quoted above the table is checked the same way.
 """
 import json
@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 STRESS = ROOT / "results" / "stress"
-README = (ROOT / "README.md").read_text(encoding="utf-8")
+README = (ROOT / "docs" / "results.md").read_text(encoding="utf-8")
 
 ROWS = {
     "MiniLM (default)": "sentence-transformers__paraphrase-multilingual-MiniLM-L12-v2",
@@ -44,7 +44,7 @@ def test_the_bm25_row_matches():
 
 
 def test_the_normaliser_leaves_correct_questions_alone():
-    # The README says so; every retriever of every model must agree.
+    # docs/results.md says so; every retriever of every model must agree.
     for name in ROWS.values():
         s = scores(name)
         for retriever in ("bm25_stem5", "dense", "hybrid_rrf"):

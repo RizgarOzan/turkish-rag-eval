@@ -1,4 +1,4 @@
-"""The README's chunk-size tables and the claims under them must be what
+"""docs/results.md's chunk-size tables and the claims under them must be what
 results/chunk_size/ says (docs/measure_chunk_size.py writes it)."""
 import json
 from pathlib import Path
@@ -10,7 +10,7 @@ pytest.importorskip("numpy")
 from turkish_rag_eval.metrics import paired_bootstrap_ci  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
-README = (ROOT / "README.md").read_text(encoding="utf-8")
+README = (ROOT / "docs" / "results.md").read_text(encoding="utf-8")
 ROWS = json.loads((ROOT / "results" / "chunk_size" / "summary.json").read_text(encoding="utf-8"))
 DENSE = json.loads((ROOT / "results" / "chunk_size" / "multilingual-e5-small.json")
                    .read_text(encoding="utf-8"))

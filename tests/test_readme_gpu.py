@@ -1,4 +1,4 @@
-"""The README's GPU table must be what results/gpu/ says.
+"""docs/results.md's GPU table must be what results/gpu/ says.
 
 Each row is rebuilt from the GPU run and the CPU one in results/models/. The
 GPU changes timing only, so nDCG@10 must match the CPU run exactly.
@@ -9,7 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MODELS = {"intfloat__multilingual-e5-small": "e5-small",
           "newmindai__Mursit-Large-TR-Retrieval": "Mursit-Large-TR-Retrieval"}
-README = (ROOT / "README.md").read_text(encoding="utf-8")
+README = (ROOT / "docs" / "results.md").read_text(encoding="utf-8")
 CHUNKINGS = ("fixed", "sentence", "hierarchical")
 
 

@@ -1,4 +1,4 @@
-"""The README's ONNX table must be what results/onnx/ says.
+"""docs/results.md's ONNX table must be what results/onnx/ says.
 
 Each row is rebuilt from the ONNX run and the torch one in results/models/.
 The runtime changes timing, and the float arithmetic may differ in the last
@@ -10,7 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MODELS = {"intfloat__multilingual-e5-small": "e5-small",
           "newmindai__Mursit-Large-TR-Retrieval": "Mursit-Large-TR-Retrieval"}
-README = (ROOT / "README.md").read_text(encoding="utf-8")
+README = (ROOT / "docs" / "results.md").read_text(encoding="utf-8")
 CHUNKINGS = ("fixed", "sentence", "hierarchical")
 
 

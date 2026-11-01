@@ -1,4 +1,4 @@
-"""The README's stem-length table and the claims under it must be what
+"""docs/results.md's stem-length table and the claims under it must be what
 results/stem/ says (docs/measure_stem.py writes it)."""
 import json
 from pathlib import Path
@@ -10,7 +10,7 @@ pytest.importorskip("numpy")
 from turkish_rag_eval.metrics import paired_bootstrap_ci  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
-README = (ROOT / "README.md").read_text(encoding="utf-8")
+README = (ROOT / "docs" / "results.md").read_text(encoding="utf-8")
 ROWS = json.loads((ROOT / "results" / "stem" / "summary.json").read_text(encoding="utf-8"))
 LENGTHS = (None, 3, 4, 5, 6, 7, 8)
 

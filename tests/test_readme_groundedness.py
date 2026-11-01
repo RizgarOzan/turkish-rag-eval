@@ -1,7 +1,7 @@
-"""The README's groundedness table must be what results/groundedness.json says.
+"""docs/results.md's groundedness table must be what results/groundedness.json says.
 
 The run itself calls two hosted models and cannot be repeated in CI, so this
-only checks that the committed summary and the README agree, and that the
+only checks that the committed summary and docs/results.md agree, and that the
 summary names the models, date and temperature the table is tied to.
 """
 import json
@@ -28,7 +28,7 @@ ROWS = {
 
 
 def section() -> str:
-    text = (ROOT / "README.md").read_text(encoding="utf-8")
+    text = (ROOT / "docs" / "results.md").read_text(encoding="utf-8")
     return text.split("### Generation: groundedness", 1)[1].split("\n## ", 1)[0]
 
 
@@ -64,7 +64,7 @@ def test_no_other_section_says_the_results_are_missing():
 
 
 def generator_rows() -> dict:
-    """The comparison table: model name -> its cells, from the README."""
+    """The comparison table: model name -> its cells, from docs/results.md."""
     rows = {}
     for line in section().splitlines():
         cells = [c.strip() for c in line.strip("|").split("|")]
