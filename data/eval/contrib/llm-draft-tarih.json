@@ -29,7 +29,7 @@
    "annotator": "llm-2",
    "answer_span": "ordu savaşta kullanılacak mızraklarını Hınıs ve çevresinde yetişen ağaçlardan imal etmiştir."
   },
-  "review": "agreed"
+  "review": "agreed",
    "human_review": {
   "reviewer": "royemserli",
   "verdict": "ok"
@@ -46,7 +46,7 @@
    "annotator": "llm-2",
    "answer_span": "Alp Arslan ise \"Kurt Kapanı Taktiği\" konusunda komutanlarıyla uzlaşmıştı."
   },
-  "review": "agreed"
+  "review": "agreed",
    "human_review": {
   "reviewer": "royemserli",
   "verdict": "ok"
@@ -64,7 +64,7 @@
    "annotator": "llm-2",
    "answer_span": "İmparator omzundan yaralı olarak ele geçirildi."
   },
-  "review": "agreed"
+  "review": "agreed",
    "human_review": {
   "reviewer": "royemserli",
   "verdict": "ok"
@@ -75,17 +75,18 @@
   "question": "Bizans imparatoru topladığı orduyla başkentten hangi gün ayrıldı?",
   "doc_id": "26808",
   "doc_title": "Malazgirt Meydan Muharebesi",
-  "answer_span": "Romen Diyojen de büyük bir ordu kurup 13 Mart 1071'de Konstantinopolis'ten (bugünkü İstanbul) ayrıldı",
+  "answer_span": "Romen Diyojen Türklerin güçlerini Halep'te toplamasını bir fırsat olarak görerek Ermenistan'a ilerleyip daha önce kaybettiği kaleleri geri almak amacıyla büyük bir ordu kurup 13 Mart 1071'de Konstantinopolis'ten (bugünkü İstanbul) ayrıldı.",
   "annotator": "llm-1",
   "source": "llm-draft",
   "second_annotation": {
    "annotator": "llm-2",
    "answer_span": "Romen Diyojen de büyük bir ordu kurup 13 Mart 1071'de Konstantinopolis'ten (bugünkü İstanbul) ayrıldı."
   },
-  "review": "agreed"
-   "human_review": {
+  "review": "agreed",
+ "human_review": {
   "reviewer": "royemserli",
-  "verdict": "ok"
+  "verdict": "fixed",
+  "note": "Cevap alanı güncel Wikipedia makalesindeki bilgiyle eşleştirildi."
 }
  },
  {
@@ -100,7 +101,7 @@
    "annotator": "llm-2",
    "answer_span": "Malazgirt Muharebesine Kürtlerin katıldığını belirten en eski kaynak olan Sıbt İbnü'l-Cevzî'nin “Mir'âtü'z-Zaman Fi Tarihi'l-Ayan” adlı eseri muharebeden yaklaşık 150 yıl sonra yazılmıştır."
   },
-  "review": "agreed"
+  "review": "agreed",
   "human_review": {
   "reviewer": "royemserli",
   "verdict": "rejected",
@@ -119,7 +120,7 @@
    "annotator": "llm-2",
    "answer_span": "1,9 ilâ 6,2 cm"
   },
-  "review": "agreed"
+  "review": "agreed",
    "human_review": {
   "reviewer": "royemserli",
   "verdict": "ok"
@@ -137,7 +138,7 @@
    "annotator": "llm-2",
    "answer_span": "Limni adası"
   },
-  "review": "agreed"
+  "review": "agreed",
    "human_review": {
   "reviewer": "royemserli",
   "verdict": "ok"
@@ -155,7 +156,7 @@
    "annotator": "llm-2",
    "answer_span": "550 kilogram"
   },
-  "review": "agreed"
+  "review": "agreed",
    "human_review": {
   "reviewer": "royemserli",
   "verdict": "ok"
@@ -173,7 +174,7 @@
    "annotator": "llm-2",
    "answer_span": "esir alındı ve Edirne'ye götürülerek kazığa oturtuldu"
   },
-  "review": "agreed"
+  "review": "agreed",
    "human_review": {
   "reviewer": "royemserli",
   "verdict": "ok"
