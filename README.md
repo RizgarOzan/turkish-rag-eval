@@ -426,6 +426,12 @@ pip install turkish-rag-eval          # metrics, BM25, gold-set tooling
 pip install 'turkish-rag-eval[all]'   # + dense retrieval, charts, LLM commands
 ```
 
+PyPI still has v0.2.0, which predates `ask`, `serve`, `stress`,
+`run --normalize` and `run --embedding-cache` (see the
+[changelog](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/CHANGELOG.md)).
+Until 0.3.0 is out, install from GitHub to get them:
+`pip install 'turkish-rag-eval[all] @ git+https://github.com/RizgarOzan/turkish-rag-eval'`.
+
 | Command | What it does |
 |---|---|
 | `run` | every chunking × retriever combination; writes `results/` |
@@ -434,7 +440,9 @@ pip install 'turkish-rag-eval[all]'   # + dense retrieval, charts, LLM commands
 | `report` | intervals, paired comparisons, and a recommendation |
 | `charts` | the two figures above, light and dark |
 | `leaderboard` | rebuild the model table; `--check` verifies every entry |
+| `stress` | the gold questions typed without Turkish letters, in caps, and through `str.lower()` ([results](#stress-test)) |
 | `abstain` | coverage / selective-accuracy curve for the best configuration ([details](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/design.md#abstention)) |
+| `abstain-report` | re-print the coverage curve from saved `abstain` records |
 | `groundedness` | score the generation half against the gold spans ([details](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/design.md#groundedness); [results](#generation-groundedness)) |
 | `bootstrap` | draft a gold set for your own corpus |
 | `agreement` | inter-annotator agreement over the gold set |
@@ -749,9 +757,11 @@ sentence or hierarchical chunks (the one hierarchical miss was fixed on
 
 ## Status
 
-v0.2.0, [on PyPI](https://pypi.org/project/turkish-rag-eval/).
+v0.2.0 [on PyPI](https://pypi.org/project/turkish-rag-eval/); `main` is ahead of it
+(`ask`, `serve`, `stress`, the query normaliser, the embedding cache), see
+[Running it](#running-it) for installing that.
 
-- **Works:** the retrieval harness, [`groundedness`](#generation-groundedness) on the 58 human questions, `report`, [`serve`](#serving-it), `leaderboard --check`, `bootstrap`,
+- **Works:** the retrieval harness, [`groundedness`](#generation-groundedness) on the 58 human questions, `report`, [`ask`](#one-question-at-a-time), [`serve`](#serving-it), [`stress`](#stress-test), `leaderboard --check`, `bootstrap`,
   `agreement`, the Hugging Face export, scoring [all 300 questions](#scoring-all-300)
   on a pinned corpus, and CI that validates every contributed question against
   live Wikipedia.
