@@ -12,12 +12,12 @@
    "answer_span": "1080 yılına gelindiğinde Selçuklu Türkleri 78.000 kilometrekarelik bir alanı ele geçirmişti"
   },
   "review": "agreed",
-    "human_review": {
-      "reviewer": "royemserli",
+  "human_review": {
+    "reviewer": "royemserli",
       "verdict": "ok"
-    }
-  },
- {
+  }
+},
+{
   "qid": "llm-tarih-002",
   "question": "Bizanslı askerlerin taşıdığı uzun saplı silahların ağacı hangi yöreden geliyordu?",
   "doc_id": "26808",
@@ -30,11 +30,12 @@
    "answer_span": "ordu savaşta kullanılacak mızraklarını Hınıs ve çevresinde yetişen ağaçlardan imal etmiştir."
   },
   "review": "agreed",
-   "human_review": {
-  "reviewer": "royemserli",
-  "verdict": "ok"
- },
- {
+  "human_review": {
+    "reviewer": "royemserli",
+     "verdict": "ok"
+  }
+},
+{
   "qid": "llm-tarih-003",
   "question": "Selçuklu hükümdarının sahte geri çekilmeye dayanan savaş planı hangi adla anılır?",
   "doc_id": "26808",
@@ -47,12 +48,12 @@
    "answer_span": "Alp Arslan ise \"Kurt Kapanı Taktiği\" konusunda komutanlarıyla uzlaşmıştı."
   },
   "review": "agreed",
-   "human_review": {
-  "reviewer": "royemserli",
-  "verdict": "ok"
-}
- },
- {
+  "human_review": {
+    "reviewer": "royemserli",
+    "verdict": "ok"
+  }
+},
+{
   "qid": "llm-tarih-004",
   "question": "Esir alınan imparator yakalandığında vücudunun neresinden yaralanmıştı?",
   "doc_id": "26808",
@@ -65,12 +66,12 @@
    "answer_span": "İmparator omzundan yaralı olarak ele geçirildi."
   },
   "review": "agreed",
-   "human_review": {
-  "reviewer": "royemserli",
-  "verdict": "ok"
-}
- },
- {
+  "human_review": {
+    "reviewer": "royemserli",
+    "verdict": "ok"
+  }
+},
+{
   "qid": "llm-tarih-005",
   "question": "Bizans imparatoru topladığı orduyla başkentten hangi gün ayrıldı?",
   "doc_id": "26808",
@@ -83,13 +84,13 @@
    "answer_span": "Romen Diyojen de büyük bir ordu kurup 13 Mart 1071'de Konstantinopolis'ten (bugünkü İstanbul) ayrıldı."
   },
   "review": "agreed",
- "human_review": {
-  "reviewer": "royemserli",
-  "verdict": "fixed",
-  "note": "Cevap alanı güncel Wikipedia makalesindeki bilgiyle eşleştirildi."
-}
- },
- {
+  "human_review": {
+    "reviewer": "royemserli",
+    "verdict": "fixed",
+    "note": "Cevap alanı güncel Wikipedia makalesindeki bilgiyle eşleştirildi."
+  }
+},
+{
   "qid": "llm-tarih-006",
   "question": "Savaşa Kürt birliklerinin katıldığını yazan en eski kaynak olaydan ne kadar zaman sonra kaleme alınmıştır?",
   "doc_id": "26808",
@@ -103,12 +104,12 @@
   },
   "review": "agreed",
   "human_review": {
-  "reviewer": "royemserli",
-  "verdict": "rejected",
-  "note": "Sorunun cevabını veren süre bilgisi güncel Wikipedia makalesinde bulunmuyor."
-}
- },
- {
+    "reviewer": "royemserli",
+    "verdict": "rejected",
+    "note": "Sorunun cevabını veren süre bilgisi güncel Wikipedia makalesinde bulunmuyor."
+  }
+},
+{
   "qid": "llm-tarih-007",
   "question": "Haliç'i kapatmak için gerilen zincirin baklaları hangi kalınlık aralığındaydı?",
   "doc_id": "13171",
@@ -121,12 +122,12 @@
    "answer_span": "1,9 ilâ 6,2 cm"
   },
   "review": "agreed",
-   "human_review": {
-  "reviewer": "royemserli",
-  "verdict": "ok"
-}
- },
- {
+  "human_review": {
+    "reviewer": "royemserli",
+    "verdict": "ok"
+  }
+},
+{
   "qid": "llm-tarih-008",
   "question": "Kente yardıma gelen Cenevizli komutana kazanma hâlinde hangi ada söz verilmişti?",
   "doc_id": "13171",
@@ -139,12 +140,12 @@
    "answer_span": "Limni adası"
   },
   "review": "agreed",
-   "human_review": {
-  "reviewer": "royemserli",
-  "verdict": "ok"
-}
- },
- {
+  "human_review": {
+    "reviewer": "royemserli",
+    "verdict": "ok"
+  }
+},
+{
   "qid": "llm-tarih-009",
   "question": "Urban'ın döktüğü dev silahın attığı tek mermi ne kadar ağırlıktaydı?",
   "doc_id": "13171",
@@ -157,12 +158,12 @@
    "answer_span": "550 kilogram"
   },
   "review": "agreed",
-   "human_review": {
-  "reviewer": "royemserli",
-  "verdict": "ok"
-}
- },
- {
+  "human_review": {
+    "reviewer": "royemserli",
+    "verdict": "ok"
+  }
+},
+{
   "qid": "llm-tarih-010",
   "question": "Boğazdan geçmeye çalışırken batırılan Venedik gemisinin kaptanı nasıl öldürüldü?",
   "doc_id": "13171",
@@ -176,11 +177,11 @@
   },
   "review": "agreed",
    "human_review": {
-  "reviewer": "royemserli",
-  "verdict": "ok"
-}
- },
- {
+    "reviewer": "royemserli",
+    "verdict": "ok"
+    }
+  },
+{
   "qid": "llm-tarih-011",
   "question": "On iki yaşındaki hükümdar babasını sefere çağıran mektubunda ne yazmıştı?",
   "doc_id": "13171",
