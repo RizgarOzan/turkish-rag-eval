@@ -12,9 +12,14 @@ runs the same comparison on your own documents.
 
 ```bash
 pip install turkish-rag-eval
-turkish-rag-eval run --corpus ./belgelerim --gold ./sorular.json
+turkish-rag-eval run --corpus ./belgelerim --gold ./sorular.json --retrievers bm25_nostem bm25_stem5
 turkish-rag-eval report
 ```
+
+That runs the BM25 half on the base install. Drop `--retrievers` after
+`pip install 'turkish-rag-eval[all]'` to add the dense and hybrid retrievers.
+In a folder corpus, a question's `doc_id` is the file's path relative to the
+folder (`diyabet.txt`).
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/RizgarOzan/turkish-rag-eval/main/docs/media/ask-q034-dark.gif">
@@ -23,6 +28,10 @@ turkish-rag-eval report
 
 One question, four retrievers: only the hybrid finds the symptoms section of
 the right article ([the transcript](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/usage.md#one-question-at-a-time)).
+
+Contents: [What it found](#what-it-found) · [Results](#results) ·
+[Why not an existing benchmark](#why-not-an-existing-benchmark) · [Install](#install) ·
+[Commands](#commands) · [Gold set](#gold-set) · [Limits](#limits) · [Contribute](#contribute)
 
 ## What it found
 
@@ -112,8 +121,8 @@ answer span, so pipeline choices are compared on the same labels. For a
 model-only comparison the same data exports to the BEIR layout MTEB reads
 (`turkish-rag-eval export-hf`), published as
 [RizgarOzan/turkish-rag-eval](https://huggingface.co/datasets/RizgarOzan/turkish-rag-eval);
-adding it to MTEB is proposed in
-[embeddings-benchmark/mteb#5536](https://github.com/embeddings-benchmark/mteb/issues/5536).
+it is in MTEB as `TurkishRAGEvalRetrieval`
+([embeddings-benchmark/mteb#5615](https://github.com/embeddings-benchmark/mteb/pull/5615), merged 2026-10-15).
 
 ## Install
 
