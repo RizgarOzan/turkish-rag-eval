@@ -45,7 +45,7 @@ domain.
 
 | Batch | Questions | Identical | Mean IoU | Mean token F1 | Cohen's κ, fixed / sentence / hierarchical |
 |---|---|---|---|---|---|
-| 1 — 2026-09-18 (Malazgirt, Kapadokya, Mars, Mitokondri, Linux) | 30 | 16 | 0.816 | 0.878 | 1.00 / 1.00 / 1.00 |
+| 1 — 2026-09-18 (Malazgirt, Kapadokya, Mars, Mitokondri, Linux) | 30 | 15 | 0.798 | 0.866 | 1.00 / 1.00 / 1.00 |
 | 2 — 2026-09-20 (İstanbul'un Fethi, Ağrı Dağı, Jüpiter, Fotosentez, İnternet)¹ | 30 | 4 | 0.427 | 0.549 | 0.94 / 0.99 / 0.99 |
 | 3 — 2026-09-21 (Çaldıran Muharebesi, Tuz Gölü, Satürn, Ribozom, Unix) | 30 | 18 | 0.829 | 0.872 | 0.92 / 0.96 / 0.96 |
 | 4 — 2026-09-24 (Mohaç Muharebesi, Kızılırmak, Venüs, Enzim, Derleyici) | 30 | 15 | 0.747 | 0.792 | 0.96 / 0.96 / 0.96 |
@@ -53,7 +53,7 @@ domain.
 | 6 — 2026-09-25 (Preveze Deniz Muharebesi, Erciyes, Uranüs, Hemoglobin, Veritabanı) | 30 | 20 | 0.869 | 0.901 | 0.93 / 0.90 / 0.87 |
 | 7 — 2026-09-26 (Ankara Muharebesi, Van Gölü, Merkür, DNA, World Wide Web) | 30 | 25 | 0.944 | 0.960 | 0.93 / 0.93 / 0.97 |
 | 8 — 2026-09-26 (Niğbolu Muharebesi, Fırat, Ay, Protein, Yapay zekâ) | 32 | 29 | 0.964 | 0.975 | 0.94 / 0.97 / 1.00 |
-| **All drafts** | 242 | 151 | 0.816 | 0.860 | 0.95 / 0.97 / 0.97 |
+| **All drafts** | 242 | 150 | 0.814 | 0.858 | 0.95 / 0.97 / 0.97 |
 
 To measure agreement over the drafts eligible for loading, run
 `turkish-rag-eval agreement --include-drafts`. Embedded second labels are
@@ -61,7 +61,7 @@ expanded into ordinary second annotations before grouping. Without the flag,
 the command still loads only the hand-labelled set. The table above measures
 all draft files, including unresolved `needs-human` questions; the CLI keeps
 `load_gold`'s review filters. With the current files it therefore reports
-238 questions and mean token F1 0.872, versus 242 and 0.860 for all drafts.
+237 questions and mean token F1 0.872, versus 242 and 0.858 for all drafts.
 Pass `--corpus data/raw/corpus-full.json` for the chunk-level kappa columns;
 an article missing from the corpus given gives `n/a` there.
 
