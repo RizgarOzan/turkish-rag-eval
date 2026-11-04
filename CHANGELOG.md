@@ -19,7 +19,8 @@ published number is a breaking change**, even when no API changed.
   are committed, so a clone runs the leaderboard offline and `fetch-corpus --verify`
   passes without touching Wikipedia. A test keeps them equal to their lockfiles.
 - `agreement --include-drafts` includes eligible drafted questions and their
-  embedded second annotations. Existing human-review filters still apply.
+  embedded second annotations. Existing human-review filters still apply
+  (#30, thanks @eyupcodes).
 - `run --embedding-cache DIR` stores dense chunk embeddings keyed by model name
   and chunk text and reuses them on the next run. Scores are unchanged; a
   cached run still reports the original `dense_index_seconds`.
@@ -108,6 +109,8 @@ results can be cited.
   runs it on every push and holds new submissions to a provenance bar.
 - **`bootstrap`** — drafts a gold set for a corpus that has none, in two
   independent passes, holding disagreements for human review.
+- **`agreement`** — inter-annotator agreement between two labelings of the
+  gold set: span IoU, token F1 and kappa (#14, thanks @KonstantinBurkin).
 - **`groundedness`** — scores the generation half against the gold answer
   spans, reporting the hallucination rate separately for queries whose
   evidence was never retrieved.

@@ -1,4 +1,4 @@
-"""The README's agreement row must be what the draft files actually say.
+"""docs/gold-set.md's agreement row must be what the draft files actually say.
 
 Per-batch rows are history: each was measured when the batch landed. The
 "All drafts" row is the one that moves every week, so it is recomputed here
@@ -25,8 +25,8 @@ def pairs():
 
 
 def readme_row():
-    match = ROW.search((ROOT / "README.md").read_text(encoding="utf-8"))
-    assert match, "README has no '| **All drafts** |' agreement row"
+    match = ROW.search((ROOT / "docs" / "gold-set.md").read_text(encoding="utf-8"))
+    assert match, "docs/gold-set.md has no '| **All drafts** |' agreement row"
     return [cell.strip() for cell in match.group(1).split("|")]
 
 

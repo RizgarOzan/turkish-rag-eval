@@ -1,7 +1,7 @@
-"""Draws the README's `ask` transcript as an animated GIF, light and dark.
+"""Draws the `ask` transcript as an animated GIF for the README, light and dark.
 
-The text comes from the README's own ```text block that starts with
-`$ turkish-rag-eval ask`, so the picture shows exactly what the README says
+The text comes from the ```text block in docs/usage.md that starts with
+`$ turkish-rag-eval ask`, so the picture shows exactly what the docs say
 the command prints. Re-run this after that block changes; the test in
 tests/test_ask_gif.py goes red until you do.
 
@@ -116,7 +116,7 @@ def write(command: str, lines: list[str], out: Path, theme_name: str,
 
 
 def main() -> int:
-    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+    readme = (ROOT / "docs" / "usage.md").read_text(encoding="utf-8")
     command, lines = transcript(readme)
     for theme, name in [("light", "ask-q034.gif"), ("dark", "ask-q034-dark.gif")]:
         out = write(command, lines, MEDIA / name, theme, fingerprint(readme))

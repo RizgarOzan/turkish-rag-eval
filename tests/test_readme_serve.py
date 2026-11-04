@@ -1,10 +1,10 @@
-"""The README's serve load-test table must be what results/serve/ says, so a
+"""docs/results.md's serve load-test table must be what results/serve/ says, so a
 re-run of docs/load_test.py that moves a number turns this red."""
 import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-README = (ROOT / "README.md").read_text(encoding="utf-8")
+README = (ROOT / "docs" / "results.md").read_text(encoding="utf-8")
 RESULT = json.loads((ROOT / "results" / "serve" / "bm25_stem5.json").read_text(encoding="utf-8"))
 
 

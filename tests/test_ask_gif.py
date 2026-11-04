@@ -1,7 +1,7 @@
-"""The README's ask GIF is drawn from the README's own ask transcript.
+"""The README's ask GIF is drawn from the ask transcript in docs/usage.md.
 
 The GIF is a picture of text, so it can go stale without anything noticing.
-Each GIF carries a hash of the transcript it was drawn from; if the README
+Each GIF carries a hash of the transcript it was drawn from; if that
 block changes and the GIF is not redrawn, the last test here goes red.
 """
 
@@ -19,7 +19,7 @@ spec = importlib.util.spec_from_file_location("make_ask_gif", ROOT / "docs" / "m
 make_ask_gif = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(make_ask_gif)
 
-README = (ROOT / "README.md").read_text(encoding="utf-8")
+README = (ROOT / "docs" / "usage.md").read_text(encoding="utf-8")
 
 
 def test_the_transcript_is_the_readme_block():
@@ -62,4 +62,4 @@ def test_the_committed_gif_matches_the_readme(name):
     with Image.open(ROOT / "docs" / "media" / name) as gif:
         drawn_from = gif.info.get("comment", b"").decode()
     assert drawn_from == make_ask_gif.fingerprint(README), \
-        "README ask block changed: run python docs/make_ask_gif.py"
+        "docs/usage.md ask block changed: run python docs/make_ask_gif.py"
