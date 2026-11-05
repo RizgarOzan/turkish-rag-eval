@@ -26,6 +26,12 @@ published number is a breaking change**, even when no API changed.
   cached run still reports the original `dense_index_seconds`.
 - `run --normalize` puts the query normaliser in front of a normal run.
 
+### Fixed
+
+- `validate --online` no longer fails a merged human review. It skips
+  `rejected` questions and does not check a `fixed` question's old
+  `second_annotation` against the article. #32 turned `main` red on this.
+
 ### Changed
 
 - The sentence splitter keeps initials and regnal numerals ("Robert W. Holley",

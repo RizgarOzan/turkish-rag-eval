@@ -141,6 +141,11 @@ def check_online(items: list[dict], fetch=fetch_article, delay: float = 1.0) -> 
     from .fetch_corpus import MIN_EXTRACT_CHARS
     errors, articles = [], {}
     for item in items:
+        # Same rule as load_gold: a rejected draft never loads, and "the article
+        # no longer says it" is a normal reason to reject, so don't hold it to the text.
+        verdict = (item.get("human_review") or {}).get("verdict")
+        if verdict == "rejected":
+            continue
         doc_id = item["doc_id"]
         if doc_id not in articles:
             articles[doc_id] = fetch(doc_id)
@@ -156,8 +161,10 @@ def check_online(items: list[dict], fetch=fetch_article, delay: float = 1.0) -> 
             errors.append(f"{where}: article is too short to be in the corpus")
         if normalise(item["answer_span"]) not in normalise(article["text"]):
             errors.append(f"{where}: answer_span not found verbatim in the article")
+        # A person who fixed the span replaced the reference; llm-2's span is left
+        # untouched (CONTRIBUTING), so it is no longer checked against the article.
         second = item.get("second_annotation")
-        if second and normalise(second["answer_span"]) not in normalise(article["text"]):
+        if second and verdict != "fixed" and normalise(second["answer_span"]) not in normalise(article["text"]):
             errors.append(f"{where}: second_annotation span not found verbatim in the article")
     return errors
 
