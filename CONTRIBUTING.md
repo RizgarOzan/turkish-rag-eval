@@ -112,7 +112,9 @@ to the item, in place, in `data/eval/contrib/llm-draft-<topic>.json`:
   longer says it, the question gives the answer away). Add a `"note"`. A
   rejected question stops loading; it is not deleted.
 
-Leave `second_annotation` and `review` as they are. Then run
+Leave `second_annotation` and `review` as they are. `validate --online` skips
+`rejected` questions and does not check the old `second_annotation` of a `fixed`
+one against the article. Then run
 `turkish-rag-eval validate --online data/eval/contrib/llm-draft-<topic>.json`;
 its last line counts how many drafts have been reviewed so far.
 

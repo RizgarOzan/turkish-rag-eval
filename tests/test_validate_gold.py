@@ -185,6 +185,26 @@ def test_online_checks_the_second_annotation_span_too():
     errors = check_online([second], fetch=lambda _: ARTICLE, delay=0)
     assert len(errors) == 1 and "second_annotation" in errors[0]
 
+
+def test_online_skips_a_question_a_person_rejected():
+    # A rejected draft never loads, and the usual reason is that the article
+    # no longer says it, so the span is expected to be missing.
+    gone = dict(GOOD, answer_span="artık makalede olmayan bir cümle",
+                second_annotation={"annotator": "llm-2", "answer_span": "o da yok"},
+                human_review={"reviewer": "ayse", "verdict": "rejected", "note": "silinmiş"})
+    assert check_online([gone], fetch=lambda _: ARTICLE, delay=0) == []
+
+
+def test_online_does_not_hold_a_fixed_question_to_the_old_second_span():
+    # The person replaced the reference span; llm-2's span is left as it was
+    # (CONTRIBUTING says not to touch it), so only the new one must match.
+    fixed = dict(GOOD, second_annotation={"annotator": "llm-2", "answer_span": "eski cümle"},
+                 human_review={"reviewer": "ayse", "verdict": "fixed", "note": "güncel metin"})
+    assert check_online([fixed], fetch=lambda _: ARTICLE, delay=0) == []
+    broken = dict(fixed, answer_span="makalede olmayan span")
+    assert "answer_span not found" in check_online([broken], fetch=lambda _: ARTICLE, delay=0)[0]
+
+
 def test_shipped_gold_set_passes():
     # Through add_arguments/run rather than main(), so the check does not have
     # to reach into sys.argv to say "no --online files".
