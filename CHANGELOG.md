@@ -39,6 +39,12 @@ published number is a breaking change**, even when no API changed.
   `leaderboard --check` gives no warnings. No `dense` figure moved. Hybrid
   hierarchical went 0.648 → 0.642 for e5-base and 0.673 → 0.672 for Mursit,
   so the "+0.006" that note predicted was wrong in sign as well.
+- Drafted questions 001–010 in `llm-draft-tarih.json` were checked by hand
+  against the live Wikipedia text and 005's span was re-anchored (#32, thanks
+  @royemserli). The agreement tables in `docs/gold-set.md` and
+  `docs/design.md` moved with it: batch 1 is now 15 identical / IoU 0.798 /
+  F1 0.866, all drafts 150 / 0.814 / 0.858. The kappa cells were not
+  re-measured.
 
 ## [0.2.0] - 2026-10-10
 

@@ -11,9 +11,13 @@
    "annotator": "llm-2",
    "answer_span": "1080 yılına gelindiğinde Selçuklu Türkleri 78.000 kilometrekarelik bir alanı ele geçirmişti"
   },
-  "review": "agreed"
- },
- {
+  "review": "agreed",
+  "human_review": {
+    "reviewer": "royemserli",
+      "verdict": "ok"
+  }
+},
+{
   "qid": "llm-tarih-002",
   "question": "Bizanslı askerlerin taşıdığı uzun saplı silahların ağacı hangi yöreden geliyordu?",
   "doc_id": "26808",
@@ -25,9 +29,13 @@
    "annotator": "llm-2",
    "answer_span": "ordu savaşta kullanılacak mızraklarını Hınıs ve çevresinde yetişen ağaçlardan imal etmiştir."
   },
-  "review": "agreed"
- },
- {
+  "review": "agreed",
+  "human_review": {
+    "reviewer": "royemserli",
+     "verdict": "ok"
+  }
+},
+{
   "qid": "llm-tarih-003",
   "question": "Selçuklu hükümdarının sahte geri çekilmeye dayanan savaş planı hangi adla anılır?",
   "doc_id": "26808",
@@ -39,9 +47,13 @@
    "annotator": "llm-2",
    "answer_span": "Alp Arslan ise \"Kurt Kapanı Taktiği\" konusunda komutanlarıyla uzlaşmıştı."
   },
-  "review": "agreed"
- },
- {
+  "review": "agreed",
+  "human_review": {
+    "reviewer": "royemserli",
+    "verdict": "ok"
+  }
+},
+{
   "qid": "llm-tarih-004",
   "question": "Esir alınan imparator yakalandığında vücudunun neresinden yaralanmıştı?",
   "doc_id": "26808",
@@ -53,23 +65,32 @@
    "annotator": "llm-2",
    "answer_span": "İmparator omzundan yaralı olarak ele geçirildi."
   },
-  "review": "agreed"
- },
- {
+  "review": "agreed",
+  "human_review": {
+    "reviewer": "royemserli",
+    "verdict": "ok"
+  }
+},
+{
   "qid": "llm-tarih-005",
   "question": "Bizans imparatoru topladığı orduyla başkentten hangi gün ayrıldı?",
   "doc_id": "26808",
   "doc_title": "Malazgirt Meydan Muharebesi",
-  "answer_span": "Romen Diyojen de büyük bir ordu kurup 13 Mart 1071'de Konstantinopolis'ten (bugünkü İstanbul) ayrıldı",
+  "answer_span": "Romen Diyojen Türklerin güçlerini Halep'te toplamasını bir fırsat olarak görerek Ermenistan'a ilerleyip daha önce kaybettiği kaleleri geri almak amacıyla büyük bir ordu kurup 13 Mart 1071'de Konstantinopolis'ten (bugünkü İstanbul) ayrıldı.",
   "annotator": "llm-1",
   "source": "llm-draft",
   "second_annotation": {
    "annotator": "llm-2",
    "answer_span": "Romen Diyojen de büyük bir ordu kurup 13 Mart 1071'de Konstantinopolis'ten (bugünkü İstanbul) ayrıldı."
   },
-  "review": "agreed"
- },
- {
+  "review": "agreed",
+  "human_review": {
+    "reviewer": "royemserli",
+    "verdict": "fixed",
+    "note": "Cevap alanı güncel Wikipedia makalesindeki bilgiyle eşleştirildi."
+  }
+},
+{
   "qid": "llm-tarih-006",
   "question": "Savaşa Kürt birliklerinin katıldığını yazan en eski kaynak olaydan ne kadar zaman sonra kaleme alınmıştır?",
   "doc_id": "26808",
@@ -81,9 +102,14 @@
    "annotator": "llm-2",
    "answer_span": "Malazgirt Muharebesine Kürtlerin katıldığını belirten en eski kaynak olan Sıbt İbnü'l-Cevzî'nin “Mir'âtü'z-Zaman Fi Tarihi'l-Ayan” adlı eseri muharebeden yaklaşık 150 yıl sonra yazılmıştır."
   },
-  "review": "agreed"
- },
- {
+  "review": "agreed",
+  "human_review": {
+    "reviewer": "royemserli",
+    "verdict": "rejected",
+    "note": "Sorunun cevabını veren süre bilgisi güncel Wikipedia makalesinde bulunmuyor."
+  }
+},
+{
   "qid": "llm-tarih-007",
   "question": "Haliç'i kapatmak için gerilen zincirin baklaları hangi kalınlık aralığındaydı?",
   "doc_id": "13171",
@@ -95,9 +121,13 @@
    "annotator": "llm-2",
    "answer_span": "1,9 ilâ 6,2 cm"
   },
-  "review": "agreed"
- },
- {
+  "review": "agreed",
+  "human_review": {
+    "reviewer": "royemserli",
+    "verdict": "ok"
+  }
+},
+{
   "qid": "llm-tarih-008",
   "question": "Kente yardıma gelen Cenevizli komutana kazanma hâlinde hangi ada söz verilmişti?",
   "doc_id": "13171",
@@ -109,9 +139,13 @@
    "annotator": "llm-2",
    "answer_span": "Limni adası"
   },
-  "review": "agreed"
- },
- {
+  "review": "agreed",
+  "human_review": {
+    "reviewer": "royemserli",
+    "verdict": "ok"
+  }
+},
+{
   "qid": "llm-tarih-009",
   "question": "Urban'ın döktüğü dev silahın attığı tek mermi ne kadar ağırlıktaydı?",
   "doc_id": "13171",
@@ -123,9 +157,13 @@
    "annotator": "llm-2",
    "answer_span": "550 kilogram"
   },
-  "review": "agreed"
- },
- {
+  "review": "agreed",
+  "human_review": {
+    "reviewer": "royemserli",
+    "verdict": "ok"
+  }
+},
+{
   "qid": "llm-tarih-010",
   "question": "Boğazdan geçmeye çalışırken batırılan Venedik gemisinin kaptanı nasıl öldürüldü?",
   "doc_id": "13171",
@@ -137,9 +175,13 @@
    "annotator": "llm-2",
    "answer_span": "esir alındı ve Edirne'ye götürülerek kazığa oturtuldu"
   },
-  "review": "agreed"
- },
- {
+  "review": "agreed",
+   "human_review": {
+    "reviewer": "royemserli",
+    "verdict": "ok"
+    }
+  },
+{
   "qid": "llm-tarih-011",
   "question": "On iki yaşındaki hükümdar babasını sefere çağıran mektubunda ne yazmıştı?",
   "doc_id": "13171",
