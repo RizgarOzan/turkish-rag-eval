@@ -228,7 +228,9 @@ See [CONTRIBUTING.md](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/C
 [good first issues](https://github.com/RizgarOzan/turkish-rag-eval/issues?q=is%3Aopen+label%3A%22good+first+issue%22).
 
 Contributors so far: [@KonstantinBurkin](https://github.com/KonstantinBurkin)
-(the `agreement` script, [#14](https://github.com/RizgarOzan/turkish-rag-eval/pull/14))
+(the `agreement` script, [#14](https://github.com/RizgarOzan/turkish-rag-eval/pull/14)),
+[@royemserli](https://github.com/royemserli) (human review of tarih 001–010,
+[#32](https://github.com/RizgarOzan/turkish-rag-eval/pull/32))
 and [@eyupcodes](https://github.com/eyupcodes) (sentence splitting after
 initials, [#29](https://github.com/RizgarOzan/turkish-rag-eval/pull/29);
 `agreement --include-drafts`, [#30](https://github.com/RizgarOzan/turkish-rag-eval/pull/30)).
