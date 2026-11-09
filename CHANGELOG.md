@@ -31,6 +31,10 @@ published number is a breaking change**, even when no API changed.
 - `validate --online` no longer fails a merged human review. It skips
   `rejected` questions and does not check a `fixed` question's old
   `second_annotation` against the article. #32 turned `main` red on this.
+- `agreement --include-drafts` leaves out the `second_annotation` of a `fixed`
+  question. The fix replaced the span the second pass was compared to, so the
+  pair measured nothing. With the current drafts that is 237 pairs down to 236,
+  mean IoU 0.828 to 0.830 and token F1 0.872 to 0.873.
 
 ### Changed
 

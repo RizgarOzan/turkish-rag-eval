@@ -184,6 +184,18 @@ def test_expand_embedded_leaves_items_without_second_labels_unpaired():
     assert group_by_question(expand_embedded([draft])) == []
 
 
+def test_expand_embedded_skips_questions_a_reviewer_fixed():
+    # A fixed answer_span replaced the label the second pass was compared to,
+    # so the stored second_annotation no longer measures anything.
+    fixed = dict(ORIGINAL, annotator="llm-1", source="llm-draft",
+                 human_review={"reviewer": "x", "verdict": "fixed"},
+                 second_annotation={"annotator": "llm-2",
+                                    "answer_span": SECOND["answer_span"]})
+    assert expand_embedded([fixed]) == [fixed]
+    approved = dict(fixed, human_review={"reviewer": "x", "verdict": "ok"})
+    assert len(expand_embedded([approved])) == 2
+
+
 @pytest.mark.parametrize("include_drafts", [False, True])
 def test_run_include_drafts_is_opt_in(tmp_path, monkeypatch, capsys, include_drafts):
     primary = tmp_path / "gold.json"
@@ -240,4 +252,5 @@ def test_include_drafts_preserves_needs_human_and_rejected_filters(tmp_path):
         dict(draft, qid="fixed", review="needs-human", human_review={"verdict": "fixed"}),
     ]), encoding="utf-8")
     expanded = expand_embedded(gold.load_gold([path], include_drafts=True))
-    assert [item["qid"] for item in expanded] == ["fixed", "fixed#2"]
+    # a fixed question keeps its (reviewed) label but its stale second pass is dropped
+    assert [item["qid"] for item in expanded] == ["fixed"]

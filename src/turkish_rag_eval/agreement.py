@@ -64,6 +64,9 @@ def expand_embedded(items: list[dict]) -> list[dict]:
         qid = f"{item['qid']}#2"
         if not second or qid in qids:
             continue
+        # A reviewer's fix replaced the span the second pass was compared to.
+        if (item.get("human_review") or {}).get("verdict") == "fixed":
+            continue
         expanded.append({
             "qid": qid,
             "question": item["question"],
