@@ -78,6 +78,17 @@ Contents: [What it found](#what-it-found) · [Results](#results) ·
    corpus's own words and lowercases the Turkish way recovers most of it (BM25
    0.288 → 0.477) and leaves correctly typed questions alone.
 
+6. When the answer isn't in the retrieved passages, generators mostly say so.
+   Eight models (Claude Haiku, Sonnet and Opus among them) declined on 76–80%
+   of the 25 questions whose gold span wasn't retrieved, and made something up
+   on 0 to 3 of them. That gap is too small to rank them, and the judge alone
+   moves it: when NVIDIA retired the first judge I re-scored the same answers
+   with another and two models shifted by one answer each. My first scoring
+   rule also counted every answer without the gold span as a hallucination
+   (20%); reading those five by hand showed four were stated in another
+   retrieved passage, and the rate is 4%
+   ([results](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/results.md#generation-groundedness)).
+
 Longer write-up of the first result:
 [English](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/blog/2026-09-19-bm25-turkish-en.md) ·
 [Türkçe](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/blog/2026-09-19-bm25-turkish-tr.md).
@@ -105,7 +116,7 @@ regenerates this table.
 
 Everything else measured so far is in
 [docs/results.md](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/docs/results.md):
-the model leaderboard with paired intervals, groundedness of five generators,
+the model leaderboard with paired intervals, groundedness of eight generators,
 the stem-length and chunk-size sweeps, reranking, the stress test, int8, GPU
 and ONNX timings, and the `serve` load test. Tests rebuild every table there
 from the committed files in `results/`.
