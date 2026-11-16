@@ -202,6 +202,35 @@ def test_an_unknown_provider_is_refused_rather_than_sent_to_anthropic():
         split_model("mistral:large")
 
 
+def test_the_claude_cli_route_passes_our_prompt_and_caches_the_reply(tmp_path):
+    import json
+    from pathlib import Path
+    from types import SimpleNamespace
+
+    from turkish_rag_eval.groundedness import ClaudeCliClient
+
+    calls = []
+
+    def run(cmd, **kwargs):
+        prompt = Path(cmd[cmd.index("--system-prompt-file") + 1]).read_text(encoding="utf-8")
+        calls.append((cmd, kwargs["input"], prompt, kwargs["cwd"]))
+        return SimpleNamespace(returncode=0, stderr="", stdout=json.dumps(
+            {"result": " BILGI_YOK ", "usage": {"input_tokens": 3,
+                                               "output_tokens": 2}}))
+
+    assert split_model("claude-cli:claude-haiku-5-5") == ("claude-cli", "claude-haiku-5-5")
+    cache = tmp_path / "c.jsonl"
+    client = ClaudeCliClient("claude-haiku-5-5", cache=cache, run=run)
+    assert client.complete("satir1\nsatir2", "soru", 100) == "BILGI_YOK"
+    cmd, stdin, prompt, cwd = calls[0]
+    assert prompt == "satir1\nsatir2" and stdin == "soru"
+    assert Path(cwd) != Path.cwd()
+    assert cmd[cmd.index("--tools") + 1] == ""
+    again = ClaudeCliClient("claude-haiku-5-5", cache=cache, run=run)
+    assert again.complete("satir1\nsatir2", "soru", 100) == "BILGI_YOK" and len(calls) == 1
+    assert again.tokens["prompt"] == 3
+
+
 def test_the_openai_provider_follows_openai_base_url(monkeypatch):
     monkeypatch.delenv("OPENAI_BASE_URL", raising=False)
     assert ChatClient("openai", "m", api_key="k").url == (

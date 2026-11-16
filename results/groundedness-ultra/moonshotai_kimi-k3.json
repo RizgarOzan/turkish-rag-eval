@@ -1,0 +1,36 @@
+{
+  "summary": {
+    "queries": 58,
+    "span_retrieved": 33,
+    "span_not_retrieved": 25,
+    "answered_when_retrieved": 1.0,
+    "grounded_when_answered": 1.0,
+    "correct_when_answered": 1.0,
+    "abstained_when_not_retrieved": 0.76,
+    "answered_when_not_retrieved": 0.24,
+    "correct_when_answered_without_span": 0.5,
+    "hallucination_rate": 0.04,
+    "chunking": "hierarchical",
+    "retriever": "bm25_stem5",
+    "k": 5,
+    "answer_model": "nvidia:moonshotai/kimi-k3",
+    "judge_model": "nvidia:nvidia/nemotron-3-ultra-550b-a55b",
+    "temperature": 0,
+    "date": "2026-11-16",
+    "tokens": {
+      "nvidia:moonshotai/kimi-k3": {
+        "prompt": 80600,
+        "completion": 5778,
+        "calls": 58,
+        "seconds": 1600.6
+      },
+      "nvidia:nvidia/nemotron-3-ultra-550b-a55b": {
+        "prompt": 46735,
+        "completion": 19627,
+        "calls": 39,
+        "seconds": 356.0
+      }
+    },
+    "corpus_fingerprint": "sha256:f4588a9b8d13fcc46853ded2d90653a6f8795b189aba80a3fd4488f3dead19c6"
+  }
+}

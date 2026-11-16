@@ -38,6 +38,7 @@ import argparse
 import hashlib
 import json
 import os
+import shutil
 import sys
 import time
 from dataclasses import asdict, dataclass
@@ -118,7 +119,7 @@ def split_model(name: str) -> tuple[str, str]:
     provider, sep, model = name.partition(":")
     if not sep:
         return "anthropic", name
-    if provider not in PROVIDERS:
+    if provider not in PROVIDERS and provider != "claude-cli":
         raise ValueError(f"unknown provider {provider!r}; "
                          f"use one of {sorted(PROVIDERS)} or a bare Claude name")
     return provider, model
@@ -230,6 +231,68 @@ class ChatClient:
             with self.cache.open("a", encoding="utf-8") as f:
                 f.write(json.dumps(entry, ensure_ascii=False) + "\n")
         return text
+
+
+class ClaudeCliClient:
+    """Claude through the ``claude -p`` CLI, for running without an API key.
+
+    Same ``complete`` as ChatClient. Our system prompt replaces Claude Code's,
+    tools and settings are off. Temperature and max_tokens cannot be set here,
+    so results from this route are reported as ``claude-cli:``, not as API runs.
+    """
+
+    def __init__(self, model: str, cache: Path | None = None, run=None):
+        import subprocess
+        self.model = model
+        self.run = run or subprocess.run
+        self.tokens = {"prompt": 0, "completion": 0, "calls": 0, "seconds": 0.0}
+        self.cache, self.cached = cache, {}
+        if cache and cache.exists():
+            for line in cache.read_text(encoding="utf-8").splitlines():
+                entry = json.loads(line)
+                self.cached[entry["key"]] = entry
+
+    def complete(self, system: str, user: str, max_tokens: int) -> str:
+        key = hashlib.sha256(json.dumps(["claude-cli", self.model, system, user],
+                                        ensure_ascii=False).encode("utf-8")).hexdigest()
+        if key in self.cached:
+            entry = self.cached[key]
+        else:
+            import tempfile
+            started = time.monotonic()
+            # The prompt goes in a file: on Windows claude.cmd runs through
+            # cmd.exe, which cuts a multi-line argument at the first newline.
+            # An empty cwd keeps the repo's git state out of the session.
+            with tempfile.TemporaryDirectory() as tmp:
+                prompt_file = Path(tmp) / "system.txt"
+                prompt_file.write_text(system, encoding="utf-8")
+                done = self.run(
+                    # Windows does not resolve claude.cmd/.exe from a bare name.
+                    [shutil.which("claude") or "claude", "-p", "--model", self.model,
+                     "--system-prompt-file", str(prompt_file),
+                     "--tools", "", "--setting-sources", "",
+                     "--no-session-persistence", "--output-format", "json"],
+                    input=user, capture_output=True, text=True, encoding="utf-8",
+                    timeout=600, cwd=tmp)
+            data = json.loads(done.stdout or "{}")
+            if done.returncode or data.get("is_error") or not data.get("result"):
+                raise RuntimeError(f"claude-cli:{self.model}: {(done.stdout or done.stderr)[:300]}")
+            usage = data.get("usage") or {}
+            entry = {"key": key, "text": data["result"].strip(),
+                     "seconds": round(time.monotonic() - started, 1),
+                     "usage": {"prompt_tokens": (usage.get("input_tokens") or 0)
+                               + (usage.get("cache_creation_input_tokens") or 0)
+                               + (usage.get("cache_read_input_tokens") or 0),
+                               "completion_tokens": usage.get("output_tokens")}}
+            self.cached[key] = entry
+            if self.cache:
+                with self.cache.open("a", encoding="utf-8") as f:
+                    f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+        self.tokens["prompt"] += entry["usage"].get("prompt_tokens") or 0
+        self.tokens["completion"] += entry["usage"].get("completion_tokens") or 0
+        self.tokens["calls"] += 1
+        self.tokens["seconds"] = round(self.tokens["seconds"] + entry["seconds"], 1)
+        return entry["text"]
 
 
 def user_prompt(question: str, chunks: list[dict]) -> str:
@@ -464,8 +527,8 @@ def build_models(args):
     """(generator, judge, chat clients) for the two model names, or an error."""
     providers = {split_model(name)[0]
                  for name in (args.answer_model, args.judge_model)}
-    for provider in providers:
-        env = "ANTHROPIC_API_KEY" if provider == "anthropic" else PROVIDERS[provider][1]
+    for provider in providers - {"claude-cli"}:
+        env ="ANTHROPIC_API_KEY" if provider == "anthropic" else PROVIDERS[provider][1]
         if not os.environ.get(env):
             return f"{env} gerekli - bu komut bir üretici ve bir jüri modeli çağırır."
 
@@ -485,6 +548,10 @@ def build_models(args):
         provider, model = split_model(name)
         if provider == "anthropic":
             parts.append(anthropic_cls(anthropic_client, model))
+        elif provider == "claude-cli":
+            client = clients.setdefault(name, ClaudeCliClient(
+                model, cache=args.out.with_suffix(".cache.jsonl")))
+            parts.append(chat_cls(client))
         else:
             client = clients.setdefault(name, ChatClient(
                 provider, model, cache=args.out.with_suffix(".cache.jsonl")))
