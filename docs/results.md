@@ -87,6 +87,35 @@ switch for that, so it runs with a 16k token budget (at 4k some answers came
 back empty). Per-model summaries sit in
 [`results/groundedness/`](https://github.com/RizgarOzan/turkish-rag-eval/tree/main/results/groundedness).
 
+#### Re-judged with nemotron-3-ultra, plus Claude
+
+NVIDIA retired `nemotron-3-super-120b-a12b` on 2026-10-03, so the runs above
+can no longer be re-scored with their judge. I re-judged all five from their
+cached answers with `nvidia:nvidia/nemotron-3-ultra-550b-a55b` at temperature 0
+(`2026-11-16`) and added Claude Haiku 5.5, Sonnet 5.5 and Opus 5.5 through the
+`claude-cli:` route. The CLI has no temperature setting, so the three Claude
+rows ran at its default and aren't strictly comparable to the others. Their
+summary files still say `"temperature": 0`; for these three that holds for the
+judge only.
+
+| generator | answered (span retrieved, 33) | rests on the passages | conveys the span | declined (span missing, 25) | hallucinated |
+|---|---|---|---|---|---|
+| `claude-cli:claude-haiku-5-5` | 100.0% | 97.0% | 97.0% | 80.0% | 0.0% (0/25) |
+| `claude-cli:claude-sonnet-5-5` | 100.0% | 100.0% | 100.0% | 80.0% | 0.0% (0/25) |
+| `groq:qwen/qwen3.8-27b` | 97.0% | 100.0% | 96.9% | 80.0% | 0.0% (0/25) |
+| `nvidia:z-ai/glm-5.3-flash` | 100.0% | 97.0% | 100.0% | 76.0% | 0.0% (0/25) |
+| `claude-cli:claude-opus-5-5` | 100.0% | 100.0% | 100.0% | 80.0% | 4.0% (1/25) |
+| `groq:openai/gpt-oss-120b` | 93.9% | 96.8% | 90.3% | 80.0% | 4.0% (1/25) |
+| `nvidia:moonshotai/kimi-k3` | 100.0% | 100.0% | 100.0% | 76.0% | 4.0% (1/25) |
+| `groq:openai/gpt-oss-20b` | 90.9% | 96.7% | 93.3% | 76.0% | 12.0% (3/25) |
+
+The answers are the same as before; only the judge changed. Declining didn't
+move, because that column doesn't use the judge. Hallucination did: GLM went
+from 1/25 to 0/25 and gpt-oss-20b from 2/25 to 3/25. So a one-answer swing
+can come from the judge alone, which is one more reason not to rank models on
+25 questions. gpt-oss-20b is last under both judges. Summaries are in
+[`results/groundedness-ultra/`](https://github.com/RizgarOzan/turkish-rag-eval/tree/main/results/groundedness-ultra).
+
 This row depends on hosted APIs and cannot be reproduced offline; the models
 may change behind the same name. Only the rates are committed
 ([`results/groundedness.json`](https://github.com/RizgarOzan/turkish-rag-eval/blob/main/results/groundedness.json)) —
