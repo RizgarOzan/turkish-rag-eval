@@ -1,0 +1,737 @@
+[
+  {
+    "qid": "llm-astronomi-001",
+    "question": "Who discovered the two small moons of the Red Planet?",
+    "doc_id": "1562",
+    "doc_title": "Mars",
+    "answer_span": "Mars'ın 1877 yılında astronom Asaph Hall tarafından keşfedilen Phobos ve Deimos adları verilmiş",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Mars'ın 1877 yılında astronom Asaph Hall tarafından keşfedilen Phobos ve Deimos adları verilmiş, düzensiz biçimli iki küçük uydusu vardır."
+    },
+    "review": "agreed",
+    "question_tr": "Kızıl Gezegen'in iki küçük uydusunu kim bulmuştur?"
+  },
+  {
+    "qid": "llm-astronomi-002",
+    "question": "If the ice at the South Pole melted completely, how deep would the layer of water covering the planet be?",
+    "doc_id": "1562",
+    "doc_title": "Mars",
+    "answer_span": "oluşacak bu okyanusun derinliğinin 11 m. olacağının hesaplandığını açıkladı",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "güney kutbu bölgesindeki su buzlarının erimeleri halinde suların gezegenin tüm yüzeyini kaplayacağını ve oluşacak bu okyanusun derinliğinin 11 m. olacağının hesaplandığını açıkladı"
+    },
+    "review": "agreed",
+    "question_tr": "Güney kutbundaki buzlar tamamen erise gezegeni kaplayacak su tabakası ne kadar derin olurdu?"
+  },
+  {
+    "qid": "llm-astronomi-003",
+    "question": "What is known about the size of the iron-rich core at the center of the Red Planet?",
+    "doc_id": "1562",
+    "doc_title": "Mars",
+    "answer_span": "yarıçapı yaklaşık 1480 km olan bir çekirdek bölgesi içerir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "esas olarak demir ve % 14-17 civarında sülfürden oluşan, yarıçapı yaklaşık 1480 km olan bir çekirdek bölgesi içerir."
+    },
+    "review": "agreed",
+    "question_tr": "Kızıl gezegenin merkezindeki demirce zengin iç kısmın büyüklüğü hakkında ne biliniyor?"
+  },
+  {
+    "qid": "llm-astronomi-004",
+    "question": "On average, how many kilometers deep does the planet's outer layer extend?",
+    "doc_id": "1562",
+    "doc_title": "Mars",
+    "answer_span": "Gezegenin kabuğunun ortalama kalınlığı 50 km olup, azami kalınlığı 120 km civarındadır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Gezegenin kabuğunun ortalama kalınlığı 50 km olup, azami kalınlığı 120 km civarındadır."
+    },
+    "review": "agreed",
+    "question_tr": "Gezegenin dış katmanı ortalamada kaç kilometre derinliğe iner?"
+  },
+  {
+    "qid": "llm-astronomi-005",
+    "question": "On what date was the event in which ice blocks rolled down from a cliff caught on camera?",
+    "doc_id": "1562",
+    "doc_title": "Mars",
+    "answer_span": "19 Şubat 2008'de Mars'ta muhteşem bir çığ meydana geldi",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "19 Şubat 2008'de Mars'ta muhteşem bir çığ meydana geldi."
+    },
+    "review": "agreed",
+    "question_tr": "Bir uçurumdan buz bloklarının yuvarlandığı olay hangi tarihte kameraya yakalandı?"
+  },
+  {
+    "qid": "llm-astronomi-006",
+    "question": "Where does the planet's oldest geological era get its name?",
+    "doc_id": "1562",
+    "doc_title": "Mars",
+    "answer_span": "Devre bu ad, Mars'ın güney yarımküresindeki bir bölgenin Nuh'un Toprağı (Noachis Terra) olarak adlandırılması nedeniyle verilmiştir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Devre bu ad, Mars'ın güney yarımküresindeki bir bölgenin Nuh'un Toprağı (Noachis Terra) olarak adlandırılması nedeniyle verilmiştir."
+    },
+    "review": "agreed",
+    "question_tr": "Gezegenin en eski jeolojik dönemi adını nereden alır?"
+  },
+  {
+    "qid": "llm-astronomi-007",
+    "question": "How many years does a gas giant take to complete one orbit around its star?",
+    "doc_id": "7033",
+    "doc_title": "Jüpiter",
+    "answer_span": "bir turunu 11,86 yılda tamamlar",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "11,86 yılda"
+    },
+    "review": "agreed",
+    "question_tr": "Gaz devi yıldızın çevresindeki bir turunu kaç yılda bitirir?"
+  },
+  {
+    "qid": "llm-astronomi-008",
+    "question": "Which planets is Ganymede larger than?",
+    "doc_id": "7033",
+    "doc_title": "Jüpiter",
+    "answer_span": "Bu uydular arasında en büyüğü olan Ganymede, Merkür gezegeninden daha büyüktür",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Merkür gezegeninden daha büyüktür"
+    },
+    "review": "agreed",
+    "question_tr": "Ganymede hangi gezegenden daha iridir?"
+  },
+  {
+    "qid": "llm-astronomi-009",
+    "question": "The radiation emitted by the giant planet was measured to be how many times what it receives from its star?",
+    "doc_id": "7033",
+    "doc_title": "Jüpiter",
+    "answer_span": "Jüpiter'in Güneş'ten aldığı enerjinin 2,3 katı kadarını dışarı yaydığı görülür",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "2,3 katı"
+    },
+    "review": "agreed",
+    "question_tr": "Dev gezegenin dışarı yaydığı ışınım, yıldızından edindiğinin kaç misli ölçülmüştür?"
+  },
+  {
+    "qid": "llm-astronomi-010",
+    "question": "What is the rotation period called System I, in hours and minutes?",
+    "doc_id": "7033",
+    "doc_title": "Jüpiter",
+    "answer_span": "Ekvator bölgelerinin dönüşü 9 saat 50 dakika 30 saniyede tamamlanır ve Sistem I olarak adlandırılır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "9 saat 50 dakika 30 saniyede"
+    },
+    "review": "agreed",
+    "question_tr": "Sistem I diye anılan dönme süresi kaç saat kaç dakikadır?"
+  },
+  {
+    "qid": "llm-astronomi-011",
+    "question": "Based on the measurements from the latest space probe, how far out does the blurry heavy region at the center extend?",
+    "doc_id": "7033",
+    "doc_title": "Jüpiter",
+    "answer_span": "Juno misyonu verilerine göre bu dağınık çekirdek, gezegen yarıçapının %30 ila %50'sine kadar yayılmakta",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "gezegen yarıçapının %30 ila %50'sine kadar"
+    },
+    "review": "agreed",
+    "question_tr": "Son uzay sondasının ölçümlerine bakılırsa merkezdeki bulanık ağır bölge ne kadar dışarıya uzanıyor?"
+  },
+  {
+    "qid": "llm-astronomi-012",
+    "question": "Since which year has the planet's best-known giant storm been recorded?",
+    "doc_id": "7033",
+    "doc_title": "Jüpiter",
+    "answer_span": "1831'den beri kayıtlara geçmiş devasa bir fırtına olan Büyük Kırmızı Leke'dir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "1831'den beri"
+    },
+    "review": "agreed",
+    "question_tr": "Gezegenin en bilinen dev fırtınası hangi yıldan beri kayıtlarda yer alıyor?"
+  },
+  {
+    "qid": "llm-astronomi-013",
+    "question": "What is the average specific gravity of the ringed gas giant?",
+    "doc_id": "5986",
+    "doc_title": "Satürn",
+    "answer_span": "gezegenin ortalama özgül yoğunluğu 0,69 g/cm3'tür",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "gezegenin ortalama özgül yoğunluğu 0,69 g/cm3'tür"
+    },
+    "review": "agreed",
+    "question_tr": "Halkalı gaz devinin ortalama özgül ağırlığı nedir?"
+  },
+  {
+    "qid": "llm-astronomi-014",
+    "question": "How long is each side of the hexagonal structure at the north pole?",
+    "doc_id": "5986",
+    "doc_title": "Satürn",
+    "answer_span": "Altıgenin kenarlarının her biri yaklaşık 14.500 km (9.000 mi) uzunluğundadır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Altıgenin kenarlarının her biri yaklaşık 14.500 km (9.000 mi) uzunluğundadır"
+    },
+    "review": "agreed",
+    "question_tr": "Kuzey kutbundaki altıgen yapının her bir kenarı ne uzunluktadır?"
+  },
+  {
+    "qid": "llm-astronomi-015",
+    "question": "What is the average thickness of the rings?",
+    "doc_id": "5986",
+    "doc_title": "Satürn",
+    "answer_span": "ortalama kalınlıkları yaklaşık 20 metre (66 ft)",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "ortalama kalınlıkları yaklaşık 20 metre (66 ft)"
+    },
+    "review": "agreed",
+    "question_tr": "Halkaların ortalama kalınlığı ne kadardır?"
+  },
+  {
+    "qid": "llm-astronomi-016",
+    "question": "How many times the energy it receives from the Sun does the planet radiate back into space?",
+    "doc_id": "5986",
+    "doc_title": "Satürn",
+    "answer_span": "uzaya Güneş'ten aldığından 2,5 kat daha fazla enerji yaymaktadır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "uzaya Güneş'ten aldığından 2,5 kat daha fazla enerji yaymaktadır"
+    },
+    "review": "agreed",
+    "question_tr": "Gezegen Güneş'ten aldığı enerjinin kaç katını uzaya geri salar?"
+  },
+  {
+    "qid": "llm-astronomi-017",
+    "question": "How powerful is lightning on Saturn compared to lightning on Earth?",
+    "doc_id": "5986",
+    "doc_title": "Satürn",
+    "answer_span": "Şimşeklerin gücü, Dünya'daki şimşeklerin yaklaşık 1.000 katıdır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Şimşeklerin gücü, Dünya'daki şimşeklerin yaklaşık 1.000 katıdır"
+    },
+    "review": "agreed",
+    "question_tr": "Satürn'deki şimşekler Dünya'dakilere kıyasla ne kadar güçlüdür?"
+  },
+  {
+    "qid": "llm-astronomi-018",
+    "question": "The team that found the rings' age to be very young suggested which lost celestial body they were left over from?",
+    "doc_id": "5986",
+    "doc_title": "Satürn",
+    "answer_span": "halkaların Satürn'ün ″Chrysalis″ adlı yok olmuş bir uydusunun kalıntısı olduğunu öne sürdü",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Satürn'ün ″Chrysalis″ adlı yok olmuş bir uydusunun kalıntısı olduğunu"
+    },
+    "review": "agreed",
+    "question_tr": "Halkaların yaşını çok genç bulan ekip, onların hangi kayıp gökcisminden kaldığını öne sürdü?"
+  },
+  {
+    "qid": "llm-astronomi-019",
+    "question": "Why is the second planet closest to the Sun the hottest planet?",
+    "doc_id": "1911",
+    "doc_title": "Venüs",
+    "answer_span": "atmosferinin gelen güneş ışınlarının dışarı çıkmasına izin vermemesidir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "atmosferinin gelen güneş ışınlarının dışarı çıkmasına izin vermemesidir"
+    },
+    "review": "agreed",
+    "question_tr": "Güneş'e en yakın ikinci gezegen neden en sıcak gezegendir?"
+  },
+  {
+    "qid": "llm-astronomi-020",
+    "question": "What is the oldest astronomical document that mentions observations of the planet?",
+    "doc_id": "1911",
+    "doc_title": "Venüs",
+    "answer_span": "Ammi-Şaduqa Venüs tabletinde Babillilerin MÖ 1700-1400 yılları arasında yaptıkları Venüs gözlemlerinden söz edilir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Ammi-Şaduqa Venüs tabletinde"
+    },
+    "review": "agreed",
+    "question_tr": "Gezegenin gözlemlerinden söz eden en eski gökbilim belgesi hangisidir?"
+  },
+  {
+    "qid": "llm-astronomi-021",
+    "question": "Who was the first to propose that the planet has an atmosphere?",
+    "doc_id": "1911",
+    "doc_title": "Venüs",
+    "answer_span": "1761'de Rus gök bilimci Mihail Vasilyeviç Lomonosov, Venüs'ün Güneş geçişi sırasında gezegenin kenar çizgisindeki düzensizliği fark ederek bunun bir atmosferin varlığını gösterdiğini öne sürdü",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Rus gök bilimci Mihail Vasilyeviç Lomonosov, Venüs'ün Güneş geçişi sırasında gezegenin kenar çizgisindeki düzensizliği fark ederek bunun bir atmosferin varlığını gösterdiğini öne sürdü."
+    },
+    "review": "agreed",
+    "question_tr": "Gezegenin bir atmosferi olduğunu ilk kim öne sürdü?"
+  },
+  {
+    "qid": "llm-astronomi-022",
+    "question": "By what method was it determined that the main gas of the atmosphere is carbon dioxide?",
+    "doc_id": "1911",
+    "doc_title": "Venüs",
+    "answer_span": "kızılötesi tayfölçüm ile Venüs atmosferinin temel bileşeninin karbon dioksit olduğunu öğrendiler",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "kızılötesi tayfölçüm ile Venüs atmosferinin temel bileşeninin karbon dioksit olduğunu öğrendiler"
+    },
+    "review": "agreed",
+    "question_tr": "Atmosferin ana gazının karbondioksit olduğu hangi yöntemle anlaşıldı?"
+  },
+  {
+    "qid": "llm-astronomi-023",
+    "question": "What did the first successful probe to reach this planet find about its surface temperature?",
+    "doc_id": "1911",
+    "doc_title": "Venüs",
+    "answer_span": "Venüs yüzeyinin 425°C'den sıcak olduğunu, bulut tepelerinde ise sıcaklığın düşük olduğunu saptadı",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Venüs yüzeyinin 425°C'den sıcak olduğunu, bulut tepelerinde ise sıcaklığın düşük olduğunu saptadı"
+    },
+    "review": "agreed",
+    "question_tr": "Bu gezegene ulaşan ilk başarılı sonda yüzey sıcaklığı hakkında ne buldu?"
+  },
+  {
+    "qid": "llm-astronomi-024",
+    "question": "What temperature and pressure did the first probe that landed on the surface in working condition measure there?",
+    "doc_id": "1911",
+    "doc_title": "Venüs",
+    "answer_span": "Gezegen yüzeyinde atmosfer sıcaklığının 475 °C, basıncın ise 90 atmosfer olduğunu saptadı",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Gezegen yüzeyinde atmosfer sıcaklığının 475 °C, basıncın ise 90 atmosfer olduğunu saptadı."
+    },
+    "review": "agreed",
+    "question_tr": "Yüzeye çalışır halde inen ilk araç orada hangi sıcaklık ve basıncı ölçtü?"
+  },
+  {
+    "qid": "llm-astronomi-025",
+    "question": "Who is the astronomer who observed the ice giant in 1612 but thought it was a star?",
+    "doc_id": "6011",
+    "doc_title": "Neptün",
+    "answer_span": "Galileo iki seferde de, Neptün'ü hareketsiz görüntüsünden dolayı bir yıldız olarak değerlendirmiştir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Galileo'nun çizimlerine göre o, Neptün'ü 28 Aralık 1612 ve 27 Ocak 1613'te gözlemlemiş. Ama Galileo iki seferde de, Neptün'ü hareketsiz görüntüsünden dolayı bir yıldız olarak değerlendirmiştir."
+    },
+    "review": "agreed",
+    "question_tr": "Buz devini 1612'de gözlemleyen ama onu yıldız sanan gökbilimci kimdir?"
+  },
+  {
+    "qid": "llm-astronomi-026",
+    "question": "How close to the calculated position was the eighth planet found?",
+    "doc_id": "6011",
+    "doc_title": "Neptün",
+    "answer_span": "Neptün, Le Verrier'in tahmin ettiği yerin sadece 1°(Adams'ın tahmininin ise 12° yakınında) uzağında keşfedildi",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Neptün, Le Verrier'in tahmin ettiği yerin sadece 1°(Adams'ın tahmininin ise 12° yakınında) uzağında keşfedildi"
+    },
+    "review": "agreed",
+    "question_tr": "Sekizinci gezegen, hesaplanan konumun ne kadar yakınında bulundu?"
+  },
+  {
+    "qid": "llm-astronomi-027",
+    "question": "Between which years was Pluto closer to the Sun than the eighth planet?",
+    "doc_id": "6011",
+    "doc_title": "Neptün",
+    "answer_span": "Plüton'un eliptik yörüngesinin onu Güneş'e Neptün'den yaklaştırdığı 1979 ile 1999 arasındaki 20 yıllık bir dönem",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Plüton'un eliptik yörüngesinin onu Güneş'e Neptün'den yaklaştırdığı 1979 ile 1999 arasındaki 20 yıllık bir dönem"
+    },
+    "review": "agreed",
+    "question_tr": "Plüton hangi yıllar arasında Güneş'e sekizinci gezegenden daha yakındı?"
+  },
+  {
+    "qid": "llm-astronomi-028",
+    "question": "What does methane turn into in the depths of the blue ice giant?",
+    "doc_id": "6011",
+    "doc_title": "Neptün",
+    "answer_span": "7000 km derinlikten itibaren çekirdeğe kadar ortam koşulları öyle bir hal alır ki metan, elmas kristallerine ayrışır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "7000 km derinlikten itibaren çekirdeğe kadar ortam koşulları öyle bir hal alır ki metan, elmas kristallerine ayrışır."
+    },
+    "review": "agreed",
+    "question_tr": "Mavi buz devinin derinliklerinde metan neye dönüşür?"
+  },
+  {
+    "qid": "llm-astronomi-029",
+    "question": "The planet farthest from the Sun emits how many times the solar energy it receives?",
+    "doc_id": "6011",
+    "doc_title": "Neptün",
+    "answer_span": "Uranüs'ün yaydığı enerji, Güneş'ten aldığı enerjiye göre sadece 1.1 kat fazladır bununla birlikte bu oran Neptün'de 2.61'dir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "bu oran Neptün'de 2.61'dir"
+    },
+    "review": "agreed",
+    "question_tr": "Güneş'ten en uzak gezegen, aldığı güneş enerjisinin kaç katını yayar?"
+  },
+  {
+    "qid": "llm-astronomi-030",
+    "question": "What feature of Triton suggests that it was captured by the planet later?",
+    "doc_id": "6011",
+    "doc_title": "Neptün",
+    "answer_span": "İstisnai olarak, Güneş Sistemi'ndeki diğer tüm uydulara göre ters yönde bir yörüngeye sahiptir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "İstisnai olarak, Güneş Sistemi'ndeki diğer tüm uydulara göre ters yönde bir yörüngeye sahiptir. Bu özelliği onun olduğu yerde oluşmadığını, Neptün tarafından yakalandığını gösteriyor."
+    },
+    "review": "agreed",
+    "question_tr": "Triton'un gezegen tarafından sonradan yakalandığını düşündüren özelliği nedir?"
+  },
+  {
+    "qid": "llm-astronomi-031",
+    "question": "Why do the poles of the seventh planet stay continuously lit or dark for decades at a time?",
+    "doc_id": "8640",
+    "doc_title": "Uranüs",
+    "answer_span": "Gezegenin 82,23°'lik belirgin bir eksenel eğimi ve 17 saat 14 dakikalık bir geriye dönüş periyodu vardır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Gezegenin 82,23°'lik belirgin bir eksenel eğimi ve 17 saat 14 dakikalık bir geriye dönüş periyodu vardır. Bu, Güneş etrafındaki 84 Dünya yıllık bir yörünge döneminde kutuplarının yaklaşık 42 yıl sürekli güneş ışığı aldığı ve ardından 42 yıl sürekli karanlık olduğu anlamına gelir."
+    },
+    "review": "agreed",
+    "question_tr": "Yedinci gezegenin kutupları neden onlarca yıl kesintisiz aydınlık ya da karanlık kalır?"
+  },
+  {
+    "qid": "llm-astronomi-032",
+    "question": "Who was the first to show that the object Herschel found was not a comet, and on what basis?",
+    "doc_id": "8640",
+    "doc_title": "Uranüs",
+    "answer_span": "Rusya'da çalışan Fin-İsveçli astronom Anders Johan Lexell, yeni cismin yörüngesini hesaplayan ilk kişi oldu. Neredeyse dairesel olan yörüngesi onu bu cismin bir kuyruklu yıldızdan ziyade bir gezegen olduğu sonucuna götürdü.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Rusya'da çalışan Fin-İsveçli astronom Anders Johan Lexell, yeni cismin yörüngesini hesaplayan ilk kişi oldu. Neredeyse dairesel olan yörüngesi onu bu cismin bir kuyruklu yıldızdan ziyade bir gezegen olduğu sonucuna götürdü."
+    },
+    "review": "agreed",
+    "question_tr": "Herschel'in bulduğu cismin kuyruklu yıldız olmadığını ilk kim, neye dayanarak gösterdi?"
+  },
+  {
+    "qid": "llm-astronomi-033",
+    "question": "After the discovery, under what condition and how much did the ruler pay the astronomer?",
+    "doc_id": "8640",
+    "doc_title": "Uranüs",
+    "answer_span": "Herschel'e, Kraliyet Ailesi'nin teleskoplarına bakabilmesi için Windsor'a taşınması şartıyla yıllık 200 sterlin (2023'te 30.000 sterline eşdeğer) maaş bağladı.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Bu başarısından dolayı Kral III. George, Herschel'e, Kraliyet Ailesi'nin teleskoplarına bakabilmesi için Windsor'a taşınması şartıyla yıllık 200 sterlin (2023'te 30.000 sterline eşdeğer) maaş bağladı."
+    },
+    "review": "agreed",
+    "question_tr": "Keşiften sonra hükümdar gökbilimciye hangi şartla ne kadar ödeme yaptı?"
+  },
+  {
+    "qid": "llm-astronomi-034",
+    "question": "What discovery did the ice giant's deviation from its calculated path lead to?",
+    "doc_id": "8640",
+    "doc_title": "Uranüs",
+    "answer_span": "Johann Gottfried Galle, 23 Eylül 1846'da, Le Verrier'nin öngördüğü konuma yakın bir yerde, daha sonra Neptün adını alacak olan yeni bir gezegen tespit etti.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Zamanla, tahmin edilen ve gözlemlenen yörüngeler arasında tutarsızlıklar ortaya çıkmaya başladı ve 1841'de John Couch Adams ilk olarak farklılıkların görünmeyen bir gezegenin yerçekimsel çekiminden kaynaklanabileceğini öne sürdü. 1845 yılında Urbain Le Verrier, Uranüs'ün yörüngesi üzerine kendi bağımsız araştırmasına başladı. Johann Gottfried Galle, 23 Eylül 1846'da, Le Verrier'nin öngördüğü konuma yakın bir yerde, daha sonra Neptün adını alacak olan yeni bir gezegen tespit etti."
+    },
+    "review": "agreed",
+    "question_tr": "Buz devinin hesaplanan yolundan sapması hangi keşfe götürdü?"
+  },
+  {
+    "qid": "llm-astronomi-035",
+    "question": "Even though the poles receive more solar energy, what is observed in the temperature distribution?",
+    "doc_id": "8640",
+    "doc_title": "Uranüs",
+    "answer_span": "Buna rağmen Uranüs'ün ekvatoru kutuplarından daha sıcaktır. Bu duruma sebep olan mekanizma ise bilinmemektedir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Bu eksen eğikliğinin bir sonucu olarak kutup bölgeleri, Uranüs yılı boyunca ekvator bölgelerine kıyasla ortalama olarak Güneş'ten daha fazla enerji alır. Buna rağmen Uranüs'ün ekvatoru kutuplarından daha sıcaktır. Bu duruma sebep olan mekanizma ise bilinmemektedir."
+    },
+    "review": "agreed",
+    "question_tr": "Kutuplar daha fazla güneş enerjisi almasına rağmen sıcaklık dağılımında ne gözleniyor?"
+  },
+  {
+    "qid": "llm-astronomi-036",
+    "question": "If the main moons of the seventh planet were combined, how heavy would they be compared to Triton?",
+    "doc_id": "8640",
+    "doc_title": "Uranüs",
+    "answer_span": "Uranüs uydu sistemi dev gezegenler arasında en az kütleye sahip olanıdır; beş ana uydunun toplam kütlesi tek başına Triton'un (Neptün'ün en büyük uydusu) kütlesinin yarısından daha azdır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Uranüs uydu sistemi dev gezegenler arasında en az kütleye sahip olanıdır; beş ana uydunun toplam kütlesi tek başına Triton'un (Neptün'ün en büyük uydusu) kütlesinin yarısından daha azdır."
+    },
+    "review": "agreed",
+    "question_tr": "Yedinci gezegenin başlıca ayları bir araya gelse Triton'a göre ne kadar ağır olur?"
+  },
+  {
+    "qid": "llm-astronomi-037",
+    "question": "Why did the 1962 radiation measurements disprove the idea that one side of the planet stays in permanent darkness?",
+    "doc_id": "4288",
+    "doc_title": "Merkür",
+    "answer_span": "Merkür'ün gece yüzünün hiçbir zaman güneş ışığı almayan bir yüzeyden beklendiği kadar soğuk olmadığını, bu nedenle 88 günlük dönüş süresi iddialarının akla yakın olmadığını ileri sürdü.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "1962 yılında Michigan Üniversitesinden W.E. Howard, gezegenin kızılötesi ve radyo ışınımları ölçümlerine dayanarak Merkür'ün gece yüzünün hiçbir zaman güneş ışığı almayan bir yüzeyden beklendiği kadar soğuk olmadığını, bu nedenle 88 günlük dönüş süresi iddialarının akla yakın olmadığını ileri sürdü."
+    },
+    "review": "agreed",
+    "question_tr": "1962'deki ışınım ölçümleri, gezegenin tek yüzünün sürekli karanlıkta kaldığı düşüncesini neden çürüttü?"
+  },
+  {
+    "qid": "llm-astronomi-038",
+    "question": "Why was it only able to map nearly half of the planet by the end of the 1970s?",
+    "doc_id": "4288",
+    "doc_title": "Merkür",
+    "answer_span": "Ancak sondanın her geçişinde Merkür aynı konumda bulunduğundan, yüzeyin ancak yarıya yakın bölümü haritalanabildi.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Ancak sondanın her geçişinde Merkür aynı konumda bulunduğundan, yüzeyin ancak yarıya yakın bölümü haritalanabildi."
+    },
+    "review": "agreed",
+    "question_tr": "1970'lerdeki sonda gezegenin neden ancak yarısına yakınının haritasını çıkarabildi?"
+  },
+  {
+    "qid": "llm-astronomi-039",
+    "question": "Why can't the planet closest to the Sun hold on to a thick atmosphere?",
+    "doc_id": "4288",
+    "doc_title": "Merkür",
+    "answer_span": "Bu düzeydeki bir çekim gücü, gezegen yüzeyindeki 400 °C'yi aşan sıcaklıklar karşısında gazların uzaya kaçmasına engel olamayacak denli güçsüzdür.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Merkür'ün yüzeydeki kurtulma hızı gezegenin düşük kütlesi nedeniyle Dünya'nın ancak %40'ı kadardır. Bu düzeydeki bir çekim gücü, gezegen yüzeyindeki 400 °C'yi aşan sıcaklıklar karşısında gazların uzaya kaçmasına engel olamayacak denli güçsüzdür."
+    },
+    "review": "agreed",
+    "question_tr": "Güneş'e en yakın gezegen kalın bir hava tabakasını neden tutamaz?"
+  },
+  {
+    "qid": "llm-astronomi-040",
+    "question": "How often, and in which months, can a planet's transit across the Sun's disk be observed?",
+    "doc_id": "4288",
+    "doc_title": "Merkür",
+    "answer_span": "Merkür yörüngesinin tutulum düzlemini kestiği noktalar, yani yörüngenin çıkan ve inen düğümleri ile Güneş ve Dünya'nın düz bir çizgi üzerinde yer almasını gerektiren bu durum her yüzyılda 12-14 kez ve yalnız Mayıs ve Kasım ayları içinde gözlenir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Merkür yörüngesinin tutulum düzlemini kestiği noktalar, yani yörüngenin çıkan ve inen düğümleri ile Güneş ve Dünya'nın düz bir çizgi üzerinde yer almasını gerektiren bu durum her yüzyılda 12-14 kez ve yalnız Mayıs ve Kasım ayları içinde gözlenir."
+    },
+    "review": "agreed",
+    "question_tr": "Gezegenin Güneş diski önünden geçişi ne sıklıkla ve hangi aylarda izlenebilir?"
+  },
+  {
+    "qid": "llm-astronomi-041",
+    "question": "What names did the ancient Greeks use for this celestial object seen at dawn and dusk?",
+    "doc_id": "4288",
+    "doc_title": "Merkür",
+    "answer_span": "Eski Yunan'da sabah yıldızı olarak görüldüğünde Hermes, akşam yıldızı olarak görüldüğünde ise Apollo olmak üzere iki ayrı ad taşımaktaydı.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Eski Yunan'da sabah yıldızı olarak görüldüğünde Hermes, akşam yıldızı olarak görüldüğünde ise Apollo olmak üzere iki ayrı ad taşımaktaydı."
+    },
+    "review": "agreed",
+    "question_tr": "Antik Yunanlar şafakta ve alacakaranlıkta görülen bu gökcismini hangi adlarla anıyordu?"
+  },
+  {
+    "qid": "llm-astronomi-042",
+    "question": "If the core is too cold to hold liquid iron, what could be the source of today's magnetism?",
+    "doc_id": "4288",
+    "doc_title": "Merkür",
+    "answer_span": "Bu nedenle, bugün gözlenen manyetik alanın gezegen içindeki aktif bir manyetik dinamo tarafından sağlanmak yerine, çok önceleri mıknatıslanmış olan katı haldeki çekirdek tarafından sürdürüldüğü görüşü ortaya atılmıştır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Küçük bir gezegen olan Merkür'ün çekirdek sıcaklığının bir manyetik alan oluşturmak için gerekli olan sıvı demir kütlesini barındırmaya izin vermeyecek kadar düşük olduğu düşünülmektedir. Bu nedenle, bugün gözlenen manyetik alanın gezegen içindeki aktif bir manyetik dinamo tarafından sağlanmak yerine, çok önceleri mıknatıslanmış olan katı haldeki çekirdek tarafından sürdürüldüğü görüşü ortaya atılmıştır."
+    },
+    "review": "agreed",
+    "question_tr": "Çekirdek sıvı demir barındıramayacak kadar soğuksa bugünkü manyetizmanın kaynağı ne olabilir?"
+  },
+  {
+    "qid": "llm-astronomi-043",
+    "question": "When and why did the braking effect of the tidal bulge on the satellite end?",
+    "doc_id": "4605",
+    "doc_title": "Ay",
+    "answer_span": "Ay'ın dönüşü yörünge hızına denk gelecek kadar yavaşladığında gelgit tümseği Dünya'nın tam karşısına geldi ve bu nedenle tork ortadan kayboldu.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Ay'ın dönüşü yörünge hızına denk gelecek kadar yavaşladığında gelgit tümseği Dünya'nın tam karşısına geldi ve bu nedenle tork ortadan kayboldu."
+    },
+    "review": "agreed",
+    "question_tr": "Gelgit kabarıklığının uyduyu frenleyen etkisi ne zaman ve neden sona erdi?"
+  },
+  {
+    "qid": "llm-astronomi-044",
+    "question": "What is the most plausible explanation for why the dark basalt plains are concentrated almost exclusively on the near side?",
+    "doc_id": "4605",
+    "doc_title": "Ay",
+    "answer_span": "Bu farklılığın en akla yatkın açıklaması, Lunar Prospector uzay sondasının gamma ışını spektrometresi ile elde edilen jeokimyasal haritalarda gösterildiği üzere Ay'ın görünen yüzünde ısı üreten elementlerin daha yüksek konsantrasyonda bulunmasıdır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Bu farklılığın en akla yatkın açıklaması, Lunar Prospector uzay sondasının gamma ışını spektrometresi ile elde edilen jeokimyasal haritalarda gösterildiği üzere Ay'ın görünen yüzünde ısı üreten elementlerin daha yüksek konsantrasyonda bulunmasıdır."
+    },
+    "review": "agreed",
+    "question_tr": "Koyu bazalt düzlüklerin neredeyse yalnız yakın tarafta toplanması en makul biçimde nasıl açıklanıyor?"
+  },
+  {
+    "qid": "llm-astronomi-045",
+    "question": "What makes it possible for frozen water to remain for a long time in some craters near the poles?",
+    "doc_id": "4605",
+    "doc_title": "Ay",
+    "answer_span": "Ancak Ay'ın dönme ekseninin tutulum düzlemine yalnızca 1,5° gibi çok küçük bir eğiklik yapması nedeniyle kutuplar yakınında bulunan bazı derin kraterler hiçbir zaman doğrudan günışığı almadığından ve sürekli gölgede kaldığından buraya düşen su molekülleri uzun zaman süreleri boyunca kararlılığını koruyacak.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Ancak Ay'ın dönme ekseninin tutulum düzlemine yalnızca 1,5° gibi çok küçük bir eğiklik yapması nedeniyle kutuplar yakınında bulunan bazı derin kraterler hiçbir zaman doğrudan günışığı almadığından ve sürekli gölgede kaldığından buraya düşen su molekülleri uzun zaman süreleri boyunca kararlılığını koruyacak."
+    },
+    "review": "agreed",
+    "question_tr": "Kutuplara yakın bazı çukurlarda donmuş suyun uzun süre kalabilmesini ne mümkün kılar?"
+  },
+  {
+    "qid": "llm-astronomi-046",
+    "question": "Why did the interpretation that the radar signal from the 1994 mission was ice become doubtful, and what is known today?",
+    "doc_id": "4605",
+    "doc_title": "Ay",
+    "answer_span": "Ancak son zamanlarda Arecibo gezegen radarı ile yapılan gözlemler, Clementine radarının su buzu bulunduğuna dair işaret ettiği bilgilerin aslında görece yeni kraterlerin oluşumunda fırlayan kayaların sonucu olabileceğini göstermiştir. Ay üzerinde ne kadar su bulunduğu sorusunun cevabı henüz bilinmemektedir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Ancak son zamanlarda Arecibo gezegen radarı ile yapılan gözlemler, Clementine radarının su buzu bulunduğuna dair işaret ettiği bilgilerin aslında görece yeni kraterlerin oluşumunda fırlayan kayaların sonucu olabileceğini göstermiştir. Ay üzerinde ne kadar su bulunduğu sorusunun cevabı henüz bilinmemektedir."
+    },
+    "review": "agreed",
+    "question_tr": "1994 görevinin radar sinyalinin buz olduğu yorumu neden şüpheli hâle geldi ve bugün ne biliniyor?"
+  },
+  {
+    "qid": "llm-astronomi-047",
+    "question": "How does the Moon's slightly elongated shape show how close it once was to Earth?",
+    "doc_id": "4605",
+    "doc_title": "Ay",
+    "answer_span": "Bu 'fosil şişkinlik', Ay'ın Dünya'ya olan mevcut mesafesinin yarısındaki bir yörüngede dönerken katılaştığını ve artık şeklinin yörüngesine uyum sağlayamayacak kadar soğumuş olduğunu gösterir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Bu 'fosil şişkinlik', Ay'ın Dünya'ya olan mevcut mesafesinin yarısındaki bir yörüngede dönerken katılaştığını ve artık şeklinin yörüngesine uyum sağlayamayacak kadar soğumuş olduğunu gösterir."
+    },
+    "review": "agreed",
+    "question_tr": "Uydunun hafifçe uzamış biçimi, geçmişte Dünya'ya ne kadar yakın olduğunu nasıl gösterir?"
+  },
+  {
+    "qid": "llm-astronomi-048",
+    "question": "What obstacle stands in the way of the idea linking crustal magnetization to an old internal dynamo, and what is proposed instead?",
+    "doc_id": "4605",
+    "doc_title": "Ay",
+    "answer_span": "Ancak Ay çekirdeğinin küçüklüğü bu varsayımın doğruluğu karşısında bir engel oluşturmaktadır. Alternatif varsayımlar arasında, Ay gibi havası olmayan gök cisimlerinde süreksiz manyetik alanlar büyük gök cisimlerinin çarpması bulunur.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Ancak Ay çekirdeğinin küçüklüğü bu varsayımın doğruluğu karşısında bir engel oluşturmaktadır. Alternatif varsayımlar arasında, Ay gibi havası olmayan gök cisimlerinde süreksiz manyetik alanlar büyük gök cisimlerinin çarpması bulunur."
+    },
+    "review": "agreed",
+    "question_tr": "Kabuktaki mıknatıslanmayı eski bir iç dinamoya bağlayan fikrin önünde hangi engel var ve yerine ne öneriliyor?"
+  },
+  {
+    "qid": "llm-astronomi-049",
+    "question": "Why is the idea that the Moon formed elsewhere and was later captured by Earth's gravity considered impossible?",
+    "doc_id": "4605",
+    "doc_title": "Ay",
+    "answer_span": "Ancak bu yakalamanın gerçekleşebilmesi için gerekli olan koşulların, örneğin enerjiyi sönümleyebilmek için Dünya'nın geniş bir atmosferinin olması gibi, oluşması mümkün değildi.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Ancak bu yakalamanın gerçekleşebilmesi için gerekli olan koşulların, örneğin enerjiyi sönümleyebilmek için Dünya'nın geniş bir atmosferinin olması gibi, oluşması mümkün değildi."
+    },
+    "review": "agreed",
+    "question_tr": "Uydunun başka yerde oluşup sonradan Dünya'nın çekimine girdiği fikri neden olanaksız sayılır?"
+  }
+]

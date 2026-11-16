@@ -1,0 +1,722 @@
+[
+  {
+    "qid": "llm-cografya-001",
+    "question": "The region's inclusion on UNESCO's protection list dates back to which year?",
+    "doc_id": "5509",
+    "doc_title": "Kapadokya",
+    "answer_span": "Göreme Millî Parkı ve Kapadokya adıyla 1985'te UNESCO tarafından Dünya Mirası ilan edilmiştir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Göreme Millî Parkı ve Kapadokya adıyla 1985'te UNESCO tarafından Dünya Mirası ilan edilmiştir."
+    },
+    "review": "agreed",
+    "question_tr": "UNESCO'nun koruma listesine bölgenin girişi hangi yıla dayanır?"
+  },
+  {
+    "qid": "llm-cografya-002",
+    "question": "Which century and which people left the earliest written records in which the name of the region appears?",
+    "doc_id": "5509",
+    "doc_title": "Kapadokya",
+    "answer_span": "Kapadokya adı en eski M.Ö. 6. yüzyılda Pers kaynaklarında görülür",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Kapadokya adı en eski M.Ö. 6. yüzyılda Pers kaynaklarında görülür."
+    },
+    "review": "agreed",
+    "question_tr": "Bölgenin adına rastlanan en eski yazılı belgeler hangi yüzyıldan ve hangi halktan kalmadır?"
+  },
+  {
+    "qid": "llm-cografya-003",
+    "question": "Who said that the 'land of beautiful horses' comparison attributed to the region was actually invented later?",
+    "doc_id": "5509",
+    "doc_title": "Kapadokya",
+    "answer_span": "Fotoğraf Sanatçısı Ozan Sağdıç, 12 Eylül döneminde generallerin Kapadokya ismini Yunanca olduğu için yasaklayacaklarını öğrenince bu deyimi uydurduğunu açıklamıştır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Fotoğraf Sanatçısı Ozan Sağdıç, 12 Eylül döneminde generallerin Kapadokya ismini Yunanca olduğu için yasaklayacaklarını öğrenince bu deyimi uydurduğunu açıklamıştır."
+    },
+    "review": "agreed",
+    "question_tr": "Bölgeye yakıştırılan 'güzel atların memleketi' benzetmesinin aslında sonradan icat edildiğini kim söyledi?"
+  },
+  {
+    "qid": "llm-cografya-004",
+    "question": "In what year was this local kingdom in Anatolia directly annexed to Roman rule?",
+    "doc_id": "5509",
+    "doc_title": "Kapadokya",
+    "answer_span": "MS 17 yılında son Kapadokya kralı ölünce bölge Roma'nın bir eyaleti olur",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "MS 17 yılında son Kapadokya kralı ölünce bölge Roma'nın bir eyaleti olur."
+    },
+    "review": "agreed",
+    "question_tr": "Anadolu'daki bu yerel krallık Roma yönetimine doğrudan hangi yıl bağlandı?"
+  },
+  {
+    "qid": "llm-cografya-005",
+    "question": "What type of rock are the hat-shaped parts at the top of fairy chimneys made of?",
+    "doc_id": "5509",
+    "doc_title": "Kapadokya",
+    "answer_span": "Böylece sert bazalt kayasından şapkaları bulunan koniler oluştu",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "sert bazalt kayasından şapkaları bulunan koniler oluştu"
+    },
+    "review": "agreed",
+    "question_tr": "Peribacalarının tepesindeki şapka biçimli kısımlar hangi kaya türündendir?"
+  },
+  {
+    "qid": "llm-cografya-006",
+    "question": "According to the patent office's 2020 decision, which settlement is considered the heart of the region?",
+    "doc_id": "5509",
+    "doc_title": "Kapadokya",
+    "answer_span": "Kapadokya'nın merkezinin Ortahisar kasabası olduğu resmen tescil edilmiştir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "2020 yılında Türk Patent ve Marka Kurumu tarafından Kapadokya'nın merkezinin Ortahisar kasabası olduğu resmen tescil edilmiştir."
+    },
+    "review": "agreed",
+    "question_tr": "Patent kurumunun 2020 kararına göre bölgenin kalbi sayılan yerleşim neresidir?"
+  },
+  {
+    "qid": "llm-cografya-007",
+    "question": "What portion of Turkey's highest peak lies within the borders of Iğdır?",
+    "doc_id": "2132",
+    "doc_title": "Ağrı Dağı",
+    "answer_span": "Dağın %65'lik bir kesimi Iğdır ilinde, kalan %35'lik kesimi ise Ağrı ili sınırları içerisindedir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "%65'lik bir kesimi Iğdır ilinde"
+    },
+    "review": "agreed",
+    "question_tr": "Türkiye'nin en yüksek zirvesinin ne kadarlık bölümü Iğdır sınırları içinde kalır?"
+  },
+  {
+    "qid": "llm-cografya-008",
+    "question": "What is the surface area of the permanent glacier on Doruk?",
+    "doc_id": "2132",
+    "doc_title": "Ağrı Dağı",
+    "answer_span": "üzerinde 10 km²'lik güncel bir buz takkesi (ice cap) bulunduran tek dağıdır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "10 km²'lik"
+    },
+    "review": "agreed",
+    "question_tr": "Doruktaki kalıcı buzulun yüzölçümü nedir?"
+  },
+  {
+    "qid": "llm-cografya-009",
+    "question": "Who is recorded as the first person to reach the summit, and on what date?",
+    "doc_id": "2132",
+    "doc_title": "Ağrı Dağı",
+    "answer_span": "kayıtlara göre dağa ilk tırmanış 9 Ekim 1829'da Prof. Friedrich Parrot tarafından gerçekleştirilmiştir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "9 Ekim 1829'da Prof. Friedrich Parrot tarafından"
+    },
+    "review": "agreed",
+    "question_tr": "Zirveye çıkan ilk kişi olarak kayıtlara kim ve hangi tarihle geçmiştir?"
+  },
+  {
+    "qid": "llm-cografya-010",
+    "question": "What was the magnitude of the earthquake that occurred in the 1840 event?",
+    "doc_id": "2132",
+    "doc_title": "Ağrı Dağı",
+    "answer_span": "muhtemelen buna bağlı olarak ciddi hasara ve çok sayıda can kaybına neden olan 7.4 büyüklüğünde bir deprem meydana geldi",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "7.4 büyüklüğünde"
+    },
+    "review": "agreed",
+    "question_tr": "1840 yazındaki olayda meydana gelen sarsıntının büyüklüğü neydi?"
+  },
+  {
+    "qid": "llm-cografya-011",
+    "question": "What does the Kurdish name of the mountain mean?",
+    "doc_id": "2132",
+    "doc_title": "Ağrı Dağı",
+    "answer_span": "Kürtçe çiyayê Agirî olarak adlandırılmış dağ bu dilde \"Ateşli Dağ\" anlamına gelir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Ateşli Dağ"
+    },
+    "review": "agreed",
+    "question_tr": "Dağın Kürtçe adı ne anlama gelir?"
+  },
+  {
+    "qid": "llm-cografya-012",
+    "question": "In which year was climbing the mountain banned, and when was the ban lifted?",
+    "doc_id": "2132",
+    "doc_title": "Ağrı Dağı",
+    "answer_span": "Ağrı'ya tırmanış 1990 yılında yasaklandı. 1998'de Dağcılık Federasyonunun bir grup dağcıya izin vermesiyle bu yasak kaldırıldı",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Ağrı'ya tırmanış 1990 yılında yasaklandı. 1998'de Dağcılık Federasyonunun bir grup dağcıya izin vermesiyle bu yasak kaldırıldı."
+    },
+    "review": "agreed",
+    "question_tr": "Dağa çıkış hangi yıl yasaklandı, yasak ne zaman kalktı?"
+  },
+  {
+    "qid": "llm-cografya-013",
+    "question": "What share of Turkey's salt consumption is met by this lake in Central Anatolia?",
+    "doc_id": "144417",
+    "doc_title": "Tuz Gölü",
+    "answer_span": "Türkiye'nin tuz ihtiyacının %40'ı bu gölden sağlanır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Türkiye'nin tuz ihtiyacının %40'ı bu gölden sağlanır"
+    },
+    "review": "agreed",
+    "question_tr": "Türkiye'nin tuz tüketiminin ne kadarı İç Anadolu'daki bu gölden karşılanır?"
+  },
+  {
+    "qid": "llm-cografya-014",
+    "question": "How much precipitation falls on average per year in the basin that feeds the lake?",
+    "doc_id": "144417",
+    "doc_title": "Tuz Gölü",
+    "answer_span": "Bölge yılda ortalama 324 mm/m² yağış ile Türkiye'nin en az yağış düşen alanlarındandır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "yılda ortalama 324 mm/m² yağış"
+    },
+    "review": "agreed",
+    "question_tr": "Gölün beslendiği havzaya yılda ortalama ne kadar yağış düşer?"
+  },
+  {
+    "qid": "llm-cografya-015",
+    "question": "What value does the salt concentration in the lake water reach at the end of summer?",
+    "doc_id": "144417",
+    "doc_title": "Tuz Gölü",
+    "answer_span": "Bu mevsimde tuzluluk oranı binde 329 gibi dikkat çekici bir orana erişmektedir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "tuzluluk oranı binde 329 gibi dikkat çekici bir orana erişmektedir"
+    },
+    "review": "agreed",
+    "question_tr": "Yaz sonunda göl suyundaki tuz yoğunluğu hangi değere çıkar?"
+  },
+  {
+    "qid": "llm-cografya-016",
+    "question": "Which organism causes the southwest shore of the lake to turn red?",
+    "doc_id": "144417",
+    "doc_title": "Tuz Gölü",
+    "answer_span": "renk değişikliğine toplu iğne ucunun binde biri büyüklüğündeki dunaliella salina adı verilen bir tür su yosununun (alg) neden olduğunu belirledi",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "dunaliella salina adı verilen bir tür su yosununun (alg)"
+    },
+    "review": "agreed",
+    "question_tr": "Gölün güneybatı kıyısının kırmızıya dönmesine hangi canlı yol açar?"
+  },
+  {
+    "qid": "llm-cografya-017",
+    "question": "According to a study, how much has the lake shrunk since the beginning of the twentieth century?",
+    "doc_id": "144417",
+    "doc_title": "Tuz Gölü",
+    "answer_span": "1915 yılından beri %85 oranında küçülmüştür",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "1915 yılından beri %85 oranında küçülmüştür"
+    },
+    "review": "agreed",
+    "question_tr": "Yapılan bir araştırmaya göre göl yirminci yüzyılın başından beri ne kadar daraldı?"
+  },
+  {
+    "qid": "llm-cografya-018",
+    "question": "How much natural gas will be able to be stored in the underground gas storage facility in Sultanhanı?",
+    "doc_id": "144417",
+    "doc_title": "Tuz Gölü",
+    "answer_span": "Sultanhanı'nda 1 milyar m³ doğalgaz kapasiteli, 12 suni tuz mağarası yapılmaktadır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "1 milyar m³ doğalgaz kapasiteli"
+    },
+    "review": "agreed",
+    "question_tr": "Sultanhanı'ndaki yeraltı gaz deposunda ne kadar doğalgaz saklanabilecek?"
+  },
+  {
+    "qid": "llm-cografya-019",
+    "question": "How many kilometers long is Anatolia's longest inland river?",
+    "doc_id": "11972",
+    "doc_title": "Kızılırmak",
+    "answer_span": "1.355 km (841 mil) uzunluğu ile Türkiye'nin kendi sınırları içerisinde doğup kendi sınırları içinde denize dökülen en uzun akarsuyu",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "1.355 km (841 mil)"
+    },
+    "review": "agreed",
+    "question_tr": "Anadolu'nun en uzun iç akarsuyu kaç kilometredir?"
+  },
+  {
+    "qid": "llm-cografya-020",
+    "question": "How big is the wetland at the place where the river flows into the sea?",
+    "doc_id": "11972",
+    "doc_title": "Kızılırmak",
+    "answer_span": "56.000 hektarlık deltasıyla Türkiye'nin önemli sulak alanlarının başında gelmektedir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "56.000 hektarlık deltasıyla"
+    },
+    "review": "agreed",
+    "question_tr": "Irmağın denize döküldüğü yerdeki sulak alan ne büyüklüktedir?"
+  },
+  {
+    "qid": "llm-cografya-021",
+    "question": "What is the average flow rate of the river in cubic meters per second?",
+    "doc_id": "11972",
+    "doc_title": "Kızılırmak",
+    "answer_span": "Ortalama debisi 184 m³/s olan ırmağın",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Ortalama debisi 184 m³/s"
+    },
+    "review": "agreed",
+    "question_tr": "Irmağın ortalama akış miktarı saniyede kaç metreküptür?"
+  },
+  {
+    "qid": "llm-cografya-022",
+    "question": "What share of Türkiye's surface area does the river collect its waters from?",
+    "doc_id": "11972",
+    "doc_title": "Kızılırmak",
+    "answer_span": "Türkiye toplam alanının 1/10'unu drene eder",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Türkiye toplam alanının 1/10'unu drene eder."
+    },
+    "review": "agreed",
+    "question_tr": "Irmak Türkiye yüzölçümünün ne kadarının sularını toplar?"
+  },
+  {
+    "qid": "llm-cografya-023",
+    "question": "How many bird species live in the Delta?",
+    "doc_id": "11972",
+    "doc_title": "Kızılırmak",
+    "answer_span": "321 kuş türünün bulunduğu delta",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "321 kuş türünün bulunduğu delta"
+    },
+    "review": "agreed",
+    "question_tr": "Deltada kaç kuş türü yaşar?"
+  },
+  {
+    "qid": "llm-cografya-024",
+    "question": "What name did the Hittites give to this river?",
+    "doc_id": "11972",
+    "doc_title": "Kızılırmak",
+    "answer_span": "Hititler Marassantiya Irmağı adını vermişlerdi",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Marassantiya Irmağı"
+    },
+    "review": "agreed",
+    "question_tr": "Hititler bu akarsuya hangi adı vermişti?"
+  },
+  {
+    "qid": "llm-cografya-025",
+    "question": "What is the name and height of the hill that appears to be the summit when viewed from Bursa?",
+    "doc_id": "14923",
+    "doc_title": "Uludağ",
+    "answer_span": "zirve gibi görünen o tepenin ismi Keşiş Tepedir ve yüksekliği 2.486 m'dir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "zirve gibi görünen o tepenin ismi Keşiş Tepedir ve yüksekliği 2.486 m'dir"
+    },
+    "review": "agreed",
+    "question_tr": "Bursa'dan bakınca doruk sanılan tepenin adı ve yüksekliği nedir?"
+  },
+  {
+    "qid": "llm-cografya-026",
+    "question": "In what year and at whose suggestion did the mountain receive its current name?",
+    "doc_id": "14923",
+    "doc_title": "Uludağ",
+    "answer_span": "1925 yılında Bursa Vilayeti Coğrafya Cemiyeti'nin girişimleri ve Osman Şevki Bey'in önerisi ile \"Uludağ\" adını almıştır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "1925 yılında Bursa Vilayeti Coğrafya Cemiyeti'nin girişimleri ve Osman Şevki Bey'in önerisi ile \"Uludağ\" adını almıştır"
+    },
+    "review": "agreed",
+    "question_tr": "Dağ bugünkü adını hangi yıl ve kimin önerisiyle aldı?"
+  },
+  {
+    "qid": "llm-cografya-027",
+    "question": "When was Turkey's first cable car put into operation?",
+    "doc_id": "14923",
+    "doc_title": "Uludağ",
+    "answer_span": "1963'te hizmete açılan Türkiye'nin ilk teleferiği Bursa Teleferik",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "1963'te hizmete açılan Türkiye'nin ilk teleferiği Bursa Teleferik"
+    },
+    "review": "agreed",
+    "question_tr": "Türkiye'nin ilk teleferiği ne zaman işletmeye açıldı?"
+  },
+  {
+    "qid": "llm-cografya-028",
+    "question": "Where and when were traces from the Ice Age first encountered in the country?",
+    "doc_id": "14923",
+    "doc_title": "Uludağ",
+    "answer_span": "ülkemizdeki buzul devri izleri ilk olarak Uludağ'da ve 1904 yılında bulunmuştur",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "ülkemizdeki buzul devri izleri ilk olarak Uludağ'da ve 1904 yılında bulunmuştur"
+    },
+    "review": "agreed",
+    "question_tr": "Ülkede buzul çağından kalma izlere ilk kez nerede ve ne zaman rastlandı?"
+  },
+  {
+    "qid": "llm-cografya-029",
+    "question": "What was the thickest snow cover ever measured on this mountain in Bursa?",
+    "doc_id": "14923",
+    "doc_title": "Uludağ",
+    "answer_span": "Uludağ'da gözlemlenmiş en yüksek kar kalınlığı 430 cm'dir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Uludağ'da gözlemlenmiş en yüksek kar kalınlığı 430 cm'dir."
+    },
+    "review": "agreed",
+    "question_tr": "Bursa'daki bu dağda şimdiye kadar ölçülen en kalın kar örtüsü ne kadardı?"
+  },
+  {
+    "qid": "llm-cografya-030",
+    "question": "How many monastic structures were there in the valleys between Nilüfer and Deliçay during the Byzantine period?",
+    "doc_id": "14923",
+    "doc_title": "Uludağ",
+    "answer_span": "Uludağ'da Nilüfer çayı ile Deliçay arasındaki vadi ve tepelerde 28 manastır kurulmuştur",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Uludağ'da Nilüfer çayı ile Deliçay arasındaki vadi ve tepelerde 28 manastır kurulmuştur."
+    },
+    "review": "agreed",
+    "question_tr": "Bizans döneminde Nilüfer ile Deliçay arasındaki vadilerde kaç keşiş yapısı vardı?"
+  },
+  {
+    "qid": "llm-cografya-031",
+    "question": "Why can't the view that an ancient geographer said could be seen from the summit be seen today?",
+    "doc_id": "2134",
+    "doc_title": "Erciyes",
+    "answer_span": "Günümüzde zirvesinin sadece kuzey yamacında bir buzulu kalan Erciyes'in zirvesinden Dünya'nın yuvarlaklığı sebebi ile Akdeniz ve Karadeniz'i görmek mümkün değildir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Günümüzde zirvesinin sadece kuzey yamacında bir buzulu kalan Erciyes'in zirvesinden Dünya'nın yuvarlaklığı sebebi ile Akdeniz ve Karadeniz'i görmek mümkün değildir."
+    },
+    "review": "agreed",
+    "question_tr": "Antik bir coğrafyacının doruktan görülebildiğini söylediği manzara bugün neden görülemez?"
+  },
+  {
+    "qid": "llm-cografya-032",
+    "question": "What is the connection between the rock formations in Ürgüp and Göreme and the volcano in Kayseri?",
+    "doc_id": "2134",
+    "doc_title": "Erciyes",
+    "answer_span": "Bu durum, bugünkü Kayseri'nin çevresindeki bulunan taş ocaklarının teşekkülüne ve Göreme çevresindeki Peri Bacalarının oluşmasına ve özellikle de bims dediğimiz krater küllerinin çevrede büyük kütleler halinde bulunmasına sebep oldu. Tomarza ve Develi bölgesindeki bims yatakları, Cırgalan, Güzelyurt, Gesi çevresindeki taş ocakları, Ürgüp ve Göreme'deki rüzgârın aşındırarak oluşturduğu Peri Bacaları, Erciyes Dağı'nın bu dönemde püskürttüğü lav ve küllerin sonucu meydana geldi.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Tomarza ve Develi bölgesindeki bims yatakları, Cırgalan, Güzelyurt, Gesi çevresindeki taş ocakları, Ürgüp ve Göreme'deki rüzgârın aşındırarak oluşturduğu Peri Bacaları, Erciyes Dağı'nın bu dönemde püskürttüğü lav ve küllerin sonucu meydana geldi."
+    },
+    "review": "agreed",
+    "question_tr": "Ürgüp ve Göreme'deki kaya oluşumlarıyla Kayseri'deki yanardağ arasında nasıl bir bağ var?"
+  },
+  {
+    "qid": "llm-cografya-033",
+    "question": "How did ice masses change the top of the mountain?",
+    "doc_id": "2134",
+    "doc_title": "Erciyes",
+    "answer_span": "Erciyes Dağı'nın buralardaki büyük krateri, buzulların aşındırması ile silinmiş, dağın, herhalde 400 metre kadar daha yüksekte bulunan doruk bölümü böylece yıpranmalara uğramıştır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Erciyes Dağı'nın buralardaki büyük krateri, buzulların aşındırması ile silinmiş, dağın, herhalde 400 metre kadar daha yüksekte bulunan doruk bölümü böylece yıpranmalara uğramıştır."
+    },
+    "review": "agreed",
+    "question_tr": "Buz kütleleri dağın tepesini nasıl değiştirdi?"
+  },
+  {
+    "qid": "llm-cografya-034",
+    "question": "How do experts assess the likelihood of the highest mountain in Central Anatolia erupting lava again?",
+    "doc_id": "2134",
+    "doc_title": "Erciyes",
+    "answer_span": "Uzmanlar, son yıllarda dünyanın çeşitli bölgelerindeki yanardağlarda görülen volkan püskürtmelerinden hareket ederek Erciyes Dağı için de öyle bir durumun söz konusu olup olmayacağı sorusuna ''Çok uzak, hatta çok zayıf bir ihtimal'' diye cevap veriyorlar ve ilave ediyorlar: “Jeolojik araştırmalar, Erciyes'in tamamen sönmüş bir dağ olduğu gerçeğini ortaya koymaktadır.”",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Uzmanlar, son yıllarda dünyanın çeşitli bölgelerindeki yanardağlarda görülen volkan püskürtmelerinden hareket ederek Erciyes Dağı için de öyle bir durumun söz konusu olup olmayacağı sorusuna ''Çok uzak, hatta çok zayıf bir ihtimal'' diye cevap veriyorlar ve ilave ediyorlar: “Jeolojik araştırmalar, Erciyes'in tamamen sönmüş bir dağ olduğu gerçeğini ortaya koymaktadır.”"
+    },
+    "review": "agreed",
+    "question_tr": "Uzmanlar İç Anadolu'nun en yüksek dağının yeniden lav püskürtme olasılığını nasıl değerlendiriyor?"
+  },
+  {
+    "qid": "llm-cografya-035",
+    "question": "In which valleys of the mountain are there still glaciers today?",
+    "doc_id": "2134",
+    "doc_title": "Erciyes",
+    "answer_span": "Ayrıca, Aksu Vadisi aktif bir buzulu, Üçker Vadisi ise bir kaya buzulunu barındırmaktadır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Ayrıca, Aksu Vadisi aktif bir buzulu, Üçker Vadisi ise bir kaya buzulunu barındırmaktadır."
+    },
+    "review": "agreed",
+    "question_tr": "Bugün dağın hangi vadilerinde hâlâ buzul bulunuyor?"
+  },
+  {
+    "qid": "llm-cografya-036",
+    "question": "How is the amount of rain and snow that falls in Kayseri in a year distributed across the seasons?",
+    "doc_id": "2134",
+    "doc_title": "Erciyes",
+    "answer_span": "Uzun yıllar (1961-1990) yıllık ortalama yağış toplamı ise aynı istasyonda 383 mm'dir. Bunun %85'i güz, kış ve bahar aylarında, geri kalan %15'i ise yazın oluşmaktadır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Uzun yıllar (1961-1990) yıllık ortalama yağış toplamı ise aynı istasyonda 383 mm'dir. Bunun %85'i güz, kış ve bahar aylarında, geri kalan %15'i ise yazın oluşmaktadır."
+    },
+    "review": "agreed",
+    "question_tr": "Kayseri'de bir yılda düşen yağmur ve kar miktarı mevsimlere nasıl dağılır?"
+  },
+  {
+    "qid": "llm-cografya-037",
+    "question": "Why doesn't this large lake in Eastern Anatolia freeze, even though it is in a high-altitude, cold region?",
+    "doc_id": "1224",
+    "doc_title": "Van Gölü",
+    "answer_span": "Göl suyu tuzluluk oranı ‰19, pH'sı ise 9,8 dir. Bu yüzden Van Gölü yüksek rakıma ve sert kışlara rağmen donmaz.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Göl suyu tuzluluk oranı ‰19, pH'sı ise 9,8 dir. Bu yüzden Van Gölü yüksek rakıma ve sert kışlara rağmen donmaz."
+    },
+    "review": "agreed",
+    "question_tr": "Doğu Anadolu'daki bu büyük göl yüksekte ve soğuk bir bölgede olmasına karşın neden buz tutmaz?"
+  },
+  {
+    "qid": "llm-cografya-038",
+    "question": "What is the earliest known news report about the legendary creature, which newspaper did it appear in, and what did it describe?",
+    "doc_id": "1224",
+    "doc_title": "Van Gölü",
+    "answer_span": "Dönemin İstanbul'da yayın yapan Saadet gazetesinin, 28 Şaban 1306 (29 Nisan 1889) tarihli 1323 nolu nüshasında, canavarın Van Gölünde abdest almak isteyen bir kişiyi kapıp göle sürüklediği haberi yer alıyor.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Dönemin İstanbul'da yayın yapan Saadet gazetesinin, 28 Şaban 1306 (29 Nisan 1889) tarihli 1323 nolu nüshasında, canavarın Van Gölünde abdest almak isteyen bir kişiyi kapıp göle sürüklediği haberi yer alıyor."
+    },
+    "review": "agreed",
+    "question_tr": "Efsanevi yaratıkla ilgili bilinen en eski haber hangi gazetede çıktı ve ne anlatıyordu?"
+  },
+  {
+    "qid": "llm-cografya-039",
+    "question": "By whose order and between which years was the church on Akdamar Island built?",
+    "doc_id": "1224",
+    "doc_title": "Van Gölü",
+    "answer_span": "Kral Gagik Artzruni tarafından 915 ve 921 yılları arasında inşa edilmiştir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Kral Gagik Artzruni tarafından 915 ve 921 yılları arasında inşa edilmiştir."
+    },
+    "review": "agreed",
+    "question_tr": "Akdamar Adası'ndaki kilise kimin emriyle ve hangi yıllar arasında yapıldı?"
+  },
+  {
+    "qid": "llm-cografya-040",
+    "question": "What process do researchers attribute the lake's future shrinking or disappearance to?",
+    "doc_id": "1224",
+    "doc_title": "Van Gölü",
+    "answer_span": "Günümüzdeki araştırmalarda Doğu Toros Dağlarının erozyona uğraması sonucu Van Gölü'ndeki suların Dicle'ye dökülüp, gölün küçüleceği ya da yok olacağı düşünülmektedir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Günümüzdeki araştırmalarda Doğu Toros Dağlarının erozyona uğraması sonucu Van Gölü'ndeki suların Dicle'ye dökülüp, gölün küçüleceği ya da yok olacağı düşünülmektedir."
+    },
+    "review": "agreed",
+    "question_tr": "Araştırmacılar gölün ileride küçülmesini ya da kaybolmasını hangi sürece bağlıyor?"
+  },
+  {
+    "qid": "llm-cografya-041",
+    "question": "The year the water level peaked, the effect of which year's rainfall did it carry?",
+    "doc_id": "1224",
+    "doc_title": "Van Gölü",
+    "answer_span": "Yani 1993'te düşen yağış göle ancak üç yıl sonra 1996'da ulaşmıştır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Yani 1993'te düşen yağış göle ancak üç yıl sonra 1996'da ulaşmıştır."
+    },
+    "review": "agreed",
+    "question_tr": "Su seviyesinin tepe yaptığı yıl hangi yılın yağışının etkisini taşıyordu?"
+  },
+  {
+    "qid": "llm-cografya-042",
+    "question": "What are two fish species known to live in salty and soda-rich water?",
+    "doc_id": "1224",
+    "doc_title": "Van Gölü",
+    "answer_span": "Bunlar; inci kefalı (Chalcalburnus tarichi) ve 2018 yılında İl Jandarma Komutanlığı Su Altı Timinin, Van Gölü'ndeki dalış eğitimi sırasında 13 metre yükseklikteki bir mikrobiyalitin içerisinde yaşadığını tespit ettiği, siyah benekli sarı bir balıktır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Bunlar; inci kefalı (Chalcalburnus tarichi) ve 2018 yılında İl Jandarma Komutanlığı Su Altı Timinin, Van Gölü'ndeki dalış eğitimi sırasında 13 metre yükseklikteki bir mikrobiyalitin içerisinde yaşadığını tespit ettiği, siyah benekli sarı bir balıktır."
+    },
+    "review": "agreed",
+    "question_tr": "Tuzlu ve sodalı suda yaşadığı bilinen iki balık türü hangileridir?"
+  },
+  {
+    "qid": "llm-cografya-043",
+    "question": "Where does most of the water carried by the river come from, and how does its flow change between winter and spring?",
+    "doc_id": "15340",
+    "doc_title": "Fırat",
+    "answer_span": "Bu suyun %80'i Keban barajının yukarısından kaynaklanır. Kış yağışların kar şeklinde olmasından dolayı debi 200 m³/sn'dir. Yağmurlar ve kar erimeleri sebebiyle ilkbaharda hızla yükselerek 2000 m³/sn'ye ulaşır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Bu suyun %80'i Keban barajının yukarısından kaynaklanır. Kış yağışların kar şeklinde olmasından dolayı debi 200 m³/sn'dir. Yağmurlar ve kar erimeleri sebebiyle ilkbaharda hızla yükselerek 2000 m³/sn'ye ulaşır."
+    },
+    "review": "agreed",
+    "question_tr": "Irmağın taşıdığı suyun çoğu nereden gelir ve akımı kış ile bahar arasında nasıl değişir?"
+  },
+  {
+    "qid": "llm-cografya-044",
+    "question": "Which view is prevailing today on which languages the river's name derives from?",
+    "doc_id": "15340",
+    "doc_title": "Fırat",
+    "answer_span": "Kelimenin Hint-Avrupa kökenli olmadığı, Akadca ve Sümerceden kaynaklandığı, Eski Farsça ve Farsça aracılığıyla diğer dillere geçtiği görüşü ağırlık kazanmaktadır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Kelimenin Hint-Avrupa kökenli olmadığı, Akadca ve Sümerceden kaynaklandığı, Eski Farsça ve Farsça aracılığıyla diğer dillere geçtiği görüşü ağırlık kazanmaktadır."
+    },
+    "review": "agreed",
+    "question_tr": "Irmağın adının hangi dillerden çıktığı konusunda bugün hangi görüş öne çıkıyor?"
+  },
+  {
+    "qid": "llm-cografya-045",
+    "question": "What is the geographical reason the river is so suitable for generating electricity from dams?",
+    "doc_id": "15340",
+    "doc_title": "Fırat",
+    "answer_span": "Nehir, yüksek dağlar arasında dar ve derin vadilerden akması hidroelektrik potansiyelinin yüksek olmasını sağlamıştır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Nehir, yüksek dağlar arasında dar ve derin vadilerden akması hidroelektrik potansiyelinin yüksek olmasını sağlamıştır."
+    },
+    "review": "agreed",
+    "question_tr": "Irmağın barajlardan elektrik üretimi için bu kadar elverişli olmasının coğrafi nedeni nedir?"
+  },
+  {
+    "qid": "llm-cografya-046",
+    "question": "How has agriculture changed in Harran, where water is brought in through tunnels?",
+    "doc_id": "15340",
+    "doc_title": "Fırat",
+    "answer_span": "Binlerce yıldır kuru tarım yapılan ovada sulu tarıma geçilmiş, katma değeri yüksek tarım ürünleri yetiştirilmeye başlanmıştır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Ayrıca Fırat'ın suyu inşa edilen Şanlıurfa Tünelleri ile Harran Ovası'na ulaştırılmıştır. Binlerce yıldır kuru tarım yapılan ovada sulu tarıma geçilmiş, katma değeri yüksek tarım ürünleri yetiştirilmeye başlanmıştır."
+    },
+    "review": "agreed",
+    "question_tr": "Tünellerle su götürülen Harran'da tarım nasıl dönüştü?"
+  },
+  {
+    "qid": "llm-cografya-047",
+    "question": "Of the three tributaries that join in Syria, which one is the largest, and by what criteria?",
+    "doc_id": "15340",
+    "doc_title": "Fırat",
+    "answer_span": "Uzunluk, drenaj havzası ve deşarj açısından Habur bu üçünün en büyüğüdür.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Uzunluk, drenaj havzası ve deşarj açısından Habur bu üçünün en büyüğüdür."
+    },
+    "review": "agreed",
+    "question_tr": "Suriye'de katılan üç yan akarsudan hangisi en büyüğüdür ve hangi ölçütlere göre?"
+  },
+  {
+    "qid": "llm-cografya-048",
+    "question": "What changes in terms of its tributaries after the river crosses into Iraq?",
+    "doc_id": "15340",
+    "doc_title": "Fırat",
+    "answer_span": "Fırat Nehri Irak'a girdikten sonra, Fırat havzasını Dicle havzasına bağlayan kanallar olmasına rağmen Fırat'ın artık doğal kolları yoktur.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Fırat Nehri Irak'a girdikten sonra, Fırat havzasını Dicle havzasına bağlayan kanallar olmasına rağmen Fırat'ın artık doğal kolları yoktur."
+    },
+    "review": "agreed",
+    "question_tr": "Nehir Irak'a geçtikten sonra besleyen kolları bakımından ne değişir?"
+  }
+]

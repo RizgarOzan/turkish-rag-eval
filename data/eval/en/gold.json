@@ -1,0 +1,466 @@
+[
+  {
+    "qid": "q001",
+    "question": "What percentage of people diagnosed with diabetes also have ketoacidosis?",
+    "doc_id": "710430",
+    "doc_title": "Diyabet",
+    "answer_span": "yaklaşık %25'i, diyabet teşhisi konulduğunda diyabetik ketoasidoz da gelişmiştir",
+    "question_tr": "Şeker hastalığı teşhisi konan kişilerin ne kadarında ketoasidoz da bulunuyor?"
+  },
+  {
+    "qid": "q002",
+    "question": "How long does it take for the symptoms of type 1 diabetes to appear in children?",
+    "doc_id": "710430",
+    "doc_title": "Diyabet",
+    "answer_span": "bu belirtiler çok kısa süre içinde (haftalar ya da aylar) ortaya çıkabilir",
+    "question_tr": "Çocuklarda tip 1 şeker hastalığı belirtileri ne kadar sürede ortaya çıkar?"
+  },
+  {
+    "qid": "q003",
+    "question": "What name is used today instead of the term \"juvenile diabetes\"?",
+    "doc_id": "710430",
+    "doc_title": "Diyabet",
+    "answer_span": "günümüzde tüm dünyada Tip 1 diyabet terimi kullanılmaktadır",
+    "question_tr": "Jüvenil diyabet terimi yerine bugün hangi isim kullanılıyor?"
+  },
+  {
+    "qid": "q004",
+    "question": "At what age range is screening for diabetes recommended?",
+    "doc_id": "710430",
+    "doc_title": "Diyabet",
+    "answer_span": "40-50 yaş arasındaki kişilerin sürekli olarak",
+    "question_tr": "Şeker hastalığı için tarama hangi yaş aralığında öneriliyor?"
+  },
+  {
+    "qid": "q005",
+    "question": "Is there a definitive cure for type 1 diabetes?",
+    "doc_id": "710430",
+    "doc_title": "Diyabet",
+    "answer_span": "henüz pratik bir kesin tedavi yöntemi yoktur",
+    "question_tr": "Tip 1 diyabetin kesin bir çözümü var mı?"
+  },
+  {
+    "qid": "q006",
+    "question": "How much does the prevalence of shortness-of-breath disease vary between countries?",
+    "doc_id": "1931",
+    "doc_title": "Astım",
+    "answer_span": "ülkeler arasında büyük farklılıklar gösterir (%1 ila %18 arasında)",
+    "question_tr": "Nefes darlığı hastalığının görülme oranı ülkelere göre ne kadar değişiyor?"
+  },
+  {
+    "qid": "q007",
+    "question": "How many people die from asthma each year?",
+    "doc_id": "1931",
+    "doc_title": "Astım",
+    "answer_span": "astıma bağlı ölümler (yılda yaklaşık 461.000)",
+    "question_tr": "Astım yüzünden yılda kaç kişi hayatını kaybediyor?"
+  },
+  {
+    "qid": "q008",
+    "question": "How strong is the hereditary link in asthma?",
+    "doc_id": "1931",
+    "doc_title": "Astım",
+    "answer_span": "astımın kalıtımsal yönünün güçlü olduğunu (%35-70)",
+    "question_tr": "Astımın kalıtımla ilgisi ne kadar güçlü?"
+  },
+  {
+    "qid": "q009",
+    "question": "Is there a difference in asthma prevalence between boys and girls at a young age?",
+    "doc_id": "1931",
+    "doc_title": "Astım",
+    "answer_span": "erkek çocuklarda astım, kız çocuklarına göre 2 kat daha sıktır",
+    "question_tr": "Küçük yaşta erkek ve kız çocukları arasında astım sıklığı farkı var mı?"
+  },
+  {
+    "qid": "q010",
+    "question": "Who first described asthma medically?",
+    "doc_id": "1931",
+    "doc_title": "Astım",
+    "answer_span": "Hipokrat (MÖ 460–370) tarafından",
+    "question_tr": "Astımı ilk kez tıbbi olarak kim tarif etti?"
+  },
+  {
+    "qid": "q011",
+    "question": "What percentage of people experience visual disturbances during headache attacks?",
+    "doc_id": "36274",
+    "doc_title": "Migren",
+    "answer_span": "yaklaşık %15-30'unda auralı migren ile karşılaşılır",
+    "question_tr": "Baş ağrısı krizlerinde görme bozukluğu yaşayanların oranı nedir?"
+  },
+  {
+    "qid": "q012",
+    "question": "How long before a migraine attack do the warning symptoms start?",
+    "doc_id": "36274",
+    "doc_title": "Migren",
+    "answer_span": "ağrı ya da aura başlangıcından önceki iki saat ile iki gün arasında başlarlar",
+    "question_tr": "Migren atağı öncesi habercisi olan belirtiler ne kadar önce başlar?"
+  },
+  {
+    "qid": "q013",
+    "question": "Does migraine pain always occur on only one side of the head?",
+    "doc_id": "36274",
+    "doc_title": "Migren",
+    "answer_span": "vakaların %40'ından fazlasında ağrı çift taraflı olabilir",
+    "question_tr": "Migren ağrısı her zaman başın tek yanında mı olur?"
+  },
+  {
+    "qid": "q014",
+    "question": "How long does the aura phase last?",
+    "doc_id": "36274",
+    "doc_title": "Migren",
+    "answer_span": "genellikle 60 dakikadan daha kısa sürer",
+    "question_tr": "Aura evresi ne kadar sürer?"
+  },
+  {
+    "qid": "q015",
+    "question": "Which neurotransmitter is thought to play a role in migraine?",
+    "doc_id": "36274",
+    "doc_title": "Migren",
+    "answer_span": "Yüksek serotonin düzeylerinin",
+    "question_tr": "Migrende hangi nörotransmitterin rolü olduğu düşünülüyor?"
+  },
+  {
+    "qid": "q016",
+    "question": "In how many days does a cold-like illness go away on its own?",
+    "doc_id": "5545",
+    "doc_title": "Grip",
+    "answer_span": "Yaklaşık bir hafta içinde hastalık kendiliğinden iyileşecektir",
+    "question_tr": "Nezle benzeri hastalık kaç günde kendiliğinden geçer?"
+  },
+  {
+    "qid": "q017",
+    "question": "Where was the 1918 epidemic first seen?",
+    "doc_id": "5545",
+    "doc_title": "Grip",
+    "answer_span": "ilk olarak 11 Mart 1918'de ABD'nin New Mexico eyaletinde tespit edildi",
+    "question_tr": "1918 salgını ilk nerede görüldü?"
+  },
+  {
+    "qid": "q018",
+    "question": "Is a person who has developed kidney stones at risk of passing stones again?",
+    "doc_id": "206725",
+    "doc_title": "Böbrek taşı",
+    "answer_span": "ikinci kez taş oluşma olasılığı bir yıl içerisinde %15, 10 yıl içerisinde %80'dir",
+    "question_tr": "Böbrekte taş oluşan biri tekrar taş düşürme riskiyle karşılaşır mı?"
+  },
+  {
+    "qid": "q019",
+    "question": "How long does kidney stone pain last?",
+    "doc_id": "206725",
+    "doc_title": "Böbrek taşı",
+    "answer_span": "20- 60 dakika süren dalgalar halinde gelir",
+    "question_tr": "Böbrek taşı ağrısı ne kadar sürer?"
+  },
+  {
+    "qid": "q020",
+    "question": "What percentage of the world's population experiences kidney stones during their lifetime?",
+    "doc_id": "206725",
+    "doc_title": "Böbrek taşı",
+    "answer_span": "%1 ila %15'i hayatlarının bir noktasında böbrek taşlarından etkilenmektedir",
+    "question_tr": "Dünya nüfusunun ne kadarı hayatı boyunca böbrek taşı yaşıyor?"
+  },
+  {
+    "qid": "q021",
+    "question": "What threshold defines low citrate in the urine?",
+    "doc_id": "206725",
+    "doc_title": "Böbrek taşı",
+    "answer_span": "320 mg/gün'den az olarak tanımlanır",
+    "question_tr": "İdrarda sitrat düşüklüğü hangi eşikle tanımlanır?"
+  },
+  {
+    "qid": "q022",
+    "question": "How much of a role do genetic causes play in memory loss disease?",
+    "doc_id": "339749",
+    "doc_title": "Alzheimer hastalığı",
+    "answer_span": "%1-5'inin sebebinin Genetik faktörler olduğu bulunmuştur",
+    "question_tr": "Unutkanlık hastalığında genetik sebeplerin payı ne kadar?"
+  },
+  {
+    "qid": "q023",
+    "question": "What percentage of Alzheimer's patients experience delusions?",
+    "doc_id": "339749",
+    "doc_title": "Alzheimer hastalığı",
+    "answer_span": "yaklaşık %30'unda yanılsamalı yanlış tanımlamalar",
+    "question_tr": "Alzheimer hastalarının ne kadarında sanrı görülür?"
+  },
+  {
+    "qid": "q024",
+    "question": "How quickly does a severe allergic reaction begin after a substance enters the bloodstream?",
+    "doc_id": "4661",
+    "doc_title": "Anafilaksi",
+    "answer_span": "semptomlar ortalama 5-30 dakika içerisinde ortaya çıkmaktadır",
+    "question_tr": "Damardan giren bir maddeye karşı ağır alerjik tepki ne kadar çabuk başlar?"
+  },
+  {
+    "qid": "q025",
+    "question": "How often does a severe penicillin-related allergy occur?",
+    "doc_id": "4661",
+    "doc_title": "Anafilaksi",
+    "answer_span": "tedavi gören her 2.000 ila 10.000 kişiden birinde meydana gelir",
+    "question_tr": "Penisiline bağlı ağır alerji ne sıklıkla görülüyor?"
+  },
+  {
+    "qid": "q026",
+    "question": "Does the pulse always speed up in anaphylaxis?",
+    "doc_id": "4661",
+    "doc_title": "Anafilaksi",
+    "answer_span": "%10'u düşük kan basıncında düşük nabız hızına (bradikardi) sahip olabilir",
+    "question_tr": "Anafilakside nabız her zaman hızlanır mı?"
+  },
+  {
+    "qid": "q027",
+    "question": "When do symptoms start in people with social anxiety problems?",
+    "doc_id": "1128249",
+    "doc_title": "Anksiyete bozukluğu",
+    "answer_span": "%75'inden fazlası ilk belirtilerini çocukluk veya erken ergenlik döneminde yaşar",
+    "question_tr": "Sosyal kaygı sorunu olanlarda belirtiler ne zaman başlıyor?"
+  },
+  {
+    "qid": "q028",
+    "question": "How many people does post-traumatic stress disorder affect each year?",
+    "doc_id": "1128249",
+    "doc_title": "Anksiyete bozukluğu",
+    "answer_span": "her yıl ABD'li yetişkinlerin yaklaşık %3,5'ini etkiler",
+    "question_tr": "Travma sonrası stres bozukluğu her yıl kaç kişiyi etkiliyor?"
+  },
+  {
+    "qid": "q029",
+    "question": "Is OCD counted among anxiety disorders?",
+    "doc_id": "1128249",
+    "doc_title": "Anksiyete bozukluğu",
+    "answer_span": "DSM-5 veya ICD-11'de anksiyete bozukluğu olarak sınıflandırılmamaktadır",
+    "question_tr": "OKB kaygı bozuklukları arasında mı sayılıyor?"
+  },
+  {
+    "qid": "q030",
+    "question": "What percentage of people get appendicitis?",
+    "doc_id": "86113",
+    "doc_title": "Apandisit",
+    "answer_span": "yaklaşık %10'unun hayatının bir döneminde apandisite yakalandığını",
+    "question_tr": "Apandis iltihabı insanların ne kadarında görülüyor?"
+  },
+  {
+    "qid": "q031",
+    "question": "How large is the incision made in an appendectomy?",
+    "doc_id": "86113",
+    "doc_title": "Apandisit",
+    "answer_span": "2–3 cm' lik bir kesi ile apandisit alınır",
+    "question_tr": "Apandis ameliyatında kesi ne kadar büyüklükte yapılıyor?"
+  },
+  {
+    "qid": "q032",
+    "question": "At what degree of narrowing do most blockages occur in hardening of the arteries?",
+    "doc_id": "8343",
+    "doc_title": "Ateroskleroz",
+    "answer_span": "lümen tıkanmasının %50'den az olduğu yerlerde olur",
+    "question_tr": "Damar sertliğinde tıkanmaların çoğu ne kadar daralmada meydana gelir?"
+  },
+  {
+    "qid": "q033",
+    "question": "How much of bipolar disorder is due to heredity?",
+    "doc_id": "92237",
+    "doc_title": "Bipolar bozukluk",
+    "answer_span": "%60-80 bandında genetik etmenlerin oluşturduğu düşünülmektedir",
+    "question_tr": "İki uçlu duygudurum bozukluğunda kalıtımın payı ne kadar?"
+  },
+  {
+    "qid": "q034",
+    "question": "Can a blood clot in the leg veins also occur in the arms?",
+    "doc_id": "142457",
+    "doc_title": "Derin ven trombozu",
+    "answer_span": "%4-10'u kollarda görülmekle birlikte öncelikle bacaklar etkilenmektedir",
+    "question_tr": "Bacak damarında pıhtı kollarda da olur mu?"
+  },
+  {
+    "qid": "q035",
+    "question": "When is a blood clot considered chronic?",
+    "doc_id": "142457",
+    "doc_title": "Derin ven trombozu",
+    "answer_span": "kronik DVT 28 günden daha uzun süre devam eder",
+    "question_tr": "Damar pıhtısı ne zaman kronik sayılır?"
+  },
+  {
+    "qid": "q036",
+    "question": "Does skin inflammation affect mental health?",
+    "doc_id": "88484",
+    "doc_title": "Egzama",
+    "answer_span": "%64 oranında depresyonu, %68 oranında da kaygıyı artırdığı gösterildi",
+    "question_tr": "Cilt iltihabı ruh sağlığını etkiliyor mu?"
+  },
+  {
+    "qid": "q037",
+    "question": "What is the treatment response rate in epilepsy?",
+    "doc_id": "69946",
+    "doc_title": "Epilepsi",
+    "answer_span": "hastaların %90'ında kayda değer gelişme göstermektedir",
+    "question_tr": "Sara hastalığında tedaviye yanıt oranı nedir?"
+  },
+  {
+    "qid": "q038",
+    "question": "How long is medication continued in patients whose seizures have stopped?",
+    "doc_id": "69946",
+    "doc_title": "Epilepsi",
+    "answer_span": "aynı ilaç ile ortalama 3-5 yıl devam edilebilir",
+    "question_tr": "Nöbetleri duran hastalarda ilaç ne kadar sürdürülür?"
+  },
+  {
+    "qid": "q039",
+    "question": "Which vitamin deficiency can lead to seizures?",
+    "doc_id": "69946",
+    "doc_title": "Epilepsi",
+    "answer_span": "B6 vitamini eksikliği saptanmıştır",
+    "question_tr": "Hangi vitamin eksikliği nöbetlere yol açabiliyor?"
+  },
+  {
+    "qid": "q040",
+    "question": "How many tender points have been identified in widespread muscle pain syndrome?",
+    "doc_id": "725299",
+    "doc_title": "Fibromiyalji",
+    "answer_span": "18 belirlenmiş olası hassas nokta vardır",
+    "question_tr": "Yaygın kas ağrısı sendromunda kaç hassas nokta tanımlanmış?"
+  },
+  {
+    "qid": "q041",
+    "question": "How often does fibromyalgia accompany rheumatic disease patients?",
+    "doc_id": "725299",
+    "doc_title": "Fibromiyalji",
+    "answer_span": "% 20-30'unda fibromiyalji de olabilir",
+    "question_tr": "Romatizma hastalarında fibromiyalji ne sıklıkla eşlik ediyor?"
+  },
+  {
+    "qid": "q042",
+    "question": "Up to what value is intraocular pressure considered normal?",
+    "doc_id": "12000",
+    "doc_title": "Glokom",
+    "answer_span": "21 mmhg'ya kadar normal kabul edilir",
+    "question_tr": "Göz içi basıncı kaça kadar normal kabul edilir?"
+  },
+  {
+    "qid": "q043",
+    "question": "What is the main cause of uric acid buildup disease?",
+    "doc_id": "42136",
+    "doc_title": "Gut",
+    "answer_span": "böbreklerden yeterince atılamaması vakaların yaklaşık %90'ında",
+    "question_tr": "Ürik asit birikimi hastalığının ana sebebi nedir?"
+  },
+  {
+    "qid": "q044",
+    "question": "How common is metabolic syndrome in patients with gout?",
+    "doc_id": "42136",
+    "doc_title": "Gut",
+    "answer_span": "Vakaların yaklaşık %75'inde abdominal obezite",
+    "question_tr": "Gut hastalarında metabolik sendrom ne kadar sık görülür?"
+  },
+  {
+    "qid": "q045",
+    "question": "How long after being infected with the jaundice virus do symptoms appear?",
+    "doc_id": "2774465",
+    "doc_title": "Hepatit B",
+    "answer_span": "virüsün vücuda girmesinden 30 ile 180 gün arasında ortaya çıkabilir",
+    "question_tr": "Sarılık virüsü bulaştıktan ne kadar sonra belirti verir?"
+  },
+  {
+    "qid": "q046",
+    "question": "In how many people does hepatitis C cause severe symptoms?",
+    "doc_id": "1188904",
+    "doc_title": "Hepatit C",
+    "answer_span": "vakaların yalnızca %15'inde şiddetli belirtilere sebep olmaktadır",
+    "question_tr": "Hepatit C kaç kişide ağır belirti yapıyor?"
+  },
+  {
+    "qid": "q047",
+    "question": "How long does it take for cirrhosis to develop in people who carry hepatitis C?",
+    "doc_id": "1188904",
+    "doc_title": "Hepatit C",
+    "answer_span": "%10–30'unda 30 sene içinde siroz baş gösterir",
+    "question_tr": "Hepatit C taşıyanlarda karaciğer sertleşmesi ne kadar sürede gelişir?"
+  },
+  {
+    "qid": "q048",
+    "question": "What do the hormone values look like when the thyroid is underactive?",
+    "doc_id": "342189",
+    "doc_title": "Hipotiroidi",
+    "answer_span": "kan düzeyleri tüm hipotiroidi olgularında düşüktür",
+    "question_tr": "Tiroit az çalıştığında hormon değerleri nasıl çıkar?"
+  },
+  {
+    "qid": "q049",
+    "question": "How long does heart attack pain last, and does it change with position?",
+    "doc_id": "140270",
+    "doc_title": "Kalp krizi",
+    "answer_span": "pozisyonla değişmez ve 20 dakikadan uzun sürer",
+    "question_tr": "Kalp krizi ağrısı ne kadar sürer ve pozisyonla değişir mi?"
+  },
+  {
+    "qid": "q050",
+    "question": "What is the contribution of cigarettes to cardiovascular diseases?",
+    "doc_id": "140270",
+    "doc_title": "Kalp krizi",
+    "answer_span": "koroner arter hastalığı vakalarının yaklaşık %36'sına",
+    "question_tr": "Sigaranın kalp damar hastalıklarındaki payı nedir?"
+  },
+  {
+    "qid": "q051",
+    "question": "Below which hemoglobin level is a blood transfusion needed?",
+    "doc_id": "23468",
+    "doc_title": "Kansızlık",
+    "answer_span": "7 g/dl'nin altına düşmediği durumlarda kan transfüzyonu önerilmez",
+    "question_tr": "Kan nakli hangi hemoglobin değerinin altında gerekir?"
+  },
+  {
+    "qid": "q052",
+    "question": "Who was the first person to describe eye lens surgery?",
+    "doc_id": "36515",
+    "doc_title": "Katarakt",
+    "answer_span": "Suśruta (MÖ 5. yüzyıl civarı) tarafından antik Hindistan'da",
+    "question_tr": "Göz merceği ameliyatı ilk kim tarafından tanımlandı?"
+  },
+  {
+    "qid": "q053",
+    "question": "How many chemicals are found in cigarette smoke?",
+    "doc_id": "708470",
+    "doc_title": "Kronik obstrüktif akciğer hastalığı",
+    "answer_span": "43'ü kanserojen olan 4000 kimyasal madde vardır",
+    "question_tr": "Sigara dumanında kaç kimyasal madde bulunuyor?"
+  },
+  {
+    "qid": "q054",
+    "question": "What is the most common symptom of meningitis?",
+    "doc_id": "3203",
+    "doc_title": "Menenjit",
+    "answer_span": "en sık görülen semptomu çok şiddetli baş ağrısıdır",
+    "question_tr": "Beyin zarı iltihabının en sık belirtisi nedir?"
+  },
+  {
+    "qid": "q055",
+    "question": "Which microorganisms most commonly cause bacterial meningitis in adults?",
+    "doc_id": "3203",
+    "doc_title": "Menenjit",
+    "answer_span": "Neisseria meningitidis ve Streptococcus pneumoniae bakteriyel menenjitlerin %80'ine",
+    "question_tr": "Yetişkinlerde bakteriyel menenjite en çok hangi mikroplar yol açıyor?"
+  },
+  {
+    "qid": "q056",
+    "question": "Which age group does MS disease affect the most?",
+    "doc_id": "103047",
+    "doc_title": "Multipl skleroz",
+    "answer_span": "çoğunlukla 20-40 yaş arası erişkinlerdir",
+    "question_tr": "MS hastalığı en çok hangi yaş grubunu etkiliyor?"
+  },
+  {
+    "qid": "q057",
+    "question": "How much of a role do genetic factors play in being overweight?",
+    "doc_id": "134278",
+    "doc_title": "Obezite",
+    "answer_span": "kalıtım veya genetik faktörlerin % 25-40 oranında rol oynadığını",
+    "question_tr": "Aşırı kiloda genetik faktörlerin rolü ne kadar?"
+  },
+  {
+    "qid": "q058",
+    "question": "How long after birth should breastfeeding be started?",
+    "doc_id": "134278",
+    "doc_title": "Obezite",
+    "answer_span": "ilk 60 dakika içinde başlanması gereken emzirmenin en az 6 ay",
+    "question_tr": "Emzirmeye doğumdan ne kadar sonra başlanmalı?"
+  }
+]

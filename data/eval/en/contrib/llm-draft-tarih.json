@@ -1,0 +1,779 @@
+[
+  {
+    "qid": "llm-tarih-001",
+    "question": "Nine years after the war, how large an area of land had the Seljuks brought under their control in Anatolia?",
+    "doc_id": "26808",
+    "doc_title": "Malazgirt Meydan Muharebesi",
+    "answer_span": "1080 yılına gelindiğinde Selçuklu Türkleri 78.000 kilometrekarelik bir alanı ele geçirmişti",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "1080 yılına gelindiğinde Selçuklu Türkleri 78.000 kilometrekarelik bir alanı ele geçirmişti"
+    },
+    "review": "agreed",
+    "human_review": {
+      "reviewer": "royemserli",
+      "verdict": "ok"
+    },
+    "question_tr": "Savaştan dokuz yıl sonra Selçuklular Anadolu'da ne büyüklükte bir toprağı denetimleri altına almıştı?"
+  },
+  {
+    "qid": "llm-tarih-002",
+    "question": "Which region did the wood of the long-handled weapons carried by Byzantine soldiers come from?",
+    "doc_id": "26808",
+    "doc_title": "Malazgirt Meydan Muharebesi",
+    "answer_span": "ordu savaşta kullanılacak mızraklarını Hınıs ve çevresinde yetişen ağaçlardan imal etmiştir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "ordu savaşta kullanılacak mızraklarını Hınıs ve çevresinde yetişen ağaçlardan imal etmiştir."
+    },
+    "review": "agreed",
+    "human_review": {
+      "reviewer": "royemserli",
+      "verdict": "ok"
+    },
+    "question_tr": "Bizanslı askerlerin taşıdığı uzun saplı silahların ağacı hangi yöreden geliyordu?"
+  },
+  {
+    "qid": "llm-tarih-003",
+    "question": "What is the name of the Seljuk ruler's battle plan based on a feigned retreat?",
+    "doc_id": "26808",
+    "doc_title": "Malazgirt Meydan Muharebesi",
+    "answer_span": "Alp Arslan ise \"Kurt Kapanı Taktiği\" konusunda komutanlarıyla uzlaşmıştı",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Alp Arslan ise \"Kurt Kapanı Taktiği\" konusunda komutanlarıyla uzlaşmıştı."
+    },
+    "review": "agreed",
+    "human_review": {
+      "reviewer": "royemserli",
+      "verdict": "ok"
+    },
+    "question_tr": "Selçuklu hükümdarının sahte geri çekilmeye dayanan savaş planı hangi adla anılır?"
+  },
+  {
+    "qid": "llm-tarih-004",
+    "question": "Where on his body was the captured emperor wounded when he was taken prisoner?",
+    "doc_id": "26808",
+    "doc_title": "Malazgirt Meydan Muharebesi",
+    "answer_span": "İmparator omzundan yaralı olarak ele geçirildi",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "İmparator omzundan yaralı olarak ele geçirildi."
+    },
+    "review": "agreed",
+    "human_review": {
+      "reviewer": "royemserli",
+      "verdict": "ok"
+    },
+    "question_tr": "Esir alınan imparator yakalandığında vücudunun neresinden yaralanmıştı?"
+  },
+  {
+    "qid": "llm-tarih-005",
+    "question": "On which day did the Byzantine emperor leave the capital with the army he had assembled?",
+    "doc_id": "26808",
+    "doc_title": "Malazgirt Meydan Muharebesi",
+    "answer_span": "Romen Diyojen Türklerin güçlerini Halep'te toplamasını bir fırsat olarak görerek Ermenistan'a ilerleyip daha önce kaybettiği kaleleri geri almak amacıyla büyük bir ordu kurup 13 Mart 1071'de Konstantinopolis'ten (bugünkü İstanbul) ayrıldı.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Romen Diyojen de büyük bir ordu kurup 13 Mart 1071'de Konstantinopolis'ten (bugünkü İstanbul) ayrıldı."
+    },
+    "review": "agreed",
+    "human_review": {
+      "reviewer": "royemserli",
+      "verdict": "fixed",
+      "note": "Cevap alanı güncel Wikipedia makalesindeki bilgiyle eşleştirildi."
+    },
+    "question_tr": "Bizans imparatoru topladığı orduyla başkentten hangi gün ayrıldı?"
+  },
+  {
+    "qid": "llm-tarih-006",
+    "question": "How much time passed between the battle and the writing of the oldest source that states Kurdish troops took part in it?",
+    "doc_id": "26808",
+    "doc_title": "Malazgirt Meydan Muharebesi",
+    "answer_span": "adlı eseri muharebeden yaklaşık 150 yıl sonra yazılmıştır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Malazgirt Muharebesine Kürtlerin katıldığını belirten en eski kaynak olan Sıbt İbnü'l-Cevzî'nin “Mir'âtü'z-Zaman Fi Tarihi'l-Ayan” adlı eseri muharebeden yaklaşık 150 yıl sonra yazılmıştır."
+    },
+    "review": "agreed",
+    "human_review": {
+      "reviewer": "royemserli",
+      "verdict": "rejected",
+      "note": "Sorunun cevabını veren süre bilgisi güncel Wikipedia makalesinde bulunmuyor."
+    },
+    "question_tr": "Savaşa Kürt birliklerinin katıldığını yazan en eski kaynak olaydan ne kadar zaman sonra kaleme alınmıştır?"
+  },
+  {
+    "qid": "llm-tarih-007",
+    "question": "What was the thickness range of the links of the chain stretched to close off the Golden Horn?",
+    "doc_id": "13171",
+    "doc_title": "İstanbul'un Fethi",
+    "answer_span": "kalınlıkları 1,9 ilâ 6,2 cm arasında değişebilmekteydi",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "1,9 ilâ 6,2 cm"
+    },
+    "review": "agreed",
+    "human_review": {
+      "reviewer": "royemserli",
+      "verdict": "ok"
+    },
+    "question_tr": "Haliç'i kapatmak için gerilen zincirin baklaları hangi kalınlık aralığındaydı?"
+  },
+  {
+    "qid": "llm-tarih-008",
+    "question": "Which island was promised to the Genoese commander who came to help Kente if he won?",
+    "doc_id": "13171",
+    "doc_title": "İstanbul'un Fethi",
+    "answer_span": "Muharebe Bizans zaferiyle sonuçlanırsa Giustiniani'ye Limni adası verilecekti",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Limni adası"
+    },
+    "review": "agreed",
+    "human_review": {
+      "reviewer": "royemserli",
+      "verdict": "ok"
+    },
+    "question_tr": "Kente yardıma gelen Cenevizli komutana kazanma hâlinde hangi ada söz verilmişti?"
+  },
+  {
+    "qid": "llm-tarih-009",
+    "question": "How much did the single projectile fired by the giant cannon that Urban cast weigh?",
+    "doc_id": "13171",
+    "doc_title": "İstanbul'un Fethi",
+    "answer_span": "tek güllesi 550 kilogram civarındaydı ve topun uzunluğu 8, çevresi de 2.5 metreydi",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "550 kilogram"
+    },
+    "review": "agreed",
+    "human_review": {
+      "reviewer": "royemserli",
+      "verdict": "ok"
+    },
+    "question_tr": "Urban'ın döktüğü dev silahın attığı tek mermi ne kadar ağırlıktaydı?"
+  },
+  {
+    "qid": "llm-tarih-010",
+    "question": "How was the captain of the Venetian ship that was sunk while trying to pass through the strait killed?",
+    "doc_id": "13171",
+    "doc_title": "İstanbul'un Fethi",
+    "answer_span": "esir alındı ve Edirne'ye götürülerek kazığa oturtuldu",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "esir alındı ve Edirne'ye götürülerek kazığa oturtuldu"
+    },
+    "review": "agreed",
+    "human_review": {
+      "reviewer": "royemserli",
+      "verdict": "ok"
+    },
+    "question_tr": "Boğazdan geçmeye çalışırken batırılan Venedik gemisinin kaptanı nasıl öldürüldü?"
+  },
+  {
+    "qid": "llm-tarih-011",
+    "question": "What did the twelve-year-old ruler write in his letter calling his father to the campaign?",
+    "doc_id": "13171",
+    "doc_title": "İstanbul'un Fethi",
+    "answer_span": "\"Baba, eğer padişah siz iseniz geliniz ve ordunun başına geçiniz, yok eğer padişah ben isem size emrediyorum gelip ordunun başına geçiniz.\"",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Baba, eğer padişah siz iseniz geliniz ve ordunun başına geçiniz, yok eğer padişah ben isem size emrediyorum gelip ordunun başına geçiniz."
+    },
+    "review": "agreed",
+    "question_tr": "On iki yaşındaki hükümdar babasını sefere çağıran mektubunda ne yazmıştı?"
+  },
+  {
+    "qid": "llm-tarih-012",
+    "question": "How high was the second line of defense built beyond the main wall on the land side?",
+    "doc_id": "13171",
+    "doc_title": "İstanbul'un Fethi",
+    "answer_span": "ana surun 14,5 metre önünde 8 metre yükseklikte ön surlar bulunuyordu",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "8 metre yükseklikte"
+    },
+    "review": "agreed",
+    "question_tr": "Kara tarafındaki asıl duvarın ilerisine çekilen ikinci savunma hattı ne kadar yüksekti?"
+  },
+  {
+    "qid": "llm-tarih-013",
+    "question": "Where was the unit set aside for precaution and provisions stationed while Yavuz's army marched east?",
+    "doc_id": "65813",
+    "doc_title": "Çaldıran Muharebesi",
+    "answer_span": "I. Selim, 40.000 kişilik bu kuvveti, ordunun iaşe ihtiyacını karşılaması ve gerekirse ihtiyat kuvveti olarak savaşa sokmak için için Kayseri ile Malatya arasına yerleştirdi",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Kayseri ile Malatya arasına yerleştirdi"
+    },
+    "review": "agreed",
+    "question_tr": "Yavuz'un ordusu doğuya yürürken ihtiyat ve erzak için ayrılan birlik nereye konuşlandırıldı?"
+  },
+  {
+    "qid": "llm-tarih-014",
+    "question": "Which weapon did the Ottoman commander who wounded the Safavid ruler in the arm and leg use?",
+    "doc_id": "65813",
+    "doc_title": "Çaldıran Muharebesi",
+    "answer_span": "Malkoçoğlu Ali Bey, Yavuz'un kendine hediye ettiği çift namlulu piştovuyla Şah İsmail'e ateş ederek onu kolundan ve baldırından yaraladı",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Yavuz'un kendine hediye ettiği çift namlulu piştovuyla Şah İsmail'e ateş ederek onu kolundan ve baldırından yaraladı"
+    },
+    "review": "agreed",
+    "question_tr": "Safevi hükümdarını kolundan ve bacağından yaralayan Osmanlı komutanı hangi silahı kullandı?"
+  },
+  {
+    "qid": "llm-tarih-015",
+    "question": "Whose disguise did Shah Ismail put on while fleeing the battlefield?",
+    "doc_id": "65813",
+    "doc_title": "Çaldıran Muharebesi",
+    "answer_span": "seyisi Atçeken Hızır'la kıyafetlerini ve atını değiştirerek firar etti",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "seyisi Atçeken Hızır'la kıyafetlerini ve atını değiştirerek firar etti"
+    },
+    "review": "agreed",
+    "question_tr": "Şah İsmail savaş meydanından kaçarken kimin kılığına girdi?"
+  },
+  {
+    "qid": "llm-tarih-016",
+    "question": "On what date did the victorious sultan enter the enemy capital?",
+    "doc_id": "65813",
+    "doc_title": "Çaldıran Muharebesi",
+    "answer_span": "6 Eylül 1514'te Safevi Devleti'nin başkenti olan Tebriz'e girdi",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "6 Eylül 1514'te Safevi Devleti'nin başkenti olan Tebriz'e girdi"
+    },
+    "review": "agreed",
+    "question_tr": "Galip padişah düşman başkentine hangi tarihte girdi?"
+  },
+  {
+    "qid": "llm-tarih-017",
+    "question": "How many cannons had been placed in front of the azaps in the Ottoman line?",
+    "doc_id": "65813",
+    "doc_title": "Çaldıran Muharebesi",
+    "answer_span": "Bunların önüne de 500 kadar zarbezen topları konuldu",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "500 kadar zarbezen topları konuldu"
+    },
+    "review": "agreed",
+    "question_tr": "Osmanlı hattında azapların önüne kaç top yerleştirilmişti?"
+  },
+  {
+    "qid": "llm-tarih-018",
+    "question": "Did the Safavid ruler go on another campaign before his death after the defeat?",
+    "doc_id": "65813",
+    "doc_title": "Çaldıran Muharebesi",
+    "answer_span": "tek hezimeti olan bu büyük yenilgiden sonra, 1524 yılında ölene dek başka bir savaş yapmadı",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "tek hezimeti olan bu büyük yenilgiden sonra, 1524 yılında ölene dek başka bir savaş yapmadı"
+    },
+    "review": "agreed",
+    "question_tr": "Yenilgiden sonra Safevi hükümdarı ölümüne kadar başka bir sefere çıktı mı?"
+  },
+  {
+    "qid": "llm-tarih-019",
+    "question": "How many soldiers and how many cannons did Suleiman the Magnificent have with him when he set out on the Hungarian campaign?",
+    "doc_id": "1405459",
+    "doc_title": "Mohaç Muharebesi",
+    "answer_span": "23 Nisan 1526'da 60.000 kişilik ordu ve 300 top ile sefere çıktı",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "60.000 kişilik ordu ve 300 top ile sefere çıktı"
+    },
+    "review": "agreed",
+    "question_tr": "Kanuni'nin Macaristan seferine çıkarken yanında kaç asker ve kaç top vardı?"
+  },
+  {
+    "qid": "llm-tarih-020",
+    "question": "In which fortress was it announced to the soldiers that the real target of the campaign was Buda?",
+    "doc_id": "1405459",
+    "doc_title": "Mohaç Muharebesi",
+    "answer_span": "Eszek kalesinde, seferin hedefinin Macar Krallığı'nın başkenti Budin olduğu orduya bildirildi",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Eszek kalesinde, seferin hedefinin Macar Krallığı'nın başkenti Budin olduğu orduya bildirildi."
+    },
+    "review": "agreed",
+    "question_tr": "Seferin asıl hedefinin Budin olduğu askerlere hangi kalede açıklandı?"
+  },
+  {
+    "qid": "llm-tarih-021",
+    "question": "Why didn't the voivode of Transylvania come to the king's aid?",
+    "doc_id": "1405459",
+    "doc_title": "Mohaç Muharebesi",
+    "answer_span": "30.000 kişiyle yola çıkan Erdel beyinin, kralı kıskandığı için savaşa katılmadığı söylenir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "30.000 kişiyle yola çıkan Erdel beyinin, kralı kıskandığı için savaşa katılmadığı söylenir."
+    },
+    "review": "agreed",
+    "question_tr": "Erdel voyvodası kralın yardımına neden gelmedi?"
+  },
+  {
+    "qid": "llm-tarih-022",
+    "question": "What tactic was proposed against the Hungarian heavy cavalry at the war council?",
+    "doc_id": "1405459",
+    "doc_title": "Mohaç Muharebesi",
+    "answer_span": "kitle halinde saldırının sakıncalı olacağını, düşmanın yan ve gerilerine yapılacak saldırıların daha çok yarar sağlayacağını söyledi",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "düşmanın yan ve gerilerine yapılacak saldırıların daha çok yarar sağlayacağını söyledi"
+    },
+    "review": "agreed",
+    "question_tr": "Savaş meclisinde Macar ağır süvarisine karşı hangi taktik önerildi?"
+  },
+  {
+    "qid": "llm-tarih-023",
+    "question": "Who handed the keys of Buda over to the sultan?",
+    "doc_id": "1405459",
+    "doc_title": "Mohaç Muharebesi",
+    "answer_span": "Yahudilerin başkanı Salamon'un başında bulunduğu bir heyet, Foeldward kasabasında, Budin kalesinin anahtarlarını Kanunî Sultan Süleyman'a teslim etti",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Yahudilerin başkanı Salamon'un başında bulunduğu bir heyet, Foeldward kasabasında, Budin kalesinin anahtarlarını Kanunî Sultan Süleyman'a teslim etti."
+    },
+    "review": "agreed",
+    "question_tr": "Budin'in anahtarlarını padişaha kim teslim etti?"
+  },
+  {
+    "qid": "llm-tarih-024",
+    "question": "After the death of the Hungarian king, whom did some of the nobles put on the throne?",
+    "doc_id": "1405459",
+    "doc_title": "Mohaç Muharebesi",
+    "answer_span": "Habsburg hanedanından Avusturya arşidükü I. Ferdinand'ı kral seçmeleri",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Erdel voyvodası János Szapolyai'yi Macar kralı seçti"
+    },
+    "review": "needs-human",
+    "question_tr": "Macar kralının ölümünden sonra soyluların bir kısmı tahta kimi çıkardı?"
+  },
+  {
+    "qid": "llm-tarih-025",
+    "question": "On which side of the mountain had the Seljuk army set up camp before the battle?",
+    "doc_id": "57228",
+    "doc_title": "Kösedağ Muharebesi",
+    "answer_span": "Anadolu Selçuklu ordusunun bu dağın kuzey eteğinde, Kelkit Çayı'na yakın bir düzlükte dağın yamacına yaslanmış olarak kamp kurduğu",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "bu dağın kuzey eteğinde, Kelkit Çayı'na yakın bir düzlükte dağın yamacına yaslanmış olarak kamp kurduğu"
+    },
+    "review": "agreed",
+    "question_tr": "Selçuklu ordusu savaştan önce dağın hangi yanında ordugâh kurmuştu?"
+  },
+  {
+    "qid": "llm-tarih-026",
+    "question": "How many soldiers were under the command of the Mongol commander who besieged Erzurum?",
+    "doc_id": "57228",
+    "doc_title": "Kösedağ Muharebesi",
+    "answer_span": "Baycu Noyan'ın komutası altında dört tümenlik yani 40 bin kişilik bir kuvvet vardır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Baycu Noyan'ın komutası altında dört tümenlik yani 40 bin kişilik bir kuvvet vardır."
+    },
+    "review": "agreed",
+    "question_tr": "Erzurum'u kuşatan Moğol komutanının emrinde ne kadar asker vardı?"
+  },
+  {
+    "qid": "llm-tarih-027",
+    "question": "Who let the enemy soldiers into the city from the inside during the siege of Erzurum?",
+    "doc_id": "57228",
+    "doc_title": "Kösedağ Muharebesi",
+    "answer_span": "kentin şahnesi (vali) Şerefeddin Duvini, Baycu Noyan'la, ailesinin ve akrabalarının canları bağışlanması koşuluyla anlaşmış ve 200 kişilik bir Moğol birliğini savunması kendi sorumluluğunda olan burçtan kente almıştır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "kentin şahnesi (vali) Şerefeddin Duvini, Baycu Noyan'la, ailesinin ve akrabalarının canları bağışlanması koşuluyla anlaşmış ve 200 kişilik bir Moğol birliğini savunması kendi sorumluluğunda olan burçtan kente almıştır."
+    },
+    "review": "agreed",
+    "question_tr": "Erzurum kuşatmasında düşman askerlerini şehre içeriden kim soktu?"
+  },
+  {
+    "qid": "llm-tarih-028",
+    "question": "Which of the surrounding independent states was the only one to send troops to the Seljuks?",
+    "doc_id": "57228",
+    "doc_title": "Kösedağ Muharebesi",
+    "answer_span": "Komşu bağımsız hükümdarlıklardan ise sadece Halep Eyyubilerinden 2 bin kişilik bir birlik gönderilmiştir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Komşu bağımsız hükümdarlıklardan ise sadece Halep Eyyubilerinden 2 bin kişilik bir birlik gönderilmiştir."
+    },
+    "review": "agreed",
+    "question_tr": "Çevredeki bağımsız devletlerden Selçuklulara asker yollayan tek devlet hangisiydi?"
+  },
+  {
+    "qid": "llm-tarih-029",
+    "question": "What spoils did the Mongols find in the abandoned Seljuk headquarters?",
+    "doc_id": "57228",
+    "doc_title": "Kösedağ Muharebesi",
+    "answer_span": "Geride kalan ganimetin bir kısmı 300 deve yükü altın, 3 bin katır yükü değerli eşya, 40 araba zırh ve muhtemelen büyük miktarda erzaktır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Geride kalan ganimetin bir kısmı 300 deve yükü altın, 3 bin katır yükü değerli eşya, 40 araba zırh ve muhtemelen büyük miktarda erzaktır."
+    },
+    "review": "agreed",
+    "question_tr": "Moğollar boşaltılmış Selçuklu karargâhında hangi ganimetleri buldu?"
+  },
+  {
+    "qid": "llm-tarih-030",
+    "question": "After the peace that followed the war, what did the Seljuks undertake to give the Mongols every year?",
+    "doc_id": "57228",
+    "doc_title": "Kösedağ Muharebesi",
+    "answer_span": "Bu antlaşmanın Anadolu Selçuklu'ya yüklediği maddi yük yılda 3,6 milyon dirhem, 10 bin koyun, bin sığır, bin deve ve başkaca değerli hediyelerdir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Bu antlaşmanın Anadolu Selçuklu'ya yüklediği maddi yük yılda 3,6 milyon dirhem, 10 bin koyun, bin sığır, bin deve ve başkaca değerli hediyelerdir."
+    },
+    "review": "agreed",
+    "question_tr": "Savaştan sonraki barışla Selçuklular Moğollara her yıl ne vermeyi üstlendi?"
+  },
+  {
+    "qid": "llm-tarih-031",
+    "question": "Which side did the weather conditions put at a disadvantage on the day of the battle, and why?",
+    "doc_id": "56939",
+    "doc_title": "Preveze Deniz Muharebesi",
+    "answer_span": "Muharebe günü rüzgarın kesilmesi, yelkenli ve ağır kalyonlardan oluşan Kutsal İttifak donanmasının hareket kabiliyetini kısıtladı.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Muharebe günü rüzgarın kesilmesi, yelkenli ve ağır kalyonlardan oluşan Kutsal İttifak donanmasının hareket kabiliyetini kısıtladı."
+    },
+    "review": "agreed",
+    "question_tr": "Savaş günü hava koşulları hangi tarafı neden zor duruma soktu?"
+  },
+  {
+    "qid": "llm-tarih-032",
+    "question": "What were the troops stationed in the land fortress expected to do in the naval battle?",
+    "doc_id": "56939",
+    "doc_title": "Preveze Deniz Muharebesi",
+    "answer_span": "Actium'daki kaleyi tutan Türk askerleri Barbaros'un filosunu topçu ateşiyle desteklerken Doria'yı da gemilerini sahilden uzakta tutmaya zorlayacaktı.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Actium'daki kaleyi tutan Türk askerleri Barbaros'un filosunu topçu ateşiyle desteklerken Doria'yı da gemilerini sahilden uzakta tutmaya zorlayacaktı."
+    },
+    "review": "agreed",
+    "question_tr": "Karadaki kaleye yerleştirilen birliklerin deniz çatışmasında ne işe yaraması bekleniyordu?"
+  },
+  {
+    "qid": "llm-tarih-033",
+    "question": "What was the level of losses on both sides when the clash ended?",
+    "doc_id": "56939",
+    "doc_title": "Preveze Deniz Muharebesi",
+    "answer_span": "Günün sonunda, Türkler 128 gemiyi batırdı, yok etti veya ele geçirdi ve yaklaşık 3.000 esir aldı. Türkler herhangi bir gemi kaybetmediler ama 400 ölü ve 800 yaralı verdiler.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Günün sonunda, Türkler 128 gemiyi batırdı, yok etti veya ele geçirdi ve yaklaşık 3.000 esir aldı. Türkler herhangi bir gemi kaybetmediler ama 400 ölü ve 800 yaralı verdiler."
+    },
+    "review": "agreed",
+    "question_tr": "Çarpışma bittiğinde iki tarafın kayıpları ne düzeydeydi?"
+  },
+  {
+    "qid": "llm-tarih-034",
+    "question": "What did Venice lose in territory and money in the peace that followed the war?",
+    "doc_id": "56939",
+    "doc_title": "Preveze Deniz Muharebesi",
+    "answer_span": "Ekim 1540'ta Venedik ile Osmanlı İmparatorluğu arasında, Türklerin Mora ve Dalmaçya'daki Venedik mülklerinin ve Ege, İyonya ve Doğu Adriyatik Denizi'ndeki eski Venedik adalarının kontrolünü ele geçirdiği bir barış anlaşması imzalandı. Venedik ayrıca Osmanlı İmparatorluğu'na 300.000 duka altın savaş tazminatı ödemek zorunda kaldı.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Türklerin Mora ve Dalmaçya'daki Venedik mülklerinin ve Ege, İyonya ve Doğu Adriyatik Denizi'ndeki eski Venedik adalarının kontrolünü ele geçirdiği bir barış anlaşması imzalandı. Venedik ayrıca Osmanlı İmparatorluğu'na 300.000 duka altın savaş tazminatı ödemek zorunda kaldı."
+    },
+    "review": "agreed",
+    "question_tr": "Savaşı izleyen barışla Venedik toprak ve para olarak neleri yitirdi?"
+  },
+  {
+    "qid": "llm-tarih-035",
+    "question": "What are the personal and political reasons thought to lie behind the Genoese admiral's hesitant behavior?",
+    "doc_id": "56939",
+    "doc_title": "Preveze Deniz Muharebesi",
+    "answer_span": "Doria'nın yalan söylediği yaygın olarak tahmin edilmektedir ve isteksiz olmasının, kendi gemilerini riske atma isteksizliğinden kaynaklanıyordu (kişisel olarak önemli sayıda \"İspanyol-Cenova\" filosuna sahipti) ve memleketinin azılı rakibi ve o dönemde Osmanlı saldırganlığının birincil hedefi olan Venedik'e karşı uzun süredir devam eden düşmanlığı vardı.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Doria'nın yalan söylediği yaygın olarak tahmin edilmektedir ve isteksiz olmasının, kendi gemilerini riske atma isteksizliğinden kaynaklanıyordu (kişisel olarak önemli sayıda \"İspanyol-Cenova\" filosuna sahipti) ve memleketinin azılı rakibi ve o dönemde Osmanlı saldırganlığının birincil hedefi olan Venedik'e karşı uzun süredir devam eden düşmanlığı vardı."
+    },
+    "review": "agreed",
+    "question_tr": "Cenevizli amiralin çekingen davranışının ardında hangi kişisel ve siyasi sebepler olduğu düşünülüyor?"
+  },
+  {
+    "qid": "llm-tarih-036",
+    "question": "Which later success strengthened the Turkish navy's dominance at sea, and until which defeat did it remain unstoppable?",
+    "doc_id": "56939",
+    "doc_title": "Preveze Deniz Muharebesi",
+    "answer_span": "Preveze zaferi ve ardından 1560 yılında Cerbe Savaşı'nda kazanılan zaferle Osmanlılar, Akdeniz'deki iki başlıca rakip güç olan Venedik ve İspanya'nın çabalarını geri püskürtmeyi başardılar. Akdeniz'deki büyük ölçekli filo savaşlarında Osmanlı üstünlüğü, 1571'deki İnebahtı Savaşı'na kadar rakipsiz kaldı.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Preveze zaferi ve ardından 1560 yılında Cerbe Savaşı'nda kazanılan zaferle Osmanlılar, Akdeniz'deki iki başlıca rakip güç olan Venedik ve İspanya'nın çabalarını geri püskürtmeyi başardılar. Akdeniz'deki büyük ölçekli filo savaşlarında Osmanlı üstünlüğü, 1571'deki İnebahtı Savaşı'na kadar rakipsiz kaldı."
+    },
+    "review": "agreed",
+    "question_tr": "Türk donanmasının denizlerdeki hâkimiyeti hangi sonraki başarıyla güçlendi ve hangi yenilgiye dek karşı konulmaz kaldı?"
+  },
+  {
+    "qid": "llm-tarih-037",
+    "question": "Which unit on the Ottoman left wing switched sides to the opposing army while the battle was ongoing?",
+    "doc_id": "236364",
+    "doc_title": "Ankara Muharebesi",
+    "answer_span": "Muharebe başında Osmanlı ordusunun sol cenahında yer alan Kara Tatarlar, muharebe esnasında saf değiştirerek Timur tarafına geçtiler.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Muharebe başında Osmanlı ordusunun sol cenahında yer alan Kara Tatarlar, muharebe esnasında saf değiştirerek Timur tarafına geçtiler."
+    },
+    "review": "agreed",
+    "question_tr": "Savaş sürerken Osmanlı sol kanadındaki hangi birlik karşı tarafa katıldı?"
+  },
+  {
+    "qid": "llm-tarih-038",
+    "question": "How did the Ottoman ruler belittle his rival through the gifts he sent and the style of his writing?",
+    "doc_id": "236364",
+    "doc_title": "Ankara Muharebesi",
+    "answer_span": "Bayezid, ayrıca gönderdiği hediyelerin sayısını âdet olduğu üzere dokuzar değil onar adet olarak gönderip mektupta kendi adını yaldızlı ve büyük harflerle yazarken, Timur'un adını da küçük ve siyah mürekkeple yazdı.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Bayezid, ayrıca gönderdiği hediyelerin sayısını âdet olduğu üzere dokuzar değil onar adet olarak gönderip mektupta kendi adını yaldızlı ve büyük harflerle yazarken, Timur'un adını da küçük ve siyah mürekkeple yazdı."
+    },
+    "review": "agreed",
+    "question_tr": "Osmanlı hükümdarı gönderdiği hediyeler ve yazının biçimiyle rakibini nasıl küçümsedi?"
+  },
+  {
+    "qid": "llm-tarih-039",
+    "question": "What did the Timurid army do to deprive the other side of its water and provisions?",
+    "doc_id": "236364",
+    "doc_title": "Ankara Muharebesi",
+    "answer_span": "Ayrıca civardaki çeşmelere, Çubuk Çayı'nın Kızılcaköy, İncesu ve Bent derelerine zehir dökerek Osmanlıları susuz bırakırken, bölgedeki çeşme, sebil, kuyu, sarnıç, tarla, değirmen, depo, sürü ve çiftlikleri Bayezid'in kullanmaması için tahrip ettirdi.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Ayrıca civardaki çeşmelere, Çubuk Çayı'nın Kızılcaköy, İncesu ve Bent derelerine zehir dökerek Osmanlıları susuz bırakırken, bölgedeki çeşme, sebil, kuyu, sarnıç, tarla, değirmen, depo, sürü ve çiftlikleri Bayezid'in kullanmaması için tahrip ettirdi."
+    },
+    "review": "agreed",
+    "question_tr": "Timurlu ordu karşı tarafı suyundan ve erzağından mahrum etmek için ne yaptı?"
+  },
+  {
+    "qid": "llm-tarih-040",
+    "question": "Which animals were at the front line of the army coming from the east, and where had they been brought from?",
+    "doc_id": "236364",
+    "doc_title": "Ankara Muharebesi",
+    "answer_span": "Hindistan'dan getirilen 32 zırhlı savaş fili, İsen Buga komutası altında ordunun önünde yer alıyordu.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Hindistan'dan getirilen 32 zırhlı savaş fili, İsen Buga komutası altında ordunun önünde yer alıyordu."
+    },
+    "review": "agreed",
+    "question_tr": "Doğudan gelen ordunun ön safında hangi hayvanlar vardı ve bunlar nereden getirilmişti?"
+  },
+  {
+    "qid": "llm-tarih-041",
+    "question": "Which Western kings did the victorious ruler announce his victory to, and with what kind of emphasis?",
+    "doc_id": "236364",
+    "doc_title": "Ankara Muharebesi",
+    "answer_span": "Timur bu zaferden sonra Fransa Kralı VI. Charles ile İngiltere Kralı IV. Henry'ye mektup göndererek; kendilerinin yenemedikleri Osmanlı hükümdarına karşı zafer kazandığını bildirdi.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Timur bu zaferden sonra Fransa Kralı VI. Charles ile İngiltere Kralı IV. Henry'ye mektup göndererek; kendilerinin yenemedikleri Osmanlı hükümdarına karşı zafer kazandığını bildirdi."
+    },
+    "review": "agreed",
+    "question_tr": "Galip hükümdar zaferini hangi Batılı krallara, nasıl bir vurguyla duyurdu?"
+  },
+  {
+    "qid": "llm-tarih-042",
+    "question": "How do some early chroniclers explain the death of the captive sultan?",
+    "doc_id": "236364",
+    "doc_title": "Ankara Muharebesi",
+    "answer_span": "Bunun yanında ilk dönem Osmanlı kaynaklarından; Oruç Bey ve Hadîdî ise Bayezid'in Timur tarafından Semerkant'a götürüleceğini anladıktan sonra yüzüğündeki zehri içerek intihar ettiğini iddia eder.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Bunun yanında ilk dönem Osmanlı kaynaklarından; Oruç Bey ve Hadîdî ise Bayezid'in Timur tarafından Semerkant'a götürüleceğini anladıktan sonra yüzüğündeki zehri içerek intihar ettiğini iddia eder."
+    },
+    "review": "agreed",
+    "question_tr": "Esir sultanın ölümünü bazı erken dönem kroniklerin yazarları nasıl açıklar?"
+  },
+  {
+    "qid": "llm-tarih-043",
+    "question": "Why did the besiegers choose to starve the castle instead of attacking it directly; what did they lack?",
+    "doc_id": "175184",
+    "doc_title": "Niğbolu Muharebesi (1396)",
+    "answer_span": "Her iki grup da kuşatma için gerekli silahların ellerinde bulunmadığından şikayetçi idi; halbuki nehirde demirli donanmada birçok mancınık ve benzeri kuşatma için gerekli savaş aletleri bulunmaktaydı, kara ordularından kimse bunları istemeyi düşünmemişti. Kaleye hücum edip alma yerine, uzun bir kuşatma ile kaleyi ablukaya alıp yiyecek ve içecek bitinceye kadar bekleme taktiği tercih edildi.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Her iki grup da kuşatma için gerekli silahların ellerinde bulunmadığından şikayetçi idi; halbuki nehirde demirli donanmada birçok mancınık ve benzeri kuşatma için gerekli savaş aletleri bulunmaktaydı, kara ordularından kimse bunları istemeyi düşünmemişti. Kaleye hücum edip alma yerine, uzun bir kuşatma ile kaleyi ablukaya alıp yiyecek ve içecek bitinceye kadar bekleme taktiği tercih edildi."
+    },
+    "review": "agreed",
+    "question_tr": "Kuşatmacılar kaleye doğrudan saldırmak yerine neden onu aç bırakmayı seçti; ellerinde ne eksikti?"
+  },
+  {
+    "qid": "llm-tarih-044",
+    "question": "Why didn't the Western commanders keep constantly watching the southern direction?",
+    "doc_id": "175184",
+    "doc_title": "Niğbolu Muharebesi (1396)",
+    "answer_span": "Haçlı komutanları Osmanlı Sultanı'nın Haçlı istilasından haberdar olmadığını; olsa bile bu uzak kaleye yetişme imkânı olmadığını düşünmekte idiler ve bu nedenle güneye devamlı bir keşif birliği göndermekten kaçınmışlardı.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Haçlı komutanları Osmanlı Sultanı'nın Haçlı istilasından haberdar olmadığını; olsa bile bu uzak kaleye yetişme imkânı olmadığını düşünmekte idiler ve bu nedenle güneye devamlı bir keşif birliği göndermekten kaçınmışlardı."
+    },
+    "review": "agreed",
+    "question_tr": "Batılı komutanlar güney yönünü neden sürekli gözetlemediler?"
+  },
+  {
+    "qid": "llm-tarih-045",
+    "question": "Why did the delivery agreement in Rahova break down, and what happened to the townspeople?",
+    "doc_id": "175184",
+    "doc_title": "Niğbolu Muharebesi (1396)",
+    "answer_span": "Fakat diğer Haçlılar, özellikle Fransız ve Burgunyalı prens ve soylular, bunu kabul etmeyip şehirdeki hem Müslüman hem de Ortodoks Hristiyan olanların çoğunu katlettiler ve kendilerine göre bir seçim yaparak büyük grup işe yarayanları esir olarak yanlarına aldılar.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Osmanlı garnizon komutanı Kral Sigismund'a bir elçi göndererek askerlerine dokunulmazsa silahlarını bırakıp kaleyi teslim edebileceğini bildirdi ve Kral Sigsmund bunu kabul etti. Fakat diğer Haçlılar, özellikle Fransız ve Burgunyalı prens ve soylular, bunu kabul etmeyip şehirdeki hem Müslüman hem de Ortodoks Hristiyan olanların çoğunu katlettiler ve kendilerine göre bir seçim yaparak büyük grup işe yarayanları esir olarak yanlarına aldılar."
+    },
+    "review": "agreed",
+    "question_tr": "Rahova'daki teslim uzlaşması neden bozuldu ve kasaba halkına ne oldu?"
+  },
+  {
+    "qid": "llm-tarih-046",
+    "question": "How did the armored order cavalry lose their advantage at the start of the clash?",
+    "doc_id": "175184",
+    "doc_title": "Niğbolu Muharebesi (1396)",
+    "answer_span": "Savaşın başlarında tepeden tırnağa zırhlı seçkin Hospitalier Şövalyeleri Osmanlıların öncü birliklerine kayıplar verdirmiş, onları kovalamak için ilerledikçe Türk askerlerinin daha önceden yerlere sapladıkları kazıkların olduğu bölgeye gelmişler ve atlarla ilerlemenin mümkün olmadığını görünce atlarından inmişlerdir. Ancak ağır zırhlı olduklarından dolayı çabucak yorulmuşlardır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Savaşın başlarında tepeden tırnağa zırhlı seçkin Hospitalier Şövalyeleri Osmanlıların öncü birliklerine kayıplar verdirmiş, onları kovalamak için ilerledikçe Türk askerlerinin daha önceden yerlere sapladıkları kazıkların olduğu bölgeye gelmişler ve atlarla ilerlemenin mümkün olmadığını görünce atlarından inmişlerdir. Ancak ağır zırhlı olduklarından dolayı çabucak yorulmuşlardır."
+    },
+    "review": "agreed",
+    "question_tr": "Zırhlı tarikat süvarileri çatışmanın başındaki üstünlüklerini nasıl yitirdi?"
+  },
+  {
+    "qid": "llm-tarih-047",
+    "question": "How were the prisoners treated after the defeat, and which of them were spared from death?",
+    "doc_id": "175184",
+    "doc_title": "Niğbolu Muharebesi (1396)",
+    "answer_span": "Soylular bir kenara ayrıldıktan sonra yere bir kazık çakıldı ve boyu bu kazıktan uzun olan tüm diğer esirler idam edildi. Niğbolu Muharebesi, Osmanlı'nın ilk zamanlarında esirlerin öldürüldüğü tek savaştır. Ancak çocuk yaştaki Haçlı askerlerinin canı bağışlandı ve onlar da Müslüman olarak yetiştirilmek üzere Türk ailelerine gönderildi. Soylular ise fidye karşılığı serbest bırakıldı.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Soylular bir kenara ayrıldıktan sonra yere bir kazık çakıldı ve boyu bu kazıktan uzun olan tüm diğer esirler idam edildi. Niğbolu Muharebesi, Osmanlı'nın ilk zamanlarında esirlerin öldürüldüğü tek savaştır. Ancak çocuk yaştaki Haçlı askerlerinin canı bağışlandı ve onlar da Müslüman olarak yetiştirilmek üzere Türk ailelerine gönderildi. Soylular ise fidye karşılığı serbest bırakıldı."
+    },
+    "review": "agreed",
+    "question_tr": "Galibiyetin ardından tutsaklara nasıl davranıldı; hangileri ölümden kurtuldu?"
+  },
+  {
+    "qid": "llm-tarih-048",
+    "question": "What did the Sultan send to Egypt, and what title did he receive in return?",
+    "doc_id": "175184",
+    "doc_title": "Niğbolu Muharebesi (1396)",
+    "answer_span": "Örneğin Bayezid, Kahire'ye Memluk sultanına zafernâme mektuplarıyla birlikte esir alınan tepeden tırnağa ağır zırhlara bürünmüş haçlı şövalyelerinden bir kısmını göndermiştir. Bunun üzerine Kahire'de bulunan Abbâsi halifesi, I. Bayezid'e Sultan-ı İklim-i Rum unvanını vermiştir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Örneğin Bayezid, Kahire'ye Memluk sultanına zafernâme mektuplarıyla birlikte esir alınan tepeden tırnağa ağır zırhlara bürünmüş haçlı şövalyelerinden bir kısmını göndermiştir. Bunun üzerine Kahire'de bulunan Abbâsi halifesi, I. Bayezid'e Sultan-ı İklim-i Rum unvanını vermiştir."
+    },
+    "review": "agreed",
+    "question_tr": "Sultan Mısır'a ne gönderdi ve bunun karşılığında hangi sanı aldı?"
+  },
+  {
+    "qid": "llm-tarih-049",
+    "question": "How did Ottoman writers of the period approach this victory differently from their European contemporaries?",
+    "doc_id": "175184",
+    "doc_title": "Niğbolu Muharebesi (1396)",
+    "answer_span": "Bunun aksine devrin Osmanlı tarihçileri Niğbolu Muharebesi'ni önemli bir olay olarak görmemişler, çok kısa bir yer vererek sıradan zaferlerden birisi gibi tasvir etmişlerdir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Bunun aksine devrin Osmanlı tarihçileri Niğbolu Muharebesi'ni önemli bir olay olarak görmemişler, çok kısa bir yer vererek sıradan zaferlerden birisi gibi tasvir etmişlerdir."
+    },
+    "review": "agreed",
+    "question_tr": "Dönemin Osmanlı yazarları bu zafere Avrupalı çağdaşlarından farklı olarak nasıl yaklaştı?"
+  }
+]

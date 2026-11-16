@@ -1,0 +1,722 @@
+[
+  {
+    "qid": "llm-biyoloji-001",
+    "question": "How many energy organelles can a liver cell contain?",
+    "doc_id": "30004",
+    "doc_title": "Mitokondri",
+    "answer_span": "Bir karaciğer hücresinde sayıları 2500 civarına ulaşabilir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Bir karaciğer hücresinde sayıları 2500 civarına ulaşabilir."
+    },
+    "review": "agreed",
+    "question_tr": "Bir karaciğer hücresi kaç tane enerji organeli barındırabilir?"
+  },
+  {
+    "qid": "llm-biyoloji-002",
+    "question": "How many base pairs long is an organelle's own genetic material?",
+    "doc_id": "30004",
+    "doc_title": "Mitokondri",
+    "answer_span": "daireseldir ve 16,569 baz çiftinden oluşur",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Mitokondriyal DNA bakterilerde olduğu gibi daireseldir ve 16,569 baz çiftinden oluşur."
+    },
+    "review": "agreed",
+    "question_tr": "Organelin kendi genetik materyali kaç baz çifti uzunluğundadır?"
+  },
+  {
+    "qid": "llm-biyoloji-003",
+    "question": "Who first gave organelles the name we use today?",
+    "doc_id": "30004",
+    "doc_title": "Mitokondri",
+    "answer_span": "1898 yılında Carl Benda tarafından kullanılarak literatüre geçti",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "\"Mitokondri\" terimi ise 1898 yılında Carl Benda tarafından kullanılarak literatüre geçti."
+    },
+    "review": "agreed",
+    "question_tr": "Organele bugün kullandığımız adı ilk kim verdi?"
+  },
+  {
+    "qid": "llm-biyoloji-004",
+    "question": "Who first came up with the \"powerhouse of the cell\" analogy?",
+    "doc_id": "30004",
+    "doc_title": "Mitokondri",
+    "answer_span": "Philip Siekevitz tarafından 1957'de ortaya çıkmıştır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Popüler bir terim olan \"hücrenin güçevi\", Philip Siekevitz tarafından 1957'de ortaya çıkmıştır."
+    },
+    "review": "agreed",
+    "question_tr": "'Hücrenin enerji santrali' benzetmesini ilk kim ortaya attı?"
+  },
+  {
+    "qid": "llm-biyoloji-005",
+    "question": "What are the inward folds of an organelle's inner membrane called?",
+    "doc_id": "30004",
+    "doc_title": "Mitokondri",
+    "answer_span": "İç zar mitokondri matriksine doğru girintiler yaparak krista denilen yapıları oluşturur",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "İç zar mitokondri matriksine doğru girintiler yaparak krista denilen yapıları oluşturur."
+    },
+    "review": "agreed",
+    "question_tr": "Organelin iç zarının içeri doğru yaptığı kıvrımlara ne ad verilir?"
+  },
+  {
+    "qid": "llm-biyoloji-006",
+    "question": "How many people in Europe live with diseases caused by this organelle's DNA?",
+    "doc_id": "30004",
+    "doc_title": "Mitokondri",
+    "answer_span": "bu sayı yaklaşık 400.000 insanın mitokondriyal sitopati ile yaşadığını göstermektedir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Avrupa'da görülme sıklığının 1:2000 olduğu bilinmektedir ki bu sayı yaklaşık 400.000 insanın mitokondriyal sitopati ile yaşadığını göstermektedir."
+    },
+    "review": "agreed",
+    "question_tr": "Avrupa'da kaç kişi bu organelin DNA'sından kaynaklanan hastalıklarla yaşıyor?"
+  },
+  {
+    "qid": "llm-biyoloji-007",
+    "question": "What did the researcher who conducted the willow sapling experiment attribute the weight gain at the end of five years to?",
+    "doc_id": "15756",
+    "doc_title": "Fotosentez",
+    "answer_span": "bitki ağırlığında oluşan 82,5 kg'lık madde artışının yalnız sudan kaynaklandığı kanısına varmıştır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "82,5 kg'lık madde artışının yalnız sudan kaynaklandığı"
+    },
+    "review": "agreed",
+    "question_tr": "Söğüt fidanı denemesini yapan araştırmacı beş yılın sonundaki ağırlık artışını neye bağladı?"
+  },
+  {
+    "qid": "llm-biyoloji-008",
+    "question": "Who established in 1779 that the purification of air only takes place in the light?",
+    "doc_id": "15756",
+    "doc_title": "Fotosentez",
+    "answer_span": "1779'da Jan Ingenhousz, havanın temizlenmesinin yeşil bitkiler tarafından ışıkta yapıldığını açıklamıştır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Jan Ingenhousz"
+    },
+    "review": "agreed",
+    "question_tr": "Havanın arınmasının ancak aydınlıkta olduğunu 1779'da kim ortaya koydu?"
+  },
+  {
+    "qid": "llm-biyoloji-009",
+    "question": "Which award did the scientist who gave the dark phase cycle its name win?",
+    "doc_id": "15756",
+    "doc_title": "Fotosentez",
+    "answer_span": "Calvin döngüsü ismini, bunu bulduğu için 1961 Nobel Kimya Ödülü'nü kazanan Melvin Calvin'den alır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "1961 Nobel Kimya Ödülü'nü"
+    },
+    "review": "agreed",
+    "question_tr": "Karanlık evre döngüsüne adını veren bilim insanı hangi ödülü kazanmıştır?"
+  },
+  {
+    "qid": "llm-biyoloji-010",
+    "question": "What is the level of power captured by this process worldwide?",
+    "doc_id": "15756",
+    "doc_title": "Fotosentez",
+    "answer_span": "küresel olarak fotosentez yoluyla elde edilen ortalama enerji yakalama oranı yaklaşık 130 terrawatt'tır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "yaklaşık 130 terrawatt"
+    },
+    "review": "agreed",
+    "question_tr": "Dünya genelinde bu süreçle yakalanan güç ne düzeydedir?"
+  },
+  {
+    "qid": "llm-biyoloji-011",
+    "question": "At which color of light is efficiency the lowest?",
+    "doc_id": "15756",
+    "doc_title": "Fotosentez",
+    "answer_span": "Fotosentez en çok mor ve kırmızı ışıkta gerçekleşir, en düşük hız ise yeşildedir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "en düşük hız ise yeşildedir"
+    },
+    "review": "agreed",
+    "question_tr": "Hangi renkteki ışıkta verim en düşüktür?"
+  },
+  {
+    "qid": "llm-biyoloji-012",
+    "question": "Below what water ratio level does the process stop completely?",
+    "doc_id": "15756",
+    "doc_title": "Fotosentez",
+    "answer_span": "Su miktarı %15'in altına indiğinde enzimler inaktif olacağından fotosentez durur",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "%15'in altına indiğinde"
+    },
+    "review": "agreed",
+    "question_tr": "Su oranı hangi düzeyin altına inince olay tümüyle durur?"
+  },
+  {
+    "qid": "llm-biyoloji-013",
+    "question": "Which two subunits make up the protein production unit in animal and plant cells?",
+    "doc_id": "33246",
+    "doc_title": "Ribozom",
+    "answer_span": "Ökaryotlarda büyük alt birim 60S, küçük alt birim ise 40S'tir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Ökaryotlarda büyük alt birim 60S, küçük alt birim ise 40S'tir"
+    },
+    "review": "agreed",
+    "question_tr": "Hayvan ve bitki hücrelerindeki protein üretim birimi hangi iki alt parçadan oluşur?"
+  },
+  {
+    "qid": "llm-biyoloji-014",
+    "question": "What is the total sedimentation value of the protein production unit in bacteria?",
+    "doc_id": "33246",
+    "doc_title": "Ribozom",
+    "answer_span": "Bu alt birimlerin birleşimi ise 70S'lik prokaryot ribozomunu oluşturur",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Bu alt birimlerin birleşimi ise 70S'lik prokaryot ribozomunu oluşturur"
+    },
+    "review": "agreed",
+    "question_tr": "Bakterilerdeki protein üretim biriminin toplam çökelme değeri nedir?"
+  },
+  {
+    "qid": "llm-biyoloji-015",
+    "question": "What do the A, P, and E sites of the protein-making machine bind to, respectively?",
+    "doc_id": "33246",
+    "doc_title": "Ribozom",
+    "answer_span": "A bölgesi aminoasil-tRNA'ya, P bölgesi peptidil-tRNA'ya ve E bölgesi serbest tRNA'ya bağlanır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "A bölgesi aminoasil-tRNA'ya, P bölgesi peptidil-tRNA'ya ve E bölgesi serbest tRNA'ya bağlanır"
+    },
+    "review": "agreed",
+    "question_tr": "Protein üretim makinesinin A, P ve E bölgeleri sırasıyla neye bağlanır?"
+  },
+  {
+    "qid": "llm-biyoloji-016",
+    "question": "How can some antibiotics kill bacteria without touching human cells?",
+    "doc_id": "33246",
+    "doc_title": "Ribozom",
+    "answer_span": "Bu yapısal varyasyon, bazı antibiyotiklerin insan ribozomlarını etkilemeden bakteriyel ribozomları hedef almasını sağlar",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "bazı antibiyotiklerin insan ribozomlarını etkilemeden bakteriyel ribozomları hedef almasını sağlar"
+    },
+    "review": "agreed",
+    "question_tr": "Bazı antibiyotikler insan hücrelerine dokunmadan bakterileri nasıl vurabilir?"
+  },
+  {
+    "qid": "llm-biyoloji-017",
+    "question": "What are the groups of protein-making structures working simultaneously on a single messenger RNA called?",
+    "doc_id": "33246",
+    "doc_title": "Ribozom",
+    "answer_span": "Tek bulunanlara monomer ribozom, gruplar halinde bulunanlara ise polizom veya poliribozom denir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "birden fazla ribozom aynı anda tek bir mRNA zinciri boyunca hareket ederek her biri bir protein molekülü üreten polizomlar oluşturabilir"
+    },
+    "review": "needs-human",
+    "question_tr": "Tek bir haberci RNA üzerinde aynı anda çalışan protein yapıcı gruplarına ne ad verilir?"
+  },
+  {
+    "qid": "llm-biyoloji-018",
+    "question": "What kinds of proteins do ribosomes attached to the intracellular membrane network produce?",
+    "doc_id": "33246",
+    "doc_title": "Ribozom",
+    "answer_span": "Endoplazmik retikulum'a bağlı olanlar hücre dışına verilecek proteinleri (pankreas, sindirim enzimleri vb.)",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Endoplazmik retikulum'a bağlı olanlar hücre dışına verilecek proteinleri (pankreas, sindirim enzimleri vb.)"
+    },
+    "review": "agreed",
+    "question_tr": "Hücre içi zar ağına tutunmuş ribozomlar ne tür proteinler üretir?"
+  },
+  {
+    "qid": "llm-biyoloji-019",
+    "question": "How many different reactions are biological catalysts known to accelerate?",
+    "doc_id": "99608",
+    "doc_title": "Enzim",
+    "answer_span": "Enzimlerin 4000'den fazla biyokimyasal tepkimeyi katalizlediği bilinmektedir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Enzimlerin 4000'den fazla biyokimyasal tepkimeyi katalizlediği bilinmektedir."
+    },
+    "review": "agreed",
+    "question_tr": "Biyolojik katalizörlerin bilinen kaç farklı tepkimeyi hızlandırdığı biliniyor?"
+  },
+  {
+    "qid": "llm-biyoloji-020",
+    "question": "Who showed that sugar can be fermented with cell-free yeast extract?",
+    "doc_id": "99608",
+    "doc_title": "Enzim",
+    "answer_span": "1897'de Eduard Buchner içinde canlı hücre bulunmayan maya özütünün (ekstresinin) şekeri fermante etme yeteneği olduğunu gösterdi",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Eduard Buchner içinde canlı hücre bulunmayan maya özütünün (ekstresinin) şekeri fermante etme yeteneği olduğunu gösterdi"
+    },
+    "review": "agreed",
+    "question_tr": "Hücresiz maya özüyle şekerin mayalanabildiğini kim gösterdi?"
+  },
+  {
+    "qid": "llm-biyoloji-021",
+    "question": "Who proved in the 1920s, by obtaining crystals, that an enzyme consists solely of protein?",
+    "doc_id": "99608",
+    "doc_title": "Enzim",
+    "answer_span": "1926'da James B. Sumner, üreaz enziminin saf bir protein olduğunu gösterdi ve onu kristalleştirdi",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "James B. Sumner, üreaz enziminin saf bir protein olduğunu gösterdi"
+    },
+    "review": "agreed",
+    "question_tr": "Bir enzimin yalnızca proteinden ibaret olduğunu kristal elde ederek 1920'lerde kim kanıtladı?"
+  },
+  {
+    "qid": "llm-biyoloji-022",
+    "question": "Which enzyme found in tears and saliva was the first to have its structure solved by X-ray?",
+    "doc_id": "99608",
+    "doc_title": "Enzim",
+    "answer_span": "Bu ilk defa David Chilton Phillips önderliğinde bir grup tarafından lizozim için başarıldı ve 1965'te yayımlandı",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "lizozim göz yaşında, tükürükte ve yumurta beyazında bulunan ve bakterilerin hücre duvarını sindiren bir enzimdir"
+    },
+    "review": "needs-human",
+    "question_tr": "Gözyaşı ve tükürükte bulunan hangi enzimin yapısı X ışınıyla ilk çözülen oldu?"
+  },
+  {
+    "qid": "llm-biyoloji-023",
+    "question": "What are enzymes called that speed up the same reaction but have different amino acid sequences?",
+    "doc_id": "99608",
+    "doc_title": "Enzim",
+    "answer_span": "aynı tepkimeyi katalizleyen farklı enzimler aynı temel ada sahip olabilir, bunlara izoenzim denir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "bunlara izoenzim denir"
+    },
+    "review": "agreed",
+    "question_tr": "Aynı tepkimeyi hızlandıran ama amino asit dizisi farklı olan enzimlere ne denir?"
+  },
+  {
+    "qid": "llm-biyoloji-024",
+    "question": "What is the error rate in proofreading polymerases?",
+    "doc_id": "99608",
+    "doc_title": "Enzim",
+    "answer_span": "yüksek sadakatli polimerazlarda ortalama hata oranı 100 milyon reaksiyonda 1'den az olur",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "yüksek sadakatli polimerazlarda ortalama hata oranı 100 milyon reaksiyonda 1'den az olur"
+    },
+    "review": "agreed",
+    "question_tr": "Hata denetimi yapan polimerazlarda yanlışlık oranı ne kadardır?"
+  },
+  {
+    "qid": "llm-biyoloji-025",
+    "question": "Which base takes the place of thymine from DNA in ribonucleic acid?",
+    "doc_id": "5966",
+    "doc_title": "RNA",
+    "answer_span": "DNA'da bulunan timin bazı yerine RNA'da urasil vardır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "DNA'da bulunan timin bazı yerine RNA'da urasil vardır"
+    },
+    "review": "agreed",
+    "question_tr": "Ribonükleik asitte DNA'daki timinin yerini hangi baz alır?"
+  },
+  {
+    "qid": "llm-biyoloji-026",
+    "question": "Why does the extra OH group in ribose sugar make the molecule more fragile?",
+    "doc_id": "5966",
+    "doc_title": "RNA",
+    "answer_span": "RNA'da fazladan bulunan hidroksil grupları, hidroliz nedeniyle DNA'dan daha az dayanıklı olmasına neden olur",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "RNA'da fazladan bulunan hidroksil grupları, hidroliz nedeniyle DNA'dan daha az dayanıklı olmasına neden olur."
+    },
+    "review": "agreed",
+    "question_tr": "Riboz şekerindeki ek OH grubu molekülü neden daha kırılgan yapar?"
+  },
+  {
+    "qid": "llm-biyoloji-027",
+    "question": "Approximately how many nucleotides long is the molecule that brings amino acids to the ribosome?",
+    "doc_id": "5966",
+    "doc_title": "RNA",
+    "answer_span": "Taşıyıcı RNA (tRNA) yaklaşık 80 nükleotit uzunluğunda bir RNA zinciri olup",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Taşıyıcı RNA (tRNA) yaklaşık 80 nükleotit uzunluğunda bir RNA zinciri olup"
+    },
+    "review": "agreed",
+    "question_tr": "Amino asitleri ribozoma getiren molekül yaklaşık kaç nükleotit uzunluğundadır?"
+  },
+  {
+    "qid": "llm-biyoloji-028",
+    "question": "What proportion of the ribonucleic acid in the cytoplasm of a typical eukaryotic cell is ribosomal?",
+    "doc_id": "5966",
+    "doc_title": "RNA",
+    "answer_span": "Tipik bir ökaryotik hücre sitoplazmasındaki RNA konsantrasyonu 10 mg/ml'dir, bunun %80 rRNA'dan oluşur",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Tipik bir ökaryotik hücre sitoplazmasındaki RNA konsantrasyonu 10 mg/ml'dir, bunun %80 rRNA'dan oluşur."
+    },
+    "review": "agreed",
+    "question_tr": "Tipik bir ökaryot hücresinin sitoplazmasındaki ribonükleik asidin ne kadarı ribozomaldir?"
+  },
+  {
+    "qid": "llm-biyoloji-029",
+    "question": "Which molecule silences one of the two X chromosomes in female mammals?",
+    "doc_id": "5966",
+    "doc_title": "RNA",
+    "answer_span": "X kromozomlarından birini kaplayarak onu inaktive eden Xist adlı bir RNA tarafından meydana gelir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Dişi hayvanlarda görülen X kromozom inaktivasyonu, X kromozomlarından birini kaplayarak onu inaktive eden Xist adlı bir RNA tarafından meydana gelir."
+    },
+    "review": "agreed",
+    "question_tr": "Dişi memelilerde iki X kromozomundan birini hangi molekül susturur?"
+  },
+  {
+    "qid": "llm-biyoloji-030",
+    "question": "Which award did the researcher who first sequenced a yeast nucleic acid win?",
+    "doc_id": "5966",
+    "doc_title": "RNA",
+    "answer_span": "bundan dolayı 1968 Nobel Tıp ödülünü kazanmıştır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "bundan dolayı 1968 Nobel Tıp ödülünü kazanmıştır"
+    },
+    "review": "agreed",
+    "question_tr": "Bir maya nükleik asidinin dizisini ilk okuyan araştırmacı hangi ödülü kazandı?"
+  },
+  {
+    "qid": "llm-biyoloji-031",
+    "question": "What changes in the protein chain in sickle cell disease, and what is the result of this?",
+    "doc_id": "29553",
+    "doc_title": "Hemoglobin",
+    "answer_span": "Örneğin; β zincirinin altıncı durumundaki glutamik asit yerine valinin geçmesiyle hücreler orak şeklinde kıvrılır ve oksijeni yeterli miktarda bağlayamaz.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "β zincirinin altıncı durumundaki glutamik asit yerine valinin geçmesiyle hücreler orak şeklinde kıvrılır ve oksijeni yeterli miktarda bağlayamaz. Böylece hemoglobinin dalakta çok hızlı olarak yıkılmasıyla Anemizma oluşur."
+    },
+    "review": "agreed",
+    "question_tr": "Orak hücre hastalığında protein zincirinde ne değişir ve bunun sonucu ne olur?"
+  },
+  {
+    "qid": "llm-biyoloji-032",
+    "question": "Which developmental defect does Mediterranean anemia arise from?",
+    "doc_id": "29553",
+    "doc_title": "Hemoglobin",
+    "answer_span": "Fetus hemoglobinindeki ɣ zincirinin doğumdan sonra β zinciri şekline dönüşmesi gerekir. ɣ zincirinin β zinciri şekline dönüşememesi Akdeniz anemisi (β-talasemi) meydana getirir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Fetus hemoglobinindeki ɣ zincirinin doğumdan sonra β zinciri şekline dönüşmesi gerekir. ɣ zincirinin β zinciri şekline dönüşememesi Akdeniz anemisi (β-talasemi) meydana getirir."
+    },
+    "review": "agreed",
+    "question_tr": "Akdeniz anemisi hangi gelişimsel aksaklıktan doğar?"
+  },
+  {
+    "qid": "llm-biyoloji-033",
+    "question": "What happens if carbon monoxide binds to the carrier protein in a red blood cell?",
+    "doc_id": "29553",
+    "doc_title": "Hemoglobin",
+    "answer_span": "Hemoglobinin altıncı koordinasyon yerine CO gelirse buna da karboksihemoglobin adı verilir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Hemoglobinin altıncı koordinasyon yerine CO gelirse buna da karboksihemoglobin adı verilir. Hemoglobinin CO'e ilgisi O2'den daha fazladır."
+    },
+    "review": "agreed",
+    "question_tr": "Kırmızı kan hücresindeki taşıyıcı proteine karbon monoksit tutunursa ne olur?"
+  },
+  {
+    "qid": "llm-biyoloji-034",
+    "question": "What should be done as emergency treatment for cyanide poisoning?",
+    "doc_id": "29553",
+    "doc_title": "Hemoglobin",
+    "answer_span": "Hemoglobindeki altıncı koordinasyon yerine CN- bağlanırsa buna da siyanohemoglobin adı verilir ve bu tür zehirlenme gören kimselere sodyum tiyosülfat acil olarak verilmelidir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Hemoglobindeki altıncı koordinasyon yerine CN- bağlanırsa buna da siyanohemoglobin adı verilir ve bu tür zehirlenme gören kimselere sodyum tiyosülfat acil olarak verilmelidir."
+    },
+    "review": "agreed",
+    "question_tr": "Siyanür zehirlenmesinde acil tedavi olarak ne yapılmalıdır?"
+  },
+  {
+    "qid": "llm-biyoloji-035",
+    "question": "Why can't a heme precursor taken from outside the body, by injection or through food, be used in the body?",
+    "doc_id": "29553",
+    "doc_title": "Hemoglobin",
+    "answer_span": "Eğer organizmaya protoporfirin şırınga edilirse veya besinlerle eksojen olarak verilirse organizma bundan yararlanamaz.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Eğer organizmaya protoporfirin şırınga edilirse veya besinlerle eksojen olarak verilirse organizma bundan yararlanamaz. Dışkı ve idrarla dışarı atar."
+    },
+    "review": "agreed",
+    "question_tr": "Dışarıdan iğneyle ya da yiyecekle alınan hem öncülü vücutta neden kullanılamaz?"
+  },
+  {
+    "qid": "llm-biyoloji-036",
+    "question": "How much more strongly does the blood pigment of a baby in the womb hold onto oxygen compared to that of an adult?",
+    "doc_id": "29553",
+    "doc_title": "Hemoglobin",
+    "answer_span": "HbF'in oksijene aflinitesi erişkin tip hemoglobinden yani HbA'dan %50 daha fazladır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "HbF'in oksijene aflinitesi erişkin tip hemoglobinden yani HbA'dan %50 daha fazladır."
+    },
+    "review": "agreed",
+    "question_tr": "Anne karnındaki bebeğin kan pigmenti oksijeni yetişkininkine göre ne kadar güçlü tutar?"
+  },
+  {
+    "qid": "llm-biyoloji-037",
+    "question": "Through which groove of the helix do regulatory proteins that recognize specific sequences access the bases?",
+    "doc_id": "3820",
+    "doc_title": "DNA",
+    "answer_span": "Bu nedenle, DNA'daki belli baz dizilerine bağlanan, transkripsiyon faktörü gibi proteinler büyük oyuktan bazların kenarlarına temas ederler.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Bu nedenle, DNA'daki belli baz dizilerine bağlanan, transkripsiyon faktörü gibi proteinler büyük oyuktan bazların kenarlarına temas ederler."
+    },
+    "review": "agreed",
+    "question_tr": "Belirli dizileri tanıyan düzenleyici proteinler sarmalın hangi oluğundan bazlara ulaşır?"
+  },
+  {
+    "qid": "llm-biyoloji-038",
+    "question": "What makes guanine-cytosine pairing stronger than adenine-thymine pairing?",
+    "doc_id": "3820",
+    "doc_title": "DNA",
+    "answer_span": "İki tip baz çifti farklı sayıda hidrojen bağları oluşturur, AT'nin iki hidrojen bağı, GC'nin üç hidrojen bağı vardır (bakınız şekil).",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "İki tip baz çifti farklı sayıda hidrojen bağları oluşturur, AT'nin iki hidrojen bağı, GC'nin üç hidrojen bağı vardır (bakınız şekil). Dolayısıyla GC çiftleri AT baz çiftlerinden daha güçlüdür."
+    },
+    "review": "agreed",
+    "question_tr": "Guanin-sitozin eşleşmesini adenin-timin eşleşmesinden daha sağlam kılan nedir?"
+  },
+  {
+    "qid": "llm-biyoloji-039",
+    "question": "Why are cytosine bases with an added methyl group more prone to heritable changes?",
+    "doc_id": "3820",
+    "doc_title": "DNA",
+    "answer_span": "5-metilsitozinin önemli bir baz olmasına rağmen, onun deaminasyonu sonucu bir timin bazı oluşur, bu yüzden metillenmiş sitozinler mutasyona eğilimlidirler.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "5-metilsitozinin önemli bir baz olmasına rağmen, onun deaminasyonu sonucu bir timin bazı oluşur, bu yüzden metillenmiş sitozinler mutasyona eğilimlidirler."
+    },
+    "review": "agreed",
+    "question_tr": "Metil grubu eklenmiş sitozin bazları neden kalıtsal değişikliğe daha açıktır?"
+  },
+  {
+    "qid": "llm-biyoloji-040",
+    "question": "Why are the end regions of chromosomes replicated by a special enzyme rather than by ordinary replication enzymes?",
+    "doc_id": "3820",
+    "doc_title": "DNA",
+    "answer_span": "DNA'yı normalde kopyalayan enzimler kromozomların en uç kısımlarını kopyalayamadığı için bu kopyalama telomeraz aracılığıyla yapılır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "DNA'yı normalde kopyalayan enzimler kromozomların en uç kısımlarını kopyalayamadığı için bu kopyalama telomeraz aracılığıyla yapılır."
+    },
+    "review": "agreed",
+    "question_tr": "Kromozomların uç bölgeleri neden sıradan kopyalama enzimleri yerine özel bir enzimle çoğaltılır?"
+  },
+  {
+    "qid": "llm-biyoloji-041",
+    "question": "Why are substances that intercalate between base pairs and can cause cancer useful in treatment?",
+    "doc_id": "3820",
+    "doc_title": "DNA",
+    "answer_span": "Tüm bunlara rağmen, DNA transkripsiyonuna engel olma özelliklerinden dolayı bu toksinler aynı zamanda hızla büyüyen kanser hücrelerini engellemek amacıyla kemoterapide kullanılırlar.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Tüm bunlara rağmen, DNA transkripsiyonuna engel olma özelliklerinden dolayı bu toksinler aynı zamanda hızla büyüyen kanser hücrelerini engellemek amacıyla kemoterapide kullanılırlar."
+    },
+    "review": "agreed",
+    "question_tr": "Baz çiftlerinin arasına giren ve kanser yapabilen maddeler tedavide neden işe yarar?"
+  },
+  {
+    "qid": "llm-biyoloji-042",
+    "question": "What percentage of human genetic material codes for proteins, and what percentage consists of repetitive sequences?",
+    "doc_id": "3820",
+    "doc_title": "DNA",
+    "answer_span": "Örneğin insan genomunun ancak %1'i protein eksonları kodlar, buna karşın insan DNA'sının %50'si protein kodlamayan, kendini tekrar eden dizilerden oluşur.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Örneğin insan genomunun ancak %1'i protein eksonları kodlar, buna karşın insan DNA'sının %50'si protein kodlamayan, kendini tekrar eden dizilerden oluşur."
+    },
+    "review": "agreed",
+    "question_tr": "İnsan kalıtım malzemesinin yüzde kaçı protein kodlar, yüzde kaçı yinelenen dizilerden oluşur?"
+  },
+  {
+    "qid": "llm-biyoloji-043",
+    "question": "Why can't the bond that links amino acids together rotate around its own axis, and what is the consequence of this?",
+    "doc_id": "3245",
+    "doc_title": "Protein",
+    "answer_span": "Peptit bağının iki rezonans formu vardır ve bunlar ona kısmî çift bağ özelliği kazandırarak, ekseni etrafında dönmesini engeller. Bu yüzden de alfa karbonlar eşdüzlemseldir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Peptit bağının iki rezonans formu vardır ve bunlar ona kısmî çift bağ özelliği kazandırarak, ekseni etrafında dönmesini engeller. Bu yüzden de alfa karbonlar eşdüzlemseldir."
+    },
+    "review": "agreed",
+    "question_tr": "Amino asitleri birbirine bağlayan bağ neden kendi ekseninde dönemez ve bunun sonucu nedir?"
+  },
+  {
+    "qid": "llm-biyoloji-044",
+    "question": "In what situation are short chains given a different name, and how clear is the boundary that separates the two terms?",
+    "doc_id": "3245",
+    "doc_title": "Protein",
+    "answer_span": "\"Peptit\" ise genelde kararlı bir üç boyutlu yapıya sahip olmayan, kısa amino asit oligomerleri için kullanılır. Ancak bu iki terim arasındaki sınır belirsizdir ve genelde 20-30 kalıntı dolayındadır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "\"Peptit\" ise genelde kararlı bir üç boyutlu yapıya sahip olmayan, kısa amino asit oligomerleri için kullanılır. Ancak bu iki terim arasındaki sınır belirsizdir ve genelde 20-30 kalıntı dolayındadır."
+    },
+    "review": "agreed",
+    "question_tr": "Kısa zincirlere hangi durumda farklı bir ad verilir ve iki terimi ayıran sınır ne kadar nettir?"
+  },
+  {
+    "qid": "llm-biyoloji-045",
+    "question": "Why can several triplets code for the same building block in the genetic code?",
+    "doc_id": "3245",
+    "doc_title": "Protein",
+    "answer_span": "DNA dört nükleotitten oluştuğu için tüm kodonların sayısı 64'tür, dolayısıyla genetik kod bir miktar tekrar içerir ve bazı amino asitler birden fazla kodon tarafından belirlenir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "DNA dört nükleotitten oluştuğu için tüm kodonların sayısı 64'tür, dolayısıyla genetik kod bir miktar tekrar içerir ve bazı amino asitler birden fazla kodon tarafından belirlenir."
+    },
+    "review": "agreed",
+    "question_tr": "Kalıtım şifresinde neden birkaç üçlü aynı yapı taşını gösterebilir?"
+  },
+  {
+    "qid": "llm-biyoloji-046",
+    "question": "In eukaryotic cells, where is the messenger molecule transported from its site of production, and where is the chain assembled?",
+    "doc_id": "3245",
+    "doc_title": "Protein",
+    "answer_span": "Buna karşın ökaryotlar mRNA'yı hücre çekirdeğinde imal ettikten sonra onu çekirdek zarından sitoplazmaya aktarırlar, protein sentezi orada yer alır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Buna karşın ökaryotlar mRNA'yı hücre çekirdeğinde imal ettikten sonra onu çekirdek zarından sitoplazmaya aktarırlar, protein sentezi orada yer alır."
+    },
+    "review": "agreed",
+    "question_tr": "Çekirdekli hücrelerde mesaj molekülü üretildiği yerden nereye taşınır ve zincir nerede kurulur?"
+  },
+  {
+    "qid": "llm-biyoloji-047",
+    "question": "Why doesn't artificially producing long chains in the laboratory work?",
+    "doc_id": "3245",
+    "doc_title": "Protein",
+    "answer_span": "300 amino asitten uzun polipeptitler için kimyasal sentez verimsizdir ve sentezlenmiş protein kendiliğinden doğadaki üç boyutlu şeklini kazanmayabilir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "300 amino asitten uzun polipeptitler için kimyasal sentez verimsizdir ve sentezlenmiş protein kendiliğinden doğadaki üç boyutlu şeklini kazanmayabilir."
+    },
+    "review": "agreed",
+    "question_tr": "Uzun zincirleri laboratuvarda yapay olarak üretmek neden işe yaramaz?"
+  },
+  {
+    "qid": "llm-biyoloji-048",
+    "question": "Why do molecules found in the cell membrane take up little space in the structure database?",
+    "doc_id": "3245",
+    "doc_title": "Protein",
+    "answer_span": "Özellikle, globüler proteinlerin X-ışını kristlografisi için kristalleştirilmeleri nispeten kolaydır. Buna karşın membran proteinlerinin kristalleştirilmesi zordur ve PDB'de az sayıda temsil edilirler.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Buna karşın membran proteinlerinin kristalleştirilmesi zordur ve PDB'de az sayıda temsil edilirler."
+    },
+    "review": "agreed",
+    "question_tr": "Hücre zarında bulunan moleküller yapı veri bankasında neden az yer tutar?"
+  }
+]

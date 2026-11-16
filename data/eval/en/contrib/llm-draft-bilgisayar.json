@@ -1,0 +1,722 @@
+[
+  {
+    "qid": "llm-bilgisayar-001",
+    "question": "Who is the developer behind the first complete packaged distribution?",
+    "doc_id": "24",
+    "doc_title": "Linux",
+    "answer_span": "1993 Yılında Patrick Volkerding, çeşitli ağ araçları, grafik arabirimi ve diğer araçları bir arada sunduğu bir GNU/Linux projesi başlatmıştır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "1993 Yılında Patrick Volkerding, çeşitli ağ araçları, grafik arabirimi ve diğer araçları bir arada sunduğu bir GNU/Linux projesi başlatmıştır. Slackware adını verdiği proje ilk GNU/Linux dağıtımıdır."
+    },
+    "review": "agreed",
+    "question_tr": "Paketlenmiş ilk tam dağıtımın arkasındaki geliştirici kimdir?"
+  },
+  {
+    "qid": "llm-bilgisayar-002",
+    "question": "Who drew the penguin used as the mascot?",
+    "doc_id": "24",
+    "doc_title": "Linux",
+    "answer_span": "Larry Ewing bugün de kullanılan penguen çizimi ile katılmış ve çizimi seçilmiştir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Larry Ewing bugün de kullanılan penguen çizimi ile katılmış ve çizimi seçilmiştir."
+    },
+    "review": "agreed",
+    "question_tr": "Maskot olarak kullanılan pengueni kim çizdi?"
+  },
+  {
+    "qid": "llm-bilgisayar-003",
+    "question": "What percentage of the world's 500 fastest supercomputers run this operating system?",
+    "doc_id": "24",
+    "doc_title": "Linux",
+    "answer_span": "en iyi 500 süperbilgisayar sistemin tamamı (%100) Linux kullanmaktadır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Kasım 2017 tarihinden bugüne en iyi 500 süperbilgisayar sistemin tamamı (%100) Linux kullanmaktadır."
+    },
+    "review": "agreed",
+    "question_tr": "Dünyanın en hızlı 500 süperbilgisayarının ne kadarı bu işletim sistemini çalıştırıyor?"
+  },
+  {
+    "qid": "llm-bilgisayar-004",
+    "question": "Why doesn't Torvalds want to move the kernel's license to the new version of the GPL?",
+    "doc_id": "24",
+    "doc_title": "Linux",
+    "answer_span": "yeni lisansta yer alan ve dijital haklar yönetiminde yazılım kullanımını yasaklayan bazı hükümleri sevmemektedir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Torvalds özellikle yeni lisansta yer alan ve dijital haklar yönetiminde yazılım kullanımını yasaklayan bazı hükümleri sevmemektedir ve aynı zamanda sayısı binleri bulan bütün telif hakkı sahiplerinden izin almak kullanışsız olacaktır."
+    },
+    "review": "agreed",
+    "question_tr": "Torvalds çekirdeğin lisansını neden GPL'in yeni sürümüne taşımak istemiyor?"
+  },
+  {
+    "qid": "llm-bilgisayar-005",
+    "question": "What percentage of personal computer users use this operating system?",
+    "doc_id": "24",
+    "doc_title": "Linux",
+    "answer_span": "masaüstü, dizüstü ve netbook bilgisayar pazarında yaklaşık olarak %2 pazar payına sahiptir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Linux çekirdeği kullanan sistemler masaüstü, dizüstü ve netbook bilgisayar pazarında yaklaşık olarak %2 pazar payına sahiptir."
+    },
+    "review": "agreed",
+    "question_tr": "Kişisel bilgisayar kullanıcıları arasında bu işletim sisteminin yaygınlığı yüzde kaçtır?"
+  },
+  {
+    "qid": "llm-bilgisayar-006",
+    "question": "When did a major game store bring official support to this system?",
+    "doc_id": "24",
+    "doc_title": "Linux",
+    "answer_span": "2012 yılında Steam oyun platformunun Linux İstemcisi sunmasıyla birlikte bazı popüler oyunların Linux sürümleri üretilmeye başlanmıştır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "2012 yılında Steam oyun platformunun Linux İstemcisi sunmasıyla birlikte bazı popüler oyunların Linux sürümleri üretilmeye başlanmıştır."
+    },
+    "review": "agreed",
+    "question_tr": "Büyük bir oyun mağazası bu sisteme ne zaman resmî destek getirdi?"
+  },
+  {
+    "qid": "llm-bilgisayar-007",
+    "question": "Which school was the country's first access point installed in, and when did it go into operation?",
+    "doc_id": "333587",
+    "doc_title": "İnternet",
+    "answer_span": "12 Nisan 1993 tarihinde ODTÜ'den Ankara-Washington arasında kiralık hat ile de Türkiye'de ilk internet bağlantısı kuruldu ve vatandaşların kullanımına açıldı",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "12 Nisan 1993 tarihinde ODTÜ'den"
+    },
+    "review": "agreed",
+    "question_tr": "Ülkedeki ilk erişim noktası hangi okulda ve ne zaman devreye girdi?"
+  },
+  {
+    "qid": "llm-bilgisayar-008",
+    "question": "How many years are the broadcast media given as taking to reach fifty million viewers each?",
+    "doc_id": "333587",
+    "doc_title": "İnternet",
+    "answer_span": "Radyo, televizyon ve internetin bulunuşundan 50 milyon kullanıcıya ulaşmak için geçen süre incelendiğinde radyo için 38, televizyon için 13 yıl iken internet için sadece beş yıldır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "radyo için 38, televizyon için 13 yıl iken internet için sadece beş yıldır"
+    },
+    "review": "agreed",
+    "question_tr": "Yayın araçlarının ellişer milyon izleyiciye erişme süreleri kaç yıl olarak veriliyor?"
+  },
+  {
+    "qid": "llm-bilgisayar-009",
+    "question": "What name has the Turkish Language Association proposed instead of this term?",
+    "doc_id": "333587",
+    "doc_title": "İnternet",
+    "answer_span": "TDK, internet sözcüğüne karşılık olarak genel ağı önermiştir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "genel ağı"
+    },
+    "review": "agreed",
+    "question_tr": "Türk Dil Kurumu bu terim yerine hangi adı teklif etmiştir?"
+  },
+  {
+    "qid": "llm-bilgisayar-010",
+    "question": "What does this word stand for, and since which year has it been in use?",
+    "doc_id": "333587",
+    "doc_title": "İnternet",
+    "answer_span": "1985 yılında kullanılmaya başlayan İngilizce internet kelimesi, \"kendi aralarında bağlantılı ağlar\" anlamına gelen Interconnected Networks teriminin kısaltmasıdır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "1985 yılında kullanılmaya başlayan İngilizce internet kelimesi, \"kendi aralarında bağlantılı ağlar\" anlamına gelen Interconnected Networks teriminin kısaltmasıdır"
+    },
+    "review": "agreed",
+    "question_tr": "Bu kelimenin açılımı nedir ve hangi yıldan beri kullanımdadır?"
+  },
+  {
+    "qid": "llm-bilgisayar-011",
+    "question": "What day does the network's opening to public access fall on?",
+    "doc_id": "333587",
+    "doc_title": "İnternet",
+    "answer_span": "30 Nisan 1993'te CERN tarafından WWW ön eki ile internet kamunun ulaşabileceği şekle getirildi",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "30 Nisan 1993'te"
+    },
+    "review": "agreed",
+    "question_tr": "Ağın herkesin erişimine açılması hangi güne denk gelir?"
+  },
+  {
+    "qid": "llm-bilgisayar-012",
+    "question": "In which year and under whose leadership was the academic network called TÜVAKA established?",
+    "doc_id": "333587",
+    "doc_title": "İnternet",
+    "answer_span": "internet teknolojisi Türkiye'ye ilk olarak 1987 yılında Ege Üniversitesi'nin öncülüğünde kurulan Türkiye Üniversite ve Araştırma Kurumları Ağı (TÜVAKA) ile geldi",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "1987 yılında Ege Üniversitesi'nin öncülüğünde"
+    },
+    "review": "agreed",
+    "question_tr": "TÜVAKA adlı akademik ağ hangi yıl ve kimin önderliğinde kuruldu?"
+  },
+  {
+    "qid": "llm-bilgisayar-013",
+    "question": "Under what name did the first version of the operating system appear?",
+    "doc_id": "2019",
+    "doc_title": "Unix",
+    "answer_span": "Unix'in ilk sürümü UNICS (Uniplexed Information and Computing System[Birleştirilmiş Bilgi ve Bilgisayar Sistemi]) ismiyle çıkmıştır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Unix'in ilk sürümü UNICS (Uniplexed Information and Computing System[Birleştirilmiş Bilgi ve Bilgisayar Sistemi]) ismiyle çıkmıştır"
+    },
+    "review": "agreed",
+    "question_tr": "İşletim sisteminin ilk sürümü hangi adla ortaya çıktı?"
+  },
+  {
+    "qid": "llm-bilgisayar-014",
+    "question": "Which version of the system did rewriting the kernel in the C language give rise to?",
+    "doc_id": "2019",
+    "doc_title": "Unix",
+    "answer_span": "çekirdeği C ile tekrar kodlayarak Unix'in 5. sürümünü oluşturdu",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "çekirdeği C ile tekrar kodlayarak Unix'in 5. sürümünü oluşturdu"
+    },
+    "review": "agreed",
+    "question_tr": "Çekirdeğin C diliyle yeniden yazılması sistemin kaçıncı sürümünü doğurdu?"
+  },
+  {
+    "qid": "llm-bilgisayar-015",
+    "question": "How much of the original source code did the students at Berkeley change?",
+    "doc_id": "2019",
+    "doc_title": "Unix",
+    "answer_span": "Berkeley öğrencileri, orijinal Unix kaynak kodunun %90'nını değiştirdiler",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Berkeley öğrencileri, orijinal Unix kaynak kodunun %90'nını değiştirdiler"
+    },
+    "review": "agreed",
+    "question_tr": "Berkeley'deki öğrenciler özgün kaynak kodun ne kadarını değiştirdi?"
+  },
+  {
+    "qid": "llm-bilgisayar-016",
+    "question": "How much did users outside the university pay for the license?",
+    "doc_id": "2019",
+    "doc_title": "Unix",
+    "answer_span": "UNIX, üniversite üyesi olmayan kullanıcılar için 20,000$ (ABD) ve üniversite üyesi olan kullanıcılar için ise 150$ gibi yüksek bir lisans ücretine sahiptir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "üniversite üyesi olmayan kullanıcılar için 20,000$ (ABD)"
+    },
+    "review": "agreed",
+    "question_tr": "Üniversite dışındaki kullanıcılar lisans için ne kadar ödüyordu?"
+  },
+  {
+    "qid": "llm-bilgisayar-017",
+    "question": "When was the brand and the definition transferred to its current owner?",
+    "doc_id": "2019",
+    "doc_title": "Unix",
+    "answer_span": "1994'te UNIX tanımı ve markası günümüzdeki sahibi The Open Group'a devredilmiştir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "1994'te UNIX tanımı ve markası günümüzdeki sahibi The Open Group'a devredilmiştir"
+    },
+    "review": "agreed",
+    "question_tr": "Marka ve tanımın bugünkü sahibine devri ne zaman oldu?"
+  },
+  {
+    "qid": "llm-bilgisayar-018",
+    "question": "Which institutions started the joint project that is the origin of the system?",
+    "doc_id": "2019",
+    "doc_title": "Unix",
+    "answer_span": "1960 yılında MIT, AT&T Bell Teknoloji Laboratuvarları ve GE(General Electric)'nin birlikte geliştirdikleri MULTICS",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "MIT, AT&T Bell Teknoloji Laboratuvarları ve GE(General Electric)'nin birlikte geliştirdikleri"
+    },
+    "review": "agreed",
+    "question_tr": "Sistemin kökeni olan ortak proje hangi kurumlarca başlatıldı?"
+  },
+  {
+    "qid": "llm-bilgisayar-019",
+    "question": "What intermediate language does the virtual machine that runs Java programs use?",
+    "doc_id": "5946",
+    "doc_title": "Derleyici",
+    "answer_span": "JVM, Java Bytecode olarak adlandırılan bir ara dil kullanmaktadır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "JVM, Java Bytecode olarak adlandırılan bir ara dil kullanmaktadır."
+    },
+    "review": "agreed",
+    "question_tr": "Java programlarının çalıştırıldığı sanal makine hangi ara dili kullanır?"
+  },
+  {
+    "qid": "llm-bilgisayar-020",
+    "question": "What are compilers that generate code for a different processor architecture called?",
+    "doc_id": "5946",
+    "doc_title": "Derleyici",
+    "answer_span": "Çapraz derleyiciler üzerinde çalıştıkları platformdan bağımsız bir şekilde destekledikleri tüm platformlara özel olarak makine kodu derlemeleri üretebilirler",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "çapraz (cross) derleyicilerdir"
+    },
+    "review": "needs-human",
+    "question_tr": "Başka bir işlemci mimarisi için kod üreten derleyicilere ne ad verilir?"
+  },
+  {
+    "qid": "llm-bilgisayar-021",
+    "question": "What is the effort of producing more efficient machine code during compilation called?",
+    "doc_id": "5946",
+    "doc_title": "Derleyici",
+    "answer_span": "Buna derleyici optimizasyonu denir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Buna derleyici optimizasyonu denir."
+    },
+    "review": "agreed",
+    "question_tr": "Derleme sırasında daha verimli makine kodu üretme çabasına ne denir?"
+  },
+  {
+    "qid": "llm-bilgisayar-022",
+    "question": "Which compilation technique do the languages that achieve the highest runtime performance use?",
+    "doc_id": "5946",
+    "doc_title": "Derleyici",
+    "answer_span": "Bu diller zamanından önce (Ahead of Time - AOT) derleme tekniğini kullanır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "zamanından önce (Ahead of Time - AOT) derleme tekniğini kullanır."
+    },
+    "review": "agreed",
+    "question_tr": "En yüksek çalışma performansı hangi derleme tekniğini kullanan dillerden elde edilir?"
+  },
+  {
+    "qid": "llm-bilgisayar-023",
+    "question": "Which binary codes do the LOAD, ADD, and STOR commands in the example correspond to?",
+    "doc_id": "5946",
+    "doc_title": "Derleyici",
+    "answer_span": "LOAD, ADD ve STOR komutları 0001, 0011 ve 0010 olarak yorumlanır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "LOAD, ADD ve STOR komutları 0001, 0011 ve 0010 olarak yorumlanır"
+    },
+    "review": "agreed",
+    "question_tr": "Örnekteki LOAD, ADD ve STOR komutları hangi ikili kodlara karşılık gelir?"
+  },
+  {
+    "qid": "llm-bilgisayar-024",
+    "question": "What is the name of the front-end stage that breaks source code into tokens?",
+    "doc_id": "5946",
+    "doc_title": "Derleyici",
+    "answer_span": "Sözcüksel analiz: kaynak kodun incelenerek jeton (token) olarak temsil edilecek şekilde ayrıştırılmasıdır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Sözcüksel analiz: kaynak kodun incelenerek jeton (token) olarak temsil edilecek şekilde ayrıştırılmasıdır."
+    },
+    "review": "agreed",
+    "question_tr": "Kaynak kodu jetonlara ayıran ön uç aşamasının adı nedir?"
+  },
+  {
+    "qid": "llm-bilgisayar-025",
+    "question": "Which management program was used on the UNIVAC 1 computer?",
+    "doc_id": "1150",
+    "doc_title": "İşletim sistemi",
+    "answer_span": "UNIVAC 1'in işletim sistemi C-10, 1950'lerde kullanıldı",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "UNIVAC 1'in işletim sistemi C-10, 1950'lerde kullanıldı."
+    },
+    "review": "agreed",
+    "question_tr": "UNIVAC 1 bilgisayarında hangi yönetim programı kullanılıyordu?"
+  },
+  {
+    "qid": "llm-bilgisayar-026",
+    "question": "What is the main goal in system software built for applications that require real-time response?",
+    "doc_id": "1150",
+    "doc_title": "İşletim sistemi",
+    "answer_span": "Gerçek zamanlı işletim sistemlerinin ana teması, olaylara hızlı ve tahmin edilebilir bir tepki vermesidir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Gerçek zamanlı işletim sistemlerinin ana teması, olaylara hızlı ve tahmin edilebilir bir tepki vermesidir."
+    },
+    "review": "agreed",
+    "question_tr": "Anlık tepki gerektiren uygulamalar için yapılan sistem yazılımlarında asıl hedef nedir?"
+  },
+  {
+    "qid": "llm-bilgisayar-027",
+    "question": "What are the types of kernel architectures?",
+    "doc_id": "1150",
+    "doc_title": "İşletim sistemi",
+    "answer_span": "Çekirdek tasarımları, yekpare (monolitik) çekirdekler, mikro-çekirdekler ve ekzoçekirdekler olarak üç ana gruba ayrılmaktadır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Çekirdek tasarımları, yekpare (monolitik) çekirdekler, mikro-çekirdekler ve ekzoçekirdekler olarak üç ana gruba ayrılmaktadır."
+    },
+    "review": "agreed",
+    "question_tr": "Kernel mimarileri hangi türlere ayrılır?"
+  },
+  {
+    "qid": "llm-bilgisayar-028",
+    "question": "In which years and by whom were the two components of the free Unix-like system started?",
+    "doc_id": "1150",
+    "doc_title": "İşletim sistemi",
+    "answer_span": "1983 yılında Richard Stallman tarafından başlatılan GNU projesi ile 1991 yılında Linus Torvalds tarafından başlatılan çekirdek tasarımının birleşimidir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "1983 yılında Richard Stallman tarafından başlatılan GNU projesi ile 1991 yılında Linus Torvalds tarafından başlatılan çekirdek tasarımının birleşimidir."
+    },
+    "review": "agreed",
+    "question_tr": "Özgür Unix benzeri sistemin iki bileşeni hangi yıllarda kimlerce başlatıldı?"
+  },
+  {
+    "qid": "llm-bilgisayar-029",
+    "question": "In what language was Be company's system software coded?",
+    "doc_id": "1150",
+    "doc_title": "İşletim sistemi",
+    "answer_span": "BeOS, kolay API programlama için C++ dilinde yazılmıştır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "BeOS, kolay API programlama için C++ dilinde yazılmıştır."
+    },
+    "review": "agreed",
+    "question_tr": "Be şirketinin sistem yazılımı hangi dilde kodlanmıştı?"
+  },
+  {
+    "qid": "llm-bilgisayar-030",
+    "question": "What is the estimated share of Linux-based systems on home computers?",
+    "doc_id": "1150",
+    "doc_title": "İşletim sistemi",
+    "answer_span": "tahmini hesaplar, GNU/Linux'un %1,1 oranlarında kişisel bilgisayarlarda kullanıldığını göstermektedir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "GNU/Linux'un %1,1 oranlarında kişisel bilgisayarlarda kullanıldığını göstermektedir"
+    },
+    "review": "agreed",
+    "question_tr": "Linux tabanlı sistemlerin ev bilgisayarlarındaki tahmini payı nedir?"
+  },
+  {
+    "qid": "llm-bilgisayar-031",
+    "question": "Which older approach were these storage systems developed to replace?",
+    "doc_id": "25639",
+    "doc_title": "Veritabanı",
+    "answer_span": "Veritabanları; büyük miktardaki bilgileri depolamada geleneksel yöntem olan \"dosya-işlem sistemine\" alternatif olarak geliştirilmiştir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Veritabanları; büyük miktardaki bilgileri depolamada geleneksel yöntem olan \"dosya-işlem sistemine\" alternatif olarak geliştirilmiştir."
+    },
+    "review": "agreed",
+    "question_tr": "Bu depolama sistemleri hangi eski yaklaşımın yerine geliştirildi?"
+  },
+  {
+    "qid": "llm-bilgisayar-032",
+    "question": "What examples are given of record-keeping systems encountered in everyday life?",
+    "doc_id": "25639",
+    "doc_title": "Veritabanı",
+    "answer_span": "Telefonlardaki kişi rehberi günlük hayatta çok basit bir şekilde kullanılan veri tabanı örneği olarak kabul edilebilir. Bunların dışında internet sitelerindeki üyelik sistemleri, akademik dergilerin ve üniversitelerin tez yönetim sistemleri de veri tabanı kullanımına örnektir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Telefonlardaki kişi rehberi günlük hayatta çok basit bir şekilde kullanılan veri tabanı örneği olarak kabul edilebilir. Bunların dışında internet sitelerindeki üyelik sistemleri, akademik dergilerin ve üniversitelerin tez yönetim sistemleri de veri tabanı kullanımına örnektir."
+    },
+    "review": "agreed",
+    "question_tr": "Gündelik yaşamda karşılaşılan kayıt saklama sistemlerine hangi örnekler veriliyor?"
+  },
+  {
+    "qid": "llm-bilgisayar-033",
+    "question": "What led to the emergence of a separate specialist role in this field?",
+    "doc_id": "25639",
+    "doc_title": "Veritabanı",
+    "answer_span": "veri tabanı sistemlerinin kurulumu, konfigürasyonu, düzeni, sorgulaması, güvenliği ve denetiminin karmaşık bir hâl alması veri tabanı yöneticiliği kavramının oluşmasına neden olmuştur.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "veri tabanı sistemlerinin kurulumu, konfigürasyonu, düzeni, sorgulaması, güvenliği ve denetiminin karmaşık bir hâl alması veri tabanı yöneticiliği kavramının oluşmasına neden olmuştur."
+    },
+    "review": "agreed",
+    "question_tr": "Bu alanda ayrı bir uzmanlık rolünün ortaya çıkmasına ne yol açtı?"
+  },
+  {
+    "qid": "llm-bilgisayar-034",
+    "question": "What principle do NoSQL systems operate on, and what are their advantages over tabular systems?",
+    "doc_id": "25639",
+    "doc_title": "Veritabanı",
+    "answer_span": "İlişkisel olmayan (NoSQL) veri tabanı sistemleri anahtar-değer prensibiyle çalışan veri tabanı sistemleridir. Bunlar ilişkisel veritabanlarına göre daha hızlıdırlar.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "İlişkisel olmayan (NoSQL) veri tabanı sistemleri anahtar-değer prensibiyle çalışan veri tabanı sistemleridir. Bunlar ilişkisel veritabanlarına göre daha hızlıdırlar."
+    },
+    "review": "agreed",
+    "question_tr": "NoSQL sistemleri hangi ilkeyle çalışır ve tablolu sistemlere göre üstünlükleri nedir?"
+  },
+  {
+    "qid": "llm-bilgisayar-035",
+    "question": "In the most common model, what do the horizontal and vertical divisions of tables represent?",
+    "doc_id": "25639",
+    "doc_title": "Veritabanı",
+    "answer_span": "Tablolarda bulunan satırlar (İngilizce: row) kayıtların kendisini, sütunlar (İngilizce: column) ise bu kayıtları oluşturan bilgi parçalarının ne türden olduklarını belirtir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Tablolarda bulunan satırlar (İngilizce: row) kayıtların kendisini, sütunlar (İngilizce: column) ise bu kayıtları oluşturan bilgi parçalarının ne türden olduklarını belirtir."
+    },
+    "review": "agreed",
+    "question_tr": "En yaygın modelde tabloların yatay ve dikey bölümleri neyi temsil eder?"
+  },
+  {
+    "qid": "llm-bilgisayar-036",
+    "question": "What is the definition that describes the structure of the records to be stored called?",
+    "doc_id": "25639",
+    "doc_title": "Veritabanı",
+    "answer_span": "veri tabanında asıl önemli kavram, kayıt yığını ya da bilgi parçalarının tanımlanmasıdır. Bu tanıma şema adı verilir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Bu tanıma şema adı verilir."
+    },
+    "review": "agreed",
+    "question_tr": "Depolanacak kayıtların yapısını tarif eden tanıma ne ad verilir?"
+  },
+  {
+    "qid": "llm-bilgisayar-037",
+    "question": "Why are a network and a general computer network system not considered the same concept?",
+    "doc_id": "324452",
+    "doc_title": "World Wide Web",
+    "answer_span": "İnternet ve web terimleri aynı olguyu tanımlamaz. Zira web sadece İnternet üzerinde çalışan bir servistir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Zira web sadece İnternet üzerinde çalışan bir servistir."
+    },
+    "review": "agreed",
+    "question_tr": "Ağ ile genel bilgisayar ağları sistemi neden aynı kavram sayılmaz?"
+  },
+  {
+    "qid": "llm-bilgisayar-038",
+    "question": "What nickname has been jokingly given to the system because of pages opening slowly?",
+    "doc_id": "324452",
+    "doc_title": "World Wide Web",
+    "answer_span": "Bu nedenden dolayı, World Wide Web' (Dünya Çapında Ağ) terimi yerine alaycı bir yaklaşımla World Wide Wait (Dünya Çapında Bekleme) denmektedir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Bu nedenden dolayı, World Wide Web' (Dünya Çapında Ağ) terimi yerine alaycı bir yaklaşımla World Wide Wait (Dünya Çapında Bekleme) denmektedir."
+    },
+    "review": "agreed",
+    "question_tr": "Sayfaların geç açılması yüzünden sisteme hangi şaka yollu ad takılmıştır?"
+  },
+  {
+    "qid": "llm-bilgisayar-039",
+    "question": "What three pieces of information does a resource address contain so that the client can locate the object?",
+    "doc_id": "324452",
+    "doc_title": "World Wide Web",
+    "answer_span": "URL, web nesnesini bulmak için web istemcinin ihtiyacı olan erişim yöntemini (nasıl), konumunu (nerede) ve sunucu ismini (ne) belirtir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "URL, web nesnesini bulmak için web istemcinin ihtiyacı olan erişim yöntemini (nasıl), konumunu (nerede) ve sunucu ismini (ne) belirtir."
+    },
+    "review": "agreed",
+    "question_tr": "Bir kaynak adresi, istemcinin nesneyi bulabilmesi için hangi üç bilgiyi içerir?"
+  },
+  {
+    "qid": "llm-bilgisayar-040",
+    "question": "After how long do visitors usually give up waiting and leave the page?",
+    "doc_id": "324452",
+    "doc_title": "World Wide Web",
+    "answer_span": "10 saniye, kullanıcıların genellikle siteden ayrılmayı tercih ettikleri ya da tarayıcı programın otomatik olarak siteden ayrıldığı süredir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "10 saniye, kullanıcıların genellikle siteden ayrılmayı tercih ettikleri ya da tarayıcı programın otomatik olarak siteden ayrıldığı süredir."
+    },
+    "review": "agreed",
+    "question_tr": "Ziyaretçiler çoğunlukla ne kadar bekledikten sonra sayfayı bırakıp gider?"
+  },
+  {
+    "qid": "llm-bilgisayar-041",
+    "question": "What do servers that translate domain names into numerical addresses do, and what are they compared to?",
+    "doc_id": "324452",
+    "doc_title": "World Wide Web",
+    "answer_span": "DNS'ler kendilerine sorulan alan adlarının IP adreslerini kullanıcılara verirler. Çok basit olarak bunu bir telefon rehberine benzetebilirsiniz.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "DNS'ler kendilerine sorulan alan adlarının IP adreslerini kullanıcılara verirler. Çok basit olarak bunu bir telefon rehberine benzetebilirsiniz."
+    },
+    "review": "agreed",
+    "question_tr": "Alan adlarını sayısal adreslere çeviren sunucular ne yapar ve neye benzetilir?"
+  },
+  {
+    "qid": "llm-bilgisayar-042",
+    "question": "According to a 2009 study, what percentage of social network users turned on their privacy settings?",
+    "doc_id": "324452",
+    "doc_title": "World Wide Web",
+    "answer_span": "Üstelik 2009'da yapılan araştırmalar gösteriyor ki bu kullanıcıların yalnızca %20'si özel hayatın gizliliği ayarlarını kullanıyor.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Üstelik 2009'da yapılan araştırmalar gösteriyor ki bu kullanıcıların yalnızca %20'si özel hayatın gizliliği ayarlarını kullanıyor."
+    },
+    "review": "agreed",
+    "question_tr": "2009 yılındaki araştırmaya göre sosyal ağ kullanıcılarının ne kadarı mahremiyet seçeneklerini açıyordu?"
+  },
+  {
+    "qid": "llm-bilgisayar-043",
+    "question": "What is it called when skills that were once considered intelligent are later regarded as outside the field, and which joke sums up this situation?",
+    "doc_id": "6180",
+    "doc_title": "Yapay zekâ",
+    "answer_span": "Makineler daha becerikli hâle geldikçe, zekâ gerektirdiği düşünülen görevler genellikle yapay zekâ etkisi olarak bilinen bir fenomen olan yapay zekâ tanımından çıkarılır. Tesler'in teoremindeki bir espri, \"Yapay zekâ henüz yapılmamış şeydir\" der.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Makineler daha becerikli hâle geldikçe, zekâ gerektirdiği düşünülen görevler genellikle yapay zekâ etkisi olarak bilinen bir fenomen olan yapay zekâ tanımından çıkarılır. Tesler'in teoremindeki bir espri, \"Yapay zekâ henüz yapılmamış şeydir\" der."
+    },
+    "review": "agreed",
+    "question_tr": "Bir zamanlar zeki sayılan becerilerin sonradan alanın dışında sayılmasına ne denir ve bu durum hangi espriyle özetlenir?"
+  },
+  {
+    "qid": "llm-bilgisayar-044",
+    "question": "Why do the step-by-step inference methods of the early period get stuck on large problems?",
+    "doc_id": "6180",
+    "doc_title": "Yapay zekâ",
+    "answer_span": "Bu algoritmaların birçoğu, büyük ölçekli akıl yürütme problemlerini çözmek için yetersizdir, çünkü \"kombinatoryal patlama\" denilen bir durum yaşarlar: Problemler büyüdükçe bu algoritmaların çalışması üstel bir şekilde yavaşlar.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Bu algoritmaların birçoğu, büyük ölçekli akıl yürütme problemlerini çözmek için yetersizdir, çünkü \"kombinatoryal patlama\" denilen bir durum yaşarlar: Problemler büyüdükçe bu algoritmaların çalışması üstel bir şekilde yavaşlar."
+    },
+    "review": "agreed",
+    "question_tr": "İlk dönemin adım adım çıkarım yapan yöntemleri büyük problemlerde neden tıkanır?"
+  },
+  {
+    "qid": "llm-bilgisayar-045",
+    "question": "What led two governments to withdraw support for exploratory work in 1974?",
+    "doc_id": "6180",
+    "doc_title": "Yapay zekâ",
+    "answer_span": "1974'te Sir James Lighthill'ın eleştirileri ve ABD Kongresi'nin daha somut projelere fon sağlama baskısı nedeniyle, ABD ve İngiltere hükûmetleri keşif amaçlı yapay zekâ araştırmalarına verilen desteği durdurma kararı aldı.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "1974'te Sir James Lighthill'ın eleştirileri ve ABD Kongresi'nin daha somut projelere fon sağlama baskısı nedeniyle, ABD ve İngiltere hükûmetleri keşif amaçlı yapay zekâ araştırmalarına verilen desteği durdurma kararı aldı."
+    },
+    "review": "agreed",
+    "question_tr": "1974'te iki hükûmeti keşif amaçlı çalışmalara desteği kesmeye ne yöneltti?"
+  },
+  {
+    "qid": "llm-bilgisayar-046",
+    "question": "What factors made the rapid spread of deep networks possible after 2012?",
+    "doc_id": "6180",
+    "doc_title": "Yapay zekâ",
+    "answer_span": "Bu başarının arkasında daha hızlı bilgisayarlar, grafik işlem birimleri, bulut bilişim gibi donanım geliştirmeleriyle ImageNet gibi dikkatle oluşturulmuş veri kümelerinin de dâhil olduğu büyük miktarda veriye erişim yatıyordu.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Bu başarının arkasında daha hızlı bilgisayarlar, grafik işlem birimleri, bulut bilişim gibi donanım geliştirmeleriyle ImageNet gibi dikkatle oluşturulmuş veri kümelerinin de dâhil olduğu büyük miktarda veriye erişim yatıyordu."
+    },
+    "review": "agreed",
+    "question_tr": "2012'den sonra derin ağların hızla yayılmasını hangi etkenler mümkün kıldı?"
+  },
+  {
+    "qid": "llm-bilgisayar-047",
+    "question": "Which institutions could rule-based expert systems be easily applied to, and what was the cost of that?",
+    "doc_id": "6180",
+    "doc_title": "Yapay zekâ",
+    "answer_span": "Bu birçok kuralcı bürokratik karar örgütleri için kolayca uygulamalar geliştirilebilmesi demekti. Bu doğal olarak bir otomobilin tamiri için önerilerde bulunan uzman sistem programının otomobilin ne işe yaradığından haberi olmaması da demekti.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Bu birçok kuralcı bürokratik karar örgütleri için kolayca uygulamalar geliştirilebilmesi demekti. Bu doğal olarak bir otomobilin tamiri için önerilerde bulunan uzman sistem programının otomobilin ne işe yaradığından haberi olmaması da demekti."
+    },
+    "review": "agreed",
+    "question_tr": "Kurallara dayalı uzman programlar hangi kurumlar için kolay uygulanabilirdi ve bunun bedeli neydi?"
+  },
+  {
+    "qid": "llm-bilgisayar-048",
+    "question": "What objection is raised to the idea that software that continuously improves itself would speed up without limit?",
+    "doc_id": "6180",
+    "doc_title": "Yapay zekâ",
+    "answer_span": "Ancak teknolojiler sonsuza kadar üstel olarak gelişemez ve genellikle S şeklinde bir eğri izler, teknolojinin yapabileceği şeyin fiziksel sınırlarına ulaştığında yavaşlar.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "second_annotation": {
+      "annotator": "llm-2",
+      "answer_span": "Ancak teknolojiler sonsuza kadar üstel olarak gelişemez ve genellikle S şeklinde bir eğri izler, teknolojinin yapabileceği şeyin fiziksel sınırlarına ulaştığında yavaşlar."
+    },
+    "review": "agreed",
+    "question_tr": "Kendini durmadan geliştiren yazılımın sınırsız hızlanacağı düşüncesine hangi itiraz getiriliyor?"
+  }
+]
