@@ -15,6 +15,11 @@ SUMMARY = json.loads((ROOT / "results" / "groundedness.json")
 OTHERS = [json.loads(p.read_text(encoding="utf-8"))["summary"]
           for p in sorted((ROOT / "results" / "groundedness").glob("*.json"))
           if not p.name.endswith(".records.json")]
+#: The same runs re-judged by nemotron-3-ultra, plus Claude.
+ULTRA = [json.loads(p.read_text(encoding="utf-8"))["summary"]
+         for p in sorted((ROOT / "results" / "groundedness-ultra").glob("*.json"))
+         if not p.name.endswith(".records.json")]
+REJUDGED = "#### Re-judged with nemotron-3-ultra"
 
 ROWS = {
     "answered when the span was retrieved": "answered_when_retrieved",
@@ -63,21 +68,19 @@ def test_no_other_section_says_the_results_are_missing():
     assert "no results committed" not in text
 
 
-def generator_rows() -> dict:
-    """The comparison table: model name -> its cells, from docs/results.md."""
+def generator_rows(text: str) -> dict:
+    """A comparison table: model name -> its cells."""
     rows = {}
-    for line in section().splitlines():
+    for line in text.splitlines():
         cells = [c.strip() for c in line.strip("|").split("|")]
         if len(cells) == 6 and cells[0].startswith("`"):
             rows[cells[0].split("`")[1]] = cells[1:]
     return rows
 
 
-def test_every_extra_generator_has_a_row_that_matches_its_summary():
-    rows = generator_rows()
-    assert OTHERS, "results/groundedness/ holds the other generators"
-    for summary in OTHERS + [SUMMARY]:
-        assert summary["judge_model"] == SUMMARY["judge_model"]
+def check_rows(rows: dict, summaries: list, judge: str) -> None:
+    for summary in summaries:
+        assert summary["judge_model"] == judge
         assert (summary["queries"], summary["span_retrieved"]) == (58, 33)
         cells = rows[summary["answer_model"]]
         expected = [f"{100 * summary[k]:.1f}%" for k in (
@@ -88,7 +91,19 @@ def test_every_extra_generator_has_a_row_that_matches_its_summary():
         n = round(summary["hallucination_rate"] * missing)
         rate = f"{100 * summary['hallucination_rate']:.1f}%"
         assert cells[4] == f"{rate} ({n}/{missing})", summary["answer_model"]
-    assert set(rows) == {s["answer_model"] for s in OTHERS + [SUMMARY]}
+    assert set(rows) == {s["answer_model"] for s in summaries}
+
+
+def test_every_extra_generator_has_a_row_that_matches_its_summary():
+    assert OTHERS, "results/groundedness/ holds the other generators"
+    rows = generator_rows(section().split(REJUDGED, 1)[0])
+    check_rows(rows, OTHERS + [SUMMARY], SUMMARY["judge_model"])
+
+
+def test_the_rejudged_table_matches_its_summaries():
+    assert ULTRA, "results/groundedness-ultra/ holds the re-judged runs"
+    rows = generator_rows(section().split(REJUDGED, 1)[1])
+    check_rows(rows, ULTRA, "nvidia:nvidia/nemotron-3-ultra-550b-a55b")
 
 
 def test_the_comparison_states_its_date_and_does_not_rank():

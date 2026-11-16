@@ -1,0 +1,36 @@
+{
+  "summary": {
+    "queries": 58,
+    "span_retrieved": 33,
+    "span_not_retrieved": 25,
+    "answered_when_retrieved": 1.0,
+    "grounded_when_answered": 1.0,
+    "correct_when_answered": 1.0,
+    "abstained_when_not_retrieved": 0.8,
+    "answered_when_not_retrieved": 0.2,
+    "correct_when_answered_without_span": 0.8,
+    "hallucination_rate": 0.04,
+    "chunking": "hierarchical",
+    "retriever": "bm25_stem5",
+    "k": 5,
+    "answer_model": "claude-cli:claude-opus-5-5",
+    "judge_model": "nvidia:nvidia/nemotron-3-ultra-550b-a55b",
+    "temperature": 0,
+    "date": "2026-11-16",
+    "tokens": {
+      "claude-cli:claude-opus-5-5": {
+        "prompt": 149689,
+        "completion": 5349,
+        "calls": 58,
+        "seconds": 397.8
+      },
+      "nvidia:nvidia/nemotron-3-ultra-550b-a55b": {
+        "prompt": 45730,
+        "completion": 18347,
+        "calls": 38,
+        "seconds": 306.1
+      }
+    },
+    "corpus_fingerprint": "sha256:f4588a9b8d13fcc46853ded2d90653a6f8795b189aba80a3fd4488f3dead19c6"
+  }
+}

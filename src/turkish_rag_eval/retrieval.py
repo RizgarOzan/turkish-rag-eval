@@ -92,11 +92,13 @@ class DenseRetriever:
 
 
 class SparseRetriever:
-    def __init__(self, chunks: list[dict], stem_length: int | None = 5):
+    def __init__(self, chunks: list[dict], stem_length: int | None = 5,
+                 k1: float = 1.5, b: float = 0.75):
         self.chunks = chunks
         self.stem_length = stem_length
         corpus = [tokenize(c["embed_text"], stem_length) for c in chunks]
-        self.bm25 = BM25Okapi(corpus)
+        # rank_bm25's own defaults, spelled out so docs/measure_bm25.py can sweep them.
+        self.bm25 = BM25Okapi(corpus, k1=k1, b=b)
 
     def search(self, query: str, k: int) -> list[tuple[int, float]]:
         scores = self.bm25.get_scores(tokenize(query, self.stem_length))
