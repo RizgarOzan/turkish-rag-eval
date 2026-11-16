@@ -114,6 +114,23 @@ curve is not smooth (7 beats 6 on every chunking), which is what 58 questions do
 up, but it was picked first and then confirmed on the same questions, and the
 data cannot separate it from 4.
 
+### Are BM25's defaults a weak baseline?
+
+Every BM25 number here uses rank_bm25's defaults (k1 = 1.5, b = 0.75), never
+tuned. `docs/measure_bm25.py` sweeps k1 in 0.6-3.0 and b in 0.0-1.0 on the
+5-character stem (30 cells per chunking, `results/bm25_params/`). The best cell
+of each chunking against the default, 95% paired bootstrap on nDCG@10:
+
+| Chunking | default | best cell (k1, b) | change |
+|---|---|---|---|
+| fixed | 0.476 | 0.479 (1.5, 0.5) | +0.002 [-0.001, +0.007] |
+| sentence | 0.510 | 0.521 (1.2, 0.75) | +0.012 [-0.003, +0.035] |
+| hierarchical | 0.494 | 0.516 (2.0, 0.0) | +0.021 [-0.017, +0.059] |
+
+No tuned cell separates from the default, and these are the best of 30 looked
+at on the same 58 questions, so the real gain is smaller still. The default is
+not what holds BM25 back; the stemmed BM25 numbers above stand.
+
 ### Is 700 the right chunk size?
 
 Every chunker takes 700 characters, picked before anything was measured.
