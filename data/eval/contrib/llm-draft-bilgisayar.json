@@ -11,7 +11,11 @@
    "annotator": "llm-2",
    "answer_span": "1993 Yılında Patrick Volkerding, çeşitli ağ araçları, grafik arabirimi ve diğer araçları bir arada sunduğu bir GNU/Linux projesi başlatmıştır. Slackware adını verdiği proje ilk GNU/Linux dağıtımıdır."
   },
-  "review": "agreed"
+  "review": "agreed",
+  "human_review": {
+   "reviewer": "KemalG-u",
+   "verdict": "ok"
+  }
  },
  {
   "qid": "llm-bilgisayar-002",
@@ -25,7 +29,11 @@
    "annotator": "llm-2",
    "answer_span": "Larry Ewing bugün de kullanılan penguen çizimi ile katılmış ve çizimi seçilmiştir."
   },
-  "review": "agreed"
+  "review": "agreed",
+  "human_review": {
+   "reviewer": "KemalG-u",
+   "verdict": "ok"
+  }
  },
  {
   "qid": "llm-bilgisayar-003",
@@ -39,7 +47,11 @@
    "annotator": "llm-2",
    "answer_span": "Kasım 2017 tarihinden bugüne en iyi 500 süperbilgisayar sistemin tamamı (%100) Linux kullanmaktadır."
   },
-  "review": "agreed"
+  "review": "agreed",
+  "human_review": {
+   "reviewer": "KemalG-u",
+   "verdict": "ok"
+  }
  },
  {
   "qid": "llm-bilgisayar-004",
@@ -53,7 +65,11 @@
    "annotator": "llm-2",
    "answer_span": "Torvalds özellikle yeni lisansta yer alan ve dijital haklar yönetiminde yazılım kullanımını yasaklayan bazı hükümleri sevmemektedir ve aynı zamanda sayısı binleri bulan bütün telif hakkı sahiplerinden izin almak kullanışsız olacaktır."
   },
-  "review": "agreed"
+  "review": "agreed",
+  "human_review": {
+   "reviewer": "KemalG-u",
+   "verdict": "ok"
+  }
  },
  {
   "qid": "llm-bilgisayar-005",
@@ -67,7 +83,11 @@
    "annotator": "llm-2",
    "answer_span": "Linux çekirdeği kullanan sistemler masaüstü, dizüstü ve netbook bilgisayar pazarında yaklaşık olarak %2 pazar payına sahiptir."
   },
-  "review": "agreed"
+  "review": "agreed",
+  "human_review": {
+   "reviewer": "KemalG-u",
+   "verdict": "ok"
+  }
  },
  {
   "qid": "llm-bilgisayar-006",
@@ -81,7 +101,11 @@
    "annotator": "llm-2",
    "answer_span": "2012 yılında Steam oyun platformunun Linux İstemcisi sunmasıyla birlikte bazı popüler oyunların Linux sürümleri üretilmeye başlanmıştır."
   },
-  "review": "agreed"
+  "review": "agreed",
+  "human_review": {
+   "reviewer": "KemalG-u",
+   "verdict": "ok"
+  }
  },
  {
   "qid": "llm-bilgisayar-007",
@@ -95,7 +119,11 @@
    "annotator": "llm-2",
    "answer_span": "12 Nisan 1993 tarihinde ODTÜ'den"
   },
-  "review": "agreed"
+  "review": "agreed",
+  "human_review": {
+   "reviewer": "KemalG-u",
+   "verdict": "ok"
+  }
  },
  {
   "qid": "llm-bilgisayar-008",
@@ -109,7 +137,11 @@
    "annotator": "llm-2",
    "answer_span": "radyo için 38, televizyon için 13 yıl iken internet için sadece beş yıldır"
   },
-  "review": "agreed"
+  "review": "agreed",
+  "human_review": {
+   "reviewer": "KemalG-u",
+   "verdict": "ok"
+  }
  },
  {
   "qid": "llm-bilgisayar-009",
@@ -123,7 +155,11 @@
    "annotator": "llm-2",
    "answer_span": "genel ağı"
   },
-  "review": "agreed"
+  "review": "agreed",
+  "human_review": {
+   "reviewer": "KemalG-u",
+   "verdict": "ok"
+  }
  },
  {
   "qid": "llm-bilgisayar-010",
@@ -137,7 +173,11 @@
    "annotator": "llm-2",
    "answer_span": "1985 yılında kullanılmaya başlayan İngilizce internet kelimesi, \"kendi aralarında bağlantılı ağlar\" anlamına gelen Interconnected Networks teriminin kısaltmasıdır"
   },
-  "review": "agreed"
+  "review": "agreed",
+  "human_review": {
+   "reviewer": "KemalG-u",
+   "verdict": "ok"
+  }
  },
  {
   "qid": "llm-bilgisayar-011",
