@@ -1,0 +1,902 @@
+[
+  {
+    "qid": "mevzuat-001",
+    "question": "Mal alımına iş ortaklığıyla giren firmalarda satış sonrası servis şartını, hisse payı ne olursa olsun ortaklardan herhangi biri karşılayabilir mi?",
+    "doc_id": "MAL_YON:39",
+    "doc_title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 39 (Satış sonrası servis, bakım ve onarım hizmetleri ile yedek parça sağlanması)",
+    "answer_span": "İş ortaklığında ortaklardan biri, birkaçı veya tümü ortaklık oranlarına bakılmaksızın birinci fıkrada belirtilen yeterlik kriterini sağlayabilir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-02679",
+      "original_question": "Mal Alımı İhaleleri Uygulama Yönetmeliği 39. maddesine göre, iş ortaklığında ortaklar satış sonrası servis yeterlik kriterini hangi koşulla sağlayabilir?",
+      "answer": "Ortaklık oranlarına bakılmaksızın",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-002",
+    "question": "Siparişe özel imal edilen bir ürün alınırken kurumun firmaya sağladığı hammadde tahmini bedele eklenir mi?",
+    "doc_id": "MAL_YON:7",
+    "doc_title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 7 (Yaklaşık maliyetin hesaplanmasına ilişkin ilkeler)",
+    "answer_span": "İdare tarafından ihale konusu malın üretimi için yükleniciye verilecek malzeme ve ekipmanlar yaklaşık maliyetin hesaplanmasında dikkate alınmaz.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-02758",
+      "original_question": "Mal Alımı İhaleleri Uygulama Yönetmeliği 7. maddesine göre, özel imalat süreci gerektiren mal alımı ihalelerinde yaklaşık maliyetin hesaplanmasında ne dikkate alınmaz?",
+      "answer": "Yükleniciye verilecek malzeme ve ekipmanlar",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-003",
+    "question": "Ar-Ge sonucu çıkmış yerli bir ürün piyasaya sürüldükten sonra ona ürün deneyim belgesini hangi bakanlık verir?",
+    "doc_id": "MAL_YON:44",
+    "doc_title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 44 (İş bitirme belgesi ve teknolojik ürün deneyim belgesinin düzenlenmesi (Değişik başlık: 16/08/2014-29090 R.G./3.md.))",
+    "answer_span": "Türkiye Bilimsel ve Teknolojik Araştırma Kurumu tarafından Ar-Ge projesi neticesinde ortaya çıktığı belgelendirilen yerli malı belgesine sahip malın piyasaya arz edilmesinden sonra Bilim, Sanayi ve Teknoloji Bakanlığı tarafından teknolojik ürün deneyim belgesi düzenlenir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-02692",
+      "original_question": "Mal Alımı İhaleleri Uygulama Yönetmeliği 44. maddesine göre, teknolojik ürün deneyim belgesi hangi kurum tarafından düzenlenir?",
+      "answer": "Bilim, Sanayi ve Teknoloji Bakanlığı",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-004",
+    "question": "Mal alımında ihale komisyonu bir teklifin fazla ucuz olduğuna neye bakarak karar verir?",
+    "doc_id": "MAL_YON:58",
+    "doc_title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 58 (Aşırı düşük teklifler)",
+    "answer_span": "İhale komisyonu verilen teklifleri değerlendirdikten sonra diğer tekliflere veya yaklaşık maliyete göre teklif fiyatı aşırı düşük olanları tespit eder.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-02730",
+      "original_question": "Mal Alımı İhaleleri Uygulama Yönetmeliği 58. maddesine göre ihale komisyonu teklif fiyatının aşırı düşük olup olmadığını tespit ederken teklif fiyatını neye göre değerlendirir?",
+      "answer": "Diğer tekliflere veya yaklaşık maliyete",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-005",
+    "question": "Mal alımında numune isteniyorsa idare her kalemden en az kaç numuneyi elinde saklamalı?",
+    "doc_id": "MAL_YON:43",
+    "doc_title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 43 (Tedarik edilecek malların numuneleri, katalogları, fotoğrafları ile teknik şartnameye cevapları ve açıklamaları içeren doküman ve demonstrasyon)",
+    "answer_span": "Malın niteliğinin birden fazla numune değerlendirmesi yapmaya uygun olup olmadığı ile malın kullanım ömrü dikkate alınarak en az bir adet numunenin idarede muhafaza edilmesi gerekir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-02689",
+      "original_question": "Mal Alımı İhaleleri Uygulama Yönetmeliği 43. maddesine göre, numune sunulması istenen kalemler için idarede muhafaza edilmesi gereken en az numune adedi kaçtır?",
+      "answer": "Bir",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-006",
+    "question": "Mal alımında iş deneyimi değerlendirilirken ilandan önceki kaç yılda bitirilen işler hesaba katılır?",
+    "doc_id": "MAL_YON:47",
+    "doc_title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 47 (İş deneyimini gösteren belgelerin değerlendirilmesi)",
+    "answer_span": "ilk ilan veya davet tarihinden geriye doğru son beş yıl içinde ya da ilk ilan veya davet tarihi ile ihale veya son başvuru tarihi arasında kesin kabulü gerçekleştirilen işlerde",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-02703",
+      "original_question": "Mal Alımı İhaleleri Uygulama Yönetmeliği 47. maddesine göre, iş deneyimini gösteren belgelerin değerlendirilmesinde ilk ilan veya davet tarihinden geriye doğru kaç yıllık süre dikkate alınır?",
+      "answer": "son beş yıl",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-007",
+    "question": "Mal alımında tamamlanan işin belgesine yazılacak bedel hesaplanırken enflasyon farkları ve vergi de bedele eklenir mi?",
+    "doc_id": "MAL_YON:45",
+    "doc_title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 45 (İş bitirme belgesi düzenleme koşulları)",
+    "answer_span": "İş bitirme belgesinin düzenlemesinde belge tutarı, her türlü fiyat farkları ve katma değer vergisi hariç, varsa iş artışları sözleşme bedeline eklenmek suretiyle bulunur.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-02694",
+      "original_question": "Mal Alımı İhaleleri Uygulama Yönetmeliği 45. maddesine göre, iş bitirme belgesinin düzenlenmesinde belge tutarının hesabında hangi kalemler hariç tutulur?",
+      "answer": "Fiyat farkları ve katma değer vergisi",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-008",
+    "question": "Mal alımında teknik şartnameyi dışarıdaki bir danışman firmaya yazdırmak için kimin onay vermesi gerekir?",
+    "doc_id": "MAL_YON:14",
+    "doc_title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 14 (Teknik şartname)",
+    "answer_span": "alınacak malın özelliğinin gerektirdiği hallerde ihale yetkilisi tarafından onaylanması kaydıyla, teknik şartname, Kanun hükümlerine uygun olarak danışmanlık hizmet sunucularına hazırlattırılabilir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-02621",
+      "original_question": "Mal Alımı İhaleleri Uygulama Yönetmeliği 14. maddesine göre, alınacak malın özelliğinin gerektirdiği hallerde teknik şartnamenin danışmanlık hizmet sunucularına hazırlattırılabilmesi için kimin onayı gereklidir?",
+      "answer": "İhale yetkilisi",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-009",
+    "question": "Mal alımında yurt dışında akredite edilmiş bir laboratuvar için TÜRKAK'tan alınan doğrulama yazısının tarihi hangi aşamadan sonra olmalı?",
+    "doc_id": "MAL_YON:41",
+    "doc_title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 41 (Organizasyon yapısı ile kalite kontrolden sorumlu teknik kuruluşlara ilişkin belgeler)",
+    "answer_span": "Bu teyit yazısının sözleşmenin imzalanmasından sonra alınmış olması zorunludur.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-02687",
+      "original_question": "Mal Alımı İhaleleri Uygulama Yönetmeliği 41. maddesine göre, Uluslararası Laboratuvar Akreditasyon İşbirliği Karşılıklı Tanınma Anlaşmasında yer alan akreditasyon kurumları tarafından akredite edilen laboratuvar ve muayene kuruluşları için Türk Akreditasyon Kurumundan alınacak teyit yazısı ne zaman alınmış olmalıdır?",
+      "answer": "Sözleşmenin imzalanmasından sonra",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-010",
+    "question": "Mal alımında daha önce dövizle yapılmış alımların fiyatları yaklaşık maliyet için hangi kurumun kuruyla bugüne taşınır?",
+    "doc_id": "MAL_YON:8",
+    "doc_title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 8 (Yaklaşık maliyetin hesaplanması)",
+    "answer_span": "Döviz ile yapılmış olan alımlarda ise Türkiye Cumhuriyet Merkez Bankası döviz alış kuru veya çapraz kur üzerinden fiyatlar güncellenerek yaklaşık maliyet hesaplanabilir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-02760",
+      "original_question": "Mal Alımı İhaleleri Uygulama Yönetmeliği 8. maddesine göre, döviz ile yapılmış olan alımlarda fiyatlar hangi kurumun döviz alış kuru veya çapraz kur üzerinden güncellenerek yaklaşık maliyet hesaplanabilir?",
+      "answer": "Türkiye Cumhuriyet Merkez Bankası",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-011",
+    "question": "Mal alımında isteklinin kendi hazırladığı alışılmış sözleşme metni hangi kurumun olumlu görüşüyle kullanılabilir?",
+    "doc_id": "MAL_YON:15",
+    "doc_title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 15 (Sözleşme tasarısı)",
+    "answer_span": "İhalelerde, Kamu İhale Kurumunun uygun görüşü alınmak kaydıyla istekliler tarafından hazırlanması mutat olan sözleşmeler kullanılabilir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-02624",
+      "original_question": "Mal Alımı İhaleleri Uygulama Yönetmeliği 15. maddesine göre, istekliler tarafından hazırlanması mutat olan sözleşmelerin kullanılabilmesi için hangi kurumun uygun görüşü alınmalıdır?",
+      "answer": "Kamu İhale Kurumu",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-012",
+    "question": "Birkaç ayrı mal kalemini içeren bir alım ihalesinde teklifler nasıl alınır?",
+    "doc_id": "MAL_YON:4",
+    "doc_title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 4 (Temel ilkeler)",
+    "answer_span": "Birden fazla mal kaleminden oluşan ihaleler, birim fiyat teklif almak suretiyle gerçekleştirilir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-02682",
+      "original_question": "Mal Alımı İhaleleri Uygulama Yönetmeliği 4. maddesine göre, birden fazla mal kaleminden oluşan ihaleler nasıl gerçekleştirilir?",
+      "answer": "Birim fiyat teklif almak suretiyle",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-013",
+    "question": "Mal alımında yeterlik şartı olarak aranmayan ama işin yürütülmesinde gereken mesleki yükümlülükler hangi belgelere yazılır?",
+    "doc_id": "MAL_YON:28",
+    "doc_title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 28 (Sözleşmenin yürütülmesi aşamasındaki mesleki ve teknik yükümlülüklere yönelik düzenlemeler)",
+    "answer_span": "sözleşmenin yürütülmesi aşamasında işin yerine getirilmesi için gerekli olduğu öngörülen mesleki ve teknik yükümlülüklere yönelik düzenlemeler teknik şartnamede ve/veya sözleşme tasarısında yer alır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-02654",
+      "original_question": "Mal Alımı İhaleleri Uygulama Yönetmeliği 28. maddesine göre, ön yeterlik veya idari şartnamede yeterlik kriteri olarak belirlenmeyen ancak sözleşmenin yürütülmesi aşamasında gerekli olduğu öngörülen mesleki ve teknik yükümlülükler nerede yer alır?",
+      "answer": "Teknik şartnamede ve/veya sözleşme tasarısında",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-014",
+    "question": "Hizmet alımında personel için asgari deneyim süresi şart konacaksa bu süre hangi aralıkta seçilebilir?",
+    "doc_id": "HIZ_YON:40",
+    "doc_title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 40 (Personel durumuna ilişkin belgeler)",
+    "answer_span": "Asgari deneyim süresi öngörülmesi halinde, bu süre bir yıldan az beş yıldan fazla olmamak üzere idare tarafından belirlenir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-01961",
+      "original_question": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği 40. maddesine göre asgari deneyim süresi öngörülmesi halinde bu süre en az ve en çok ne kadar olabilir?",
+      "answer": "Bir yıldan az, beş yıldan fazla olamaz",
+      "generator": "deepseek-v4.1-flash",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-015",
+    "question": "Hizmet alımında ikinci sıradaki istekli de sözleşmeye yanaşmazsa teminatına ne olur?",
+    "doc_id": "HIZ_YON:68",
+    "doc_title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 68 (İhale üzerinde kalan isteklinin sözleşmeyi imzalamaması)",
+    "answer_span": "Bu zorunluluğa uyulmaması halinde, bu isteklinin geçici teminatı gelir kaydedilerek Kanunun 58 inci maddesi hükümleri uygulanır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-02026",
+      "original_question": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği 68. maddesine göre, ekonomik açıdan en avantajlı ikinci teklif sahibi isteklinin sözleşme imzalamak zorunluluğuna uyulmaması halinde geçici teminatı ne yapılır?",
+      "answer": "gelir kaydedilir",
+      "generator": "deepseek-v4.1-flash",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-016",
+    "question": "Personel çalıştırmaya dayalı bir hizmet ihalesinde maliyete esas kısa vadeli sigorta prim oranı hangi belgede gösterilir?",
+    "doc_id": "HIZ_YON:10",
+    "doc_title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 10 (Personel çalıştırılmasına dayalı ihalelerde yaklaşık maliyet)",
+    "answer_span": "Yaklaşık maliyetin hesabında ilgili mevzuatı uyarınca belirlenmiş kısa vadeli sigorta kolları prim oranı dikkate alınır ve bu oran idari şartnamede belirtilir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-01891",
+      "original_question": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği 10. maddesine göre, yaklaşık maliyetin hesabında dikkate alınan kısa vadeli sigorta kolları prim oranı nerede belirtilir?",
+      "answer": "İdari şartnamede",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-017",
+    "question": "Hizmet alımında sunulan kapasite raporunun hangi güne göre geçerli olması gerekir?",
+    "doc_id": "HIZ_YON:41",
+    "doc_title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 41 (Makine, teçhizat ve diğer ekipmana ilişkin belgeler ve kapasite raporu)",
+    "answer_span": "Sunulacak kapasite raporunun ihale veya son başvuru tarihi itibarıyla geçerli olması zorunludur.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-01964",
+      "original_question": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği 41. maddesine göre, sunulacak kapasite raporunun hangi tarih itibarıyla geçerli olması zorunludur?",
+      "answer": "İhale veya son başvuru tarihi",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-018",
+    "question": "Pazarlıkla yapılan bir hizmet alımında idare yaklaşık maliyeti ne zaman açıklar?",
+    "doc_id": "HIZ_YON:7",
+    "doc_title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 7 (Yaklaşık maliyete ilişkin ilkeler)",
+    "answer_span": "Pazarlık usulü ile yapılan ihalede ise yaklaşık maliyet, son yazılı fiyat teklifleri ile birlikte açıklanır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-02031",
+      "original_question": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği 7. maddesine göre pazarlık usulü ile yapılan ihalede yaklaşık maliyet hangi tekliflerle birlikte açıklanır?",
+      "answer": "Son yazılı fiyat teklifleri ile",
+      "generator": "deepseek-v4.1-flash",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-019",
+    "question": "Doğrudan temin ve küçük tutarlı pazarlıkla yapılan hizmet harcamaları bir yılda bütçedeki hizmet ödeneğinin ne kadarını geçemez?",
+    "doc_id": "HIZ_YON:4",
+    "doc_title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 4 (Temel ilkeler)",
+    "answer_span": "Kurulun uygun görüşü olmadıkça, Kanunun 21 inci maddesinin (f) bendi ve 22 nci maddesinin (d) bendinde yer alan parasal limitler dahilinde yapılacak harcamaların yıllık toplamı, idarelerin bütçelerine hizmet alımı amacıyla konulacak ödeneklerinin %10'unu aşamaz.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-01957",
+      "original_question": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği 4. maddesine göre, Kurulun uygun görüşü olmadıkça, Kanunun 21 inci maddesinin (f) bendi ve 22 nci maddesinin (d) bendinde yer alan parasal limitler dahilinde yapılacak harcamaların yıllık toplamı, idarelerin bütçelerine hizmet alımı amacıyla konulacak ödeneklerinin yüzde kaçını aşamaz?",
+      "answer": "%10'unu aşamaz",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-020",
+    "question": "Hizmet alımında tamamlanmış işi gösteren belgeye yazılan bedeller enflasyona göre güncellenir mi?",
+    "doc_id": "HIZ_YON:46",
+    "doc_title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 46 (İş deneyim tutarının tespiti)",
+    "answer_span": "(1) İş bitirme belgelerine, son hakediş raporu veya varsa kesin hakediş raporundaki fiilen gerçekleştirilen işle ilgili tutarlar herhangi bir güncelleştirmeye tabi tutulmadan yazılır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-01973",
+      "original_question": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği 46. maddesine göre iş bitirme belgelerine, son hakediş raporu veya varsa kesin hakediş raporundaki fiilen gerçekleştirilen işle ilgili tutarlar nasıl yazılır?",
+      "answer": "Herhangi bir güncelleştirmeye tabi tutulmadan yazılır.",
+      "generator": "deepseek-v4.1-flash",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-021",
+    "question": "Hizmet alımında yeterlik ölçütü olmayan ama iş sürerken yüklenicinin uyması gereken mesleki şartlar hangi dokümanda düzenlenir?",
+    "doc_id": "HIZ_YON:30",
+    "doc_title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 30 (Sözleşmenin yürütülmesi aşamasındaki mesleki ve teknik yükümlülüklere yönelik düzenlemeler)",
+    "answer_span": "ancak sözleşmenin yürütülmesi aşamasında işin yerine getirilmesi için gerekli olduğu öngörülen mesleki ve teknik yükümlülüklere yönelik düzenlemeler teknik şartnamede yer alır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-01937",
+      "original_question": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği 30. maddesine göre, ön yeterlik veya idari şartnamede yeterlik kriteri olarak belirlenmeyen ancak sözleşmenin yürütülmesi aşamasında gerekli olduğu öngörülen mesleki ve teknik yükümlülüklere yönelik düzenlemeler nerede yer alır?",
+      "answer": "Teknik şartnamede",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-022",
+    "question": "Hizmet alımının yaklaşık maliyetini çıkarırken idare farklı fiyat kaynaklarını belli bir öncelikle mi kullanmak zorunda?",
+    "doc_id": "HIZ_YON:8",
+    "doc_title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 8 (Yaklaşık maliyetin hesaplanmasına esas miktar ve fiyatların tespiti)",
+    "answer_span": "İdareler yaklaşık maliyete ilişkin fiyatların tespitinde, (a), (b), (c), (ç) ve (d) bentlerinde belirtilen fiyatların birini, birkaçını veya tamamını herhangi bir öncelik sırası olmaksızın kullanabilirler.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-02033",
+      "original_question": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği 8. maddesine göre, idareler yaklaşık maliyete ilişkin fiyatların tespitinde (a), (b), (c), (ç) ve (d) bentlerinde belirtilen fiyatları hangi sırayla kullanabilirler?",
+      "answer": "Herhangi bir öncelik sırası olmaksızın",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-023",
+    "question": "Bir hizmet alımında teknik şartnameyi kurum dışından biri hazırlayabilir mi, kim olabilir?",
+    "doc_id": "HIZ_YON:16",
+    "doc_title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 16 (Teknik şartname)",
+    "answer_span": "Ancak, işin özelliğinin gerektirdiği hallerde ihale yetkilisi tarafından onaylanması kaydıyla teknik şartname, Kanun hükümlerine uygun olarak danışmanlık hizmet sunucularına hazırlattırılabilir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-01904",
+      "original_question": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği 16. maddesine göre, işin özelliğinin gerektirdiği hallerde ihale yetkilisi tarafından onaylanması kaydıyla teknik şartname Kanun hükümlerine uygun olarak kimlere hazırlattırılabilir?",
+      "answer": "Danışmanlık hizmet sunucularına",
+      "generator": "deepseek-v4.1-flash",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-024",
+    "question": "Hizmet alımında fiyat dışı unsurlara bakıldıktan sonra da puanlar eşit kalırsa kazanan nasıl seçilir?",
+    "doc_id": "HIZ_YON:63",
+    "doc_title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 63 (Tekliflerin eşit olması)",
+    "answer_span": "Ancak bu değerlendirme sonucunda eşitliğin bozulmaması durumunda, puanları eşit olan istekliler davet edilmek suretiyle, ihale komisyonu tarafından kura yöntemine başvurulur.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-02014",
+      "original_question": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği 63. maddesine göre, fiyat dışı unsurlar esas alınarak yapılan değerlendirme sonucunda eşitliğin bozulmaması durumunda hangi yöntemle ekonomik açıdan en avantajlı teklif sahibi belirlenir?",
+      "answer": "Kura yöntemi",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-025",
+    "question": "Hizmet alımında birden fazla iş deneyim belgesinin tutarları birleştirilebilir mi?",
+    "doc_id": "HIZ_YON:48",
+    "doc_title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 48 (Değerlendirmeye ilişkin esaslar)",
+    "answer_span": "Birden çok iş deneyimini gösteren belge hiçbir şekilde toplanamaz.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-01978",
+      "original_question": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği 48. maddesine göre iş deneyimini gösteren belgelerin değerlendirmesinde birden çok belge nasıl işleme tabi tutulur?",
+      "answer": "Hiçbir şekilde toplanamaz",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-026",
+    "question": "Yapım işlerinde yenilenen iş deneyim belgesinin üzerine eski belgeyle ilgili ne not düşülür?",
+    "doc_id": "YAP_YON:gecici-33",
+    "doc_title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 33 (Daha önce alınmış iş deneyim belgeleri)",
+    "answer_span": "Bu durumda düzenlenen yeni belgeye daha önce düzenlenen belgenin tarih ve sayısının da belirtildiği ve eski belgenin yerine verildiğine dair bir şerh düşülür.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-03298",
+      "original_question": "Yapım İşleri İhaleleri Uygulama Yönetmeliği Geçici 33. maddesine göre, yeniden düzenlenen iş deneyim belgesine hangi bilgi şerh olarak düşülmelidir?",
+      "answer": "Eski belgenin tarih ve sayısı ile yerine verildiğine dair şerh",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-027",
+    "question": "Küçük bütçeli yapım işlerinde firmalardan bilanço ya da ciro gibi mali belgeler hangi sınırın altında hiç istenmez?",
+    "doc_id": "YAP_YON:30",
+    "doc_title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 30 (İstenecek belgeler)",
+    "answer_span": "b) Ekonomik ve mali yeterliğe ilişkin belgeler (…), yaklaşık maliyeti eşik değerin; 1) Onda birine kadar olan ihalelerde istenilemez,",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-03151",
+      "original_question": "Yapım İşleri İhaleleri Uygulama Yönetmeliği 30. maddesine göre, ekonomik ve mali yeterliğe ilişkin belgelerin istenilemeyeceği ihalelerde yaklaşık maliyet eşik değerin en fazla ne kadarına kadar olabilir?",
+      "answer": "Onda birine kadar",
+      "generator": "deepseek-v4.1-flash",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-028",
+    "question": "Acil ya da güvenlik gerektiren durumlarda pazarlıkla yapılan bir yapım ihalesinde konsorsiyumun koordinatör ortağı kim olmak zorunda?",
+    "doc_id": "YAP_YON:33",
+    "doc_title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 33 (Konsorsiyum)",
+    "answer_span": "Kanunun 21 inci maddesinin (b) ve (c) bentlerine göre yapılan ihalelerde, davet edilmiş olan gerçek ya da tüzel kişinin koordinatör ortak olarak belirlenmesi zorunludur.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-03154",
+      "original_question": "Yapım İşleri İhaleleri Uygulama Yönetmeliği 33. maddesine göre, Kanunun 21 inci maddesinin (b) ve (c) bentlerine göre yapılan ihalelerde koordinatör ortak olarak kimin belirlenmesi zorunludur?",
+      "answer": "Davet edilmiş olan gerçek ya da tüzel kişi",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-029",
+    "question": "Yapım işinin teknik şartnamesinde marka ya da model yazmak gerekirse yanına hangi ibare eklenmeli?",
+    "doc_id": "YAP_YON:17",
+    "doc_title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 17 (Teknik şartname)",
+    "answer_span": "Ancak, ulusal ve/veya uluslararası teknik standartların bulunmaması veya teknik özelliklerin belirlenmesinin mümkün olmaması hallerinde “veya dengi” ifadesine yer verilmek şartıyla marka veya model belirtilebilir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-03123",
+      "original_question": "Yapım İşleri İhaleleri Uygulama Yönetmeliği 17. maddesine göre, teknik şartnamede marka veya model belirtilebilmesi için hangi ifadeye yer verilmesi şarttır?",
+      "answer": "“veya dengi” ifadesine",
+      "generator": "deepseek-v4.1-flash",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-030",
+    "question": "Yapım ihalesinde firmanın kendine ait makine ve ekipmanı fiyat dışı unsur yapılırsa toplam puan içindeki payı en çok ne olabilir?",
+    "doc_id": "YAP_YON:41",
+    "doc_title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 41 (Tesis, makine, teçhizat ve diğer ekipmana ilişkin belgeler (Değişik başlık: 30.09.2020-31260 R.G/1. Md., yürürlük: 20.10.2020))",
+    "answer_span": "Kendi malı tesis, makine, teçhizat ve diğer ekipmana ilişkin fiyat dışı unsurun, fiyat ve fiyat dışı unsurlar dahil hesaplanan toplam değerlendirme puanı içindeki ağırlığı yüzde biri geçemez.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-03169",
+      "original_question": "Yapım İşleri İhaleleri Uygulama Yönetmeliği 41. maddesine göre, kendi malı tesis, makine, teçhizat ve diğer ekipmana ilişkin fiyat dışı unsurun toplam değerlendirme puanı içindeki ağırlığı en fazla yüzde kaç olabilir?",
+      "answer": "Yüzde bir",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-031",
+    "question": "Birim fiyat esasıyla ihale edilen yapım işlerinde metrajlar nasıl hazırlanır?",
+    "doc_id": "YAP_YON:9",
+    "doc_title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 9 (Yaklaşık maliyetin hesaplanmasına esas miktarların tespiti)",
+    "answer_span": "birim fiyat teklif almak suretiyle ihale edilecek işlerde ise iş kalemi şeklinde metraj listeleri düzenlenir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-03248",
+      "original_question": "Yapım İşleri İhaleleri Uygulama Yönetmeliği 9. maddesine göre, birim fiyat teklif almak suretiyle ihale edilecek işlerde metraj listeleri hangi şekilde düzenlenir?",
+      "answer": "İş kalemi şeklinde",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-032",
+    "question": "Bir yapım işinde pazarlık yöntemi seçilmişse idarenin tahmini bedeli duyurduğu an hangisidir?",
+    "doc_id": "YAP_YON:8",
+    "doc_title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 8 (Yaklaşık maliyete ilişkin ilkeler)",
+    "answer_span": "Pazarlık usulü ile yapılan ihalede ise yaklaşık maliyet, son yazılı teklifler ile birlikte açıklanır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-03247",
+      "original_question": "Yapım İşleri İhaleleri Uygulama Yönetmeliği 8. maddesine göre pazarlık usulü ile yapılan ihalede yaklaşık maliyet ne zaman açıklanır?",
+      "answer": "Son yazılı teklifler ile birlikte",
+      "generator": "deepseek-v4.1-flash",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-033",
+    "question": "Yapım ihalesinde belgelerindeki eksik bilgiyi tamamlaması için istekliye en az ne kadar süre tanınır?",
+    "doc_id": "YAP_YON:57",
+    "doc_title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 57 (Başvuruların ve tekliflerin alınması, açılması ve belgelerdeki bilgi eksikliklerinin tamamlatılması)",
+    "answer_span": "idare tarafından iki iş gününden az olmamak üzere tamamlama süresi verilir",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-03210",
+      "original_question": "Yapım İşleri İhaleleri Uygulama Yönetmeliği 57. maddesine göre, sunulan belgelerde bilgi eksikliği bulunması halinde idarece verilecek tamamlama süresi en az ne kadardır?",
+      "answer": "İki iş günü",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-034",
+    "question": "Yapım ihalesinde ilan süresi hesaplanırken ilanın çıktığı gün sayılır mı?",
+    "doc_id": "YAP_YON:22",
+    "doc_title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 22 (İhale ve ön yeterlik ilanı)",
+    "answer_span": "İlân sürelerinin hesaplanmasında ilânın yayımlandığı gün dikkate alınır, ihale günü veya son başvuru günü dikkate alınmaz.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-03134",
+      "original_question": "Yapım İşleri İhaleleri Uygulama Yönetmeliği 22. maddesine göre, ilân sürelerinin hesaplanmasında hangi gün dikkate alınır?",
+      "answer": "İlanın yayımlandığı gün",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-035",
+    "question": "Yapım işine konsorsiyumla girildiğinde uzmanlık isteyen kısımların teknik personelini kim sağlar?",
+    "doc_id": "YAP_YON:40",
+    "doc_title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 40 (İsteklinin organizasyon yapısı ve personel durumuna ilişkin belgeler)",
+    "answer_span": "Konsorsiyumlarda ise, işin uzmanlık gerektiren kısımları için öngörülen teknik personelin, ilgili kısma teklif veren ortak tarafından karşılanması gerekir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-03166",
+      "original_question": "Yapım İşleri İhaleleri Uygulama Yönetmeliği 40. maddesine göre, konsorsiyumlarda işin uzmanlık gerektiren kısımları için öngörülen teknik personel kim tarafından karşılanmalıdır?",
+      "answer": "İlgili kısma teklif veren ortak",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-036",
+    "question": "Yapım işlerinde il özel idaresinin düzenlediği iş deneyim belgesini kim onaylar?",
+    "doc_id": "YAP_YON:43",
+    "doc_title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 43 (İş deneyim belgesi düzenlemeye yetkili kurum ve kuruluşlar)",
+    "answer_span": "il özel idaresince düzenlenenler ise, vali veya yetkilendirdiği kişi tarafından onaylanır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-03173",
+      "original_question": "Yapım İşleri İhaleleri Uygulama Yönetmeliği 43. maddesine göre, il özel idaresi tarafından düzenlenen iş deneyim belgeleri kim tarafından onaylanır?",
+      "answer": "Vali veya yetkilendirdiği kişi",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-037",
+    "question": "Yapım işinin yaklaşık maliyetinde şüpheli görülen fiyatların piyasaya uygunluğu hangi kuruluşlardan alınan yazılarla netleştirilir?",
+    "doc_id": "YAP_YON:10",
+    "doc_title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 10 (Yaklaşık maliyet hesabına esas fiyat ve rayiçlerin tespiti)",
+    "answer_span": "Tereddüt edilen fiyatların gerçek piyasa rayiçlerine uygun olup olmadığı hususu Ticaret ve/veya Sanayi Odalarından alınacak yazılı rayiçlerle netleştirilir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-03106",
+      "original_question": "Yapım İşleri İhaleleri Uygulama Yönetmeliği 10. maddesine göre, tereddüt edilen fiyatların gerçek piyasa rayiçlerine uygun olup olmadığı hangi kurumlardan alınacak yazılı rayiçlerle netleştirilir?",
+      "answer": "Ticaret ve/veya Sanayi Odaları",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-038",
+    "question": "Danışmanlık firmalarından ne tür konularda hizmet satın alınır?",
+    "doc_id": "DAN_YON:6",
+    "doc_title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 6 (Danışmanlık hizmetlerinin kapsamı)",
+    "answer_span": "teknik, mali, hukuki veya benzeri alanlardaki hizmetler, danışmanlık hizmet sunucularından alınır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-01505",
+      "original_question": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği 6. maddesine göre, danışmanlık hizmet sunucularından alınan hizmetler hangi alanlarda sunulur?",
+      "answer": "Teknik, mali, hukuki veya benzeri alanlar",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-039",
+    "question": "Danışmanlık ihalesinde teknik ve mali değerlendirmeden sonra kaç isteklinin altına düşülürse ihale yapılmaz?",
+    "doc_id": "DAN_YON:65",
+    "doc_title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 65 (Mali tekliflerin açılması ve puanlama)",
+    "answer_span": "(7) Yapılan teknik ve/veya mali değerlendirme sonucunda üçten az isteklinin kalması halinde ihale yapılmaz.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-01519",
+      "original_question": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği 65. maddesine göre yapılan teknik ve/veya mali değerlendirme sonucunda kaçtan az isteklinin kalması halinde ihale yapılmaz?",
+      "answer": "Üçten az",
+      "generator": "deepseek-v4.1-flash",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-040",
+    "question": "Danışmanlık ihalesine konsorsiyumla girenler koordinatör ortağı gösteren beyannameyi ne zaman vermeli?",
+    "doc_id": "DAN_YON:32",
+    "doc_title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 32 (Konsorsiyum)",
+    "answer_span": "Konsorsiyumun başvurusu ve teklifiyle birlikte koordinatör ortağın da belirlendiği Konsorsiyum Beyannamesini vermek zorundadır",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-01439",
+      "original_question": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği 32. maddesine göre, Konsorsiyum Beyannamesi ne zaman verilmelidir?",
+      "answer": "Başvurusu ve teklifiyle birlikte",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-041",
+    "question": "Danışmanlık ihalesinde idare kendi idari şartnamesini hangi örneğe göre yazar?",
+    "doc_id": "DAN_YON:15",
+    "doc_title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 15 (İdari şartname)",
+    "answer_span": "İdare, tip idari şartnameyi esas alarak idari şartnamesini hazırlar.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-01408",
+      "original_question": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği 15. maddesine göre, idare idari şartnamesini neyi esas alarak hazırlar?",
+      "answer": "Tip idari şartname",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-042",
+    "question": "Danışmanlık ihalesinde ön ilan yapılmışsa kısa listedeki adaylara verilen davet süresi en fazla ne kadar kısaltılabilir?",
+    "doc_id": "DAN_YON:23",
+    "doc_title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 23 (Davet süresinin kısaltılması)",
+    "answer_span": "ön yeterliği belirlenen adaylara yapılacak kırk günlük davet süresi en fazla yirmidört güne kadar indirilebilir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-01425",
+      "original_question": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği 23. maddesine göre, ön ilan yapılması halinde ön yeterliği belirlenen adaylara yapılacak kırk günlük davet süresi en fazla kaç güne kadar indirilebilir?",
+      "answer": "Yirmidört gün",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-043",
+    "question": "Danışmanlık işinde iş tanımı yazılırken danışmanların kendi yöntemlerini önerebilmesi için nelere dikkat edilir?",
+    "doc_id": "DAN_YON:7",
+    "doc_title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 7 (İş tanımının belirlenmesi)",
+    "answer_span": "Ancak, danışmanların özgün metodolojilerini önerebilmeleri amacıyla, iş tanımının çok ayrıntılı ve sınırlayıcı olmamasına dikkat edilmelidir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-01530",
+      "original_question": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği 7. maddesine göre, danışmanların özgün metodolojilerini önerebilmeleri amacıyla neye dikkat edilmelidir?",
+      "answer": "İş tanımının çok ayrıntılı ve sınırlayıcı olmamasına",
+      "generator": "deepseek-v4.1-flash",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-044",
+    "question": "Danışmanlık alımında kurum şartname ve dokümanları yazmaya başlamadan önce ihaleyi hangi sisteme kaydeder?",
+    "doc_id": "DAN_YON:13",
+    "doc_title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 13 (İhale kaydı, ihale ve ön yeterlik dokümanının hazırlanması)",
+    "answer_span": "(1) İhale ve ön yeterlik dokümanının hazırlanmasından önce idare tarafından EKAP üzerinden ihale kaydı yapılır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-01404",
+      "original_question": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği 13. maddesine göre ihale ve ön yeterlik dokümanının hazırlanmasından önce idare tarafından ihale kaydı nereden yapılır?",
+      "answer": "EKAP üzerinden",
+      "generator": "deepseek-v4.1-flash",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-045",
+    "question": "Danışmanlıkta ön yeterlik dokümanı, kısa listeye kaç adayın alınacağı konusunda neyi içermelidir?",
+    "doc_id": "DAN_YON:12",
+    "doc_title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 12 (İhale ve ön yeterlik dokümanının içeriği)",
+    "answer_span": "Ön yeterlik dokümanında ise, adaylarda aranılan şartlara, sıralama kriterlerine ve puanlama yöntemi ile kısa listeye alınacak aday sayı ya da sayı aralığına yer verilir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-01402",
+      "original_question": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği 12. maddesine göre ön yeterlik dokümanında kısa listeye alınacak adaylara ilişkin olarak neye yer verilir?",
+      "answer": "aday sayı ya da sayı aralığına",
+      "generator": "deepseek-v4.1-flash",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-046",
+    "question": "Yurt dışında yapımla ilgili danışmanlık işi yapmış bir Türk vatandaşına iş bitirme belgesini kim verebilir?",
+    "doc_id": "DAN_YON:42",
+    "doc_title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 42 (İş deneyim belgesi düzenlemeye yetkili kurum ve kuruluşlar)",
+    "answer_span": "yabancı ülkedeki ilgili Türkiye Cumhuriyeti Ticaret Müşavirlikleri/Ataşelikleri tarafından iş bitirme belgesi düzenlenebilir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-01461",
+      "original_question": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği 42. maddesine göre yurt dışında yapımla ilgili danışmanlık hizmet işi gerçekleştiren Türk vatandaşları adına iş bitirme belgesi hangi kurum tarafından düzenlenebilir?",
+      "answer": "Türkiye Cumhuriyeti Ticaret Müşavirlikleri/Ataşelikleri",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-047",
+    "question": "Danışmanlıkta henüz süren işler için iş deneyim belgesine hangi hakedişlerdeki tutarlar yazılır?",
+    "doc_id": "DAN_YON:45",
+    "doc_title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 45 (İş deneyim tutarının tespiti)",
+    "answer_span": "devam eden işlerde ara hakediş raporlarındaki, kabulü yapılmış işlerde ise hakediş raporları ve varsa kesin hakediş raporundaki iş veya görevle ilgili tutarlar herhangi bir güncelleştirmeye tabi tutulmadan yazılır.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-01467",
+      "original_question": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği 45. maddesine göre, iş deneyim belgelerine devam eden işlerde hangi raporlardaki tutarlar yazılır?",
+      "answer": "ara hakediş raporlarındaki tutarlar",
+      "generator": "deepseek-v4.1-flash",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-048",
+    "question": "Danışmanlık ihalesi teklif saatinden önce iptal edilirse bu durum hangi formla duyurulur?",
+    "doc_id": "DAN_YON:27",
+    "doc_title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 27 (İhale veya son başvuru saatinden önce ihalenin iptal edilmesi)",
+    "answer_span": "(2) İhale veya son başvuru saatinden önce ihalenin iptal edilmesi durumunda, ihale iptal ilan formu kullanılarak, ilanın yayımlandığı yayın organında ihalenin iptal edildiği hususu ile gerekçesi hemen ilan edilerek duyurulur.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-01430",
+      "original_question": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği 27. maddesine göre, ihale veya son başvuru saatinden önce ihalenin iptal edilmesi durumunda ihalenin iptal edildiği hususu ve gerekçesi hangi form kullanılarak duyurulur?",
+      "answer": "İhale iptal ilan formu",
+      "generator": "deepseek-v4.1-flash",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-049",
+    "question": "Parasal eşiğin üstündeki bir danışmanlık ihalesinde kısa listedeki firmalara teklif hazırlamak için en az ne kadar süre verilir?",
+    "doc_id": "DAN_YON:55",
+    "doc_title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 55 (İhaleye davet)",
+    "answer_span": "(2) Yaklaşık maliyeti eşik değerlere eşit veya bu değeri aşan ihalelerde kısa listeye alınan adaylara teknik ve mali tekliflerini hazırlayabilmeleri için, ihale gününden önce en az kırk gün süre verilerek davet mektubu gönderilir.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-01495",
+      "original_question": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği 55. maddesine göre, yaklaşık maliyeti eşik değerlere eşit veya bu değeri aşan ihalelerde kısa listeye alınan adaylara teknik ve mali tekliflerini hazırlayabilmeleri için ihale gününden önce en az kaç gün süre verilir?",
+      "answer": "En az kırk gün",
+      "generator": "deepseek-v4.1-flash",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  },
+  {
+    "qid": "mevzuat-050",
+    "question": "Danışmanlık ihalesine iş ortaklığıyla girildiğinde kalite yönetim sistem belgesini ortaklardan kaçının sunması yeterli?",
+    "doc_id": "DAN_YON:41",
+    "doc_title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 41 (Kalite ve standarda ilişkin belgeler)",
+    "answer_span": "İş ortaklıklarında, ortaklardan en az biri tarafından Kalite Yönetim Sistem Belgesinin sunulması zorunludur.",
+    "annotator": "llm-1",
+    "source": "llm-draft",
+    "provenance": {
+      "dataset": "mvdelibas/tr-mevzuat-sc",
+      "id": "trmsc-01459",
+      "original_question": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği 41. maddesine göre, iş ortaklıklarında Kalite Yönetim Sistem Belgesinin sunulması konusunda hangi koşul aranır?",
+      "answer": "Ortaklardan en az biri tarafından sunulması",
+      "generator": "qwen3.8-flash-next",
+      "answer_checked_by": "gemma-4-31b",
+      "rewritten": "law name and article number removed, question reworded by an LLM (not a person)"
+    }
+  }
+]

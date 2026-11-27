@@ -1,0 +1,2624 @@
+{
+  "version": 1,
+  "fingerprint": "sha256:a340cb0baafa706e341f644a574db564684dedab05d0188d93c5394cd7cff3d4",
+  "documents": [
+    {
+      "doc_id": "DAN_YON:1",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 1 (Amaç ve kapsam)",
+      "revid": null,
+      "sha256": "c39500240b59b79eb5a67d260b787ecb13834af2ac96fdde936a3499a60d5cc1",
+      "chars": 405
+    },
+    {
+      "doc_id": "DAN_YON:10",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 10 (Yaklaşık maliyetin hesaplanmasına esas miktar ve fiyatların tespiti)",
+      "revid": null,
+      "sha256": "38dd530053d605b0093176bc48fdc333d92c7402111e808145ccd2da80c177f3",
+      "chars": 2741
+    },
+    {
+      "doc_id": "DAN_YON:11",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 11 (Yaklaşık maliyetin hesaplanması ve güncellenmesi)",
+      "revid": null,
+      "sha256": "dd95df94059987c0745b8b7bb3bf48d9d1c96c4352f6cfb67088e573645a7f19",
+      "chars": 2484
+    },
+    {
+      "doc_id": "DAN_YON:12",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 12 (İhale ve ön yeterlik dokümanının içeriği)",
+      "revid": null,
+      "sha256": "fa2c5e242f1c141e5497a9915a6b5bebc479ba66dfb185acb9ed4feef53fc7ba",
+      "chars": 441
+    },
+    {
+      "doc_id": "DAN_YON:13",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 13 (İhale kaydı, ihale ve ön yeterlik dokümanının hazırlanması)",
+      "revid": null,
+      "sha256": "10e1e5301c0af6bf47f67b8a13c51e8d65ccb507a58f817918778dc650ab7120",
+      "chars": 926
+    },
+    {
+      "doc_id": "DAN_YON:14",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 14 (Ön yeterlik şartnamesi)",
+      "revid": null,
+      "sha256": "2193bdabe8492b55bf232109175adb90e7e59a8a82c8d2b84fe0f49df0de3fb8",
+      "chars": 639
+    },
+    {
+      "doc_id": "DAN_YON:15",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 15 (İdari şartname)",
+      "revid": null,
+      "sha256": "9873b248da606ae83658d6ad0d3b1bf3e58bb162db3f726ca8c5473b48e27394",
+      "chars": 525
+    },
+    {
+      "doc_id": "DAN_YON:16",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 16 (Teknik şartname)",
+      "revid": null,
+      "sha256": "361609d938980365bc3bb834b8a82cc78b62a9b3a5624e254e75f7240d7c15ca",
+      "chars": 1495
+    },
+    {
+      "doc_id": "DAN_YON:17",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 17 (Sözleşme tasarısı)",
+      "revid": null,
+      "sha256": "98f35c21aa871b8954f83d92123bf59b393cee44f059a78c7f972d83a39d5ad6",
+      "chars": 715
+    },
+    {
+      "doc_id": "DAN_YON:18",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 18 (İhale onayının alınması)",
+      "revid": null,
+      "sha256": "f167d2eddd6bc228d2c47b231a19746897dac61eed3b6861f6a75da37c7f50d1",
+      "chars": 484
+    },
+    {
+      "doc_id": "DAN_YON:19",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 19 (İhale komisyonunun kurulması ve çalışma esasları)",
+      "revid": null,
+      "sha256": "fcec91aa351f9af299105f126c43009f1206f921930552212551bec0c92c28bd",
+      "chars": 1667
+    },
+    {
+      "doc_id": "DAN_YON:20",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 20 (İhale işlem dosyası)",
+      "revid": null,
+      "sha256": "d70616283bd6e99d0390df1be2b40ee00912a4fb14a79aeeb6c5475262917894",
+      "chars": 1136
+    },
+    {
+      "doc_id": "DAN_YON:21",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 21 (Ön yeterlik ilanı)",
+      "revid": null,
+      "sha256": "d3cec9ab3840b9a64a24f1002b328063fe36cf5b3a498124102d2a2b4bce1763",
+      "chars": 757
+    },
+    {
+      "doc_id": "DAN_YON:22",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 22 (Ön ilan)",
+      "revid": null,
+      "sha256": "f4cf573a2b0ba4faecdb4ab338933f56f701517a9581edbf5621b47cc5ae8b54",
+      "chars": 724
+    },
+    {
+      "doc_id": "DAN_YON:23",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 23 (Davet süresinin kısaltılması)",
+      "revid": null,
+      "sha256": "129cfb30fd0520b27a71baac8e48f0f06b5a44d9a962eb94ef9d42307e8f25e2",
+      "chars": 592
+    },
+    {
+      "doc_id": "DAN_YON:24",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 24 (İlanın uygun olmaması)",
+      "revid": null,
+      "sha256": "ff3ae680f6b667bc8ee7a3323af57a21174a8160b1703db252cc7c6fd4946f56",
+      "chars": 434
+    },
+    {
+      "doc_id": "DAN_YON:25",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 25 (İhale ve ön yeterlik dokümanının görülmesi ve indirilmesi (Değişik Başlık:RG-18/5/2024-32550))",
+      "revid": null,
+      "sha256": "45c41b72bb5cc610fc8b439cbc118ef0bf1435c765b3c374b4b064bf0f6e6920",
+      "chars": 323
+    },
+    {
+      "doc_id": "DAN_YON:26",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 26 (İhale ve ön yeterlik dokümanında değişiklik veya açıklama yapılması)",
+      "revid": null,
+      "sha256": "b82ad4a04e9ae319cb4f628ec827605d1ff2cbaf51f7a465df8a17b4615de2fb",
+      "chars": 3368
+    },
+    {
+      "doc_id": "DAN_YON:27",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 27 (İhale veya son başvuru saatinden önce ihalenin iptal edilmesi)",
+      "revid": null,
+      "sha256": "5d24921b22eb97fc375100d62bc8f9cc2347bab75dea61efc1aabaccbf354df7",
+      "chars": 923
+    },
+    {
+      "doc_id": "DAN_YON:28",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 28 (Yeterliğin belirlenmesinde uyulacak ilkeler)",
+      "revid": null,
+      "sha256": "1fc74a1a2d29c79c31925f8a7ce9de5df6437ec1811c238af45cff7e2fe8e287",
+      "chars": 2051
+    },
+    {
+      "doc_id": "DAN_YON:29",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 29 (İstenecek belgeler)",
+      "revid": null,
+      "sha256": "2c1a3cb89d97860ecde33c237e0e5e67b6e70e30be31f6967f79a87e510e56f7",
+      "chars": 1879
+    },
+    {
+      "doc_id": "DAN_YON:3",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 3 (Tanımlar ve kısaltmalar (Değişik Başlık:RG-18/5/2024-32550))",
+      "revid": null,
+      "sha256": "85a1294d4c6631fdf467d7b234f444060007cff9e71e864b588d7e6ce902a48e",
+      "chars": 2743
+    },
+    {
+      "doc_id": "DAN_YON:31",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 31 (İş Ortaklığı)",
+      "revid": null,
+      "sha256": "bba0b125258164751060a0f6492d9004c914f812b535e02f65d9f64a70317712",
+      "chars": 1566
+    },
+    {
+      "doc_id": "DAN_YON:32",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 32 (Konsorsiyum)",
+      "revid": null,
+      "sha256": "6883b64b0a5801778a095af19ba81a265e35308231ecd5e3bd08614e215f5a63",
+      "chars": 912
+    },
+    {
+      "doc_id": "DAN_YON:34",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 34 (Bilanço veya eşdeğer belgeler)",
+      "revid": null,
+      "sha256": "a09f8f9da90379e93270532d305b4218aae4ac773ea94472e4b848e4416da6b6",
+      "chars": 4416
+    },
+    {
+      "doc_id": "DAN_YON:35",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 35 (İş hacmini gösteren belgeler)",
+      "revid": null,
+      "sha256": "f6343edcc60b3cdb104f51835f1efddd2c0789bc782a6ca6f37b336bd63d43fb",
+      "chars": 3642
+    },
+    {
+      "doc_id": "DAN_YON:36",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 36 (İş hacmine ilişkin belge tutarlarının güncellenmesi)",
+      "revid": null,
+      "sha256": "ee44b22456ac705696bf3f0349b5a211f7b477f8abbd41aefbfa026d6db5df56",
+      "chars": 523
+    },
+    {
+      "doc_id": "DAN_YON:37",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 37 (Aday veya isteklinin mesleki faaliyetini sürdürdüğünü ve teklif vermeye yetkili olduğunu gösteren belgeler)",
+      "revid": null,
+      "sha256": "ac59835a682eab7c7cbdfa44a7e8a8e8414295312ef897df0e0710505ff6c196",
+      "chars": 2638
+    },
+    {
+      "doc_id": "DAN_YON:38",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 38 (İş deneyimini gösteren belgeler)",
+      "revid": null,
+      "sha256": "fc358207437e930cafccc9e2bc20d4d80933caa761679e8ad8e9247e90082fc3",
+      "chars": 5392
+    },
+    {
+      "doc_id": "DAN_YON:39",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 39 (Organizasyon yapısına ve personel durumuna ilişkin belgeler)",
+      "revid": null,
+      "sha256": "49bc58f84081674b4a164cc009369aefce1f13369b4f37869bddceffe0a0de3d",
+      "chars": 3614
+    },
+    {
+      "doc_id": "DAN_YON:4",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 4 (Temel ilkeler)",
+      "revid": null,
+      "sha256": "2526f95eb131d9622045d3f53faf8a8872962babff83f52e4d203c1b59a6dbca",
+      "chars": 1999
+    },
+    {
+      "doc_id": "DAN_YON:40",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 40 (Makine, teçhizat ve diğer ekipmana ilişkin belgeler)",
+      "revid": null,
+      "sha256": "16986d446c262102de3728a24030838aec1fdf7a04fb14a0907f52bd7f780672",
+      "chars": 1407
+    },
+    {
+      "doc_id": "DAN_YON:41",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 41 (Kalite ve standarda ilişkin belgeler)",
+      "revid": null,
+      "sha256": "af4466b5c6947cdbab99de1128a3268ac54711d268704c633ac74fa048fb1bf3",
+      "chars": 1737
+    },
+    {
+      "doc_id": "DAN_YON:42",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 42 (İş deneyim belgesi düzenlemeye yetkili kurum ve kuruluşlar)",
+      "revid": null,
+      "sha256": "630fdfe35b124770d6ae521b1e1590b1995eb375ff217b5286b5fda088629e0e",
+      "chars": 2167
+    },
+    {
+      "doc_id": "DAN_YON:43",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 43 (Belge düzenleme koşulları (Değişik: 03/07/2009-27277 R.G. / 8 md.))",
+      "revid": null,
+      "sha256": "17c6e7bb4fd5fae8859f8526ee92e0fbd1818b3a7157cd0582bac10dc7741371",
+      "chars": 5794
+    },
+    {
+      "doc_id": "DAN_YON:44",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 44 (Belge için başvuru)",
+      "revid": null,
+      "sha256": "ad00973079ce7b774227e12c129009cc952900b1f4f3a02d6dbb4e4d3bd3473e",
+      "chars": 2836
+    },
+    {
+      "doc_id": "DAN_YON:45",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 45 (İş deneyim tutarının tespiti)",
+      "revid": null,
+      "sha256": "06bebfddfec441ba4c7533dfcda9c0c0946ffd6c770a5750eff410dfc23f97d6",
+      "chars": 2960
+    },
+    {
+      "doc_id": "DAN_YON:46",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 46 (İş deneyim belgelerinin verilmesi)",
+      "revid": null,
+      "sha256": "c5ec36e83a3f7b745f3dcaaa99b9329e56f8baa82740a2ab6f93bf4bdedb9d47",
+      "chars": 6703
+    },
+    {
+      "doc_id": "DAN_YON:47",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 47 (İş deneyim belgesi düzenlenemeyecek işlerde iş deneyimini gösteren belgeler ve bu belgelerde aranacak kriterler)",
+      "revid": null,
+      "sha256": "09f34ec689c837d3cf04f57120dbda929199837b6d5a9552d0505ba85f19e10c",
+      "chars": 3891
+    },
+    {
+      "doc_id": "DAN_YON:48",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 48 (Değerlendirmeye ilişkin esaslar)",
+      "revid": null,
+      "sha256": "c2ad34076127ecd69ff1b5f94846af8eb340df6f526a23b1ea67bf363c7e4dfb",
+      "chars": 4117
+    },
+    {
+      "doc_id": "DAN_YON:48_a",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 48/A",
+      "revid": null,
+      "sha256": "680b32a96a07d6413b3abf3eca735943ee45207bd5c5afbdd7478dd27d7f4f1b",
+      "chars": 1512
+    },
+    {
+      "doc_id": "DAN_YON:49",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 49 (İş deneyim tutarının güncellenmesi)",
+      "revid": null,
+      "sha256": "e1c4cd6e90bf1f851af41862c16f59583bc72b8678351360c7532178e3a604ba",
+      "chars": 1855
+    },
+    {
+      "doc_id": "DAN_YON:5",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 5 (Yerli istekli)",
+      "revid": null,
+      "sha256": "95afe682d337f21bd40d68fdd314275ac46ada03d85d8dd4447b302953f45ea4",
+      "chars": 572
+    },
+    {
+      "doc_id": "DAN_YON:50",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 50 (İhale komisyonlarının inceleme yetkisi)",
+      "revid": null,
+      "sha256": "eb54cea55d72300e1b77d024c4345a3d6020ee262ea932f5595b3925cd4151ba",
+      "chars": 277
+    },
+    {
+      "doc_id": "DAN_YON:51",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 51 (İhale dışı bırakılma)",
+      "revid": null,
+      "sha256": "539a8d9ffebc70a9b295df2dadb15c1a18b93dfc60cdd8b463c1b4bd4d27420f",
+      "chars": 4295
+    },
+    {
+      "doc_id": "DAN_YON:52",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 52 (İhaleye katılamayacak olanlar)",
+      "revid": null,
+      "sha256": "3c7cdd430d0beb5802820d8eb52b1651d7ab4b67e190655d5ca105528d98e39a",
+      "chars": 2705
+    },
+    {
+      "doc_id": "DAN_YON:53",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 53 (Ön yeterlik başvurularının alınması ve açılması)",
+      "revid": null,
+      "sha256": "09ad14cd2b8064bb7a38272c0574bcebe7566f28ab6b2a8bcd6f40c55db796b4",
+      "chars": 870
+    },
+    {
+      "doc_id": "DAN_YON:54",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 54 (Ön yeterlik değerlendirmesi)",
+      "revid": null,
+      "sha256": "3e8ee6e91a849fb90f817416d3eaa18454ed639f77874958544b17ca6f4d7002",
+      "chars": 4800
+    },
+    {
+      "doc_id": "DAN_YON:55",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 55 (İhaleye davet)",
+      "revid": null,
+      "sha256": "211c8c35e5bc0cdfaf40e7590175884f5d1deeef94769475b7f943a7b19331b9",
+      "chars": 866
+    },
+    {
+      "doc_id": "DAN_YON:56",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 56 (Başvuru ve Teklif mektuplarının şekli)",
+      "revid": null,
+      "sha256": "973b1d02cddfda52a315600bbd2470d57ea87e329d71552749a6578f4b8ec170",
+      "chars": 1520
+    },
+    {
+      "doc_id": "DAN_YON:57",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 57 (Tekliflerin geçerlilik süresi)",
+      "revid": null,
+      "sha256": "7264a0980a5e41eedeadb9ae0b7513ab2b76ad64233774389bd53f0a29577cc8",
+      "chars": 471
+    },
+    {
+      "doc_id": "DAN_YON:58",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 58 (Teminatlar)",
+      "revid": null,
+      "sha256": "10dca38d2fc1f69c735b6c46c6f43d18971ac1d73582329b96f50d894c877cb2",
+      "chars": 3021
+    },
+    {
+      "doc_id": "DAN_YON:59",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 59 (Tekliflerin sunulması)",
+      "revid": null,
+      "sha256": "6db3f5c546b4659b403a267109726823ac894bfa903103b70fab263fbac7a7a6",
+      "chars": 1084
+    },
+    {
+      "doc_id": "DAN_YON:6",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 6 (Danışmanlık hizmetlerinin kapsamı)",
+      "revid": null,
+      "sha256": "fd19d412a135715c0afe7e6efa8da12e8d6e0bca841cb113f2871b2e1270ab16",
+      "chars": 1073
+    },
+    {
+      "doc_id": "DAN_YON:60",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 60 (Tekliflerin alınması ve teknik tekliflerin açılması)",
+      "revid": null,
+      "sha256": "adba1234e36e70ac21c58c21a008ee44f178aad419f856041a65806e446bccb7",
+      "chars": 1093
+    },
+    {
+      "doc_id": "DAN_YON:61",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 61 (Teknik ve mali tekliflerin değerlendirilmesi)",
+      "revid": null,
+      "sha256": "9daa88e97a2766664463e96c039c0f0041ecf4c9adca80b7a00321d757cd814a",
+      "chars": 1576
+    },
+    {
+      "doc_id": "DAN_YON:62",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 62 (Teknik ve mali puan ağırlık katsayılarının belirlenmesi)",
+      "revid": null,
+      "sha256": "9ec2d8ebbedb51d8d69bd17c1099d238b29da10c17d59caa11759e0b02b8ab63",
+      "chars": 2614
+    },
+    {
+      "doc_id": "DAN_YON:63",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 63 (Teknik değerlendirmede dikkate alınacak kriterler)",
+      "revid": null,
+      "sha256": "085a05bcac568ee44653a6493275292df0b94556017cafc9cbfaa4b10d1dd1cb",
+      "chars": 833
+    },
+    {
+      "doc_id": "DAN_YON:64",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 64 (Teknik Puanlama)",
+      "revid": null,
+      "sha256": "8ec1b55675195f90b1e339dffd1a3a29dae5b41e70c5aaad9f2e3550f17569b8",
+      "chars": 1138
+    },
+    {
+      "doc_id": "DAN_YON:65",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 65 (Mali tekliflerin açılması ve puanlama)",
+      "revid": null,
+      "sha256": "5568b493a30e80e508b1dc24f1f92de6d24bf35d47a21a924c2c84e046406c13",
+      "chars": 3312
+    },
+    {
+      "doc_id": "DAN_YON:66",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 66 (Toplam puanların belirlenmesi, görüşmeye davet ve ihalenin karara bağlanması)",
+      "revid": null,
+      "sha256": "b51d30ae986f19fd7de23d6cc6ac4b6ce50b474a2abe042ffa9228277ba82897",
+      "chars": 1998
+    },
+    {
+      "doc_id": "DAN_YON:67",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 67 (Bütün tekliflerin reddedilmesi ve ihalenin iptali)",
+      "revid": null,
+      "sha256": "74f7757df8cb5d882463c7f9dcaf0f2c1a5f762be5b2845333aa3e8a0a10814f",
+      "chars": 578
+    },
+    {
+      "doc_id": "DAN_YON:68",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 68 (İhalenin karara bağlanması ve onaylanması)",
+      "revid": null,
+      "sha256": "efd74912f0e23a5e18951921305c0c917084e36afd8426997936537b96b29df5",
+      "chars": 1462
+    },
+    {
+      "doc_id": "DAN_YON:69",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 69 (Kesinleşen ihale kararının bildirilmesi)",
+      "revid": null,
+      "sha256": "3d8a500f641852cdd52e67849ffec3df1d3a53d10733cf7c1ad1b228e3cfcc62",
+      "chars": 584
+    },
+    {
+      "doc_id": "DAN_YON:7",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 7 (İş tanımının belirlenmesi)",
+      "revid": null,
+      "sha256": "31bcdc30b0a74e1e712b7b474974d21e00095398daa365051ac3453d63d55635",
+      "chars": 1866
+    },
+    {
+      "doc_id": "DAN_YON:70",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 70 (İhale üzerinde kalan isteklinin sözleşmeye davet edilmesi)",
+      "revid": null,
+      "sha256": "12fb6492c132fe5e0e94fc998d7780b9cd040587d90d02ba583f9485d639225c",
+      "chars": 1208
+    },
+    {
+      "doc_id": "DAN_YON:71",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 71 (İhale üzerinde kalan isteklinin sözleşmeyi imzalamaması)",
+      "revid": null,
+      "sha256": "9fddd062402e9fe77ddaa2cc44ed1d44f2756d72072ed9900a05df4b563462cb",
+      "chars": 1630
+    },
+    {
+      "doc_id": "DAN_YON:72",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 72 (İhale sonucunun ilanı)",
+      "revid": null,
+      "sha256": "de3150c5758e25d29fb66ccc579c5966f6e67eecf2de968dc2414b620febe45a",
+      "chars": 298
+    },
+    {
+      "doc_id": "DAN_YON:8",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 8 (Tebligat esasları (Değişik Başlık:RG-18/5/2024-32550))",
+      "revid": null,
+      "sha256": "7ad588ace35b4ff1be03e72ba6514aa95eeef28bc8670a9125c02d3f6aa17fd7",
+      "chars": 1291
+    },
+    {
+      "doc_id": "DAN_YON:9",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 9 (Yaklaşık maliyete ilişkin ilkeler)",
+      "revid": null,
+      "sha256": "6f2c7363283df76e7c9187e1b801e6b651b28d9c7fcf7b9a6475700b6eec6899",
+      "chars": 1540
+    },
+    {
+      "doc_id": "DAN_YON:ek-1",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Ek 1 (İş deneyim belgelerinin EKAP üzerinden düzenlenmesi (Ek: 07/06/2014-29023 R.G./11 md.))",
+      "revid": null,
+      "sha256": "a1618ed7463f312ca39ebb87e65e2578f31497cb6c90eb0952b6f69f25a63c5a",
+      "chars": 1222
+    },
+    {
+      "doc_id": "DAN_YON:ek-2",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Ek 2 (Standart formlara yapılan atıflar)",
+      "revid": null,
+      "sha256": "e42500caf63abbe7e7eaaedb6021c5c9b7e23daf2997433245968943a1ee0392",
+      "chars": 164
+    },
+    {
+      "doc_id": "DAN_YON:gecici-1",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 1 (5/3/2009 tarihinden önceki ihaleler)",
+      "revid": null,
+      "sha256": "5ca0c0d0877f193cd347a45fd18dd5d4d8978dc92e7a9522006c80ba98dd77e9",
+      "chars": 191
+    },
+    {
+      "doc_id": "DAN_YON:gecici-10",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 10 (Başlamış olan ihaleler (Ek:- 16/07/2011-27996 R.G./33 md.))",
+      "revid": null,
+      "sha256": "a91dd15c8545f8ac0b2c5c9d13879da894102d54a8c7eab2da7c3de18a73a8ac",
+      "chars": 172
+    },
+    {
+      "doc_id": "DAN_YON:gecici-11",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 11 (Başlamış olan ihaleler (Ek:28/11/2013-28835 R.G./9 md.))",
+      "revid": null,
+      "sha256": "210e35badd622a3e70badbce329719a13328af29f055ecb1bd4e78ab621e3975",
+      "chars": 192
+    },
+    {
+      "doc_id": "DAN_YON:gecici-12",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 12 (Geçiş hükümleri (Ek: 07/06/2014-29023 R.G./26 md.))",
+      "revid": null,
+      "sha256": "5509a58a3164509ea7785e882ba4e10fd9e3d88a54d8cd798a51edc835e45bb2",
+      "chars": 410
+    },
+    {
+      "doc_id": "DAN_YON:gecici-13",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 13 (Başlamış olan ihaleler (Ek: 29/11/2016-29903 R.G./8. md.))",
+      "revid": null,
+      "sha256": "3c804b2a22f4771cd87297a64c39d60a99dcd039ff80b209085cdf305e08f4c9",
+      "chars": 174
+    },
+    {
+      "doc_id": "DAN_YON:gecici-14",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 14 (Başlamış olan ihaleler (Ek: 25/01/2017-29959 R.G./4. md.))",
+      "revid": null,
+      "sha256": "0d415e3e0a6f4a38e30ff22d806dcd2dc7d133b1fd98431facf1c9d28699fce1",
+      "chars": 206
+    },
+    {
+      "doc_id": "DAN_YON:gecici-16",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 16 (Başlamış olan ihaleler (Ek: 19/06/2018-30453/m R.G. / 11. md.; yürürlük: 19/07/2018))",
+      "revid": null,
+      "sha256": "c9caeff919619d0f2fb511457c91d3731cd08e8cd9cbb4828dcf2a7685b1fc5b",
+      "chars": 422
+    },
+    {
+      "doc_id": "DAN_YON:gecici-17",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 17 (Daha önce alınmış iş deneyim belgeleri (Ek: 13.08.2018-30508 R.G./2. md.))",
+      "revid": null,
+      "sha256": "b1d81c75f9f6c3f3c7f8ca8acb2ec526bfa32f2f10ddfff6e2af6b3d2372a545",
+      "chars": 1144
+    },
+    {
+      "doc_id": "DAN_YON:gecici-18",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 18 (Başlamış olan ihaleler (Ek: 16.03.2019-30716 R.G./14. md.))",
+      "revid": null,
+      "sha256": "1112504e4926529446a424377e2517464bf4d2f104c5f63f5eadfdad60d500b2",
+      "chars": 588
+    },
+    {
+      "doc_id": "DAN_YON:gecici-19",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 19 (Başlamış olan ihaleler (Ek madde: 13.06.2019-30716 R.G/11.md.; yürürlük:23.06.2019))",
+      "revid": null,
+      "sha256": "1faf7d1b655e1492c5d9c2fccf31afbd5662830535f4ca42a918d95815046db9",
+      "chars": 234
+    },
+    {
+      "doc_id": "DAN_YON:gecici-2",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 2 (5/3/2009 tarihinden önce alınmış belgeler)",
+      "revid": null,
+      "sha256": "7ce8e0184a6401acb5c231206b0da9913776b1fa5eff340d60d727668225d95c",
+      "chars": 1503
+    },
+    {
+      "doc_id": "DAN_YON:gecici-21",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 21 (Başlamış olan ihaleler (Ek madde: 30.09.2020-31260 R.G/4. md., yürürlük: 20.10.2020))",
+      "revid": null,
+      "sha256": "ddce4fd48b1f75a0a7559ccc07cec365b862719547c32a58e908061331dce140",
+      "chars": 220
+    },
+    {
+      "doc_id": "DAN_YON:gecici-23",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 23 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "fc4555239bfa963f75e846ab91424041af001e3d8a94f8f2f7b0c4e5ca040fba",
+      "chars": 209
+    },
+    {
+      "doc_id": "DAN_YON:gecici-26",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 26 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "f7f10e2c6bece30b66a9d24bea6d8e3546ff7727ffdc43f9fe5d909a9db29cf9",
+      "chars": 398
+    },
+    {
+      "doc_id": "DAN_YON:gecici-3",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 3 (Bazı hizmet alımlarında yeterlik kriterleri)",
+      "revid": null,
+      "sha256": "4a4aaa82976b688cd0a17f5f2855aa00561f8536dbde7620c81e7554ff422bac",
+      "chars": 433
+    },
+    {
+      "doc_id": "DAN_YON:gecici-4",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 4 (Alt yüklenicilerin iş deneyimi)",
+      "revid": null,
+      "sha256": "e9170ce2904187be8ef60814156bc60ac854c8f0eb9121c9675ce18d8b928182",
+      "chars": 521
+    },
+    {
+      "doc_id": "DAN_YON:gecici-5",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 5",
+      "revid": null,
+      "sha256": "42cac25051c31356e0965fa26d4d31bf8d61cdbbd3f2e151e032fe0d3fd6eb74",
+      "chars": 432
+    },
+    {
+      "doc_id": "DAN_YON:gecici-6",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 6",
+      "revid": null,
+      "sha256": "f28b7721ae97bbf7106a4478c9495f137889098b58281dce29254b94215b0575",
+      "chars": 1021
+    },
+    {
+      "doc_id": "DAN_YON:gecici-7",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 7",
+      "revid": null,
+      "sha256": "320dea8bd3e618ca6c7a0d0750360694045b1fce22f97c25015d0b41776b7c2f",
+      "chars": 613
+    },
+    {
+      "doc_id": "DAN_YON:gecici-8",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 8 (Başlamış olan ihaleler (Ek:16/03/2011-27876 R.G./17 md.))",
+      "revid": null,
+      "sha256": "da28d7746001c64a08862bbbbe11d55c842de25136a0444f06ada551528d7042",
+      "chars": 184
+    },
+    {
+      "doc_id": "DAN_YON:gecici-9",
+      "title": "Danışmanlık Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 9 (Başlamış olan ihaleler (Ek:20/04/2011-27911R.G./2 md.))",
+      "revid": null,
+      "sha256": "df918ba735053cf6cb5651beae87153b1d2e90b1105e46a34bc7130a7ae5e404",
+      "chars": 205
+    },
+    {
+      "doc_id": "HIZ_YON:1",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 1 (Amaç ve kapsam)",
+      "revid": null,
+      "sha256": "c9e062dd223c21275e59fd5df832d23fceb77e03ab255509870cacef82d6e262",
+      "chars": 419
+    },
+    {
+      "doc_id": "HIZ_YON:10",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 10 (Personel çalıştırılmasına dayalı ihalelerde yaklaşık maliyet)",
+      "revid": null,
+      "sha256": "579721b24f8103f16063ef5af745f132737e9f17b50d25162aff2a759149c6d3",
+      "chars": 1581
+    },
+    {
+      "doc_id": "HIZ_YON:11",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 11 (Uygulanacak ihale usulünün tespiti ve ihale kaydı)",
+      "revid": null,
+      "sha256": "d8500f6b93a0856a657e8b416bbc7692c64b7817bfa89f69d8d7c0eaa965003d",
+      "chars": 605
+    },
+    {
+      "doc_id": "HIZ_YON:12",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 12 (İhale ve ön yeterlik dokümanının içeriği)",
+      "revid": null,
+      "sha256": "bb707b4ba9eec1fe8cf83ad1f662e688aa3b96fb9fcfea033807b6fc07724303",
+      "chars": 686
+    },
+    {
+      "doc_id": "HIZ_YON:13",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 13 (İhale ve ön yeterlik dokümanının hazırlanması)",
+      "revid": null,
+      "sha256": "d92209588cd2a67667ff4c0471f49ea63ecbb191ae24da9cb39d391216462a72",
+      "chars": 1008
+    },
+    {
+      "doc_id": "HIZ_YON:14",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 14 (İdari şartname)",
+      "revid": null,
+      "sha256": "b8c87f4191d7d1aef127166e38874579d1fc00d00356ea5bfeca47358ca6e4a9",
+      "chars": 609
+    },
+    {
+      "doc_id": "HIZ_YON:15",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 15 (Ön yeterlik şartnamesi)",
+      "revid": null,
+      "sha256": "a5071e32520b2d6f840f59c925749e4af6e3b8c4ffe0dbe4d6d8d87a3da2781e",
+      "chars": 645
+    },
+    {
+      "doc_id": "HIZ_YON:16",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 16 (Teknik şartname)",
+      "revid": null,
+      "sha256": "f088eaae312bdcb74edb1738d4424c4a3394bbafab9f7212845a6c4e3866f657",
+      "chars": 1495
+    },
+    {
+      "doc_id": "HIZ_YON:17",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 17 (Sözleşme tasarısı)",
+      "revid": null,
+      "sha256": "636ab5a2c6ef73cf20fabedbb90eece29321402bd6227b7a363e166e68a0d799",
+      "chars": 892
+    },
+    {
+      "doc_id": "HIZ_YON:18",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 18 (İhale onayının alınması)",
+      "revid": null,
+      "sha256": "34db2010204d6fd92585690c91b86186537b9c5824ca09c9c720fc32f35ba344",
+      "chars": 496
+    },
+    {
+      "doc_id": "HIZ_YON:19",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 19 (İhale komisyonunun kurulması ve çalışma esasları)",
+      "revid": null,
+      "sha256": "ddea5702a5c12135057f8ca4b09442594b1e181d6d7ad9b8478119e1cb826363",
+      "chars": 1721
+    },
+    {
+      "doc_id": "HIZ_YON:20",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 20 (İhale işlem dosyası)",
+      "revid": null,
+      "sha256": "a987036a1a140ef73125441648f490dc941febf0c7ad41341a7d88b05ae222c1",
+      "chars": 1438
+    },
+    {
+      "doc_id": "HIZ_YON:21",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 21 (İhale ve ön yeterlik ilanı)",
+      "revid": null,
+      "sha256": "a384ea77ceff46fb157634ad5344f9d003b66b168eb0fe7bfdefdbac88e6fb58",
+      "chars": 789
+    },
+    {
+      "doc_id": "HIZ_YON:22",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 22 (Ön ilan)",
+      "revid": null,
+      "sha256": "72b70a0e45d2f5240f608e26f61e4abe529193a76e39676cd524f4ec6069a26d",
+      "chars": 841
+    },
+    {
+      "doc_id": "HIZ_YON:23",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 23 (İhale ilan ve davet süresinin kısaltılması)",
+      "revid": null,
+      "sha256": "88cf6a8622ab70d25a47f02d187ddff5e5bd652d5e5805334d418ee54ac21f55",
+      "chars": 908
+    },
+    {
+      "doc_id": "HIZ_YON:24",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 24 (İlanın uygun olmaması)",
+      "revid": null,
+      "sha256": "9b80b97b93c54f12545c712b1fe73866f09b358a623236b0ff232faba50fad09",
+      "chars": 577
+    },
+    {
+      "doc_id": "HIZ_YON:25",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 25 (İhale ve ön yeterlik dokümanının görülmesi ve indirilmesi (Değişik Başlık:RG-18/5/2024-32550))",
+      "revid": null,
+      "sha256": "af8b9c4eacd3be14c6526142ca3f051a05e7e39e1345fd77dc43412cf736188e",
+      "chars": 404
+    },
+    {
+      "doc_id": "HIZ_YON:26",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 26 (İhale ve ön yeterlik dokümanında değişiklik veya açıklama yapılması)",
+      "revid": null,
+      "sha256": "38cf66617aa139dc754febbcea4e8b2dee7ca7e27e2f608e27dfbc24441ba77f",
+      "chars": 3036
+    },
+    {
+      "doc_id": "HIZ_YON:27",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 27 (İhale veya son başvuru saatinden önce ihalenin iptal edilmesi)",
+      "revid": null,
+      "sha256": "c258849fa1e5ff589aa0a58db3d4c09fd360d9134033df298c6bb851281b2786",
+      "chars": 888
+    },
+    {
+      "doc_id": "HIZ_YON:28",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 28 (Mesleki ve Teknik Yükümlülüklere Yönelik Düzenlemeler Yeterliğin belirlenmesinde uyulacak ilkeler)",
+      "revid": null,
+      "sha256": "2335fe8ad9830f79c9aec867d8c51cb75dc92e89134f3b28aa6edb62997a5bb7",
+      "chars": 3979
+    },
+    {
+      "doc_id": "HIZ_YON:29",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 29 (İstenecek belgeler)",
+      "revid": null,
+      "sha256": "748489548443f8387e7b76705501b870a932317ad7dcf609f80a7679a0826a9b",
+      "chars": 3451
+    },
+    {
+      "doc_id": "HIZ_YON:3",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 3 (Tanımlar ve kısaltmalar (Değişik Başlık:RG-18/5/2024-32550))",
+      "revid": null,
+      "sha256": "240d2c7ad1eb12b9d8ce0fb2c3401a223e7bb55ee821081d4a96cf7faf931dce",
+      "chars": 2634
+    },
+    {
+      "doc_id": "HIZ_YON:30",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 30 (Sözleşmenin yürütülmesi aşamasındaki mesleki ve teknik yükümlülüklere yönelik düzenlemeler)",
+      "revid": null,
+      "sha256": "88bbb61eb8df796d401ae8ccd7f9e0ca9f63fe352f97784971e1a0009f098dbd",
+      "chars": 702
+    },
+    {
+      "doc_id": "HIZ_YON:32",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 32 (İş ortaklığı)",
+      "revid": null,
+      "sha256": "ad65fa0ba026480c291977bd6d283923c921b5c6fc15484afcf3e26fbee715c5",
+      "chars": 1755
+    },
+    {
+      "doc_id": "HIZ_YON:33",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 33 (Konsorsiyum)",
+      "revid": null,
+      "sha256": "e0859f8c50f824456c4010fa2607f3609905673cd263ab8d4ba4ad4ff663eb17",
+      "chars": 1109
+    },
+    {
+      "doc_id": "HIZ_YON:35",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 35 (Bilanço veya eşdeğer belgeler)",
+      "revid": null,
+      "sha256": "31accd5c2c5a8d929f91c86012e990d311c09ec608dae5fafd36d34adad1754a",
+      "chars": 4415
+    },
+    {
+      "doc_id": "HIZ_YON:36",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 36 (İş hacmini gösteren belgeler)",
+      "revid": null,
+      "sha256": "6b5014251cf5ef3b0451c4ed2f8b89d2b6890d3f5ef66fcd8a53c2e459341c53",
+      "chars": 4901
+    },
+    {
+      "doc_id": "HIZ_YON:37",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 37 (İş hacmine ilişkin belge tutarlarının güncellenmesi)",
+      "revid": null,
+      "sha256": "9870ac71ff9174a098c7da8b49783aafaba91e3fb2ed1f79cd3c449ae71725c8",
+      "chars": 533
+    },
+    {
+      "doc_id": "HIZ_YON:38",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 38 (Aday veya isteklinin mesleki faaliyetini sürdürdüğünü ve teklif vermeye yetkili olduğunu gösteren belgeler)",
+      "revid": null,
+      "sha256": "4283a0f059f472678f6a4454f78107de1dd734a9d6c5bee65462508a87e84643",
+      "chars": 2204
+    },
+    {
+      "doc_id": "HIZ_YON:39",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 39 (İş deneyimini gösteren belgeler (Değişik: 3/7/2009 – 27277 R.G. / 2. md.))",
+      "revid": null,
+      "sha256": "231bc52935195bbaf1a1e1ff2f84e33f67ee78ff4f58ee34b8e620594f814e55",
+      "chars": 4916
+    },
+    {
+      "doc_id": "HIZ_YON:4",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 4 (Temel ilkeler)",
+      "revid": null,
+      "sha256": "795802fd75e2f3834f507fbbed7cdab26f0e11bb3e408c676795291ca174a217",
+      "chars": 2613
+    },
+    {
+      "doc_id": "HIZ_YON:40",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 40 (Personel durumuna ilişkin belgeler)",
+      "revid": null,
+      "sha256": "067a3e37d6e960f7c2127f48eda372c65f5a99c460d40e5019ce335aa0ccc860",
+      "chars": 817
+    },
+    {
+      "doc_id": "HIZ_YON:41",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 41 (Makine, teçhizat ve diğer ekipmana ilişkin belgeler ve kapasite raporu)",
+      "revid": null,
+      "sha256": "7749d09b672469ddbcf8580544c770a3c3d149603e61e0a60724c3f39c2ac3ea",
+      "chars": 2922
+    },
+    {
+      "doc_id": "HIZ_YON:42",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 42 (Kalite ve standarda ilişkin belgeler)",
+      "revid": null,
+      "sha256": "183a2c871021a3b29b1cc08c71216bac03edfe77f5c24e4f3a8b0cb3dd4e14d9",
+      "chars": 2893
+    },
+    {
+      "doc_id": "HIZ_YON:43",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 43 (İş deneyim belgesi düzenlemeye yetkili kurum ve kuruluşlar)",
+      "revid": null,
+      "sha256": "109f187660bd0a627157c8b2b76215b95e030764c7458ceae80636e2ac317e7f",
+      "chars": 1847
+    },
+    {
+      "doc_id": "HIZ_YON:44",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 44",
+      "revid": null,
+      "sha256": "c43407264eb7029641416f2fd53bfaf3d5f87ec0ac95050d7372c01ca145cef0",
+      "chars": 658
+    },
+    {
+      "doc_id": "HIZ_YON:45",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 45 (İş deneyim belgesi ve teknolojik ürün deneyim belgesinin düzenlenme koşulları (Değişik başlık: 16/8/2014–29090 R.G. / 3. md.))",
+      "revid": null,
+      "sha256": "1f0389bf7f1aa9eb712f3a5c1d91d8957aa05eebcb62280c8532ceab4e7beca7",
+      "chars": 5897
+    },
+    {
+      "doc_id": "HIZ_YON:46",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 46 (İş deneyim tutarının tespiti)",
+      "revid": null,
+      "sha256": "70de7f2ad49fb5316198dff091f913c66a38811e6969b07d5f902131c4861b31",
+      "chars": 609
+    },
+    {
+      "doc_id": "HIZ_YON:47",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 47 (İş deneyim belgesi düzenlenemeyen hallerde iş deneyimini gösteren diğer belgeler ve bu belgelerde aranacak kriterler)",
+      "revid": null,
+      "sha256": "988ca6670e62c91e364c9ebc1f42144dd618e6f738d72ca6197432c485645c6a",
+      "chars": 4349
+    },
+    {
+      "doc_id": "HIZ_YON:48",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 48 (Değerlendirmeye ilişkin esaslar)",
+      "revid": null,
+      "sha256": "b4ee784172e1112d87e68d0ae924baff85d00ee08a669c6091bc9b6a5e077c62",
+      "chars": 4269
+    },
+    {
+      "doc_id": "HIZ_YON:48_a",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 48/A",
+      "revid": null,
+      "sha256": "2f122bd96ae6078d3abc4b47779ff1b6627d37d26e7fc748cbaffb0f24920ef5",
+      "chars": 1514
+    },
+    {
+      "doc_id": "HIZ_YON:49",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 49 (İş deneyim tutarının güncellenmesi)",
+      "revid": null,
+      "sha256": "1e0f56ea305bfa2160c7471be0edbb363cb84689c93ebbfbeee8d59e9a2f2e2a",
+      "chars": 1476
+    },
+    {
+      "doc_id": "HIZ_YON:5",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 5 (Yerli istekli)",
+      "revid": null,
+      "sha256": "95afe682d337f21bd40d68fdd314275ac46ada03d85d8dd4447b302953f45ea4",
+      "chars": 572
+    },
+    {
+      "doc_id": "HIZ_YON:50",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 50 (İhale komisyonlarının inceleme yetkisi)",
+      "revid": null,
+      "sha256": "e41562e13fd0019b41b7209c638cbdf664e4cbf0cb263ecd36316da7831dd865",
+      "chars": 275
+    },
+    {
+      "doc_id": "HIZ_YON:51",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 51 (İhale dışı bırakılma)",
+      "revid": null,
+      "sha256": "203638ad7fce8fa384c734d7422bea98d470f81b9d86a0629149cb5f8623ab06",
+      "chars": 4298
+    },
+    {
+      "doc_id": "HIZ_YON:52",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 52 (İhaleye katılamayacak olanlar)",
+      "revid": null,
+      "sha256": "3c7cdd430d0beb5802820d8eb52b1651d7ab4b67e190655d5ca105528d98e39a",
+      "chars": 2705
+    },
+    {
+      "doc_id": "HIZ_YON:53",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 53 (Ekonomik Açıdan En Avantajlı Teklif ve İhalenin Sonuçlandırılması Başvuru ve teklif mektuplarının şekli)",
+      "revid": null,
+      "sha256": "b92d5048bb28a671edbf91d1bfc569f273757c2d9e14a33a9cfa55dbd555e7be",
+      "chars": 1596
+    },
+    {
+      "doc_id": "HIZ_YON:54",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 54 (Tekliflerin geçerlilik süresi)",
+      "revid": null,
+      "sha256": "7264a0980a5e41eedeadb9ae0b7513ab2b76ad64233774389bd53f0a29577cc8",
+      "chars": 471
+    },
+    {
+      "doc_id": "HIZ_YON:55",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 55 (Teminatlar)",
+      "revid": null,
+      "sha256": "8218cf3d34f8840e55844968bf5857dfb4dd888dddf0763233d4593c8b538ee7",
+      "chars": 3410
+    },
+    {
+      "doc_id": "HIZ_YON:56",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 56 (Başvuruların ve tekliflerin alınması, açılması ve belgelerdeki bilgi eksikliklerinin tamamlatılması)",
+      "revid": null,
+      "sha256": "4be0389e6001c83278e92f8ff20023d125420f75084d1ad73f5fc3025c8abe94",
+      "chars": 2638
+    },
+    {
+      "doc_id": "HIZ_YON:57",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 57 (Başvuruların değerlendirilmesi)",
+      "revid": null,
+      "sha256": "5e64a330961890a37e2040e3ab0b8d5e30a399f545d3e08065b01f7bbefe6cdf",
+      "chars": 316
+    },
+    {
+      "doc_id": "HIZ_YON:58",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 58 (Tekliflerin değerlendirilmesi)",
+      "revid": null,
+      "sha256": "4666d1eb33f1beb80d8d3b040ea04195631870130c7d87f66728c456f5dafb30",
+      "chars": 150
+    },
+    {
+      "doc_id": "HIZ_YON:59",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 59 (Sınır değer ve aşırı düşük teklifler (Değişik: 7/6/2014–29023 R.G./11.md.; Değişik: 30/11/2021-31675 R.G./1. md.; yürürlük: 20/12/2021))",
+      "revid": null,
+      "sha256": "7cacf6c14932ed60ed5fe1c865f751e9bf5eb9d94e19cd55bdcea9d0a74203ad",
+      "chars": 1744
+    },
+    {
+      "doc_id": "HIZ_YON:59_b",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 59/B (Elektronik eksiltme (Ek madde: 19/06/2018-30453/m RG/ 5. md.; yürürlük: 1/11/2018))",
+      "revid": null,
+      "sha256": "5d468051c41c6065fe8c17bb5ff202b2ce2b477a2e27c0d0244673798cc44f4e",
+      "chars": 2814
+    },
+    {
+      "doc_id": "HIZ_YON:6",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 6 (Tebligat esasları (Değişik Başlık:RG-18/5/2024-32550))",
+      "revid": null,
+      "sha256": "7ad588ace35b4ff1be03e72ba6514aa95eeef28bc8670a9125c02d3f6aa17fd7",
+      "chars": 1291
+    },
+    {
+      "doc_id": "HIZ_YON:61",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 61 (Fiyat dışı unsurlar ve bu unsurlara yönelik düzenleme)",
+      "revid": null,
+      "sha256": "bb98ef4ee410a0ce066e3894c7f034c1f561bf200daab095369670f27f6777b3",
+      "chars": 884
+    },
+    {
+      "doc_id": "HIZ_YON:62",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 62 (Yerli istekliler lehine fiyat avantajı uygulanan ihalelerde ekonomik açıdan en avantajlı teklifin belirlenmesi)",
+      "revid": null,
+      "sha256": "0f41013b75c9ab229e3bb59796896c504ee6dec3ff287adda0b3fd13b35653b3",
+      "chars": 825
+    },
+    {
+      "doc_id": "HIZ_YON:63",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 63 (Tekliflerin eşit olması)",
+      "revid": null,
+      "sha256": "f188c3d7b22e01b8e626c19d0dd20721099cda12aa287547b88dfd0bad899ebf",
+      "chars": 3016
+    },
+    {
+      "doc_id": "HIZ_YON:64",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 64 (Bütün tekliflerin reddedilmesi ve ihalenin iptali)",
+      "revid": null,
+      "sha256": "2a268a82db085629060633ca5a5f3a8e85c570f47d7fa3bc560640cc85665799",
+      "chars": 743
+    },
+    {
+      "doc_id": "HIZ_YON:65",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 65 (İhalenin karara bağlanması ve onaylanması)",
+      "revid": null,
+      "sha256": "998c1a981cdd24b43551482606cbcc2451e2a12baa9c1e72c3cf4090c4a80f10",
+      "chars": 1492
+    },
+    {
+      "doc_id": "HIZ_YON:66",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 66 (Kesinleşen ihale kararının bildirilmesi)",
+      "revid": null,
+      "sha256": "90ed62217b35582cad556424c4cb2f6d926b5e41a74b58141fe756dcc1245914",
+      "chars": 612
+    },
+    {
+      "doc_id": "HIZ_YON:67",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 67 (İhale üzerinde kalan isteklinin sözleşmeye davet edilmesi)",
+      "revid": null,
+      "sha256": "82e2d85ea2b28cc5bd90322d4e97a29544625dedcdebc5bfb3eb682e9b08b674",
+      "chars": 1212
+    },
+    {
+      "doc_id": "HIZ_YON:68",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 68 (İhale üzerinde kalan isteklinin sözleşmeyi imzalamaması)",
+      "revid": null,
+      "sha256": "0ac6a4bb1ffe78e992a07a2745f0312f5753bb1b3ca608d239b558adfa1a92eb",
+      "chars": 1640
+    },
+    {
+      "doc_id": "HIZ_YON:69",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 69 (İhale sonucunun ilanı)",
+      "revid": null,
+      "sha256": "de3150c5758e25d29fb66ccc579c5966f6e67eecf2de968dc2414b620febe45a",
+      "chars": 298
+    },
+    {
+      "doc_id": "HIZ_YON:7",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 7 (Yaklaşık maliyete ilişkin ilkeler)",
+      "revid": null,
+      "sha256": "c3e6438ca45d594cea9cfa752c1b25b7526874ad9a9f5ef5666e825c43fda09e",
+      "chars": 1521
+    },
+    {
+      "doc_id": "HIZ_YON:8",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 8 (Yaklaşık maliyetin hesaplanmasına esas miktar ve fiyatların tespiti)",
+      "revid": null,
+      "sha256": "9cd3d99a105f89334e45976a68fb695ffa58028567dd79970d7e19c0d4a2c8e2",
+      "chars": 2938
+    },
+    {
+      "doc_id": "HIZ_YON:9",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde 9 (Yaklaşık maliyetin hesaplanması ve güncellenmesi)",
+      "revid": null,
+      "sha256": "4d2c888876f8d5550876a5061e1a1a7abd87caa259d58f233a89fb63fb9316d5",
+      "chars": 2876
+    },
+    {
+      "doc_id": "HIZ_YON:ek-1",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Ek 1 (İş bitirme belgelerinin EKAP üzerinden düzenlenmesi (Ek: 7/6/2014–29023 R.G./ 14. md.))",
+      "revid": null,
+      "sha256": "1c11947af052a1e635dc3e4fa46a6990a5f1c64393c982c66740d27411ca8ad1",
+      "chars": 1222
+    },
+    {
+      "doc_id": "HIZ_YON:ek-2",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Ek 2 (Hava ambulansı kiralanmasına yönelik ihaleler (Ek Madde: 27/10/2023–32352 R.G./ 1. md.))",
+      "revid": null,
+      "sha256": "cf0b5c0628ecb1a0d1f875ffe6529e9dda188f7b4af2152cd2348aaf37124566",
+      "chars": 1881
+    },
+    {
+      "doc_id": "HIZ_YON:ek-3",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Ek 3 (Standart formlara yapılan atıflar)",
+      "revid": null,
+      "sha256": "b623d17db456576a69d6935c790961618b3e400d407f3d288a11936192bbfa33",
+      "chars": 159
+    },
+    {
+      "doc_id": "HIZ_YON:gecici-1",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 1 (5/3/2009 tarihinden önceki ihaleler)",
+      "revid": null,
+      "sha256": "8254f167faedb3a6b9847be84682c913e07a68f9bb07ab699dbdd1036d6bcdcf",
+      "chars": 172
+    },
+    {
+      "doc_id": "HIZ_YON:gecici-10",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 10 (Başlamış olan İhaleler (Ek madde: 16/07/2011-27996 R.G./ 44. md.))",
+      "revid": null,
+      "sha256": "3badb3c943f244b0d26685fb9902e368e09fa985c713fa74320cdaad5a0c5797",
+      "chars": 173
+    },
+    {
+      "doc_id": "HIZ_YON:gecici-12",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 12 (Geçiş hükümleri (Ek madde: 7/6/2014–29023 R.G./ 45. md.))",
+      "revid": null,
+      "sha256": "6410ff0a2f95fe02eaa61b45af4b163b58f7bdbb0da26ace456b758f98734480",
+      "chars": 408
+    },
+    {
+      "doc_id": "HIZ_YON:gecici-13",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 13 (Başlamış olan ihaleler (Ek madde: 16/8/2014–29090 R.G. / 10. md.))",
+      "revid": null,
+      "sha256": "0d415e3e0a6f4a38e30ff22d806dcd2dc7d133b1fd98431facf1c9d28699fce1",
+      "chars": 206
+    },
+    {
+      "doc_id": "HIZ_YON:gecici-14",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 14 (Başlamış olan ihaleler (Ek madde: 29/11/2016–29903 R.G. / 13. md.))",
+      "revid": null,
+      "sha256": "3c804b2a22f4771cd87297a64c39d60a99dcd039ff80b209085cdf305e08f4c9",
+      "chars": 174
+    },
+    {
+      "doc_id": "HIZ_YON:gecici-17",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 17 (Başlamış olan ihaleler (Ek madde: 19/06/2018-30453/m RG/ 30. md.))",
+      "revid": null,
+      "sha256": "77cc176ca16d6dfb78b842f680835b8de1bcbc61d4c58c0b9663deb301314a89",
+      "chars": 416
+    },
+    {
+      "doc_id": "HIZ_YON:gecici-18",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 18 (Daha önce alınmış iş deneyim belgeleri (Ek madde: 13/08/2018-30508 RG/3. md.))",
+      "revid": null,
+      "sha256": "b1d81c75f9f6c3f3c7f8ca8acb2ec526bfa32f2f10ddfff6e2af6b3d2372a545",
+      "chars": 1144
+    },
+    {
+      "doc_id": "HIZ_YON:gecici-19",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 19 (Başlamış olan ihaleler (Ek madde: 16/03/2019-30716 R.G./17. md.))",
+      "revid": null,
+      "sha256": "777928b25c8e21e3b9d0a86542d50498b9fb480c3768f6858ec25f7ffeaa8344",
+      "chars": 596
+    },
+    {
+      "doc_id": "HIZ_YON:gecici-2",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 2 (5/3/2009 tarihinden önce alınmış belgeler)",
+      "revid": null,
+      "sha256": "7ce8e0184a6401acb5c231206b0da9913776b1fa5eff340d60d727668225d95c",
+      "chars": 1503
+    },
+    {
+      "doc_id": "HIZ_YON:gecici-20",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 20 (Başlamış olan ihaleler (Ek madde: 13/06/2019-30800 R.G./11. md.; yürürlük: 23/06/2019))",
+      "revid": null,
+      "sha256": "1faf7d1b655e1492c5d9c2fccf31afbd5662830535f4ca42a918d95815046db9",
+      "chars": 234
+    },
+    {
+      "doc_id": "HIZ_YON:gecici-22",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 22 (Başlamış olan ihaleler (Ek madde: 30/09/2020-31260 R.G/9. md., yürürlük: 20/10/2020))",
+      "revid": null,
+      "sha256": "ddce4fd48b1f75a0a7559ccc07cec365b862719547c32a58e908061331dce140",
+      "chars": 220
+    },
+    {
+      "doc_id": "HIZ_YON:gecici-23",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 23 (Uygulanmaya başlama süresi (Ek madde: 30/09/2020-31260 R.G/9. md., yürürlük: 20/10/2020; Değişik madde: 26/01/2021-31376 R.G/2. md.))",
+      "revid": null,
+      "sha256": "87be0317d7d88ad0664581d2f4e88706c059fc2196ccbf7e33fcaed2f727268e",
+      "chars": 372
+    },
+    {
+      "doc_id": "HIZ_YON:gecici-26",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 26 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "494fb6eeee26251636c2c590333fa07de1919fc95cc95ad62a22b365062d73ea",
+      "chars": 300
+    },
+    {
+      "doc_id": "HIZ_YON:gecici-28",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 28 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "fc4555239bfa963f75e846ab91424041af001e3d8a94f8f2f7b0c4e5ca040fba",
+      "chars": 209
+    },
+    {
+      "doc_id": "HIZ_YON:gecici-3",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 3 (Bazı hizmet alımlarında yeterlik kriterleri (Değişik: 10/1/2010 – 27458 R.G. / 1. md.))",
+      "revid": null,
+      "sha256": "0c348311b84797e71b6a5ef5a53930704182a6d651638c33547cc260f506a428",
+      "chars": 1620
+    },
+    {
+      "doc_id": "HIZ_YON:gecici-30",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 30 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "5eca45a8d2739b3332c9a17dad3f76b02dd5147063365797cfffc341cbcbc64b",
+      "chars": 243
+    },
+    {
+      "doc_id": "HIZ_YON:gecici-32",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 32 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "c4ee0926feca4e17869321828ba9ce04dfb60fa8faa8431f571c74640ce59671",
+      "chars": 399
+    },
+    {
+      "doc_id": "HIZ_YON:gecici-4",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 4 (Alt yüklenicilerin iş deneyimi)",
+      "revid": null,
+      "sha256": "c999aa72eb8cfffd19ad7573fb164733c6512424da8ba642864ca43c2db77193",
+      "chars": 650
+    },
+    {
+      "doc_id": "HIZ_YON:gecici-5",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 5",
+      "revid": null,
+      "sha256": "785901630736a19bafc9ed7b9f922833d4e4735df251613754d6d6884efbf17d",
+      "chars": 1023
+    },
+    {
+      "doc_id": "HIZ_YON:gecici-6",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 6",
+      "revid": null,
+      "sha256": "c32561e454053150fc5b23e4b0ac8e69332d9069dcb8a88f6f7feb714db41c06",
+      "chars": 1246
+    },
+    {
+      "doc_id": "HIZ_YON:gecici-7",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 7 (İlanı veya duyurusu 1/1/2011 tarihinden önce yapılmış olan ihaleler (Ek madde: 16/12/2010-27787/9. md.))",
+      "revid": null,
+      "sha256": "8dacafcf37c5b53b7c842837433f5c7630801881811fbb8e651f20f0ada1afd0",
+      "chars": 182
+    },
+    {
+      "doc_id": "HIZ_YON:gecici-8",
+      "title": "Hizmet Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 8 (Başlamış olan ihaleler (Ek madde: 16/3/2011–27876 R.G. / 40. md.))",
+      "revid": null,
+      "sha256": "210e35badd622a3e70badbce329719a13328af29f055ecb1bd4e78ab621e3975",
+      "chars": 192
+    },
+    {
+      "doc_id": "MAL_YON:1",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 1 (Amaç ve kapsam)",
+      "revid": null,
+      "sha256": "c720ad3f2a101b1508c920b67c6dc2ef750de57bd3aed6e2aa4f0bef57355e00",
+      "chars": 383
+    },
+    {
+      "doc_id": "MAL_YON:10",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 10 (İhale ve ön yeterlik dokümanının içeriği)",
+      "revid": null,
+      "sha256": "bb707b4ba9eec1fe8cf83ad1f662e688aa3b96fb9fcfea033807b6fc07724303",
+      "chars": 686
+    },
+    {
+      "doc_id": "MAL_YON:11",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 11 (İhale ve ön yeterlik dokümanının hazırlanması)",
+      "revid": null,
+      "sha256": "e1468ea446440920c7d36f30854786b90ec1e24be651634f37e2c969ac5f15d7",
+      "chars": 976
+    },
+    {
+      "doc_id": "MAL_YON:12",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 12 (İdari şartname)",
+      "revid": null,
+      "sha256": "c22d33dd0781df5c7746f2eaa142c3337fd855d23d5037ecdebf3f4aaef9b942",
+      "chars": 609
+    },
+    {
+      "doc_id": "MAL_YON:13",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 13 (Ön yeterlik şartnamesi)",
+      "revid": null,
+      "sha256": "9b5fa35244ee0209c941e50bcb48d5cd39c3fa0b2ec88bc1d6bbe7bc127e604d",
+      "chars": 645
+    },
+    {
+      "doc_id": "MAL_YON:14",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 14 (Teknik şartname)",
+      "revid": null,
+      "sha256": "7a88c787df00f8c26cd3dda8620cd64bd5d95f5bbba5bb37eb7677d2f62e857c",
+      "chars": 2895
+    },
+    {
+      "doc_id": "MAL_YON:15",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 15 (Sözleşme tasarısı)",
+      "revid": null,
+      "sha256": "0643edcf0a6f7bca1cc4fa8bcbe7a66725ee26a62cbcc264ee3b5021ea1c60f6",
+      "chars": 946
+    },
+    {
+      "doc_id": "MAL_YON:16",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 16 (İhale onayının alınması)",
+      "revid": null,
+      "sha256": "55340c18be4bd38367a1b64070b7bd90b71bd7960bd948b0e5a70dd6abb1c87c",
+      "chars": 512
+    },
+    {
+      "doc_id": "MAL_YON:17",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 17 (İhale komisyonunun kurulması ve çalışma esasları)",
+      "revid": null,
+      "sha256": "a6d3e188e8427353c9f176d4f23b3747e3c0dd8842f86cb706c86f07fcb3a449",
+      "chars": 1720
+    },
+    {
+      "doc_id": "MAL_YON:18",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 18 (İhale işlem dosyası)",
+      "revid": null,
+      "sha256": "51455c4fbff842c7f29d56c923bed2916bb61e73b2cc0f91d1fa2c031bde8088",
+      "chars": 1437
+    },
+    {
+      "doc_id": "MAL_YON:19",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 19 (İhale ve ön yeterlik ilanı)",
+      "revid": null,
+      "sha256": "e56c16616cc9e9a0a94486d61564894938d435daddfd8a471b3f8cde7d161ae1",
+      "chars": 788
+    },
+    {
+      "doc_id": "MAL_YON:20",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 20 (Ön ilan)",
+      "revid": null,
+      "sha256": "0b10cd26056de6ec2f6d7fd9a1fc39143114938ba3fe431a49d2f5565b781cdf",
+      "chars": 841
+    },
+    {
+      "doc_id": "MAL_YON:21",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 21 (İhale ilan ve davet süresinin kısaltılması)",
+      "revid": null,
+      "sha256": "88cf6a8622ab70d25a47f02d187ddff5e5bd652d5e5805334d418ee54ac21f55",
+      "chars": 908
+    },
+    {
+      "doc_id": "MAL_YON:22",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 22 (İlanın uygun olmaması)",
+      "revid": null,
+      "sha256": "9b80b97b93c54f12545c712b1fe73866f09b358a623236b0ff232faba50fad09",
+      "chars": 577
+    },
+    {
+      "doc_id": "MAL_YON:23",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 23 (İhale ve ön yeterlik dokümanının görülmesi ve indirilmesi (Değişik başlık: RG-18/5/2024-32550))",
+      "revid": null,
+      "sha256": "af8b9c4eacd3be14c6526142ca3f051a05e7e39e1345fd77dc43412cf736188e",
+      "chars": 404
+    },
+    {
+      "doc_id": "MAL_YON:24",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 24 (İhale ve ön yeterlik dokümanında değişiklik veya açıklama yapılması)",
+      "revid": null,
+      "sha256": "9bc05715bc4bbf1a8e30e8cbdc0a707e21a72554ca46b11e84c6ffb9bb658b41",
+      "chars": 3038
+    },
+    {
+      "doc_id": "MAL_YON:25",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 25 (İhale veya son başvuru saatinden önce ihalenin iptal edilmesi)",
+      "revid": null,
+      "sha256": "c258849fa1e5ff589aa0a58db3d4c09fd360d9134033df298c6bb851281b2786",
+      "chars": 888
+    },
+    {
+      "doc_id": "MAL_YON:26",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 26 (Yeterliğin belirlenmesinde uyulacak ilkeler)",
+      "revid": null,
+      "sha256": "335768c5a9028d4aa4fc9a0c53f628ff1433074f5167bd9d889dcbad842041be",
+      "chars": 3568
+    },
+    {
+      "doc_id": "MAL_YON:27",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 27 (İstenecek belgeler)",
+      "revid": null,
+      "sha256": "04f9ff9afcbeb3083c2857f9159f61d700551eff75c318df30b372307f0175bd",
+      "chars": 3971
+    },
+    {
+      "doc_id": "MAL_YON:28",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 28 (Sözleşmenin yürütülmesi aşamasındaki mesleki ve teknik yükümlülüklere yönelik düzenlemeler)",
+      "revid": null,
+      "sha256": "406574c8b0e392c9fa26e9ba669821e4132a1f3092bcfc2af92881f52435abad",
+      "chars": 735
+    },
+    {
+      "doc_id": "MAL_YON:3",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 3 (Tanımlar ve kısaltmalar (Değişik başlık: RG-18/5/2024-32550))",
+      "revid": null,
+      "sha256": "9182e777faf224472a0ce6336404556cee72a37b6342a9066e815f183f9e609a",
+      "chars": 3231
+    },
+    {
+      "doc_id": "MAL_YON:30",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 30 (İş ortaklığı)",
+      "revid": null,
+      "sha256": "10b8f160ba58afc56a5cd6f0dd14f480a0f77fc3042abd15a2024efc004f7c0c",
+      "chars": 1759
+    },
+    {
+      "doc_id": "MAL_YON:31",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 31 (Konsorsiyum)",
+      "revid": null,
+      "sha256": "89338f2acd8f36cce6902592b92a0185e2f16f2e67a9943ecdb399527395c374",
+      "chars": 1112
+    },
+    {
+      "doc_id": "MAL_YON:33",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 33 (Bilanço veya eşdeğer belgeler)",
+      "revid": null,
+      "sha256": "7f699b133b83dedf0a9c8627c857fa6ef16a4b582987be8fd081be2e1a3bb273",
+      "chars": 3681
+    },
+    {
+      "doc_id": "MAL_YON:34",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 34 (İş hacmini gösteren belgeler)",
+      "revid": null,
+      "sha256": "8beabf1f51ef7b4026d2ccbbf543ea78010c9310b64d38dc2102af9952256692",
+      "chars": 4113
+    },
+    {
+      "doc_id": "MAL_YON:35",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 35 (İş hacmine ilişkin belge tutarlarının güncellenmesi)",
+      "revid": null,
+      "sha256": "8e8180224bee8020bf592989b5879d985ae31debe346fb5947b5019757eb7319",
+      "chars": 533
+    },
+    {
+      "doc_id": "MAL_YON:36",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 36 (Aday veya isteklinin mesleki faaliyetini sürdürdüğünü ve teklif vermeye yetkili olduğunu gösteren belgeler)",
+      "revid": null,
+      "sha256": "9ce5d872e36cc03f9861b94a804fa009f0812ca80b248c78d4cc4fd845460e16",
+      "chars": 2879
+    },
+    {
+      "doc_id": "MAL_YON:37",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 37 (İş deneyimini gösteren belgeler)",
+      "revid": null,
+      "sha256": "5d44b18fd03b94b855365ca5029368c3cd67d957c9322423ba07b065f9b06535",
+      "chars": 5045
+    },
+    {
+      "doc_id": "MAL_YON:38",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 38 (Yetkili satıcılığı veya imalatçılığı gösteren belgeler)",
+      "revid": null,
+      "sha256": "9376230d448695c8424bd80a3f8572579b7a3e2d81e902746ec2a0d87b1d5260",
+      "chars": 1291
+    },
+    {
+      "doc_id": "MAL_YON:39",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 39 (Satış sonrası servis, bakım ve onarım hizmetleri ile yedek parça sağlanması)",
+      "revid": null,
+      "sha256": "a1cae23827b7d547de31c7422f4cbb0c7cc5b5ae5c55194e707e50e812c29afc",
+      "chars": 1247
+    },
+    {
+      "doc_id": "MAL_YON:4",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 4 (Temel ilkeler)",
+      "revid": null,
+      "sha256": "f27d082383e8265872657b5414f44bac5541afb4a092468d272eae6d55e9014e",
+      "chars": 2337
+    },
+    {
+      "doc_id": "MAL_YON:40",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 40 (Makine, teçhizat ve diğer ekipmana ilişkin belgeler, imalat belgeleri ve kapasite raporu)",
+      "revid": null,
+      "sha256": "04088c4173545fc570596649f8b9284316b8f550d6a050d9c9cdd349121ea51a",
+      "chars": 6070
+    },
+    {
+      "doc_id": "MAL_YON:41",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 41 (Organizasyon yapısı ile kalite kontrolden sorumlu teknik kuruluşlara ilişkin belgeler)",
+      "revid": null,
+      "sha256": "719c8e07ed1c01426a75569a8f55bf3a006f3dbf0265c7b06d54ee8f4f936052",
+      "chars": 3540
+    },
+    {
+      "doc_id": "MAL_YON:42",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 42 (Kalite ve standart ile ürünlerin piyasaya arzına ilişkin belgeler)",
+      "revid": null,
+      "sha256": "528cd6f17cef459a78f1cd655ac0b011c39f588f770fafcb0e7fc10bad6cb1a8",
+      "chars": 6280
+    },
+    {
+      "doc_id": "MAL_YON:43",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 43 (Tedarik edilecek malların numuneleri, katalogları, fotoğrafları ile teknik şartnameye cevapları ve açıklamaları içeren doküman ve demonstrasyon)",
+      "revid": null,
+      "sha256": "a88d3295fbca1df4007ea6433cfbe562b48adc032da852bf2150e538d2c49807",
+      "chars": 4462
+    },
+    {
+      "doc_id": "MAL_YON:44",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 44 (İş bitirme belgesi ve teknolojik ürün deneyim belgesinin düzenlenmesi (Değişik başlık: 16/08/2014-29090 R.G./3.md.))",
+      "revid": null,
+      "sha256": "b907bd14595a1e5001db6e00ce09091fb0fbe87cdc54f25f2bf398c6ce5bbc8a",
+      "chars": 4430
+    },
+    {
+      "doc_id": "MAL_YON:45",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 45 (İş bitirme belgesi düzenleme koşulları)",
+      "revid": null,
+      "sha256": "f485f30008cdf46cc1d71500bfea8024a918761009090d10d6720c410d8e8e26",
+      "chars": 2804
+    },
+    {
+      "doc_id": "MAL_YON:46",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 46 (Özel sektöre ve yurt dışında gerçekleştirilen işler ile alt yükleniciler tarafından gerçekleştirilen işlerin iş deneyiminin belgelendirilmesi)",
+      "revid": null,
+      "sha256": "02408c1fdbd2c1fa1cf92c917d59e5efbd5836152b07056afb4b8c7e970b9f37",
+      "chars": 3506
+    },
+    {
+      "doc_id": "MAL_YON:47",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 47 (İş deneyimini gösteren belgelerin değerlendirilmesi)",
+      "revid": null,
+      "sha256": "3832c2a6f306b3510b206830acc66d26d7fbb9e1acfa16c210830c12a2ef58e8",
+      "chars": 4376
+    },
+    {
+      "doc_id": "MAL_YON:48",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 48 (İş deneyim tutarının güncellenmesi)",
+      "revid": null,
+      "sha256": "8b66e94c39c753ee7b3711d3a877b338e217c7382c010231e53b3c450a1c263d",
+      "chars": 1303
+    },
+    {
+      "doc_id": "MAL_YON:48_a",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 48/A (Kanun kapsamındaki idarelere taahhüt edilenler dışında yurt dışında gerçekleştirilen işler için düzenlenen belgeler)",
+      "revid": null,
+      "sha256": "2f122bd96ae6078d3abc4b47779ff1b6627d37d26e7fc748cbaffb0f24920ef5",
+      "chars": 1514
+    },
+    {
+      "doc_id": "MAL_YON:49",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 49 (İhale komisyonlarının inceleme yetkisi)",
+      "revid": null,
+      "sha256": "e41562e13fd0019b41b7209c638cbdf664e4cbf0cb263ecd36316da7831dd865",
+      "chars": 275
+    },
+    {
+      "doc_id": "MAL_YON:5",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 5 (Yerli istekli)",
+      "revid": null,
+      "sha256": "2eaae7e5cd30cdf1083a9f8550f1f4b0c7d623462a7977fd625035ba40482f38",
+      "chars": 572
+    },
+    {
+      "doc_id": "MAL_YON:50",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 50 (İhale dışı bırakılma)",
+      "revid": null,
+      "sha256": "7ee685d95794e5feeeec281c48fefc3e34ce553ec154ec62f53416700deb00e3",
+      "chars": 4298
+    },
+    {
+      "doc_id": "MAL_YON:51",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 51 (İhaleye katılamayacak olanlar)",
+      "revid": null,
+      "sha256": "7a4f37ddf90531ff010334a9c7bbae0f08a5b9e3c6c3b77d9364cd4688f450c3",
+      "chars": 2704
+    },
+    {
+      "doc_id": "MAL_YON:52",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 52 (Başvuru ve teklif mektuplarının şekli)",
+      "revid": null,
+      "sha256": "aeafbcae3c79e62bbb400e148b4e4f5c7d6684352420d79284142f3e73a21aaf",
+      "chars": 1803
+    },
+    {
+      "doc_id": "MAL_YON:53",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 53 (Tekliflerin geçerlilik süresi)",
+      "revid": null,
+      "sha256": "7264a0980a5e41eedeadb9ae0b7513ab2b76ad64233774389bd53f0a29577cc8",
+      "chars": 471
+    },
+    {
+      "doc_id": "MAL_YON:54",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 54 (Teminatlar)",
+      "revid": null,
+      "sha256": "4e1c858b24d8d5498f84d3d58e81df0ef414a27a8432457959bb9422a3a553d4",
+      "chars": 3034
+    },
+    {
+      "doc_id": "MAL_YON:55",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 55 (Başvuruların ve tekliflerin alınması, açılması ve belgelerdeki bilgi eksikliklerinin tamamlatılması)",
+      "revid": null,
+      "sha256": "2cdd1a2ee453e600714734af2eb30c92462b8ad4e7e7babde90fee269bfce44a",
+      "chars": 2642
+    },
+    {
+      "doc_id": "MAL_YON:56",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 56 (Başvuruların değerlendirilmesi)",
+      "revid": null,
+      "sha256": "5e64a330961890a37e2040e3ab0b8d5e30a399f545d3e08065b01f7bbefe6cdf",
+      "chars": 316
+    },
+    {
+      "doc_id": "MAL_YON:57",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 57 (Tekliflerin değerlendirilmesi)",
+      "revid": null,
+      "sha256": "82ca76eef47e3fb8788cd2efdd6b5b3345ef3f2d557c0f3ff08df679e80c5a58",
+      "chars": 211
+    },
+    {
+      "doc_id": "MAL_YON:58",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 58 (Aşırı düşük teklifler)",
+      "revid": null,
+      "sha256": "68c6abff5f8df8b146ad02f371a5d5795a654e62f897a7060188fb93e92dba09",
+      "chars": 742
+    },
+    {
+      "doc_id": "MAL_YON:58_b",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 58/B (Elektronik eksiltme (Ek madde: 19.06.2018-30453/m RG/ 6. md.; yürürlük: 1.11.2018))",
+      "revid": null,
+      "sha256": "60d987b7a89065effba4a6af679fec4f9ed9ad9a6e091b47e34790e7bf234459",
+      "chars": 2546
+    },
+    {
+      "doc_id": "MAL_YON:6",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 6 (Tebligat esasları (Değişik başlık: RG-18/5/2024-32550))",
+      "revid": null,
+      "sha256": "7ad588ace35b4ff1be03e72ba6514aa95eeef28bc8670a9125c02d3f6aa17fd7",
+      "chars": 1291
+    },
+    {
+      "doc_id": "MAL_YON:60",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 60 (Fiyat dışı unsurlar ve bu unsurlara yönelik düzenleme)",
+      "revid": null,
+      "sha256": "27b12d9def755f4faef0adfa200f649643cb70728689bd081c3f9086d11c8a0a",
+      "chars": 998
+    },
+    {
+      "doc_id": "MAL_YON:61",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 61 (Yerli malını teklif edenler lehine fiyat avantajı uygulanması)",
+      "revid": null,
+      "sha256": "8251d16728db9482229337306224e749867bc629d06ac1568a243b630c55e71d",
+      "chars": 3024
+    },
+    {
+      "doc_id": "MAL_YON:62",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 62 (Tekliflerin eşit olması)",
+      "revid": null,
+      "sha256": "8cff2001675acb57852404206e5c74f93bc2e9d419d3d7d7f20f044a88c6fb95",
+      "chars": 5596
+    },
+    {
+      "doc_id": "MAL_YON:63",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 63 (Bütün tekliflerin reddedilmesi ve ihalenin iptali)",
+      "revid": null,
+      "sha256": "f3d35b89fa19951f2c3014c1b1cecf52f1546738e40d031e3a672617e6c6de8d",
+      "chars": 744
+    },
+    {
+      "doc_id": "MAL_YON:64",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 64 (İhalenin karara bağlanması ve onaylanması)",
+      "revid": null,
+      "sha256": "7195295477dfb325c064807293431b6a6d74d7134887d3bb6399737b888114b3",
+      "chars": 1492
+    },
+    {
+      "doc_id": "MAL_YON:65",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 65 (Kesinleşen ihale kararının bildirilmesi)",
+      "revid": null,
+      "sha256": "eb5233c20f525f073c85a37cce07451700fb12386f044f1a1926805f1a734bce",
+      "chars": 613
+    },
+    {
+      "doc_id": "MAL_YON:66",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 66 (İhale üzerinde kalan isteklinin sözleşmeye davet edilmesi)",
+      "revid": null,
+      "sha256": "19a4fc4573fe51689bfce2cfb716d9342e7a7d5638eee8a2a1f59e30a5953946",
+      "chars": 1210
+    },
+    {
+      "doc_id": "MAL_YON:67",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 67 (İhale üzerinde kalan isteklinin sözleşmeyi imzalamaması)",
+      "revid": null,
+      "sha256": "5cfd51e7c05d090cfb2c389de3cb07d662ad7ac98c52e63334932c61f4b4a402",
+      "chars": 1644
+    },
+    {
+      "doc_id": "MAL_YON:68",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 68 (İhale sonucunun ilanı)",
+      "revid": null,
+      "sha256": "04373c7e1fec9f6b492e56f6a85ed0e7d46755fa7c47b1b80605ef92145886bc",
+      "chars": 297
+    },
+    {
+      "doc_id": "MAL_YON:7",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 7 (Yaklaşık maliyetin hesaplanmasına ilişkin ilkeler)",
+      "revid": null,
+      "sha256": "e33691717af8b5b6cbd7042b8441079da463167d67f5c30daee6edcaa396e6d4",
+      "chars": 1701
+    },
+    {
+      "doc_id": "MAL_YON:71",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 71 (Yürütme)",
+      "revid": null,
+      "sha256": "51c45f5cb74b0080d8293a5aa032461bb9d2b61a267e36b1ec620fbc001bbf55",
+      "chars": 1252
+    },
+    {
+      "doc_id": "MAL_YON:8",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 8 (Yaklaşık maliyetin hesaplanması)",
+      "revid": null,
+      "sha256": "26a6435a1c1e41f71bec79469790eb880fc2ded660186f08c4cc4835af4cfc69",
+      "chars": 2160
+    },
+    {
+      "doc_id": "MAL_YON:9",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde 9 (Uygulanacak ihale usulünün tespiti ve ihale kaydı)",
+      "revid": null,
+      "sha256": "b2f7aab31dfceb9eda379472ed4e0dfac86610a5a86b013342751cb78f977a5c",
+      "chars": 605
+    },
+    {
+      "doc_id": "MAL_YON:ek-1",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde Ek 1 (İş bitirme belgelerinin EKAP üzerinden düzenlenmesi)",
+      "revid": null,
+      "sha256": "1c11947af052a1e635dc3e4fa46a6990a5f1c64393c982c66740d27411ca8ad1",
+      "chars": 1222
+    },
+    {
+      "doc_id": "MAL_YON:ek-2",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde Ek 2 (Yabancı para birimi cinsinden teklif verilebilecek ihaleler (Değişik başlık:RG-18/5/2024-32550))",
+      "revid": null,
+      "sha256": "533c3888c6071f8c696ccceff0947935860caf48e397f2ed1e686a70a3dee6ff",
+      "chars": 3629
+    },
+    {
+      "doc_id": "MAL_YON:ek-3",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde Ek 3 (Standart formlara yapılan atıflar)",
+      "revid": null,
+      "sha256": "e42500caf63abbe7e7eaaedb6021c5c9b7e23daf2997433245968943a1ee0392",
+      "chars": 164
+    },
+    {
+      "doc_id": "MAL_YON:gecici-1",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 1 (5/3/2009 tarihinden önceki ihaleler)",
+      "revid": null,
+      "sha256": "279b168cf5e79c10994ac12f1a28360a98cc1603c0dc8aecb78661fd00376de9",
+      "chars": 173
+    },
+    {
+      "doc_id": "MAL_YON:gecici-10",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 10 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "3c804b2a22f4771cd87297a64c39d60a99dcd039ff80b209085cdf305e08f4c9",
+      "chars": 174
+    },
+    {
+      "doc_id": "MAL_YON:gecici-13",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 13 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "fc3c3da56ebc93f740efd0b77fb6c369af5dcd8cf51ba3844d8f95f668e4bc31",
+      "chars": 421
+    },
+    {
+      "doc_id": "MAL_YON:gecici-14",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 14 (Daha önce alınmış iş deneyim belgeleri)",
+      "revid": null,
+      "sha256": "b1d81c75f9f6c3f3c7f8ca8acb2ec526bfa32f2f10ddfff6e2af6b3d2372a545",
+      "chars": 1144
+    },
+    {
+      "doc_id": "MAL_YON:gecici-15",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 15 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "8a06115e2322e636e7ab1cf0ed9848b0ef8c47791a78bf645cee8fdcb83e68bc",
+      "chars": 594
+    },
+    {
+      "doc_id": "MAL_YON:gecici-16",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 16 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "1faf7d1b655e1492c5d9c2fccf31afbd5662830535f4ca42a918d95815046db9",
+      "chars": 234
+    },
+    {
+      "doc_id": "MAL_YON:gecici-18",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 18 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "ddce4fd48b1f75a0a7559ccc07cec365b862719547c32a58e908061331dce140",
+      "chars": 220
+    },
+    {
+      "doc_id": "MAL_YON:gecici-19",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 19 (Uygulanmaya başlama süresi)",
+      "revid": null,
+      "sha256": "e7a1775472da0b98573e5e6b81e6e351b1f8462f6a573da7fd4e665f59a60e66",
+      "chars": 369
+    },
+    {
+      "doc_id": "MAL_YON:gecici-2",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 2 (5/3/2009 tarihinden önce düzenlenen iş deneyim belgeleri)",
+      "revid": null,
+      "sha256": "8eacb789ee619294d05516477cdf0dcfc5ffcd3a56aa140e5d2e62ec50e2c162",
+      "chars": 1154
+    },
+    {
+      "doc_id": "MAL_YON:gecici-22",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 22 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "494fb6eeee26251636c2c590333fa07de1919fc95cc95ad62a22b365062d73ea",
+      "chars": 300
+    },
+    {
+      "doc_id": "MAL_YON:gecici-23",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 23 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "fc4555239bfa963f75e846ab91424041af001e3d8a94f8f2f7b0c4e5ca040fba",
+      "chars": 209
+    },
+    {
+      "doc_id": "MAL_YON:gecici-26",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 26 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "c4ee0926feca4e17869321828ba9ce04dfb60fa8faa8431f571c74640ce59671",
+      "chars": 399
+    },
+    {
+      "doc_id": "MAL_YON:gecici-3",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 3",
+      "revid": null,
+      "sha256": "9c80c47cd0c7a50a16edd2838c5947d43939d6403555dcea27fb9cce124371cb",
+      "chars": 1023
+    },
+    {
+      "doc_id": "MAL_YON:gecici-4",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 4",
+      "revid": null,
+      "sha256": "e7bb1daca8305daf1b367052a469141ffd42c63a0c412ef2117f2478fd268031",
+      "chars": 1284
+    },
+    {
+      "doc_id": "MAL_YON:gecici-5",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 5 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "c58081236a454487aff136feee1e6854ed5c913faafb543d0ce5ddfb464aa90d",
+      "chars": 180
+    },
+    {
+      "doc_id": "MAL_YON:gecici-6",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 6 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "6a2310cfdf5420981c4a8a4941c8c8884752665ed2f763ab8e51f34b005eb59f",
+      "chars": 168
+    },
+    {
+      "doc_id": "MAL_YON:gecici-7",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 7 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "210e35badd622a3e70badbce329719a13328af29f055ecb1bd4e78ab621e3975",
+      "chars": 192
+    },
+    {
+      "doc_id": "MAL_YON:gecici-8",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 8 (Geçiş hükümleri)",
+      "revid": null,
+      "sha256": "0b87c15aaa8f7517408450c46d9f5cf4d5062d193f5fcb7626ef6a960980bd44",
+      "chars": 410
+    },
+    {
+      "doc_id": "MAL_YON:gecici-9",
+      "title": "Mal Alımı İhaleleri Uygulama Yönetmeliği, madde Geçici 9 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "0d415e3e0a6f4a38e30ff22d806dcd2dc7d133b1fd98431facf1c9d28699fce1",
+      "chars": 206
+    },
+    {
+      "doc_id": "YAP_YON:1",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 1 (Amaç ve kapsam)",
+      "revid": null,
+      "sha256": "4bd0a330acfbff25fc9e534860c0c36ca18977f13ab70da3323057af63e7d668",
+      "chars": 330
+    },
+    {
+      "doc_id": "YAP_YON:10",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 10 (Yaklaşık maliyet hesabına esas fiyat ve rayiçlerin tespiti)",
+      "revid": null,
+      "sha256": "e010f55806489d4746f4b7fa0a7b1b8e10ac2049aa35f5aeeffd034f5427e040",
+      "chars": 2449
+    },
+    {
+      "doc_id": "YAP_YON:11",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 11 (Yaklaşık maliyetin hesaplanması ve güncellenmesi)",
+      "revid": null,
+      "sha256": "95776b535b40dfed6a805d2d23ec712b3733a7cc73488d6bce1d7cc9868ecb28",
+      "chars": 1490
+    },
+    {
+      "doc_id": "YAP_YON:12",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 12 (Uygulanacak ihale usulünün tespiti ve ihale kaydı (Değişik madde başlığı: RG-16/3/2011-27876))",
+      "revid": null,
+      "sha256": "d8500f6b93a0856a657e8b416bbc7692c64b7817bfa89f69d8d7c0eaa965003d",
+      "chars": 605
+    },
+    {
+      "doc_id": "YAP_YON:13",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 13 (İhale ve ön yeterlik dokümanının içeriği)",
+      "revid": null,
+      "sha256": "aff72b1a4a58e33fa94bf56fbe85aa34fefe4c88a8ab5cf77cbbde0a12bcb3df",
+      "chars": 711
+    },
+    {
+      "doc_id": "YAP_YON:14",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 14 (İhale ve ön yeterlik dokümanının hazırlanması)",
+      "revid": null,
+      "sha256": "c613f520c6fdd0bb1d17931eb418ec229b185df3c5386844d20283c6287d846b",
+      "chars": 1016
+    },
+    {
+      "doc_id": "YAP_YON:15",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 15 (İdari şartname)",
+      "revid": null,
+      "sha256": "c72f8fac2c6fd73bc5b02fbfd50738cbf22f14c02d8eac65f5d980156849f474",
+      "chars": 613
+    },
+    {
+      "doc_id": "YAP_YON:16",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 16 (Ön yeterlik şartnamesi)",
+      "revid": null,
+      "sha256": "bd3433b5ec81efed543d5fb9bae3476f880d5feccfc5e77ac84c6f0cb83094ac",
+      "chars": 656
+    },
+    {
+      "doc_id": "YAP_YON:17",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 17 (Teknik şartname)",
+      "revid": null,
+      "sha256": "1661db6467de9d64cf29d62ffa15980a6147b4e2aa59a4e16da5130a906c60df",
+      "chars": 1158
+    },
+    {
+      "doc_id": "YAP_YON:18",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 18 (Sözleşme Tasarısı)",
+      "revid": null,
+      "sha256": "7fd07d20591f36f2cef371d57703eeaf4744c3140b9af87f4f75fb9ec038e116",
+      "chars": 535
+    },
+    {
+      "doc_id": "YAP_YON:19",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 19 (İhale onayının alınması)",
+      "revid": null,
+      "sha256": "34db2010204d6fd92585690c91b86186537b9c5824ca09c9c720fc32f35ba344",
+      "chars": 496
+    },
+    {
+      "doc_id": "YAP_YON:20",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 20 (İhale komisyonunun kurulması ve çalışma esasları)",
+      "revid": null,
+      "sha256": "9940adac348e22eee1c25094d8269e1c9488961b662e661d9b4bd4e36e42f9a6",
+      "chars": 1722
+    },
+    {
+      "doc_id": "YAP_YON:21",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 21 (İhale işlem dosyası)",
+      "revid": null,
+      "sha256": "d5d97345a9cc9fd439da8ce618e3ce43524024623b9056ecc7e35e67c96e058f",
+      "chars": 1498
+    },
+    {
+      "doc_id": "YAP_YON:22",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 22 (İhale ve ön yeterlik ilanı)",
+      "revid": null,
+      "sha256": "2be686a37f17d679971ab285ebca1511f2aa0a0bb65e1f2f125175a5fa12a327",
+      "chars": 793
+    },
+    {
+      "doc_id": "YAP_YON:23",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 23 (Ön ilan)",
+      "revid": null,
+      "sha256": "17a467120fe6a0dcc0b66aecda788a61c2daba5c443fd209901c9af3416b39a4",
+      "chars": 834
+    },
+    {
+      "doc_id": "YAP_YON:24",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 24 (İhale ilan ve davet sürelerinin kısaltılması)",
+      "revid": null,
+      "sha256": "c4502cf4bd8cd659258dc84567252d57637e10609a60a0830bc7dab5bdfa2344",
+      "chars": 902
+    },
+    {
+      "doc_id": "YAP_YON:25",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 25 (İlanın uygun olmaması)",
+      "revid": null,
+      "sha256": "1fc65ae29f714764315fe4956f08e55a5a75e254ba499b2d66b5185b00c6a388",
+      "chars": 585
+    },
+    {
+      "doc_id": "YAP_YON:26",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 26 (İhale ve ön yeterlik dokümanının görülmesi ve indirilmesi (Değişik başlık:RG- 18/5/2024-32550)(10))",
+      "revid": null,
+      "sha256": "52d117a5cb7fcd932834793ade1fbf786dfa072d0768e2e5128505156a627353",
+      "chars": 424
+    },
+    {
+      "doc_id": "YAP_YON:27",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 27 (İhale ve ön yeterlik dokümanında değişiklik veya açıklama yapılması)",
+      "revid": null,
+      "sha256": "fd587c677b7f67365d4a128b844d91fd8578a306a66ff7d1fe2fa3f1049337e9",
+      "chars": 3060
+    },
+    {
+      "doc_id": "YAP_YON:28",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 28 (İhale veya son başvuru saatinden önce ihalenin iptal edilmesi)",
+      "revid": null,
+      "sha256": "6189d250aa43b1d0ba1c744de30572ade57bb753c314c22c9b1a4ac8c1beb941",
+      "chars": 907
+    },
+    {
+      "doc_id": "YAP_YON:29",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 29 (Yeterliğin belirlenmesinde uyulacak ilkeler)",
+      "revid": null,
+      "sha256": "5f1e7ecfcc84e50cd0f9a8bff0bae78c32b042d44f4fdf4086620aacac4692c3",
+      "chars": 3884
+    },
+    {
+      "doc_id": "YAP_YON:3",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 3 (Tanımlar ve kısaltmalar (Değişik başlık:RG- 18/5/2024-32550)(10))",
+      "revid": null,
+      "sha256": "cd2779cd4c3d06beb5bf6116fcfea0597b14c972539fd90f3a66e5c5846c0836",
+      "chars": 2352
+    },
+    {
+      "doc_id": "YAP_YON:30",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 30 (İstenecek belgeler)",
+      "revid": null,
+      "sha256": "a887009ff7c5877c1ea95c64e5af95d5450288d921bdb312803935944dd2a5e0",
+      "chars": 1537
+    },
+    {
+      "doc_id": "YAP_YON:32",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 32 (İş ortaklığı)",
+      "revid": null,
+      "sha256": "7445ab753f3c3375d34fa04ea3936d8048896b3587e255931e51256b53a466a4",
+      "chars": 1761
+    },
+    {
+      "doc_id": "YAP_YON:33",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 33 (Konsorsiyum)",
+      "revid": null,
+      "sha256": "f2aacda63df7ddf0056c3e36e0378a37dab2d82184b7ec13b33e4165004abf9f",
+      "chars": 1086
+    },
+    {
+      "doc_id": "YAP_YON:35",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 35 (Bilanço veya eşdeğer belgeler)",
+      "revid": null,
+      "sha256": "0bf36e685b6776aa23a94a3019efa96ade5fb723dcd296229be18d956b9cd495",
+      "chars": 3697
+    },
+    {
+      "doc_id": "YAP_YON:36",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 36 (İsteklinin iş hacmini gösteren belgeler)",
+      "revid": null,
+      "sha256": "e330b8c218222f8e72c58dde31f7980cacd4ec34bc7016be712a24b92d515eb1",
+      "chars": 5412
+    },
+    {
+      "doc_id": "YAP_YON:37",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 37 (İş hacmine ilişkin belge tutarlarının güncellemesi)",
+      "revid": null,
+      "sha256": "07f888bf91dfe393a0db3b7be982abec702d40512e18429ee21dad367a732f83",
+      "chars": 528
+    },
+    {
+      "doc_id": "YAP_YON:39",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 39 (İş deneyimini gösteren belgeler)",
+      "revid": null,
+      "sha256": "3d9c11271b61c166c86ec4f825f511590e39a4760ebae7f33e5d31c462d0168b",
+      "chars": 8000
+    },
+    {
+      "doc_id": "YAP_YON:4",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 4 (Temel ilkeler)",
+      "revid": null,
+      "sha256": "32eacd13750228fa9a9c92d88213748ff01ebe2e2a9f517f9ffd3ac31218da3a",
+      "chars": 1949
+    },
+    {
+      "doc_id": "YAP_YON:40",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 40 (İsteklinin organizasyon yapısı ve personel durumuna ilişkin belgeler)",
+      "revid": null,
+      "sha256": "4bd0b1d67f8ad3087727d21e6129540eadda6fa6b90474a66cf36b00341b7151",
+      "chars": 814
+    },
+    {
+      "doc_id": "YAP_YON:41",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 41 (Tesis, makine, teçhizat ve diğer ekipmana ilişkin belgeler (Değişik başlık: 30.09.2020-31260 R.G/1. Md., yürürlük: 20.10.2020))",
+      "revid": null,
+      "sha256": "65d389e22bd3c024fef37d9277f83920b167f430ab4694ff8e5119a3c82aaf59",
+      "chars": 2676
+    },
+    {
+      "doc_id": "YAP_YON:42",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 42 (Kalite yönetim sistem belgesi ve çevre yönetim sistem belgesi)",
+      "revid": null,
+      "sha256": "f3821a3ee8cae70db30919e99aa62ceb1062596425bb034e8e7ba0053d0fe073",
+      "chars": 1772
+    },
+    {
+      "doc_id": "YAP_YON:43",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 43 (İş deneyim belgesi düzenlemeye yetkili kurum ve kuruluşlar)",
+      "revid": null,
+      "sha256": "05c6135d3f1d46b820a26574418ecfd9fa59a62571fc4932aac5825bd23d9858",
+      "chars": 3879
+    },
+    {
+      "doc_id": "YAP_YON:44",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 44 (Belge düzenleme koşulları)",
+      "revid": null,
+      "sha256": "a6f2245b92201e61e51b99d4dd56011bf79d5341f23540906997206320bbf5ae",
+      "chars": 5329
+    },
+    {
+      "doc_id": "YAP_YON:45",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 45 (Belge için başvuru)",
+      "revid": null,
+      "sha256": "2cd0bdb7eea018ce63308a15ac8e5bc4bdaa3d9647dae83c5606d18894003305",
+      "chars": 4376
+    },
+    {
+      "doc_id": "YAP_YON:46",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 46 (İş deneyim tutarının tespiti)",
+      "revid": null,
+      "sha256": "97ed0823052ccbe5fdd00d472fa7bc0bf0ce8153ca48307192040fe84f049d70",
+      "chars": 3811
+    },
+    {
+      "doc_id": "YAP_YON:47",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 47 (İş deneyim belgelerinin verilmesi)",
+      "revid": null,
+      "sha256": "2f79d827c0daa2eaafe991af56b47b5daf0e66da4e4c733f80b6b5025fe9a3d8",
+      "chars": 7521
+    },
+    {
+      "doc_id": "YAP_YON:48",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 48 (Değerlendirmeye ilişkin esaslar)",
+      "revid": null,
+      "sha256": "c33c492f0b700e6ac808a0c0b1f18573b1f95ae99c9e101e648139f03828619c",
+      "chars": 3447
+    },
+    {
+      "doc_id": "YAP_YON:48_a",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 48/A (Kanun kapsamındaki idarelere taahhüt edilenler dışında yurt dışında gerçekleştirilen işler için düzenlenen belgeler)",
+      "revid": null,
+      "sha256": "dbc0b467a4e074b813cae6a44803986f0e0ac355b9e49327e31ff41eeb4c8db4",
+      "chars": 1543
+    },
+    {
+      "doc_id": "YAP_YON:49",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 49 (İş deneyim tutarının güncellenmesi)",
+      "revid": null,
+      "sha256": "44a8c4903d5b82dc6d0832522716a06c1745fff73210599bc5011bc20a386eec",
+      "chars": 2175
+    },
+    {
+      "doc_id": "YAP_YON:5",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 5 (İhalelerde uyulması zorunlu hususlar)",
+      "revid": null,
+      "sha256": "1582a468268f67a7833a8744c3caad7de96933a9baf73367f6aa6315487a379b",
+      "chars": 3509
+    },
+    {
+      "doc_id": "YAP_YON:50",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 50 (İhale Komisyonlarının inceleme yetkisi)",
+      "revid": null,
+      "sha256": "0e4006adbee2f2a4e6fa01096a87c915f11ae4234f5a70133a766511b785eb17",
+      "chars": 272
+    },
+    {
+      "doc_id": "YAP_YON:52",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 52 (İhale dışı bırakılma)",
+      "revid": null,
+      "sha256": "68abbf40f838ee4573b8d75bfead240055470a9997a94675712f43990a6c13d2",
+      "chars": 4302
+    },
+    {
+      "doc_id": "YAP_YON:53",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 53 (İhaleye katılamayacak olanlar)",
+      "revid": null,
+      "sha256": "faa3d54df4fbf2cb75bbbb1a699b5147a574e0cef3bab6ae9ad6f87c4dbb3854",
+      "chars": 2729
+    },
+    {
+      "doc_id": "YAP_YON:54",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 54 (Başvuru ve teklif mektuplarının şekli)",
+      "revid": null,
+      "sha256": "2cffb69a49115cc2a39f8b4411936ac7a1c70fbfc55b2c9bb58e34f2518223ba",
+      "chars": 1671
+    },
+    {
+      "doc_id": "YAP_YON:55",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 55 (Tekliflerin geçerlilik süresi)",
+      "revid": null,
+      "sha256": "7264a0980a5e41eedeadb9ae0b7513ab2b76ad64233774389bd53f0a29577cc8",
+      "chars": 471
+    },
+    {
+      "doc_id": "YAP_YON:56",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 56 (Teminatlar)",
+      "revid": null,
+      "sha256": "b169d31ae38dadb7f62d2ff84ae5e856e16253000688ffc74e473cfa6ed7e13b",
+      "chars": 2861
+    },
+    {
+      "doc_id": "YAP_YON:57",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 57 (Başvuruların ve tekliflerin alınması, açılması ve belgelerdeki bilgi eksikliklerinin tamamlatılması)",
+      "revid": null,
+      "sha256": "2982e1097d7d3e67bf370618bb4b09e007eff6b84d835ecaf3f22cb30d16d229",
+      "chars": 2639
+    },
+    {
+      "doc_id": "YAP_YON:58",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 58 (Başvuruların değerlendirilmesi)",
+      "revid": null,
+      "sha256": "2b9911183f1b3c46c2dcd63b91b4c00426f394b98d3600217ddf4763b081f0d8",
+      "chars": 324
+    },
+    {
+      "doc_id": "YAP_YON:59",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 59 (Tekliflerin değerlendirilmesi)",
+      "revid": null,
+      "sha256": "8eec429dd60ef108318eb03192369af3ca579e16911d2a5adc3c711811c641c5",
+      "chars": 160
+    },
+    {
+      "doc_id": "YAP_YON:6",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 6 (Yerli istekli)",
+      "revid": null,
+      "sha256": "95afe682d337f21bd40d68fdd314275ac46ada03d85d8dd4447b302953f45ea4",
+      "chars": 572
+    },
+    {
+      "doc_id": "YAP_YON:60",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 60 (Sınır değer ve aşırı düşük teklifler (Değişik: RG-26/6/2010-27623; Değişik: RG-7/6/2014-29023))",
+      "revid": null,
+      "sha256": "72d63dcf22f23108a510907dd9883f5725201846e3a0fab4e30a3bd3a079630b",
+      "chars": 1754
+    },
+    {
+      "doc_id": "YAP_YON:60_b",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 60/B (Elektronik eksiltme (Ek madde: 19.06.2018-30453/m RG/7. Md., yürürlük: 01.11.2018))",
+      "revid": null,
+      "sha256": "127e4aca81f35dc9e37ce193963163429916a29345afa3e34bde0bfafe7cc874",
+      "chars": 2803
+    },
+    {
+      "doc_id": "YAP_YON:61",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 61 (Ekonomik açıdan en avantajlı teklifin belirlenmesi)",
+      "revid": null,
+      "sha256": "6bd8065c86cfb2989841920625640bf4eadc9920e656bf1b11c059a80b96948b",
+      "chars": 839
+    },
+    {
+      "doc_id": "YAP_YON:62",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 62 (Fiyat dışı unsurlar ve bu unsurlara yönelik düzenleme)",
+      "revid": null,
+      "sha256": "c41d8924dc44eef0cbb1603dcb9097bc9589af3f9eeea90d9ae2cc62cec7e4d3",
+      "chars": 900
+    },
+    {
+      "doc_id": "YAP_YON:63",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 63 (Yerli istekliler lehine fiyat avantajı uygulanan ihalelerde ekonomik açıdan en avantajlı teklifin belirlenmesi)",
+      "revid": null,
+      "sha256": "0b2a9d90ecd89082effce0d37bcb6fa9611db1794879075c2934bd37540a87e5",
+      "chars": 824
+    },
+    {
+      "doc_id": "YAP_YON:64",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 64 (Tekliflerin eşit olması)",
+      "revid": null,
+      "sha256": "7501219038980ef5e86a8afc75650d5ad0c79c647b0536d54d739dd161f00667",
+      "chars": 1147
+    },
+    {
+      "doc_id": "YAP_YON:65",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 65 (Bütün tekliflerin reddedilmesi ve ihalenin iptali)",
+      "revid": null,
+      "sha256": "3a08228b65915812e055d5a128d2ecc8c0c9ff20734ec43231f32186fd742815",
+      "chars": 746
+    },
+    {
+      "doc_id": "YAP_YON:66",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 66 (İhalenin karara bağlanması ve onaylanması)",
+      "revid": null,
+      "sha256": "fc876f838ed8ba926e573238365ced6fad5917681fbf6d68993ae069e85c29af",
+      "chars": 1494
+    },
+    {
+      "doc_id": "YAP_YON:67",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 67 (Kesinleşen ihale kararının bildirilmesi)",
+      "revid": null,
+      "sha256": "347ba48b1c971bf0763f8bc20f4fa43e02be5ca18585b401e9a71626c49dc88c",
+      "chars": 612
+    },
+    {
+      "doc_id": "YAP_YON:68",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 68 (İhale üzerinde kalan isteklinin sözleşmeye davet edilmesi)",
+      "revid": null,
+      "sha256": "49a72b7e528f3fd7d6ec057ac3d5c5fec09edbbb239b958f6ec5862c685ff7f8",
+      "chars": 1212
+    },
+    {
+      "doc_id": "YAP_YON:69",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 69 (İhale üzerinde kalan isteklinin sözleşmeyi imzalamaması)",
+      "revid": null,
+      "sha256": "7251e279420e9325370b806082f6835dc9118e8a27bb0d2b2a0efc0a6bbc9b66",
+      "chars": 1629
+    },
+    {
+      "doc_id": "YAP_YON:7",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 7 (Tebligat esasları (Değişik başlık:RG- 18/5/2024-32550)(10))",
+      "revid": null,
+      "sha256": "7886fb70d13ba4acba0f7887f9f9a9635f8f08271fd26ab9e4dc5b173c1a8b7f",
+      "chars": 1324
+    },
+    {
+      "doc_id": "YAP_YON:70",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 70 (İhale sonucunun ilanı)",
+      "revid": null,
+      "sha256": "de3150c5758e25d29fb66ccc579c5966f6e67eecf2de968dc2414b620febe45a",
+      "chars": 298
+    },
+    {
+      "doc_id": "YAP_YON:8",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 8 (Yaklaşık maliyete ilişkin ilkeler)",
+      "revid": null,
+      "sha256": "04df1ffc16eed111404c1c2bc82095bd36a362372f7be49b1f6ca8a92559565a",
+      "chars": 1513
+    },
+    {
+      "doc_id": "YAP_YON:9",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde 9 (Yaklaşık maliyetin hesaplanmasına esas miktarların tespiti)",
+      "revid": null,
+      "sha256": "e0b08abffaa29f5b6a1dd780f692966684ea558e1c7655b53939306f50e31990",
+      "chars": 2187
+    },
+    {
+      "doc_id": "YAP_YON:ek-1",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Ek 1 (İş deneyim belgelerinin EKAP üzerinden düzenlenmesi)",
+      "revid": null,
+      "sha256": "e0b2c6a0583e2026c38f1297f68d0dd37c4f74175821baab51133616f38c705b",
+      "chars": 2605
+    },
+    {
+      "doc_id": "YAP_YON:ek-2",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Ek 2 (Yabancı para birimi cinsinden teklif verilebilecek ihaleler (Değişik başlık:RG-18/5/2024-32550))",
+      "revid": null,
+      "sha256": "7df16eeb55b0402e0b4e828793b55371157d9c9ac68f86b98976f7f12e77d7f0",
+      "chars": 2111
+    },
+    {
+      "doc_id": "YAP_YON:ek-3",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Ek 3 (Standart formlara yapılan atıflar)",
+      "revid": null,
+      "sha256": "70731bdbbd79627b1ec02faf6b9073dab82f2642843ab96e45379df33a589c67",
+      "chars": 164
+    },
+    {
+      "doc_id": "YAP_YON:gecici-1",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 1 (5/3/2009 tarihinden önceki ihaleler)",
+      "revid": null,
+      "sha256": "f256a3a1d62a00f60edc14f4daa43f0c19256d160048395290561c83fd3fb11e",
+      "chars": 186
+    },
+    {
+      "doc_id": "YAP_YON:gecici-10",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 10 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "0816bfa286baa7ba61c717573603e4cd05a3cc8bc829f124b8fc5cd03240b9e3",
+      "chars": 173
+    },
+    {
+      "doc_id": "YAP_YON:gecici-11",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 11 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "1a758f9031cbca244bb77c80a952b4fa6577ed74f95dbde2f63d5dd5be7a54a9",
+      "chars": 173
+    },
+    {
+      "doc_id": "YAP_YON:gecici-12",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 12 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "aa2c9dca06bc45460dd617738b0923fd4f85c565402f0422d873fcce6021168c",
+      "chars": 188
+    },
+    {
+      "doc_id": "YAP_YON:gecici-13",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 13 (Geçiş hükümleri)",
+      "revid": null,
+      "sha256": "9a22c345e1209162b3e204aea437aa5c84caa5ed6f983d09749552b69cbf5988",
+      "chars": 442
+    },
+    {
+      "doc_id": "YAP_YON:gecici-14",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 14 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "3c804b2a22f4771cd87297a64c39d60a99dcd039ff80b209085cdf305e08f4c9",
+      "chars": 174
+    },
+    {
+      "doc_id": "YAP_YON:gecici-15",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 15 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "0d415e3e0a6f4a38e30ff22d806dcd2dc7d133b1fd98431facf1c9d28699fce1",
+      "chars": 206
+    },
+    {
+      "doc_id": "YAP_YON:gecici-16",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 16 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "cd2b7bdb48723ec7fd89285745255bdb147cbdb69dc7cb1aa2a50d9491111652",
+      "chars": 194
+    },
+    {
+      "doc_id": "YAP_YON:gecici-17",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 17 (Daha önce alınmış iş deneyim belgeleri)",
+      "revid": null,
+      "sha256": "926b2ab781e4eb91cee3c38ef51980fc2521eda8404a956b573e9f894c02dfbd",
+      "chars": 1335
+    },
+    {
+      "doc_id": "YAP_YON:gecici-18",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 18 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "e7f77c5e5061ae94b8ef93f78402f1927c028cc5b9fabb5ddb07f7a0e241f41e",
+      "chars": 432
+    },
+    {
+      "doc_id": "YAP_YON:gecici-19",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 19 (Daha önce alınmış iş deneyim belgeleri)",
+      "revid": null,
+      "sha256": "b1d81c75f9f6c3f3c7f8ca8acb2ec526bfa32f2f10ddfff6e2af6b3d2372a545",
+      "chars": 1144
+    },
+    {
+      "doc_id": "YAP_YON:gecici-20",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 20 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "98952091b42ab26b15a10674008cd6908ff3885646b62380eb331e3c038431fd",
+      "chars": 592
+    },
+    {
+      "doc_id": "YAP_YON:gecici-21",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 21 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "1faf7d1b655e1492c5d9c2fccf31afbd5662830535f4ca42a918d95815046db9",
+      "chars": 234
+    },
+    {
+      "doc_id": "YAP_YON:gecici-24",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 24 (İstanbul Atatürk Kültür Merkezi ile ilgili ihaleler)",
+      "revid": null,
+      "sha256": "f17eb7a023a0468e38e3537d42305258be95201ca2cd36c457d6ddddc2000192",
+      "chars": 208
+    },
+    {
+      "doc_id": "YAP_YON:gecici-25",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 25 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "ddce4fd48b1f75a0a7559ccc07cec365b862719547c32a58e908061331dce140",
+      "chars": 220
+    },
+    {
+      "doc_id": "YAP_YON:gecici-26",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 26 (Uygulanmaya başlama süresi)",
+      "revid": null,
+      "sha256": "d1c3a7986336c400b4f2db16a0918a89e171dd2a7f9f01c8cf5309cbeea85b95",
+      "chars": 373
+    },
+    {
+      "doc_id": "YAP_YON:gecici-29",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 29 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "494fb6eeee26251636c2c590333fa07de1919fc95cc95ad62a22b365062d73ea",
+      "chars": 300
+    },
+    {
+      "doc_id": "YAP_YON:gecici-3",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 3 (İsteklinin organizasyon yapısı ve personel durumuna ilişkin uygulama)",
+      "revid": null,
+      "sha256": "52281775d7e51f4f6efab70dddfc0b7700aecec7a1162998ed0a0c6dbe20c57a",
+      "chars": 299
+    },
+    {
+      "doc_id": "YAP_YON:gecici-30",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 30 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "23500d7bb4fe00ecf3f084a42f05a25c376ccefd6b2d1553f7bd36274a75f6d3",
+      "chars": 213
+    },
+    {
+      "doc_id": "YAP_YON:gecici-31",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 31 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "fc4555239bfa963f75e846ab91424041af001e3d8a94f8f2f7b0c4e5ca040fba",
+      "chars": 209
+    },
+    {
+      "doc_id": "YAP_YON:gecici-32",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 32 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "5eca45a8d2739b3332c9a17dad3f76b02dd5147063365797cfffc341cbcbc64b",
+      "chars": 243
+    },
+    {
+      "doc_id": "YAP_YON:gecici-33",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 33 (Daha önce alınmış iş deneyim belgeleri)",
+      "revid": null,
+      "sha256": "c1b95458cfe7840a60be488c1cbc71ee211ad3f4fba7008ad6b22f131fe0cfda",
+      "chars": 541
+    },
+    {
+      "doc_id": "YAP_YON:gecici-35",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 35 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "c4ee0926feca4e17869321828ba9ce04dfb60fa8faa8431f571c74640ce59671",
+      "chars": 399
+    },
+    {
+      "doc_id": "YAP_YON:gecici-36",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 36 (Uygulanmaya başlama süresi)",
+      "revid": null,
+      "sha256": "12f4aaad738cb76092668d1ea17755d40f1f9ae92230eac3e13d13224b8ede35",
+      "chars": 285
+    },
+    {
+      "doc_id": "YAP_YON:gecici-4",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 4 (1/1/2003 tarihinden önce özel sektörde sözleşmeye bağlanan işler)",
+      "revid": null,
+      "sha256": "4e4c1428e07bbbc95a7ae47b497e601bcbb9f85e017e7d90ac8e3a352ae6321f",
+      "chars": 163
+    },
+    {
+      "doc_id": "YAP_YON:gecici-5",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 5 (Müsteşar ve müsteşar yardımcılarının iş yönetme belgeleri)",
+      "revid": null,
+      "sha256": "42cac25051c31356e0965fa26d4d31bf8d61cdbbd3f2e151e032fe0d3fd6eb74",
+      "chars": 432
+    },
+    {
+      "doc_id": "YAP_YON:gecici-6",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 6",
+      "revid": null,
+      "sha256": "abc885253266a90f26a6f9674f360149cfefb2c9384d483363f80703826a412d",
+      "chars": 1021
+    },
+    {
+      "doc_id": "YAP_YON:gecici-7",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 7",
+      "revid": null,
+      "sha256": "d4dd4c554d7d6061333a23264a1b3aceed778a44518c731b420f3182460656c0",
+      "chars": 1110
+    },
+    {
+      "doc_id": "YAP_YON:gecici-8",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 8 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "da28d7746001c64a08862bbbbe11d55c842de25136a0444f06ada551528d7042",
+      "chars": 184
+    },
+    {
+      "doc_id": "YAP_YON:gecici-9",
+      "title": "Yapım İşleri İhaleleri Uygulama Yönetmeliği, madde Geçici 9 (Başlamış olan ihaleler)",
+      "revid": null,
+      "sha256": "bf74d1ab3276b6fc1b99eb011ccaef122ac0219563dbc258f743e73c628156aa",
+      "chars": 171
+    }
+  ]
+}

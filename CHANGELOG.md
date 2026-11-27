@@ -12,6 +12,13 @@ published number is a breaking change**, even when no API changed.
 
 ### Added
 
+- A first non-Wikipedia domain, as drafts: 50 machine-generated questions over
+  four near-identical Turkish procurement regulations
+  (`data/eval/mevzuat/`), with a pinned 374-article corpus and lockfile
+  (`data/raw/mevzuat/`). They load only with `--gold data/eval/mevzuat
+  --include-drafts` and do not touch the published numbers.
+  `tests/test_mevzuat_domain.py` checks them offline against the pinned
+  corpus (#33).
 - `ask` puts one question to every retriever and prints their top chunks side
   by side. For a gold question the chunks holding the answer are marked by the
   same rule `run` scores with, and the last line says who found it at what rank.
