@@ -21,10 +21,12 @@ numbers in the same way the `llm-draft-*` files do.
 The four regulations were written from one template. Many articles are almost
 word for word the same across them, so most of the corpus acts as a
 distractor. The same rule often shows up in all four with a different number,
-form or authority. For each question, the only thing that picks the right
-article is the kind of procurement it mentions: goods, services, works or
-consultancy. Every `answer_span` occurs verbatim in exactly one article of the
-corpus, and a test enforces this.
+form or authority. For almost every question, the only thing that picks the
+right article is the kind of procurement it mentions: goods, services, works or
+consultancy. A few questions can also be told apart by topic alone
+(`mevzuat-003`, for example, by its R&D and domestic-goods wording). Every
+`answer_span` occurs verbatim in exactly one article of the corpus, and a test
+enforces this.
 
 ## Where the questions come from
 
